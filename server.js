@@ -47,6 +47,8 @@ app.listen(port, () => {
 })
 
 const handleCSS = (res, folders) => {
+  res.setHeader("Content-Type", "text/css")
+
   const cssPath = path.parse( path.join(...folders) )
 
   const sassPath = path.join("src", cssPath.dir, cssPath.name + ".sass")
@@ -56,7 +58,6 @@ const handleCSS = (res, folders) => {
   }, (err, result) => {
     if (err) throw err
 
-    res.setHeader("Content-Type", "text/css")
     res.send(result.css)
   })
 }

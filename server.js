@@ -2,7 +2,8 @@ const express = require("express"),
   app = express(),
   port = 3000,
   path = require("path"),
-  sass = require("node-sass")
+  sass = require("node-sass"),
+  fs = require("fs")
 
 app.set("view engine", "pug")
 app.set("views", path.join(__dirname, "/src"))
@@ -24,6 +25,18 @@ app.get("*", (req, res) => {
   }
 
   res.send("404 - Couldn't find file")
+  // other files
+  const fileOnServer = path.join("src", ...folders)
+  fs.readFile(fileOnServer, (err, data) => {
+    if (err) {
+      if (err.code !== "ENOENT") throw err
+
+      res.sendStatus(404)
+      return
+    }
+
+    res.send(data)
+  })
 })
 
 app.listen(port, () => {

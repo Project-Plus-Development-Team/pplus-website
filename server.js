@@ -6,7 +6,10 @@ const express = require("express"),
   fs = require("fs")
 
 app.set("view engine", "pug")
-app.set("views", path.join(__dirname, "/src"))
+
+const basedir = path.join(__dirname, "/src")
+app.set("views", basedir)
+app.locals.basedir = basedir
 
 app.get("*", (req, res) => {
   const folders = req.originalUrl.split("/").filter(v => v !== "")

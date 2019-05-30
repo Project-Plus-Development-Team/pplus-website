@@ -16,13 +16,14 @@ app.get("*", (req, res) => {
 
   const fileName = folders[0] ? folders.slice(-1)[0] : ""
 
+  // handle CSS
   if (fileName.endsWith(".css")) {
     handleCSS(res, folders)
     return
   }
 
+  // handlePug
   if (!fileName.includes(".")) {
-    // handlePug
     res.render( path.join(...folders, "index") )
     return
   }

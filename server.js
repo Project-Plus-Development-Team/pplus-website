@@ -27,7 +27,6 @@ app.get("*", (req, res) => {
     return
   }
 
-  res.send("404 - Couldn't find file")
   // other files
   const fileOnServer = path.join("src", ...folders)
   fs.readFile(fileOnServer, (err, data) => {

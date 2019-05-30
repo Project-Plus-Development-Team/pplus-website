@@ -1,0 +1,28 @@
+- const o = {}
+
+mixin header(active)
+  - o[active] = "active"
+
+  header.section
+    .container
+      nav#navigation.navbar.is-dark(role="navigation" aria-label="main navigation")
+        .navbar-brand
+          a.navbar-item(href="/" style="padding-top: 0; padding-bottom: 0")
+            img(src="img/projectplus_logo.png" style="max-height: 3.0rem")
+          a.navbar-burger.burger(role="button" aria-label="menu" aria-expanded="false" data-target="collapseNavbar")
+            span(aria-hidden="true")
+            span(aria-hidden="true")
+            span(aria-hidden="true")
+        
+        #collapseNavbar.navbar-menu
+          .navbar-start
+            a.navbar-item(href="/" class=o.home || "") Home
+            a.navbar-item(class=o.documentation || "") Documentation
+            a.navbar-item(href="/download" class=o.download || "") Download
+
+          .navbar-end
+            .navbar-item
+              .buttons
+                a.button.is-success(href="/download")
+                  strong Download v1.05
+                a.button.is-light(href="https://discord.gg/CfEPCy8") Discord Server

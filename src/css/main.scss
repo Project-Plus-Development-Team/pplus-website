@@ -9,7 +9,9 @@ body {
 }
 
 #navigation {
-  background: url(/img/background.jfif);
+  background: linear-gradient(to bottom, #35dcc5, #34d171),
+              url(/img/background.jfif);
+  background-blend-mode: color;
   border-radius: 0.3rem;
   overflow: hidden; // potentially problematic
 }
@@ -28,4 +30,12 @@ body {
 section.section {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.group {
+  margin-bottom: 1rem;
+
+  > * {
+    margin-right: 1rem;
+  }
 }

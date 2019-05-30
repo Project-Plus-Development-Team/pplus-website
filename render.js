@@ -21,7 +21,7 @@ const fs = require("fs"),
         includePaths: ["./src/css/"]
       })
   
-      fs.writeFileSync("./_site/css/" + fileName + ".css", css)
+      fs.writeFileSync("./_site/css/" + fileName + ".css", css.css)
       continue
     }
 

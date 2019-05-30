@@ -50,13 +50,29 @@ const handleCSS = (res, folders) => {
 
   const cssPath = path.parse( path.join(...folders) )
 
-  const sassPath = path.join("src", cssPath.dir, cssPath.name + ".sass")
+  const sassDir = path.join("src", cssPath.dir)
+  const sassPath = path.join(sassDir, cssPath.name + ".scss")
 
-  sass.render({
-    file: sassPath
-  }, (err, result) => {
-    if (err) throw err
+  fs.readFile(sassPath, (err, data) => {
+    if (err) {
+      if (err.code !== "ENOENT") throw err
 
-    res.send(result.css)
+      fs.readFile(path.join("src", ...folders), (err2, data) => {
+        if (err2) throw err2
+
+        res.send(data)
+      })
+
+      return
+    }
+
+    sass.render({
+      data: data.toString(),
+      includePaths: [sassDir]
+    }, (err2, result) => {
+      if (err2) console.error(err2)
+
+      res.send(result.css)
+    })
   })
 }

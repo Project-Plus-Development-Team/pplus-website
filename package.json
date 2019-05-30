@@ -1,0 +1,25 @@
+{
+  "name": "projectplus-website",
+  "version": "0.0.1",
+  "description": "The Project+ Website",
+  "main": "render.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node render.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waffln/projectplus-website.git"
+  },
+  "author": "waffeln",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waffln/projectplus-website/issues"
+  },
+  "homepage": "https://github.com/waffln/projectplus-website#readme",
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "node-sass": "^4.12.0",
+    "pug": "^2.0.3"
+  }
+}

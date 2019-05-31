@@ -8,6 +8,29 @@ body {
   flex: 1;
 }
 
+body, .subtitle {
+  color: hsla(0,0%,100%,0.9);
+}
+
+h1, h2, h3, h4, h5, h6,
+.title {
+  color: white;
+}
+
+a {
+  color: #75aaff;
+  
+  &:hover {
+    color: #407cdd;
+  }
+}
+
+code {
+  background: hsl(0,0%,15%);
+  color: hsl(0,0%,90%);
+  border-radius: 0.3rem;
+}
+
 #navigation {
   background: linear-gradient(to bottom, #35dcc5, #34d171),
               url(/img/background.jfif);

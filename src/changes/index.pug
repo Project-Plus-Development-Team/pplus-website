@@ -1,0 +1,24 @@
+extends /components/layout
+
+block head
+  +head("Project+ Website")
+
+block content
+  +header("changes")
+
+  include data
+
+  section.section
+    .container
+      h1.title Changes in Project+
+      
+      for char in data
+        p.title.is-4= char.title
+
+        for section in char.sections
+          p.title.is-5= section.title
+
+          for change in section.entries
+            p(class=change[0])= change[1]
+          
+          br

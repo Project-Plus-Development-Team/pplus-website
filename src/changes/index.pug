@@ -10,15 +10,41 @@ block content
 
   section.section
     .container
-      h1.title Changes in Project+
+      h1.title Changes in Project+ v1.05b
+      p.bold Automatically parsed from the Google Document, errors still possible.
       
-      for char in data
-        p.title.is-4= char.title
+      - const replaceAll = (str, find, replace) => str.replace(new RegExp(find.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "g"), replace)
 
-        for section in char.sections
-          p.title.is-5= section.title
+      each char in data
+        - const trimmed = replaceAll(char.title, ":", "")
+        - const link = replaceAll(trimmed, " ", "-")
+        a(id=link href="#" + link)
+          h2.title.is-4(
+            style="margin-top: 3rem; color: #49cbff; text-decoration: underline"
+          )= trimmed
 
-          for change in section.entries
-            p(class=change[0])= change[1]
-          
-          br
+        .content
+          ul
+            each attr in char.attributes
+              li= attr
+
+          ul
+            each move in char.moves
+              li.bold(class=move.title.type)
+                - const sublink = link + ">" + replaceAll(move.title.text, " ", "-")
+                a(
+                  id=sublink href="#" + sublink
+                  style="color: #49cbff; text-decoration: underline"
+                )=move.title.text
+              ul
+                each change in move.changes
+                  if change.changes
+                    // further nesting?
+                    - const classes = change.title.type === "none" ? "bold" : change.title.type
+                    li(class=classes)= change.title.text
+                    ul
+                      each subchange in change.changes
+                        li(class=subchange.type)= subchange.text
+                  else 
+                    // no further nesting
+                    li(class=change.type)= change.text

@@ -1,29 +1,6923 @@
 -
   const data = [
     {
-      title: "Bowser",
-      sections: [
+      "title": "Costumes & Aesthetics:",
+      "attributes": [
+        "Roy’s model has been updated slightly: black and blue costumes have slight color changes",
+        "Bowser was given a new dash and run animation",
+        "Pikachu was given iron tail effects on up smash",
+        "Toon Link’s head was increased in size, hurtboxes adjusted to match original head"
+      ],
+      "moves": []
+    },
+    {
+      "title": "Misc:",
+      "attributes": [],
+      "moves": [
         {
-          title: "Attributes",
-          entries: [
-            ["nerf", "Weight: 118 > 113"],
-            ["buff", "Jump Startup Time: 6 > 5"],
-            ["buff", "Empty Landing Time: 6 > 5"]
+          "title": {
+            "type": "none",
+            "text": "Bug Fixes"
+          },
+          "changes": [
+            {
+              "type": "none",
+              "text": "Fixed a bug where characters could unsnap from the ledge frame 1 when the game considered them both grabbing the ledge and onstage [Fracture]"
+            },
+            {
+              "type": "none",
+              "text": "Game crashes now display an error log and do not play the loud beep of death [Fracture & Uncle Punch]"
+            },
+            {
+              "type": "none",
+              "text": "Collision memory leak fix code added, which should drastically reduce the overall number of freezes [DukeItOut]"
+            },
+            {
+              "type": "none",
+              "text": "RCO Airspeed Fix [Eon]"
+            },
+            {
+              "type": "none",
+              "text": "Mario’s cape no longer applies super armor [Eon]"
+            }
           ]
         },
         {
-          title: "Jab 1 & 2",
-          entries: [
-            ["buff", "Jab 1 adjusted animation so that the first frame of hitboxes hits in front of him"],
-            ["buff", "Jab 2 startup 8 > 6"]
+          "title": {
+            "type": "none",
+            "text": "General Changes"
+          },
+          "changes": [
+            {
+              "type": "none",
+              "text": "Screen KO’s have been removed during teams [ds22, Eon]"
+            },
+            {
+              "type": "none",
+              "text": "Strap screen skipped on startup [PyotrLuzhin] **only on netplay build**"
+            },
+            {
+              "type": "none",
+              "text": "Re-arranged CSS [Credit to SundarkSoldier]"
+            },
+            {
+              "type": "none",
+              "text": "Character positions during throws have been modified"
+            },
+            {
+              "type": "none",
+              "text": "Holding L/R while scrolling through costumes will scroll though ¼ of the character’s costumes [DukeItout]"
+            },
+            {
+              "type": "none",
+              "text": "3-2-1 GO! countdown removed from single-player games [DukeItOut]"
+            }
           ]
         },
         {
-          title: "Up Tilt",
-          entries: [
-            ["neutral", "Added 3rd hitbox to sweet spot to match sour spot. Has the KB stats of the sour spot: but the angle of the sweet spot."],
-            ["neutral", "Up Tilt interpolation glitch has been fixed"],
-            []
+          "title": {
+            "type": "none",
+            "text": "Gameplay Changes"
+          },
+          "changes": [
+            {
+              "type": "none",
+              "text": "Characters will no longer drop items when hit [Fracture]"
+            },
+            {
+              "type": "none",
+              "text": "Techrolls now conserve previous momentum like Melee [Fracture]"
+            },
+            {
+              "type": "none",
+              "text": "UCF-style shield dropping has been added [Fracture]"
+            },
+            {
+              "type": "none",
+              "text": "Powershield Damage Multiplier x0.75 > x1 [DukeItOut]"
+            },
+            {
+              "type": "none",
+              "text": "When C-Stick is set to grab in Custom Controls: C-Stick performs chargeable smash attacks [wiiztec]"
+            },
+            {
+              "type": "none",
+              "text": "Footstool knockback has been normalized for all characters. All characters will fall 50 units before being actionable again. Number of frames varies depending on fall speed"
+            },
+            {
+              "type": "none",
+              "text": "Characters can no longer be footstooled out of glide attacks [Eon]"
+            },
+            {
+              "type": "none",
+              "text": "Characters can now drift when hitstun ends prematurely [Eon]"
+            },
+            {
+              "type": "none",
+              "text": "ECB properly updates upon grabbing a ledge [DukeItOut]"
+            },
+            {
+              "type": "none",
+              "text": "Shield button while tripped goes into get-up [Standardtoaster, Magus, Eon]"
+            },
+            {
+              "type": "none",
+              "text": "Glancing Blow Threshold is zero [Magus, Eon]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Stages:",
+      "attributes": [
+        "PMBR Stages have been added",
+        "R no longer toggles pages, Start alts have been moved to R, hidden R alts have been moved to Y (including concert smashville)"
+      ],
+      "moves": []
+    },
+    {
+      "title": "Bowser:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes:"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Weight: 118 > 113"
+            },
+            {
+              "type": "buff",
+              "text": "Jump Startup Time: 6 > 5"
+            },
+            {
+              "type": "buff",
+              "text": "Empty Landing Time: 6 > 5"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab 1 & 2"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Jab 1 adjusted animation so that the first frame of hitboxes hits in front of him rather than completely to the side"
+            },
+            {
+              "type": "buff",
+              "text": "Jab 2 startup 8 > 6"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Added 3rd hitbox to sweet spot to match sour spot. Has the KB stats of the sour spot: but the angle of the sweet spot."
+            },
+            {
+              "type": "neutral",
+              "text": "Up Tilt interpolation glitch has been fixed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Armor comes out 3 frames earlier"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Armor lasts until frame 19 from 13"
+            },
+            {
+              "type": "nerf",
+              "text": "The 2nd hitbox that happens upon bowser landing now only hits grounded opponents"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Hitboxes no longer clank"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Damage 23 > 22"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Standing Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup 9 > 7"
+            },
+            {
+              "type": "buff",
+              "text": "Total animation frames 36 > 31"
+            },
+            {
+              "type": "buff",
+              "text": "Grab X Offset 14.175 > 16.1, Middle grab box X Offset 11.7 > 10.07, Innermost grab box X Offset 7.2 > 6.2: Size 2.73 > 3.23"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Inside grabbox size increased in size to fix dead zone"
+            },
+            {
+              "type": "buff",
+              "text": "IASA 52 > 48"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Firebreath > Fireball)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Initial Hitbox Damage depends on distance traveled 16% for first 42 frames: 14% after that, explodes on contact"
+            },
+            {
+              "type": "neutral",
+              "text": "Fireball takes roughly 10 seconds to fully recharge"
+            },
+            {
+              "type": "neutral",
+              "text": "While uncharged, Bowser has access to a bite attack"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Koopa Klaw)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug where character actions wouldn’t update if thrown from a buffered Koopa Klaw throw. As a result: this slows down the fastest possible throw by 2 frames"
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Grounded Version"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Added 3rd grabbox and extended grabbox outward"
+                },
+                {
+                  "type": "buff",
+                  "text": "Slash hitbox active frames 2 > 3"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Cleaned up GFX timing"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Aerial Side Special Down"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "IASA 51 > 45"
+                },
+                {
+                  "type": "buff",
+                  "text": "Bowser now gets a small boost of momentum right after punching"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Fixed a bug where aerial side b down could not do damage to opponents that were too close to the ground"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Whirling Fortress)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Grounded initial hit KBG 85 > 80"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Ledge Jump IASA 4 > 7"
+            },
+            {
+              "type": "neutral",
+              "text": "Bowser’s armor while charging smashes now works properly"
+            },
+            {
+              "type": "buff",
+              "text": "Missed tech rolls given slightly more distance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Captain Falcon:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused Down B/Side B to ignore wall interactions when B-Reversed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Charizard:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Weight 110 > 106"
+            },
+            {
+              "type": "buff",
+              "text": "Shield animation improved to better cover his head"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "SDI Multiplier 1.2x > 1.0x"
+            },
+            {
+              "type": "neutral",
+              "text": "Tipper Hit Angle 82 > 75"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Sweet Spot Size 6 > 5.25"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Outermost Hitboxes X Offsets 19.75/-16.75 > 17/-14"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Hitboxes modified to better match his tail"
+            },
+            {
+              "type": "nerf",
+              "text": "Hitboxes terminate 4 frames earlier 25 > 21"
+            },
+            {
+              "type": "buff",
+              "text": "Auto Cancel Window moved up from frame 37 > 34"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Intangibility on Wings, Head, and Neck removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Strong Hit active frames increased from 4 > 5"
+            },
+            {
+              "type": "buff",
+              "text": "Sweetspot given to late hit +2% damage on tip of tail 9% > 11%"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Standing Grab IASA 36 > 31"
+            },
+            {
+              "type": "buff",
+              "text": "Dash Grab IASA 44 > 41"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Throw"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Made weight independent"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Fire Spin)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Aerial Hit BKB 70 > 55, KBG 95 > 100"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Glide)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Glide no longer infinite based on momentum, now terminates after 60 frames"
+            },
+            {
+              "type": "buff",
+              "text": "Glide will only consume one jump when used"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Fly)"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "neutral",
+                "text": "Height and Charge times modified. Format is frames of charge = distance."
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "0-5 = 4.0"
+                },
+                {
+                  "type": "neutral",
+                  "text": "6-11 = 4.25"
+                },
+                {
+                  "type": "neutral",
+                  "text": "12-17 = 4.6"
+                },
+                {
+                  "type": "neutral",
+                  "text": "18+ = 4.8"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Roll distance increased by 5 units on forward/back roll"
+            },
+            {
+              "type": "buff",
+              "text": "Missed tech get up rolls modified to move him more throughout the animation, and distance has been increased"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Dedede:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Weight 112 > 107"
+            },
+            {
+              "type": "buff",
+              "text": "Jump Startup Time 6 > 5"
+            },
+            {
+              "type": "buff",
+              "text": "Empty Landing Lag 6 > 5"
+            },
+            {
+              "type": "buff",
+              "text": "Shield size 12 > 13.5"
+            },
+            {
+              "type": "buff",
+              "text": "Powershield ratio 0.75 > .9"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab 1 & 2"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Jab 1 startup 11 > 8"
+            },
+            {
+              "type": "buff",
+              "text": "Jab 2 startup 11 > 8"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Intangibility matched to active hitboxes 7-9 > 7-15"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup 42 > 37"
+            },
+            {
+              "type": "buff",
+              "text": "Added a hitbox to address a dead zone near DDD’s hands"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup 7 > 6"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Fixed dead zone by adding new flub hitbox on DDD’s body: flub hit does 13% (normal hit is 15%)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Added a small hitbox to his other foot to cover a deadzone: stats match primary hit"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Swallow)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Outer windbox size shrunk 7 > 5"
+            },
+            {
+              "type": "buff",
+              "text": "Minimum number of frames windboxes are out 39 > 27"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Waddle Toss)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Gordo damage 22% > 18% (KB uncompensated)"
+            },
+            {
+              "type": "buff",
+              "text": "Endlag on grounded version 64 > 59"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that would cause Waddle Doos to kill themselves on Smashville/Green Hill Zone platforms"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that would cause Gordo’s to occasionally get stuck in DDD’s face"
+            },
+            {
+              "type": "neutral",
+              "text": "DDD can no longer throw capsules with side b"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Jet Hammer)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Jump Squat during Down Special matched to regular jump squat: 7 > 5"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Fixed dead zone on standing grab and dash grab by pulling in inner most grabboxes 7.4 > 5.4"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Grab"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "buff",
+                "text": "Adjusted in size and offset to no longer be low profiled"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Size 3.75 > 5.45, Y Offset 9 > 7.4, X offsets variously adjusted"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up-throw"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Release point adjusted to be directly above him"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "DDD can now fall through platforms during mid air jumps"
+            },
+            {
+              "type": "neutral",
+              "text": "Dedede will now always win if the game ends via swallocide"
+            },
+            {
+              "title": {
+                "type": "buff",
+                "text": "Dedede’s hurt-boxes have been adjusted"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Head size 5.1 > 4.5"
+                },
+                {
+                  "type": "buff",
+                  "text": "Body size 7 > 6.7"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Diddy Kong:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "buff",
+                "text": "Initial Hit:"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Back hitbox removed, BKB 60 > 65, Hitlag Multiplier 1.0x > 0.75x"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Jump height notably reduced"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "SFX on initial hit modified to sound slightly stronger"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Monkey Flip)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Grab Active frames reduced by 3, 6-23 > 6-20"
+            },
+            {
+              "type": "neutral",
+              "text": "Diddy has 25 frames to input an option after connecting with the command grab, otherwise he will default to the meteor"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Rocketbarrel Boost)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Barrels no longer clank"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Donkey Kong:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Weight 114 > 109"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Additional hitbox has been added to his knee to prevent whiffing"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "First Active Frame 8 > 7"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Giant Punch)"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "none",
+                "text": "Grounded"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Vertical Hit Base Damage 12 > 6"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Vertical Hit Full Damage 28 > 24"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Aerial"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Vertical Hit Base Damage 12 > 6"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Vertical Hit Full Damage 25 > 22"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Horizontal/Sakurai Hit Full Damage 27 > 25"
+                }
+              ]
+            },
+            {
+              "type": "nerf",
+              "text": "Intangibility removed from full charge punch: replaced with intangibility on fist only"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Spinning Kong)"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "none",
+                "text": "Grounded"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Damage on first loop 8 > 5"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Aerial"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Damage on first loop 5/4 > 3"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Damage on second loop 2 > 1"
+                }
+              ]
+            },
+            {
+              "type": "nerf",
+              "text": "Landing Lag normalized from 0-7 > 15"
+            },
+            {
+              "type": "buff",
+              "text": "Can now properly edge cancel"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Hand Slap)"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "none",
+                "text": "Grounded"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "X Offset of outermost hitboxes 14/-14 > 12/-12"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Aerial (Added)"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Early Hit 12%: BKB 55: KBG 60: Angle 361: Shield Damage 15"
+                },
+                {
+                  "type": "buff",
+                  "text": "Late Hit 5%: BKB 35: KBG 80: Angle 361: Shield Damage 1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed visual bug on max charge punch"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Falco:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Initial hit active frames: 4 > 10"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Hitbox that does virtually no knockback on 2nd hit has been standardized to match the other hits"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Normalized inside hit to match regular angle"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Falco Phantasm)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Window for shortest shorten increased from 1 frame to 2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Fire Bird)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Falco now has Fox’s up B flame hitboxes on startup"
+            },
+            {
+              "type": "buff",
+              "text": "Flames do 1% per hit and loop 7 times"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Shine)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that allowed Falco to grab ledge during his reflect frames"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fox:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Damage: 3/2 > 2/2"
+            },
+            {
+              "type": "buff",
+              "text": "SDI Multiplier 1.0x > 0.9x"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Flub hitbox damage: 13 > 10: Knockback uncompensated"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Fox Illusion)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Window for shortest shorten increased from 1 frame to 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ganondorf:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Initial Dash 1.3 > 1.45"
+            },
+            {
+              "type": "buff",
+              "text": "Max Run Speed 1.35 > 1.4"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Angles (361/32) > 40"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Initial crotch hitbox no longer hits aerial opponents"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Animation modified to give more range"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Comes out one frame earlier to hit low profiles in front of him"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Nair"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Active Frames per kick 2/2 > 4/5"
+            },
+            {
+              "type": "nerf",
+              "text": "Autocancel Frame 22 > 25"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Standing Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Animation slightly modified to give Ganon more horizontal range"
+            },
+            {
+              "type": "buff",
+              "text": "Outer Grabbox: Y Offset 11.81 > 8.8: Z Offset 7.6 > 10: Size 3.91 > 3.95"
+            },
+            {
+              "type": "buff",
+              "text": "Inner Grabbox: Y Offset 11.81 > 11: Z Offset 2.53 > 4: Size 3.91 > 3.95"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Outer/Middle/Inner Y Offsets 10.97/9.97/8.97 > 9.47/8.47/7.47"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Throw"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Angle 100 > 80"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Dead Man’s Drift)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Aerial float IASA 15 > 8"
+            },
+            {
+              "type": "buff",
+              "text": "Maximum float time 71 > 80"
+            },
+            {
+              "type": "buff",
+              "text": "Ganondorf has more control over his horizontal drift forward and slightly more control over his backward drift."
+            },
+            {
+              "type": "buff",
+              "text": "The rate at which he loses vertical height increases over time but much more slowly than vanilla."
+            },
+            {
+              "type": "buff",
+              "text": "Ganon can cancel Dead Man’s Drift slightly later in the animation with Cape 49 > 59"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Cape)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Hitboxes reworked to hit notably lower"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Dark Dive)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "IASA on throw sped up 61 > 52"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "<100% Ledge stand intangibility 23 > 31"
+            },
+            {
+              "type": "neutral",
+              "text": ">100% Ledge stand intangibility 50 > 56"
+            },
+            {
+              "type": "neutral",
+              "text": "Get up attack no longer clanks"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that prevented down b/side b wall interactions when b reversed"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused aerial side b to not fully connect with certain characters"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ice Climbers:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "SDI Multiplier 1.0x > 0.8x"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Spike Hitbox BKB 40 > 50, KBG 90 > 50"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Squall Hammer)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Synced mash vertical velocity boost .8 > .7"
+            },
+            {
+              "type": "buff",
+              "text": "Aerial solo initial vertical velocity .6 > .85"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Blizzard)"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "neutral",
+                "text": "Damage, Knockback, Size, and Angle made uniform between hitboxes"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "Damage 1%, Angle 70, BKB 5, KBG 130, Size 4.15"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Removed an additional hitbox to slightly lower max damage"
+                }
+              ]
+            },
+            {
+              "type": "neutral",
+              "text": "Speed/Distance reduced from 2.8 > 2.4"
+            },
+            {
+              "type": "neutral",
+              "text": "Spread/Angle modified to cover a much more consistent path"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Belay)"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "nerf",
+                "text": "Nana hitbox modified to decrease its power as she travels (Original is 16% BKB 60, KBG 85):"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Frame 0-10: Damage 12%, BKB 60, KBG 104"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Frames 11-20: Damage 10%, BKB 50, KBG 120"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Frames 21-Ending: Damage 8%, BKB 40, KBG 140"
+                }
+              ]
+            },
+            {
+              "type": "neutral",
+              "text": "Nana now has Ice GFX trailing off of her to indicate active frames"
+            },
+            {
+              "type": "buff",
+              "text": "Characters can no longer grab the ledge while Nana is occupying it during Up B"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Nana made intangible on frame 1 of side b in order to prevent the fusion glitch from happening"
+            },
+            {
+              "type": "neutral",
+              "text": "Footstool Short Hop Initial Vertical Velocity increased 2.15 > 2.55"
+            },
+            {
+              "title": {
+                "type": "nerf",
+                "text": "Nana’s damage output has been lowered on most attacks to offset the high synced damage output. Knockback has been compensated on every move so they hit exactly the same."
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Dash Attack 9 > 6"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Forward Tilt 8 > 5"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Up Tilt 7 > 4 (final hit only)"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Down Tilt 5 > 4"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Neutral Air 8 > 6"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Forward Air 11/12/13 > 9/9/10"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Back Air 12/11 > 8/7"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Up Air 9/7 > 7/5"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Down Air 9 > 6"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ike:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Inside hitbox on his body removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Blue Aura effect added on spike hit"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Normal Hit Damage 13% > 14% (No KB Comp)"
+            },
+            {
+              "type": "nerf",
+              "text": "Sweet Spot Damage 16% > 15% (No KB Comp)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Standing Grab outside grabbox Y offset 9 > 7.2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Quickdraw)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "One Hit KO BKB 300 > 400"
+            },
+            {
+              "type": "nerf",
+              "text": "Aerial Landing Lag after going into helpless state 10 > 15"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that would cause Ike to have variable release timing if he landed during the start up of Quick Draw"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Aether)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Spinning Hitboxes KBG 100 > 50"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Counter)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Intangibility on attack increased by 1 frame to fully cover active hitbox frames"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ivysaur:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Shield size increased from 6.5 > 7.15"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab 1 & 2"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Now clankable"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Looping hit angles modified to link more consistently"
+            },
+            {
+              "type": "buff",
+              "text": "Lopping hits hitlag multiplier lowered 1.0x > 0.67x"
+            },
+            {
+              "type": "buff",
+              "text": "Added two strong hitboxes behind her to link into a launching hit more consistently"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Now clankable"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Damage swapped between inside of vines and tipper: maintaining the consistency of tipper vine being the sweet spot"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Standing Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup 14 > 12"
+            },
+            {
+              "type": "buff",
+              "text": "Active frames 2 > 3"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup 12 > 11"
+            },
+            {
+              "type": "buff",
+              "text": "Outermost grab box extended +2 units slightly more outward to better match vines"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Pivot Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup 13 > 11"
+            },
+            {
+              "type": "buff",
+              "text": "Active frames 2 > 4"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Solarbeam)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Required Charge 22 > 18"
+            },
+            {
+              "type": "neutral",
+              "text": "Beam now travels infinitely"
+            },
+            {
+              "type": "nerf",
+              "text": "Beam damage lowered from 25/22 > 22/19"
+            },
+            {
+              "type": "buff",
+              "text": "KBG 85 > 89"
+            },
+            {
+              "title": {
+                "type": "neutral",
+                "text": "All Healing moves reworked to heal and charge the following amounts"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "Up Air/Down Air 4%"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Up Smash 8%"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Up Throw 3%"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Pummel 1% (no change)"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Synthesis 1% (no change)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug where Ivy’s model shaked rapidly when getting grabbed"
+            },
+            {
+              "type": "neutral",
+              "text": "Given costume specific razor leaf effects"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Jigglypuff:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Weight 60 > 62"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "First Active Frame 10 > 7"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Damage between two hitboxes normalized 14/15 > 15/15"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Can no longer be SDI’d"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Rollout)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Now ends in Fall as opposed to SpecialFall"
+            },
+            {
+              "type": "neutral",
+              "text": "Consumes all but one jump when used"
+            },
+            {
+              "type": "buff",
+              "text": "Upon a successful strike, Puff will be able to act again after a short time"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Sing)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Hitbox is consistent throughout, rather than refreshing three times"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Kirby:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Run Terminal Velocity: 1.5 > 1.55"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "First hitbox comes out one frame earlier in the animation: 11 > 10"
+            },
+            {
+              "type": "buff",
+              "text": "Weaker hits on the outside of his foot now match the strong hits"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Strong hit angle: 55 > 80"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Damage 5/5/7 > 3/3/8 (KB compensated)"
+            },
+            {
+              "type": "buff",
+              "text": "First two hits have been modified to better link into the third hit"
+            },
+            {
+              "type": "buff",
+              "text": "Frames between second hit and third hit lowered from 6 > 4"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Damage: 4 > 8"
+            },
+            {
+              "type": "buff",
+              "text": "Angle: 64 > 84"
+            },
+            {
+              "type": "buff",
+              "text": "BKB: 50 > 70"
+            },
+            {
+              "type": "buff",
+              "text": "KBG: 120 > 64"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Damage: 7 > 10"
+            },
+            {
+              "type": "buff",
+              "text": "KBG: 75 > 80"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Aerial Hammer First Hit KBG: 90 > 82"
+            },
+            {
+              "type": "nerf",
+              "text": "Aerial Hammer Second Hit BKB: 60 > 55"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Inhale)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Windboxes will now pull shielded opponents toward Kirby."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Final Cutter)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Descending cutter (spike) damage 2 > 5 (KB is the same due to WDSK)"
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Cutter Dash"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Angle: 70 > 82"
+                },
+                {
+                  "type": "buff",
+                  "text": "BKB: 20 > 50"
+                },
+                {
+                  "type": "buff",
+                  "text": "KBG: 116 > 75"
+                },
+                {
+                  "type": "buff",
+                  "text": "X offset: 0 > 6.25"
+                },
+                {
+                  "type": "neutral",
+                  "text": "The input for Cutter Dash has been modified slightly to check the vertical position of the control stick instead of the horizontal position."
+                },
+                {
+                  "type": "buff",
+                  "text": "Cutter dash can now be angled downward by holding down during the start up frames."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Stone/Slide Kick)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Stone Brake removed"
+            },
+            {
+              "type": "buff",
+              "text": "When grounded, Down + Special will now perform a slide kick attack"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "<100% roll from ledge IASA 60 > 50"
+            },
+            {
+              "type": "neutral",
+              "text": "Numerous hat changes have been implemented to make Kirby’s hats behave more like the character his is copying. This affects almost all characters. Detailed changes coming soon."
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed an inconsistency regarding throw inputs: which had different thresholds from every other character."
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that prevented Kirby from getting his up special back out of grab release"
+            },
+            {
+              "type": "neutral",
+              "text": "Kirby will now always win if the game ends via swallowcide"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Link:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Ground Friction: 0.09 > 0.08"
+            },
+            {
+              "type": "buff",
+              "text": "Jump Startup Time: 5 > 4"
+            },
+            {
+              "type": "buff",
+              "text": "Wall jump Horizontal Velocity 1.3 > 1.0"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Second Hit Tip Angle 95 > 93"
+            },
+            {
+              "type": "buff",
+              "text": "Second hit other hitbox angles 98 > 90"
+            },
+            {
+              "type": "buff",
+              "text": "SDI Multipliers on first two hits 1.0x > 0.5x"
+            },
+            {
+              "type": "nerf",
+              "text": "End lag increased slightly 16 > 20"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "IASA 28 > 27"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Throw"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Now always causes tumble"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Throw"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "KBG 50 > 40: BKB 60 > 85, Angle 90 > 85"
+            },
+            {
+              "type": "nerf",
+              "text": "Animation length increased slightly 50 > 51"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "BKB 35 > 40"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "BKB 35 > 40"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Arrow)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Hitbox Size 1 > 1.75 (fixes issues involving Z-axis)"
+            },
+            {
+              "type": "neutral",
+              "text": "Release point modified to better match visual"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Boomerang)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup 27 > 25"
+            },
+            {
+              "type": "neutral",
+              "text": "Release point modified to better match visual"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "All grabs have their active frames reverted to v3.5"
+            },
+            {
+              "type": "neutral",
+              "text": "Dash/Pivot tether grab box changed from having 1 hit grab box to having 2 smaller grab boxes next to each other"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "<100% Ledge getup attack active frames 27-29 > 26-29"
+            },
+            {
+              "type": "neutral",
+              "text": "Up Taunt - Sword Glow remains throughout instead of ending abruptly"
+            },
+            {
+              "type": "neutral",
+              "text": "Dash now rumbles on frame 1"
+            },
+            {
+              "type": "neutral",
+              "text": "Added costume specific Articles to OoT Link (Hookshot, Hero’s Bow, Boomerang)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lucario:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Weight 100 > 95"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "First Active Frame 6 > 5"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "First Active Frame 5 > 6"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Priority has been swapped. Innermost sourspot (hip) > sweet spot > middle leg sourspot. Previously sweetspot had lowest priority."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Only stalls momentum on the first two usages"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Taunt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Self Damage lowered from 5% > 3% per tick (still charges 5 aura per tick)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Extreme Speed)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Fixed a bug that prevents Lucario from being unable to use Up Special on the ground a second time after using it already"
+            },
+            {
+              "type": "buff",
+              "text": "Fixed a bug that prevented Lucario from being able to sweet spot on the left side of the stage while traveling straight"
+            },
+            {
+              "type": "buff",
+              "text": "Connecting horizontally with a wall with rotate Lucario upward regardless of the direction he’s facing."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Aura Sphere graphic modified to pulsate only horizontally, instead of both horizontally and vertically"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused Lucario to turn around when throwing an item in the air"
+            },
+            {
+              "type": "neutral",
+              "text": "Crawl Tilt Removed"
+            },
+            {
+              "type": "neutral",
+              "text": "Slightly modified hand GFX when aura is charged"
+            },
+            {
+              "type": "buff",
+              "text": "Removed second tail hurtbox"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Lucas:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "All Smash Attacks"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "All offense up smash attacks have been reworked to increase damage by 4% only. Knockback has been matched to the current iteration of offense up moves. The changes are as follows:"
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Forward Smash"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "25/24/23 > 21/20/19"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Down Smash"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "26/21 > 21/18"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Up Smash"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "30/24 > 24/20"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Strong hit active frames increased from 2 > 3"
+            },
+            {
+              "type": "neutral",
+              "text": "GFX modified to better match sweetspot"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Repeating hits Hitlag: x1.0 > x0.75"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Initial hit priority swapped between strong hit and weak hit (strong hit now has priority). Spike hitboxes remain unchanged."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "End Lag: 58 > 42"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (PSI Magnet)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Lingering hits Hitlag: x1.0 > x0.4"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (PK Thunder)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Lucas can reverse ledge grab for 10 extra frames after PK Thunder 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Luigi:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Attack"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Hitboxes modified to link slightly better"
+            },
+            {
+              "type": "buff",
+              "text": "Overall distance increased marginally"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Head Intangibility reduced 9-13 > 9-10"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Damage 15 > 12, KB compensated"
+            },
+            {
+              "type": "nerf",
+              "text": "Late Hit size 4.3 > 3.1"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Damage 12 > 14, KB compensated"
+            },
+            {
+              "type": "buff",
+              "text": "Landing Lag 25 > 21 (12 > 10 L-Cancelled)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "BKB 80 > 85, KBG 65 > 75"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Luigi Cyclone)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Variable that indicates use pushed back from frame 2 > 10"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Green Missile)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Can now edge cancel"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Super Jump Punch)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Grounded version has significantly reduced aerial drift"
+            },
+            {
+              "type": "neutral",
+              "text": "Aerial SFX matches grounded"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mario:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Tip Angle 80 > 85"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Arm sourspot BKB 25 > 30, KBG 96 > 97"
+            },
+            {
+              "type": "neutral",
+              "text": "Dr. Mario Electric Effect replaced with Light Effect"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Initial Hit Damage 15 > 16"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Strong hit hitbox size 2.73 > 3.1"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Strong Hit BKB: 50 > 45"
+            },
+            {
+              "type": "neutral",
+              "text": "Fire GFX added to regular Mario"
+            },
+            {
+              "type": "neutral",
+              "text": "Electric GFX added to Dr. Mario"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "BKB 80 > 85, KBG 72 > 78"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Jump Punch)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Intangibility: 3-9 > 3-6"
+            },
+            {
+              "type": "neutral",
+              "text": "Can no longer reverse hit"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Cape)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Reflect effect Active Frames: 12-34 > 12-31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Marth:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Wall Jump Horizontal Velocity: 1.3 > 1.0"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Now allows Shield directly out of IASA"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Throw"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Release point adjusted to resemble melee"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Dancing Blade)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Dancing Blade colors are now based on the direction used instead of being a set order. Previously, the order was Red, Blue, Green, Red. Now, Up = Blue, Side = Red, Down = Green."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Counter)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Intangibility frames on attack increased by 1 to full cover active hitbox frames"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Forward getup roll intangibility: 6-20 > 1-20 (Matched to be universal)"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug where get up attack while face up started a frame late"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Meta Knight:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug where the front hitbox on jab didn’t connect"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Attack"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Strong Hit Damage: (6/7/8) > 7"
+            },
+            {
+              "type": "neutral",
+              "text": "Angle: (60/70/80) > 70"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Frame 3 hitboxes all decreased to size 0. The effectively makes the hitbox frame 4, but interpolates from the frame 3 location"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Hitboxes modified to reverse hit less often"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Mach Tornado)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "No longer bounces off of the stage"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Drill Rush)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "KBG of pop-up hit 115 > 102"
+            },
+            {
+              "type": "nerf",
+              "text": "Angle of pop-up hit 97/93 > 83"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Shuttle Loop)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Can no longer reverse hit"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Dimensional Cape)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Instant Dimensional Cape BKB 40 > 23, KBG 103 > 114, Hitlag Mult 1.7x > 1.3x"
+            },
+            {
+              "type": "nerf",
+              "text": "Reverse Ledge Grab terminates 4 frames earlier: 12 > 8"
+            },
+            {
+              "type": "nerf",
+              "text": "When starting and finishing Down B on the ground, Meta Knight will experience 5 extra frames of lag 15 > 20"
+            },
+            {
+              "type": "neutral",
+              "text": "Full Dimensional Cape given the Dark Element and a new SFX"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Get Up Attack"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Hitboxes reworked to not have a large hitbox behind him"
+            },
+            {
+              "type": "buff",
+              "text": "Damage normalized with other get up attacks: 5 > 6"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Others"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Air Dodge normalized to the rest of the cast: ledge grabbox active 41 > 51"
+            },
+            {
+              "type": "buff",
+              "text": "DACUS normalized between first and second frame"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mewtwo:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Weight: 97 > 92"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "X offset of outer hit 0 > -2 (pulled inward)"
+            },
+            {
+              "type": "neutral",
+              "text": "Graphics pulled in to match"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Final hit & landing hitbox size: 11 > 10"
+            },
+            {
+              "type": "nerf",
+              "text": "Landing hitbox: 70 BKB > 60 BKB, 80 KBG > 70 KBG"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Inside X Offset 3.73 > 4.73 (reduces back grabs)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Upthrow"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "KBG: 70 > 67"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Windbox removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Get Up Attack"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Large hitboxes on the side of him modified to be one large hitbox that covers the center of his body"
+            },
+            {
+              "type": "buff",
+              "text": "Damage increased 5 > 6"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Shadow Ball wiggle modified slightly to increase with charge"
+            },
+            {
+              "type": "neutral",
+              "text": "Forward throw modified to prevent certain characters from stretching to a very large size for a frame"
+            },
+            {
+              "type": "buff",
+              "text": "DACUS partially normalized between first and second frame"
+            },
+            {
+              "type": "nerf",
+              "text": "Air Dodge normalized to the rest of the cast: ledge grabbox active 41 > 51"
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Ledge occupancy normalized with the rest of the cast:"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "ledge occupancy on roll from ledge <100%: 56 > 43"
+                },
+                {
+                  "type": "neutral",
+                  "text": "ledge occupancy on roll from ledge >100%: 80 > 55"
+                },
+                {
+                  "type": "neutral",
+                  "text": "ledge occupancy on attack from ledge <100%: 56 > 43"
+                },
+                {
+                  "type": "neutral",
+                  "text": "ledge occupancy on attack from ledge >100%: 70 > 51"
+                },
+                {
+                  "type": "neutral",
+                  "text": "ledge occupancy on stand from ledge >100%: 60 > 45"
+                }
+              ]
+            },
+            {
+              "type": "neutral",
+              "text": "Given costume specific trails on his tail animations"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Mr Game & Watch:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Weight 75 > 80"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Innermost hitbox removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "BKB on aerial opponents 80 > 60"
+            },
+            {
+              "type": "neutral",
+              "text": "Hitbox shrunk down into two smaller hitboxes to better match the animation"
+            },
+            {
+              "type": "neutral",
+              "text": "Animation modified so that the manhole stops flipping when hitboxes terminate"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Strong inside hit BKB 44 > 50 (matches tip and follow same consistency as weak hit)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Hitbox modified into three hitboxes to more accurately match the parachute"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Landing hitbox removed"
+            },
+            {
+              "type": "buff",
+              "text": "Can now autocancel starting on frame 18"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Landing hitbox on grounded opponents angle 270 > 290"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Throw"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Release point modified to be in front of him"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Throw"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "BKB 65 > 60, KBG 70 > 85"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Frames the meat article spends flashing after coming in contact with a surface  30 > 15"
+            },
+            {
+              "type": "buff",
+              "text": "Angle control has been improved, holding up/down generates one of the two highest/lowest angles, holding nothing generates one of the middle three angles"
+            },
+            {
+              "type": "buff",
+              "text": "Small bacon no longer prevents a large bacon from spawning"
+            },
+            {
+              "type": "nerf",
+              "text": "Only one bacon can be generated per neutral b press"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "none",
+                "text": "1 Hammer"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "No longer damages G&W"
+                },
+                {
+                  "type": "buff",
+                  "text": "Given very small flinch knockback"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "5 Hammer"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Looping hit damage lowered from 6 > 4"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "7 Hammer"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "No longer heals, only drops Apple on hit"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "8 Hammer"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Damage 20 > 15"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "9 Hammer"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "BKB 70 > 9, KBG 80 > 99"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Initial Hit KB angle 80 > 65"
+            },
+            {
+              "type": "buff",
+              "text": "Initial hit transfers into second hit 2 frames earlier in the animation 11 > 9"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Maximum Damage per projectile 20 > 13"
+            },
+            {
+              "type": "nerf",
+              "text": "Minimum Total Damage 10 > 8"
+            },
+            {
+              "type": "buff",
+              "text": "Multiplier 2.8 > 3.2"
+            },
+            {
+              "type": "nerf",
+              "text": "Bucket Braking removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed an issue with his tournament winner where he would SD if he attempted to waveland on his first active frame"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused his Up Special to not refresh when being grab released"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ness:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Weight 94 > 90"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Attack"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Active frames increased on each hitbox from 1 > 2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "SDI Multiplier x0.5 > x1.0 (Hitlag remains at x0.85)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Head intangibility increased to match hitboxes 2 > 5"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up/Down Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Power now increases with charging"
+            },
+            {
+              "type": "buff",
+              "text": "Repeating hitboxes modified to hit more frequently with lower damage"
+            },
+            {
+              "type": "buff",
+              "text": "Charging hitboxes now hit more frequently"
+            },
+            {
+              "type": "buff",
+              "text": "Frames between hits 11 > 9"
+            },
+            {
+              "type": "nerf",
+              "text": "Damage 2% > 1%"
+            },
+            {
+              "type": "buff",
+              "text": "Hitlag Multiplier 1.2x > 1.0x"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Charge Distance 11 > 15"
+            },
+            {
+              "type": "buff",
+              "text": "Z Translation on most forward frame 26.07514 > 31.5"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Damage increased 15 > 16, KB compensated"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (PK Fire)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "4 frame delay added before pillar activation. This is so the hitlag isn’t instantly overwritten by the first pillar hitbox"
+            },
+            {
+              "type": "buff",
+              "text": "Aerial PK Fire IASA 62 > 53"
+            },
+            {
+              "type": "buff",
+              "text": "Lifetime of Spark 22 > 24"
+            },
+            {
+              "type": "buff",
+              "text": "Horizontal Ground Speed 2.5 > 2.8"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (PSI Magnet)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Can grab ledge during end lag"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (PK Thunder)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "PK Thunder 2 second hitbox size increased 4.512 > 5"
+            },
+            {
+              "type": "buff",
+              "text": "If Ness transitions into special fall out of PKT2, his landing lag will be reduced from 20 > 10"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Up Taunt Flash effect bug fixed"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Olimar:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Air Acceleration B .02 > .03"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Pikmin Health"
+          },
+          "changes": [
+            {
+              "type": "none",
+              "text": "R/Y/B/W/P"
+            },
+            {
+              "type": "neutral",
+              "text": "14/17/20/10/25 > 18/18/18/16/22"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "All Smash Attacks and Aerials"
+          },
+          "changes": [
+            {
+              "type": "none",
+              "text": "Excess shield damage has been removed from all Pikmin, with the exception of  White. White KB stats have been matched exactly to 3.6 Yellow without the benefit of the speed or distance, however, White Pikmin now do bonus shield damage, which increases with leaf/bud/flower > 8/12/16. Yellow had BKB increased on Fair/Bair, WHITE DOES NOT MATCH THIS INCREASE."
+            },
+            {
+              "type": "buff",
+              "text": "All Pikmin have been made intangible during the active frames of Olimar's aerials"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Can no longer reverse hit"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Intangibility pushed back to from frame 1 > 5"
+            },
+            {
+              "type": "buff",
+              "text": "Active Frames 7 - 10 > 5 - 8"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Red Flowered Hitbox size increased to match other Pikmin and Leaf/Bud 5 > 5.74"
+            },
+            {
+              "type": "buff",
+              "text": "Red Late Hitbox sized increased to match other Pikmin 4.75 > 5.74"
+            },
+            {
+              "type": "nerf",
+              "text": "Purple Strong Hit sizes decreased to match other Pikmin 6.5 > 5.74"
+            },
+            {
+              "type": "buff",
+              "text": "Purple Late Hitbox size increased to match other Pikmin 5.5 > 5.74"
+            },
+            {
+              "type": "neutral",
+              "text": "Purple Late Hit KBG 100 > 90, BKB 40 > 55"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "none",
+              "text": "Late Hitboxes:"
+            },
+            {
+              "type": "neutral",
+              "text": "Red BKB 22 > 20, KBG 95 > 100"
+            },
+            {
+              "type": "neutral",
+              "text": "Blue BKB 30 > 20"
+            },
+            {
+              "type": "neutral",
+              "text": "Purple BKB 10 > 25, Angle 28 > 35"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Nair"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "All hitboxes had their KB modified to promote more consistent linking."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Purple BKB 55 > 42, KBG 97/94/91> 107/104/101"
+            },
+            {
+              "type": "buff",
+              "text": "Yellow BKB 30 > 35"
+            },
+            {
+              "type": "neutral",
+              "text": "Can no longer reverse hit"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed an issue that caused Pikmin to go into the Z Axis during the later hitboxes"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Purple BKB 55 > 42, KBG 88/86/84 > 98/96/94"
+            },
+            {
+              "type": "buff",
+              "text": "Yellow BKB 30 > 35"
+            },
+            {
+              "type": "buff",
+              "text": "Blue BKB 0 > 12"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "none",
+              "text": "Late Hit:"
+            },
+            {
+              "type": "neutral",
+              "text": "Red Angle 87 > 80, weak hit damage 7 > 9"
+            },
+            {
+              "type": "neutral",
+              "text": "Yellow Angle 87 > 80"
+            },
+            {
+              "type": "neutral",
+              "text": "Purple Angle 90 > 80, weak hit damage 8 > 9. KBG 90 > 100"
+            },
+            {
+              "type": "neutral",
+              "text": "Blue BKB 20 > 30"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Late hit Sakurai angle hitbox removed (it almost never hit anyway)"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused Pikmin to go into the Z Axis during the later hitboxes."
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused certain Pikmin's specific hitboxes to only hit aerial opponents."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Active frames reduced from 9-23 > 9-20"
+            },
+            {
+              "type": "buff",
+              "text": "Pikmin reach their max distance 3 frames earlier"
+            },
+            {
+              "type": "nerf",
+              "text": "Max distance shortened by a very small amount, hardly noticeable"
+            },
+            {
+              "type": "nerf",
+              "text": "IASA on all grabs increased by 2 frames"
+            },
+            {
+              "type": "nerf",
+              "text": "Standing: 44 > 46"
+            },
+            {
+              "type": "nerf",
+              "text": "Dash/Pivot: 54 > 56"
+            },
+            {
+              "type": "nerf",
+              "text": "White Pummel Damage 2/4/6 > 2/3/4"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Throws"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Yellow and Purple throws modified to match Red Throws, White throws remain weaker, Blue Throws remain stronger"
+            },
+            {
+              "type": "none",
+              "text": "Forward Throw:"
+            },
+            {
+              "type": "neutral",
+              "text": "Purple: Damage 7 > 6, KBG 77 > 70, BKB 80 > 70"
+            },
+            {
+              "type": "neutral",
+              "text": "Yellow: Damage 7 > 6, KBG,50 > 70, BKB 60 > 70 , Trajectory 45 > 361"
+            },
+            {
+              "type": "none",
+              "text": "Back Throw"
+            },
+            {
+              "type": "neutral",
+              "text": "Purple: Damage 9 > 7, KBG 60 > 70, BKB 80 > 70"
+            },
+            {
+              "type": "neutral",
+              "text": "Yellow: Damage 9 > 7, KBG 52 > 70, BKB 48 > 70"
+            },
+            {
+              "type": "none",
+              "text": "Up Throw"
+            },
+            {
+              "type": "neutral",
+              "text": "Up throw on R/Y/P BKB lowered by 15"
+            },
+            {
+              "type": "neutral",
+              "text": "Red: BKB 80 > 65"
+            },
+            {
+              "type": "neutral",
+              "text": "Purple: Damage 10 > 7, KBG 95 > 75, BKB 55 > 65"
+            },
+            {
+              "type": "neutral",
+              "text": "Yellow: Damage 9 > 7, KBG 92 > 75, BKB 55 > 65"
+            },
+            {
+              "type": "neutral",
+              "text": "Blue: BKB 55 > 70, KBG 96/87/80 > 86/77/70"
+            },
+            {
+              "type": "none",
+              "text": "Down Throw"
+            },
+            {
+              "type": "neutral",
+              "text": "Purple: Damage 7 > 6, KBG 100 > 75, BKB 60 > 85"
+            },
+            {
+              "type": "neutral",
+              "text": "Yellow: Damage 8 > 6, KBG 69 > 75, BKB 66 > 85"
+            },
+            {
+              "type": "neutral",
+              "text": "Electric Element removed from Yellow Down Throw special collision"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Pluck)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Pluck Brake removed"
+            },
+            {
+              "type": "buff",
+              "text": "Aerial Pluck IASA 43 > 36"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Pikmin Toss)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Blue Clank Hitbox Bone 5 > 0"
+            },
+            {
+              "type": "buff",
+              "text": "Clank Hitbox Damages all normalized to 10%"
+            },
+            {
+              "type": "nerf",
+              "text": "Poisoning removed from White Leaf/Bud latch attack"
+            },
+            {
+              "title": {
+                "type": "neutral",
+                "text": "White explosion knockback adjusted to always have the KB stats of the bud level explosion. Damage still increases at each level."
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "Leaf: Damage 6%, BKB 16 > 32, KBG 50 > 71"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Flower: Damage 8%, BKB 50 > 32, KBG 80 > 59"
+                }
+              ]
+            },
+            {
+              "type": "neutral",
+              "text": "Pikmin will now attack a maximum of 5 times. This will still degrade with damage, but not until around 160%~. Mashing and attacking will still cause them to fall off earlier."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up B (Ionium Jet)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Horizontal Distance added during up b 1.3 > 1 (this makes the base angle more upward than outward, allowing better backwards control)"
+            },
+            {
+              "type": "buff",
+              "text": "Horizontal Distance multiplier .2 > .8"
+            },
+            {
+              "type": "buff",
+              "text": "Vertical Distance multiplier .2 > .4"
+            },
+            {
+              "type": "buff",
+              "text": "Olimar starts moving more quickly frame 16 > 9"
+            },
+            {
+              "type": "buff",
+              "text": "Landing Lag 30 > 24"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "none",
+                "text": "Hurtboxes"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Helmet: Y Stretch 2.1 > 0"
+                },
+                {
+                  "type": "buff",
+                  "text": "Bag: Z Stretch -1 > 0"
+                },
+                {
+                  "type": "buff",
+                  "text": "Right Foot: X Offset 0 > -0.3, Y Offset 0.4 > 0.2, Y Stretch 0.4 > 0"
+                },
+                {
+                  "type": "buff",
+                  "text": "Left Foot: X Offset 0 > 0.3, Y Offset -0.4 > -0.2, Y Stretch -0.4 > 0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Peach:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Now always starts on Golf Club (Cycle goes Club, Pan, Racket)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Damage of 3rd/4th/5th rotations lowered from 13/11 > 11/9, KB compensated"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "KBG 68 > 70 (matched to Melee)"
+            },
+            {
+              "type": "buff",
+              "text": "Modified hitbox size and placement. A third hitbox was added in front of her to act as a “tipper” that does +1%, and has the light element. 1.1x hitlag multiplier added to make it +4 when FC'd on shield (matches other fair hits)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Turnip Pull/Pluck)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Stitch Face Base Damage 30 > 22"
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Turnip Odds Changes"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Grin 60.34% > 58.62%"
+                },
+                {
+                  "type": "buff",
+                  "text": "Dot Eyes 1.72% > 3.45%"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Winky, Dot Eyes, and Stitch are all different colors"
+                },
+                {
+                  "type": "nerf",
+                  "text": "No Longer able to pull Bomb or Beam Sword"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "buff",
+                "text": "Peach was given an aerial Down B hitgrab"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Damage 8, Angle 45, BKB 106, KBG, 0"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Trip animation height decreased"
+            },
+            {
+              "type": "neutral",
+              "text": "Given costume specific Toads"
+            },
+            {
+              "type": "buff",
+              "text": "DACUS distance normalized between first and second frame"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pikachu:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Pikachu learned Iron Tail! Metal GFX/SFX added (Aesthetic change only)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "SDI Multiplier: x1.0 > x0.8"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Hitboxes modified to better cover his body"
+            },
+            {
+              "type": "buff",
+              "text": "Intangibility added to tail"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Outermost Standing Grab Box X Offset: 6.33 > 6.83"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Skull Bash)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Can now edge cancel"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Quick Attack)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "No Longer Clanks"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "none",
+                "text": "Hurtboxes"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Head Hurtbox Size: 3.3 > 3.0"
+                },
+                {
+                  "type": "buff",
+                  "text": "Y Offset: 1.0 > 0.65"
+                },
+                {
+                  "type": "buff",
+                  "text": "Z Offset: 0.4 > 0.36"
+                }
+              ]
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused Pikachu to warp through the stage during Quick Attack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Pit:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Jump Startup Time: 5 > 4"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "All hitbox sizes on the second hit of uptilt increased by 1"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "neutral",
+                "text": "Meteor hitbox removed and replaced with a normal launcher hitbox"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "BKB 45 > 50, KBG 90 > 75, Angle 280 > 80"
+                },
+                {
+                  "type": "neutral",
+                  "text": "First Active Frame 9 > 8, IASA 30 > 27"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Reworked timings and knockback to link more consistently"
+            },
+            {
+              "type": "buff",
+              "text": "Multihits: x1 SDI > x0.5 SDI"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Inside hit angle 75 > 60, Outside hit angle 75 > 45"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Nair repeating hits: x1 Hitlag > x0.9 Hitlag, x1 SDI > x0.75 SDI (launching hit unchanged)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "IASA: 32 > 30"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Shield Bash)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Landing Lag: 40 > 30"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Glide)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Loses once per air-state glide on frame 4 now, instead of frame 14."
+            },
+            {
+              "type": "neutral",
+              "text": "Glide from ground consumes all but one jump starting on frame 17 (the same frame that the glide is considered “used”)"
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Glide Attack:"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "All hitboxes normalized to have the following stats: 12 Damage, 50 Angle, 55 BKB, 70 KBG"
+                },
+                {
+                  "type": "nerf",
+                  "text": "Active Frames: 6-13 > 6-9"
+                },
+                {
+                  "type": "buff",
+                  "text": "Landing Lag: 16 > 10"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Animation slightly polished"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Others"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Side Taunts voice SFX is now taunt cancelable"
+            },
+            {
+              "type": "buff",
+              "text": "Ledge stand intangibility <100% made to match rest of the cast: 27 > 31"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "R.O.B.:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "buff",
+                "text": "Shield Size increased from 10.6 > 11"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Shield start animation adjusted so his arms do not poke out as much"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Attack"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Damage on initial hit 6/7 > 8, KB compensated"
+            },
+            {
+              "type": "buff",
+              "text": "Damage on late hit outermost hitbox 4 > 5, KB compensated"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Angling Up/Down now increases/decreases damage by 1%"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Damage 4/5 > 6, KB Compensated"
+            },
+            {
+              "type": "buff",
+              "text": "Active Frames 1 > 2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Active frames increased 2 > 5"
+            },
+            {
+              "type": "neutral",
+              "text": "Angling Up/Down now increases/decreases damage by 1%"
+            },
+            {
+              "type": "neutral",
+              "text": "After 3 frames, all hitboxes have their damage lowered by 2%"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Initial hit can now hit aerial opponents"
+            },
+            {
+              "type": "buff",
+              "text": "Modified the animation slightly so he doesn’t extend fully upwards prior to the hitboxes coming out"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Strong Hit active frames increased by 2, 15-22 > 15-24"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "buff",
+                "text": "When boosting, first active frame 16 > 12"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "If R.O.B is not boosting, the first active frame is still 16"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Damage 8 > 9, throw KB compensated"
+            },
+            {
+              "type": "buff",
+              "text": "Added several hitboxes so characters take damage over time rather than all at once. Can hit other players on the screen"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Robo Beam)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug where pressing B on the first frame of fully charged beam caused nothing to happen"
+            },
+            {
+              "type": "buff",
+              "text": "Hitbox size of non-max laser 1.5 > 1.75"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Arm Rotor)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that would cause R.O.B to die/fly into the air when using grounded Side B"
+            },
+            {
+              "type": "nerf",
+              "text": "Begins reflecting projectiles slightly later frame 6 > 10"
+            },
+            {
+              "type": "buff",
+              "text": "Reflect Bubble increased in size 9 > 10"
+            },
+            {
+              "title": {
+                "type": "nerf",
+                "text": "Hitbox becomes weaker after 10 frames of travel"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "8%, 20BKB, 90KBG"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "buff",
+                "text": "Dash Attack Frame 2 transN translation 3.2 > 5.8"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "This gives his boost grab slightly more distance"
+                }
+              ]
+            },
+            {
+              "type": "neutral",
+              "text": "Forward/Backward/Dash item toss release point lowered slightly"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused Z gyro to disappear immediately when dropped within ROB’s first two airborne jump frames"
+            },
+            {
+              "type": "buff",
+              "text": "If R.O.B. is hit after using all three boosts, he will regain the ability to air dodge"
+            },
+            {
+              "type": "neutral",
+              "text": "Given costume specific arm trails"
+            },
+            {
+              "type": "neutral",
+              "text": "Given double jump rings"
+            },
+            {
+              "type": "neutral",
+              "text": "Jump GFX modified slightly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Roy:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Wall Jump Horizontal Velocity: 1.3 > 1.0"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Tilt"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Sweet spot damage: 14 > 13 (No KB Comp)"
+            },
+            {
+              "type": "nerf",
+              "text": "Sour spot: 60 BKB > 40 BKB, 70 KBG > 80 KBG"
+            },
+            {
+              "type": "buff",
+              "text": "Sweet spot now takes priority over sour spot"
+            },
+            {
+              "type": "neutral",
+              "text": "Angling Up/Down now increases/decreases damage by 1%"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Now allows Shield directly out of IASA"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Sweet spot Initial hit KBG: 82 > 85"
+            },
+            {
+              "type": "buff",
+              "text": "Sweet spot lingering hit KBG: 77 > 80"
+            },
+            {
+              "type": "nerf",
+              "text": "Sour spot KBG: 100 > 95"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Reverted Sweetspot to v3.5 Angle: 361 > 50"
+            },
+            {
+              "type": "neutral",
+              "text": "Reverted to v3.5 Animation"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Sweet spot priority on up air reworked, the inner body hitbox now takes priority over the tip sour spot (tip still has priority over sword/hilt hitboxes)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Throw"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Release point adjusted to resemble Melee"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Double Edge Dance)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Double Edge Dance colors are now based on the direction used instead of being a set order. Previously, the order was Red, Blue, Green, Red. Now, Up = Blue, Side = Red, Down = Green."
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "All variations except for xxV and the 4th swings"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Hitlag Multiplier: x1 > x0.9"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "xxV (3rd swing down)"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Hitlag Multiplier: x1 > x0.75 (repeating hits only)"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "xxx^ (4th swing up)"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Damage 10/8 > 11/9 (No KB Compensation)"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "xxV & xxxV (3rd & 4th swings down)"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "SDI Multiplier: x1 > x0.75 (repeating hits only)"
+                }
+              ]
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that would cause Roy to fly off the stage when hitting a shield with fourth hit of side b"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Blazer)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Roy’s Blazer has been reverted to v3.5, this includes the ledge grabbox and additional hangtime (Landing Lag still 30 frames)"
+            },
+            {
+              "type": "nerf",
+              "text": "Final Hit: 40 BKB > 20 BKB, 130 KBG > 155 KBG"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Counter)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Links bombs no longer bounce off of Roy’s counter"
+            },
+            {
+              "type": "buff",
+              "text": "Intangibility frames on attack increased by 1 to fully cover active hitbox frames"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug with his clank animation that could cause him to die on sloped terrain"
+            },
+            {
+              "type": "neutral",
+              "text": "Flare Blade GFX color fixed, was originally blue from Marths files"
+            },
+            {
+              "type": "neutral",
+              "text": "Sword Trail GFX clipping cleaned up on several moves"
+            },
+            {
+              "type": "neutral",
+              "text": "Forward getup roll intangibility: 6-20 > 1-20 (Matched to be universal)"
+            },
+            {
+              "type": "neutral",
+              "text": "Ledge getup roll intangibility: 1-27 > 1-39 (Matched to be universal)"
+            },
+            {
+              "type": "neutral",
+              "text": "Ledge getup attack active frames: 23-30 > 21-28"
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Up Taunt"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "“Boku wa Makenai” SFX plays on frame 5, previously 31"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Animation sped up by x1.2, IASA: 120 > 101"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Side Taunt"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "Animation reverted to v3.02"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Samus:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab1"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Y Offset 12.8 > 10.8"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Non-Angled Forward Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "2 Outermost Hitboxes lowered 0 > .75 (change in X offset)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Ice Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Sends grounded characters sliding backwards"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Ice Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Stats modified: Damage 17, BKB 40, KBG 85, Angle 361"
+            },
+            {
+              "type": "neutral",
+              "text": "No longer freezes"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Ice Up Smash"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "buff",
+                "text": "Initial sweet spot"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Angle 65 > 80, BKB 50 > 45, KBG 88 > 90"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "buff",
+                "text": "Secondary Hit"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Angle 75 > 80, BKB 20 > 40"
+                },
+                {
+                  "type": "buff",
+                  "text": "SFX Modified to sound more powerful"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Ice fair"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Active frames increased by 2"
+            },
+            {
+              "type": "buff",
+              "text": "Auto Cancels 3 frames earlier"
+            },
+            {
+              "type": "buff",
+              "text": "IASA lowered by 2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Standing Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Active frames increased from 11 > 12"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grounded Up Special (Screw Attack)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Initial hit no longer clanks"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Power Bomb)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Initial hit is now clankable"
+            },
+            {
+              "type": "neutral",
+              "text": "Explosion is no longer clankable"
+            },
+            {
+              "type": "neutral",
+              "text": "Now properly detonates on shields"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Height on trip animation lowered"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sheik:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "No longer able to double hit"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Chain)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Aerial Chain end lag reduced: 34 > 23"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Down and Back Throws now properly hit R.O.B."
+            },
+            {
+              "type": "buff",
+              "text": "Added an additional hitbox on her leg during <100% ledge get up attack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Snake:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Initial Dash Speed 1.3 > 1.45"
+            },
+            {
+              "type": "buff",
+              "text": "Run Speed 1.55 > 1.6"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Reverse hit removed"
+            },
+            {
+              "type": "buff",
+              "text": "IASA moved up 33 > 27"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Initial Hit can now hit aerial opponents."
+            },
+            {
+              "type": "nerf",
+              "text": "WDSK 120 > 100"
+            },
+            {
+              "type": "neutral",
+              "text": "Up Smash Mortar Round Angle 77 > 70"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "First Active Frame 3 > 4"
+            },
+            {
+              "type": "nerf",
+              "text": "Grounded hits 2+3 BKB 50 > 35"
+            },
+            {
+              "type": "nerf",
+              "text": "Landing Lag 18/9 > 20/10"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Priority swapped so that inside leg hit has priority over his feet"
+            },
+            {
+              "type": "neutral",
+              "text": "Innermost sourspot retains lowest priority"
+            },
+            {
+              "type": "buff",
+              "text": "Landing Lag 21/10 > 19/9"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "buff",
+                "text": "Second Kick modified to better link into third (both through numerous angle/kb modifications)"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Damage Lowered 5 > 3"
+                }
+              ]
+            },
+            {
+              "type": "buff",
+              "text": "Third Kick Angle BKB 40 > 50, KBG 118 > 145"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Throw"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Damage lowered 14% > 10%"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Grenade Pull)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Grenade explosion hitbox size 15 > 12, BKB 60 > 40, KBG 70 > 80"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Tranq Dart)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Tranq no longer hits aerial opponents"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that prevented tranq from being reflected by Power Shields or the Franklin Badge"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (C4)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Damage has been lowered only when someone is stuck 16 > 13"
+            },
+            {
+              "type": "nerf",
+              "text": "C4 explosion no longer grows in size after first active frame"
+            },
+            {
+              "type": "neutral",
+              "text": "“!” Graphic Appears over Snake’s head and unique SFX plays when sticking his opponent"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Cypher)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Initial Hit Electric effect removed"
+            },
+            {
+              "type": "buff",
+              "text": "Initial Hit Angle 361 > 82"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Snake can now move around during his box taunt by using the Dpad"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that caused Snake’s grenade to load in center stage and cause mines it overlapped with to detonate"
+            },
+            {
+              "type": "buff",
+              "text": "Snake's item hold jump squat has been reduced to match his normal jump squat 10 > 5"
+            },
+            {
+              "type": "nerf",
+              "text": "When landing from a grenade pull, Snake will experience 4 frames of landing lag as opposed to 0."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Sonic:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Excess shield damage removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Attack"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "If Sonic connects with Dash Attack, he cannot cancel it into Grab"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Inner hitbox angle 70 > 361"
+            },
+            {
+              "type": "neutral",
+              "text": "No longer reverse hits"
+            },
+            {
+              "type": "neutral",
+              "text": "Removed reel-in hitboxes that popped opponents upward"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Start up 18 > 13"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Back Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Flub hit BKB 40 > 20"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Spike Hit SDI Multiplier 1.0x > 1.2x"
+            },
+            {
+              "type": "nerf",
+              "text": "Landing Lag 28 > 32 (14 > 16 L-Cancelled)"
+            },
+            {
+              "type": "nerf",
+              "text": "Sonic can no longer drift during his descent"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Homing Attack)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Start Up 18 > 23"
+            },
+            {
+              "type": "neutral",
+              "text": "Blast Attack no longer goes into special fall on whiff, whiff consumes double jump and prevents additional usages of blast attack"
+            },
+            {
+              "type": "nerf",
+              "text": "Homing Attack goes into special fall if whiffed after homing in on an enemy"
+            },
+            {
+              "type": "nerf",
+              "text": "Neutral Special only usable once per air time, resets on a successful blast attack, landing, grabbing ledge, or getting grabbed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Somersault)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Added a white overlay effect on Side B start up"
+            },
+            {
+              "type": "neutral",
+              "text": "Aerial repeating hits can no longer reverse hit"
+            },
+            {
+              "type": "nerf",
+              "text": "All hitboxes greater than size 5 reduced to size 5"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Spin Dash)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "No longer refreshes Side B"
+            },
+            {
+              "type": "nerf",
+              "text": "All hitbox sizes greater than size 5 reduced to 5"
+            },
+            {
+              "type": "nerf",
+              "text": "Charge Hitbox angle 365 > 90"
+            },
+            {
+              "type": "buff",
+              "text": "Charge Hitbox SDI Multiplier x1.5 > x1.25"
+            },
+            {
+              "type": "nerf",
+              "text": "Speed 4.7 > 4.2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Spring Jump)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Spring hitbox angle 361 > 60"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Adjusted forward tech roll distance to better match early distance that back tech covers"
+            },
+            {
+              "type": "neutral",
+              "text": "Up Taunt animation reverted to v3.5 due to popular demand"
+            },
+            {
+              "title": {
+                "type": "neutral",
+                "text": "Ledge Occupancy Changes:"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "<100% Roll 50 > 41"
+                },
+                {
+                  "type": "neutral",
+                  "text": ">100% Stand 60 > 45"
+                },
+                {
+                  "type": "neutral",
+                  "text": ">100% Roll 80 > 55"
+                },
+                {
+                  "type": "neutral",
+                  "text": ">100% Attack 71 > 51"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "neutral",
+                "text": "Hurtboxes modified"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Head hurtbox lowered, Y Offset  3 > 2.2"
+                },
+                {
+                  "type": "buff",
+                  "text": "Arm hurtboxes properly centered Y Offset -2/-2 > 0/0"
+                }
+              ]
+            },
+            {
+              "type": "neutral",
+              "text": "Sonic was given different effect trails based on costumes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Squirtle:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Weight 82 > 85"
+            },
+            {
+              "type": "neutral",
+              "text": "Size 1 > 1.05"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Tilt"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "neutral",
+                "text": "First Active Frame 3 > 5, Hitlag Multiplier 1.0x > .34x"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "This prevents characters from CC shielding between hits"
+                }
+              ]
+            },
+            {
+              "type": "nerf",
+              "text": "IASA 22 > 24"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Start up reduced, first active frame 15 > 12"
+            },
+            {
+              "type": "buff",
+              "text": "Second Hitbox Damage 15 > 16 (matches first hit)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Initial Hit Removed"
+            },
+            {
+              "title": {
+                "type": "nerf",
+                "text": "Strong Hit weakens an additional stage on frame 17 of the animation:"
+              },
+              "changes": [
+                {
+                  "type": "nerf",
+                  "text": "Damage 13 > 12"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Watergun)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Windboxes Removed"
+            },
+            {
+              "type": "neutral",
+              "text": "No charge fires a single spray, half charge fires six, and max charge fires 10."
+            },
+            {
+              "type": "neutral",
+              "text": "Knockback Increased with Charging 60 > 20"
+            },
+            {
+              "type": "neutral",
+              "text": "Speed and distance has been enhanced"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Withdraw)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Hitbox size 1.88 > 2.25"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Bubble)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "If Squirtle lands during the start up of Bubble, or during the active frames, his landing lag is reduced from 30 > 15"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Tech rolls have been modified to move more during the start up of the animations"
+            },
+            {
+              "type": "nerf",
+              "text": "Squirtle no longer shrinks during crouch, down tilt, and crawl"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Toon Link:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Angles have been standardized from 95/90/90/75 > 95"
+            },
+            {
+              "type": "neutral",
+              "text": "KBG has been standardized from 96/94/92/98 > 95"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Landing Lag 22 > 26 (11 > 13 L-Canceled)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup 11 > 10"
+            },
+            {
+              "type": "buff",
+              "text": "Flub hitboxes have been standardized, fair now only has sweet/sour spot instead of sweet/sour/even weaker sour spot"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Grab"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "none",
+                "text": "Standing Grab"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Startup 11 > 9"
+                },
+                {
+                  "type": "buff",
+                  "text": "IASA 63 > 53"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Dash Grab"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Startup 12 > 10"
+                },
+                {
+                  "type": "buff",
+                  "text": "IASA 61 > 52"
+                }
+              ]
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Pivot Grab"
+              },
+              "changes": [
+                {
+                  "type": "buff",
+                  "text": "Startup 13 > 11"
+                },
+                {
+                  "type": "buff",
+                  "text": "IASA 60 > 51"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Throw"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "BKB 55 > 75"
+            },
+            {
+              "type": "nerf",
+              "text": "Animation Length 51 > 56"
+            },
+            {
+              "type": "nerf",
+              "text": "Release point moved 1 unit farther behind him, 5.1 > 6.1"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Spin Attack)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "(Aerial only) Startup 8 > 7"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Bomb)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Bomb Multi Hit count lowered from 4 to 3, total damage 12% > 9%"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Forward and Backwards tech roll distance increased, end distance 35 units > 38 units"
+            },
+            {
+              "type": "buff",
+              "text": "Forward and Backwards getup roll distance increased, end distance 30 units > 32 units"
+            },
+            {
+              "type": "neutral",
+              "text": "Toon Link now drinks Grandma’s Soup instead of Lon Lon Ranch Milk"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wario:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Weight 107 > 102"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Can no longer reverse hit"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Second hitbox angle 26 > 361"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Damage 14 > 10, KB Compensated"
+            },
+            {
+              "type": "nerf",
+              "text": "Hitlag 1.0x > 1.17x"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Sourspot Angle 80 > 70"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Chomp)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Pummel Damage 8 > 3"
+            },
+            {
+              "type": "nerf",
+              "text": "Head intangibility during Bite Hold removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Corkscrew)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Linking hits modified to no longer semi-spike opponents"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Shoulder Bash)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "“Bucket Brake” removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Waft)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Dynamic Charge decreased from 1.4 > 1.25"
+            },
+            {
+              "type": "nerf",
+              "text": "Half Waft Charge Time increased 25 > 30 seconds"
+            },
+            {
+              "type": "nerf",
+              "text": "Full Waft Angle 35 > 40, KBG 85 > 80"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Wolf:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup: 7 > 6"
+            },
+            {
+              "type": "neutral",
+              "text": "Cleaned up hitboxes on startup"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Modified to no longer link, but instead be a single hit"
+            },
+            {
+              "type": "neutral",
+              "text": "Inside Hit > 11%, BKB 38, KBG 100"
+            },
+            {
+              "type": "neutral",
+              "text": "Leg Flub Hit > 9%, BKB 25, KBG 100"
+            },
+            {
+              "type": "neutral",
+              "text": "Strong Hit  > 15% BKB 45, KBG 82"
+            },
+            {
+              "type": "neutral",
+              "text": "Strong Hit spacing is his claw, the ending burst hitbox has been shrunk a bit in size, but both hits are the strong hit."
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Angle on strong hits: 37 > 40"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Blaster)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Bayonet hitbox removed"
+            },
+            {
+              "type": "nerf",
+              "text": "Laser damage: (5/4/3/2) by distance > 3"
+            },
+            {
+              "type": "nerf",
+              "text": "Laser WDSK: variable by distance > 28 WDSK"
+            },
+            {
+              "type": "nerf",
+              "text": "Laser KBG: variable by distance > 100 KBG"
+            },
+            {
+              "type": "nerf",
+              "text": "Additional Shield damage 10 > 0"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Wolf Flash)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Window for shortest shorten increased from 1 frame > 2"
+            },
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that causes the article to overwrite the KB of the strong hit"
+            },
+            {
+              "type": "neutral",
+              "text": "Both grounded and aerial flub hits matched to the stats of the aerial version"
+            },
+            {
+              "type": "buff",
+              "text": "Landing lag: 35 > 30"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Fire Wolf)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Ledge grabbox startup: 1 > 10"
+            },
+            {
+              "type": "buff",
+              "text": "Landing lag: 24 > 20"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Reflector)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Shine Glide removed"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Others"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Missed Tech Bounce Lowered"
+            },
+            {
+              "type": "neutral",
+              "text": "Get up attack no longer clanks"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Yoshi:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Angle normalized between three hitboxes 60/70/80 > 70"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Added an additional hitbox to the sweet spot to match the sour spot"
+            },
+            {
+              "type": "neutral",
+              "text": "Hitbox moved from the back of his head to his neck"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Adjusted hitbox to better match animation, Y Offset 2.47058 > 5"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Adjusted hitbox to better match animation, Y Offset 3.28125 > 3.98125"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Special (Egg Lay)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Fixed a bug that causes a break out state when grabbed on certain frames"
+            },
+            {
+              "type": "buff",
+              "text": "Damage Multiplier on Egged opponents 0.5x > 0.75x"
+            },
+            {
+              "type": "buff",
+              "text": "Invincibility granted on breakout lowered 14 > 9"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Egg Roll)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Adjusted hitboxes to better match egg, X Offset -1.88 > 0"
+            },
+            {
+              "type": "buff",
+              "text": "No longer loses a jump when hit out of the startup of grounded side b"
+            },
+            {
+              "type": "buff",
+              "text": "Gains a small boost of momentum upwards during the beginning of the move"
+            },
+            {
+              "type": "neutral",
+              "text": "Fall speed during egg roll increased from 1.5 > 3"
+            },
+            {
+              "type": "neutral",
+              "text": "No longer gains a boost of momentum forward when breaking out of aerial egg roll"
+            },
+            {
+              "type": "buff",
+              "text": "Can now jump during egg roll"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Egg Toss)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Animation adjusted to make it more likely for successful edge cancels"
+            },
+            {
+              "type": "buff",
+              "text": "Eggs no longer burst if coming into contact with a wall on frame 1"
+            },
+            {
+              "type": "neutral",
+              "text": "Eggs now have a smoke trail GFX"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Ground Pound)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Grounded initial hit can now hit aerial opponents"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Other"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Added a hitbox to face up get up attack to address a dead zone in the middle of his body"
+            },
+            {
+              "type": "buff",
+              "text": "Roll IASA 35 > 32"
+            },
+            {
+              "type": "buff",
+              "text": "Ledge Grabbox Y Height 11 > 15"
+            },
+            {
+              "type": "buff",
+              "text": "Modified tail hurtboxes to be much more clean and consistent"
+            },
+            {
+              "type": "buff",
+              "text": "Fixed a bug where Yoshi can be shield poked from below"
+            },
+            {
+              "type": "buff",
+              "text": "Fixed a bug where Yoshi couldn’t jump out of shield until frame 7"
+            },
+            {
+              "type": "buff",
+              "text": "Fixed a bug where Yoshi would get stuck in shield if shield was held after a roll"
+            },
+            {
+              "type": "buff",
+              "text": "Fixed a bug where Yoshi’s tongue would go into the Z-Axis during his dash grab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zelda:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Attributes"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Initial Dash 1.275 > 1.35"
+            },
+            {
+              "type": "buff",
+              "text": "Run Speed 1.275 > 1.35"
+            },
+            {
+              "type": "buff",
+              "text": "Jumpsquat 5 > 4"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Jab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "First Active Frame 11 > 8"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Attack"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Given a .2 increase to momentum starting on frame 2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Tilt"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "X Offset of outermost hit 2.0 > 3.2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Smash"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Inside Hitbox lowered from 12.8 > 9.8"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Standing Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "First Active Frame 8 > 7, Y Offset 11.2 > 9"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "First Active Frame 10 > 9"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air Sweet Spot:"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Size increased 2.35 > 4.69"
+            },
+            {
+              "type": "buff",
+              "text": "Active Frames 1 > 2"
+            },
+            {
+              "type": "nerf",
+              "text": "Damage 18/20 > 16 (KB uncompensated)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Din's Fire)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Starting X Offset 9 > 2"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Farore's Wind)"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Aerial version’s Intangibility begins 3 frames earlier"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Zero Suit Samus:",
+      "attributes": [],
+      "moves": [
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Tilt"
+          },
+          "changes": [
+            {
+              "title": {
+                "type": "none",
+                "text": "First Hit"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "Large hitbox BKB: 50 > 45"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Large hitbox size: 4 > 3"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Large hitbox angle: 130 > 136"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Small hitbox angle: 120 > 128"
+                },
+                {
+                  "type": "neutral",
+                  "text": "Center vertical hitbox angle: 80 > 90"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Smash"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Hitbox Sizes 6 > 5.35"
+            },
+            {
+              "type": "nerf",
+              "text": "IASA: 20 > 24"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Neutral Air"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Hitlag Multiplier: x1.0 > x0.9"
+            },
+            {
+              "type": "neutral",
+              "text": "This fixes an issue where some characters were unable to ASDI down nair"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Forward Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Second hit BKB 45>40"
+            },
+            {
+              "type": "buff",
+              "text": "Added new hitboxes on aerial-only fair that promote better linking"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Air"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "Strong Hit Damage 12 > 10 (KB Compensated)"
+            },
+            {
+              "type": "nerf",
+              "text": "Y Offset: (0 / -2) > (1.2 / -2)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Dash Grab"
+          },
+          "changes": [
+            {
+              "type": "buff",
+              "text": "Startup: 12 > 9"
+            },
+            {
+              "type": "buff",
+              "text": "Y offset: (9 / 7.75) > (7.5 / 6)"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Side Special (Plasma Whip)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Hitlag Multiplier: 1.95 > 1"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Up Special (Plasma Wire)"
+          },
+          "changes": [
+            {
+              "type": "nerf",
+              "text": "First Active Hitbox: 6 > 7"
+            }
+          ]
+        },
+        {
+          "title": {
+            "type": "none",
+            "text": "Down Special (Divekick)"
+          },
+          "changes": [
+            {
+              "type": "neutral",
+              "text": "Landing hitbox now only hits grounded targets"
+            },
+            {
+              "title": {
+                "type": "none",
+                "text": "Flipstool"
+              },
+              "changes": [
+                {
+                  "type": "neutral",
+                  "text": "ZSS must now press ‘A’ in order to wall jump out of a successful flipstool"
+                }
+              ]
+            }
           ]
         }
       ]

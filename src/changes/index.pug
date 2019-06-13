@@ -22,7 +22,7 @@ block content
         h2.title.is-4(
           style="margin-top: 3rem"
         )
-          a(style="margin-right: 0.5rem" onclick=`toggleFold(this, "${link}")`) ►
+          a(style="margin-right: 0.5rem; font-family: Arial; user-select: none" onclick=`toggleFold(this, "${link}")`) ►
           a(style="text-decoration: underline" id=link href="#" + link)= trimmed
 
         .content(data-fold=link style="display: none")
@@ -65,4 +65,7 @@ block content
         }
       }
 
-      toggleFold(null, window.location.hash.substr(1))
+      if (window.location.hash) {
+        const path = decodeURI(window.location.hash).substr(1).split(">")
+        toggleFold(null, path[0])
+      }

@@ -18,12 +18,14 @@ block content
       each char in data
         - const trimmed = replaceAll(char.title, ":", "")
         - const link = replaceAll(trimmed, " ", "-")
-        a(id=link href="#" + link)
-          h2.title.is-4(
-            style="margin-top: 3rem; color: #49cbff; text-decoration: underline"
-          )= trimmed
 
-        .content
+        h2.title.is-4(
+          style="margin-top: 3rem"
+        )
+          a(style="margin-right: 0.5rem" onclick=`toggleFold(this, "${link}")`) ►
+          a(style="text-decoration: underline" id=link href="#" + link)= trimmed
+
+        .content(data-fold=link style="display: none")
           ul
             each attr in char.attributes
               li= attr
@@ -48,3 +50,19 @@ block content
                   else 
                     // no further nesting
                     li(class=change.type)= change.text
+    script.
+      const toggleFold = (source, target) => {
+        const targetEl = document.querySelector(`[data-fold="${target}"]`)
+
+        const isFolded = targetEl.style.getPropertyValue("display") === "none"
+
+        if (isFolded) {
+          targetEl.style.setProperty("display", "")
+          source ? source.innerHTML = "▼" : null
+        } else {
+          targetEl.style.setProperty("display", "none")
+          source ? source.innerHTML = "►" : null
+        }
+      }
+
+      toggleFold(null, window.location.hash.substr(1))

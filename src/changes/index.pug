@@ -50,7 +50,6 @@ block content
                   else 
                     // no further nesting
                     li(class=change.type)= change.text
-    script(src="/js/clipboard-polyfill.js")
     script.
       const toggleFold = (source, target) => {
         const targetEl = document.querySelector(`[data-fold="${target}"]`)

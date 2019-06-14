@@ -63,10 +63,10 @@ block content
 
         if (isFolded) {
           targetEl.style.setProperty("display", "")
-          source ? source.innerHTML = "▼" : null
+          if (source) source.firstElementChild ? source.firstElementChild.innerHTML = "▼" : null
         } else {
           targetEl.style.setProperty("display", "none")
-          source ? source.innerHTML = "►" : null
+          if (source) source.firstElementChild ? source.firstElementChild.innerHTML = "►" : null
         }
       }
 

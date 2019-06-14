@@ -8,6 +8,25 @@ block content
 
   include data
 
+  style.
+    a.fa-link {
+      margin-left: 0.5rem;
+      font-size: 1.2rem;
+      visibility: hidden;
+    }
+
+    li > a.fa-link {font-size: 0.9rem}
+
+    h2 {
+      user-select: none;
+    }
+
+    li:hover > a.fa-link,
+    h2:hover > a.fa-link {
+      visibility: visible;
+    }
+
+
   section.section
     .container
       h1.title Changes in Project+ v1.05b
@@ -51,6 +70,7 @@ block content
                     // no further nesting
                     li(class=change.type)= change.text
     script(src="/js/clipboard.min.js")
+    script(src="https://kit.fontawesome.com/acf25e660e.js")
     script.
       new ClipboardJS("a.fa-link", {
         text: el => window.location.origin + window.location.pathname + "#" + el.dataset.clipboardText

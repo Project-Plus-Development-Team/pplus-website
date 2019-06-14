@@ -49,8 +49,13 @@ code {
   }
 }
 
-.navbar-item.active {
-  background: hsla(0,0%,0%,0.5);
+.navbar-item.active,
+.navbar.is-dark .navbar-brand>a.navbar-item:hover {
+  background: hsla(0,0%,0%,0.4);
+}
+
+.navbar.is-dark .navbar-start>a.navbar-item:hover {
+  background: rgba(0,0%,0%,0.7);
 }
 
 section.section {

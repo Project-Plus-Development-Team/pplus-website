@@ -87,3 +87,9 @@ for (parent of parents) {
 
   renderPug(path.join("./src", parent.name))
 }
+
+// copy /copy-contents/ to /_site/
+
+;(() => {
+  fse.copySync("copy-contents/", "_site/", {overwrite: true})
+})()

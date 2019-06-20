@@ -92,3 +92,9 @@ section.section {
 .bold {
   font-weight: bold;
 }
+
+@function hsla($h, $s, $l, $a) {
+  @return unquote('hsla(#{$h}, #{$s}, #{$l}, #{$a})'); // hsla instead of hsl
+}
+
+}

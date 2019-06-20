@@ -42,6 +42,10 @@ code {
   overflow: hidden; // potentially problematic
 }
 
+.navbar * {
+  transition: all 0.1s ease;
+}
+
 .container > .navbar {
   & .navbar-menu, & .navbar-brand {
     margin-left: 0;

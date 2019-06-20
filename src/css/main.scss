@@ -103,4 +103,7 @@ section.section {
   border: 3px solid hsl(0,0%,20%);
   padding: 1rem;
 }
+
+body > section.section {
+  padding-top: 0;
 }

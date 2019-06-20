@@ -97,4 +97,10 @@ section.section {
   @return unquote('hsla(#{$h}, #{$s}, #{$l}, #{$a})'); // hsla instead of hsl
 }
 
+.maincard {
+  background: hsla(0,0%,20%,50%);
+  border-radius: 0.3rem;
+  border: 3px solid hsl(0,0%,20%);
+  padding: 1rem;
+}
 }

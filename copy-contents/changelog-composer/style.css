@@ -1,0 +1,21 @@
+html {
+  font-family: monospace
+}
+
+body {display: flex}
+
+body > * {flex: 1}
+
+body > div {padding: 0 1rem}
+
+.buff {color: green}
+.nerf {color: red}
+.neutral {color: orange}
+
+.moveList > li {
+  font-weight: bold;
+}
+
+#result * {
+  margin: 0.2rem;
+}

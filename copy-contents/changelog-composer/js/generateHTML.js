@@ -1,5 +1,15 @@
 import {doc} from "./functions.js"
 
+const validClasses = ["buff", "nerf", "neutral"]
+
+const getValidClass = type => {
+  if (type.length === 0) return ""
+
+  return validClasses
+    .map(c => c.indexOf(type.toLowerCase()) === 0 ? c : false)
+    .filter(c => c)[0]
+}
+
 export default characters => {
   const html = document.createElement("div")
   html.id = "result"
@@ -17,7 +27,7 @@ export default characters => {
     for (const change of char.changes) {
       const li = changeList.appendChild(doc.cE("li"))
       li.textContent = change.text
-      if (change.type) li.classList.add(change.type)
+      if (change.type) li.classList.add(getValidClass(change.type))
     }
 
     
@@ -32,7 +42,7 @@ export default characters => {
       for (const change of move.changes) {
         const subLi = mChangeList.appendChild(doc.cE("li"))
         subLi.textContent = change.text
-        if (change.type) subLi.classList.add(change.type)
+        if (change.type) subLi.classList.add(getValidClass(change.type))
       }
     }
   }

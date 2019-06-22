@@ -44,7 +44,8 @@ export default text => {
         continue
       }
 
-      c[lc].moves[lm].push({
+      console.log("c[lc].moves", c[lc].moves)
+      c[lc].moves[lm].changes.push({
         title: line.trim()
       })
 

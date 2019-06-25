@@ -1,12 +1,45 @@
 const leadingSpaces = str => str.indexOf(str.trim())
 
-const parseChange = str => {
-  let start = str.indexOf("{") + 1
-  let end = str.indexOf("}")
+const getClass = type => {
+  switch (type) {
+    case "+":
+      return "buff"
+    case "-":
+      return "nerf"
+    case "~":
+      return "neutral"
+    default:
+      return null
+  }
+}
 
-  return {
-    type: str.substring(start, end),
-    text: str.substring(end + 1).trim()
+const parseChange = str => {
+  str = str.trim()
+
+  if (str.indexOf("|") === 1 && getClass(str.charAt())) { // has a valid type
+    return {
+      type: getClass(str.charAt()),
+      text: str.substr(2)
+    }
+  } else { // no type or not a valid type
+    return {text: str}
+  }
+}
+
+const parseHeading = (str, container) => {
+  str = str.trim()
+
+  if (str.indexOf("^") === 1 && getClass(str.charAt())) { // has a valid type
+    return {
+      title: str.substr(2),
+      type: getClass(str.charAt()),
+      [container]: []
+    }
+  } else { // no type or not a valid type
+    return {
+      title: str.startsWith("^") ? str.substr(1) : str, // if heading symbol
+      [container]: [],
+    }
   }
 }
 
@@ -16,4 +49,4 @@ const doc = {
   qSA: q => document.querySelectorAll(q)
 }
 
-export {leadingSpaces, parseChange, doc}
+export {leadingSpaces, parseChange, parseHeading, doc}

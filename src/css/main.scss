@@ -42,6 +42,10 @@ code {
   overflow: hidden; // potentially problematic
 }
 
+.navbar * {
+  transition: all 0.1s ease;
+}
+
 .container > .navbar {
   & .navbar-menu, & .navbar-brand {
     margin-left: 0;
@@ -87,4 +91,19 @@ section.section {
 
 .bold {
   font-weight: bold;
+}
+
+@function hsla($h, $s, $l, $a) {
+  @return unquote('hsla(#{$h}, #{$s}, #{$l}, #{$a})'); // hsla instead of hsl
+}
+
+.maincard {
+  background: hsla(0,0%,20%,50%);
+  border-radius: 0.3rem;
+  border: 3px solid hsl(0,0%,20%);
+  padding: 1rem;
+}
+
+body > section.section {
+  padding-top: 0;
 }

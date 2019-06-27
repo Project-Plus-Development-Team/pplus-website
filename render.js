@@ -72,7 +72,7 @@ for (parent of parents) {
     for (child of children) {
       if (child.isDirectory()) continue
       if (!child.name.endsWith(".pug")) continue
-      if (child.name == "data.pug") continue
+      if (child.name.startsWith("data-")) continue
       
       // alright chief, we got a pug file
       

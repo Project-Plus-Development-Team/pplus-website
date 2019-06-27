@@ -34,31 +34,46 @@ block content
       
       - const replaceAll = (str, find, replace) => str.replace(new RegExp(find.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "g"), replace)
 
-      each char in data
-        - const trimmed = replaceAll(char.title, ":", "")
-        - const link = replaceAll(trimmed, " ", "-")
+      each character in characters
+        - const characterLink = replaceAll(character.name, " ", "-")
 
         h2.title.is-4(
           style="margin-top: 3rem"
         )
-          a(onclick=`toggleFold(this, "${link}")`)
+          a(onclick=`toggleFold(this, "${characterLink}")`)
             span(style="margin-right: 0.5rem; user-select: none; font-family: Arial") ►
-            span(id=link)= trimmed
-          a(data-clipboard-text=link).fa.fa-link
+            span(id=characterLink)= character.name
+          a(data-clipboard-text=characterLink).fa.fa-link
 
-        .content(data-fold=link style="display: none")
+        .content(data-fold=characterLink style="display: none")
           ul
-            each attr in char.attributes
-              li= attr
+            each change in character.changes
+              li(class=change.type || null)= change.text
 
           ul
-            each move in char.moves
-              li.bold(class=move.title.type)
-                - const sublink = link + ">" + replaceAll(move.title.text, " ", "-")
-                span(id=sublink)=move.title.text
+            each move in character.moves
+              li.bold(class=move.type || null)
+                - const sublink = characterLink + ">" + replaceAll(move.title, " ", "-")
+                span(id=sublink)=move.title
                 a(data-clipboard-text=sublink).fa.fa-link
               ul
                 each change in move.changes
+                  if change.text
+                    li(class=change.type || null)= change.text
+                  else
+                    li(class=change.type || null)= change.title
+                    ul
+                      each sub in change.sub
+                        if sub.text
+                          li(class=sub.type || null)= sub.text
+                        else
+                          li(class=sub.type || null)= sub.title
+                          ul
+                            each final in sub.final
+                              li(class=final.type || null)= final.text
+
+
+                //-
                   if change.changes
                     // further nesting?
                     - const classes = change.title.type === "none" ? "bold" : change.title.type

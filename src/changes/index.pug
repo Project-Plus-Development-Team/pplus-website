@@ -45,7 +45,7 @@ block content
           a(onclick=`toggleFold(this, "${characterLink}")`)
             span(style="margin-right: 0.5rem; user-select: none; font-family: Arial") ►
             span(id=characterLink)= character.name
-          a(data-clipboard-text=characterLink).fa.fa-link
+          a(data-clipboard-text=characterLink title="Copy link to clipboard").fa.fa-link
 
         .content(data-fold=characterLink style="display: none")
           ul
@@ -57,7 +57,7 @@ block content
               li.bold(class=move.type || null)
                 - const sublink = characterLink + ">" + replaceAll(move.title, " ", "-")
                 span(id=sublink)=move.title
-                a(data-clipboard-text=sublink).fa.fa-link
+                a(data-clipboard-text=sublink title="Copy link to clipboard").fa.fa-link
               ul
                 each change in move.changes
                   if change.text

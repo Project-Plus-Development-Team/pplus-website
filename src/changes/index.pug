@@ -31,8 +31,9 @@ block content
     }
 
     .char-icon > img {
+      height: 40px;
       position: relative;
-      top: 5px;
+      top: 10px;
     }
 
   section.section
@@ -48,13 +49,13 @@ block content
         - const characterLink = replaceAll(character.name, " ", "-")
 
         h2.title.is-4(
-          style="margin-top: 1.5rem"
+          style="margin-top: 1.2rem"
         )
           span.char-icon
             if !["Costumes & Aesthetics", "Misc", "Stages"].includes(character.name)
               img(src=`/img/chars/${characterLink}.png`)
             else
-              img(src="/img/chars/Smash.png")
+              img(src="/img/Smash.png")
           a(onclick=`toggleFold(this, "${characterLink}")`)
             span(style="margin-right: 0.5rem; user-select: none; font-family: Arial") ►
             span(id=characterLink)= character.name

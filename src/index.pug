@@ -21,11 +21,19 @@ block content
               li introduces new gameplay mechanics to Project M
               li includes new features such as those created by the Legacy team for Legacy TE 2.11.
         .column(style="display: flex; flex-direction: row-reverse")
-          img.magic(src="/img/Falco.png" style="height: 400px")
+          img.magic(src="/img/Falco.png")
           style.
             .magic {
               opacity: 0.7;
               transition: all 0.3s ease;
+
+              max-height: 400px;
+            }
+
+            @media screen and (max-width: 768px) {
+              .magic {
+                max-height: 300px;
+              }
             }
 
             .magic:hover {

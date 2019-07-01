@@ -3,6 +3,7 @@ html {
   display: flex;
   flex-direction: column;
   overflow-y: initial;
+  overscroll-behavior: auto contain; // is supposed to fix ugly overscroll white backgrounds, but i don't browsers where i could see this fixed
 }
 
 body {
@@ -106,4 +107,18 @@ section.section {
 
 body > section.section {
   padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 1rem !important;
+  }
+
+  header.section {
+    padding: 0 !important;
+
+    .navbar {
+      border-radius: 0 !important;
+    }
+  }
 }

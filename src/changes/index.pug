@@ -55,7 +55,14 @@ block content
             if !["Costumes & Aesthetics", "Misc", "Stages"].includes(character.name)
               img(src=`/img/chars/${characterLink}.png`)
             else
-              img(src="/img/Smash.png")
+              -
+                let pointIcon = "smash"
+                switch(character.name) {
+                  case "Costumes & Aesthetics": pointIcon = "stickers"; break
+                  case "Stages": pointIcon = "stages"; break
+                  default: pointIcon = "smash"
+                }
+              img(src=`/img/icons/${pointIcon}.png`)
           a(onclick=`toggleFold(this, "${characterLink}")`)
             span(style="margin-right: 0.5rem; user-select: none; font-family: Arial") ►
             span(id=characterLink)= character.name

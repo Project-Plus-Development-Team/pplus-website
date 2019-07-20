@@ -7,13 +7,11 @@ const update = () => {
   const ta = document.getElementsByTagName("textarea")[0]
   const characters = parseData(ta.value)
 
+  console.log(JSON.stringify(characters, null, 2))
   
   const html = generateHTML(characters)
   console.log("html", html)
   document.getElementById("result").replaceWith(html)
-  
-
-  console.log(JSON.stringify(characters, null, 2))
 }
 
 document.getElementsByTagName("textarea")[0].onkeyup = update

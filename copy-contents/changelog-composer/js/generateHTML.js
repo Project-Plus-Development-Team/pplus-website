@@ -45,7 +45,7 @@ export default characters => {
           const changeLi = changeList.appendChild(doc.cE("li"))
           if (change.type) changeLi.classList.add(getValidClass(change.type))
 
-          if (change.text) { // is not a heading
+          if (change.text !== undefined) { // is not a heading
             changeLi.textContent = change.text
           } else {
             changeLi.textContent = change.title

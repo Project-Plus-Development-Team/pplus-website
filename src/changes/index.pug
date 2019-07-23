@@ -48,9 +48,7 @@ block content
       each character in characters
         - const characterLink = replaceAll(character.name, " ", "-")
 
-        h2.title.is-4(
-          style="margin-top: 1.2rem"
-        )
+        h2.title.is-4(style="margin-top: 1.2rem")
           span.char-icon
             if !["Costumes & Aesthetics", "Misc", "Stages"].includes(character.name)
               img(src=`/img/chars/${characterLink}.png`)
@@ -76,7 +74,7 @@ block content
           ul
             each move in character.moves
               li.bold(class=move.type || null)
-                - const sublink = characterLink + ">" + replaceAll(move.title, " ", "-")
+                - const sublink = characterLink + "#" + replaceAll(move.title, " ", "-")
                 span(id=sublink)=move.title
                 a(data-clipboard-text=sublink title="Copy link to clipboard").fa.fa-link
               ul
@@ -111,7 +109,7 @@ block content
     script(src="https://kit.fontawesome.com/acf25e660e.js")
     script.
       new ClipboardJS("a.fa-link", {
-        text: el => window.location.origin + window.location.pathname + "#" + el.dataset.clipboardText
+        text: el => encodeURI(window.location.origin + window.location.pathname + "#" + el.dataset.clipboardText)
       })
 
       const toggleFold = (source, target) => {
@@ -129,6 +127,6 @@ block content
       }
 
       if (window.location.hash) {
-        const path = decodeURI(window.location.hash).substr(1).split(">")
+        const path = decodeURI(window.location.hash).substr(1).split("#")
         toggleFold(null, path[0])
       }

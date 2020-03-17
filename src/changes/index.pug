@@ -38,11 +38,18 @@ block content
 
   section.section
     .container.maincard
-      h1.title Changes in Project+ v1.05b
+      h1.title Changes in Project+ v2.0
       p.bold Automatically parsed from the Google Document, errors still possible.
       br
-      a.button.is-success(href="https://drive.google.com/open?id=1fDMkcdDImAmftUSrlHx2_aj3dcXXxtS4H5ZSoC22q1U") Google Doc Version
-      
+      .group
+        a.button.is-link(href="https://docs.google.com/document/d/1AH3UlDzE6Ns0NFul0poLG9_SjF3dTBRAVNObf5IMP2Y/edit#") Google Doc Version
+        a.button.is-link(href="https://docs.google.com/document/d/1h8W6rt1B4PtFY1ndpgKh8qbLCxwBR25ahaATA0nIJys/edit#") v1.05b  > 2.0 Changelog
+
+
+
+
+      // ---------------------------
+
       - const replaceAll = (str, find, replace) => str.replace(new RegExp(find.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "g"), replace)
 
       each character in characters
@@ -68,43 +75,30 @@ block content
 
         .content(data-fold=characterLink style="display: none")
           ul
-            each change in character.changes
-              li(class=change.type || null)= change.text
+            each change in character.moves
+              each change2 in change
+                if typeof change2 !== "string"
+                  li.bold
+                    - const sublink = characterLink + "#" + replaceAll(change2.title, " ", "-")
+                    span=change2.title
+                    a(data-clipboard-text=sublink title="Copy link to clipboard").fa.fa-link
+                  ul
+                    each change3 in change2.changes
+                      if typeof change3 !== "string"
+                        li= change3.title
+                        ul
+                          each change4 in change3.changes
+                            if typeof change4 !== "string"
+                              li= JSON.stringify(change4)
+                            else
+                              li= change4
+                      else
+                        li= change3
+                else
+                  li= change2
 
-          ul
-            each move in character.moves
-              li.bold(class=move.type || null)
-                - const sublink = characterLink + "#" + replaceAll(move.title, " ", "-")
-                span(id=sublink)=move.title
-                a(data-clipboard-text=sublink title="Copy link to clipboard").fa.fa-link
-              ul
-                each change in move.changes
-                  if change.text
-                    li(class=change.type || null)= change.text
-                  else
-                    li(class=change.type || null)= change.title
-                    ul
-                      each sub in change.sub
-                        if sub.text
-                          li(class=sub.type || null)= sub.text
-                        else
-                          li(class=sub.type || null)= sub.title
-                          ul
-                            each final in sub.final
-                              li(class=final.type || null)= final.text
+      // ---------------------------
 
-
-                //-
-                  if change.changes
-                    // further nesting?
-                    - const classes = change.title.type === "none" ? "bold" : change.title.type
-                    li(class=classes)= change.title.text
-                    ul
-                      each subchange in change.changes
-                        li(class=subchange.type)= subchange.text
-                  else 
-                    // no further nesting
-                    li(class=change.type)= change.text
     script(src="/js/clipboard.min.js")
     script(src="https://kit.fontawesome.com/acf25e660e.js")
     script.

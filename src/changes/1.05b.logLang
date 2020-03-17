@@ -1,8 +1,25 @@
 Costumes & Aesthetics
+  CSS Modified Completely
+  Rules Menu overhauled
   Roy’s model has been updated slightly: black and blue costumes have slight color changes
   Bowser was given a new dash and run animation
+  Toon Link was given a new down air animation
+  Peach was given aesthetics on down smash that make the hitbox placement more clear to allow for dressless alt costumes
   Pikachu was given iron tail effects on up smash
-  Toon Link’s head was increased in size, hurtboxes adjusted to match original head
+  Toon Link’s head was increased in size, hurtboxes adjusted to match original head. Toon Link now drinks Grandma’s Soup instead of Lon Lon Ranch Milk
+  Wolf had claw swipes cleaned up on forward air and jab
+  Meta Knight had his bair sword trail modified to better match the hitboxes
+  Roy had several sword trail and item swing sword trails edited
+  Lucas standing grab modified to look nicer
+  Blood Falcon changed to Hell Hawk
+  ROB was given double jump rings and had jump GFX modified slightly
+  Peach, Mewtwo, Sonic, Link, and ROB were given costume specific GFX
+  Dry Bowser given blue fire effects
+  Lucario Aura GFX on his hands modified slightly to look cleaner
+  Mario/Doctor Mario have Fire/Electric GFX on their forward air
+  Lucario aura trails modified slightly, and aura no longer appears on the results screen
+  Zelda was given a GFX overhaul (Credit to Elf)
+
 
 Misc
   ^Bug Fixes
@@ -14,6 +31,13 @@ Misc
     Platform drop momentum after getting your shield hit fixed to work normally [Eon]
     Smash and Attack stick work properly during crawl [Eon]
     Crawl momentum behaves normally in both directions [Sammi Husky]
+    Fixed numerous SSE bugs relating to Pokemon Trainer [Eon]
+    Teletether Glitch Fixed, Randall no longer interferes with Tethers, Tether displacement glitch fixed [Eon]
+    Nana no longer counts toward a victory star [Eon]
+    Using an aerial during knockback no longer causes missed techs [Eon]
+    Fixed a bug from LTE where All-Star mode CPUs would spawn in the break room [Eon]
+    Changed tap-jump timer to trigger on all jump inputs > 0.7 instead of > 0.715 fixing inputs that ignore meteor lockout, which are abusable by smashbox, etc. [Eon]
+
   ^General Changes
     Screen KO’s have been removed during teams [ds22, Eon]
     Strap screen skipped on startup [PyotrLuzhin] **only on netplay build**
@@ -22,6 +46,11 @@ Misc
     Holding L/R while scrolling through costumes will scroll though ¼ of the character’s costumes [DukeItout]
     3-2-1 GO! countdown removed from single-player games [DukeItOut]
     When C-Stick is set to grab in Custom Controls: C-Stick performs chargeable smash attacks [wiiztec]
+    Bomb Rain Mode added as a replacement to fixed camera mode [DukeItOut]
+    Special BOSS mode added: [DukeItOut]
+        If someone has a tag containing the word “BOSS”, “boss”, “Boss”, or “ボス” then the players that do NOT have the tag will not experience special mode behaviors.
+        When used with “CPU characters can use tags” assign the tag first, then switch the character to be a CPU! 
+
   ^Gameplay Changes
     Characters will no longer drop items when hit [Fracture]
     Techrolls now conserve previous momentum like Melee [Fracture]
@@ -35,12 +64,21 @@ Misc
     Glancing Blow Threshold is zero [Magus, Eon]
     Window to wiggle out of tumble extended from 1 frame to 2 [Fracture]
     Initiating a shield drop the same frame as a hard shield no longer causes wavelands [Eon]
+    All get up attacks and ledge attacks no longer clank
+    Negative Y-Speed from angle 365 attacks is capped at -0.5 [Eon]
+    Using normal get up from ledge does not trigger the ledge regrab lockout timer [DukeitOut]
+    Ledge occupancy on all <100% rolls increased from 41 > 46 frames
+    Maximum distance behind that a character can be grabbed from capped to -6.5 units [DukeitOut]
+
 
 Stages
   PMBR Stages have been added
   R no longer toggles pages, Start alts have been moved to R, hidden R alts have been moved to Y (including concert smashville)
   Delfino’s Secret now rotates 5 different phases (Desert version has former, two-phase version)
-  Metal Cavern is now symmetrical
+  Metal Cavern is now symmetrical, camera adjusted to better cover the map. Platform lowered 0.02 units to fix a bug with Ice Climbers
+  Respawn points on Battlefield and Final Destination centered
+  Infinite Glacier is now always in the water
+
 
 Bowser
   ^Attributes:
@@ -58,8 +96,7 @@ Bowser
   ^Forward Smash
     +|Armor comes out 3 frames earlier
   ^Up Smash
-    +|Armor lasts until frame 19 from 13
-    -|The 2nd hitbox that happens upon bowser landing now only hits grounded opponents
+    -|Landing Hitbox Removed
   ^Down Smash
     +|Hitboxes no longer clank
     -|Low Hitboxes pulled in slightly X Offset -9.4/11.2 > -8/9.8
@@ -73,12 +110,11 @@ Bowser
     +|Inside grabbox size increased in size to fix dead zone
     +|IASA 52 > 48
   ^Neutral Special (Firebreath > Fireball)
-    ~|Fireball takes roughly 10 seconds to fully recharge, is lost on death, and does not recharge on the respawn platform
+    ~|Fireball takes roughly 13 seconds to fully recharge, is lost on death, and does not recharge on the respawn platform
     ~|While uncharged, Bowser has access to a bite attack
   ^Side Special (Koopa Klaw)
     ~|Fixed a bug where character actions wouldn’t update if thrown from a buffered Koopa Klaw throw. As a result: this slows down the fastest possible throw by 2 frames
     ^Grounded Version
-      +|Added 3rd grabbox and extended grabbox outward
       ~|Cleaned up GFX timing
     ^Aerial Side Special Down
       +|IASA 51 > 45
@@ -94,38 +130,53 @@ Bowser
     +|Missed tech rolls given slightly more distance
 
 Captain Falcon
+  ^Jab
+    ~|Gentleman input is now the same on whiff or hit
+  ^Grab
+    +|Innermost Standing grabbox pushed outward slightly 2.27 > 3
+  ^Down Special
+    -|Knockback Stats lowered Strong/Middle/Weak: BKB 60 > 40, KBG 70/60/50 > 75/70/68
   ^Other
     ~|Fixed a bug that caused Down B/Side B to ignore wall interactions when B-Reversed
 
 Charizard
   ^Attributes
     -|Weight 110 > 106
+    ~|Gravity increased .095 > .105
+    ~|Fall Speed 1.7 > 1.85 (jumps and footstool hops have been modified to maintain original height)
     +|Shield animation improved to better cover his head
   ^Jab
     +|SDI Multiplier 1.2x > 1.0x
     ~|Tipper Hit Angle 82 > 75
   ^Down Tilt
     -|Angle 35 > 45
+  ^Up Tilt
+    +|Given Wing Intangibility on frames 8-11
+  ^Forward Smash
+    -|Active hitboxes pushed back three frames 7 > 10
   ^Down Smash
     -|Outermost Hitboxes X Offsets 19.75/-16.75 > 17/-14
   ^Neutral Air
     ~|Hitboxes modified to better match his tail
-    ~|Strong hits that send at 50 degrees changed to send at 60 to match sourspot
-    -|Active frames 21 > 19 (IASA and Auto Cancel adjusted to compensate IASA 42 > 40, Auto Cancel 38 >36)
   ^Forward Air
     -|Intangibility on Wings, Head, and Neck removed
   ^Back Air
-    +|Strong Hit active frames increased from 4 > 5
     +|Sweetspot given to late hit +2% damage on tip of tail 9% > 11%
   ^Grab
     +|Standing Grab IASA 36 > 31
     +|Dash Grab IASA 44 > 41
   ^Forward Throw
     ~|Made weight independent
+  ^Neutral Special (Flamethrower)
+    ~|Replaced with Thunder Punch
+    ~|Grounded: Damage 18%, Angle 361, BKB 50, KBG 82. After 6 frames, damage is reduced to 14%
+    ~|Aerial: Damage 15%, Angle 55, BKB 50, KBG 95
+    ~|Landing: Damage 10%, Angle 361, BKB 40, KBG 90
   ^Up Special (Fire Spin)
     ~|Aerial Hit BKB 70 > 55, KBG 95 > 100
   ^Down Special (Glide)
-    -|Glide no longer infinite based on momentum, now terminates after 80 frames
+    +|Glide properly refreshes on all landings
+    -|Glide no longer infinite based on momentum, now terminates after 80 frames, GFX appear to signify that glide is ending
     +|Glide will only consume one jump when used
   ^Down Special (Fly)
     ~^Height and Charge times modified. Format is frames of charge = distance.
@@ -135,39 +186,44 @@ Charizard
       ~|18+ = 4.8
   ^Other
     +|Roll distance increased by 5 units on forward/back roll
+    ~|Ledge options normalized to have similar IASA to the rest of the cast
+    ~|Windbox-like hitboxes on up throw removed, corrected an error in the flags that prevented these hitboxes from being blocked
     +|Missed tech get up rolls modified to move him more throughout the animation, and distance has been increased
 
 Dedede
   ^Attributes
     -|Weight 112 > 107
     +|Jump Startup Time 6 > 5
+    +|Run Speed 1.22 > 1.3
     +|Empty Landing Lag 6 > 5
     +|Shield size 12 > 13.5
     +|Powershield ratio 0.75 > .9
   ^Jab 1 & 2
     +|Jab 1 startup 11 > 8
     +|Jab 2 startup 11 > 8
+    ~|Jab 1+2 X Offsets modified (-12/-6) > (-14/-7)
+    -|Multi jab damage 2 > 1
+  ^Forward Tilt
+    ~|Animation modified slightly to better indicate when hitboxes end
   ^Up Tilt
     +|Intangibility matched to active hitboxes 7-9 > 7-15
+  ^Down Tilt
+    ~|Startup 7 > 6, Weak Hit Active frames 9 > 6, IASA 36 > 31
   ^Forward Smash
     +|Startup 42 > 37
     +|Added a hitbox to address a dead zone near DDD’s hands
+  ^Up Smash
+    +|KBG 79/80 > 83/84
+  ^Down Smash
+    +|Modified to hit slightly lower
   ^Neutral Air
     +|Startup 7 > 6
+    +|Late autocancel window begins earlier 35 > 34
   ^Forward Air
     +|Fixed dead zone by adding new flub hitbox on DDD’s body: flub hit does 13% (normal hit is 15%)
     +|Adjusted the animation slightly to prevent landing during start up
   ^Back Air
-    +|Added a small hitbox to his other foot to cover a deadzone: stats match primary hit
-  ^Neutral Special (Swallow)
-    -|Outer windbox size shrunk 7 > 5
-    +|Minimum number of frames windboxes are out 39 > 27
-  ^Side Special (Waddle Toss)
-    +|Endlag on grounded version 64 > 59
-    ~|Fixed a bug that would cause Gordo’s to occasionally get stuck in DDD’s face
-    ~|DDD can no longer throw capsules with side b
-  ^Down Special (Jet Hammer)
-    +|Jump Squat during Down Special matched to regular jump squat: 7 > 5
+    +|IASA 33 > 32
   ^Grab
     +|Fixed dead zone on standing grab and dash grab by pulling in inner most grabboxes 7.4 > 5.4
   ^Dash Grab
@@ -175,6 +231,13 @@ Dedede
       +|Size 3.75 > 5.45, Y Offset 9 > 7.4, X offsets variously adjusted
   ^Up-throw
     ~|Release point adjusted to be directly above him
+  ^Side Special (Waddle Toss)
+    +|Endlag on grounded version 64 > 59
+    -|Gordo Damage 22 > 18
+    ~|Fixed a bug that would cause Gordo’s to occasionally get stuck in DDD’s face
+    ~|DDD can no longer throw capsules with side b
+  ^Down Special (Jet Hammer)
+    +|Jump Squat during Down Special matched to regular jump squat: 7 > 5
   ^Other
     ~|DDD can now fall through platforms during mid air jumps
     ~|Dedede will now always win if the game ends via swallocide
@@ -186,7 +249,9 @@ Diddy Kong
   ^Forward Smash
     +^Initial Hit:
       +|Back hitbox removed, BKB 60 > 65, Hitlag Multiplier 1.0x > 0.75x
+    ~|Frames between hitboxes 4 > 3
   ^Up Smash
+    ~|Final hit BKB 30 > 25, KBG 108 > 117
     ~|Jump height notably reduced
   ^Neutral Air
     ~|SFX on initial hit modified to sound slightly stronger
@@ -196,20 +261,28 @@ Diddy Kong
     +|Ledge Grab starts earlier, frame 48 > 36
   ^Side Special (Monkey Flip)
     -|Grab Active frames reduced by 3, 6-23 > 6-20
+    +|Can no longer be mashed out of
     ~|Diddy has 25 frames to input an option after connecting with the command grab, otherwise he will default to the meteor
   ^Up Special (Rocketbarrel Boost)
+    -|Landing Lag 24 > 30
+    +|Can now be turned around at startup
     ~|Barrels no longer clank
+  ^Other
+    +|Dash attack and down b hand slap no longer stale together
+
 
 Donkey Kong
   ^Attributes
     -|Weight 114 > 109
-  ^Forward Air
-    -|Spike hitbox BKB 50 > 30
   ^Back Air
     +|Additional hitbox has been added to his knee to prevent whiffing
+  ^Up Air
+    -|Damage 14 > 12, KB Compensated
   ^Grab
     +|First Active Frame 8 > 7
   ^Neutral Special (Giant Punch)
+    ~|Hitboxes that launched vertically now match Sakurai angle hitboxes
+    -|Tiny body hitbox removed
     ^Grounded
       -|Vertical Hit Base Damage 12 > 6
       -|Vertical Hit Full Damage 28 > 24
@@ -234,6 +307,7 @@ Donkey Kong
       +|Late Hit 5%: BKB 35: KBG 80: Angle 361: Shield Damage 1
   ^Other
     ~|Fixed visual bug on max charge punch
+    ~|Dash attack now stales properly
 
 Falco
   ^Down Air
@@ -251,9 +325,11 @@ Falco
   ^Down Special (Shine)
     ~|Fixed a bug that allowed Falco to grab ledge during his reflect frames
   ^Other
-    ~|Get up attack no longer clanks
+    ~|DACUS distance normalized for both frames
 
 Fox
+  ^Jab
+    +|Angle 55>70
   ^Up Smash
     -|Flub hitbox damage: 13 > 10: Knockback uncompensated
   ^Side Special (Fox Illusion)

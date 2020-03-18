@@ -655,15 +655,11 @@
               {
                 "title": "DDD can now fall through platforms during mid air jumps ",
                 "changes": [
-                  "Head size 5.1 > 4.5",
-                  "Body size 7 > 6.7"
                 ]
               },
               {
                 "title": "Dedede will now always win if the game ends via swallocide",
                 "changes": [
-                  "Head size 5.1 > 4.5",
-                  "Body size 7 > 6.7"
                 ]
               },
               {
@@ -1037,8 +1033,7 @@
             "changes": [
               "Animation slightly modified to give Ganon more horizontal range",
               "Outer Grabbox: Y Offset 11.81 > 8.8: Z Offset 7.6 > 10: Size 3.91 > 3.95",
-              "Inner Grabbox: Y Offset 11.81 > 11: Z Offset 2.53 > 4: Size 3.91 > 3.95",
-              "New Grabbox added to allow Ganon to grab smaller characters"
+              "Inner Grabbox: Y Offset 11.81 > 11: Z Offset 2.53 > 4: Size 3.91 > 3.95"
             ]
           }
         ],
@@ -1930,13 +1925,24 @@
               {
                 "title": "All Offense Up smash attacks have been reworked to increase damage by 4% only. Knockback has been matched to the current iteration of offense up moves. The changes are as follows:",
                 "changes": [
-                  "25/24/23 > 21/20/19"
                 ]
               },
               {
                 "title": "Forward Smash",
                 "changes": [
                   "25/24/23 > 21/20/19"
+                ]
+              },
+              {
+                "title": "Down Smash",
+                "changes": [
+                  "26/21 > 21/18"
+                ]
+              },
+              {
+                "title": "Up Smash",
+                "changes": [
+                  "30/24 > 24/20"
                 ]
               }
             ]
@@ -1955,7 +1961,8 @@
           {
             "title": "Neutral Air",
             "changes": [
-              "Repeating hits Hitlag: x1.0 > x0.75"
+              "Repeating hits Hitlag: x1.0 > x0.75",
+              "Now clanks with projectiles"
             ]
           }
         ],
@@ -1994,6 +2001,14 @@
         ],
         [
           {
+            "title": "Neutral Special (Offense Up)",
+            "changes": [
+              "Charge and Burst will no longer halt upward vertical momentum. Still stalls if moving downward"
+            ]
+          }
+        ],
+        [
+          {
             "title": "Side Special (PK Freeze)",
             "changes": [
               "Aerial Velocity 2.5 > 2.75",
@@ -2007,7 +2022,7 @@
             "title": "Up Special (PK Thunder 2)",
             "changes": [
               "Initial Hit Damage 8 > 5, repeating hit damage 3 > 2",
-              "Lucas can reverse ledge grab for 10 extra frames after PK Thunder 2 "
+              "Lucas can reverse ledge grab for 10 extra frames after PK Thunder 2"
             ]
           }
         ],
@@ -2303,6 +2318,14 @@
             "title": "Forward Air",
             "changes": [
               "Hitboxes modified to reverse hit less often"
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Up Throw",
+            "changes": [
+              "Damage 12 > 10, KB compensated"
             ]
           }
         ],
@@ -2644,11 +2667,10 @@
           {
             "title": "Neutral Special",
             "changes": [
-              "Maximum large meats out at once 2 > 1",
-              "Frames the meat article spends flashing after coming in contact with a surface  30 > 20",
+              "Frames the meat article spends flashing after coming in contact with a surface 30 > 20",
               "Angle control has been improved, holding up/down generates one of the two highest/lowest angles, holding nothing generates one of the middle three angles",
               "Small bacon no longer prevents a large bacon from spawning",
-              "Landing during very early active frames no longer transitions into Wait action"
+              "Only one bacon can be generated per Neutral B press"
             ]
           }
         ],
@@ -3219,6 +3241,7 @@
             "title": "Up Smash",
             "changes": [
               "Reworked timings and knockback to link more consistently",
+              "Added new hitbox centered on his body to link more consistently",
               "Multihits: x1 SDI > x0.5 SDI"
             ]
           }
@@ -4228,7 +4251,36 @@
                   "Range decreased 15 > 13",
                   "Active frames 9/8/9 > 7"
                 ]
+              },
+              {
+                "title": "Standing Grab",
+                "changes": [
+                  "Startup 11 > 9",
+                  "IASA 63 > 50"
+                ]
+              },
+              {
+                "title": "Dash Grab",
+                "changes": [
+                  "Startup 12 > 10",
+                  "IASA 61 > 50"
+                ]
+              },
+              {
+                "title": "Pivot Grab",
+                "changes": [
+                  "Startup 13 > 11",
+                  "IASA 60 > 51"
+                ]
               }
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Up Throw",
+            "changes": [
+              "Fixed a visual error with character rotations"
             ]
           }
         ],
@@ -4238,13 +4290,15 @@
             "changes": [
               "(Aerial only) Startup 8 > 7",
               "Aerial hitbox angle 50 > 361, hitboxes modified to stay consistent throughout",
-              "Grounded final hitbox size increased, active frames 1 > 3, KBG 160/175"
+              "Grounded linking hits hitlag x1.0 > x0.5",
+              "Grounded hitbox priority cleaned up",
+              "Grounded final hitbox size increased, active frames 1 > 3, KBG 160 > 175"
             ]
           }
         ],
         [
           {
-            "title": "Down Special (Bomb)        ",
+            "title": "Down Special (Bomb)",
             "changes": [
               "Bomb Multi Hit count lowered from 4 to 3, total damage 12% > 9%"
             ]
@@ -4544,7 +4598,8 @@
             "changes": [
               "Fixed a bug that causes a break out state when grabbed on certain frames",
               "Damage Multiplier on Egged opponents 0.5x > 0.75x",
-              "Invincibility granted on breakout lowered 14 > 9"
+              "Invincibility granted on breakout lowered 14 > 9",
+              "Aerial hitboxes fixed to match grounded hitboxes"
             ]
           }
         ],
@@ -4564,7 +4619,7 @@
           {
             "title": "Up Special (Egg Toss)",
             "changes": [
-              "Animation adjusted to make it more likely for successful edge cancels",
+              "Grounded momentum and transition to air momentum adjusted to allow for easier slide-offs to grab ledge",
               "Eggs no longer burst if coming into contact with a wall on frame 1",
               "Eggs now have a smoke trail GFX"
             ]

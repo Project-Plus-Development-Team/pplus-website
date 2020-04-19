@@ -4,7 +4,7 @@ block head
   +head("Project+ Website")
 
 block content
-  +header("changes")
+  +header("bugfixchanges")
 
   include data
 
@@ -38,18 +38,17 @@ block content
 
   section.section
     .container.maincard
-      h1.title Changes in Project+ v2.0
+      h1.title Changes in Project+ v2.1
       p.bold Automatically parsed from the Google Document, errors still possible.
       br
       .group
-        a.button.is-link(href="https://docs.google.com/document/d/1AH3UlDzE6Ns0NFul0poLG9_SjF3dTBRAVNObf5IMP2Y/edit#") Google Doc Version
-        a.button.is-link(href="https://docs.google.com/document/d/1h8W6rt1B4PtFY1ndpgKh8qbLCxwBR25ahaATA0nIJys/edit#") v1.05b  > 2.0 Changelog
+        a.button.is-link(href="https://docs.google.com/document/d/1Lo2t1zvk897dK8eWWEx1ImNoZjICW5G7hK_9clqyjlQ") Google Doc Version
         a.button.is-link(href="https://docs.google.com/spreadsheets/d/1QdTijaayiheKvIcvZSdHGae3v_OQXlJXx7T2C1pdvck") Music Lineup
 
 
 
 
-      // --------------------------- ripple bald
+      // ---------------------------
 
       - const replaceAll = (str, find, replace) => str.replace(new RegExp(find.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "g"), replace)
 

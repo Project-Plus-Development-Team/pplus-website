@@ -3,4 +3,4 @@
 
 # Redirect default Netlify subdomain to primary domain
 http://projectplus.netlify.com/* http://projectplusgame.com/:splat 301!
-/discord https://discord.gg/Ww3Vkgf
+/discord https://discord.gg/vdssRDg

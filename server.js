@@ -59,7 +59,9 @@ const handleCSS = (res, folders) => {
       if (err.code !== "ENOENT") throw err
 
       fs.readFile(path.join("src", ...folders), (err2, data) => {
-        if (err2) throw err2
+        if (err2) {
+          throw err2
+        }
 
         res.send(data)
       })

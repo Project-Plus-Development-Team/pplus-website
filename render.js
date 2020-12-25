@@ -41,11 +41,12 @@ const fs = require("fs"),
 ;(() => {
   fse.copySync("src/js", "_site/js", {overwrite: true})
   fse.copySync("src/img", "_site/img", {overwrite: true})
+  fse.copySync("src/host", "_site/host", {overwrite: true})
 })()
 
 // render pug stuff
 
-const ignoreFolders = ["components", "css", "js", "img"]
+const ignoreFolders = ["components", "css", "js", "img", "html"]
 
 const parents = fs.readdirSync("./src", {withFileTypes: true})
 

@@ -1,0 +1,54 @@
+a.fa-link {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  visibility: hidden;
+}
+
+li > a.fa-link {font-size: 0.9rem}
+
+h2 {
+  user-select: none;
+}
+
+li:hover > a.fa-link,
+h2:hover > a.fa-link {
+  visibility: visible;
+}
+
+.char-icon {
+  margin-right: 7px;
+}
+
+.char-icon > img {
+  height: 40px;
+  position: relative;
+  top: 10px;
+  margin-top: -1.2rem;
+}
+
+.dropdown {
+  cursor: pointer;
+  line-height: 60px;
+  margin-top: -1.2rem;
+}
+
+.dropdown > *::before {
+  content: "►";
+  font-family: Arial;
+  float: left;
+  margin-right: 5px;
+}
+
+.dropdown.open > *::before {
+  content: "▼";
+}
+
+span::before {
+  font-size: 24px;
+  line-height: 64px;
+}
+
+h2::before {
+  font-size: 20px;
+  line-height: 40px;
+}

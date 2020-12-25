@@ -1,125 +1,6 @@
 -
-  const characters =
+  const characters_20 =
   [
-    {
-      "name": "Misc",
-      "element": {},
-      "moves": [
-        [
-          {
-            "title": "Bug Fixes",
-            "changes": [
-              "Many codes moved out of sound resource, significantly reducing memory leak crashes [DukeItOut]",
-              "Collision memory leak fix code added, which should drastically reduce the overall number of freezes [DukeItOut]",
-              "Fixed a bug where characters could unsnap from the ledge frame 1 when the game considered them both grabbing the ledge and onstage [Fracture]",
-              "Game crashes now display an error log and do not play the loud beep of death [Fracture & Uncle Punch]",
-              "RCO Airspeed Fix [Eon]",
-              "Mario’s cape no longer applies super armor [Eon]",
-              "Platform drop momentum after getting your shield hit fixed to work normally [Eon]",
-              "Smash and Attack stick work properly during crawl [Eon]",
-              "Crawl momentum behaves normally in both directions [Sammi Husky]",
-              "Fixed numerous Subspace Emissary bugs related to Pokemon Trainer [Eon]",
-              "Teletether glitch fixed, Randall no longer interferes with tethers, tether displacement glitch fixed [Eon]",
-              "Nana no longer counts toward a victory star [Eon]",
-              "Using an aerial during knockback no longer causes missed techs [Eon]",
-              "Fixed a bug from LTE where All-Star mode CPUs would spawn in the break room [Eon]",
-              "Changed tap-jump meteor lockout timer to trigger on all jump inputs > 0.7 instead of > 0.715, fixing inputs that ignore meteor lockout, which are abusable by Smash Box, Box-likes, etc. [Eon]",
-              "Double jumping immediately after releasing ledge no longer forces a walljump [Eon]",
-              "Debug mode stability updated and now properly functions in Dolphin [Eon]",
-              "Clone Engine characters can become muted while metal [DukeItOut]",
-              "'Further improvements to overall system stability and other minor adjustments have been made to enhance the user experience'"
-            ]
-          }
-        ],
-        [
-          {
-            "title": "General Changes",
-            "changes": [
-              "Brand new Character Select screen",
-              "Rules Menu remade",
-              {
-                "title": "Training Mode received new options and QOL features [Eon]",
-                "changes": [
-                  "New Selectable CPU Behaviors: Shield, Crouch, DI in, Slight DI In, No DI, Slight DI Out, DI Out, and Slight DI (which picks between middle 3 options)",
-                  "Holding Z when pressing Finish on the training mode menu will instead restart the stage + settings",
-                  "Combo Meter is more lenient with what counts as a combo, now allowing for chaingrabs and techchases to count"
-                ]
-              },
-              {
-                "title": "Special BOSS mode added [DukeItOut]",
-                "changes": [
-                  "If someone has a tag containing the word “BOSS”, “boss”, “Boss”, or “ボス”, then only players with those tags will experience special mode behaviors",
-                  "When used with “CPU Characters Can Use Tags”, assign the tag first, then switch the character to be a CPU!"
-                ]
-              },
-              "CPUs will now select between one of the 5 options of DI, instead of perfectly random DI, to better simulate how it would be with an actual opponent [Eon]",
-              "Strap screen skipped on startup [PyotrLuzhin] (only on Netplay build)",
-              "Screen KO’s have been removed during teams [ds22, Eon]",
-              "Character positions during throws have been modified",
-              "Holding L/R while scrolling through costumes will scroll though ¼ of the character’s costumes [DukeItOut]",
-              "3-2-1 GO! countdown removed from single-player games [DukeItOut]",
-              "Codeset system redone for more user/coder friendliness",
-              "Trophies added for Mewtwo, Roy, and Knuckles based on their character renders"
-            ]
-          }
-        ],
-        [
-          {
-            "title": "Gameplay Changes",
-            "changes": [
-              "Attack (Tilt) Stick now functions properly [Eon]",
-              {
-                "title": "Two new C-stick options added",
-                "changes": [
-                  "Charge: holding the C-stick will charge smash attacks",
-                  "Taunt: each direction on the control stick performs its respective taunt (replaces the individual taunt options that were there previously) [Eon]"
-                ]
-              },
-              {
-                "title": "Item Throw Data Normalization",
-                "changes": [
-                  "Characters that had item throws release the item slower than frame 8 now release on frame 8",
-                  "Characters that had item throws IASA later than frame 23 now have IASA on frame 23",
-                  "Special exceptions apply to characters that spawn their own items, as well as Wario and Mr. Game & Watch, who throw on frame 12, IASA frame 20",
-                  "All running item throws are now actionable twice as fast"
-                ]
-              },
-              {
-                "title": "New Game Modes:",
-                "changes": [
-                  "Bomb Rain: Dodge Bob-Ombs in this frantic mode based on Sudden Death!",
-                  "Wild Mode: Play on stages up to twelve times faster than the original while you’re moving at normal speed! Try it out with chaotic stages such as Summit, WarioWare (hold Y on loading to get constant minigames!), Lylat Cruise (hold Y for tilting!) or Spear Pillar for a truly wild experience!"
-                ]
-              },
-              "In-game timer now displays frames instead of centiseconds [Eon]",
-              "Characters will no longer drop items when hit [Fracture]",
-              "Tech rolls now conserve momentum like Melee [Fracture]",
-              "Shield rolling now conserves momentum [Fracture]",
-              "Grabbing ledge now halts all momentum [Eon]",
-              "ECB now properly updates upon grabbing a ledge [DukeItOut]",
-              "Using normal get up from ledge does not trigger the ledge regrab lockout timer [DukeitOut]",
-              "Ledge occupancy of ledge rolls under 100% increased from 41 > 46 frames",
-              "Characters can no longer trip on banana during throws [Eon]",
-              "UCF-style shield dropping has been added [Fracture]",
-              "Powershield damage multiplier x0.75 > x1 [DukeItOut]",
-              "Footstool knockback has been normalized for all characters. All characters will fall 30 units before being actionable again. The number of frames spent inactionable when footstooled varies depending on fall speed",
-              "Characters can no longer be footstooled out of glide attacks [Eon]",
-              "Characters can now drift when hitstun prematurely ends [Eon]",
-              "Shield button while tripped goes into get-up [Standardtoaster, Magus, Eon]",
-              "Glancing Blow threshold is zero [Magus, Eon]",
-              "Window to wiggle out of tumble extended from 1 frame to 2 [Fracture]",
-              "Initiating a shield drop the same frame as a hard shield no longer causes wavelands [Eon]",
-              "All get up attacks and ledge attacks no longer clank",
-              "Negative Y-Speed from angle 365 attacks is capped at -0.5 [Eon]",
-              "Maximum distance behind that a character can be grabbed from capped to -6.5 units [DukeItOut]",
-              "Subspace Emissary characters now use the same variables as normal gameplay [Eon]",
-              "Slow-mo with the Timer item properly processes knockback in slow-mo [Eon]",
-              "Stickers no longer drop in versus mode [DukeItOut]"
-            ]
-          }
-        ]
-      ]
-    },
     {
       "name": "Bowser",
       "element": {},
@@ -6810,6 +6691,125 @@
                   "1:1 of Super Happy Tree"
                 ]
               }
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "name": "Misc",
+      "element": {},
+      "moves": [
+        [
+          {
+            "title": "Bug Fixes",
+            "changes": [
+              "Many codes moved out of sound resource, significantly reducing memory leak crashes [DukeItOut]",
+              "Collision memory leak fix code added, which should drastically reduce the overall number of freezes [DukeItOut]",
+              "Fixed a bug where characters could unsnap from the ledge frame 1 when the game considered them both grabbing the ledge and onstage [Fracture]",
+              "Game crashes now display an error log and do not play the loud beep of death [Fracture & Uncle Punch]",
+              "RCO Airspeed Fix [Eon]",
+              "Mario’s cape no longer applies super armor [Eon]",
+              "Platform drop momentum after getting your shield hit fixed to work normally [Eon]",
+              "Smash and Attack stick work properly during crawl [Eon]",
+              "Crawl momentum behaves normally in both directions [Sammi Husky]",
+              "Fixed numerous Subspace Emissary bugs related to Pokemon Trainer [Eon]",
+              "Teletether glitch fixed, Randall no longer interferes with tethers, tether displacement glitch fixed [Eon]",
+              "Nana no longer counts toward a victory star [Eon]",
+              "Using an aerial during knockback no longer causes missed techs [Eon]",
+              "Fixed a bug from LTE where All-Star mode CPUs would spawn in the break room [Eon]",
+              "Changed tap-jump meteor lockout timer to trigger on all jump inputs > 0.7 instead of > 0.715, fixing inputs that ignore meteor lockout, which are abusable by Smash Box, Box-likes, etc. [Eon]",
+              "Double jumping immediately after releasing ledge no longer forces a walljump [Eon]",
+              "Debug mode stability updated and now properly functions in Dolphin [Eon]",
+              "Clone Engine characters can become muted while metal [DukeItOut]",
+              "'Further improvements to overall system stability and other minor adjustments have been made to enhance the user experience'"
+            ]
+          }
+        ],
+        [
+          {
+            "title": "General Changes",
+            "changes": [
+              "Brand new Character Select screen",
+              "Rules Menu remade",
+              {
+                "title": "Training Mode received new options and QOL features [Eon]",
+                "changes": [
+                  "New Selectable CPU Behaviors: Shield, Crouch, DI in, Slight DI In, No DI, Slight DI Out, DI Out, and Slight DI (which picks between middle 3 options)",
+                  "Holding Z when pressing Finish on the training mode menu will instead restart the stage + settings",
+                  "Combo Meter is more lenient with what counts as a combo, now allowing for chaingrabs and techchases to count"
+                ]
+              },
+              {
+                "title": "Special BOSS mode added [DukeItOut]",
+                "changes": [
+                  "If someone has a tag containing the word “BOSS”, “boss”, “Boss”, or “ボス”, then only players with those tags will experience special mode behaviors",
+                  "When used with “CPU Characters Can Use Tags”, assign the tag first, then switch the character to be a CPU!"
+                ]
+              },
+              "CPUs will now select between one of the 5 options of DI, instead of perfectly random DI, to better simulate how it would be with an actual opponent [Eon]",
+              "Strap screen skipped on startup [PyotrLuzhin] (only on Netplay build)",
+              "Screen KO’s have been removed during teams [ds22, Eon]",
+              "Character positions during throws have been modified",
+              "Holding L/R while scrolling through costumes will scroll though ¼ of the character’s costumes [DukeItOut]",
+              "3-2-1 GO! countdown removed from single-player games [DukeItOut]",
+              "Codeset system redone for more user/coder friendliness",
+              "Trophies added for Mewtwo, Roy, and Knuckles based on their character renders"
+            ]
+          }
+        ],
+        [
+          {
+            "title": "Gameplay Changes",
+            "changes": [
+              "Attack (Tilt) Stick now functions properly [Eon]",
+              {
+                "title": "Two new C-stick options added",
+                "changes": [
+                  "Charge: holding the C-stick will charge smash attacks",
+                  "Taunt: each direction on the control stick performs its respective taunt (replaces the individual taunt options that were there previously) [Eon]"
+                ]
+              },
+              {
+                "title": "Item Throw Data Normalization",
+                "changes": [
+                  "Characters that had item throws release the item slower than frame 8 now release on frame 8",
+                  "Characters that had item throws IASA later than frame 23 now have IASA on frame 23",
+                  "Special exceptions apply to characters that spawn their own items, as well as Wario and Mr. Game & Watch, who throw on frame 12, IASA frame 20",
+                  "All running item throws are now actionable twice as fast"
+                ]
+              },
+              {
+                "title": "New Game Modes:",
+                "changes": [
+                  "Bomb Rain: Dodge Bob-Ombs in this frantic mode based on Sudden Death!",
+                  "Wild Mode: Play on stages up to twelve times faster than the original while you’re moving at normal speed! Try it out with chaotic stages such as Summit, WarioWare (hold Y on loading to get constant minigames!), Lylat Cruise (hold Y for tilting!) or Spear Pillar for a truly wild experience!"
+                ]
+              },
+              "In-game timer now displays frames instead of centiseconds [Eon]",
+              "Characters will no longer drop items when hit [Fracture]",
+              "Tech rolls now conserve momentum like Melee [Fracture]",
+              "Shield rolling now conserves momentum [Fracture]",
+              "Grabbing ledge now halts all momentum [Eon]",
+              "ECB now properly updates upon grabbing a ledge [DukeItOut]",
+              "Using normal get up from ledge does not trigger the ledge regrab lockout timer [DukeitOut]",
+              "Ledge occupancy of ledge rolls under 100% increased from 41 > 46 frames",
+              "Characters can no longer trip on banana during throws [Eon]",
+              "UCF-style shield dropping has been added [Fracture]",
+              "Powershield damage multiplier x0.75 > x1 [DukeItOut]",
+              "Footstool knockback has been normalized for all characters. All characters will fall 30 units before being actionable again. The number of frames spent inactionable when footstooled varies depending on fall speed",
+              "Characters can no longer be footstooled out of glide attacks [Eon]",
+              "Characters can now drift when hitstun prematurely ends [Eon]",
+              "Shield button while tripped goes into get-up [Standardtoaster, Magus, Eon]",
+              "Glancing Blow threshold is zero [Magus, Eon]",
+              "Window to wiggle out of tumble extended from 1 frame to 2 [Fracture]",
+              "Initiating a shield drop the same frame as a hard shield no longer causes wavelands [Eon]",
+              "All get up attacks and ledge attacks no longer clank",
+              "Negative Y-Speed from angle 365 attacks is capped at -0.5 [Eon]",
+              "Maximum distance behind that a character can be grabbed from capped to -6.5 units [DukeItOut]",
+              "Subspace Emissary characters now use the same variables as normal gameplay [Eon]",
+              "Slow-mo with the Timer item properly processes knockback in slow-mo [Eon]",
+              "Stickers no longer drop in versus mode [DukeItOut]"
             ]
           }
         ]

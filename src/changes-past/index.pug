@@ -1,8 +1,9 @@
 extends /components/layout
 
 mixin changelogHead(version, date, linkObject)
-  h1.title(style="text-align:left;float:left")= "Changes in Project+ " + version 
-  b(style="text-align:right;float:right;")= "Release Date: " + date
+  a(data-target=version).dropdown
+    h1.title.link(style="text-align:left;float:left;margin-top: 1.2rem")= "Changes in Project+ " + version 
+  b(style="text-align:right;float:right")= "Release Date: " + date
   .group
     br(style="clear:both")
     each link, text in linkObject
@@ -66,7 +67,7 @@ mixin changelog(characters, version, date, linkObject)
  
         - const replaceAll = (str, find, replace) => str.replace(new RegExp(find.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1"), "g"), replace)
  
-        .group(style="margin-top: 2.2rem")
+        .group(data-fold=version style="display: none;margin-top: 2.2rem")
           each character in characters
            +changelogCharacter(character, version, date, replaceAll)
  
@@ -74,19 +75,29 @@ block head
   +head("Project+ Website")
  
 block content
-  +header("newchanges") 
+  +header("pastchanges") 
 
   link(href="/css/style.css" type="text/css" rel="stylesheet")
 
   //include changelog ##log
 
-  include 22log
+  include 215log
+  include 211log
+  include 20log
 
   //const, version, release date, links
 
-  +changelog(characters_22, "v2.2", "12/31/20", {
-    "Google Doc Version": "https://docs.google.com/document/d/19C3VouDduhjRVwdLXwW9BQ-oZ7LiYbzbb7pkDn7dAzk",
-    "Music Lineup": "https://docs.google.com/spreadsheets/d/1QdTijaayiheKvIcvZSdHGae3v_OQXlJXx7T2C1pdvck"
+  +changelog(characters_215, "v2.15", "6/23/20", {
+    "Google Doc Version": "https://docs.google.com/document/d/1pfvmbOpOhu7Pys_kWrWYC5A4SSLLY0YLXx6_gXJi4Ds"
+  })
+
+  +changelog(characters_211, "v2.11", "4/20/20", {
+    "Google Doc Version": "https://docs.google.com/document/d/1Lo2t1zvk897dK8eWWEx1ImNoZjICW5G7hK_9clqyjlQ"
+  })
+
+  +changelog(characters_20, "v2.0", "3/17/20", {
+    "Google Doc Version": "https://docs.google.com/document/d/1AH3UlDzE6Ns0NFul0poLG9_SjF3dTBRAVNObf5IMP2Y/edit#",
+    "v1.05b  > 2.0 Changelog": "https://docs.google.com/document/d/1h8W6rt1B4PtFY1ndpgKh8qbLCxwBR25ahaATA0nIJys/edit#"
   })
 
   //Kirbeast was here

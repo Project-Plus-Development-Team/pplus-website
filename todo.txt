@@ -1,0 +1,5 @@
+- loglang editor
+- sitemap.xml file
+- _redirects file
+- counter netlify function
+- update.xml file

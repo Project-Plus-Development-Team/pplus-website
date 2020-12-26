@@ -1,3 +1,3 @@
 [build]
-  publish = "_site"
-  functions = "./stats"
+  publish = "out/"
+  command = "npm run build"

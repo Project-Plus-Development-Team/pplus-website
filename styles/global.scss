@@ -8,7 +8,7 @@ html {
 
 body {
   flex: 1;
-  background: url(/img/triangle-mosaic.jpg);
+  background: url(/images/triangle-mosaic.jpg);
   background-size: 150px 150px;
 }
 
@@ -37,7 +37,7 @@ code {
 
 #navigation {
   background: linear-gradient(to bottom, #35dcc5, #34d171),
-              url(/img/background.jfif);
+              url(/images/background.jfif);
   background-blend-mode: color;
   border-radius: 0.3rem;
   overflow: hidden; // potentially problematic
@@ -105,7 +105,7 @@ section.section {
   padding: 1rem;
 }
 
-body > section.section {
+body main.section {
   padding-top: 0;
 }
 

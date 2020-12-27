@@ -35,39 +35,6 @@ code {
   border-radius: 0.3rem;
 }
 
-#navigation {
-  background: linear-gradient(to bottom, #35dcc5, #34d171),
-              url(/images/background.jfif);
-  background-blend-mode: color;
-  border-radius: 0.3rem;
-  overflow: hidden; // potentially problematic
-}
-
-.navbar * {
-  transition: all 0.1s ease;
-}
-
-.container > .navbar {
-  & .navbar-menu, & .navbar-brand {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-.navbar-item.active,
-.navbar.is-dark .navbar-brand>a.navbar-item:hover {
-  background: hsla(0,0%,0%,0.4);
-}
-
-.navbar.is-dark .navbar-start>a.navbar-item:hover {
-  background: rgba(0,0%,0%,0.7);
-}
-
-section.section {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
 .group {
   margin-bottom: 1rem;
 
@@ -98,27 +65,23 @@ section.section {
   @return unquote('hsla(#{$h}, #{$s}, #{$l}, #{$a})'); // hsla instead of hsl
 }
 
-.maincard {
+header + .container {
   background: hsla(0,0%,20%,50%);
   border-radius: 0.3rem;
   border: 3px solid hsl(0,0%,20%);
   padding: 1rem;
 }
 
-body main.section {
-  padding-top: 0;
-}
+// @media screen and (max-width: 768px) {
+//   .section {
+//     padding: 1rem !important;
+//   }
 
-@media screen and (max-width: 768px) {
-  .section {
-    padding: 1rem !important;
-  }
+//   header.section {
+//     padding: 0 !important;
 
-  header.section {
-    padding: 0 !important;
-
-    .navbar {
-      border-radius: 0 !important;
-    }
-  }
-}
+//     .navbar {
+//       border-radius: 0 !important;
+//     }
+//   }
+// }

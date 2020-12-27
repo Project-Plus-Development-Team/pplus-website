@@ -1,46 +1,45 @@
+import { Container, Columns, Heading, Content } from "react-bulma-components";
+
 export default function Home() {
   return (
     <>
-      <main className="section">
-        <div className="container maincard">
-          <div className="columns">
-            <div className="container center-text">
-              <h1 className="title">Release Trailer</h1>
-              <iframe src="https://www.youtube.com/embed/z_Hm9FBMz1M"/>
-            </div>
-
-            <div className="column">
-              <h1 className="title">What is Project Plus?</h1>
-              <p>Project Plus:</p>
-              <div className="content">
-                <ul>
-                  <li>is a community driven patch for Project M</li>
-                  <li>strives to invigorate the Project M experience</li>
-                  <li>further balances the roster</li>
-                  <li>fixes lingering 3.6 bugs</li>
-                  <li>gives the entire UI a fresh coat of paint</li>
-                  <li>adjusts movesets to be more fun to play with and against</li>
-                  <li>introduces new gameplay mechanics to Project M</li>
-                  <li>includes new features such as those created by the Legacy TE team for Legacy TE 2.5.</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="column" style={{display: 'flex', flexDirection: "row-reverse"}}>
-              <img src="images/Falco.png" alt="Translucent Falco" className="magic"/>
-            </div>
-          </div>
+      <Container renderAs="main">
+        <div className="is-flex is-flex-direction-column is-align-items-center">
+          <Heading>Release Trailer</Heading>
+          <iframe src="https://www.youtube.com/embed/z_Hm9FBMz1M"/>
         </div>
-      </main>
 
-      {/* <main>
-        <h1 className="title">
-          Learn <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-      </main> */}
+        {/* <Columns.Column size="half" offset="one-quarter" className="center-text">
+          <Heading className="center-text">Release Trailer</Heading>
+        </Columns.Column> */}
+        
+        <Columns>
 
-      <footer>
-      </footer>
+          <Columns.Column>
+            <Heading>What is Project Plus?</Heading>
+            <p>Project Plus:</p>
+            <Content>
+              <ul>
+                <li>is a community driven patch for Project M</li>
+                <li>strives to invigorate the Project M experience</li>
+                <li>further balances the roster</li>
+                <li>fixes lingering 3.6 bugs</li>
+                <li>gives the entire UI a fresh coat of paint</li>
+                <li>adjusts movesets to be more fun to play with and against</li>
+                <li>introduces new gameplay mechanics to Project M</li>
+                <li>includes new features such as those created by the Legacy TE team for Legacy TE 2.5.</li>
+              </ul>
+            </Content>
+          </Columns.Column>
+
+          <Columns.Column style={{display: 'flex', flexDirection: "row-reverse"}}>
+            <img src="images/Falco.png" alt="Translucent Falco" className="magic"/>
+          </Columns.Column>
+        </Columns>
+      </Container>
+
+      {/* <footer>
+      </footer> */}
 
       <style jsx>{`
         .magic {
@@ -60,16 +59,16 @@ export default function Home() {
           opacity: 1.0;
         }
 
-        .center-text{
+        .center-text {
             text-align: center;
             width: 100%;
         }
 
-        .columns{
+        .columns {
             flex-wrap: wrap;
         }
 
-        iframe{
+        iframe {
             width: 560px;
             height: 316px;
             margin-bottom: 26px;
@@ -80,5 +79,5 @@ export default function Home() {
 
       `}</style>
     </>
-  )
+  );
 }

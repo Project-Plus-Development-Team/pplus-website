@@ -1,10 +1,11 @@
-import "bulma/css/bulma.css";
+import "bulma/bulma.sass";
 import "../styles/global.scss";
+import "@fortawesome/fontawesome-free/css/all.css";
 import { AppProps } from "next/app";
-import Header from "../components/header";
+import PageHeader from "../components/PageHeader";
 import Head from "next/head";
 
-export default function App({ Component, pageProps}: AppProps) {
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -21,7 +22,7 @@ export default function App({ Component, pageProps}: AppProps) {
         
         <title>Project+ Website</title>
       </Head>
-      <Header/>
+      <PageHeader/>
       <Component {...pageProps}/>
     </>
   );

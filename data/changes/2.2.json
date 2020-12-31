@@ -1,0 +1,311 @@
+[
+  {
+    "name": "Falco",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Reflector (Down Special)",
+          "changes": [
+            "Behavior normalized with Fox, Wolf and Ness (only changes vertical acceleration when held)"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Ganondorf",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Up Tilt",
+          "changes": [
+            "Initial hitbox properties adjusted to make more sense in hitbox viewers",
+            "Now has darkness effect on hit"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Ivysaur",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Final Smash",
+          "changes": [
+            "Completely revamped; now gives buffed movement and infinite Solar Beams for 30 seconds"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Kirby",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Inhale (Neutral Special)",
+          "changes": [
+            "PK Flash frame data now matches Ness" ,
+            "Bowser Fireball now properly terminates on hit",
+            "Samus Charge Shot frame data now matches Samus",
+            "Zero Suit Samus blaster projectile velocity now matches ZSS",
+            "Falcon Punch turnaround behavior matched to Captain Falcon",
+            "Shadow Ball movement now matches Mewtwo’s"
+          ]
+        },
+        {
+          "title": "Final Cutter (Up Special)",
+          "changes": [
+            "Cutter Dash input deadzone removed"
+          ]
+        }
+      ]
+    ]
+  },
+
+  {
+    "name": "Knuckles",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Spin Dash (Down Special)",
+          "changes": [
+            "Can no longer be used to Bucket Brake"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Lucario",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Up Smash",
+          "changes": [
+            "Hit 1 Damage 4 > 6, Hits 3 and 4 now function similarly to PM 3.6, angles now match 3.6"
+          ]
+        },
+        {
+          "title": "Extreme Speed (Up Special)",
+          "changes": [
+            "Hitbox now always sends in the direction Lucario is moving"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Marth",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Other",
+          "changes": [
+            "Back roll IASA 33 > 32"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Sonic",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Spin Dash (Down Special)",
+          "changes": [
+            "Can no longer be used to Bucket Brake"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Yoshi",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Other",
+          "changes": [
+            "Eggs no longer despawn when Yoshi dies",
+            "Ungrabbable hurtboxes during shield made intangible to prevent any shieldpoking edge cases"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Wario-Man",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Down Special (Waft)",
+          "changes": [
+            "Can no longer die off the top with his own Waft"
+          ]
+        }
+      ]
+    ]
+  },
+
+   {
+    "name": "Stages",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Fourside",
+          "changes": [
+            "L-alt (New Pork City) GFX and SFX restored"
+          ]
+        },
+        {
+          "title": "Golden Temple",
+          "changes": [
+            "Cloud animation fixed",
+            "Stage banner now matches alts correctly"
+          ]
+        },
+        
+        {
+          "title": "Pictochat",
+          "changes": [
+            "R-alt now has “C” on the left side to match the stage itself",
+            "Module for default/Brawl versions fixed"
+          ]
+        },
+
+        {
+          "title": "Training Room",
+          "changes": [
+            "New L+R alt: Green Screen"
+          ]
+        }
+      ]
+    ]
+  },
+  {
+    "name": "Misc",
+    "element": {},
+    "moves": [
+      [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            {
+              "title": "Characters and Gameplay",
+              "changes": [
+                "Moving platform behavior fix redone to fix edge case warping",
+                "Various instances of clipping through stages fixed",
+                "Wall tech invincibility normalized cast-wide (20 frames)",
+                "No-hitstun/no hitlag moves now properly refresh recovery resources for select characters",
+                "Overtime now only applies to stock matches",
+                "Grab Release fix applied to inhales (characters with actionable recoveries now regain their move when spit out or swallowed)",
+                "Characters with more than 16 costumes no longer break horde battles",
+                "Springs will now not automatically center characters when landed on",
+                "Charizard’s knockdown getup attack no longer sends opponents to the blastzone when shielded, along with other small file corruption problems",
+                "Ice Climbers can no longer get stuck to each other if hit frame perfectly out of Side Special",
+                "Mario and Luigi’s lying down getup attacks no longer have stray fixed knockback hitboxes",
+                "Marth’s Side Special can no longer retain momentum when going offstage from onstage",
+                "Olimar’s Pikmin no longer encounter issues while/after grabbing ledge",
+                "Pikachu will no longer clip through the stage after using Quick Attack",
+                "Fixed issue where Snake would keep billowing dirt clouds near his legs if the ending to the animation was interrupted",
+                "Fixed issue where dirt would instantly disappear at Snake’s feet if he interrupted the ending of the down smash placement animation",
+                "Sonic can no longer take an opponent’s jumps with Spring",
+                "Transforming with Sheik no longer allows Sheik to enter the needle charge animation after transforming back if she already has five needles",
+                "Smash attack charging damage fixed on ZSS, Ness and Knuckles to properly scale with charge. (Applies to ZSS’ up smash and forward smash, Ness’ up smash and down smash and Knuckles’ down smash when used downwards)"
+              ]
+              },
+              {
+              "title": "Stages/Music",
+              "changes": [
+                "Bowser’s victory theme in P+ Lite no longer loops",
+                "D-Pad functionality for alternate stage loading fixed",
+                "Fixed issue where trying to add more stages to page 3 than were present on page 1 would result in duplicate stage slots",
+                "Fixed issue where Battlefield’s lighting would instantly swap settings during certain times of the in-stage day",
+                "Fixed problem where Luigi’s Mansion had rendering issues near the lower entryways",
+                "Module for default/Brawl versions of Pictochat fixed",
+                "Golden Temple’s clouds now have smoother animation; foliage and polygon count on default and R-alt variations improved"
+              ]
+            },
+            {
+              "title": "Other",
+              "changes": [
+                "Fixed PM-era issue where Classic and All-Star modes would mistakenly show you a picture of Zero Suit Samus instead of Wario-Man",
+                "Fixed issue where Boss Battles would crash if entered after exiting the All-Star rest area",
+                "Giga Bowser can now complete All-Star mode",
+                "Fighting Ridley no longer crashes Boss Battles",
+                "Boss Battles now gives proper ending",
+                "Samus AI will now crouch properly in Training Mode if set to do so"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Aesthetic Changes",
+          "changes": [
+            {
+              "title": "Characters/Costumes",
+              "changes": [
+                "Implemented new Hitbox, ECB, and Ledge renderers, and added Stage renderer into debug mode (HUD toggle is also not separate)",
+                "UCF code reworked, should feel more accurate to Melee’s implementation",
+                "Various former PSA-based character attributes and features now moved into codeset or normalized with Brawl to make PSA porting easier",
+                "Air Dodge length is no longer dependent on tilt distance",
+                "“Shield” option in Training Mode no longer gives infinite shield (activate in Code Menu instead)",
+                "Roy cosmetics revamped",
+                "Sunshine Peach semi-alt added",
+                "Samus costumes (except Fusion) and cosmetics redone",
+                "Sonic’s Z alt is now a Smash 2-styled Sonic",
+                "Ike, Knuckles, Marth, Pit, Roy, Snake, and Zero Suit Samus received facial animation updates on various moves",
+                "Captain Falcon’s dash animation cleaned up",
+                "Captain Falcon’s Final Smash utilizes formerly unused ending animation when started from the ground",
+                "Kirby’s Charge Shot now uses the same SFX as Samus’",
+                "Olimar’s Pikmin now have color-specific trail effects",
+                "Pit’s Dark Pit colors now have unique arrows, sword trails and a silver bow",
+                "ROB retains his Final Smash aura during his Final Smash’s duration",
+                "Snake's up tilt animation cleaned up",
+                "Snake’s down smash mine is now gray with a flashing top instead of purple",
+                "Snake’s down smash mine has been slightly raised in appearance to be consistently visible on all stages",
+                "Snake’s down smash dirt effect has been synchronized to the animation of digging",
+                "Snake transitions into crawl attack more smoothly and doesn’t immediately hold the knife at the start of it",
+                "Snake’s knife attacks now have glow effects, similar to other blades",
+                "Snake’s box walk taunt recoded to have smoother transitions between walking left and right",
+                "Sonic’s feet in his ball animations are no longer flat and scale properly",
+                "Various menu textures cleaned up",
+                "Many costumes and stages optimized for file size"
+              ]
+            },
+            {
+              "title": "Music",
+              "changes": [
+                "Added cirb’s Project M Theme remix to the menu and the All-Star Rest Area"
+              ]
+            },
+            {
+              "title": "Other",
+              "changes": [
+                "Optional code for loading Character Select Portraits from the Result Screen Portraits file optimized, now no longer crashes",
+                "Joining a Dolphin netplay lobby as “Spectator” will now automatically disable your port",
+                "WASAPI backend added to Dolphin",
+                "Reduced audio delay in Dolphin",
+                "Strap and Results screen updated for version 2.2"
+              ]
+            }
+          ]
+        }
+      ]
+    ]
+  }
+]

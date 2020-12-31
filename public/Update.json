@@ -1,0 +1,7 @@
+{"hash": "d6800a124dbba118e297188900d07adfea661b87",
+ "version": "FPM v2.15 Test BETA",
+ "changelog": "Save client side music off setting \nCreate frame dump folder if it doesn't exist \nAdd /dev/dolphin for homebrew to get information about Dolphin \nDump textures in only .png",
+ "updater-update": "true",
+ "update-page": "https://projectplusgame.com/download/",
+ "download-page-windows": "https://www.dl.dropboxusercontent.com/s/t2r0we9i2cgaefw/Test%20Download.zip?dl=0",
+ "download-page-mac": "https://www.dl.dropboxusercontent.com/s/vlrx9z24ero46zs/Test%20Download%20Mac.zip?dl=0"}

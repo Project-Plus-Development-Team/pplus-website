@@ -1,11 +1,15 @@
 import "bulma/bulma.sass";
+import "bulmaswatch/cyborg/bulmaswatch.min.css";
 import "../styles/global.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { AppProps } from "next/app";
 import PageHeader from "../components/PageHeader";
 import Head from "next/head";
+import { getVersions } from "../lib/changes";
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, versions }: AppProps & { versions: any }) {
+  console.log("VERSIONS", versions);
+
   return (
     <>
       <Head>
@@ -22,8 +26,18 @@ export default function App({ Component, pageProps }: AppProps) {
         
         <title>Project+ Website</title>
       </Head>
-      <PageHeader/>
+      <PageHeader versions={versions}/>
       <Component {...pageProps}/>
     </>
   );
+}
+
+export async function getStaticProps() {
+  const versions = await getVersions();
+
+  return {
+    props: {
+      versions
+    }
+  };
 }

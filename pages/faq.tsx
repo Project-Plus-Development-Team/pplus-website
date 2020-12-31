@@ -1,24 +1,26 @@
-import { Container, Section, Heading } from "react-bulma-components";
+import Head from "next/head";
+import { Container } from "react-bulma-components";
 import ReactMarkdown from "react-markdown";
 
 function FAQ({ markdown }) {
   return (
     <>
-      <Section>
+      <Head>
+        <title>F.A.Q.</title>
+      </Head>
+      <Container>
         <Container className="maincard">
-          <Heading>F.A.Q.</Heading>
-          <Heading subtitle className="is-spaced">(Frequently Asked Questions)</Heading>
-          <ReactMarkdown allowDangerousHtml>{markdown.default}</ReactMarkdown>
+          <div className="content">
+            <ReactMarkdown className="line-break" allowDangerousHtml>
+              {markdown.default}
+            </ReactMarkdown>
+          </div>
         </Container>
-      </Section>
+      </Container>
       <style global jsx>{`
-        h3 {
-          font-size: 20px;
-          font-weight: 600;
-        }
-
-        h3:not(:first-child) {
-          margin-top: 1rem;
+        .content h4 {
+          margin-top: 1.1em;
+          margin-bottom: 0.4em;
         }
       `}</style>
     </>

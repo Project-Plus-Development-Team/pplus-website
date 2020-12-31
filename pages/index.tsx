@@ -33,7 +33,7 @@ export default function Home() {
           </Columns.Column>
 
           <Columns.Column style={{display: 'flex', flexDirection: "row-reverse"}}>
-            <img src="images/Falco.png" alt="Translucent Falco" className="magic"/>
+            <img src="/images/Falco.png" alt="Translucent Falco" className="magic"/>
           </Columns.Column>
         </Columns>
       </Container>

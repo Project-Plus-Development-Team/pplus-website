@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Section, Container, Navbar, Button, Icon } from "react-bulma-components";
+// import { getVersions } from "../lib/changes";
 import styles from "./PageHeader.module.scss";
 
 function NavLink({ text, href, pathname }) {
@@ -23,20 +24,32 @@ function Brand() {
   return (
     <Navbar.Brand>
       <Navbar.Item renderAs="div" style={{ paddingTop: 0, paddingBottom: 0 }}>
-        <img src="images/projectplus_logo_small.png" style={{maxHeight: "2.5rem"}}/>
+        <img src="/images/projectplus_logo_small.png" style={{maxHeight: "2.5rem"}}/>
       </Navbar.Item>
       <Navbar.Burger/>
     </Navbar.Brand>
   );
 }
 
-function LinkContainer({ pathname }) {
+interface LinkContainerProps {
+  pathname: string
+  versions: string[]
+}
+
+function LinkContainer({ pathname, versions }: LinkContainerProps) {
   return (
     <Navbar.Container className="has-text-weight-bold">
       <NavLink text="Home" href="/" pathname={pathname}/>
       <NavLink text="F.A.Q." href="/faq" pathname={pathname}/>
-      {/* Changes
-      Knuckles */}
+      <Navbar.Item dropdown hoverable href="#">
+        <Navbar.Link>Changes</Navbar.Link>
+        <Navbar.Dropdown>
+          {versions.map(version => (
+            <NavLink key={version} text={version} href={`/changes/${version}`} pathname={pathname}/>
+          ))}
+        </Navbar.Dropdown>
+      </Navbar.Item>
+      <NavLink text="Knuckles" href="/knuckles" pathname={pathname}/>
     </Navbar.Container>
   );
 }
@@ -69,7 +82,7 @@ function ButtonContainer() {
   );
 }
 
-export default function PageHeader() {
+export default function PageHeader({ versions }) {
   const router = useRouter();
 
   return (
@@ -78,7 +91,7 @@ export default function PageHeader() {
         <Navbar color="dark" className={styles.navbar + " pl-3 pr-2"}>
           <Brand/>
           <Navbar.Menu>
-            <LinkContainer pathname={router.pathname}/>
+            <LinkContainer pathname={router.pathname} versions={versions}/>
             <ButtonContainer/>
           </Navbar.Menu>
         </Navbar>

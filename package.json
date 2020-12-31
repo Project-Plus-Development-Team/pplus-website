@@ -13,6 +13,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bulma": "^0.9.1",
+    "bulmaswatch": "^0.8.1",
     "next": "^10.0.0",
     "react": "16.13.1",
     "react-bulma-components": "^3.4.0",

@@ -7,9 +7,7 @@ import PageHeader from "../components/PageHeader";
 import Head from "next/head";
 import { getVersions } from "../lib/changes";
 
-export default function App({ Component, pageProps, versions }: AppProps & { versions: any }) {
-  console.log("VERSIONS", versions);
-
+export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
@@ -26,18 +24,8 @@ export default function App({ Component, pageProps, versions }: AppProps & { ver
         
         <title>Project+ Website</title>
       </Head>
-      <PageHeader versions={versions}/>
+      <PageHeader versions={[]}/>
       <Component {...pageProps}/>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const versions = await getVersions();
-
-  return {
-    props: {
-      versions
-    }
-  };
 }

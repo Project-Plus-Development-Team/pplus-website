@@ -9,4 +9,9 @@ export interface CharacterType {
   moves: [ChangeObjectType][]
 }
 
-export type ChangesType = CharacterType[]
+export interface VersionData {
+  links?: {
+    [url: string]: string
+  }
+  changes: CharacterType[]
+}

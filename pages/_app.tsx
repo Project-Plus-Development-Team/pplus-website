@@ -5,7 +5,6 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import { AppProps } from "next/app";
 import PageHeader from "../components/PageHeader";
 import Head from "next/head";
-import { getVersions } from "../lib/changes";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -24,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
         
         <title>Project+ Website</title>
       </Head>
-      <PageHeader versions={[]}/>
+      <PageHeader/>
       <Component {...pageProps}/>
     </>
   );

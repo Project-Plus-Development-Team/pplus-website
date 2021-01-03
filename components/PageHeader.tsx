@@ -33,16 +33,20 @@ function Brand() {
 
 interface LinkContainerProps {
   pathname: string
-  versions: string[]
 }
 
-function LinkContainer({ pathname, versions }: LinkContainerProps) {
+const versions = [ "2.0", "2.11", "2.15", "2.2" ]; // <- specify these from oldest to newest
+
+function LinkContainer({ pathname }: LinkContainerProps) {
+  const isChangesActive = pathname.split("/")[1] === "changes";
+  const activeClass = isChangesActive ? styles.navitemactive : "";
+
   return (
     <Navbar.Container className="has-text-weight-bold">
       <NavLink text="Home" href="/" pathname={pathname}/>
       <NavLink text="F.A.Q." href="/faq" pathname={pathname}/>
       <Navbar.Item dropdown hoverable href="#">
-        <Navbar.Link>Changes</Navbar.Link>
+        <Navbar.Link className={`${styles.navitem} ${activeClass}`}>Changes</Navbar.Link>
         <Navbar.Dropdown>
           {versions.map(version => (
             <NavLink key={version} text={version} href={`/changes/${version}`} pathname={pathname}/>
@@ -60,21 +64,24 @@ function ButtonContainer() {
       <Navbar.Item renderAs="div"> {/* <a> is default and gets an ugly shadow */}
         <div className="field is-grouped">
           <div className="control">
-            <Button href="/download" color="link" className="has-text-weight-bold">
-              <Icon>
-                <span className="fas fa-download"/>
-              </Icon>
-              <span>Download v2.2</span>
-            </Button>
-            {/* TODO turn into <Link></Link> */}
+            <Link href="/download">
+              <Button color="link" className="has-text-weight-bold">
+                <Icon>
+                  <span className="fas fa-download"/>
+                </Icon>
+                <span>Download v2.2</span>
+              </Button>
+            </Link>
           </div>
           <div className="control">
-            <Button href="/discord" color="link" className={styles.discordbutton}>
-              <Icon>
-                <span className="fab fa-discord"/>
-              </Icon>
-              <span>Discord Server</span>
-            </Button>
+            <a href="/discord">
+              <Button color="link" className={styles.discordbutton}>
+                <Icon>
+                  <span className="fab fa-discord"/>
+                </Icon>
+                <span>Discord Server</span>
+              </Button>
+            </a>
           </div>
         </div>
       </Navbar.Item>
@@ -82,7 +89,7 @@ function ButtonContainer() {
   );
 }
 
-export default function PageHeader({ versions }) {
+export default function PageHeader() {
   const router = useRouter();
 
   return (
@@ -91,7 +98,7 @@ export default function PageHeader({ versions }) {
         <Navbar color="dark" className={styles.navbar + " pl-3 pr-2"}>
           <Brand/>
           <Navbar.Menu>
-            <LinkContainer pathname={router.pathname} versions={versions}/>
+            <LinkContainer pathname={router.pathname}/>
             <ButtonContainer/>
           </Navbar.Menu>
         </Navbar>

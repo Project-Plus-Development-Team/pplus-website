@@ -1,0 +1,25 @@
+{
+  "title": "Changes (or version) data format",
+  "type": "object",
+  "properties": {
+    "links": {
+      "description": "Links that are shown as buttons on the changes page. Keys are the shown button text, values are the URLs.",
+      "type": "object"
+    },
+    "changes": {
+      "description": "Character changes data",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": "string",
+          "moves": {
+            "type": "array"
+          }
+        },
+        "required": [ "name", "moves" ]
+      }
+    }
+  },
+  "required": [ "changes" ]
+}

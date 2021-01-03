@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import Image from "next/image";
 import React from "react";
 import { CharacterType } from "../../types/changes";
 import CopyToClipboard from "./CopyToClipboard";
@@ -50,12 +49,7 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
   return (
     <div key={name} ref={parentElement}>
       <Heading size={4} className="is-flex is-align-content-center mt-5">
-        <Image
-          src={`/images/${icon}.png`}
-          width={40}
-          height={40}
-          alt={name}
-        />
+        <img src={`/images/${icon}.png`} alt={name}/>
         <a onClick={toggleShow} className={`dropdown-toggle ${show ? "open" : ""}`}>{name}</a>
         <CopyToClipboard link={link}/>
       </Heading>

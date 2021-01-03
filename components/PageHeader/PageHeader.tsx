@@ -16,7 +16,6 @@ function Brand({ isNavbarActive, setNavbarActive }: BrandProps) {
   return (
     <Navbar.Brand>
       <Navbar.Item renderAs="div" style={{ paddingTop: 0, paddingBottom: 0 }}>
-        {/* TODO: figure out how the heck next/image is supposed to work here */}
         <img src="/images/projectplus_logo_small.png" style={{maxHeight: "2.5rem"}}/>
       </Navbar.Item>
       <Navbar.Burger onClick={handleBurgerClick}/>

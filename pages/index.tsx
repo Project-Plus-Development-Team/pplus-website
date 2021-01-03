@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Container, Columns, Heading, Content } from "react-bulma-components";
 
 export default function Home() {
@@ -30,13 +29,10 @@ export default function Home() {
           </Columns.Column>
 
           <Columns.Column style={{display: 'flex', flexDirection: "row-reverse"}}>
-            <Image
+            <img 
               src="/images/Falco.png"
               alt="Translucent Falco"
-              width={328}
-              height={400}
               className="falco"
-              quality={95}
             />
           </Columns.Column>
         </Columns>
@@ -54,6 +50,7 @@ export default function Home() {
         .falco {
           opacity: 0.7;
           transition: all 0.3s ease;
+          max-height: 400px;
         }
 
         .falco:hover {

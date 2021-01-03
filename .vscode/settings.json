@@ -1,10 +1,16 @@
 {
-  "json.schemas": [
+  "json.schemas": [ // These settings make VSCode use custom schemas for the JSON files in /data/
     {
       "fileMatch": [
         "/data/changes/*.json"
       ],
       "url": "./types/changesSchema.json"
+    },
+    {
+      "fileMatch": [
+        "/data/download.json"
+      ],
+      "url": "./types/downloadSchema.json"
     }
   ]
 }

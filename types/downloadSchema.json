@@ -1,0 +1,14 @@
+{
+  "title": "Links to be displayed on the downloads page",
+  "type": "array",
+  "items": {
+    "title": "A group of buttons to be generated. Keys are titles, values are links",
+    "type": "object",
+    "additionalProperties": {
+      "title": "Key is title, value is url",
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https?://"
+    }
+  }
+}

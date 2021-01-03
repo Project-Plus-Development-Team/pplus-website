@@ -4,3 +4,8 @@
 
 [[plugins]]
 package = "netlify-plugin-cache-nextjs"
+
+## Redirect to Discord. This file is read by next.config.js to replicate this Netlify behaviour during dev
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.com/invite/vdssRDg"

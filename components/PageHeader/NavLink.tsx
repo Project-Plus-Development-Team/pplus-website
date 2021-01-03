@@ -2,7 +2,14 @@ import Link from "next/link";
 import { Navbar } from "react-bulma-components";
 import styles from "./PageHeader.module.scss";
 
-export default function NavLink({ text, href, pathname }) {
+interface NavLinkProps {
+  text: string,
+  href: string,
+  pathname: string,
+  onClick: () => void
+}
+
+export default function NavLink({ text, href, pathname, onClick }: NavLinkProps) {
   const isActive = href === (pathname || "/");
   const activeClass = isActive ? styles.navitemactive : "";
 
@@ -11,6 +18,7 @@ export default function NavLink({ text, href, pathname }) {
       <Navbar.Item
         renderAs="a"
         className={`${styles.navitem} ${activeClass}`}
+        onClick={onClick}
       >
         {text}
       </Navbar.Item>

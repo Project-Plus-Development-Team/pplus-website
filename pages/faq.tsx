@@ -1,3 +1,4 @@
+// Function says: This page uses getStaticProps to load the /data/faq.md file to make it easier to change the FAQ
 import Head from "next/head";
 import { Container } from "react-bulma-components";
 import ReactMarkdown from "react-markdown";

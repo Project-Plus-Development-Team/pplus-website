@@ -1,3 +1,5 @@
+// Function says: These types are for the changes / version page generation system
+
 export interface ChangeObjectType {
   title: string
   changes: (string|ChangeObjectType)[]

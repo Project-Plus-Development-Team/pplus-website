@@ -1,11 +1,13 @@
+## Function says: This file configures how Netlify builds our site and some extra rules for Netlify's webserver
+
 [build]
-  publish = "out/"
-  command = "npm run build"
+  command = "npm run build" # What to run in order to build the site
+  publish = "out/" # Where the build files will be generated (the directory to serve the static files from)
 
 [[plugins]]
-package = "netlify-plugin-cache-nextjs"
+package = "netlify-plugin-cache-nextjs" # A Netlify plugin for Next.js to make caching work (faster deploy times)
 
-## Redirect to Discord. This file is read by next.config.js to replicate this Netlify behaviour during dev
+# Redirect to Discord. This file is read by next.config.js to replicate this Netlify behaviour during dev
 [[redirects]]
   from = "/discord"
   to = "https://discord.com/invite/vdssRDg"

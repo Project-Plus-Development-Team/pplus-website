@@ -1,3 +1,7 @@
+// Function says: This is an SCSS file, which is like SASS, but has "{}" and ";" so it's more like advanced CSS
+// This style file is the global stylesheet and gets converted to CSS by Next.js.
+// It should only contain styles that are global for the entire site and can't be added to components directly (using <style jsx></style>)
+
 html {
   height: 100%;
   display: flex;

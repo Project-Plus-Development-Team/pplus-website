@@ -1,3 +1,7 @@
+// Function says: This file configures ESLint, a JavaScript and TypeScript linter
+// ESLint can either be run via command line (not configured at the moment)
+// or by installing an ESLint extension for your editor or IDE (e.g. VSCode)
+
 {
   "extends": ["alloy", "alloy/react", "alloy/typescript"],
   "env": { "browser": true },

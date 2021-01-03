@@ -1,3 +1,7 @@
+// Function says: This file has the Node.js (build-time) logic to provide the changes pages with
+// 1. all versions that are available -> getVersions()
+// 2. the data for any specific version -> getVersionData(version)
+
 import path from "path";
 import { promises as fs } from "fs";
 import { VersionData } from "../types/changes";

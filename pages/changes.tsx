@@ -1,5 +1,4 @@
-import React from "react";
-import Changes, { ChangesProps } from "../components/Changes/Changes";
+// Function says: This component is the same as /changes/[version].tsx, but always shows the latest changes (as seen in getStaticProps below).
 import { getVersionData, getVersions } from "../lib/changes";
 import { StaticPropsReturnType } from "./changes/[version]";
 

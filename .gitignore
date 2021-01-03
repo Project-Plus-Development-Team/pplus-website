@@ -1,3 +1,5 @@
+## Function says: This file makes Git ignore stuff we don't want/need in the repository, like build files
+
 # dependencies
 /node_modules
 

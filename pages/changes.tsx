@@ -1,17 +1,14 @@
 // Function says: This component is the same as /changes/[version].tsx, but always shows the latest changes (as seen in getStaticProps below).
+
+import Changes, { ChangesStaticProps } from "../components/Changes/Changes";
 import { getVersionData, getVersions } from "../lib/changes";
-import { StaticPropsReturnType } from "./changes/[version]";
 
-// This component is the same as /changes/something, but always shows the latest changes
+export default Changes; // simply use the generic Changes component
 
-export default function ChangesPage(props: ChangesProps) {
-  return <Changes {...props}/>;
-}
-
-export async function getStaticProps(): Promise<StaticPropsReturnType> {
-  const versions = await getVersions();
-  const latestVersion = versions[versions.length - 1];
-  const latestVersionData = await getVersionData(latestVersion);
+export const getStaticProps: ChangesStaticProps = async () => {
+  const sortedVersions = await getVersions();
+  const latestVersion = sortedVersions[sortedVersions.length - 1];
+  const latestVersionData = await getVersionData(latestVersion); // <- we're loading the latest version available for this route
 
   return {
     props: {
@@ -20,4 +17,4 @@ export async function getStaticProps(): Promise<StaticPropsReturnType> {
       siteUrl: process.env.URL
     }
   };
-}
+};

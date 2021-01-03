@@ -8,7 +8,7 @@
     "build": "next build && next export",
     "start": "next start"
   },
-  "author": "waffeln",
+  "author": "Function aka. waffeln",
   "homepage": "https://projectplusgame.com",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",

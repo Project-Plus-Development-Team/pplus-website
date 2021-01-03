@@ -8,10 +8,6 @@ export default function Home() {
           <Heading>Release Trailer</Heading>
           <iframe src="https://www.youtube.com/embed/z_Hm9FBMz1M"/>
         </div>
-
-        {/* <Columns.Column size="half" offset="one-quarter" className="center-text">
-          <Heading className="center-text">Release Trailer</Heading>
-        </Columns.Column> */}
         
         <Columns>
 
@@ -73,10 +69,6 @@ export default function Home() {
             height: 316px;
             margin-bottom: 26px;
         }
-      `}</style>
-
-      <style jsx global>{`
-
       `}</style>
     </>
   );

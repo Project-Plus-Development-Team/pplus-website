@@ -4,11 +4,10 @@
 // When requesting a page or building the site, the getStaticProps method is called by Next.js and gives it the data it needs to render the ChangesPage component,
 // which in turn uses the generic Changes component to render a changelog + extra data
 
+import Changes, { ChangesStaticProps } from "../../components/Changes/Changes";
 import { getVersionData, getVersions } from "../../lib/changes";
 
-export default function ChangesPage(props: ChangesProps) {
-  return <Changes {...props}/>;
-}
+export default Changes; // simply use the generic Changes component
 
 export async function getStaticPaths() {
   const versions = await getVersions();
@@ -19,13 +18,9 @@ export async function getStaticPaths() {
   };
 }
 
-export interface StaticPropsReturnType {
-  props: ChangesProps
-}
-
-export async function getStaticProps({ params }): Promise<StaticPropsReturnType> {
+export const getStaticProps: ChangesStaticProps = async ({ params }) => {
   const changesData = await getVersionData(params.version);
-
+  
   return {
     props: {
       version: params.version,
@@ -33,4 +28,4 @@ export async function getStaticProps({ params }): Promise<StaticPropsReturnType>
       siteUrl: process.env.URL
     }
   };
-}
+};

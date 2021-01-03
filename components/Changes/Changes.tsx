@@ -2,6 +2,10 @@ import React from "react";
 import { VersionData } from "../../types/changes";
 import { Heading, Container, Button } from "react-bulma-components";
 import Character from "./Character";
+import { GetStaticProps } from "next";
+
+// used by the two different pages that are using this component in order to assure they provide the right data format
+export type ChangesStaticProps = GetStaticProps<ChangesProps, { version: string}>;
 
 export interface ChangesProps {
   version: string

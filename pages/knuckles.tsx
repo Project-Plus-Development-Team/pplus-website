@@ -32,7 +32,7 @@ export default function Knuckles() {
 
         <Columns>
           <Columns.Column size={4}>
-            <Image src="images/knuckles_transparent.png"/>
+            <Image className="knux-main" src="/images/knuckles_transparent.png"/>
           </Columns.Column>
 
           <Columns.Column>
@@ -54,6 +54,16 @@ export default function Knuckles() {
         </InfoElement>
 
       </Container>
+
+      <style jsx global>{`
+        header ~ .container .subtitle,p {
+          filter: drop-shadow(4px 4px 1px hsla(0, 0%, 0%, 0.6));
+        }
+        
+        header ~ .container *:not(.knux-main) > img { // main image has drop-shadow baked into the png
+          filter: drop-shadow(8px 8px 2px hsla(0, 0%, 0%, 0.4));
+        }
+      `}</style>
     </>
   );
 }

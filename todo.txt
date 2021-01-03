@@ -1,6 +1,4 @@
-- loglang editor
 - sitemap.xml file
-- _redirects file
 - counter netlify function
-- update.xml file
-- correct favicon
+- render Container as <main> and maybe make global through _app or _document
+- mobile stuff

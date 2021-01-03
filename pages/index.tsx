@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Container, Columns, Heading, Content } from "react-bulma-components";
 
 export default function Home() {
@@ -29,45 +30,40 @@ export default function Home() {
           </Columns.Column>
 
           <Columns.Column style={{display: 'flex', flexDirection: "row-reverse"}}>
-            <img src="/images/Falco.png" alt="Translucent Falco" className="magic"/>
+            <Image
+              src="/images/Falco.png"
+              alt="Translucent Falco"
+              width={328}
+              height={400}
+              className="falco"
+              quality={95}
+            />
           </Columns.Column>
         </Columns>
       </Container>
 
-      {/* <footer>
-      </footer> */}
-
       <style jsx>{`
-        .magic {
+        iframe {
+          width: 560px;
+          height: 316px;
+          margin-bottom: 26px;
+        }
+      `}</style>
+
+      <style jsx global>{`
+        .falco {
           opacity: 0.7;
           transition: all 0.3s ease;
-        
-          max-height: 400px;
         }
-        
+
+        .falco:hover {
+          opacity: 1.0;
+        }
+
         @media screen and (max-width: 768px) {
           .magic {
             max-height: 300px;
           }
-        }
-        
-        .magic:hover {
-          opacity: 1.0;
-        }
-
-        .center-text {
-            text-align: center;
-            width: 100%;
-        }
-
-        .columns {
-            flex-wrap: wrap;
-        }
-
-        iframe {
-            width: 560px;
-            height: 316px;
-            margin-bottom: 26px;
         }
       `}</style>
     </>

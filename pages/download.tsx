@@ -5,6 +5,7 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import { Button, Container, Heading } from "react-bulma-components";
 import importedLinkGroups from "../data/download.json";
+import { getSortedVersions } from "../lib/changes";
 
 interface LinkGroup {
   [title: string]: string
@@ -24,26 +25,44 @@ function LinkGroup({ data }: { data: LinkGroup }) {
 
 interface DownloadProps {
   linkGroups: LinkGroup[]
+  latestVersion: string
 }
 
-export default function Download({ linkGroups }: DownloadProps) {
+export default function Download({ linkGroups, latestVersion }: DownloadProps) {
   return (
     <>
       <Head>
         <title>Download Project+</title>
       </Head>
       <Container>
-        <Heading>Download v2.15</Heading>
+        <Heading>Download v{latestVersion}</Heading>
         <Heading subtitle>Wii Lite only changes music compression to fit on a 2 GB SD card.</Heading>
         <Heading subtitle>The Cosmetics Pack includes files for custom build creation, such as stage imagery templates and full resolution HD textures.</Heading>
         {linkGroups.map((group, index) => <LinkGroup key={index} data={group}/>)}
+      </Container>
+      <Container>
+        <Heading subtitle>Need help installing Project+? Project M Nexus&apos;s in-depth guide has got you covered!</Heading>
+        <iframe
+          style={{
+            width: 560,
+            height: 316,
+            marginBottom: 26
+          }}
+          src="https://www.youtube.com/embed/4XynDH-eVDE"
+        />
       </Container>
     </>
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => ({
-  props: {
-    linkGroups: importedLinkGroups
-  }
-});
+export const getStaticProps: GetStaticProps<DownloadProps> = async () => {
+  const sortedVersions = await getSortedVersions();
+  const latestVersion = sortedVersions[sortedVersions.length - 1];
+
+  return {
+    props: {
+      linkGroups: importedLinkGroups,
+      latestVersion
+    }
+  };
+};

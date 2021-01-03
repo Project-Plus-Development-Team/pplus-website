@@ -7,7 +7,7 @@ html {
   display: flex;
   flex-direction: column;
   overflow-y: initial;
-  overscroll-behavior: auto contain; // is supposed to fix ugly overscroll white backgrounds, but i don't browsers where i could see this fixed
+  overscroll-behavior: auto contain; // is supposed to fix ugly overscroll white backgrounds, but i don't know browsers where i could see this fixed
 }
 
 body {
@@ -69,23 +69,16 @@ code {
   @return unquote('hsla(#{$h}, #{$s}, #{$l}, #{$a})'); // hsla instead of hsl
 }
 
-header + .container {
+header ~ .container {
   background: hsla(0,0%,20%,50%);
   border-radius: 0.3rem;
   border: 3px solid hsl(0,0%,20%);
   padding: 1rem;
+  margin-bottom: 1rem;
 }
 
 // @media screen and (max-width: 768px) {
 //   .section {
 //     padding: 1rem !important;
-//   }
-
-//   header.section {
-//     padding: 0 !important;
-
-//     .navbar {
-//       border-radius: 0 !important;
-//     }
 //   }
 // }

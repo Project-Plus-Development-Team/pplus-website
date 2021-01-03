@@ -1,11 +1,12 @@
 // Function says: This file is the main app component for the site and used by all pages.
 // Here we import everything that's global to the entire site, like the PageHeader ("navigation bar")
+
 import "bulma/bulma.sass";
 import "bulmaswatch/cyborg/bulmaswatch.min.css";
 import "../styles/global.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { AppProps } from "next/app";
-import PageHeader from "../components/PageHeader";
+import PageHeader from "../components/PageHeader/PageHeader";
 import Head from "next/head";
 
 export default function App({ Component, pageProps }: AppProps) {

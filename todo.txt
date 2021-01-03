@@ -3,3 +3,4 @@
 - _redirects file
 - counter netlify function
 - update.xml file
+- correct favicon

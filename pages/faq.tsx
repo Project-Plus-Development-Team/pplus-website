@@ -1,8 +1,10 @@
 import Head from "next/head";
 import { Container } from "react-bulma-components";
 import ReactMarkdown from "react-markdown";
+import { promises as fs } from "fs";
+import path from "path";
 
-function FAQ({ markdown }) {
+export default function FAQ({ markdown }) {
   return (
     <>
       <Head>
@@ -12,7 +14,7 @@ function FAQ({ markdown }) {
         <Container className="maincard">
           <div className="content">
             <ReactMarkdown className="line-break" allowDangerousHtml>
-              {markdown.default}
+              {markdown}
             </ReactMarkdown>
           </div>
         </Container>
@@ -27,12 +29,13 @@ function FAQ({ markdown }) {
   );
 }
 
-FAQ.getInitialProps = async () => {
-  const markdown = await import("../markdown/faq.md");
+export const getStaticProps = async () => {
+  const markdownPath = path.join(process.cwd(), "markdown/faq.md");
+  const markdown = await fs.readFile(markdownPath, "utf-8");
 
   return {
-    markdown
+    props: {
+      markdown
+    }
   };
 };
-
-export default FAQ;

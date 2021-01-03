@@ -5,12 +5,12 @@
 // which in turn uses the generic Changes component to render a changelog + extra data
 
 import Changes, { ChangesStaticProps } from "../../components/Changes/Changes";
-import { getVersionData, getVersions } from "../../lib/changes";
+import { getVersionData, getSortedVersions } from "../../lib/changes";
 
 export default Changes; // simply use the generic Changes component
 
 export async function getStaticPaths() {
-  const versions = await getVersions();
+  const versions = await getSortedVersions();
 
   return {
     paths: versions.map(version => ({ params: { version } })),

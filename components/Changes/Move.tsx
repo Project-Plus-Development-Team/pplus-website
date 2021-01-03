@@ -10,7 +10,7 @@ interface MoveProps {
 export default function Move({ data, subpoint }: MoveProps) {
   const content = data.changes.map((change, index) => {
     const isString = typeof change === "string";
-    const inner = isString ? change : <Move subpoint={true} data={change as ChangeObjectType}/>;
+    const inner = isString ? change : <Move subpoint data={change as ChangeObjectType}/>; // Recursion
     return <li key={index}>{inner}</li>;
   });
 

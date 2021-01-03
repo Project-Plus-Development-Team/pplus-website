@@ -1,12 +1,12 @@
 // Function says: This component is the same as /changes/[version].tsx, but always shows the latest changes (as seen in getStaticProps below).
 
 import Changes, { ChangesStaticProps } from "../components/Changes/Changes";
-import { getVersionData, getVersions } from "../lib/changes";
+import { getVersionData, getSortedVersions } from "../lib/changes";
 
 export default Changes; // simply use the generic Changes component
 
 export const getStaticProps: ChangesStaticProps = async () => {
-  const sortedVersions = await getVersions();
+  const sortedVersions = await getSortedVersions();
   const latestVersion = sortedVersions[sortedVersions.length - 1];
   const latestVersionData = await getVersionData(latestVersion); // <- we're loading the latest version available for this route
 

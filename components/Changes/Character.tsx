@@ -16,10 +16,21 @@ interface CharacterProps {
   version: string
   data: CharacterType
   siteUrl: string
+  fold: boolean
 }
 
-export default function Character({ data: { name, moves }, version, siteUrl }: CharacterProps) {
+export default function Character({ data: { name, moves }, version, siteUrl, fold }: CharacterProps) {
+  const parentElement = React.useRef<HTMLDivElement>(null);
+
   const [show, setShow] = React.useState(false);
+
+  React.useEffect(() => {
+    if (!fold) {
+      setShow(true);
+
+      parentElement.current.scrollIntoView();
+    }
+  }, [ fold ]); // watch the fold parameter, if it turns true, unfold by setting show to true
 
   const hyphenName = name.replace(/\s/gi, "-");
   const icon = iconMap[hyphenName] ? `icons/${iconMap[hyphenName]}` : `characters/${hyphenName}`;
@@ -37,7 +48,7 @@ export default function Character({ data: { name, moves }, version, siteUrl }: C
   const link = encodeURI(`${siteUrl}/${pageName}/${version}#${name}`);
 
   return (
-    <div key={name}>
+    <div key={name} ref={parentElement}>
       <Heading size={4} className="is-flex is-align-content-center mt-5">
         <Image
           src={`/images/${icon}.png`}

@@ -8,7 +8,7 @@ import { VersionData } from "../types/changes";
 
 const dataDirectory = path.join(process.cwd(), "data/changes/");
 
-export async function getVersions() {
+export async function getSortedVersions() {
   const fileNames = await fs.readdir(dataDirectory, "utf-8");
 
   return fileNames

@@ -1,4 +1,0 @@
-- sitemap.xml file
-- counter netlify function
-- render Container as <main> and maybe make global through _app or _document
-- mobile stuff

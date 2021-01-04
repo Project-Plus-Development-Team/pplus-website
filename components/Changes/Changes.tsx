@@ -17,7 +17,7 @@ const generateLinks = (links: VersionData["links"]) => (
   <Button.Group>
     {Object.entries(links).map(([title, url], index) => (
         <Button
-          color="primary"
+          color="link"
           key={index}
           href={url}
         >

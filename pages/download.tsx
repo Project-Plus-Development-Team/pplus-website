@@ -15,7 +15,7 @@ function LinkGroup({ data }: { data: LinkGroup }) {
   return (
     <Button.Group>
       {Object.entries(data).map(([title, url], index2) =>
-        <Button color="primary" key={index2} href={url} renderAs="a">
+        <Button color="link" key={index2} href={url} renderAs="a">
           {title}
         </Button>
       )}

@@ -1,7 +1,7 @@
 // Function says: This page uses getStaticProps to load the /data/faq.md file to make it easier to change the FAQ
 
 import Head from "next/head";
-import { Container } from "react-bulma-components";
+import { Container, Content } from "react-bulma-components";
 import ReactMarkdown from "react-markdown";
 import { promises as fs } from "fs";
 import path from "path";
@@ -14,13 +14,11 @@ export default function FAQ({ markdown }) {
         <title>F.A.Q.</title>
       </Head>
       <Container>
-        <Container className="maincard">
-          <div className="content">
-            <ReactMarkdown className="line-break" allowDangerousHtml>
-              {markdown}
-            </ReactMarkdown>
-          </div>
-        </Container>
+        <Content>
+          <ReactMarkdown className="line-break" allowDangerousHtml>
+            {markdown}
+          </ReactMarkdown>
+        </Content>
       </Container>
       <style global jsx>{`
         .content h4 {

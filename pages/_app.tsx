@@ -1,8 +1,7 @@
 // Function says: This file is the main app component for the site and used by all pages.
 // Here we import everything that's global to the entire site, like the PageHeader ("navigation bar")
 
-import "bulma/bulma.sass";
-import "bulmaswatch/cyborg/bulmaswatch.min.css";
+import "bulmaswatch/cyborg/bulmaswatch.scss";
 import "../styles/global.scss";
 import "@fortawesome/fontawesome-free/css/all.css";
 import { AppProps } from "next/app";

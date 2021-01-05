@@ -5,7 +5,7 @@ import { GetStaticProps } from "next";
 import Head from "next/head";
 import { Button, Container, Heading } from "react-bulma-components";
 import importedLinkGroups from "../data/download.json";
-import { getSortedVersions } from "../lib/version";
+import { getSortedVersions } from "../lib/get-version";
 
 interface LinkGroup {
   [title: string]: string

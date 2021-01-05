@@ -1,25 +1,54 @@
 {
   "title": "Changes (or version) data format",
   "type": "object",
+  "require": [ "changes" ],
   "properties": {
     "links": {
       "description": "Links that are shown as buttons on the changes page. Keys are the shown button text, values are the URLs.",
-      "type": "object"
+      "type": "object",
+      "additionalProperties": {
+        "title": "Key is title, value is url",
+        "type": "string",
+        "format": "uri",
+        "pattern": "^https?://"
+      }
     },
     "changes": {
       "description": "Character changes data",
       "type": "array",
       "items": {
         "type": "object",
+        "required": [ "name", "moves" ],
         "properties": {
-          "name": "string",
+          "name": { "type": "string" },
           "moves": {
-            "type": "array"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [ "title", "changes" ],
+              "properties": {
+                "title": { "type": "string" },
+                "changes": {
+                  "type": "array",
+                  "items": {
+                    "type": ["object", "string"],
+                    "required": [ "title", "changes" ],
+                    "properties": {
+                      "title": { "type": "string" },
+                      "changes": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
-        },
-        "required": [ "name", "moves" ]
+        }
       }
     }
-  },
-  "required": [ "changes" ]
+  }
 }

@@ -5,10 +5,12 @@
 import path from "path";
 import { promises as fs } from "fs";
 import { VersionData } from "../types/changes";
+import { Validator } from "jsonschema";
+import loadJson from "./load-json";
 
-const dataDirectory = path.join(process.cwd(), "data/changes/");
 
 export async function getSortedVersions() {
+  const dataDirectory = path.join(process.cwd(), "data/changes/");
   const fileNames = await fs.readdir(dataDirectory, "utf-8");
 
   return fileNames
@@ -17,8 +19,14 @@ export async function getSortedVersions() {
 }
 
 export async function getVersionData(version: string): Promise<VersionData> {
-  const fullPath = path.join(dataDirectory, `${version}.json`);
-  const fileContents = await fs.readFile(fullPath, "utf-8");
+  const changesJSON = await loadJson(`data/changes/${version}.json`);
+  const schema = await loadJson("types/changesSchema.json");
 
-  return JSON.parse(fileContents);
+  const validatorInstance = new Validator();
+
+  validatorInstance.validate(changesJSON, schema, {
+    throwFirst: true
+  });
+
+  return changesJSON;
 }

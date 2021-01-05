@@ -32,6 +32,7 @@
     "eslint": "^7.16.0",
     "eslint-config-alloy": "^3.9.0",
     "eslint-plugin-react": "^7.21.5",
+    "jsonschema": "^1.4.0",
     "netlify-plugin-cache-nextjs": "^1.5.2",
     "raw-loader": "^4.0.2",
     "serve": "^11.3.2",

@@ -8,414 +8,380 @@
       "name": "Charizard",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Other",
-            "changes": [
-              "Trip getup and back roll now match the rest of the cast, SFX errors fixed",
-              "Crouch entry frames normalized (10 > 8), allows dashback out of crouch earlier"
-            ]
-          }
-        ]
+        {
+          "title": "Other",
+          "changes": [
+            "Trip getup and back roll now match the rest of the cast, SFX errors fixed",
+            "Crouch entry frames normalized (10 > 8), allows dashback out of crouch earlier"
+          ]
+        }
       ]
     },
     {
       "name": "Dedede",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Other",
-            "changes": [
-              "Crouch entry frames normalized (16 > 8), allows dashback out of crouch earlier"
-            ]
-          }
-        ]
+        {
+          "title": "Other",
+          "changes": [
+            "Crouch entry frames normalized (16 > 8), allows dashback out of crouch earlier"
+          ]
+        }
       ]
     },
     {
       "name": "Ganondorf",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Up Tilt",
-            "changes": [
-              "Up-tilt startup 26 > 25 (now matches 3.6)",
-              "Linking hitbox restored and links properly"
-            ]
-          }
-        ]
+        {
+          "title": "Up Tilt",
+          "changes": [
+            "Up-tilt startup 26 > 25 (now matches 3.6)",
+            "Linking hitbox restored and links properly"
+          ]
+        }
       ]
     },
     {
       "name": "Ice Climbers",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Up Special (Belay)",
-            "changes": [
-              "Fixed issue which made Up Special break tethers"
-            ]
-          }
-        ]
+        {
+          "title": "Up Special (Belay)",
+          "changes": [
+            "Fixed issue which made Up Special break tethers"
+          ]
+        }
       ]
     },
     {
       "name": "Ike",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Side Special (Quick Draw)",
-            "changes": [
-              "Can now wall jump out of Quick Draw with a jump input"
-            ]
-          }
-        ]
+        {
+          "title": "Side Special (Quick Draw)",
+          "changes": [
+            "Can now wall jump out of Quick Draw with a jump input"
+          ]
+        }
       ]
     },
     {
       "name": "Ivysaur",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Neutral Special (Solar Beam)",
-            "changes": [
-              "Solar Beam hitboxes now properly line up with GFX"
-            ]
-          }
-        ]
+        {
+          "title": "Neutral Special (Solar Beam)",
+          "changes": [
+            "Solar Beam hitboxes now properly line up with GFX"
+          ]
+        }
       ]
     },
     {
       "name": "Kirby",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Neutral Special (Inhale)",
-            "changes": [
-              "Diddy Kong hat no longer loses momentum on peanut shoot",
-              "Ganondorf hat frame data now matches Ganondorf’s",
-              "Mewtwo hat Shadow Balls now explode when they hit walls",
-              "Pit hat behavior now matches Pit behavior",
-              "Squirtle hat now matches Squirtle’s Water Gun",
-              "Can now be grabbed while charging Sheik needles"
-            ]
-          }
-        ]
+        {
+          "title": "Neutral Special (Inhale)",
+          "changes": [
+            "Diddy Kong hat no longer loses momentum on peanut shoot",
+            "Ganondorf hat frame data now matches Ganondorf’s",
+            "Mewtwo hat Shadow Balls now explode when they hit walls",
+            "Pit hat behavior now matches Pit behavior",
+            "Squirtle hat now matches Squirtle’s Water Gun",
+            "Can now be grabbed while charging Sheik needles"
+          ]
+        }
       ]
     },
     {
       "name": "Knuckles",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Jab",
-            "changes": [
-              "Jab 1 knockback growth 55 > 80"
-            ]
-          },
-          {
-            "title": "Neutral Air",
-            "changes": [
-              "Sweetspot outer nair hitbox size 4.5 > 4.2, sourspot 4.0 > 3.8"
-            ]
-          },
-          {
-            "title": "Dash Attack",
-            "changes": [
-              "IASA 52 > 46"
-            ]
-          },
-          {
-            "title": "Down Throw",
-            "changes": [
-              "Knockback growth 30 > 38",
-              "Punch hits now have 10 BKB to hit surrounding characters"
-            ]
-          },
-          {
-            "title": "Down Special (Spin Dash)",
-            "changes": [
-              "Base knockback 81 > 42, Knockback growth 40 > 78",
-              "Startup 12 > 18"
-            ]
-          },
-          {
-            "title": "Other",
-            "changes": [
-              "Hurtboxes adjusted to better match model",
-              "Sphere hurtbox on Neutral Special uppercut removed",
-              "Win3 animation revamped"
-            ]
-          }
-        ]
+        {
+          "title": "Jab",
+          "changes": [
+            "Jab 1 knockback growth 55 > 80"
+          ]
+        },
+        {
+          "title": "Neutral Air",
+          "changes": [
+            "Sweetspot outer nair hitbox size 4.5 > 4.2, sourspot 4.0 > 3.8"
+          ]
+        },
+        {
+          "title": "Dash Attack",
+          "changes": [
+            "IASA 52 > 46"
+          ]
+        },
+        {
+          "title": "Down Throw",
+          "changes": [
+            "Knockback growth 30 > 38",
+            "Punch hits now have 10 BKB to hit surrounding characters"
+          ]
+        },
+        {
+          "title": "Down Special (Spin Dash)",
+          "changes": [
+            "Base knockback 81 > 42, Knockback growth 40 > 78",
+            "Startup 12 > 18"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Hurtboxes adjusted to better match model",
+            "Sphere hurtbox on Neutral Special uppercut removed",
+            "Win3 animation revamped"
+          ]
+        }
       ]
     },
     {
       "name": "Lucas",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Down Air",
-            "changes": [
-              "Down air offset fixed to be able to be L-cancelled during hitlag and to no longer crash on console"
-            ]
-          }
-        ]
+        {
+          "title": "Down Air",
+          "changes": [
+            "Down air offset fixed to be able to be L-cancelled during hitlag and to no longer crash on console"
+          ]
+        }
       ]
     },
     {
       "name": "Olimar",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Other",
-            "changes": [
-              "Hurtboxes reverted to Brawl, as they were shown to be more accurate via new developments"
-            ]
-          }
-        ]
+        {
+          "title": "Other",
+          "changes": [
+            "Hurtboxes reverted to Brawl, as they were shown to be more accurate via new developments"
+          ]
+        }
       ]
     },
     {
       "name": "R.O.B.",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Up Special",
-            "changes": [
-              "Boosts now have proper 3.6 properties"
-            ]
-          },
-          {
-            "title": "Other",
-            "changes": [
-              "Hurtbox adjusted to better match model"
-            ]
-          }
-        ]
+        {
+          "title": "Up Special",
+          "changes": [
+            "Boosts now have proper 3.6 properties"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Hurtbox adjusted to better match model"
+          ]
+        }
       ]
     },
     {
       "name": "Squirtle",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Neutral Special",
-            "changes": [
-              "Animation on release cleaned up"
-            ]
-          }
-        ]
+        {
+          "title": "Neutral Special",
+          "changes": [
+            "Animation on release cleaned up"
+          ]
+        }
       ]
     },
     {
       "name": "Snake",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Up Smash",
-            "changes": [
-              "Angling up smash while one is already out will now work"
-            ]
-          }
-        ]
+        {
+          "title": "Up Smash",
+          "changes": [
+            "Angling up smash while one is already out will now work"
+          ]
+        }
       ]
     },
     {
       "name": "Wario",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Side Special (Shoulder Bash)",
-            "changes": [
-              "Aerial version recieved an updated animation to match the grounded version"
-            ]
-          }
-        ]
+        {
+          "title": "Side Special (Shoulder Bash)",
+          "changes": [
+            "Aerial version recieved an updated animation to match the grounded version"
+          ]
+        }
       ]
     },
     {
       "name": "Wolf",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Down Special (Shine)",
-            "changes": [
-              "Air to ground transition fixed"
-            ]
-          }
-        ]
+        {
+          "title": "Down Special (Shine)",
+          "changes": [
+            "Air to ground transition fixed"
+          ]
+        }
       ]
     },
     {
       "name": "Stages",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Bowser’s Castle",
-            "changes": [
-              "Legal and Thwomp versions optimized for better FPS on console"
-            ]
-          },
-          {
-            "title": "Delfino’s Secret",
-            "changes": [
-              "Platform collision width now matches 3.6",
-              "Platform width matches collision",
-              "Layout changes every 30 seconds instead of every 23 seconds",
-              "Cleaned up animations and fixed Shine Sprite rotating animation"
-            ]
-          },
-          {
-            "title": "Dream Land",
-            "changes": [
-              "Water background animation now loops properly on all alts"
-            ]
-          },
-          {
-            "title": "Final Destination",
-            "changes": [
-              "Z-alt: Removed Legacy logo"
-            ]
-          },
-          {
-            "title": "Frigate Orpheon",
-            "changes": [
-              "R-alt: lighting and fog improvement, file size reduced"
-            ]
-          },
-          {
-            "title": "Golden Temple",
-            "changes": [
-              "Lighting changed to match R-alt, corner bricks better match collisions",
-              "R-alt: corners received UV fixes"
-            ]
-          },
-          {
-            "title": "Lylat Cruise",
-            "changes": [
-              "R-alt: visual issues with lights fixed "
-            ]
-          },
-          {
-            "title": "Metal Cavern",
-            "changes": [
-              "R-alt: added pipe on left side, fixed lighting to match stage, added character shadows to platform"
-            ]
-          },
-          {
-            "title": "Peach’s Castle",
-            "changes": [
-              "Stage optimized for better FPS on console"
-            ]
-          },
-          {
-            "title": "Sky Sanctuary Zone",
-            "changes": [
-              "L-alt: Lighting issues on crates and shadows fixed"
-            ]
-          },
-          {
-            "title": "Smashville",
-            "changes": [
-              "Midnight verison upper blastzone 180 > 195 (normalized with other versions)"
-            ]
-          },
-          {
-            "title": "Training Room",
-            "changes": [
-              "Z-alt: Legacy logo removed"
-            ]
-          }
-        ]
+        {
+          "title": "Bowser’s Castle",
+          "changes": [
+            "Legal and Thwomp versions optimized for better FPS on console"
+          ]
+        },
+        {
+          "title": "Delfino’s Secret",
+          "changes": [
+            "Platform collision width now matches 3.6",
+            "Platform width matches collision",
+            "Layout changes every 30 seconds instead of every 23 seconds",
+            "Cleaned up animations and fixed Shine Sprite rotating animation"
+          ]
+        },
+        {
+          "title": "Dream Land",
+          "changes": [
+            "Water background animation now loops properly on all alts"
+          ]
+        },
+        {
+          "title": "Final Destination",
+          "changes": [
+            "Z-alt: Removed Legacy logo"
+          ]
+        },
+        {
+          "title": "Frigate Orpheon",
+          "changes": [
+            "R-alt: lighting and fog improvement, file size reduced"
+          ]
+        },
+        {
+          "title": "Golden Temple",
+          "changes": [
+            "Lighting changed to match R-alt, corner bricks better match collisions",
+            "R-alt: corners received UV fixes"
+          ]
+        },
+        {
+          "title": "Lylat Cruise",
+          "changes": [
+            "R-alt: visual issues with lights fixed "
+          ]
+        },
+        {
+          "title": "Metal Cavern",
+          "changes": [
+            "R-alt: added pipe on left side, fixed lighting to match stage, added character shadows to platform"
+          ]
+        },
+        {
+          "title": "Peach’s Castle",
+          "changes": [
+            "Stage optimized for better FPS on console"
+          ]
+        },
+        {
+          "title": "Sky Sanctuary Zone",
+          "changes": [
+            "L-alt: Lighting issues on crates and shadows fixed"
+          ]
+        },
+        {
+          "title": "Smashville",
+          "changes": [
+            "Midnight verison upper blastzone 180 > 195 (normalized with other versions)"
+          ]
+        },
+        {
+          "title": "Training Room",
+          "changes": [
+            "Z-alt: Legacy logo removed"
+          ]
+        }
       ]
     },
     {
       "name": "Misc",
       "element": {},
       "moves": [
-        [
-          {
-            "title": "Bug Fixes",
-            "changes": [
-              {
-                "title": "Characters and Gameplay",
-                "changes": [
-                  "Trip Armour code adjusted to prevent issues with non-hitstun moves",
-                  "Faux Super Armour (most instances of Port Priority) removed",
-                  "Characters can now down air through moving platforms without being caught",
-                  "Landing on the very edge of collisions no longer causes weirdness",
-                  "Interpolation cast-wide fixed to function properly",
-                  "Normalized knockdown getup attacks on Peach, Jigglypuff, Samus, and Zelda",
-                  "Normalized ledge getup attacks on Kirby, Knuckles, Mewtwo, Ness, Olimar, Roy, and Zero Suit Samus",
-                  "Momentum issues with DK up smash fixed",
-                  "Iron Tail GFX fixed on Go Hat, Lightbulb, and R-Alt Pikachu costumes",
-                  "Peach double jump now works properly with Screw Attack",
-                  "Fixed visibility issues on the Charmy semi-alt for Knuckles",
-                  "Samus jet GFX fixed",
-                  "Giga Bowser and Wario-Man can now properly complete Classic and All-Star modes"
-                ]
-              },
-              {
-                "title": "Stages/Music",
-                "changes": [
-                  "Spikes in Stage Builder stages no longer crash the game when touched",
-                  "PM FD spawn points normalized"
-                ]
-              },
-              {
-                "title": "Other",
-                "changes": [
-                  "Netplay launcher now uses proper hooktype, decreasing input lag",
-                  "Screen KOs and game endings no longer zoom in the camera",
-                  "BOSS mode can now be activated on any port"
-                ]
-              }
-            ]
-          },
-          {
-            "title": "Aesthetic Changes",
-            "changes": [
-              {
-                "title": "Characters/Costumes",
-                "changes": [
-                  "Clone Engine characters now have unique All-Star end screens"
-                ]
-              },
-              {
-                "title": "Stages",
-                "changes": [
-                  "Many stages optimized for file size",
-                  "Stage banner errors on Dracula’s Castle and Wario Land fixed",
-                  "See-Saw moved from Final Destination to Pictochat"
-                ]
-              },
-              {
-                "title": "Other",
-                "changes": [
-                  "THP replacement engine code added",
-                  "Random stage select now has larger stage previews",
-                  "Strap and Results screen updated for version 2.15"
-                ]
-              }
-            ]
-          }
-        ]
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            {
+              "title": "Characters and Gameplay",
+              "changes": [
+                "Trip Armour code adjusted to prevent issues with non-hitstun moves",
+                "Faux Super Armour (most instances of Port Priority) removed",
+                "Characters can now down air through moving platforms without being caught",
+                "Landing on the very edge of collisions no longer causes weirdness",
+                "Interpolation cast-wide fixed to function properly",
+                "Normalized knockdown getup attacks on Peach, Jigglypuff, Samus, and Zelda",
+                "Normalized ledge getup attacks on Kirby, Knuckles, Mewtwo, Ness, Olimar, Roy, and Zero Suit Samus",
+                "Momentum issues with DK up smash fixed",
+                "Iron Tail GFX fixed on Go Hat, Lightbulb, and R-Alt Pikachu costumes",
+                "Peach double jump now works properly with Screw Attack",
+                "Fixed visibility issues on the Charmy semi-alt for Knuckles",
+                "Samus jet GFX fixed",
+                "Giga Bowser and Wario-Man can now properly complete Classic and All-Star modes"
+              ]
+            },
+            {
+              "title": "Stages/Music",
+              "changes": [
+                "Spikes in Stage Builder stages no longer crash the game when touched",
+                "PM FD spawn points normalized"
+              ]
+            },
+            {
+              "title": "Other",
+              "changes": [
+                "Netplay launcher now uses proper hooktype, decreasing input lag",
+                "Screen KOs and game endings no longer zoom in the camera",
+                "BOSS mode can now be activated on any port"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Aesthetic Changes",
+          "changes": [
+            {
+              "title": "Characters/Costumes",
+              "changes": [
+                "Clone Engine characters now have unique All-Star end screens"
+              ]
+            },
+            {
+              "title": "Stages",
+              "changes": [
+                "Many stages optimized for file size",
+                "Stage banner errors on Dracula’s Castle and Wario Land fixed",
+                "See-Saw moved from Final Destination to Pictochat"
+              ]
+            },
+            {
+              "title": "Other",
+              "changes": [
+                "THP replacement engine code added",
+                "Random stage select now has larger stage previews",
+                "Strap and Results screen updated for version 2.15"
+              ]
+            }
+          ]
+        }
       ]
     }
   ]

@@ -34,7 +34,7 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
   const hyphenName = name.replace(/\s/gi, "-");
   const icon = iconMap[hyphenName] ? `icons/${iconMap[hyphenName]}` : `characters/${hyphenName}`;
 
-  const content = moves.map(([move], index) =>
+  const content = moves.map((move, index) =>
     <Move key={index} data={move}/>
   );
 

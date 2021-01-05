@@ -5,7 +5,7 @@
 // which in turn uses the generic Changes component to render a changelog + extra data
 
 import Changes, { ChangesStaticProps } from "../../components/Changes/Changes";
-import { getVersionData, getSortedVersions } from "../../lib/version";
+import { getVersionData, getSortedVersions } from "../../lib/get-version";
 
 export default Changes; // simply use the generic Changes component
 

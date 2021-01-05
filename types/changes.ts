@@ -8,7 +8,7 @@ export interface ChangeObjectType {
 export interface CharacterType {
   name: string
   element: {}
-  moves: [ChangeObjectType][]
+  moves: ChangeObjectType[]
 }
 
 export interface VersionData {

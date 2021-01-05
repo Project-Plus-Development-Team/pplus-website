@@ -40,7 +40,7 @@
           {
             "title": "Final Smash",
             "changes": [
-              "Completely revamped; now gives buffed movement and infinite Solar Beams for 30 seconds"
+              "Completely revamped; Instead of simply healing 60% and giving 3 Solar Beam charges, it now heals 30% initially and gives increased walking, dashing, running, and air speed in addition to passive healing (1% per 36 Frames) and infinite Solar Beams for 15 seconds (900 Frames). Additionally, when the Final Smash is active, any Solar Beams used take away an entire second (60 Frames) of duration alongside aerial Solar Beams no longer putting Ivysaur into free-fall (aerial Solar Beams used outside the Final Smash’s duration still put Ivysaur into free-fall)."
             ]
           }
         ]
@@ -168,29 +168,508 @@
       "moves": [
         [
           {
+            "title": "D-Pad functionality for alternate stage loading fixed",
+            "changes": [
+            ]
+          },
+          {
+            "title": "Fixed issue where trying to add more stages to page 3 than were present on page 1 would result in duplicate stage slots instead of what was desired",
+            "changes": [
+            ]
+          },
+          {
+            "title": "A dummy file is included so that single-pac stages on the dual-pac slots (Lylat Cruise and Castle Siege) can load faster and have more leniency towards content included",
+            "changes": [
+            ]
+          },
+          {
+            "title": "Camera speed (2.0) is now hardcoded, meaning that stages can be read off of the Brawl disc and still maintain a PM camera. (Likewise prevents unintended camera speeds from importing stage files and makes sure Stage Builder stages maintain this speed.)",
+            "changes": [
+            ]
+          },
+          {
+            "title": "As a result of this code, several Brawl stages return in their original formats as hidden alts!",
+            "changes": [
+            ]
+          },
+          {
+            "title": "The X button has been designated the ASL input intended for hidden Brawl stages as a homage to the Japanese name for the game: Dairantou Smash Bros X",
+            "changes": [
+            ]
+          },
+          {
+            "title": "Over 50 stages have been optimized, saving space for new additions",
+            "changes": [
+            ]
+          },
+          {
+            "title": "Two new stage slots added! Poke Floats and Rainbow Cruise.",
+            "changes": [
+            ]
+          },
+          {
+            "title": "All 64, Melee and Brawl multiplayer stages return!",
+            "changes": [
+            ]
+          },
+          {
+            "title": "In Depth Stage Changes:",
+            "changes": [
+            ]
+          },
+          {
+            "title": "Battlefield",
+            "changes": [
+              "Fixed issue where lighting would instantly swap settings during certain times of the in-stage day"
+            ]
+          },
+          {
+            "title": "Brinstar",
+            "changes": [
+              {
+                "title": "(L-alt) Brinstar Depths (NEW!)",
+                "changes": [
+                  "The Melee stage returns, having its own music tracklist separate from Brinstar’s"
+                ]
+              },
+              {
+                "title": "(Z-alt) Brinstar Depths FD (NEW!)",
+                "changes": [
+                  "A 1:1 of Final Destination"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Castle Siege",
+            "changes": [
+              {
+                "title": "(X-alt) Castle Siege (Brawl)",
+                "changes": [
+                  "Moved from the Y-alt input for consistency reasons"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Cookie Country",
+            "changes": [
+              {
+                "title": "(L-alt) White Wafers (NEW!)",
+                "changes": [
+                  "A wintry stage where meteored opponents can get caught in the thick snow!"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Corneria",
+            "changes": [
+              {
+                "title": "(L+R-alt) Venom (NEW!)",
+                "changes": [
+                  "A port of the SSBM stage"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Final Destination",
+            "changes": [
+              {
+                "title": "(X-alt) Final Destination (Brawl) (NEW!)",
+                "changes": [
+                  "Brawl FD is playable again outside of Classic!"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Frigate Orpheon",
+            "changes": [
+              {
+                "title": "(L-alt) Phendrana",
+                "changes": [
+                  "Moved from Norfair’s Z-alt"
+                ]
+              },
+              {
+                "title": "(X-alt) Frigate Orpheon (Brawl) (NEW!)",
+                "changes": [
+                  "Slightly different platform movement than PM’s, no ledge on the right of the starting form"
+                ]
+              }
+            ]
+          },
+          {
             "title": "Fourside",
             "changes": [
-              "L-alt (New Pork City) GFX and SFX restored"
+              {
+                "title": "(L-alt) New Pork City (PM)",
+                "changes": [
+                  "Fixed issue where the soundbank and effectbank were not loaded"
+                ]
+              },
+              {
+                "title": "(L+X-alt) New Pork City (Brawl) (NEW!)",
+                "changes": [
+                  "Similar to the PM version, a handful of platforms are in different locations relative to it"
+                ]
+              }
             ]
           },
           {
             "title": "Golden Temple",
             "changes": [
-              "Cloud animation fixed",
-              "Stage banner now matches alts correctly"
+              {
+                "title": "(Default and R-alt) Golden Temple",
+                "changes": [
+                  "Clouds now have smoother animation; foliage and polygon count improved"
+                ]
+              }
             ]
           },
           {
-            "title": "Pictochat",
+            "title": "Green Hill Zone",
             "changes": [
-              "R-alt now has “C” on the left side to match the stage itself",
-              "Module for default/Brawl versions fixed"
+              "Lighting slightly adjusted to better contrast foreground and background"
+            ]
+          },
+          {
+            "title": "Halberd",
+            "changes": [
+              {
+                "title": "(Base Stage) Halberd",
+                "changes": [
+                  "Claw Arm is no longer removed from the stage, though it doesn’t attack by default."
+                ]
+              },
+              {
+                "title": "(X-alt) Halberd (Brawl) (NEW!)",
+                "changes": [
+                  "Matches the base stage, but the claw arm can attack as in Brawl"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Hyrule Castle",
+            "changes": [
+              {
+                "title": "(L-alt) Ganon’s Castle",
+                "changes": [
+                  "Converted into a Metal Cavern 1:1 due to shape similarities, aesthetically remains similar to before"
+                ]
+              },
+              {
+                "title": "(Z-alt) Great Bay",
+                "changes": [
+                  "Swimming is now optional, use Y+Z to access it without functional water"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Infinite Glacier",
+            "changes": [
+              {
+                "title": "(Z-alt) Icicle Mountain (NEW!)",
+                "changes": [
+                  "The Melee autoscroller returns"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Luigi’s Mansion",
+            "changes": [
+              {
+                "title": "Fixed problem where the stage had rendering issues near the lower entryways",
+                "changes": [
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Lylat Cruise",
+            "changes": [
+              {
+                "title": "(X-alt) Tilting Lylat Cruise",
+                "changes": [
+                  "Moved from the Y-alt input for consistency reasons"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Lylat Cruise",
+            "changes": [
+              {
+                "title": "(X-alt) Tilting Lylat Cruise",
+                "changes": [
+                  "Moved from the Y-alt input for consistency reasons"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Mario Circuit",
+            "changes": [
+              {
+                "title": "(L-alt) Mario Circuit Light (NEW!)",
+                "changes": [
+                  "A more competitively-designed Mario Circuit"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Mushroom Kingdom",
+            "changes": [
+              {
+                "title": "(Y-alt) Mushroom Kingdom Melee (NEW!)",
+                "changes": [
+                  "A recreation of SSBM’s stage to the current best capabilities Brawl modding can achieve"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Hyrule Castle",
+            "changes": [
+              {
+                "title": "(Base Slot) Norfair",
+                "changes": [
+                  "Reverted to Brawl Norfair, moved from the L-alt slot"
+                ]
+              },
+              {
+                "title": "(L-alt) Crateria",
+                "changes": [
+                  "Moved from Brinstar’s L-alt"
+                ]
+              },
+              {
+                "title": "(Z-alt) Crateria ML",
+                "changes": [
+                  "Moved from Brinstar’s Z-alt"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Peach’s Castle",
+            "changes": [
+              {
+                "title": "(L-alt) Princess Peach’s Castle (NEW!)",
+                "changes": [
+                  "A port of the Melee stage, albeit without hazards"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "PictoChat",
+            "changes": [
+              {
+                "title": "(Base Slot) Pictochat",
+                "changes": [
+                  "Modules fixed to have appropriate PM/Brawl behavior"
+                ]
+              },
+              {
+                "title": "(R-alt) Pictochat CS",
+                "changes": [
+                  "Added a “C” in the background to be consistent with other versions of the stage"
+                ]
+              },
+              {
+                "title": "(X-alt) PictoChat (Brawl) (NEW!)",
+                "changes": [
+                  "Includes some transformations omitted in the base slot"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Pirate Ship",
+            "changes": [
+              {
+                "title": "(Z-alt) Molgera Battle MC",
+                "changes": [
+                  "Given its own tracklist that only plays the Molgera Battle theme"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Poke Floats (NEW!)",
+            "changes": [
+              {
+                "title": "(Base) Poke Floats",
+                "changes": [
+                  "Returns in all of its Melee glory"
+                ]
+              },
+              {
+                "title": "(R-alt) Poke Floats PS2 (NEW!)",
+                "changes": [
+                  "A green Pokemon Stadium 2 in the air among the floats"
+                ]
+              },
+              {
+                "title": "(L-alt) Poke Floats 2 (NEW!)",
+                "changes": [
+                  "A variant of Poke Floats featuring different patterns and Pokemon"
+                ]
+              },
+              {
+                "title": "(Z-alt) Pokemon Stadium",
+                "changes": [
+                  "Moved from Saffron City’s L-alt"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Pokemon Stadium 2",
+            "changes": [
+              {
+                "title": "(X-alt) Pokemon Stadium 2 (Brawl) (NEW!)",
+                "changes": [
+                  "The return of the transforming version of the stage"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Port Town",
+            "changes": [
+              {
+                "title": "(X-alt) Port Town (Brawl) (NEW!)",
+                "changes": [
+                  "A ledgeless version with different car knockback and a separate tracklist"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Rainbow Cruise (NEW!)",
+            "changes": [
+              {
+                "title": "(Base) Rainbow Cruise",
+                "changes": [
+                  "Moved from Peach's Castle's L-alt"
+                ]
+              },
+              {
+                "title": "(R-alt) Rainbow Cruise WL (NEW!)",
+                "changes": [
+                  "A Wario Land 1:1 featuring a Rainbow Cruise aesthetic"
+                ]
+              },
+              {
+                "title": "(L-alt) Bob-Omb Battlefield (NEW!)",
+                "changes": [
+                  "A stage on a floating island with looping platforms and a Water Bubble hazard!"
+                ]
+              },
+              {
+                "title": "(Z-alt) Mushroom Gorge (NEW!)",
+                "changes": [
+                  "An open stage featuring two very high platforms and a functional Mushroom Trampoline!"
+                ]
+              },
+              {
+                "title": "(Y-alt) Dr. Mario’s Lab",
+                "changes": [
+                  "Moved from Mario Circuit’s L-alt"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Rumble Falls",
+            "changes": [
+              {
+                "title": "(X-alt) Rumble Falls (Brawl)",
+                "changes": [
+                  "Moved from the Y-alt input for consistency reasons"
+                ]
+              },
+              {
+                "title": "(L+X-alt) 75M (NEW!)",
+                "changes": [
+                  "Yep, it’s this stage."
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Saffron City",
+            "changes": [
+              {
+                "title": "(L-alt) Pokemon Amie PS2 (NEW!)",
+                "changes": [
+                  "A Pokemon Stadium 2 1:1 featuring the visuals of Pokemon Amie"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Sky Sanctuary",
+            "changes": [
+              {
+                "title": "(L-alt) Pumpkin Hill GHZ",
+                "changes": [
+                  "Updated to have A Ghost’s Pumpkin Soup as its tracklist"
+                ]
+              }
             ]
           },
           {
             "title": "Training Room",
             "changes": [
-              "New L+R alt: Green Screen"
+              {
+                "title": "(Base Slot) Training Room",
+                "changes": [
+                  "Revamped to have walls on both sides and a raised, Battlefield-like stage floating above the floor for testing edge cancels and ledge techniques on"
+                ]
+              },
+              {
+                "title": "(X-alt) Online Training Room",
+                "changes": [
+                  "Moved from the Y-alt input for consistency reasons"
+                ]
+              },
+              {
+                "title": "(L+R-alt) Green Screen FD (NEW!)",
+                "changes": [
+                  "A copy of FD with nothing but a green background, intended as a template for being overlaid in video creation"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "WarioWare, Inc.",
+            "changes": [
+              {
+                "title": "(X-alt) WarioWare, Inc. (Brawl) (NEW!)",
+                "changes": [
+                  "Same as the base slot aside from giving the Brawl rewards of food, invincibility and gigantism instead of turbo"
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Yoshi’s Island",
+            "changes": [
+              {
+                "title": "(X-alt) Yoshi’s Island (Brawl) (NEW!)",
+                "changes": [
+                  "A variant of the base stage that maintains random Support Ghosts"
+                ]
+              }
             ]
           }
         ]
@@ -207,25 +686,31 @@
               {
                 "title": "Characters and Gameplay",
                 "changes": [
+                  "C-Stick no longer has excessive deadzones, should prevent dropped inputs in most cases",
                   "Moving platform behavior fix redone to fix edge case warping",
                   "Various instances of clipping through stages fixed",
                   "Wall tech invincibility normalized cast-wide (20 frames)",
                   "No-hitstun/no hitlag moves now properly refresh recovery resources for select characters",
                   "Overtime now only applies to stock matches",
+                  "Break the Targets no longer shows titles for previous songs in Classic mode",
                   "Grab Release fix applied to inhales (characters with actionable recoveries now regain their move when spit out or swallowed)",
                   "Characters with more than 16 costumes no longer break horde battles",
-                  "Springs will now not automatically center characters when landed on",
+                  "Springs will now not automatically center characters when landed on (examples include Sonic/Knuckles’ spring and the Spring item)",
                   "Charizard’s knockdown getup attack no longer sends opponents to the blastzone when shielded, along with other small file corruption problems",
                   "Ice Climbers can no longer get stuck to each other if hit frame perfectly out of Side Special",
+                  "Ike will now enter Fall if pushed offstage during Up-B’s endlag",
                   "Mario and Luigi’s lying down getup attacks no longer have stray fixed knockback hitboxes",
                   "Marth’s Side Special can no longer retain momentum when going offstage from onstage",
+                  "Removed unintended second puff graphic from Mr. Game & Watch’s up air, which would appear for exactly one frame in previous versions of P+",
                   "Olimar’s Pikmin no longer encounter issues while/after grabbing ledge",
                   "Pikachu will no longer clip through the stage after using Quick Attack",
                   "Fixed issue where Snake would keep billowing dirt clouds near his legs if the ending to the animation was interrupted",
                   "Fixed issue where dirt would instantly disappear at Snake’s feet if he interrupted the ending of the down smash placement animation",
                   "Sonic can no longer take an opponent’s jumps with Spring",
                   "Transforming with Sheik no longer allows Sheik to enter the needle charge animation after transforming back if she already has five needles",
-                  "Smash attack charging damage fixed on ZSS, Ness and Knuckles to properly scale with charge. (Applies to ZSS’ up smash and forward smash, Ness’ up smash and down smash and Knuckles’ down smash when used downwards)"
+                  "Smash attack charging damage fixed on ZSS, Ness and Knuckles to properly scale with charge. (Applies to ZSS’ up smash and forward smash, Ness’ up smash and down smash and Knuckles’ down smash when used downwards)",
+                  "Issues related to Squirtle’s Final Smash entering the air resolved",
+                  "Accounted for oversight where costume ranges for the color tinting of the armor on Giga Bowser’s down smash were incorrect"
                 ]
               },
               {
@@ -243,9 +728,10 @@
               {
                 "title": "Other",
                 "changes": [
+                  "Bowser’s victory theme in P+ Lite no longer loops",
                   "Fixed PM-era issue where Classic and All-Star modes would mistakenly show you a picture of Zero Suit Samus instead of Wario-Man",
                   "Fixed issue where Boss Battles would crash if entered after exiting the All-Star rest area",
-                  "Giga Bowser can now complete All-Star mode",
+                  "Giga Bowser can now complete All-Star mode (a first for Brawl modding!)",
                   "Fighting Ridley no longer crashes Boss Battles",
                   "Boss Battles now gives proper ending",
                   "Samus AI will now crouch properly in Training Mode if set to do so"
@@ -257,23 +743,40 @@
             "title": "Aesthetic Changes",
             "changes": [
               {
-                "title": "Characters/Costumes",
+                "title": "Costumes",
                 "changes": [
-                  "Implemented new Hitbox, ECB, and Ledge renderers, and added Stage renderer into debug mode (HUD toggle is also not separate)",
-                  "UCF code reworked, should feel more accurate to Melee’s implementation",
-                  "Various former PSA-based character attributes and features now moved into codeset or normalized with Brawl to make PSA porting easier",
-                  "Air Dodge length is no longer dependent on tilt distance",
-                  "“Shield” option in Training Mode no longer gives infinite shield (activate in Code Menu instead)",
+                  "Knuckles’ Z-alt is now Treasure Hunter Knuckles",
+                  "Holy War Marth no longer has gloves, matching his Project M renders",
+                  "Sunshine Peach semi-alt added, replacing the Sunshine Fire Peach recolor",
+                  "Fire Peach has updated hair",
                   "Roy cosmetics revamped",
-                  "Sunshine Peach semi-alt added",
-                  "Samus costumes (except Fusion) and cosmetics redone",
+                  "Purple Fusion Suit slot added for both Samus and Zero Suit Samus",
+                  "Brawl Samus costumes replaced with SJS Samus",
+                  "Light Suit, Dark Suit and PED Suit Samus revamped",
+                  "All Samus costumes now have updated poses and renders",
+                  "Outset Island Toon Link revamped, given new symbols and designs on the recolors",
+                  "Linebeck Toon Link clothing and sword revamped, now uses the Wooden Shield instead of Cyclone Slate",
                   "Sonic’s Z alt is now a Smash 2-styled Sonic",
-                  "Ike, Knuckles, Marth, Pit, Roy, Snake, and Zero Suit Samus received facial animation updates on various moves",
-                  "Captain Falcon’s dash animation cleaned up",
+                  "Dorrie Yoshi revamped with new textures and goggle changes",
+                  "Yoshi’s Z-alt (Boshi) revamped",
+                  "Many costumes and stages optimized for file size"
+                ]
+              },
+              {
+                "title": "Character Polish",
+                "changes": [
+                  "Captain Falcon’s dash and Melee secret taunt animations cleaned up",
                   "Captain Falcon’s Final Smash utilizes formerly unused ending animation when started from the ground",
+                  "Retro Falcon has implemented facial expressions to match the Brawl costume",
+                  "Ike's Hector alt now has silver sword trail effects",
+                  "Ike Climbers hidden alt now has hammer trail effects",
+                  "Ike, Meta-Knight, Link and Toon Link have received new, costume-dependent sword glows to better match variances in sword appearances",
+                  "Ike, Knuckles, Marth, Pit, Roy, Snake, and Zero Suit Samus received facial animation updates on various moves",
                   "Kirby’s Charge Shot now uses the same SFX as Samus’",
+                  "Link’s bombs changed to aesthetically be a mixture of Brawl, Ocarina of Time, Twilight Princess and Hyrule Warriors to match all costumes better",
                   "Olimar’s Pikmin now have color-specific trail effects",
                   "Pit’s Dark Pit colors now have unique arrows, sword trails and a silver bow",
+                  "Roy’s side taunt cleaned up so that the pauldron on his right shoulder doesn’t clip into his arm",
                   "ROB retains his Final Smash aura during his Final Smash’s duration",
                   "Snake's up tilt animation cleaned up",
                   "Snake’s down smash mine is now gray with a flashing top instead of purple",
@@ -282,20 +785,31 @@
                   "Snake transitions into crawl attack more smoothly and doesn’t immediately hold the knife at the start of it",
                   "Snake’s knife attacks now have glow effects, similar to other blades",
                   "Snake’s box walk taunt recoded to have smoother transitions between walking left and right",
-                  "Sonic’s feet in his ball animations are no longer flat and scale properly",
-                  "Various menu textures cleaned up",
-                  "Many costumes and stages optimized for file size"
+                  "Sonic’s feet in his ball animations are no longer flat and scale properly"
                 ]
               },
               {
-                "title": "Music",
+                "title": "Features",
                 "changes": [
-                  "Added cirb’s Project M Theme remix to the menu and the All-Star Rest Area"
+                  "Implemented new Hitbox, ECB, and Ledge renderers, and added Stage renderer into debug mode (HUD toggle is also not separate",
+                  "UCF code reworked, should feel more accurate to Melee’s implementation",
+                  "Various former PSA-based character attributes and features now moved into codeset or normalized with Brawl to make PSA porting easier",
+                  "Air Dodge length is no longer dependent on tilt distance",
+                  "“Shield” option in Training Mode no longer gives infinite shield (activate in Code Menu instead)",
+                  "Various menu textures cleaned up"
                 ]
               },
               {
                 "title": "Other",
                 "changes": [
+                  "Blast Boxes are now triggered by the aura element",
+                  "Aura now thaws ice",
+                  "Added cirb’s Project M Theme remix to the menu and the All-Star Rest Area",
+                  "Song list updated; see music spreadsheet for tracklist details",
+                  "Victory theme IDs changed, now only requires you to edit the tracklist for the results screen to customize each character’s theme!",
+                  "All Brawl multiplayer stage music is now accessible on a stage (previously, 7 songs were left out)",
+                  "All SSB64 multiplayer stage music is now included (previously, 3 songs related to 64 stages in the build were omitted)",
+                  "Many songs optimized for filesize",
                   "Optional code for loading Character Select Portraits from the Result Screen Portraits file optimized, now no longer crashes",
                   "Joining a Dolphin netplay lobby as “Spectator” will now automatically disable your port",
                   "WASAPI backend added to Dolphin",

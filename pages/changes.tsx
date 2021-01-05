@@ -1,7 +1,7 @@
 // Function says: This component is the same as /changes/[version].tsx, but always shows the latest changes (as seen in getStaticProps below).
 
 import Changes, { ChangesStaticProps } from "../components/Changes/Changes";
-import { getVersionData, getSortedVersions } from "../lib/version";
+import { getVersionData, getSortedVersions } from "../lib/get-version";
 
 export default Changes; // simply use the generic Changes component
 

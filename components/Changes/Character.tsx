@@ -10,7 +10,7 @@ const iconMap = {
   "Misc": "smash",
   "Stages": "stages",
   "Bug Fixes": "bugfixes",
-  "Aesthetic Changes": "costumesandcontent"
+  "Costumes and Content": "costumesandcontent"
 };
 
 interface CharacterProps {

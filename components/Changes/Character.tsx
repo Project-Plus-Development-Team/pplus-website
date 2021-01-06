@@ -8,7 +8,9 @@ import { Heading, Content } from "react-bulma-components";
 const iconMap = {
   "Costumes & Aesthetics": "stickers",
   "Misc": "smash",
-  "Stages": "stages"
+  "Stages": "stages",
+  "Bug Fixes": "bugfixes",
+  "Aesthetic Changes": "costumesandcontent"
 };
 
 interface CharacterProps {

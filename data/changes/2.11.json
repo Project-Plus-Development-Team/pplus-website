@@ -396,14 +396,11 @@
       ]
     },
     {
-      "name": "Misc",
+      "name": "Bug Fixes",
       "element": {},
       "moves": [
         {
-          "title": "Bug Fixes",
-          "changes": [
-            {
-              "title": "Characters",
+         "title": "Characters",
               "changes": [
                 "ECB during hitstun restored to 3.6 behavior",
                 "Kirby’s jumps restored to proper values",
@@ -472,9 +469,11 @@
             }
           ]
         },
+              
         {
-          "title": "Aesthetic Changes",
-          "changes": [
+          "name": "Costumes and Content",
+          "element": {},
+          "moves": [
             {
               "title": "Characters/Costumes",
               "changes": [
@@ -514,5 +513,3 @@
         }
       ]
     }
-  ]
-}

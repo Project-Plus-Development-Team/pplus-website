@@ -314,14 +314,11 @@
       ]
     },
     {
-      "name": "Misc",
+      "name": "Bug Fixes",
       "element": {},
       "moves": [
         {
-          "title": "Bug Fixes",
-          "changes": [
-            {
-              "title": "Characters and Gameplay",
+         "title": "Characters and Gameplay",
               "changes": [
                 "Trip Armour code adjusted to prevent issues with non-hitstun moves",
                 "Faux Super Armour (most instances of Port Priority) removed",
@@ -351,14 +348,15 @@
                 "Netplay launcher now uses proper hooktype, decreasing input lag",
                 "Screen KOs and game endings no longer zoom in the camera",
                 "BOSS mode can now be activated on any port"
-              ]
-            }
-          ]
-        },
+         ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
         {
-          "title": "Aesthetic Changes",
-          "changes": [
-            {
               "title": "Characters/Costumes",
               "changes": [
                 "Clone Engine characters now have unique All-Star end screens"
@@ -384,5 +382,3 @@
         }
       ]
     }
-  ]
-}

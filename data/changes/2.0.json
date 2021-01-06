@@ -6,11 +6,11 @@
   },
   "changes": [
     {
-      "name": "Misc",
+      "name": "Bug Fixes",
       "element": {},
       "moves": [
         {
-          "title": "Bug Fixes",
+          "title": "General",
           "changes": [
             "Many codes moved out of sound resource, significantly reducing memory leak crashes [DukeItOut]",
             "Collision memory leak fix code added, which should drastically reduce the overall number of freezes [DukeItOut]",
@@ -32,7 +32,13 @@
             "Clone Engine characters can become muted while metal [DukeItOut]",
             "'Further improvements to overall system stability and other minor adjustments have been made to enhance the user experience'"
           ]
-        },
+        }
+      ]
+    },
+    {
+      "name": "Misc",
+      "element": {},
+      "moves": [
         {
           "title": "General Changes",
           "changes": [

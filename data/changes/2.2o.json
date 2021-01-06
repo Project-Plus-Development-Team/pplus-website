@@ -643,11 +643,14 @@
       ]
     },
     {
-      "name": "Bug Fixes",
+      "name": "Misc",
       "element": {},
       "moves": [
         {
-          "title": "Characters and Gameplay",
+          "title": "Bug Fixes",
+          "changes": [
+            {
+              "title": "Characters and Gameplay",
               "changes": [
                 "C-Stick no longer has excessive deadzones, should prevent dropped inputs in most cases",
                 "Moving platform behavior fix redone to fix edge case warping",
@@ -698,16 +701,15 @@
                 "Fighting Ridley no longer crashes Boss Battles",
                 "Boss Battles now gives proper ending",
                 "Samus AI will now crouch properly in Training Mode if set to do so"
-                ]
-              }
-            ]
-    },
-    {
-      "name": "Aesthetic Changes",
-      "element": {},
-      "moves": [
+              ]
+            }
+          ]
+        },
         {
-          "title": "Costumes",
+          "title": "Aesthetic Changes",
+          "changes": [
+            {
+              "title": "Costumes",
               "changes": [
                 "Knuckles’ Z-alt is now Treasure Hunter Knuckles",
                 "Holy War Marth no longer has gloves, matching his Project M renders",
@@ -779,6 +781,8 @@
                 "WASAPI backend added to Dolphin",
                 "Reduced audio delay in Dolphin",
                 "Strap and Results screen updated for version 2.2"
+              ]
+            }
           ]
         }
       ]

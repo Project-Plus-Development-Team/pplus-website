@@ -7,11 +7,20 @@ import { Heading, Content } from "react-bulma-components";
 
 const iconMap = {
   "Costumes & Aesthetics": "stickers",
-  "Misc": "smash",
+  "Misc": "smash-shaded",
   "Stages": "stages",
   "Bug Fixes": "bug-fixes",
   "Costumes and Content": "costumes-and-content"
 };
+
+function getCharacterIconURL(name: string) {
+  if (iconMap[name]) { // for some ""characters"" like Misc we don't want actual character icons
+    return `/images/icons/${iconMap[name]}.png`;
+  }
+
+  const hyphenName = name.replace(/\s/gi, "-");
+  return `/images/characters/${hyphenName}.png`;
+}
 
 interface CharacterProps {
   version: string
@@ -33,9 +42,6 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
     }
   }, [ fold ]); // watch the fold parameter, if it turns true, unfold by setting show to true
 
-  const hyphenName = name.replace(/\s/gi, "-");
-  const icon = iconMap[hyphenName] ? `icons/${iconMap[hyphenName]}` : `characters/${hyphenName}`;
-
   const content = moves.map((move, index) =>
     <Move key={index} data={move}/>
   );
@@ -51,7 +57,7 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
   return (
     <div key={name} ref={parentElement}>
       <Heading size={4} className="is-flex is-align-content-center mt-5">
-        <img src={`/images/${icon}.png`} alt={name}/>
+        <img src={getCharacterIconURL(name)} alt={name}/>
         <a onClick={toggleShow} className={`dropdown-toggle ${show ? "open" : ""}`}>{name}</a>
         <CopyToClipboard link={link}/>
       </Heading>

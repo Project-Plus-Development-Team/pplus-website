@@ -20,6 +20,7 @@ const generateLinks = (links: VersionData["links"]) => (
           color="link"
           key={index}
           href={url}
+          renderAs="a"
         >
           {title}
         </Button>

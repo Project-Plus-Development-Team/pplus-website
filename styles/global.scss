@@ -4,16 +4,8 @@
 
 html {
   height: 100%;
-  display: flex;
-  flex-direction: column;
   overflow-y: initial;
   overscroll-behavior: auto contain; // is supposed to fix ugly overscroll white backgrounds, but i don't know browsers where i could see this fixed
-}
-
-body {
-  flex: 1;
-  background: url(/images/mosaic-background-pattern.jpg);
-  background-size: 150px 150px;
 }
 
 body, .subtitle {
@@ -37,36 +29,6 @@ code {
   background: hsl(0,0%,15%);
   color: hsl(0,0%,90%);
   border-radius: 0.3rem;
-}
-
-.group {
-  margin-bottom: 1rem;
-
-  > * {
-    margin-right: 1rem;
-  }
-}
-
-// changes
-
-.buff {
-  color: rgb(60, 255, 0);
-}
-
-.nerf {
-  color: rgb(255, 70, 24);
-}
-
-.neutral {
-  color: orange;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-@function hsla($h, $s, $l, $a) {
-  @return unquote('hsla(#{$h}, #{$s}, #{$l}, #{$a})'); // hsla instead of hsl
 }
 
 header ~ .container {

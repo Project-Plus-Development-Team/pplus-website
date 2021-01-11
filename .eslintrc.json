@@ -6,6 +6,7 @@
   "extends": ["alloy", "alloy/react", "alloy/typescript"],
   "env": { "browser": true },
   "rules": {
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "@typescript-eslint/no-require-imports": "off" // We only turn this off because we need in-place require() for next-optimized-images... or rather for webpack...
   }
 }

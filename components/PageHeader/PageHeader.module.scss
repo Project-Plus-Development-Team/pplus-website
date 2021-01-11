@@ -1,14 +1,35 @@
 .navbar {
-  background: linear-gradient(to bottom, #35dcc5, #34d171),
-              url(/images/background.jfif) !important; // Overwrite is-dark background color
-  background-blend-mode: color;
-  border-radius: 0.3rem;
-
   * {
-    transition: all 0.1s ease;
+    transition: background-color 0.1s ease;
+  }
+
+  img {
+    max-height: inherit;
+  }
+
+  @media screen and (min-width: 1024px) {
+    border-radius: 0.3rem;
+    padding: 0 14px;
+    margin: 2rem 0;
+  }
+
+  > * {
+    margin: 0;
   }
 }
-  
+
+.buttoncontainer {
+  @media screen and (min-width: 500px) { // arbitrary value i chose which looks good, not an actual bulma breakpoint
+    flex-wrap: nowrap;
+  }
+}
+
+.expandbutton {
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+  }
+}
+
 .navitem:hover:not(.navitemactive) { // :not() is crucial due to specifity issues with !important
   background-color: hsla(0,0%,0%,0.4) !important;
 }
@@ -22,5 +43,11 @@
   
   &:hover {
     background-color: #455bac;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    background-color: hsla(0, 0%, 0%, 0.7) !important;
   }
 }

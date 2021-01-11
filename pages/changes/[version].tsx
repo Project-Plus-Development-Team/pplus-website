@@ -19,12 +19,12 @@ export async function getStaticPaths() {
 }
 
 export const getStaticProps: ChangesStaticProps = async ({ params }) => {
-  const changesData = await getVersionData(params.version);
+  const versionData = await getVersionData(params.version);
   
   return {
     props: {
       version: params.version,
-      data: changesData,
+      data: versionData,
       siteUrl: process.env.URL
     }
   };

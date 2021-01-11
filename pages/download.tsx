@@ -4,6 +4,7 @@
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import { Button, Container, Heading } from "react-bulma-components";
+import YouTube from "react-youtube";
 import importedLinkGroups from "../data/download.json";
 import { getSortedVersions } from "../lib/get-version";
 
@@ -42,14 +43,7 @@ export default function Download({ linkGroups, latestVersion }: DownloadProps) {
       </Container>
       <Container>
         <Heading subtitle>Need help installing Project+? Project M Nexus&apos;s in-depth guide has got you covered!</Heading>
-        <iframe
-          style={{
-            width: 560,
-            height: 316,
-            marginBottom: 26
-          }}
-          src="https://www.youtube.com/embed/4XynDH-eVDE"
-        />
+        <YouTube videoId="4XynDH-eVDE"/>
       </Container>
     </>
   );

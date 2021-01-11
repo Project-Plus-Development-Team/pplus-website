@@ -5,8 +5,24 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const path = require("path");
 const redirectParser = require("netlify-redirect-parser");
+const optimizedImages = require("next-optimized-images");
+const withPlugins = require('next-compose-plugins');
 
-module.exports = {
+const plugins = [
+  [optimizedImages, {
+    optimizeImagesInDev: true,
+    removeOriginalExtension: true,
+    // defaultImageLoader: "responsive-loader",
+    responsive: {
+      adapter: require('responsive-loader/sharp')
+    },
+    webp: {
+      quality: 90
+    }
+  }]
+];
+
+const nextConfig = {
   webpack: config => {
     config.module.rules.push({
       test: /\.md$/,
@@ -28,3 +44,5 @@ module.exports = {
     }));
   }
 };
+
+module.exports = withPlugins(plugins, nextConfig);

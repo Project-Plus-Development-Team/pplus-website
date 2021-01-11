@@ -3,24 +3,8 @@ import React from "react";
 import { CharacterType } from "../../types/changes";
 import CopyToClipboard from "./CopyToClipboard";
 import Move from "./Move";
-import { Heading, Content } from "react-bulma-components";
-
-const iconMap = {
-  "Costumes & Aesthetics": "stickers",
-  "Misc": "smash-shaded",
-  "Stages": "stages",
-  "Bug Fixes": "bug-fixes",
-  "Costumes and Content": "costumes-and-content"
-};
-
-function getCharacterIconURL(name: string) {
-  if (iconMap[name]) { // for some ""characters"" like Misc we don't want actual character icons
-    return `/images/icons/${iconMap[name]}.png`;
-  }
-
-  const hyphenName = name.replace(/\s/gi, "-");
-  return `/images/characters/${hyphenName}.png`;
-}
+import { Heading, Content, Icon } from "react-bulma-components";
+import CharacterIcon from "./CharacterIcon";
 
 interface CharacterProps {
   version: string
@@ -57,9 +41,19 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
   return (
     <div key={name} ref={parentElement}>
       <Heading size={4} className="is-flex is-align-content-center mt-5">
-        <img src={getCharacterIconURL(name)} alt={name}/>
-        <a onClick={toggleShow} className={`dropdown-toggle ${show ? "open" : ""}`}>{name}</a>
-        <CopyToClipboard link={link}/>
+        <CharacterIcon name={name}/>
+        <a
+          onClick={toggleShow}
+          className="dropdown-toggle"
+        >
+          <Icon className={show ? "rotate" : ""}>
+            <span className="fas fa-angle-right"/>
+          </Icon>
+          <span>
+            {name}
+          </span>
+          <CopyToClipboard link={link}/>
+        </a>
       </Heading>
       <Content style={{
         display: show ? "block" : "none"
@@ -67,25 +61,21 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
         {content}
       </Content>
 
-      <style jsx>{`
-        img {
-          margin-right: 7px;
-          height: 40px;
+      <style jsx global>{`
+        .icon {
+          transition: transform 0.06s;
+          margin-right: 0.3rem;
         }
 
+        .icon.rotate {
+          transform: rotateZ(90deg);
+        }
+      `}</style>
+
+      <style jsx>{`
         .dropdown-toggle {
           user-select: none;
           line-height: 39px;
-        }
-
-        .dropdown-toggle::before {
-          content: "►";
-          margin-right: 0.5rem;
-          font-family: Arial;
-        }
-
-        .dropdown-toggle.open::before {
-          content: "▼"
         }
       `}</style>
     </div>

@@ -4,7 +4,12 @@ import styles from "./PageHeader.module.scss";
 import React from "react";
 
 const DiscordButton = () => (
-  <Button color="link" className={styles.discordbutton}>
+  <Button
+    color="link"
+    href="/discord"
+    renderAs="a"
+    className={`${styles.discordbutton} ${styles.expandbutton}`}
+  >
     <Icon>
       <span className="fab fa-discord"/>
     </Icon>
@@ -21,23 +26,21 @@ export default function ButtonContainer({ latestVersion, foldNavbar }: ButtonCon
   return (
     <Navbar.Container position="end">
       <Navbar.Item renderAs="div"> {/* <a> is default and gets an ugly shadow */}
-        <div className="field is-grouped">
-          <div className="control">
-            <Link href="/download">
-              <Button color="link" className="has-text-weight-bold" onClick={foldNavbar}>
-                <Icon>
-                  <span className="fas fa-download"/>
-                </Icon>
-                <span>Download v{latestVersion}</span>
-              </Button>
-            </Link>
-          </div>
-          <div className="control">
-            <a href="/discord">
-              <DiscordButton/>
-            </a>
-          </div>
-        </div>
+       <Button.Group position="centered" className={styles.buttoncontainer}>
+          <Link href="/download" passHref>
+            <Button
+              color="link"
+              className={`has-text-weight-bold ${styles.expandbutton}`}
+              onClick={foldNavbar}
+            >
+              <Icon>
+                <span className="fas fa-download"/>
+              </Icon>
+              <span>Download v{latestVersion}</span>
+            </Button>
+          </Link>
+          <DiscordButton/>
+       </Button.Group>
       </Navbar.Item>
     </Navbar.Container>
   );

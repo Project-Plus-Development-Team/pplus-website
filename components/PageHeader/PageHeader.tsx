@@ -77,7 +77,7 @@ const sortedVersions = [ "2.0", "2.11", "2.15", "2.2" ];
 export default function PageHeader() {
   const router = useRouter();
   const latestVersion = sortedVersions[sortedVersions.length - 1];
-  const [isActive, setActive] = React.useState(true);
+  const [isActive, setActive] = React.useState(false);
   const foldNavbar = () => setActive(false);
 
   const backgroundGradient = `

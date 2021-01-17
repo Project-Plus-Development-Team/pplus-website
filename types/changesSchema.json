@@ -7,10 +7,19 @@
       "description": "Links that are shown as buttons on the changes page. Keys are the shown button text, values are the URLs.",
       "type": "object",
       "additionalProperties": {
-        "title": "Key is title, value is url",
-        "type": "string",
-        "format": "uri",
-        "pattern": "^https?://"
+        "title": "Key is title, value is object with url and optionally with icon",
+        "type": "object",
+        "required": [ "url" ],
+        "properties": {
+          "icon": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https?://"
+          }
+        }
       }
     },
     "changes": {

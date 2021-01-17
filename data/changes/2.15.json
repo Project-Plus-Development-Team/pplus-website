@@ -1,7 +1,13 @@
 {
   "links": {
-    "Google Doc Version": "https://docs.google.com/document/d/1pfvmbOpOhu7Pys_kWrWYC5A4SSLLY0YLXx6_gXJi4Ds",
-    "Music Lineup": "https://docs.google.com/spreadsheets/d/1QdTijaayiheKvIcvZSdHGae3v_OQXlJXx7T2C1pdvck"
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1pfvmbOpOhu7Pys_kWrWYC5A4SSLLY0YLXx6_gXJi4Ds"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1QdTijaayiheKvIcvZSdHGae3v_OQXlJXx7T2C1pdvck"
+    }
   },
   "changes": [
     {

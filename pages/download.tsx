@@ -4,10 +4,11 @@
 import React from "react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import { Button, Container, Heading, Icon } from "react-bulma-components";
+import { Button, Heading } from "react-bulma-components";
 import YouTube from "react-youtube";
 import importedLinkGroups from "../data/download.json";
 import { getSortedVersions } from "../lib/get-version";
+import FAButton from "../components/FAButton";
 
 interface LinkGroup {
   [title: string]: {
@@ -20,18 +21,15 @@ function LinkGroup({ data }: { data: LinkGroup }) {
   return (
     <Button.Group>
       {Object.entries(data).map(([title, { url, icon }], index2) =>
-        <Button color="link" key={index2} href={url} renderAs="a">
-          {icon === undefined ? (
-            title
-          ) : (
-            <div>
-              <Icon>
-                <span className={icon}/>
-              </Icon>
-              <span>{title}</span>
-            </div>
-          )}
-        </Button>
+        <FAButton
+          color="link"
+          key={index2}
+          href={url}
+          renderAs="a"
+          icon={icon}
+        >
+          {title}
+        </FAButton>
       )}
     </Button.Group>
   );

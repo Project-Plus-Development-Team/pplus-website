@@ -1,20 +1,19 @@
 import Link from "next/link";
-import { Navbar, Button, Icon } from "react-bulma-components";
+import { Navbar, Button } from "react-bulma-components";
 import styles from "./PageHeader.module.scss";
 import React from "react";
+import FAButton from "../FAButton";
 
 const DiscordButton = () => (
-  <Button
+  <FAButton
     color="link"
     href="/discord"
     renderAs="a"
     className={`${styles.discordbutton} ${styles.expandbutton}`}
+    icon="fab fa-discord"
   >
-    <Icon>
-      <span className="fab fa-discord"/>
-    </Icon>
-    <span>Discord Server</span>
-  </Button>
+    Discord Server
+  </FAButton>
 );
 
 interface ButtonContainerProps {
@@ -28,16 +27,14 @@ export default function ButtonContainer({ latestVersion, foldNavbar }: ButtonCon
       <Navbar.Item renderAs="div"> {/* <a> is default and gets an ugly shadow */}
        <Button.Group position="centered" className={styles.buttoncontainer}>
           <Link href="/download" passHref>
-            <Button
+            <FAButton
               color="link"
               className={`has-text-weight-bold ${styles.expandbutton}`}
               onClick={foldNavbar}
+              icon="fas fa-download"
             >
-              <Icon>
-                <span className="fas fa-download"/>
-              </Icon>
-              <span>Download v{latestVersion}</span>
-            </Button>
+              Download v{latestVersion}
+            </FAButton>
           </Link>
           <DiscordButton/>
        </Button.Group>

@@ -13,7 +13,10 @@ export interface CharacterType {
 
 export interface VersionData {
   links?: {
-    [url: string]: string
+    [url: string]: {
+      url: string
+      icon?: string
+    }
   }
   changes: CharacterType[]
 }

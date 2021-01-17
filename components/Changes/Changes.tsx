@@ -1,8 +1,10 @@
 import React from "react";
 import { VersionData } from "../../types/changes";
-import { Heading, Container, Button } from "react-bulma-components";
+import { Heading, Button } from "react-bulma-components";
 import Character from "./Character";
 import { GetStaticProps } from "next";
+import Head from "next/head";
+import FAButton from "../FAButton";
 
 // used by the two different pages that are using this component in order to assure they provide the right data format
 export type ChangesStaticProps = GetStaticProps<ChangesProps, { version: string }>;
@@ -15,15 +17,16 @@ export interface ChangesProps {
 
 const generateLinks = (links: VersionData["links"]) => (
   <Button.Group>
-    {Object.entries(links).map(([title, url], index) => (
-        <Button
-          color="link"
-          key={index}
-          href={url}
-          renderAs="a"
-        >
-          {title}
-        </Button>
+    {Object.entries(links).map(([title, { url, icon }], index) => (
+      <FAButton
+        color="link"
+        key={index}
+        href={url}
+        renderAs="a"
+        icon={icon}
+      >
+        {title}
+      </FAButton>
     ))}
   </Button.Group>
 );

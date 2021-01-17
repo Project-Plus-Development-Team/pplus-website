@@ -22,7 +22,9 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
     if (!fold) {
       setShow(true);
 
-      parentElement.current.scrollIntoView();
+      parentElement.current.scrollIntoView({
+        behavior: "smooth"
+      });
     }
   }, [ fold ]); // watch the fold parameter, if it turns true, unfold by setting show to true
 

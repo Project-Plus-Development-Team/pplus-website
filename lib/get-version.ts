@@ -50,7 +50,7 @@ export async function getVersionData(version: string): Promise<VersionData> {
     throwFirst: true
   });
 
-  // await validateImagesExist(changesJSON);
+  await validateImagesExist(changesJSON);
 
   return changesJSON;
 }

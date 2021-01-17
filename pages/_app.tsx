@@ -7,6 +7,7 @@ import "@fortawesome/fontawesome-free/css/all.css";
 import { AppProps } from "next/app";
 import PageHeader from "../components/PageHeader/PageHeader";
 import Head from "next/head";
+import { Container } from "react-bulma-components";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -33,7 +34,9 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Project+ Website</title>
       </Head>
       <PageHeader/>
-      <Component {...pageProps}/>
+      <Container renderAs="main">
+        <Component {...pageProps}/>
+      </Container>
     </>
   );
 }

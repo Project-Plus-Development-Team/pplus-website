@@ -1,10 +1,10 @@
-import { Container, Heading, Content } from "react-bulma-components";
+import { Heading, Content } from "react-bulma-components";
 import YouTube from "react-youtube";
 import SmartImage from "../components/smart-image";
 
 export default function Home() {
   return (
-    <Container renderAs="main">
+    <>
       <div className="grid-content" style={{
         display: "grid",
         gridTemplateColumns: "1fr max-content",
@@ -26,7 +26,10 @@ export default function Home() {
         </div>
 
         <div style={{gridArea: "youtube"}}>
-          <YouTube containerClassName="youtube-container" videoId="z_Hm9FBMz1M"/>
+          <YouTube
+            videoId="z_Hm9FBMz1M"
+            containerClassName="youtube-container"
+          />
         </div>
 
         <div style={{gridArea: "text"}}>
@@ -69,16 +72,7 @@ export default function Home() {
             grid-template-areas: 'text' 'youtube' 'picture' !important;
           }
         }
-      
-        .youtube-container {
-          margin-top: 1rem;
-
-          position: relative;
-          padding-bottom: 56.25%;
-          height: 0
-          overflow: hidden;
-        }
       `}</style>
-    </Container>
+    </>
   );
 }

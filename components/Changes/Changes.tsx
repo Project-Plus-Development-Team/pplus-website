@@ -54,13 +54,16 @@ export default function Changes({ version, data, siteUrl }: ChangesProps) {
     />
   ));
 
+  const title = `Changes in Project+ v${version}`;
+
   return (
-    <Container>
-      <Heading>Changes in Project+ v{version}</Heading>
+    <>
+      <Head><title>{title}</title></Head>
+      <Heading>{title}</Heading>
       <p className="has-text-weight-bold">Automatically parsed from the Google Document, errors still possible.</p>
       <br/>
       {buttons}
       {content}
-    </Container>
+    </>
   );
 }

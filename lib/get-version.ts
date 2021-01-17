@@ -36,7 +36,13 @@ async function validateImagesExist(changesJSON: VersionData) {
     try {
       await fs.access(absoluteImagePath);
     } catch {
-      directoryTree(process.cwd(), { exclude: /(\.next|node_modules|\.git|out)/, attributes: [] }, (item) => console.log(item.path));
+      console.log(
+        JSON.stringify(
+          directoryTree(".", { exclude: /node_modules/ }),
+          null, 2
+        )
+      );
+
       throw new Error(`${absoluteImagePath} can't be accessed`);
     }
   }

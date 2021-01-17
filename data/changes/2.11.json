@@ -406,116 +406,115 @@
       "element": {},
       "moves": [
         {
-         "title": "Characters",
-              "changes": [
-                "ECB during hitstun restored to 3.6 behavior",
-                "Kirby’s jumps restored to proper values",
-                "Kirby no longer holds Galaxia forever after using MK’s tornado",
-                "Kirby’s Drill Claw hitboxes now match Knuckles'",
-                "Multiple Kirby hat GFX now linger and/or despawn properly",
-                "Zelda can no longer disappear when Up B is interrupted",
-                "Zelda’s Din’s Fire now works as intended",
-                "Zelda telecancel behavior restored to 3.6",
-                "Transformed Sheik/Zelda lightpresses now work again",
-                "Ganondorf third grab hitbox that was unintentionally missing restored",
-                "Pikachu’s Quick Attack Cancel now matches 3.6",
-                "ROB’s Up Special momentum now matches 3.6",
-                "Bowser no longer has a longer unintended DACUS length",
-                "Charizard’s up throw no longer breaks when used with the C-Stick",
-                "Lucas Down Smash second hit can now be buffered properly",
-                "Misc Mewtwo SFX errors corrected",
-                "Ivysaur now heals every time when sweetspotting bulb moves",
-                "Samus can now always crawl out of Down B",
-                "ZSS no longer has insane drift after charging up smash",
-                "Nana can no longer be ledgetrumped",
-                "Sonic’s Down Tilt now has fixed foot animations",
-                "Wario-Man no longer goes to center stage when thrown and has a third double jump again",
-                "Bugs with multiple hidden alts fixed (2.11)"
-              ]
-            },
-            {
-              "title": "Stages/Music",
-              "changes": [
-                "Dream Land’s Y alt now loads properly",
-                "Metal Cavern’s Z + Y alt now loads properly",
-                "Metal Cavern no longer messes up tethers on the left side",
-                "Alt Stages toggle in the Code Menu now functions",
-                "Ridley Land duplicate collision on left platform removed",
-                "Solid objects on Rainbow Road can no longer be entered",
-                "Platforms on Delfino’s Secret 1:1s now display properly on console",
-                "Pinch themes are now properly implemented, as their functionality was not active in 2.0",
-                "Opening Menu (Metroid Prime) now plays correctly on Norfair’s Z-alt",
-                "Bike Theme (Pokémon Diamond & Pearl) now plays correctly on Saffron City’s Z-alt",
-                "More songs included on various stages. See the music lineup for more information on what is new in 2.1",
-                "Music tracklists can now exceed 15 songs",
-                "Track naming errors fixed on P+ Stadium and other stages"
-              ]
-            },
-            {
-              "title": "Other",
-              "changes": [
-                "Attack Stick can now input jab/nair, but cannot do angled tilts",
-                "New Tilt Stick option added that functions as P+ 2.0 Attack Stick (angled tilts, no jab/nair)",
-                "CSS controls config no longer breaks when another player is moving their cursor",
-                "Characters no longer suffer model seizing after teching Zero Suit Samus’ Down Smash",
-                "Multiple Pokemon and co-op edge case crashes in SSE fixed",
-                "Spawning three CPUs in Training Mode no longer crashes",
-                "Trip armour on throws now always works",
-                "Spawning the Mr. Resetti Assist Trophy no longer crashes the game",
-                "Multiple character alts now appear properly darkened on Sunset Shore",
-                "Co-op event stage loader now matches 1P events",
-                "Fixed crash related to a co-op event on the hardest difficulty",
-                "Meta Knight, Fox, and Falco AI updated to be more realistic, less oppressive and smarter",
-                "Nunchuck stick usage restored to Brawl behavior",
-                "Strap Screen now loads properly in other languages",
-                "Stage loading re-written to prevent file loading softlocks, especially on console",
-                "Stage Striking now always properly detects stage changes",
-                "Non-VS mode times (BTT, Boss Rush, etc) now show in frames like the VS mode timer"
-              ]
-            }
+          "title": "Characters",
+          "changes": [
+            "ECB during hitstun restored to 3.6 behavior",
+            "Kirby’s jumps restored to proper values",
+            "Kirby no longer holds Galaxia forever after using MK’s tornado",
+            "Kirby’s Drill Claw hitboxes now match Knuckles'",
+            "Multiple Kirby hat GFX now linger and/or despawn properly",
+            "Zelda can no longer disappear when Up B is interrupted",
+            "Zelda’s Din’s Fire now works as intended",
+            "Zelda telecancel behavior restored to 3.6",
+            "Transformed Sheik/Zelda lightpresses now work again",
+            "Ganondorf third grab hitbox that was unintentionally missing restored",
+            "Pikachu’s Quick Attack Cancel now matches 3.6",
+            "ROB’s Up Special momentum now matches 3.6",
+            "Bowser no longer has a longer unintended DACUS length",
+            "Charizard’s up throw no longer breaks when used with the C-Stick",
+            "Lucas Down Smash second hit can now be buffered properly",
+            "Misc Mewtwo SFX errors corrected",
+            "Ivysaur now heals every time when sweetspotting bulb moves",
+            "Samus can now always crawl out of Down B",
+            "ZSS no longer has insane drift after charging up smash",
+            "Nana can no longer be ledgetrumped",
+            "Sonic’s Down Tilt now has fixed foot animations",
+            "Wario-Man no longer goes to center stage when thrown and has a third double jump again",
+            "Bugs with multiple hidden alts fixed (2.11)"
           ]
         },
-              
         {
-          "name": "Costumes and Content",
-          "element": {},
-          "moves": [
-            {
-              "title": "Characters/Costumes",
-              "changes": [
-                "Kirby’s Ganondorf hat’s GFX revamped",
-                "Falco’s Z alt has been replaced",
-                "ZSS ponytail skins now have fixed hair",
-                "Tan and Mango DK skins now have proper skin tones",
-                "Knuckles’ Espio, Jet Set, and Z alt costumes now have proper metals",
-                "Knuckles’ costumes now have final smash eyes",
-                "Paralyze shaking reduced in movement intensity"
-              ]
-            },
-            {
-              "title": "Stages",
-              "changes": [
-                "Pumpkin Hill alt on Sky Sanctuary Zone swapped out for a more game-accurate version",
-                "Castle Siege no longer has blocks on the front corners to reduce obscurement",
-                "P+ Stadium now has confetti effects from Subspace",
-                "World Bowser has been optimized and more content added to the background",
-                "Abandoned Stadium graphics updated",
-                "Various quality updates made to lighting and shader settings to various alt stages",
-                "Materials errors fixed on Waluigi Stadium and Rainbow Road"
-              ]
-            },
-            {
-              "title": "Other",
-              "changes": [
-                "Legacy TE graphics in Group Records and on the Title Screen replaced",
-                "Mewtwo HD texture issues fixed",
-                "Ivysaur’s renders now line up properly",
-                "HD textures now in DDS format; full-quality PNG versions included in the Modder’s Pack",
-                "480p Pixel Fix included for console versions",
-                "Strap and Results screen updated for version 2.1"
-              ]
-            }
+          "title": "Stages/Music",
+          "changes": [
+            "Dream Land’s Y alt now loads properly",
+            "Metal Cavern’s Z + Y alt now loads properly",
+            "Metal Cavern no longer messes up tethers on the left side",
+            "Alt Stages toggle in the Code Menu now functions",
+            "Ridley Land duplicate collision on left platform removed",
+            "Solid objects on Rainbow Road can no longer be entered",
+            "Platforms on Delfino’s Secret 1:1s now display properly on console",
+            "Pinch themes are now properly implemented, as their functionality was not active in 2.0",
+            "Opening Menu (Metroid Prime) now plays correctly on Norfair’s Z-alt",
+            "Bike Theme (Pokémon Diamond & Pearl) now plays correctly on Saffron City’s Z-alt",
+            "More songs included on various stages. See the music lineup for more information on what is new in 2.1",
+            "Music tracklists can now exceed 15 songs",
+            "Track naming errors fixed on P+ Stadium and other stages"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Attack Stick can now input jab/nair, but cannot do angled tilts",
+            "New Tilt Stick option added that functions as P+ 2.0 Attack Stick (angled tilts, no jab/nair)",
+            "CSS controls config no longer breaks when another player is moving their cursor",
+            "Characters no longer suffer model seizing after teching Zero Suit Samus’ Down Smash",
+            "Multiple Pokemon and co-op edge case crashes in SSE fixed",
+            "Spawning three CPUs in Training Mode no longer crashes",
+            "Trip armour on throws now always works",
+            "Spawning the Mr. Resetti Assist Trophy no longer crashes the game",
+            "Multiple character alts now appear properly darkened on Sunset Shore",
+            "Co-op event stage loader now matches 1P events",
+            "Fixed crash related to a co-op event on the hardest difficulty",
+            "Meta Knight, Fox, and Falco AI updated to be more realistic, less oppressive and smarter",
+            "Nunchuck stick usage restored to Brawl behavior",
+            "Strap Screen now loads properly in other languages",
+            "Stage loading re-written to prevent file loading softlocks, especially on console",
+            "Stage Striking now always properly detects stage changes",
+            "Non-VS mode times (BTT, Boss Rush, etc) now show in frames like the VS mode timer"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters/Costumes",
+          "changes": [
+            "Kirby’s Ganondorf hat’s GFX revamped",
+            "Falco’s Z alt has been replaced",
+            "ZSS ponytail skins now have fixed hair",
+            "Tan and Mango DK skins now have proper skin tones",
+            "Knuckles’ Espio, Jet Set, and Z alt costumes now have proper metals",
+            "Knuckles’ costumes now have final smash eyes",
+            "Paralyze shaking reduced in movement intensity"
+          ]
+        },
+        {
+          "title": "Stages",
+          "changes": [
+            "Pumpkin Hill alt on Sky Sanctuary Zone swapped out for a more game-accurate version",
+            "Castle Siege no longer has blocks on the front corners to reduce obscurement",
+            "P+ Stadium now has confetti effects from Subspace",
+            "World Bowser has been optimized and more content added to the background",
+            "Abandoned Stadium graphics updated",
+            "Various quality updates made to lighting and shader settings to various alt stages",
+            "Materials errors fixed on Waluigi Stadium and Rainbow Road"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Legacy TE graphics in Group Records and on the Title Screen replaced",
+            "Mewtwo HD texture issues fixed",
+            "Ivysaur’s renders now line up properly",
+            "HD textures now in DDS format; full-quality PNG versions included in the Modder’s Pack",
+            "480p Pixel Fix included for console versions",
+            "Strap and Results screen updated for version 2.1"
           ]
         }
       ]
     }
+  ]
+}

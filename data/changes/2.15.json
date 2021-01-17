@@ -324,37 +324,37 @@
       "element": {},
       "moves": [
         {
-         "title": "Characters and Gameplay",
-              "changes": [
-                "Trip Armour code adjusted to prevent issues with non-hitstun moves",
-                "Faux Super Armour (most instances of Port Priority) removed",
-                "Characters can now down air through moving platforms without being caught",
-                "Landing on the very edge of collisions no longer causes weirdness",
-                "Interpolation cast-wide fixed to function properly",
-                "Normalized knockdown getup attacks on Peach, Jigglypuff, Samus, and Zelda",
-                "Normalized ledge getup attacks on Kirby, Knuckles, Mewtwo, Ness, Olimar, Roy, and Zero Suit Samus",
-                "Momentum issues with DK up smash fixed",
-                "Iron Tail GFX fixed on Go Hat, Lightbulb, and R-Alt Pikachu costumes",
-                "Peach double jump now works properly with Screw Attack",
-                "Fixed visibility issues on the Charmy semi-alt for Knuckles",
-                "Samus jet GFX fixed",
-                "Giga Bowser and Wario-Man can now properly complete Classic and All-Star modes"
-              ]
-            },
-            {
-              "title": "Stages/Music",
-              "changes": [
-                "Spikes in Stage Builder stages no longer crash the game when touched",
-                "PM FD spawn points normalized"
-              ]
-            },
-            {
-              "title": "Other",
-              "changes": [
-                "Netplay launcher now uses proper hooktype, decreasing input lag",
-                "Screen KOs and game endings no longer zoom in the camera",
-                "BOSS mode can now be activated on any port"
-         ]
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Trip Armour code adjusted to prevent issues with non-hitstun moves",
+            "Faux Super Armour (most instances of Port Priority) removed",
+            "Characters can now down air through moving platforms without being caught",
+            "Landing on the very edge of collisions no longer causes weirdness",
+            "Interpolation cast-wide fixed to function properly",
+            "Normalized knockdown getup attacks on Peach, Jigglypuff, Samus, and Zelda",
+            "Normalized ledge getup attacks on Kirby, Knuckles, Mewtwo, Ness, Olimar, Roy, and Zero Suit Samus",
+            "Momentum issues with DK up smash fixed",
+            "Iron Tail GFX fixed on Go Hat, Lightbulb, and R-Alt Pikachu costumes",
+            "Peach double jump now works properly with Screw Attack",
+            "Fixed visibility issues on the Charmy semi-alt for Knuckles",
+            "Samus jet GFX fixed",
+            "Giga Bowser and Wario-Man can now properly complete Classic and All-Star modes"
+          ]
+        },
+        {
+          "title": "Stages/Music",
+          "changes": [
+            "Spikes in Stage Builder stages no longer crash the game when touched",
+            "PM FD spawn points normalized"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Netplay launcher now uses proper hooktype, decreasing input lag",
+            "Screen KOs and game endings no longer zoom in the camera",
+            "BOSS mode can now be activated on any port"
+          ]
         }
       ]
     },
@@ -363,28 +363,28 @@
       "element": {},
       "moves": [
         {
-              "title": "Characters/Costumes",
-              "changes": [
-                "Clone Engine characters now have unique All-Star end screens"
-              ]
-            },
-            {
-              "title": "Stages",
-              "changes": [
-                "Many stages optimized for file size",
-                "Stage banner errors on Dracula’s Castle and Wario Land fixed",
-                "See-Saw moved from Final Destination to Pictochat"
-              ]
-            },
-            {
-              "title": "Other",
-              "changes": [
-                "THP replacement engine code added",
-                "Random stage select now has larger stage previews",
-                "Strap and Results screen updated for version 2.15"
-              ]
-            }
+          "title": "Characters/Costumes",
+          "changes": [
+            "Clone Engine characters now have unique All-Star end screens"
+          ]
+        },
+        {
+          "title": "Stages",
+          "changes": [
+            "Many stages optimized for file size",
+            "Stage banner errors on Dracula’s Castle and Wario Land fixed",
+            "See-Saw moved from Final Destination to Pictochat"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "THP replacement engine code added",
+            "Random stage select now has larger stage previews",
+            "Strap and Results screen updated for version 2.15"
           ]
         }
       ]
     }
+  ]
+}

@@ -655,59 +655,59 @@
       "moves": [
         {
           "title": "Characters and Gameplay",
-              "changes": [
-                "C-Stick no longer has excessive deadzones, should prevent dropped inputs in most cases",
-                "Moving platform behavior fix redone to fix edge case warping",
-                "Various instances of clipping through stages fixed",
-                "Wall tech invincibility normalized cast-wide (20 frames)",
-                "No-hitstun/no hitlag moves now properly refresh recovery resources for select characters",
-                "Overtime now only applies to stock matches",
-                "Break the Targets no longer shows titles for previous songs in Classic mode",
-                "Grab Release fix applied to inhales (characters with actionable recoveries now regain their move when spit out or swallowed)",
-                "Characters with more than 16 costumes no longer break horde battles",
-                "Springs will now not automatically center characters when landed on (examples include Sonic/Knuckles’ spring and the Spring item)",
-                "Charizard’s knockdown getup attack no longer sends opponents to the blastzone when shielded, along with other small file corruption problems",
-                "Ice Climbers can no longer get stuck to each other if hit frame perfectly out of Side Special",
-                "Ike will now enter Fall if pushed offstage during Up-B’s endlag",
-                "Mario and Luigi’s lying down getup attacks no longer have stray fixed knockback hitboxes",
-                "Marth’s Side Special can no longer retain momentum when going offstage from onstage",
-                "Removed unintended second puff graphic from Mr. Game & Watch’s up air, which would appear for exactly one frame in previous versions of P+",
-                "Olimar’s Pikmin no longer encounter issues while/after grabbing ledge",
-                "Pikachu will no longer clip through the stage after using Quick Attack",
-                "Fixed issue where Snake would keep billowing dirt clouds near his legs if the ending to the animation was interrupted",
-                "Fixed issue where dirt would instantly disappear at Snake’s feet if he interrupted the ending of the down smash placement animation",
-                "Sonic can no longer take an opponent’s jumps with Spring",
-                "Transforming with Sheik no longer allows Sheik to enter the needle charge animation after transforming back if she already has five needles",
-                "Smash attack charging damage fixed on ZSS, Ness and Knuckles to properly scale with charge. (Applies to ZSS’ up smash and forward smash, Ness’ up smash and down smash and Knuckles’ down smash when used downwards)",
-                "Issues related to Squirtle’s Final Smash entering the air resolved",
-                "Accounted for oversight where costume ranges for the color tinting of the armor on Giga Bowser’s down smash were incorrect"
-              ]
-            },
-            {
-              "title": "Stages/Music",
-              "changes": [
-                "Bowser’s victory theme in P+ Lite no longer loops",
-                "D-Pad functionality for alternate stage loading fixed",
-                "Fixed issue where trying to add more stages to page 3 than were present on page 1 would result in duplicate stage slots",
-                "Fixed issue where Battlefield’s lighting would instantly swap settings during certain times of the in-stage day",
-                "Fixed problem where Luigi’s Mansion had rendering issues near the lower entryways",
-                "Module for default/Brawl versions of Pictochat fixed",
-                "Golden Temple’s clouds now have smoother animation; foliage and polygon count on default and R-alt variations improved"
-              ]
-            },
-            {
-              "title": "Other",
-              "changes": [
-                "Bowser’s victory theme in P+ Lite no longer loops",
-                "Fixed PM-era issue where Classic and All-Star modes would mistakenly show you a picture of Zero Suit Samus instead of Wario-Man",
-                "Fixed issue where Boss Battles would crash if entered after exiting the All-Star rest area",
-                "Giga Bowser can now complete All-Star mode (a first for Brawl modding!)",
-                "Fighting Ridley no longer crashes Boss Battles",
-                "Boss Battles now gives proper ending",
-                "Samus AI will now crouch properly in Training Mode if set to do so"
-                ]
-              }
-            ]
+          "changes": [
+            "C-Stick no longer has excessive deadzones, should prevent dropped inputs in most cases",
+            "Moving platform behavior fix redone to fix edge case warping",
+            "Various instances of clipping through stages fixed",
+            "Wall tech invincibility normalized cast-wide (20 frames)",
+            "No-hitstun/no hitlag moves now properly refresh recovery resources for select characters",
+            "Overtime now only applies to stock matches",
+            "Break the Targets no longer shows titles for previous songs in Classic mode",
+            "Grab Release fix applied to inhales (characters with actionable recoveries now regain their move when spit out or swallowed)",
+            "Characters with more than 16 costumes no longer break horde battles",
+            "Springs will now not automatically center characters when landed on (examples include Sonic/Knuckles’ spring and the Spring item)",
+            "Charizard’s knockdown getup attack no longer sends opponents to the blastzone when shielded, along with other small file corruption problems",
+            "Ice Climbers can no longer get stuck to each other if hit frame perfectly out of Side Special",
+            "Ike will now enter Fall if pushed offstage during Up-B’s endlag",
+            "Mario and Luigi’s lying down getup attacks no longer have stray fixed knockback hitboxes",
+            "Marth’s Side Special can no longer retain momentum when going offstage from onstage",
+            "Removed unintended second puff graphic from Mr. Game & Watch’s up air, which would appear for exactly one frame in previous versions of P+",
+            "Olimar’s Pikmin no longer encounter issues while/after grabbing ledge",
+            "Pikachu will no longer clip through the stage after using Quick Attack",
+            "Fixed issue where Snake would keep billowing dirt clouds near his legs if the ending to the animation was interrupted",
+            "Fixed issue where dirt would instantly disappear at Snake’s feet if he interrupted the ending of the down smash placement animation",
+            "Sonic can no longer take an opponent’s jumps with Spring",
+            "Transforming with Sheik no longer allows Sheik to enter the needle charge animation after transforming back if she already has five needles",
+            "Smash attack charging damage fixed on ZSS, Ness and Knuckles to properly scale with charge. (Applies to ZSS’ up smash and forward smash, Ness’ up smash and down smash and Knuckles’ down smash when used downwards)",
+            "Issues related to Squirtle’s Final Smash entering the air resolved",
+            "Accounted for oversight where costume ranges for the color tinting of the armor on Giga Bowser’s down smash were incorrect"
+          ]
+        },
+        {
+          "title": "Stages/Music",
+          "changes": [
+            "Bowser’s victory theme in P+ Lite no longer loops",
+            "D-Pad functionality for alternate stage loading fixed",
+            "Fixed issue where trying to add more stages to page 3 than were present on page 1 would result in duplicate stage slots",
+            "Fixed issue where Battlefield’s lighting would instantly swap settings during certain times of the in-stage day",
+            "Fixed problem where Luigi’s Mansion had rendering issues near the lower entryways",
+            "Module for default/Brawl versions of Pictochat fixed",
+            "Golden Temple’s clouds now have smoother animation; foliage and polygon count on default and R-alt variations improved"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Bowser’s victory theme in P+ Lite no longer loops",
+            "Fixed PM-era issue where Classic and All-Star modes would mistakenly show you a picture of Zero Suit Samus instead of Wario-Man",
+            "Fixed issue where Boss Battles would crash if entered after exiting the All-Star rest area",
+            "Giga Bowser can now complete All-Star mode (a first for Brawl modding!)",
+            "Fighting Ridley no longer crashes Boss Battles",
+            "Boss Battles now gives proper ending",
+            "Samus AI will now crouch properly in Training Mode if set to do so"
+          ]
+        }
+      ]
     },
     {
       "name": "Costumes and Content",
@@ -715,77 +715,77 @@
       "moves": [
         {
           "title": "Costumes",
-              "changes": [
-                "Knuckles’ Z-alt is now Treasure Hunter Knuckles",
-                "Holy War Marth no longer has gloves, matching his Project M renders",
-                "Sunshine Peach semi-alt added, replacing the Sunshine Fire Peach recolor",
-                "Fire Peach has updated hair",
-                "Roy cosmetics revamped",
-                "Purple Fusion Suit slot added for both Samus and Zero Suit Samus",
-                "Brawl Samus costumes replaced with SJS Samus",
-                "Light Suit, Dark Suit and PED Suit Samus revamped",
-                "All Samus costumes now have updated poses and renders",
-                "Outset Island Toon Link revamped, given new symbols and designs on the recolors",
-                "Linebeck Toon Link clothing and sword revamped, now uses the Wooden Shield instead of Cyclone Slate",
-                "Sonic’s Z alt is now a Smash 2-styled Sonic",
-                "Dorrie Yoshi revamped with new textures and goggle changes",
-                "Yoshi’s Z-alt (Boshi) revamped",
-                "Many costumes and stages optimized for file size"
-              ]
-            },
-            {
-              "title": "Character Polish",
-              "changes": [
-                "Captain Falcon’s dash and Melee secret taunt animations cleaned up",
-                "Captain Falcon’s Final Smash utilizes formerly unused ending animation when started from the ground",
-                "Retro Falcon has implemented facial expressions to match the Brawl costume",
-                "Ike's Hector alt now has silver sword trail effects",
-                "Ike Climbers hidden alt now has hammer trail effects",
-                "Ike, Meta-Knight, Link and Toon Link have received new, costume-dependent sword glows to better match variances in sword appearances",
-                "Ike, Knuckles, Marth, Pit, Roy, Snake, and Zero Suit Samus received facial animation updates on various moves",
-                "Kirby’s Charge Shot now uses the same SFX as Samus’",
-                "Link’s bombs changed to aesthetically be a mixture of Brawl, Ocarina of Time, Twilight Princess and Hyrule Warriors to match all costumes better",
-                "Olimar’s Pikmin now have color-specific trail effects",
-                "Pit’s Dark Pit colors now have unique arrows, sword trails and a silver bow",
-                "Roy’s side taunt cleaned up so that the pauldron on his right shoulder doesn’t clip into his arm",
-                "ROB retains his Final Smash aura during his Final Smash’s duration",
-                "Snake's up tilt animation cleaned up",
-                "Snake’s down smash mine is now gray with a flashing top instead of purple",
-                "Snake’s down smash mine has been slightly raised in appearance to be consistently visible on all stages",
-                "Snake’s down smash dirt effect has been synchronized to the animation of digging",
-                "Snake transitions into crawl attack more smoothly and doesn’t immediately hold the knife at the start of it",
-                "Snake’s knife attacks now have glow effects, similar to other blades",
-                "Snake’s box walk taunt recoded to have smoother transitions between walking left and right",
-                "Sonic’s feet in his ball animations are no longer flat and scale properly"
-              ]
-            },
-            {
-              "title": "Features",
-              "changes": [
-                "Implemented new Hitbox, ECB, and Ledge renderers, and added Stage renderer into debug mode (HUD toggle is also not separate",
-                "UCF code reworked, should feel more accurate to Melee’s implementation",
-                "Various former PSA-based character attributes and features now moved into codeset or normalized with Brawl to make PSA porting easier",
-                "Air Dodge length is no longer dependent on tilt distance",
-                "“Shield” option in Training Mode no longer gives infinite shield (activate in Code Menu instead)",
-                "Various menu textures cleaned up"
-              ]
-            },
-            {
-              "title": "Other",
-              "changes": [
-                "Blast Boxes are now triggered by the aura element",
-                "Aura now thaws ice",
-                "Added cirb’s Project M Theme remix to the menu and the All-Star Rest Area",
-                "Song list updated; see music spreadsheet for tracklist details",
-                "Victory theme IDs changed, now only requires you to edit the tracklist for the results screen to customize each character’s theme!",
-                "All Brawl multiplayer stage music is now accessible on a stage (previously, 7 songs were left out)",
-                "All SSB64 multiplayer stage music is now included (previously, 3 songs related to 64 stages in the build were omitted)",
-                "Many songs optimized for filesize",
-                "Optional code for loading Character Select Portraits from the Result Screen Portraits file optimized, now no longer crashes",
-                "Joining a Dolphin netplay lobby as “Spectator” will now automatically disable your port",
-                "WASAPI backend added to Dolphin",
-                "Reduced audio delay in Dolphin",
-                "Strap and Results screen updated for version 2.2"
+          "changes": [
+            "Knuckles’ Z-alt is now Treasure Hunter Knuckles",
+            "Holy War Marth no longer has gloves, matching his Project M renders",
+            "Sunshine Peach semi-alt added, replacing the Sunshine Fire Peach recolor",
+            "Fire Peach has updated hair",
+            "Roy cosmetics revamped",
+            "Purple Fusion Suit slot added for both Samus and Zero Suit Samus",
+            "Brawl Samus costumes replaced with SJS Samus",
+            "Light Suit, Dark Suit and PED Suit Samus revamped",
+            "All Samus costumes now have updated poses and renders",
+            "Outset Island Toon Link revamped, given new symbols and designs on the recolors",
+            "Linebeck Toon Link clothing and sword revamped, now uses the Wooden Shield instead of Cyclone Slate",
+            "Sonic’s Z alt is now a Smash 2-styled Sonic",
+            "Dorrie Yoshi revamped with new textures and goggle changes",
+            "Yoshi’s Z-alt (Boshi) revamped",
+            "Many costumes and stages optimized for file size"
+          ]
+        },
+        {
+          "title": "Character Polish",
+          "changes": [
+            "Captain Falcon’s dash and Melee secret taunt animations cleaned up",
+            "Captain Falcon’s Final Smash utilizes formerly unused ending animation when started from the ground",
+            "Retro Falcon has implemented facial expressions to match the Brawl costume",
+            "Ike's Hector alt now has silver sword trail effects",
+            "Ike Climbers hidden alt now has hammer trail effects",
+            "Ike, Meta-Knight, Link and Toon Link have received new, costume-dependent sword glows to better match variances in sword appearances",
+            "Ike, Knuckles, Marth, Pit, Roy, Snake, and Zero Suit Samus received facial animation updates on various moves",
+            "Kirby’s Charge Shot now uses the same SFX as Samus’",
+            "Link’s bombs changed to aesthetically be a mixture of Brawl, Ocarina of Time, Twilight Princess and Hyrule Warriors to match all costumes better",
+            "Olimar’s Pikmin now have color-specific trail effects",
+            "Pit’s Dark Pit colors now have unique arrows, sword trails and a silver bow",
+            "Roy’s side taunt cleaned up so that the pauldron on his right shoulder doesn’t clip into his arm",
+            "ROB retains his Final Smash aura during his Final Smash’s duration",
+            "Snake's up tilt animation cleaned up",
+            "Snake’s down smash mine is now gray with a flashing top instead of purple",
+            "Snake’s down smash mine has been slightly raised in appearance to be consistently visible on all stages",
+            "Snake’s down smash dirt effect has been synchronized to the animation of digging",
+            "Snake transitions into crawl attack more smoothly and doesn’t immediately hold the knife at the start of it",
+            "Snake’s knife attacks now have glow effects, similar to other blades",
+            "Snake’s box walk taunt recoded to have smoother transitions between walking left and right",
+            "Sonic’s feet in his ball animations are no longer flat and scale properly"
+          ]
+        },
+        {
+          "title": "Features",
+          "changes": [
+            "Implemented new Hitbox, ECB, and Ledge renderers, and added Stage renderer into debug mode (HUD toggle is also not separate",
+            "UCF code reworked, should feel more accurate to Melee’s implementation",
+            "Various former PSA-based character attributes and features now moved into codeset or normalized with Brawl to make PSA porting easier",
+            "Air Dodge length is no longer dependent on tilt distance",
+            "“Shield” option in Training Mode no longer gives infinite shield (activate in Code Menu instead)",
+            "Various menu textures cleaned up"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Blast Boxes are now triggered by the aura element",
+            "Aura now thaws ice",
+            "Added cirb’s Project M Theme remix to the menu and the All-Star Rest Area",
+            "Song list updated; see music spreadsheet for tracklist details",
+            "Victory theme IDs changed, now only requires you to edit the tracklist for the results screen to customize each character’s theme!",
+            "All Brawl multiplayer stage music is now accessible on a stage (previously, 7 songs were left out)",
+            "All SSB64 multiplayer stage music is now included (previously, 3 songs related to 64 stages in the build were omitted)",
+            "Many songs optimized for filesize",
+            "Optional code for loading Character Select Portraits from the Result Screen Portraits file optimized, now no longer crashes",
+            "Joining a Dolphin netplay lobby as “Spectator” will now automatically disable your port",
+            "WASAPI backend added to Dolphin",
+            "Reduced audio delay in Dolphin",
+            "Strap and Results screen updated for version 2.2"
           ]
         }
       ]

@@ -52,8 +52,8 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
           <span>
             {name}
           </span>
-          <CopyToClipboard link={link}/>
         </a>
+        <CopyToClipboard link={link}/>
       </Heading>
       <Content style={{
         display: show ? "block" : "none"

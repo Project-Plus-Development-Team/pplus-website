@@ -42,7 +42,17 @@ interface DownloadProps {
   latestVersion: string
 }
 
+async function incrementDownloadCounter() {
+  const response = await fetch("https://api.countapi.xyz/hit/projectplusgame.com/counter");
+  const { value } = await response.json();
+  console.log(`Download counted. Downloads: ${value}`);
+}
+
 export default function Download({ linkGroups, latestVersion }: DownloadProps) {
+  React.useEffect(() => {
+    incrementDownloadCounter();
+  });
+
   return (
     <>
       <Head>

@@ -37,6 +37,12 @@ header ~ .container {
   border: 3px solid hsl(0,0%,20%);
   padding: 1rem;
   margin-bottom: 1rem;
+  
+  @media screen and (max-width: 1023px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 // @media screen and (max-width: 768px) {

@@ -1,0 +1,8 @@
+# Function says:
+# This file is to be included from the local git config using the `git config --local include.path ../.gitconfig` command
+
+[core]
+  # This setting forces Git to see file name changes that only change the case as a committable change
+  # This is important because depending on the global config on Windows, you might be able to change the case of a file, and because of Windows it works in dev, and Git doesn't notice you adapting the file name, and then the uncommitted previous case name is used by Netlify and the deployment fails.
+  # Making case detection strict for Git mitigates this problem to some degree.
+  ignorecase = false

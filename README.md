@@ -5,6 +5,7 @@
 - Clone this repository
 - Run `npm install` in a terminal inside the folder of the repository
 - Run `npm run dev` for a development runtime with hot reloading or `npm run build` to build a static version of the site in the `./out/` subfolder
+- **before you start committing stuff, run `git config --local include.path ../.gitconfig`** (for details, read the `.gitconfig` file)
 
 ### Used technology
 - React (JavaScript UI library)

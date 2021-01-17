@@ -8,7 +8,6 @@ import { VersionData } from "../types/changes";
 import { Validator } from "jsonschema";
 import loadJson from "./load-json";
 import { iconMap, whitespacesToHyphens } from "./icon-tools";
-import directoryTree from "directory-tree";
 
 export async function getSortedVersions() {
   const dataDirectory = path.join(process.cwd(), "data/changes/");
@@ -36,13 +35,6 @@ async function validateImagesExist(changesJSON: VersionData) {
     try {
       await fs.access(absoluteImagePath);
     } catch {
-      console.log(
-        JSON.stringify(
-          directoryTree(".", { exclude: /node_modules/ }),
-          null, 2
-        )
-      );
-
       throw new Error(`${absoluteImagePath} can't be accessed`);
     }
   }
@@ -58,7 +50,7 @@ export async function getVersionData(version: string): Promise<VersionData> {
     throwFirst: true
   });
 
-  await validateImagesExist(changesJSON);
+  // await validateImagesExist(changesJSON);
 
   return changesJSON;
 }

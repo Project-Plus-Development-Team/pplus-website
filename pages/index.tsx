@@ -63,7 +63,7 @@ export default function Home() {
       `}</style>
 
       <style jsx global>{`
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 768px) {
           .grid-content {
             grid-template-columns: 1fr !important;
             grid-template-areas: 'text' 'youtube' 'picture' !important;
@@ -75,19 +75,8 @@ export default function Home() {
 
           position: relative;
           padding-bottom: 56.25%;
-          padding-top: 30px;
           height: 0
           overflow: hidden;
-        }
-
-        .youtube-container iframe,
-        .video-container object,
-        .video-container embed {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
         }
       `}</style>
     </Container>

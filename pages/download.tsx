@@ -1,23 +1,36 @@
 // Function says: This page uses getStaticProps to load the links to be displayed from /data/download.json,
 // which Next.js then feeds into the Download component
 
+import React from "react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
-import { Button, Container, Heading } from "react-bulma-components";
+import { Button, Container, Heading, Icon } from "react-bulma-components";
 import YouTube from "react-youtube";
 import importedLinkGroups from "../data/download.json";
 import { getSortedVersions } from "../lib/get-version";
 
 interface LinkGroup {
-  [title: string]: string
+  [title: string]: {
+    url: string
+    icon?: string
+  }
 }
 
 function LinkGroup({ data }: { data: LinkGroup }) {
   return (
     <Button.Group>
-      {Object.entries(data).map(([title, url], index2) =>
+      {Object.entries(data).map(([title, { url, icon }], index2) =>
         <Button color="link" key={index2} href={url} renderAs="a">
-          {title}
+          {icon === undefined ? (
+            title
+          ) : (
+            <div>
+              <Icon>
+                <span className={icon}/>
+              </Icon>
+              <span>{title}</span>
+            </div>
+          )}
         </Button>
       )}
     </Button.Group>

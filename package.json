@@ -9,6 +9,7 @@
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bulma": "^0.9.1",
     "bulmaswatch": "^0.8.1",
+    "directory-tree": "^2.2.5",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "jsonschema": "^1.4.0",

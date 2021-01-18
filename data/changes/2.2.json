@@ -472,7 +472,7 @@
             {
               "title": "(Z-alt) Molgera Battle MC",
               "changes": [
-                "Given its own tracklist that only plays the Molgera Battle theme"
+                "Given its own tracklist"
               ]
             }
           ]
@@ -668,6 +668,7 @@
             "Springs will now not automatically center characters when landed on (examples include Sonic/Knuckles’ spring and the Spring item)",
             "Charizard’s knockdown getup attack no longer sends opponents to the blastzone when shielded, along with other small file corruption problems",
             "Ice Climbers can no longer get stuck to each other if hit frame perfectly out of Side Special",
+            "Slo-Mo Timer no longer breaks Nana",
             "Ike will now enter Fall if pushed offstage during Up-B’s endlag",
             "Mario and Luigi’s lying down getup attacks no longer have stray fixed knockback hitboxes",
             "Marth’s Side Special can no longer retain momentum when going offstage from onstage",
@@ -677,7 +678,7 @@
             "Fixed issue where Snake would keep billowing dirt clouds near his legs if the ending to the animation was interrupted",
             "Fixed issue where dirt would instantly disappear at Snake’s feet if he interrupted the ending of the down smash placement animation",
             "Sonic can no longer take an opponent’s jumps with Spring",
-            "Transforming with Sheik no longer allows Sheik to enter the needle charge animation after transforming back if she already has five needles",
+            "Transforming back to Sheik from Zelda no longer removes the full-charge flash effect when she has a full needle charge",
             "Smash attack charging damage fixed on ZSS, Ness and Knuckles to properly scale with charge. (Applies to ZSS’ up smash and forward smash, Ness’ up smash and down smash and Knuckles’ down smash when used downwards)",
             "Issues related to Squirtle’s Final Smash entering the air resolved",
             "Accounted for oversight where costume ranges for the color tinting of the armor on Giga Bowser’s down smash were incorrect"
@@ -782,10 +783,14 @@
             "All SSB64 multiplayer stage music is now included (previously, 3 songs related to 64 stages in the build were omitted)",
             "Many songs optimized for filesize",
             "Optional code for loading Character Select Portraits from the Result Screen Portraits file optimized, now no longer crashes",
+            "Wild Mode dialed back slightly in intensity",
+            "Dolphin will now auto-save replays from a netplay session! Use the Replay Manager executable to manage them.",
+            "Editing tracklists in offline Dolphin sessions will now work if booted with the Offline Launcher",
             "Joining a Dolphin netplay lobby as “Spectator” will now automatically disable your port",
             "WASAPI backend added to Dolphin",
+            "Fixed issue where certain adapter brands were not compatible with the Dolphin version included",
             "Reduced audio delay in Dolphin",
-            "Strap and Results screen updated for version 2.2"
+            "Strap and Results screens updated for version 2.2"
           ]
         }
       ]

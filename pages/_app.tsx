@@ -31,7 +31,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="description" content="Project+ is a balance patch for Project M, a popular Super Smash Bros. Brawl mod"/>
         <meta name="author" content="waffeln"/>
         
-        <title>Project+ Website</title>
+        <title>Project+</title>
       </Head>
       <PageHeader/>
       <Container renderAs="main">

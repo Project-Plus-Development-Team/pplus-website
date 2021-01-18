@@ -662,6 +662,7 @@
             "Wall tech invincibility normalized cast-wide (20 frames)",
             "No-hitstun/no hitlag moves now properly refresh recovery resources for select characters",
             "Overtime now only applies to stock matches",
+            "Timer item no longer breaks animation and movement speeds of some moves",
             "Break the Targets no longer shows titles for previous songs in Classic mode",
             "Grab Release fix applied to inhales (characters with actionable recoveries now regain their move when spit out or swallowed)",
             "Characters with more than 16 costumes no longer break horde battles",

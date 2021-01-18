@@ -2,11 +2,11 @@
   {
     "Offline / Wii": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/2MUiEJDJ#rAdEjYa9Ia3PKhjaFxamKGFU34mTN7IUkJaG0bAtRJ0"
+      "url": "https://mega.nz/file/aAsBmY5Y#z1ZBBFWSvZBQCckQCLL_fiKrpgZHpbabm2qfrk6qJXc"
     },
     "Wii Lite (For 2 GB Cards)": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/LFdyxDQL#plk8_HAPx6bJrDn_uMwDo8LmoLJ_zC0Kg5BSGiov9cw"
+      "url": "https://mega.nz/file/OZkTFKhS#GwkRJuIa1croK_vogGw2Sp0cK7H7URAp7ASMGrFMINs"
     },
     "Cosmetics Pack": {
       "icon": "fas fa-box-open",
@@ -16,7 +16,7 @@
   {
     "Dolphin (Windows)": {
       "icon": "fab fa-windows",
-      "url": "https://mega.nz/file/fJUQwJDL#FWx9pm0sJVPPs4vKB9Vtrk_YyWQ6y_a2QBrsEgjq9iM"
+      "url": "https://mega.nz/file/nMlT2AjB#PvWpnPx1ErUgaFHUxa0-xSgGW-6Ur4MmSBSAPg4sqhs"
     },
     "Dolphin (Mac)": {
       "icon": "fab fa-apple",
@@ -30,15 +30,15 @@
   {
     "Wii Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://www.mediafire.com/file/4qykdazr571tska/Project++v2.2+(Wii).7z/file"
+      "url": "https://www.mediafire.com/file/e5s5cik40yexzdm/Project++v2.2+(Wii).7z/file"
     },
     "Wii Lite Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://www.mediafire.com/file/en9ivdtrt0r8sbx/Project++v2.2+(Wii+Lite).7z/file"
+      "url": "https://www.mediafire.com/file/s3rs2ch1js6l9ip/Project++v2.2+(Wii+Lite).7z/file"
     },
     "Dolphin (Windows) Mirror": {
       "icon": "fab fa-windows",
-      "url": "https://www.mediafire.com/file/36zun3i94owikch/Project++v2.2+Netplay+(Windows).7z/file"
+      "url": "https://www.mediafire.com/file/jgmhhh002ntafpq/Project++v2.2+Netplay+(Windows).7z/file"
     }
   }
 ]

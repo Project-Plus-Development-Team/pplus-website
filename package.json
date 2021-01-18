@@ -1,10 +1,9 @@
 {
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && npm run sitemap",
+    "build": "next build && next export && node scripts/sitemap-generator.js",
     "serve": "npm run build && serve ./out/",
-    "start": "next start",
-    "sitemap": "node scripts/sitemap-generator.js"
+    "start": "next start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",

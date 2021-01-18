@@ -12,11 +12,23 @@ body, .subtitle {
   color: hsla(0,0%,100%,0.9);
 }
 
-h1, h2, h3, h4, h5, h6,
-.title {
-  color: white;
+#__next {
+  > .container:not(header) {
+    background: hsla(0,0%,20%,50%);
+    border-radius: 0.3rem;
+    border: 3px solid hsl(0,0%,20%);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+    @media screen and (max-width: 1023px) {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
+// make the links a bit lighter to be more easily readable
 a, .link {
   color: #75aaff;
   
@@ -30,26 +42,6 @@ code {
   color: hsl(0,0%,90%);
   border-radius: 0.3rem;
 }
-
-header ~ .container {
-  background: hsla(0,0%,20%,50%);
-  border-radius: 0.3rem;
-  border: 3px solid hsl(0,0%,20%);
-  padding: 1rem;
-  margin-bottom: 1rem;
-  
-  @media screen and (max-width: 1023px) {
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-}
-
-// @media screen and (max-width: 768px) {
-//   .section {
-//     padding: 1rem !important;
-//   }
-// }
 
 .youtube-container {
   margin-top: 1rem;

@@ -2,11 +2,11 @@
   {
     "Offline / Wii": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/aAsBmY5Y#z1ZBBFWSvZBQCckQCLL_fiKrpgZHpbabm2qfrk6qJXc"
+      "url": "https://mega.nz/file/eVd3ya6C#aJyLjM71bgwg5ydn2Lqh9L6rggLc2ivjOBaF8860FBU"
     },
     "Wii Lite (For 2 GB Cards)": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/OZkTFKhS#GwkRJuIa1croK_vogGw2Sp0cK7H7URAp7ASMGrFMINs"
+      "url": "https://mega.nz/file/2VEThIyb#CZhJthetIyaDaTlEUhtTpo8_n8LSry2-tDKswoPETs8"
     },
     "Cosmetics Pack": {
       "icon": "fas fa-box-open",
@@ -16,11 +16,11 @@
   {
     "Dolphin (Windows)": {
       "icon": "fab fa-windows",
-      "url": "https://mega.nz/file/nMlT2AjB#PvWpnPx1ErUgaFHUxa0-xSgGW-6Ur4MmSBSAPg4sqhs"
+      "url": "https://mega.nz/file/iZNBnCZS#wpZdsdNY9W1ilQyI6v35mdhFyhnPq4-ao4OhfiC_Vqk"
     },
     "Dolphin (Mac)": {
       "icon": "fab fa-apple",
-      "url": "https://mega.nz/file/vY1l1IjY#JN0xiJMWNSnT4QTAJzIb7s5w83QpPafrx2Y0x85cR1o"
+      "url": "https://mega.nz/file/aAVhjQDC#NZEkbwqsld0kNqmNjxfh_Ut2Vz3wj39wSwYGJPuaIdc"
     },
     "Dolphin (Linux Installer)": {
       "icon": "fab fa-linux",
@@ -30,15 +30,15 @@
   {
     "Wii Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://www.mediafire.com/file/e5s5cik40yexzdm/Project++v2.2+(Wii).7z/file"
+      "url": "https://www.mediafire.com/file/s1bzwn8njgnh6x4/Project%252B_v2.2_%2528Wii%2529.7z/file"
     },
     "Wii Lite Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://www.mediafire.com/file/s3rs2ch1js6l9ip/Project++v2.2+(Wii+Lite).7z/file"
+      "url": "https://www.mediafire.com/file/wbcqjcc1pozqb9l/Project++v2.2+(Wii+Lite).7z/file"
     },
     "Dolphin (Windows) Mirror": {
       "icon": "fab fa-windows",
-      "url": "https://www.mediafire.com/file/jgmhhh002ntafpq/Project++v2.2+Netplay+(Windows).7z/file"
+      "url": "https://www.mediafire.com/file/k239awxhclizaek/Project++v2.2+Netplay+(Windows).7z/file"
     }
   }
 ]

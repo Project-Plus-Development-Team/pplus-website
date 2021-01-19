@@ -58,7 +58,7 @@ export default function Download({ linkGroups, latestVersion }: DownloadProps) {
       <Head><title>{title}</title></Head>
       <Heading>{title}</Heading>
       <Heading subtitle>Wii Lite only changes music compression to fit on a 2 GB SD card.</Heading>
-      <Heading subtitle>The Cosmetics Pack includes files for custom build creation, such as stage imagery templates and full resolution HD textures.</Heading>
+      <Heading subtitle>The Modders Pack includes files for custom build creation, such as stage imagery templates and full resolution HD textures.</Heading>
       {linkGroups.map((group, index) => <LinkGroup key={index} data={group}/>)}
       <Heading subtitle>Need help installing Project+? Project M Nexus&apos;s in-depth guide has got you covered!</Heading>
       <YouTube videoId="4XynDH-eVDE" containerClassName="youtube-container"/>

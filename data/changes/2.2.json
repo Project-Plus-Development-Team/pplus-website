@@ -377,17 +377,6 @@
           ]
         },
         {
-          "title": "Lylat Cruise",
-          "changes": [
-            {
-              "title": "(X-alt) Tilting Lylat Cruise",
-              "changes": [
-                "Moved from the Y-alt input for consistency reasons"
-              ]
-            }
-          ]
-        },
-        {
           "title": "Mario Circuit",
           "changes": [
             {
@@ -410,7 +399,7 @@
           ]
         },
         {
-          "title": "Hyrule Castle",
+          "title": "Norfair",
           "changes": [
             {
               "title": "(Base Slot) Norfair",
@@ -662,6 +651,7 @@
             "Wall tech invincibility normalized cast-wide (20 frames)",
             "No-hitstun/no hitlag moves now properly refresh recovery resources for select characters",
             "Overtime now only applies to stock matches",
+            "Timer item no longer breaks animation and movement speeds of some moves",
             "Break the Targets no longer shows titles for previous songs in Classic mode",
             "Grab Release fix applied to inhales (characters with actionable recoveries now regain their move when spit out or swallowed)",
             "Characters with more than 16 costumes no longer break horde battles",
@@ -718,6 +708,7 @@
           "title": "Costumes",
           "changes": [
             "Knuckles’ Z-alt is now Treasure Hunter Knuckles",
+            "Mario’s R alt (Sunshine Mario) revamped",
             "Holy War Marth no longer has gloves, matching his Project M renders",
             "Sunshine Peach semi-alt added, replacing the Sunshine Fire Peach recolor",
             "Fire Peach has updated hair",

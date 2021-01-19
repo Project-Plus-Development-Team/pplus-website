@@ -377,17 +377,6 @@
           ]
         },
         {
-          "title": "Lylat Cruise",
-          "changes": [
-            {
-              "title": "(X-alt) Tilting Lylat Cruise",
-              "changes": [
-                "Moved from the Y-alt input for consistency reasons"
-              ]
-            }
-          ]
-        },
-        {
           "title": "Mario Circuit",
           "changes": [
             {
@@ -410,7 +399,7 @@
           ]
         },
         {
-          "title": "Hyrule Castle",
+          "title": "Norfair",
           "changes": [
             {
               "title": "(Base Slot) Norfair",

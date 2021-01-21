@@ -53,19 +53,18 @@ export default function Home() {
         ul > * {
           font-size: 20px;
         }
+      `}</style>
 
+      <style jsx global>{`
         .falco {
-          margin: auto;
           opacity: 0.7;
-          transition: opacity 0.3sease;
+          transition: opacity 0.3s ease;
         }
 
         .falco:hover {
           opacity: 1.0;
         }
-      `}</style>
 
-      <style jsx global>{`
         @media only screen and (max-width: 768px) {
           .grid-content {
             grid-template-columns: 1fr !important;

@@ -16,23 +16,37 @@ export default function Brand({ isNavbarActive, setNavbarActive, isHome }: Brand
   const [spin, setSpin] = React.useState(false);
   const [useAltSpin, setUseAltSpin] = React.useState(false);
 
+  const [spin1Audio, setSpin1Audio] = React.useState<HTMLAudioElement|null>(null);
+  const [spin2Audio, setSpin2Audio] = React.useState<HTMLAudioElement|null>(null);
+
   function egg() {
     if (!isHome) {
       return;
     }
 
+    if (eggCounter >= 5) { // if approaching easter egg
+      if (!useAltSpin && !spin1Audio) { // and we want spin 1 and it's not set
+        setSpin1Audio(new Audio("/spin1.mp3")); // these start loading the audio so it's ready
+      }
+
+      if (useAltSpin && !spin2Audio) { // or we want spin 2 and it's not set
+        setSpin2Audio(new Audio("/spin2.mp3"));
+      }
+    }
+
     if (eggCounter >= 15) {
       setEggCounter(0);
-      setSpin(true);
 
-      const spinAudio = new Audio(`/spin${useAltSpin ? 2 : 1}.mp3`);
+      const spinAudio = useAltSpin ? spin2Audio : spin1Audio;
       spinAudio.volume = 0.3;
-      spinAudio.play();
+      spinAudio.play().then(() => {
+        setSpin(true);
 
-      setTimeout(() => {
-        setSpin(false);
-        setUseAltSpin(!useAltSpin);
-      }, 3000);
+        setTimeout(() => {
+          setSpin(false);
+          setUseAltSpin(!useAltSpin);
+        }, 3000);
+      });
 
       return;
     }

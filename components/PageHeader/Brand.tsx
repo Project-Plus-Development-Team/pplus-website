@@ -67,8 +67,8 @@ export default function Brand({ isNavbarActive, setNavbarActive, isHome }: Brand
             className={"logo " + (spin ? `spin${useAltSpin ? 2 : 1}` : "")}
           >
             <SmartImage
-              img={require("../../public/images/logo.png?size=178")}
-              webp={require("../../public/images/logo.png?size=178&webp")}
+              img={require("../../public/images/logo.png?sizes[]=300,sizes[]=178")}
+              webp={require("../../public/images/logo.png?sizes[]=300,sizes[]=178&webp")}
               width="178"
               height="40"
               alt="Project Plus Logo"

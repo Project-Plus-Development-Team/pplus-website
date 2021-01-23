@@ -57,11 +57,13 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
         </a>
         <CopyToClipboard link={link}/>
       </Heading>
-      <Content style={{
-        display: show ? "block" : "none"
-      }}>
-        {content}
-      </Content>
+      {
+        show && (
+          <Content>
+            {content}
+          </Content>
+        )
+      }
 
       <style jsx global>{`
         .icon {

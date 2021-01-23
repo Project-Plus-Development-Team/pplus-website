@@ -7,6 +7,8 @@ const path = require("path");
 const redirectParser = require("netlify-redirect-parser");
 const optimizedImages = require("next-optimized-images");
 const withPlugins = require('next-compose-plugins');
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin');
 
 const plugins = [
   [optimizedImages, {
@@ -22,27 +24,51 @@ const plugins = [
   }]
 ];
 
-const nextConfig = {
-  webpack: config => {
-    config.module.rules.push({
-      test: /\.md$/,
-      use: "raw-loader"
-    });
+function getNextConfig(phase) {
+  const nextConfig = {
+    webpack: (config) => {
+      config.module.rules.push({
+        test: /\.md$/,
+        use: "raw-loader"
+      });
+  
+      if (phase === "phase-export") {
+        config.plugins.push(
+          new BundleAnalyzerPlugin({
+            analyzerMode: "static",
+            openAnalyzer: true
+          })
+        );
     
-    return config;
-  },
+        config.plugins.push(new DuplicatePackageCheckerPlugin({
+          exclude(instance) {
+            return instance.name === "unist-util-visit-parents";
+          }
+        }));
+      }
+      
+      return config;
+    }
+  };
 
-  // this only affects dev environment and reads the redirects from the netlify.toml file to replicate the behaviour in dev env
-  async redirects() {
-    const tomlFilePath = path.join(process.cwd(), "netlify.toml");
-    const { success } = await redirectParser.parseNetlifyConfig(tomlFilePath);
-
-    return success.map(({ path: source, to: destination }) => ({
-      source,
-      destination,
-      permanent: true
-    }));
+  if (phase !== "phase-export") { // redirects are invalid when exporting and would create a warning
+    // this only affects dev environment and reads the redirects from the netlify.toml file to replicate the behaviour in dev env
+    nextConfig.redirects = async function() {
+      const tomlFilePath = path.join(process.cwd(), "netlify.toml");
+      const { success } = await redirectParser.parseNetlifyConfig(tomlFilePath);
+  
+      return success.map(({ path: source, to: destination }) => ({
+        source,
+        destination,
+        permanent: true
+      }));
+    };
   }
-};
 
-module.exports = withPlugins(plugins, nextConfig);
+  return nextConfig;
+}
+
+module.exports = (phase, ...rest) => {
+  const nextConfig = getNextConfig(phase);
+  return withPlugins(plugins, nextConfig)(phase, ...rest);
+};

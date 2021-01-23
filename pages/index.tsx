@@ -22,6 +22,8 @@ export default function Home() {
             webp={require(`../public/images/falco-glowy.png?webp&size=300`)}
             alt="Glowy, translucent Falco"
             className="falco"
+            width="300"
+            height="366"
           />
         </div>
 

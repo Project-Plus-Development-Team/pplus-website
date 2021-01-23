@@ -15,6 +15,9 @@ export default function FourOhFour() {
           <SmartImage
             img={require("../public/images/knuckles/woah.png?size=600")}
             webp={require("../public/images/knuckles/woah.png?size=600&webp")}
+            width="600"
+            height="384"
+            alt="Knuckles with a surprised 'woah!' expression"
           />
         </Columns.Column>
       </Columns>

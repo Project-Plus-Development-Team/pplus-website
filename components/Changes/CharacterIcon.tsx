@@ -17,10 +17,16 @@ export default function CharacterIcon({ name }: { name: string }) {
       // TODO we can't resize with 'dynamic' paths for some reason. https://github.com/dazuaz/responsive-loader/issues/135
       webp={require(`../../public/images/icons/${mappedIcon}.png?webp`)}
       style={styling}
+      width="40"
+      height="40"
+      alt={name}
     /> :
     <SmartImage
       img={require(`../../public/images/characters/${hyphenizedName}.png`)}
       webp={require(`../../public/images/characters/${hyphenizedName}.png?webp`)}
       style={styling}
+      width="40"
+      height="40"
+      alt={name}
     />;
 }

@@ -15,6 +15,9 @@ function InfoElement({ title, imgName, children, reverse }: InfoElementProps) {
       <SmartImage
         img={require(`../public/images/knuckles/${imgName}.png`)}
         webp={require(`../public/images/knuckles/${imgName}.png?webp`)}
+        alt="Knuckles performing a move"
+        height="350"
+        width="350"
       />
       <div className="is-align-self-center" style={{ minWidth: 200 }}>
         <Heading subtitle>{title.toUpperCase()}</Heading>
@@ -38,6 +41,9 @@ export default function Knuckles() {
             className="bind-inner"
             img={require(`../public/images/knuckles/glowy.png`)}
             webp={require(`../public/images/knuckles/glowy.png?webp`)}
+            height="557"
+            width="409"
+            alt="Knuckles with a glow"
           />
         </Columns.Column>
 

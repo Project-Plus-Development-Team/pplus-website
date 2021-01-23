@@ -69,6 +69,9 @@ export default function Brand({ isNavbarActive, setNavbarActive, isHome }: Brand
             <SmartImage
               img={require("../../public/images/logo.png?size=178")}
               webp={require("../../public/images/logo.png?size=178&webp")}
+              width="178"
+              height="40"
+              alt="Project Plus Logo"
             />
           
             <style jsx global>{`            
@@ -85,7 +88,7 @@ export default function Brand({ isNavbarActive, setNavbarActive, isHome }: Brand
           </a>
         </Link>
       </Navbar.Item>
-      <Navbar.Burger onClick={handleBurgerClick}/>
+      <Navbar.Burger onClick={handleBurgerClick} aria-label="Burger menu toggle"/>
     </Navbar.Brand>
   );
 }

@@ -2195,13 +2195,15 @@
               "title": "1 Hammer",
               "changes": [
                 "No longer damages G&W"
-              ],
+                ]
+              },  
               {
               "title": "7 Hammer",
               "changes": [
                 "KBG 140 > 125",
                 "No longer heals, only drops Apple on hit"
-              ],
+                ]
+              },  
               {
               "title": "9 Hammer",
               "changes": [
@@ -2328,7 +2330,7 @@
         {
           "title": "All Smash Attacks and Aerials",
           "changes": [
-            "Excess shield damage has been removed from all Pikmin, with the exception of  White. White Pikmin now do bonus shield damage, which increases with leaf/bud/flower > 8/12/16. ",
+            "Excess shield damage has been removed from all Pikmin, with the exception of White. White Pikmin now do bonus shield damage, which increases with leaf/bud/flower > 8/12/16. ",
             "All Pikmin have been made intangible during the startup and active frames of Olimar's aerials"
           ]
         },
@@ -3925,7 +3927,7 @@
           "title": "Neutral Air",
           "changes": [
             "Hitlag Multiplier: x1.0 > x0.9",
-            "This fix        es an issue where some characters were unable to ASDI down nair"
+            "This fixes an issue where some characters were unable to ASDI down nair"
           ]
         },
         {
@@ -4078,7 +4080,7 @@
           ]
         },
         {
-          "title": "Back Throw ",
+          "title": "Back Throw",
           "changes": [
             "14% > 18% Knockback partially compensated "
           ]

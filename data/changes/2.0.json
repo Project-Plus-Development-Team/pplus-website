@@ -2195,6 +2195,17 @@
               "title": "1 Hammer",
               "changes": [
                 "No longer damages G&W"
+              ],
+              {
+              "title": "7 Hammer",
+              "changes": [
+                "KBG 140 > 125",
+                "No longer heals, only drops Apple on hit"
+              ],
+              {
+              "title": "9 Hammer",
+              "changes": [
+                "BKB 70 > 9, KBG 80 > 99"
               ]
             }
           ]

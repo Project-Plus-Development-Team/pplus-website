@@ -22,7 +22,7 @@ export default function Character({ data: { name, moves }, version, siteUrl, fol
     if (!fold) {
       setShow(true);
 
-      parentElement.current.scrollIntoView(true, {
+      parentElement.current.scrollIntoView({
         behavior: "smooth"
       });
     }

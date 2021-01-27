@@ -663,7 +663,6 @@
             "Mario and Luigi’s lying down getup attacks no longer have stray fixed knockback hitboxes",
             "Marth’s Side Special can no longer retain momentum when going offstage from onstage",
             "Removed unintended second puff graphic from Mr. Game & Watch’s up air, which would appear for exactly one frame in previous versions of P+",
-            "Olimar’s Pikmin no longer encounter issues while/after grabbing ledge",
             "Pikachu will no longer clip through the stage after using Quick Attack",
             "Fixed issue where Snake would keep billowing dirt clouds near his legs if the ending to the animation was interrupted",
             "Fixed issue where dirt would instantly disappear at Snake’s feet if he interrupted the ending of the down smash placement animation",

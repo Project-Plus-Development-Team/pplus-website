@@ -1,5 +1,7 @@
 # Project+ Website
 
+### Also check out the Project+ assets (logos, animations): https://github.com/FunctionDJ/project-plus-assets
+
 ### Getting started with development
 - Download Node.js
 - Clone this repository

@@ -1,0 +1,270 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1X_S66BQOlnyBMsRXbsjlV-Kw2vDQRVHmrZlAMuw4Tcc/"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1hx9Go3-ltxQjQsf-Lu1Ezc4lwqd3gk1TaDN01tsatX8"
+    }
+  },
+  "changes": [
+    {
+      "name": "Falco",
+      "element": {},
+      "moves": [
+        {
+          "title": "Laser (Neutral Special)",
+          "changes": [
+            "Laser spawn height now matches the current position of Falco instead of where he was on the previous frame"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fox",
+      "element": {},
+      "moves": [
+        {
+          "title": "Laser (Neutral Special)",
+          "changes": [
+            "Laser spawn height now matches the current position of Fox instead of where he was on the previous frame"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kirby",
+      "element": {},
+      "moves": [
+        {
+          "title": "Inhale (Neutral Special)",
+          "changes": [
+            "Captain Falcon hat adjusted by one frame to match Falcon",
+            "Sparkle effect added to Diddy Kong hat on frame 10",
+            "Falco’s hat frame data now matches Falco",
+            "Ice Climbers hat damage adjusted to match ICs’",
+            "Ike’s hat now has shrunken hitboxes and sound effect moved one frame",
+            "Knuckles hat damage lowered to match Knuckles’",
+            "Luigi hat sound effect shifted to frame 15",
+            "Meta Knight’s hat can now be started on the ground, and hitboxes now match Meta Knight’s",
+            "Mewtwo hat now plays a sound effect while charging",
+            "Pikachu’s hat sound effects adjusted to frame 12, damage changed to match Pikachu",
+            "Pit hat audio now works properly",
+            "ROB’s hat damage adjusted to match ROB, audio shifted by one frame",
+            "Sheik hat needle hitboxes adjusted to match Sheik’s",
+            "Zelda's hat frame data between air and ground now matches Zelda"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knuckles",
+      "element": {},
+      "moves": [
+        {
+          "title": "Spin Dash (Down Special)",
+          "changes": [
+            "Bucket Braking removed completely"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Olimar",
+      "element": {},
+      "moves": [
+        {
+          "title": "General",
+          "changes": [
+            "Pikmin no longer rotate when grabbing ledge and can no longer get stuck in the stage"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonic",
+      "element": {},
+      "moves": [
+        {
+          "title": "Spin Dash (Down Special)",
+          "changes": [
+            "Bucket Braking removed completely"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Dead Line",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Updated to latest version"
+              ]
+            },
+            {
+              "title": "(R-alt) Dead Line GHZ",
+              "changes": [
+                "Updated to latest version"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Green Hill Zone",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Revamped visuals and optimized to be playable at 60FPS in 4-player matches while also reducing filesize"
+              ]
+            },
+            {
+              "title": "(R-alt) Marble Zone GHZ",
+              "changes": [
+                "Revamped visuals and optimized to be playable at 60FPS in 4-player matches while also reducing filesize"
+              ]
+            },
+            {
+              "title": "(Z-alt) Radical Highway GHZ",
+              "changes": [
+                "Updated to latest version"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Onett",
+          "changes": [
+            "Car behaviour now matches Brawl"
+          ]
+        },
+        {
+          "title": "Training Room",
+          "changes": [
+            {
+              "title": "(L+R-alt) Green Screen FD",
+              "changes": [
+                "Now has PM FD’s collisions and blastzones"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Error data among various fighter files removed",
+	          "Animation Engine code removed; frame speed modifiers relevant instead implemented directly into the movesets to perform the same operations, as this code is a relic from an older period in Brawl modding",
+	          "Frame speed modifiers no longer reset when transitioning between states, synchronizing air-to-ground or ground-to-air transitions properly",
+            "Kirby will no longer cause characters to be unable to die in Stamina Mode",
+            "Charizard Glide, Side Special, grab, and up throw restored to previous behavior, file should now match previous versions 1:1",
+            "Completing All-Star with Giga Bowser no longer crashes the game",
+            "Ike’s Z alt now has its proper trails",
+	          "Ike’s effect bank rewritten from Brawl, which should hopefully prevent the GFX crash related to using Eruption",
+            "Ivysaur’s healing sounds now always play on bulb sweetspots regardless of percent",
+            "Kirby’s fighter skin will no longer t-pose in matches with lots of data used",
+            "Lucario no longer has excessive GFX with a fully charged Aura Sphere",
+            "Facial expressions on Marth, Snake, and Toon Link cleaned up",
+            "Pikachu’s Up Special drift restored to previous behavior",
+            "Sonic no longer has increased gravity when hit out of Down Special",
+            "Sonic can no longer be sent into special fall out of Down Special if a Blast Attack was used without a double jump before another spin move",
+            "K.K. Slider now appears in Event 26, as intended",
+            "Stages for Event 9 and Event 38 fixed"
+          ]
+        },
+        {
+          "title": "Stages",
+          "changes": [
+            "Materials fixed on Beachville",
+            "Sound Effects restored on Bob-Omb Battlefield",
+            "Clock Tower’s textures fixed to look proper",
+            "Peach’s Castle now has a proper double rainbow",
+            "Lighting adjusted on Pokémon Stadium 2",
+            "Restored missing collision on Poké Floats 2",
+            "Training Room and its L alt now plays nice with transparent objects",
+            "Lighting effects fixed on Venom"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+        {
+          "title": "Costumes",
+          "changes": [
+            "Ocarina of Time and Fierce Deity Link alts updated",
+            "Earthbound 64 Lucas’ eyes now match his renders",
+            "Sunshine Peach semi-alt cleaned up",
+            "Fire Peach received updated hair from aforementioned cleanup",
+            "Aforementioned Peach costumes and Shadow Queen alts have updated Toads",
+            "Pirate Yoshi alt revamped"
+          ]
+        },
+        {
+          "title": "Character Polish",
+          "changes": [
+            "Giga Bowser given a more impactful landing effect on up smash",
+            "Unique trails for Dark Pit and Hector Ike adjusted in color",
+            "Arrows for the Dark Pit costumes updated to be more consistent with the Brawl arrow aesthetic",
+            "Materials adjusted on Treasure Hunter Knuckles",
+            "Meta Knight’s wings now stay out after a glide finishes",
+            "Snake now enters his edge slip animation when falling backward off a ledge during the box taunt",
+            "Stray vertice on Outset Toon Link removed",
+            "Retro Falcon no longer has duplicate teeth"
+          ]
+        },
+	{
+          "title": "New Console Launcher",
+          "changes": [
+            {
+              "title": "Added new autoboot feature",
+              "changes": [
+                "Hold A while autoboot is enabled to access launcher menu",
+                "Autoboot can be disabled in config.xml"
+              ]
+            },
+            {
+              "title": "USB loader is now merged with main launcher",
+              "changes": [
+                "Now based on USB Loader GX"
+              ]
+            },
+            "PAL 480p is now supported",
+            "Update system ready for any future P+ updates",
+            "Added support for all Brawl regions, based on the GCT (Note: does not affect the mod itself. P+ still requires the NTSC version of Brawl due to coding limitations.)",
+            "Fixed addon menu scrolling",
+            "Background texture is now seamless",
+            "Improved ADDONS texture"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Air dodge scaling restored due to popular demand",
+            "Clipping in the top left corner of the CSS fixed",
+            "Super Mario World logo updated on the SSS to be more consistent with other stage game logos",
+            "Imagery for various updated stages in 2.2 matched in the RSS and Replay menus",
+            "“Remix 10” now has its full loop",
+            "The Replay Manager now gets its path automatically if in the same folder as Dolphin.exe, no longer prompts the user again if they hit cancel, and confirms file deletion",
+            "Updater will no longer be flagged by antivirus software (sorry!)",
+            "Strap and Results screens updated for version 2.25"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,6 @@
-{"hash": "4aa077433453fcd06d28b66a52f6f939c46254c9",
- "version": "FPM v2.2 BETA",
- "changelog": "",
- "updater-update": "false",
+{"hash": "b45c2cc8653c0d9bde92f9ee94564fae89f63325",
+ "version": "FPM v2.25 BETA",
+ "changelog": "Fix updater paths \nUpdate to P+ 2.25",
  "update-page": "https://projectplusgame.com/download/",
- "download-page-windows": "",
- "download-page-mac": ""}
+ "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/2.25/PPlusv2.25Windows.zip",
+ "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.25/PPlusv2.25Mac.zip"}

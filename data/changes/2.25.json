@@ -239,9 +239,7 @@
             },
             {
               "title": "USB loader is now merged with main launcher",
-              "changes": [
-                "Now based on USB Loader GX"
-              ]
+              "changes": []
             },
             "PAL 480p is now supported",
             "Update system ready for any future P+ updates",

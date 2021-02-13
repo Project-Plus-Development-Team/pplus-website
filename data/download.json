@@ -2,43 +2,47 @@
   {
     "Offline / Wii": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/mZ8UhS6R#l2iAF0cB9d2gW9UA1KTs_7Y6FUrwDV0cC1GV3HEVygU"
+      "url": "https://mega.nz/file/XcMAGDwR#FX19b9vEHC-Kb6Y2Uj4pA2mJKzg1UO9kC9U_Aqw8HUQ"
     },
     "Wii Lite (For 2 GB Cards)": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/vc1WwKbQ#Fe5Jy7nRRyxTZNSO-6KwzgbVJ2CxiyGvZzHFlCtDgeA"
+      "url": "https://mega.nz/file/nN1j3K5K#mME_wd521FRf3r6fmzvpbwPFRbS5JBl35w-Yxqo6Nuw"
     },
     "Modder's Pack": {
       "icon": "fas fa-box-open",
-      "url": "https://mega.nz/file/ed8mTIBL#eSSsJnepDKonf8zXSt0Re8kni6ZJdh-Ou-WrRSbz3B0"
+      "url": "https://mega.nz/file/uMVTWAzb#VjnOqbTt0w4W7qOaPDJodqj0nWFGlnQef2xY1Ej2RNU"
+    },
+    "2.25 > 2.26 Changed Files": {
+      "icon": "fas fa-box-open",
+      "url": "https://mega.nz/file/KEtRQa4Z#QQbAfYyf-1fHtNo5GOBFtGS3LUVheAqytQ1rsAPtdSA"
     }
   },
   {
     "Dolphin (Windows)": {
       "icon": "fab fa-windows",
-      "url": "https://mega.nz/file/6E1wBYSB#X1EvUISlCdv-hPv7hpmLIlupNvv-hWbrNa6fRdZpk9E"
+      "url": "https://mega.nz/file/Wc8mWJBC#g7_85x0au4OSFqKTAaMOqkIPSgQwhziOTlaQrWrqffI"
     },
     "Dolphin (Mac)": {
       "icon": "fab fa-apple",
-      "url": "https://mega.nz/file/SMsRWarQ#gntopJgiv_Nm0asiKslsi73FGeV5b5AIfH4z_ol4Kb8"
+      "url": "https://mega.nz/file/XJkiALiD#2bWNNtPlZ1SIVZ9YlHB0AQ9pfxPPMh4EdS3DwEILKE0"
     },
     "Dolphin (Linux AppImage)": {
       "icon": "fab fa-linux",
-      "url": "https://github.com/jlambert360/FPM-AppImage/releases/tag/v2.25"
+      "url": "https://github.com/jlambert360/FPM-AppImage/releases/tag/v2.26"
     }
   },
   {
     "Wii Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://www.mediafire.com/file/y11k5v8ab0znyum/Project++v2.25+(Wii).7z/file"
+      "url": "http://www.mediafire.com/file/3yk3y5q3j2fnb6q/Project%252B_v2.26_%2528Wii%2529.7z/file"
     },
     "Wii Lite Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://www.mediafire.com/file/n1qbrw3gsyymvm2/Project++v2.25+(Wii+Lite).7z/file"
+      "url": "http://www.mediafire.com/file/66pp4ttoor3qwlp/Project%252B_v2.26_%2528Wii_Lite%2529.7z/file"
     },
     "Dolphin (Windows) Mirror": {
       "icon": "fab fa-windows",
-      "url": "https://www.mediafire.com/file/du3dfmstp78b7tt/Project%252B_v2.25_Netplay_%2528Windows%2529.7z/file"
+      "url": "http://www.mediafire.com/file/rd45jaz76qxyl3x/Project%252B_v2.26_Netplay_%2528Windows%2529.7z/file"
     }
   }
 ]

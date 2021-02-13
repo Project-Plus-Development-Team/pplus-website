@@ -181,7 +181,13 @@
             "Sonic no longer has increased gravity when hit out of Down Special",
             "Sonic can no longer be sent into special fall out of Down Special if a Blast Attack was used without a double jump before another spin move",
             "K.K. Slider now appears in Event 26, as intended",
-            "Stages for Event 9 and Event 38 fixed"
+            "Stages for Event 9 and Event 38 fixed",
+	    "Pressing B during replays no longer hard crashes the console (New in 2.26)",
+	    "Dedede and Kirby swallowcides should now always give the victory to the inhaler (New in 2.26)",
+	    "R.O.B. no longer has strange interactions when landing onstage with Side Special (New in 2.26)",
+	    "Toon Link's zair restored to 12 frames of landing lag, after it was unintentionally changed to 14 in 2.2 (New in 2.26)",
+	    "Fixed materials on Zero Mission ZSS' hair (New in 2.26)",
+	    "Ness' eye areas on PJ/hidden skins in certain lighting will now match the rest of his skin (New in 2.26)"
           ]
         },
         {
@@ -194,7 +200,8 @@
             "Lighting adjusted on Pokémon Stadium 2",
             "Restored missing collision on Poké Floats 2",
             "Training Room and its L alt now plays nice with transparent objects",
-            "Lighting effects fixed on Venom"
+            "Lighting effects fixed on Venom",
+	    "The water on Battlefield now animates for an entire match instead of stopping after 90 seconds (New in 2.26)"
           ]
         }
       ]
@@ -224,7 +231,9 @@
             "Meta Knight’s wings now stay out after a glide finishes",
             "Snake now enters his edge slip animation when falling backward off a ledge during the box taunt",
             "Stray vertice on Outset Toon Link removed",
-            "Retro Falcon no longer has duplicate teeth"
+            "Retro Falcon no longer has duplicate teeth",
+	    "Varying GFX on taunt input restored on Peach Bomber (New in 2.26)", 
+	    "Ivysaur's Solar Beam GFX now matches the hitboxes, all the way out (New in 2.26)"
           ]
         },
 	{

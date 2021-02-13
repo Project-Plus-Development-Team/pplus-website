@@ -268,7 +268,7 @@
             "“Remix 10” now has its full loop",
             "The Replay Manager now gets its path automatically if in the same folder as Dolphin.exe, no longer prompts the user again if they hit cancel, and confirms file deletion",
             "Updater will no longer be flagged by antivirus software (sorry!)",
-            "Strap and Results screens updated for version 2.25"
+            "Strap and Results screens updated for version 2.26"
           ]
         }
       ]

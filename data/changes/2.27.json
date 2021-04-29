@@ -1,0 +1,173 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1LgMz9tGyAQlWhUaKpgahtDLZ7TWpAZHda1vC0y8olt4"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1hx9Go3-ltxQjQsf-Lu1Ezc4lwqd3gk1TaDN01tsatX8"
+    }
+  },
+  "changes": [
+    {
+      "name": "Captain Falcon",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Ledge stand invincibility normalized with the rest of the cast"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Charizard",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Air",
+          "changes": [
+            "Endlag matched to previous versions; Charizard should now completely match older versions"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dedede",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Hurtbox reverted to Brawl to better match model"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ness",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Hurtbox modified to better match model"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pit",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Ledge stand invincibility normalized with the rest of the cast"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "R.O.B.",
+      "element": {},
+      "moves": [
+        {
+          "title": "Down Air",
+          "changes": [
+            "Now properly and consistently stalls while in knockback"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yoshi",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Egg Roll)",
+          "changes": [
+            "No longer bucket brakes"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Can now take advantage of UCF codes",
+            "Hurtbox modified to better match model"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Castle Siege",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Received visual overhaul; now more closely resembles Brawl’s version of the stage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Donkey Kong’s getup attack after slipping on a banana no longer has an excessive amount of invulnerable frames",
+	          "Ivy now plays healing SFX when pummeling at 0%",
+	          "Landing with Lucario’s Aura Bomb no longer crashes the game on certain frames",
+            "Light on Kirby’s Olimar hat now works for all TE-added costumes",
+            "Fixed visual errors with Pit using a Beam Sword"
+          ]
+        },
+        {
+          "title": "Stages",
+          "changes": [
+            "Various effects restored on alts of Final Destination",
+            "Character lighting on Pokemon Stadium 2 reflects purple instead of green when on-stage",
+            "Many stages optimized for file size and frame rate"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+        {
+          "title": "Costumes",
+          "changes": [
+            "Melee Fox costumes optimized for file size and frame rate",
+            "Fierce Deity Link alt optimized for file size and frame rate",
+            "Zero Suit Samus costumes optimized for file size and frame rate"
+          ]
+        },
+        {
+          "title": "Character Polish",
+          "changes": [
+            "Hooded Diddy skins no longer have a hole in the jacket"
+          ]
+        },
+      	{
+          "title": "Other",
+          "changes": [
+            "On the Beach’s loop point adjusted to closer match the original song from Yoshi’s Story",
+            "Strap and Results screens updated for version 2.27"
+          ]
+        }
+      ]
+    }
+  ]
+}

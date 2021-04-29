@@ -1,6 +1,7 @@
 {"hash": "75a36a73b56bce9aa83d3700e087f3f81ebccf68",
  "version": "FPM v2.27 BETA",
  "updater-update": "false",
+ "update-page": "https://projectplusgame.com/download/",
  "changelog": "Update to P+ 2.27 \nChange ishiiruka path on linux to FasterPPlus",
  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/2.27/PPlusv2.27Windows.zip",
  "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.27/PPlusv2.27Mac.zip"}

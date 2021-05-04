@@ -47,6 +47,18 @@
       ]
     },
     {
+      "name": "Mr Game & Watch",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Hurtbox adjusted to better match model"
+          ]
+        }
+      ]
+    },
+    {
       "name": "Ness",
       "element": {},
       "moves": [
@@ -149,9 +161,7 @@
         {
           "title": "Costumes",
           "changes": [
-            "Melee Fox costumes optimized for file size and frame rate",
-            "Fierce Deity Link alt optimized for file size and frame rate",
-            "Zero Suit Samus costumes optimized for file size and frame rate"
+            "Fierce Deity Link alt optimized for file size and frame rate"
           ]
         },
         {
@@ -164,7 +174,7 @@
           "title": "Other",
           "changes": [
             "On the Beach’s loop point adjusted to closer match the original song from Yoshi’s Story",
-            "Strap and Results screens updated for version 2.27"
+            "Strap and Results screens updated for version 2.28"
           ]
         }
       ]

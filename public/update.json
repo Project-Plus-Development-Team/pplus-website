@@ -1,7 +1,7 @@
-{"hash": "75123e34eac5b0f3204f32a116c389f95da0766a",
- "version": "FPM v2.28 BETA",
+{"hash": "81e0a8f8a53f429b341d440ddb2d2b7802b66d52",
+ "version": "FPM v2.29 BETA",
  "updater-update": "false",
  "update-page": "https://projectplusgame.com/download/",
- "changelog": "Update to P+ 2.28",
- "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/2.28/PPlusv2.28Windows.zip",
- "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.28/PPlusv2.28Mac.zip"}
+ "changelog": "Update to P+ 2.29 \nSpectator mode hitbox is no longer the size of saturn",
+ "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/PPlusv2.29Windows.zip",
+ "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/PPlusv2.29Mac.zip"}

@@ -10,7 +10,7 @@ import styles from "./PageHeader.module.scss";
 // Links for the different changes pages. Last entry is used by the download button label.
 // Due to limitations of Next.js i can't pull this data dynamically, but i'm looking into it.
 // This only affects the PageHeader, nothing else.
-const sortedVersions = [ "2.0", "2.11", "2.15", "2.2", "2.26", "2.28" ];
+const sortedVersions = [ "2.0", "2.11", "2.15", "2.2", "2.26", "2.28", "2.29" ];
 
 export default function PageHeader() {
   const router = useRouter();

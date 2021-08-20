@@ -14,7 +14,7 @@
     },
     "2.28 > 2.29 Changed Files": {
       "icon": "fas fa-box-open",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.v2.28.to.2.29.zip"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.v2.28.to.v2.29.zip"
     }
   },
   {
@@ -24,7 +24,7 @@
     },
     "Dolphin (Mac 10.13+)": {
       "icon": "fab fa-apple",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.v2.29.Netplay.Mac.zip"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.2.29.Netplay.Mac.zip"
     },
     "Dolphin (Linux AppImage)": {
       "icon": "fab fa-linux",

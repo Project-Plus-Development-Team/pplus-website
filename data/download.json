@@ -22,7 +22,7 @@
       "icon": "fab fa-windows",
       "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.v2.29.Netplay.Windows.zip"
     },
-    "Dolphin (Mac 10.13+)": {
+    "Dolphin (macOS 10.13+)": {
       "icon": "fab fa-apple",
       "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.2.29.Netplay.Mac.zip"
     },
@@ -34,11 +34,11 @@
   {
     "Wii Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/uVdF2IwQ#QziiGq7UrannqVZauuNDmRUUqBqICklXjGBEydBEt74"
+      "url": "https://mega.nz/file/bEk3jCLA#8xYgxXRERNLQp_FbCShdQOwwwbELztvCOa7MzJNG2IU"
     },
     "Wii Lite Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/3ZMjgAJJ#FFunp3c38SmVRM4-TnN5kPttBQVe83SxaamkvLPBLWQ"
+      "url": "https://mega.nz/file/mM8nzSAS#yld8w5wSeYIUJOg2zPy6gic0w7pVT0tBeZPPjuIQdIY"
     },
     "Dolphin (Windows) Mirror": {
       "icon": "fab fa-windows",

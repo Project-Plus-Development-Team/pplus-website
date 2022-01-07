@@ -5,6 +5,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 const path = require("path");
 const redirectParser = require("netlify-redirect-parser");
+const { PHASE_DEVELOPMENT_SERVER } = require("next/constants");
 const optimizedImages = require("next-optimized-images");
 const withPlugins = require('next-compose-plugins');
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
@@ -32,7 +33,7 @@ function getNextConfig(phase) {
         use: "raw-loader"
       });
   
-      if (phase === "phase-export") {
+      if (phase !== PHASE_DEVELOPMENT_SERVER) {
         config.plugins.push(
           new BundleAnalyzerPlugin({
             analyzerMode: "static",

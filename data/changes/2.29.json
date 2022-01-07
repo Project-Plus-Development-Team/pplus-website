@@ -1,0 +1,183 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1ucaDgEqYm-c0P6Q_nayZfQpCcipezcFgCKgUek7kGpA"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1hx9Go3-ltxQjQsf-Lu1Ezc4lwqd3gk1TaDN01tsatX8"
+    }
+  },
+  "changes": [
+    {
+      "name": "Lucario",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Will now regain up special after doing a walljump tech if up special was already used"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lucas",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (PK Freeze)",
+          "changes": [
+            "PK Freeze is no longer hittable after it hits an object or opponent"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Meta Knight",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Smash",
+          "changes": [
+            "Up smash’s center hitboxes in the second and third hits can now hit aerial opponents"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Grabbing Meta Knight out of glide will no longer prevent him from using special moves"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mewtwo",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Will now regain up special after doing a walljump tech if up special was already used"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mr Game & Watch",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Will now regain up special after doing a walljump tech if up special was already used"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yoshi",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Shield dropping should now match other characters 1:1, after missing a couple angles previously"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Kongo Jungle 64",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Remade completely; now more closely matches the design of other HD 64 stages"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Planet Zebes (NEW!)",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "A re-imagining of the classic Smash 64 stage. Replaces Brinstar, which can now be found on the X alt of this stage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Frame advance in replays should no longer desync them",
+            "Ceiling collision should now more accurately match models",
+	          "Various characters (Giga Bowser, Ike, MK, Samus, and Toon Link) now have properly coded costume range checks for some GFX",
+	          "Grabbing ledge out of Diddy Kong’s Up Special no longer causes his model to rotate oddly",
+            "Restored Pit’s shield model during Up Special",
+            "Olimar should no longer cause frequent and consistent crashes"
+          ]
+        },
+        {
+          "title": "Stages",
+          "changes": [
+            "Parts of grass on Golden Temple now render properly",
+            "Green Hill Zone’s texture mapping now properly displays the tile texture",
+            "The AI on Great Bay will now properly fight on lower areas of the stage"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+        {
+          "title": "Costumes",
+          "changes": [
+            "Dr. Mario costumes polished and optimized",
+            "Builder Mario completely redone, with a revamped blue recolor",
+            "Mr. L costumes polished and optimized, with new recolors",
+            "Casino Luigi costumes polished and optimized",
+            "Fighter Kirby redone to take advantage of new hat model code, along with new recolors",
+            "Pajama Ness received small touchups on its seams",
+            "All Samus suits (except for Fusion and Retro) optimized and polished",
+            "Helmet on Light Suit and PED Samus alts adjusted",
+            "Shadow and Tails semi-alts for Sonic redone and optimized",
+            "Jet Set Sonic redone, with new recolors and an added purple recolor",
+            "Espio and Vector semi-alts for Knuckles redone and optimized",
+            "Materials on Charmy semi-alt fixed",
+            "Jet Set Knuckles redone with new recolors"
+          ]
+        },
+        {
+          "title": "Features",
+          "changes": [
+            "Kirby hats can now be set to disappear when a copy ability is donned (used for revamped Fighter Kirby alts)"
+          ]
+        },
+      	{
+          "title": "Other",
+          "changes": [
+            "Added “Green Brinstar” remix for Planet Zebes",
+            "“Misty Time” cut from Smashville",
+            "Strap and Results screens updated for version 2.29"
+          ]
+        }
+      ]
+    }
+  ]
+}

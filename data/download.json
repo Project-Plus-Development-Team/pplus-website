@@ -2,43 +2,47 @@
   {
     "Offline / Wii": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/eVd3ya6C#aJyLjM71bgwg5ydn2Lqh9L6rggLc2ivjOBaF8860FBU"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.v2.29.Wii.zip"
     },
     "Wii Lite (For 2 GB Cards)": {
       "icon": "fas fa-sd-card",
-      "url": "https://mega.nz/file/2VEThIyb#CZhJthetIyaDaTlEUhtTpo8_n8LSry2-tDKswoPETs8"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.v2.29.Wii.Lite.zip"
     },
     "Modder's Pack": {
       "icon": "fas fa-box-open",
-      "url": "https://mega.nz/file/PZF3kKaL#DStL7OIk4elOoorBDoMDXukPv8rJ-dXEA9oKx1w6O1c"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.Modder.s.Pack.v2.29.zip"
+    },
+    "2.28 > 2.29 Changed Files": {
+      "icon": "fas fa-box-open",
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.v2.28.to.v2.29.zip"
     }
   },
   {
     "Dolphin (Windows)": {
       "icon": "fab fa-windows",
-      "url": "https://mega.nz/file/iZNBnCZS#wpZdsdNY9W1ilQyI6v35mdhFyhnPq4-ao4OhfiC_Vqk"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.v2.29.Netplay.Windows.zip"
     },
-    "Dolphin (Mac)": {
+    "Dolphin (macOS 10.13+)": {
       "icon": "fab fa-apple",
-      "url": "https://mega.nz/file/aAVhjQDC#NZEkbwqsld0kNqmNjxfh_Ut2Vz3wj39wSwYGJPuaIdc"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/Project+.2.29.Netplay.Mac.zip"
     },
-    "Dolphin (Linux Installer)": {
+    "Dolphin (Linux AppImage)": {
       "icon": "fab fa-linux",
-      "url": "https://github.com/Birdthulu/FPM-Installer"
+      "url": "https://github.com/jlambert360/FPM-AppImage/releases/tag/v2.29"
     }
   },
   {
     "Wii Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://www.mediafire.com/file/s1bzwn8njgnh6x4/Project%252B_v2.2_%2528Wii%2529.7z/file"
+      "url": "https://mega.nz/file/bEk3jCLA#8xYgxXRERNLQp_FbCShdQOwwwbELztvCOa7MzJNG2IU"
     },
     "Wii Lite Mirror": {
       "icon": "fas fa-sd-card",
-      "url": "https://www.mediafire.com/file/wbcqjcc1pozqb9l/Project++v2.2+(Wii+Lite).7z/file"
+      "url": "https://mega.nz/file/mM8nzSAS#yld8w5wSeYIUJOg2zPy6gic0w7pVT0tBeZPPjuIQdIY"
     },
     "Dolphin (Windows) Mirror": {
       "icon": "fab fa-windows",
-      "url": "https://www.mediafire.com/file/k239awxhclizaek/Project++v2.2+Netplay+(Windows).7z/file"
+      "url": "https://mega.nz/file/3AVFUaqa#VMLO8fnynXdNeBJIQKM8KvN4T7MLELbPzim-FVGqWp4"
     }
   }
 ]

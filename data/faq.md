@@ -18,7 +18,8 @@ Yes, you can download them [here](/download).
 #### What do I need to play P+?
 It depends on the method you will be using. For the hackless method ([NTSC-U](#video-systems-pal-ntsc)), you will need a Wii, an SD card that has a capacity of 2GB or less and a Super Smash Bros. Brawl disc. For Dolphin/Netplay, you will need a computer and a NTSC-U Brawl ISO.
 
-#### What does NTSC-U and PAL mean? <!-- TODO create anchors here -->
+<!-- TODO create anchors here -->
+#### What does NTSC-U and PAL mean?
 NTSC-U/J, PAL and SECAM refer to technical details on how TV systems worked that were relevant back when the Wii was a current-gen console. Game publishers may have to engineer their games differently based on the video system in a given region. They might use different patches that make games incompatible with consoles from other regions.
 In the context of Wii games, this means the region where you bought your console and game (Brawl).
 You can easily find out which kind of Wii or game disc you have by looking at [this map on Wikipedia](https://upload.wikimedia.org/wikipedia/commons/0/0d/PAL-NTSC-SECAM.svg).

@@ -1,9 +1,11 @@
 {
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && node scripts/sitemap-generator.mjs",
+    "build": "next build && next export && npm run generate-sitemap && npm run generate-imgs",
     "serve": "npm run build && serve ./out/",
-    "start": "next start"
+    "start": "next start",
+    "generate-sitemap": "node scripts/sitemap-generator.mjs",
+    "generate-imgs": "node scripts/generate-small-css-images.mjs"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.1.0",

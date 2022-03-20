@@ -14,18 +14,18 @@ export default phase => {
       });
   
       if (phase !== "phase-development-server") {
-        config.plugins.push(
-          new BundleAnalyzerPlugin({
-            analyzerMode: "static",
-            openAnalyzer: true
-          })
-        );
+        // config.plugins.push(
+        //   new BundleAnalyzerPlugin({
+        //     analyzerMode: "static",
+        //     openAnalyzer: true
+        //   })
+        // );
     
-        config.plugins.push(new DuplicatePackageCheckerPlugin({
-          exclude(instance) {
-            return instance.name === "unist-util-visit-parents";
-          }
-        }));
+        // config.plugins.push(new DuplicatePackageCheckerPlugin({
+        //   exclude(instance) {
+        //     return instance.name === "unist-util-visit-parents";
+        //   }
+        // }));
       }
       
       return config;

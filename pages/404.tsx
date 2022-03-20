@@ -11,8 +11,7 @@ export default function FourOhFour() {
         <Columns.Column className="has-text-centered">
           <Heading>YIKES!</Heading>
           <Heading subtitle>This page could not be found.<br/>Imagine the soothing sound of <a href="https://youtu.be/vv_x6I1l1mM">crashing Project M.</a></Heading>
-        </Columns.Column>
-        <Columns.Column className="has-text-centered">
+          <br/>
           <span>
             There&apos;s a high chance this page used to exist, but has moved.<br/>
             A search function to find moved content is in the works, but until then you can<br/>

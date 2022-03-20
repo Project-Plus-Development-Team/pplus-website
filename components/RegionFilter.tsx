@@ -7,7 +7,7 @@ interface Props {
   tournaments: any[]
 }
 
-const getRegionFiltersFromTournaments = tournaments => {
+const getRegionFiltersFromTournaments = (tournaments: any[]) => {
   const filters = new Set(["all"]);
 
   tournaments

@@ -3,7 +3,6 @@ import React from "react";
 import { Navbar } from "react-bulma-components";
 
 import logo from "../../public/images/logo.png";
-import Image from "next/image";
 
 interface BrandProps {
   isNavbarActive: boolean
@@ -40,6 +39,11 @@ export default function Brand({ isNavbarActive, setNavbarActive, isHome }: Brand
       setEggCounter(0);
 
       const spinAudio = useAltSpin ? spin2Audio : spin1Audio;
+
+      if (spinAudio === null) {
+        return;
+      }
+
       spinAudio.volume = 0.3;
       spinAudio.play().then(() => {
         setSpin(true);
@@ -68,10 +72,12 @@ export default function Brand({ isNavbarActive, setNavbarActive, isHome }: Brand
             onClick={egg}
             className={"logo " + (spin ? `spin${useAltSpin ? 2 : 1}` : "")}
           >
-            <Image
-              src={logo}
-              width={178}
-              height={40}
+            <img
+              src={logo.src}
+              style={{
+                width: 178,
+                height: 40
+              }}
               alt="Project Plus Logo"
             />
           

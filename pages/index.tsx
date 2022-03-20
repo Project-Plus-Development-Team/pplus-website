@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Heading, Content } from "react-bulma-components";
 import FAButton from "../components/FAButton";
@@ -41,10 +40,12 @@ export default function Home() {
       </div>
 
       <div className={styles.falco_wrapper}>
-        <Image
-          src={glowyFalco}
-          width="300"
-          height="366"
+        <img
+          src={glowyFalco.src}
+          style={{
+            width: 300,
+            height: 366
+          }}
           alt="Glowy, translucent Falco"
           className={styles.falco}
         />

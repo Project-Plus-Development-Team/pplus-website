@@ -1,4 +1,3 @@
-import Image from "next/image";
 import FAButton from "../FAButton";
 
 import styles from "./General.module.scss";

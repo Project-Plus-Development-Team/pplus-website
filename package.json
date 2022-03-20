@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export && node scripts/sitemap-generator.js",
+    "build": "next build && next export && node scripts/sitemap-generator.mjs",
     "serve": "npm run build && serve ./out/",
     "start": "next start"
   },

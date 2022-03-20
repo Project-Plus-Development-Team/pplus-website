@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Heading, Columns } from "react-bulma-components";
 
 import knux from "../public/images/knuckles/glowy.png";
@@ -48,11 +47,13 @@ export default function Knuckles() {
 
       <Columns>
         <Columns.Column size={4}>
-          <Image
-            src={knux}
+          <img
+            src={knux.src}
             className="bind-inner"
-            height="557"
-            width="409"
+            style={{
+              height: 557,
+              width: 409
+            }}
             alt="Knuckles with a glow"
           />
         </Columns.Column>

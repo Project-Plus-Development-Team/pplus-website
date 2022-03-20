@@ -59,7 +59,7 @@ export const AllChanges = ({ versionsData, siteUrl }: Props) => {
 
         setTimeout(() => {
           window.scrollTo({
-            top: headingElement.current.offsetTop
+            top: headingElement.current?.offsetTop
           });
         }, 300); // hacky :( but will be called 2x and jump back to top otherwise
       }
@@ -89,11 +89,11 @@ export const AllChanges = ({ versionsData, siteUrl }: Props) => {
         </Heading>
 
         {show && changesBlocks.map(block => (
-          <Content key={block.version}>
+          <Content key={block?.version}>
             <Heading size={6} className="is-italic">
-              Changes in version v{block.version}
+              Changes in version v{block?.version}
             </Heading>
-            {block.changes.map((change, i) => (
+            {block?.changes.map((change, i) => (
               <Move data={change} key={i}/>
             ))}
           </Content>

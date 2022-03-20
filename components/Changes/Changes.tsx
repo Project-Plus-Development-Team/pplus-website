@@ -17,7 +17,7 @@ export interface ChangesProps {
 
 const generateLinks = (links: VersionData["links"]) => (
   <Button.Group>
-    {Object.entries(links).map(([title, { url, icon }], index) => (
+    {Object.entries(links!).map(([title, { url, icon }], index) => (
       <FAButton
         color="link"
         key={index}

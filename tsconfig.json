@@ -1,4 +1,3 @@
-// Function says: This file specifies how TypeScript is configured, i.e. support environments and how the type system behaves
 {
   "compilerOptions": {
     "target": "ES2020",
@@ -9,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": true,
+    "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,

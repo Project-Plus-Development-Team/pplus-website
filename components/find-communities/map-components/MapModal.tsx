@@ -13,7 +13,7 @@ interface Props {
 
 export const MapModal = ({ region, onClose }: Props) => {
   const url = typeof window === "undefined" ? "" : window.location.href;
-  const [hasCopied, setClipboard] = useCopyClipboard(encodeURI(url), {
+  const [hasCopied, setClipboard] = useCopyClipboard(url, {
     successDuration: 2000
   });
 

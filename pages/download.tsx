@@ -5,10 +5,10 @@ import React from "react";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import { Button, Heading } from "react-bulma-components";
-import YouTube from "react-youtube";
 import importedLinkGroups from "../data/download.json";
 import { getSortedVersions } from "../lib/get-version";
 import FAButton from "../components/FAButton";
+import { YouTubePlayer } from "../components/YouTubePlayer";
 
 interface LinkGroup {
   [title: string]: {
@@ -61,7 +61,10 @@ export default function Download({ linkGroups, latestVersion }: DownloadProps) {
       <Heading subtitle>The Modders Pack includes files for custom build creation, such as stage imagery templates and full resolution HD textures.</Heading>
       {linkGroups.map((group, index) => <LinkGroup key={index} data={group}/>)}
       <Heading subtitle>Need help installing Project+? Project M Nexus&apos;s in-depth guide has got you covered!</Heading>
-      <YouTube videoId="4XynDH-eVDE" containerClassName="youtube-container"/>
+      <YouTubePlayer
+        id="4XynDH-eVDE"
+        title="Project+ Install Guide Video YouTube Embed"
+      />
     </>
   );
 }

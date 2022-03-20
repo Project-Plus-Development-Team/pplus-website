@@ -14,15 +14,16 @@ body, .subtitle {
 
 #__next {
   > .container:not(header) {
-    background: hsla(0,0%,20%,50%);
-    border-radius: 0.3rem;
-    border: 3px solid hsl(0,0%,20%);
+    background: hsla(0, 0%, 5%, 90%);
+    border-radius: 0.5rem;
+    border: 2px solid hsl(0, 0%, 20%);
     padding: 1rem;
     margin-bottom: 1rem;
     
     @media screen and (max-width: 1023px) {
       &:last-child {
         margin-bottom: 0;
+        border: none;
       }
     }
   }
@@ -30,7 +31,7 @@ body, .subtitle {
 
 // make the links a bit lighter to be more easily readable
 a, .link {
-  color: #75aaff;
+  color: #5092fc;
   
   &:hover {
     color: #407cdd;
@@ -43,19 +44,94 @@ code {
   border-radius: 0.3rem;
 }
 
-.youtube-container {
-  margin-top: 1rem;
+.yt-lite {
+  display: flex;
+  background-size: cover;
+  cursor: pointer;
 
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
+  &:not(.lyt-activated) {
+    padding-bottom: 56.25%;
+  }
+
+  .lty-playbtn {
+    display: none;
+  }
 
   iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    flex: 1;
+    aspect-ratio: 16/9;
+    height: auto;
   }
+}
+
+.rsm-geography:focus {
+  outline: none;
+}
+
+.card {
+  background-color: hsla(0, 0%, 10%, 50%);
+  border: .4em solid hsl(0, 0%, 10%);
+  box-shadow: 0 .2em .6em black;
+}
+
+.button {
+  transition: background-color .1s ease-in-out;
+
+  &.smashgg { // TODO i should consider using proper toolchaining to make this actual variants or something
+    background-color: #CD323C;
+    
+    &:hover {
+      background-color: #e63b46;
+    }
+  }
+  
+  &.discord {
+    background-color: #7289DA;
+    
+    &:hover {
+      background-color: #455bac;
+    }
+  }
+
+  &.twitch {
+    background-color: #6441a5;
+    
+    &:hover {
+      background-color: #8356d6;
+    }
+  }
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.dropdown.region-filter > .dropdown-trigger > .button {
+  width: 12em;
+}
+
+.message-header a {
+  text-decoration: none !important;
+  
+  &:hover {
+    color: #5092fc !important;
+    text-decoration: underline !important;
+  }
+}
+
+.has-new::before {
+  color: white;
+  content: "New!";
+  position: absolute;
+  right: 1em;
+  top: .5em;
+  user-select: none;
+  font-size: .8em;
+  line-height: .7em;
+  padding: .2em;
+  transform: rotateZ(30deg);
+  border-radius: .5em;
+  background: rgb(0, 114, 190);
+  filter: drop-shadow(0 0 .3em hsla(0, 0%, 0%, 0.2));
+  z-index: 10;
 }

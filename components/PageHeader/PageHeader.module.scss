@@ -22,6 +22,19 @@
   @media screen and (min-width: 500px) { // arbitrary value i chose which looks good, not an actual bulma breakpoint
     flex-wrap: nowrap;
   }
+  
+  // shorten download and discord button so that they don't break out of the page header
+  @media (min-width: 1024px) and (max-width: 1215px) {
+    button, a {
+      > :first-child {
+        margin-right: calc(-0.5em - 1px) !important;
+      }
+  
+      > :not(:first-child) {
+        display: none;
+      }
+    }
+  }
 }
 
 .expandbutton {
@@ -36,14 +49,6 @@
 
 .navitemactive {
   background-color: hsla(0,0%,0%,0.7) !important;
-}
-
-.discordbutton {
-  background-color: #7289DA;
-  
-  &:hover {
-    background-color: #455bac;
-  }
 }
 
 @media screen and (max-width: 1023px) {

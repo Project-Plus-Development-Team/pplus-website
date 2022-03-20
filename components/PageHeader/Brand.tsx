@@ -1,7 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import { Navbar } from "react-bulma-components";
-import SmartImage from "../smart-image";
+
+import logo from "../../public/images/logo.png";
+import Image from "next/image";
 
 interface BrandProps {
   isNavbarActive: boolean
@@ -66,15 +68,14 @@ export default function Brand({ isNavbarActive, setNavbarActive, isHome }: Brand
             onClick={egg}
             className={"logo " + (spin ? `spin${useAltSpin ? 2 : 1}` : "")}
           >
-            <SmartImage
-              img={require("../../public/images/logo.png?sizes[]=300,sizes[]=178")}
-              webp={require("../../public/images/logo.png?sizes[]=300,sizes[]=178&webp")}
-              width="178"
-              height="40"
+            <Image
+              src={logo}
+              width={178}
+              height={40}
               alt="Project Plus Logo"
             />
           
-            <style jsx global>{`            
+            <style jsx global>{`
               .logo.spin1 {
                 transition: transform 3s ease-out;
                 transform: rotateZ(6turn);

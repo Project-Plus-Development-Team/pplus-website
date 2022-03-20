@@ -1,0 +1,31 @@
+.body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+
+  > * {
+    width: 8em;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  > * {
+    color: #aaa;
+  }
+
+  &:hover > * {
+    color: #ddd;
+  }
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

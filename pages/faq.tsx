@@ -14,7 +14,7 @@ export default function FAQ({ markdown }) {
         <title>F.A.Q.</title>
       </Head>
       <Content>
-        <ReactMarkdown className="line-break" allowDangerousHtml>
+        <ReactMarkdown className="line-break">
           {markdown}
         </ReactMarkdown>
       </Content>

@@ -1,0 +1,50 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  grid-template-rows: min-content 1fr;
+  gap: 2em 2em;
+  grid-template-areas: 'news news' 'text picture' 'youtube youtube';
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: 1fr !important;
+    grid-template-areas: 'news' 'text' 'youtube' 'picture' !important;
+  }
+}
+
+.falco_wrapper {
+  display: flex;
+  justify-content: center;
+  grid-area: picture;
+}
+
+.falco {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.list > * {
+  font-size: 20px;
+}
+
+.news {
+  grid-area: news;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1em;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.new_button::before {
+  right: -.3em;
+}

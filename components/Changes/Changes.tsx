@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import { VersionData } from "../../types/changes";
 import { Heading, Button } from "react-bulma-components";
 import Character from "./Character";
@@ -33,11 +33,11 @@ const generateLinks = (links: VersionData["links"]) => (
 
 export default function Changes({ version, data, siteUrl }: ChangesProps) {
   const buttons = data.links ? generateLinks(data.links) : undefined;
-  const [characterToUnfold, setCharacterToUnfold] = React.useState<string>();
+  const [characterToUnfold, setCharacterToUnfold] = useState<string>();
 
-  React.useEffect(() => { // code that runs only in the browser, when the component is ready
+  useEffect(() => {
     const decodedHash = decodeURI(window.location.hash);
-    const target = decodedHash.substr(1).trim();
+    const target = decodedHash.slice(1).trim();
 
     if (target) {
       setCharacterToUnfold(target);
@@ -60,7 +60,7 @@ export default function Changes({ version, data, siteUrl }: ChangesProps) {
     <>
       <Head><title>{title}</title></Head>
       <Heading>{title}</Heading>
-      <p className="has-text-weight-bold">Automatically parsed from the Google Document, errors still possible.</p>
+      <p className="has-text-weight-bold">This information was automatically parsed from the Google Document, errors still possible.</p>
       <br/>
       {buttons}
       {content}

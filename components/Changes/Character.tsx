@@ -1,5 +1,5 @@
 import { useRouter } from "next/router";
-import React from "react";
+import { useEffect, useRef, useState } from "react";
 import { CharacterType } from "../../types/changes";
 import CopyToClipboard from "./CopyToClipboard";
 import Move from "./Move";
@@ -14,15 +14,14 @@ interface CharacterProps {
 }
 
 export default function Character({ data: { name, moves }, version, siteUrl, fold }: CharacterProps) {
-  const parentElement = React.useRef<HTMLDivElement>(null);
+  const parentElement = useRef<HTMLDivElement>(null);
+  const [show, setShow] = useState(false);
 
-  const [show, setShow] = React.useState(false);
-
-  React.useEffect(() => {
+  useEffect(() => {
     if (!fold) {
       setShow(true);
 
-      parentElement.current.scrollIntoView({
+      parentElement.current?.scrollIntoView({
         behavior: "smooth"
       });
     }

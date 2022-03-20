@@ -18,16 +18,16 @@ Yes, you can download them [here](/download).
 #### What do I need to play P+?
 It depends on the method you will be using. For the hackless method ([NTSC-U](#video-systems-pal-ntsc)), you will need a Wii, an SD card that has a capacity of 2GB or less and a Super Smash Bros. Brawl disc. For Dolphin/Netplay, you will need a computer and a NTSC-U Brawl ISO.
 
-<!-- TODO create anchors here -->
 #### What does NTSC-U and PAL mean?
-NTSC-U/J, PAL and SECAM refer to technical details on how TV systems worked that were relevant back when the Wii was a current-gen console. Game publishers may have to engineer their games differently based on the video system in a given region. They might use different patches that make games incompatible with consoles from other regions.
-In the context of Wii games, this means the region where you bought your console and game (Brawl).
-You can easily find out which kind of Wii or game disc you have by looking at [this map on Wikipedia](https://upload.wikimedia.org/wikipedia/commons/0/0d/PAL-NTSC-SECAM.svg).
-"SECAM" is the same as PAL for Wii games. "NTSC-U" basically means "NTSC USA", so North America and some parts of South America. We specify this because regions countries like Japan also have "NTSC", but there are technical differences with both consoles and games. Therefore we call these systems "NTSC-J". NTSC-J Brawl discs or ISO files are not compatible with Project+ or recent Project M versions. **You can still play Project M and Project+ and all other Brawl mods on any system using __USB-Loading__.**
+NTSC-U/J, PAL and SECAM refer to technical details on how TV systems worked that were relevant back when the Wii was a current-gen console. Game publishers may have to engineer their games differently based on the video system in a given region. They might use different patches that make games incompatible with consoles from other regions.\
+In the context of Wii games, this means the region where you bought your console and game (Brawl).\
+You can easily find out which kind of Wii or game disc you have by looking at [this map on Wikipedia](https://upload.wikimedia.org/wikipedia/commons/0/0d/PAL-NTSC-SECAM.svg).\
+"SECAM" is the same as PAL for Wii games. "NTSC-U" basically means "NTSC USA", so North America and some parts of South America. We specify this because regions countries like Japan also have "NTSC", but there are technical differences with both consoles and games. Therefore we call these systems "NTSC-J". NTSC-J Brawl discs or ISO files are not compatible with Project+ or recent Project M versions. **You can still play Project M and Project+ and all other Brawl mods on any system using __USB-Loading__.**\
 However, the *hackless method* is only available when you have a NTSC-U console and disc.
 
 #### What was changed from Project M?
-Compared to vanilla 3.6, Project+ fixes bugs found in 3.6, adjusts characters, and is built on the Legacy TE 2.5 build which itself includes many new features and content.<br/>For a list of changes, you can find the most recent changelog [here](/changes).
+Compared to vanilla 3.6, Project+ fixes bugs found in 3.6, adjusts characters, and is built on the Legacy TE 2.5 build which itself includes many new features and content.\
+For a list of changes, you can find the most recent changelog [here](/changes).
 
 #### What characters are in Project+?
 Project+ includes the 41 characters of Project M 3.6 with the addition of [Knuckles](/knuckles) as the 42nd character.
@@ -58,27 +58,25 @@ It's not currently possible to use brawlbuilder or a similar tool to build a Pro
 You can legally create a backup of your Brawl disc by running cleanrip on a Wii: [https://wiibrew.org/wiki/CleanRip]
 
 #### How can I play Netplay when the traversal servers are down? / How can i play using direct IPs?
-[https://www.smashladder.com/guides/view/26jo/direct-ip-hosting]
+[Direct IP Hosting Guide](https://www.smashladder.com/guides/view/26jo/direct-ip-hosting)
 
 #### Where can I find information about Project+ with BrawlEx?
-P+Ex integrates the BrawlEx engine and CSS Expansion addon into Project+ to allow for an expanded roster of custom characters. For more information, check out this link:
-[https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8]
+P+Ex integrates the BrawlEx engine and CSS Expansion addon into Project+ to allow for an expanded roster of custom characters. For more information, check out [this document](https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8).
 
 #### How do I set up my controller?
-Controller Guide: [https://www.smashladder.com/guides/view/258h/how-to-configuring-a-controller]
+[Click here for the Controller Guide](https://www.smashladder.com/guides/view/258h/how-to-configuring-a-controller).
 
 #### How can I set up my Wii U GameCube Controller Adapter on a Mac?
-How to use the Wii U GameCube Controller Adapter on Mac:
-[https://wiki.dolphin-emu.org/index.php?title=How_to_use_the_Official_GameCube_Controller_Adapter_for_Wii_U_in_Dolphin#macOS]
+[How to use the Wii U GameCube Controller Adapter on Mac](https://wiki.dolphin-emu.org/index.php?title=How_to_use_the_Official_GameCube_Controller_Adapter_for_Wii_U_in_Dolphin#macOS).
 
 #### How can I set up Project+ on Linux?
-For help setting up Project+ on Linux, check out this post: [https://discordapp.com/channels/507298435347775514/566428216256888843/689731880622620692]
+For help setting up Project+ on Linux, [check out this post](https://discordapp.com/channels/507298435347775514/566428216256888843/689731880622620692) (Discord)
 
 #### Can I play Project+ on an M1 Mac (ARM)?
 Currently, there are no plans to support Project+ on ARM-based Mac devices.
 
 #### How do I know my Brawl ISO is compatible?
-Check MD5's by right-clicking on Brawl, select `Properties` navigate to the `Info` tab, and click on the `Compute` button located to the right of `MD5 Checksum`. (Screenshot: [https://i.imgur.com/xzye9my.png])<br/>
+Check MD5's by right-clicking on Brawl, select `Properties` navigate to the `Info` tab, and click on the `Compute` button located to the right of `MD5 Checksum`. ([Screenshot](https://i.imgur.com/xzye9my.png))\
 If your game is  not working, and the hash isn't listed here, it is probable that your ISO needs to be replaced. Compatible ISOs may include:
 * d18726e6dfdc8bdbdad540b561051087
 * d8560b021835c9234c28be7ff9bcaaeb
@@ -93,5 +91,5 @@ Recent Project+ versions are not compatible with ISO building.
 #### Can I play Project+ on Android or iOS?
 Short answer: Currently no.
 We don't know for sure if Project+ can be set up on iOS, but we think it's very unlikely.
-Regarding Android, current Project+ versions are probably not going to work. Here's [a guide for **old** versions](https://www.reddit.com/r/EmulationOnAndroid/comments/g39utj/how_to_run_project_and_other_brawl_mods_on/) that won't work with never ones.
-If you want to figure it out, go ahead and [let us know on our Discord](/discord).
+Regarding Android, there have been reports that current versions of P+ work. Here's [a guide for **old** versions](https://www.reddit.com/r/EmulationOnAndroid/comments/g39utj/how_to_run_project_and_other_brawl_mods_on/) that might not work with never versions.
+If you've figured out up-to-date instructions or have written a guide, go ahead and [let us know on our Discord](/discord).

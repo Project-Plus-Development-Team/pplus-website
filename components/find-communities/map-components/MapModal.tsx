@@ -76,7 +76,7 @@ export const MapModal = ({ region, onClose }: Props) => {
               <PlatformButton
                 text="Twitter"
                 icon="fab fa-twitter"
-                href={`https://twitter.com/${region.platforms.twitchName}`}
+                href={`https://twitter.com/${region.platforms.twitterHandle}`}
               />
             )}
           </Modal.Card.Body>

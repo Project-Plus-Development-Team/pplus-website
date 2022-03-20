@@ -51,10 +51,10 @@ const getYouTubeChannelUrl = (channelId: string, urlIsSlug: boolean) => {
   }
 
   if (urlIsSlug) {
-    return `https://youtube.com/channel/${channelId}`;
+    return `https://youtube.com/${channelId}`;
   }
 
-  return `https://youtube.com/${channelId}`;
+  return `https://youtube.com/channel/${channelId}`;
 };
 
 const getRegions = async (): Promise<Region[]> => {

@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "next dev",
-    "build": "npm run generate-imgs && next export && npm run generate-sitemap",
+    "build": "npm run generate-imgs && next build && next export && npm run generate-sitemap",
     "serve": "npm run build && serve ./out/",
     "start": "next start",
     "generate-sitemap": "node scripts/sitemap-generator.mjs",

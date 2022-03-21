@@ -54,7 +54,7 @@ Project+ seeks to bring the tiers suggested by the 3.6 meta closer together. In 
 It's not currently possible to use brawlbuilder or a similar tool to build a Project+ ISO. Certain codes that P+ uses are not compatible with ISO building.
 
 #### iso§How do I obtain a Brawl ISO file?
-You can legally create a backup of your Brawl disc by running [cleanrip on a Wii](https://wiibrew.org/wiki/CleanRip)
+You can legally create a backup of your Brawl disc by running [cleanrip on a Wii](https://wiibrew.org/wiki/CleanRip).
 
 #### netplay-direct-hosting§How can I play Netplay when the traversal servers are down? / How can i play using direct IPs?
 [Direct IP Hosting Guide](https://www.smashladder.com/guides/view/26jo/direct-ip-hosting)
@@ -69,7 +69,7 @@ P+Ex integrates the BrawlEx engine and CSS Expansion addon into Project+ to allo
 [How to use the Wii U GameCube Controller Adapter on Mac](https://wiki.dolphin-emu.org/index.php?title=How_to_use_the_Official_GameCube_Controller_Adapter_for_Wii_U_in_Dolphin#macOS).
 
 #### linux§How can I set up Project+ on Linux?
-To install Project+ on Linux, install [the appimage from here](https://github.com/jlambert360/FPM-AppImage/releases)
+To install Project+ on Linux, install [the appimage from here](https://github.com/jlambert360/FPM-AppImage/releases).
 
 #### m1-mac§Can I play Project+ on an M1 Mac (ARM)?
 Currently, there are no plans to support Project+ on ARM-based Mac devices.

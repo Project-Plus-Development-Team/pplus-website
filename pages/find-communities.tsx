@@ -18,7 +18,7 @@ export default function FindingCommunities({
       <NoSSR>
         <Map regions={regions}/>
       </NoSSR>
-      <Heading size={4} className="mt-3">Character communities (Discord)</Heading>
+      <Heading size={4} className="mt-3 mb-1">Character communities (Discord)</Heading>
       {/* for the CSS, there was an error about HTML differences between server and client - no idea why or what, so away the SSR goes */}
       <NoSSR>
         <CSSMain characterDiscordMap={characterDiscordMap}/>

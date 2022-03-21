@@ -54,7 +54,7 @@ Project+ seeks to bring the tiers suggested by the 3.6 meta closer together. In 
 It's not currently possible to use brawlbuilder or a similar tool to build a Project+ ISO. Certain codes that P+ uses are not compatible with ISO building.
 
 #### iso§How do I obtain a Brawl ISO file?
-You can legally create a backup of your Brawl disc by running cleanrip on a Wii: [https://wiibrew.org/wiki/CleanRip]
+You can legally create a backup of your Brawl disc by running [cleanrip on a Wii](https://wiibrew.org/wiki/CleanRip)
 
 #### netplay-direct-hosting§How can I play Netplay when the traversal servers are down? / How can i play using direct IPs?
 [Direct IP Hosting Guide](https://www.smashladder.com/guides/view/26jo/direct-ip-hosting)

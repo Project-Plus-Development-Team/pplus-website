@@ -1,5 +1,7 @@
 import { Button } from "react-bulma-components";
 
+import image from "~generated-images/smashgg-favicon.webp";
+
 interface Props {
   slug: string
   className?: string
@@ -19,7 +21,7 @@ export const SmashGGButton = ({
     target="_blank"
   >
     <img 
-      src="/images/smashgg-favicon.png"
+      src={image.src}
       className="mr-2"
       style={{
         width: 24,

@@ -4,7 +4,7 @@ import FAButton from "../components/FAButton";
 import { sortedVersions } from "../components/PageHeader/PageHeader";
 import { YouTubePlayer } from "../components/YouTubePlayer";
 import { useViewportWidth } from "../lib/use-viewport-width";
-import glowyFalco from "../public/images/falco-glowy.png";
+import glowyFalco from "../public/images/generated/falco-glowy.webp";
 
 import styles from "../styles/home.module.scss";
 
@@ -42,11 +42,7 @@ export default function Home() {
       <div className={styles.falco_wrapper}>
         <img
           src={glowyFalco.src}
-          style={{
-            width: 300,
-            height: 366
-          }}
-          alt="Glowy, translucent Falco"
+          alt="Glowing silhuette of Falco"
           className={styles.falco}
         />
       </div>
@@ -60,7 +56,7 @@ export default function Home() {
       </div>
 
       <div style={{gridArea: "text"}}>
-        <Heading>Project+ is...</Heading>
+        <Heading>Project+...</Heading>
         <Content>
           <ul className={styles.list}>
             <li>is a community driven patch for Project M</li>

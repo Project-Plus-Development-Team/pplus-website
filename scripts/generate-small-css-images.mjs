@@ -1,52 +1,25 @@
-import sharp from "sharp";
-import fs from "fs/promises";
-import path from "path";
+import { convertImages, convertSingleImage } from "../lib/generate-lib.mjs";
 
-const generatedDir = "./public/images/generated";
+await convertImages("characters", { resize: { height: 40 }});
 
-const sourceDir = "./image-source-files/css";
-const targetDir = path.join(generatedDir, "css");
+await convertImages("communities", {
+  quality: 50,
+  resize: { height: 34 }
+});
 
-const files = await fs.readdir(sourceDir);
+await convertImages("css", {
+  flop: true,
+  quality: 50,
+  resize: { width: 80, height: 80 }
+});
 
-// create directory if it doesn't exist
+await convertImages("icons", { resize: { height: 40 }});
+await convertImages("knuckles", { quality: 100 });
 
-try {
-  await fs.access(targetDir);
-} catch (error) {
-  if (error.code === "ENOENT") {
-    await fs.mkdir(generatedDir);
-    await fs.mkdir(targetDir);
-  } else {
-    throw error;
-  }
-}
-
-// generate files
-
-for (const file of files) {
-  const withoutExt = path.parse(file).name;
-
-  const sourceFile = path.join(sourceDir, file);
-  const targetFile = path.join(targetDir, withoutExt + ".webp");
-
-  console.log(targetFile);
-
-  await sharp(sourceFile)
-    .resize({ width: 80, height: 80 })
-    .flop()
-    .webp({ quality: 50 })
-    .toFile(targetFile);
-}
-
-// remove everything in the directory that wasn't just generated
-
-const containedFiles = await fs.readdir(targetDir);
-const generatedFiles = files.map(file => path.parse(file).name + ".webp");
-const deprecatedFiles = containedFiles.filter(file => !generatedFiles.includes(file));
-
-for (const file of deprecatedFiles) {
-  const targetFile = path.join(targetDir, file);
-  await fs.unlink(targetFile);
-  console.log("Deleted", targetFile);
-}
+await convertSingleImage("background.jpeg");
+await convertSingleImage("background-banner.png");
+await convertSingleImage("falco-glowy.png", { resize: { height: 366 }});
+await convertSingleImage("logo.png");
+await convertSingleImage("mosaic-background-pattern.jpg", { quality: 100 });
+await convertSingleImage("smashgg-favicon.png");
+await convertSingleImage("favicon.png");

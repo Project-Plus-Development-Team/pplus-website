@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { Navbar } from "react-bulma-components";
 
-import logo from "../../public/images/logo.png";
+import logo from "../../public/images/generated/logo.webp";
 
 interface BrandProps {
   isNavbarActive: boolean

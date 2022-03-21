@@ -14,10 +14,14 @@ const FAButton = forwardRef<RenderAsComponent, Props>(({ icon, children: title, 
       title
     ) : (
       <>
-        <Icon>
+        <Icon style={{
+          margin: title === undefined ? "0" : ""
+        }}>
           <span className={icon}/>
         </Icon>
-        <span>{title}</span>
+        {title !== undefined && (
+          <span>{title}</span>
+        )}
       </>
     )}
   </Button>

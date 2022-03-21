@@ -2,11 +2,12 @@ import { MouseEventHandler } from "react";
 import { CSSButton } from "./CSSButton";
 
 import styles from "../css.module.scss";
+import { CSSEntry } from "types/find-communities-data";
 
 export const CSSRow = ({
   row, characterDiscordMap, randomHandler
 }: {
-  row: any[], characterDiscordMap: Record<string, string>
+  row: CSSEntry[], characterDiscordMap: Record<string, string>
   randomHandler: MouseEventHandler
 }) => (
   <div className={styles.row}>

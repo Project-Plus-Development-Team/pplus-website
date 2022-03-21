@@ -13,7 +13,8 @@
 # env files
 /.env.local
 
-# ignore generated public files
-/public/images/generated
+# ignore generated files
+generated/
+
 # Local Netlify folder
 .netlify

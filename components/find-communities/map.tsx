@@ -26,13 +26,15 @@ export const Map = ({ regions }: Props) => {
   const setModal = (region: Region|null) => {
     setModalContent(region);
     const hash = region?.name ? `#${region.name}` : "";
-    router.push(router.pathname + hash);
+    router.push(router.pathname + hash, undefined, {
+      scroll: false
+    });
   };
 
   useEffect(() => {
     if (router.isReady) {
       const regionName = router.asPath.match(/#(.*)/);
-      console.log(regionName);
+      console.log("regionName:", regionName);
 
       if (regionName !== null) {
         const decoded = decodeURI(regionName[1]);
@@ -50,30 +52,24 @@ export const Map = ({ regions }: Props) => {
   const viewportWidth = useViewportWidth();
   const isDesktop = viewportWidth > 1000;
 
-  // This disables SSR because SSR + responsive SVG map = some marker offset crap
-  // Also can't be put at the top of the component because https://reactjs.org/docs/hooks-rules.html
-  if (typeof window === "undefined") {
-    return null;
-  }
-
   return (
-    <div
-      style={{
-        position: "relative",
-        backgroundColor: "#040404",
-        borderRadius: "0.5em",
-        overflow: "hidden"
-      }}
-    >
+    <div className={isDesktop ? "" : "pr-4"}>
       <MapModal
         region={modalContent}
         onClose={() => setModal(null)}
       />
       <ComposableMap
-        height={isDesktop ? 300 : 600}
+        height={isDesktop ? 300 : 800}
         projection="geoMercator"
         projectionConfig={{
           scale: 100
+        }}
+        style={{
+          position: "relative",
+          backgroundColor: "#040404",
+          borderRadius: "0.5em",
+          overflow: "hidden",
+          border: ".3em solid #29717c"
         }}
       >
         <ZoomableGroup

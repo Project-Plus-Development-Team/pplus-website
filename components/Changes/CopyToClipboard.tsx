@@ -1,4 +1,3 @@
-import React from "react";
 import useClipboard from "react-use-clipboard";
 import { Icon } from "react-bulma-components";
 

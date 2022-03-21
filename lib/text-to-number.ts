@@ -1,5 +1,5 @@
 export const textToNumber = (text: string) => {
-  const encoded = btoa(text);
+  const encoded = btoa(encodeURIComponent(text));
   
   let sum = 0;
   for (let i = 0; i < encoded.length; i++) {

@@ -38,6 +38,7 @@ export interface RawRegion {
 export interface CSSEntry {
   name: string
   img: string
+  isRandom?: boolean
 }
 
 export type CSSData = CSSEntry[][]

@@ -18,7 +18,7 @@ export async function getSortedVersions() {
     .sort(); // sort versions ascending, important for the /changes/ path (version omitted)
 }
 
-const imagesFolder = path.join(process.cwd(), "public/images");
+const generatedImagesFolder = path.join(process.cwd(), "public/images/generated");
 
 // we validate that the images exist because not doing that may cause very confusing / cryptic error
 // messages when sharp.js (used by responsive-loader for resizing) can't read the image
@@ -27,10 +27,10 @@ async function validateImagesExist(changesJSON: VersionData) {
     const mappedIcon: string|undefined = iconMap[name];
 
     const relativeImagePath = mappedIcon ?
-      `icons/${mappedIcon}.png` :
-      `characters/${whitespacesToHyphens(name)}.png`;
+      `icons/${mappedIcon}.webp` :
+      `characters/${whitespacesToHyphens(name)}.webp`;
 
-    const absoluteImagePath = path.join(imagesFolder, relativeImagePath);
+    const absoluteImagePath = path.join(generatedImagesFolder, relativeImagePath);
 
     try {
       await fs.access(absoluteImagePath);

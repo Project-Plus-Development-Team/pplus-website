@@ -1,15 +1,8 @@
 import FAButton from "../FAButton";
 
 import styles from "./General.module.scss";
-
-import pplusLogo from "../../public/favicon.png";
-import brawlbackLogo from "../../public/logos/brawlback.png";
-import pmnexusLogo from "../../public/logos/pm-nexus-x-white.png";
-import smashcordsLogo from "../../public/logos/smashcords.png";
-import beginnerLogo from "../../public/logos/beginner-pm-pplus.webp";
-import projectmLogo from "../../public/logos/project-m.png";
-import smashladderLogo from "../../public/logos/smashladder.png";
-import brawlmoddingLogo from "../../public/logos/custom-brawl-modding.png";
+import images from "~capsules/communities";
+import pplusLogo from "~generated-images/favicon.webp";
 
 interface Props {
   logo: {
@@ -41,12 +34,13 @@ const Button = ({ logo, text, url }: Props) => (
 export const General = () => (
   <div className={styles.general}>
     <Button text="Project+ Discord" url="https://discord.gg/vdssRDg" logo={pplusLogo}/>
-    <Button text="Project M Nexus Discord" url="https://discord.gg/sz7JDpR" logo={pmnexusLogo}/>
-    <Button text="SmashCords Website" url="https://smashcords.com/brawl" logo={smashcordsLogo}/>
-    <Button text="Project M General Discord" url="https://discord.gg/0P4bR7bAyAZciLYM" logo={projectmLogo}/>
-    <Button text="Beginner PM &amp; P+ Discord" url="https://discord.gg/nKzgmbfXM4" logo={beginnerLogo}/>
-    <Button text="SmashLadder Website" url="https://smashladder.com/netplay" logo={smashladderLogo}/>
-    <Button text="Brawl Modding Discord" url="https://discord.gg/GbxJhbv" logo={brawlmoddingLogo}/>
-    <Button text="Brawlback Discord" url="https://discord.gg/dzYRN32k4D" logo={brawlbackLogo}/>
+    <Button text="Project M Nexus Discord" url="https://discord.gg/sz7JDpR" logo={images["pm-nexus-x-white"]}/>
+    <Button text="SmashCords Website" url="https://smashcords.com/brawl" logo={images.smashcords}/>
+    <Button text="Project M General Discord" url="https://discord.gg/0P4bR7bAyAZciLYM" logo={images["project-m"]}/>
+    <Button text="Beginner PM &amp; P+ Discord" url="https://discord.gg/nKzgmbfXM4" logo={images["beginner-pm-pplus"]}/>
+    <Button text="SmashLadder Website" url="https://smashladder.com/netplay" logo={images.smashladder}/>
+    <Button text="Brawl Modding Discord" url="https://discord.gg/GbxJhbv" logo={images["custom-brawl-modding"]}/>
+    <Button text="Brawlback Discord" url="https://discord.gg/dzYRN32k4D" logo={images.brawlback}/>
+    <Button text="Cosmetic Standardization Project" url="https://discord.gg/hQnPXfc" logo={images["cosmetic-standardization-project"]}/>
   </div>
 );

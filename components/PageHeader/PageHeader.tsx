@@ -11,6 +11,8 @@ import styles from "./PageHeader.module.scss";
 // This only affects the PageHeader, nothing else.
 export const sortedVersions = [ "2.0", "2.11", "2.15", "2.2", "2.26", "2.28", "2.29" ];
 
+import backgroundBanner from "../../image-source-files/background-banner.png"; // TODO compressed version? looks odd
+
 export default function PageHeader() {
   const { pathname } = useRouter();
   const latestVersion = sortedVersions[sortedVersions.length - 1];
@@ -30,7 +32,7 @@ export default function PageHeader() {
     <Container renderAs="header">
       <Navbar color="dark" className={styles.navbar} active={isActive}
         style={{
-          background: `${backgroundGradient}, url(/images/background-banner.png) !important`,
+          background: `${backgroundGradient}, url(${backgroundBanner.src}) !important`,
           backgroundBlendMode: "color"
         }}
       >

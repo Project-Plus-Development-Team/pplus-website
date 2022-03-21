@@ -17,7 +17,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "incremental": true,
+    "baseUrl": "./",
+    "paths": {
+      "~capsules/*": ["./data/generated/capsules/*"],
+      "~generated-images/*": ["./public/images/generated/*"]
+    }
   },
   "include": [
     "next-env.d.ts",

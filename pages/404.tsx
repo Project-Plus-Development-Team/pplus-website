@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Heading, Columns } from "react-bulma-components";
 
-import woah from "../public/images/knuckles/woah.png";
+import woah from "../public/images/generated/knuckles/woah.webp";
 
 export default function FourOhFour() {
   return (
@@ -21,10 +21,6 @@ export default function FourOhFour() {
         <Columns.Column className="has-text-centered">
           <img
             src={woah.src}
-            style={{
-              width: 600,
-              height: 384
-            }}
             alt="Knuckles with a surprised 'woah!' expression"
           />
         </Columns.Column>

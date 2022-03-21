@@ -1,15 +1,18 @@
-// Function says: This is an SCSS file, which is like SASS, but has "{}" and ";" so it's more like advanced CSS
-// This style file is the global stylesheet and gets converted to CSS by Next.js.
-// It should only contain styles that are global for the entire site and can't be added to components directly (using <style jsx></style>)
-
 html {
   height: 100%;
   overflow-y: initial;
   overscroll-behavior: auto contain; // is supposed to fix ugly overscroll white backgrounds, but i don't know browsers where i could see this fixed
+  display: flex;
+  flex-direction: column;
 }
 
 body, .subtitle {
   color: hsla(0,0%,100%,0.9);
+}
+
+body {
+  flex: 1;
+  background-image: url(../public/images/generated/mosaic-background-pattern.webp);
 }
 
 #__next {

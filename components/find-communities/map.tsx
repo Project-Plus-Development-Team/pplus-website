@@ -81,6 +81,12 @@ export const Map = ({ regions }: Props) => {
           <WorldMap/>
           {regions
             .filter(region => region.coordinates !== null)
+            .sort((a, b) => { // render low threshold markers last
+              if (b.showThreshold < a.showThreshold) {
+                return -1;
+              }
+              return 0;
+            })
             .map(region => (
               <RegionComponent
                 key={region.name}

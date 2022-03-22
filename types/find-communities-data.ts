@@ -12,7 +12,7 @@ export interface Platforms {
   website: string
 }
 
-export type Threshold = "low" | "middle" | "high" | "show-always"
+export type Threshold =  "show-always" | "low" | "middle" | "high" | "very-high"
 
 export interface Region {
   name: string

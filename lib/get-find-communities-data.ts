@@ -38,11 +38,13 @@ const convertSheetToObjects = <T extends {}>(
 
 const mapShowThreshold = (thresholdText: Threshold) => {
   switch (thresholdText) {
-    case "show-always": return 0;
+    case "very-high": return 40;
     case "high": return 8;
     case "middle": return 5;
     case "low": return 3;
   }
+
+  return 0;
 };
 
 const getYouTubeChannelUrl = (channelId: string, urlIsSlug: boolean) => {

@@ -50,7 +50,7 @@ const mapShowThreshold = (thresholdText: string) => {
     case "show-always": return 0;
   }
 
-  throw new Error("Unknown threshold type");
+  return 0;
 };
 
 const getYouTubeChannelUrl = (channelId: string, urlIsSlug: boolean) => {

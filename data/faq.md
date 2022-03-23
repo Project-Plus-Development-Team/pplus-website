@@ -1,20 +1,20 @@
 # Frequently Asked Questions
 
-#### name§Why is the name "Project+" and not "Project M 4.0"?
-Project+ is not an official continuation of Project M. Project M is the work of the PMDT which disbanded in 2015. Project+ does not attempt to produce suggested plans for PM 4.0 and does not use any unreleased assets unless given permission by the original creators.
+#### [Why is the name "Project+" and not "Project M 4.0"?](#name)
+Project+ is not an official continuation of Project M. Project M is the work of the PMDT which disbanded in 2015. Project+ does not attempt to produce suggested plans for Project M 4.0 and does not use any unreleased assets unless given permission by the original creators.
 
 #### played-at-my-tournament§Is Project+ or Project M played at my local tournaments?
-It's up to tournament organisers to decide which version to play and which rules they use (e.g. Auto-L-Cancelling).
+It's up to tournament organizers to decide which version to play and which rules they use (e.g. Auto L-Cancelling).
 Some regions play primarily the latest version of Project+, while others play the latest official version of Project M (3.6).
 Communities typically use the same Discord server for both games, so you're welcome to use our [community map](/find-communities) to get started.
 
-#### future-versions§Will there be future versions of P+?
+#### future-versions§Will there be future versions of Project+?
 Any future release will mostly feature improved aesthetics and bug fixes.
 
 #### releases§Is there a Netplay / Hackless / Homebrew / USB Loading release?
 Yes, you can download them [here](/download).
 
-#### requirements§What do I need to play P+?
+#### requirements§What do I need to play Project+?
 It depends on the method you will be using. For the hackless method ([NTSC-U](#video-systems-pal-ntsc)), you will need a Wii, an SD card that has a capacity of 2GB or less and a Super Smash Bros. Brawl disc. For Dolphin/Netplay, you will need a computer and a NTSC-U Brawl ISO.
 
 #### ntsc-pal§What does NTSC-U and PAL mean?
@@ -32,35 +32,34 @@ For a list of changes, you can find the most recent changelog [here](/changes).
 Project+ includes the 41 characters of Project M 3.6 with the addition of [Knuckles](/knuckles) as the 42nd character.
 There are no plans for additional characters.
 
-#### new-characters§Does P+ have new characters in addition to Knuckles?
+#### new-characters§Does Project+ have new characters in addition to Knuckles?
 No new characters are planned to appear outside of Knuckles.
 
-#### rollback§Does P+ have rollback?
+#### rollback§Does Project+ have rollback?
 The Project+ team is not currently working on rollback due to a variety of reasons, the most prominent of which being the high amount of effort required to implement entirely new netcode.
 
 #### new-content§Are there any new stages, costumes, or music?
-Project+ includes 15 new stages, multiple new costumes, and a plethora of new music, on top of the many additions to Project M from the Legacy TE team.
+Project+ includes 17 new stages, multiple new costumes, and a plethora of new music, on top of the many additions to Project M from the Legacy TE team.
 
-#### tilt-stick§Is tilt stick (attack on C-stick) fixed in P+?
+#### tilt-stick§Is tilt stick (attack on C-stick) fixed in Project+?
 Tilt stick when you assign the C-stick to "Attack" in the custom controls. In Project M, this setting didn't behave as expected and only worked properly for unangled F-tilt. Tilt stick is fixed in Project+ and works as expected (similar to Smash Ultimate) which affects gameplay balance because certain manuveurs are only possible with tilt stick, which buffs some characters.
 
-#### l-cancelling§Does P+ have L-cancelling?
-Yes, however, "Auto L-Cancel" can be toggled on from the match settings to effectively remove the need to L-cancel. With this setting enabled players can still L-cancel as they used to, but missing an L-cancel with not increase landing lag. In tournaments it's up to tournament organizers to determine if their tournament will run with "Auto L-Cancel" toggled on or off. Check the rules of a tournament you are interested in attending to see whether Auto L-Cancel will be toggled on or not.
-
-#### nerf-buff§Why did you nerf/buff *insert character name*?
-Project+ seeks to bring the tiers suggested by the 3.6 meta closer together. In order to accomplish that, some characters have received buffs while others have received nerfs; however, no character is being forced into the high or low tiers. The P+ council anticipates that most characters will stay approximately close to their position in the Project M meta, but the apparent high tiers characters have been nerfed to bring them closer to the rest of the competition, and the apparent low tier characters have been given better tools to help their viability in the meta. In concurrence to balance, the P+ team recognizes that certain aspects of certain characters can be frustrating to play against and has made an intention to alleviate such frustrations while trying to preserve the appeal these aspects had to the players using these characters.
+#### l-cancelling§Does Project+ have L-Cancelling?
+Yes. L-Cancelling is a technique from earlier Smash games and Project M where pressing a shield input before landing during an aerial attack reduces the landing lag. In Project+ you can L-Cancel within 7 frames of landing to reduce the landing lag by half.\
+However, "Auto L-Cancel" can be toggled on from the match settings to automatically reduce the landing lag of aerials without the need to perform an L-Cancel. In tournaments it's up to tournament organizers to determine if their tournament will run with "Auto L-Cancel" toggled on or off.\
+Auto L-Cancel is great for new or casual players or when you want a consistently fast gameplay experience. It also makes the game a bit less stressful on the hands which can be an accessibility factor.
 
 #### build-iso§Can I build an ISO with Project+ / Can I use *BrawlBuilder* with Project+?
-It's not currently possible to use brawlbuilder or a similar tool to build a Project+ ISO. Certain codes that P+ uses are not compatible with ISO building.
+It's not currently possible to use brawlbuilder or a similar tool to build a Project+ ISO. Certain codes that Project+ uses are not compatible with ISO building.
 
 #### iso§How do I obtain a Brawl ISO file?
-You can legally create a backup of your Brawl disc by running [cleanrip on a Wii](https://wiibrew.org/wiki/CleanRip).
+You can legally create a backup of your Brawl disc by running [CleanRip on a Wii](https://wiibrew.org/wiki/CleanRip).
 
 #### netplay-direct-hosting§How can I play Netplay when the traversal servers are down? / How can i play using direct IPs?
 [Direct IP Hosting Guide](https://www.smashladder.com/guides/view/26jo/direct-ip-hosting)
 
-#### pplus-with-brawlex§Where can I find information about Project+ with BrawlEx?
-P+Ex integrates the BrawlEx engine and CSS Expansion addon into Project+ to allow for an expanded roster of custom characters. For more information, check out [this document](https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8).
+#### adding-characters-brawlex§Can i add new characters to Project+? Does BrawlEx work with Project+?
+*"P+Ex"* integrates the BrawlEx engine and CSS Expansion addon into Project+ to allow for an expanded roster of custom characters. For more information, check out [this document](https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8).
 
 #### setup-controller§How do I set up my controller?
 [Click here for the Controller Guide](https://www.smashladder.com/guides/view/258h/how-to-configuring-a-controller).
@@ -87,5 +86,5 @@ If your game is  not working, and the hash isn't listed here, it is probable tha
 #### android-ios§Can I play Project+ on Android or iOS?
 Short answer: Currently no.
 We don't know for sure if Project+ can be set up on iOS, but we think it's very unlikely.
-Regarding Android, there have been reports that current versions of P+ work. Here's [a guide for **old** versions](https://www.reddit.com/r/EmulationOnAndroid/comments/g39utj/how_to_run_project_and_other_brawl_mods_on/) that might not work with never versions.
+Regarding Android, there have been reports that current versions of Project+ work. Here's [a guide for **old** versions](https://www.reddit.com/r/EmulationOnAndroid/comments/g39utj/how_to_run_project_and_other_brawl_mods_on/) that might not work with newer versions.
 If you've figured out up-to-date instructions or have written a guide, go ahead and [let us know on our Discord](/discord).

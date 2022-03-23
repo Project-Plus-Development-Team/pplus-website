@@ -12,18 +12,20 @@ export interface Platforms {
   website: string
 }
 
-export type Threshold = "low" | "middle" | "high" | "show-always"
+export type Threshold = "show-always" | "low" | "middle" | "high" | "very-high"
 
 export interface Region {
   name: string
+  subtitle: string
   showThreshold: number
-  coordinates: Coordinates | null // TODO should not be null later
+  coordinates: Coordinates
   platforms: Partial<Platforms>
 }
 
 export interface RawRegion {
   name: string
-  showThreshold: Threshold | ""
+  subtitle: string
+  showThreshold: Threshold
   latitude: string
   longitude: string
   discordInviteId: string

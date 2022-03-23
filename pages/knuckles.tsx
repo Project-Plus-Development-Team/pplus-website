@@ -26,7 +26,7 @@ function InfoElement({ title, img, children, reverse, color }: InfoElementProps)
       className={`info-element ${reverseClass}`}
       style={{ backgroundColor: color }}
     >
-      <img src={src}/>
+      <img src={src} loading="lazy" alt="Knuckles performing a move or attack"/>
       <div className="is-align-self-center" style={{ minWidth: 200 }}>
         <Heading subtitle weight="light" size={3}>{title.toUpperCase()}</Heading>
         <p>{children}</p>
@@ -39,7 +39,11 @@ export default function Knuckles() {
   return (
     <>
       <Head>
-        <title>Knuckles</title>
+        <title>Knuckles - new in Project+!</title>
+        <meta
+          name="description"
+          content="Learn about the new character Knuckles in Project+ and his moves and abilities!"
+        />
       </Head>
       <Heading>Knuckles</Heading>
 
@@ -49,6 +53,7 @@ export default function Knuckles() {
             src={images.glowy.src}
             className="bind-inner"
             alt="Knuckles with a glow"
+            loading="lazy"
           />
         </Columns.Column>
 

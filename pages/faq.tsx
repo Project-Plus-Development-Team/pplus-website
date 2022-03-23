@@ -2,13 +2,14 @@
 
 import Head from "next/head";
 import { Content } from "react-bulma-components";
-import ReactMarkdown from "react-markdown";
 import { promises as fs } from "fs";
 import path from "path";
 import { GetStaticProps } from "next";
 import CopyToClipboard from "../components/Changes/CopyToClipboard";
 import { useCallback, useEffect, useState } from "react";
 import { useHash } from "../hooks/use-hash";
+import { MarkdownRenderer, parseMarkdown } from "lib/parse-markdown";
+import { toString } from "mdast-util-to-string";
 
 const HeadingWithAnchor = ({ children, siteUrl, hash }) => {
   const hasAnchor = children[0].includes("§");
@@ -37,7 +38,13 @@ const HeadingWithAnchor = ({ children, siteUrl, hash }) => {
   );
 };
 
-export default function FAQ({ markdown, siteUrl }) {
+interface Props {
+  markdownAst: any
+  siteUrl: string
+  jsonLD: string
+}
+
+export default function FAQ({ markdownAst, siteUrl, jsonLD }: Props) {
   const hash = useHash();
 
   // useCallback to pass the siteUrl
@@ -51,16 +58,20 @@ export default function FAQ({ markdown, siteUrl }) {
     <>
       <Head>
         <title>F.A.Q.</title>
+        <script type="application/ld+json">
+          {jsonLD}
+        </script>
       </Head>
       <Content>
-        <ReactMarkdown
+        {/* <ReactMarkdown
           className="line-break"
           components={{
             h4: HeadingWithAnchorWithSiteUrl
           }}
         >
           {markdown}
-        </ReactMarkdown>
+        </ReactMarkdown> */}
+        {/* <MarkdownRenderer>{markdownAst}</MarkdownRenderer> */}
       </Content>
       <style global jsx>{`
         .content h1 {
@@ -95,14 +106,44 @@ export default function FAQ({ markdown, siteUrl }) {
   );
 }
 
-export const getStaticProps: GetStaticProps = async () => {
+const mdastNodeToString = (node: unknown) => (
+  toString(node, { includeImageAlt: true })
+);
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
   const markdownPath = path.join(process.cwd(), "data/faq.md");
   const markdown = await fs.readFile(markdownPath, "utf-8");
+  const markdownAst = parseMarkdown(markdown);
 
   return {
     props: {
-      markdown,
-      siteUrl: process.env.URL
+      markdownAst,
+      siteUrl: process.env.URL,
+      jsonLD: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": markdownAst.children.reduce((prev, child, index) => {
+          if (child.type !== "heading" || child.depth !== 4) {
+            return prev;
+          }
+
+          const restOfChildren = markdownAst.children.slice(index + 1);
+          const nextHeadingIndex = restOfChildren.findIndex(c => c.type === "heading");
+          const childrenUntilNextHeading = restOfChildren.slice(0, nextHeadingIndex);
+
+          return [
+            ...prev,
+            {
+              "@type": "Question",
+              "name": mdastNodeToString(child),
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": childrenUntilNextHeading.map(mdastNodeToString).join("")
+              }
+            }
+          ];
+        }, [])
+      })
     }
   };
 };

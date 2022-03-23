@@ -1,5 +1,6 @@
 import { NoSSR } from "components/NoSSR";
 import { GetStaticPropsResult } from "next";
+import Head from "next/head";
 import { Heading } from "react-bulma-components";
 import { CSSMain } from "../components/find-communities/CSSMain";
 import { General } from "../components/find-communities/general";
@@ -11,6 +12,10 @@ export default function FindingCommunities({
 }: FindCommunitiesData) {
   return (
     <>
+      <Head>
+        <title>Find Communities</title>
+        <meta name="description" content="Find Discords for all Project+ characters, regional Discords, Facebook Groups, Twitch and YouTube Channels, Twitter accounts, and more."/>
+      </Head>
       <Heading size={4}>General communities</Heading>
       <General/>
       <Heading size={4} className="mt-3">Find your community on the map</Heading>

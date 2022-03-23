@@ -15,11 +15,7 @@ interface Props {
   regions: Region[]
 }
 
-export const Map = ({ regions }: Props) => {
-  const initialZoom = 1;
-  const [zoom, setZoom] = useState(initialZoom);
-  const dynamicScalingFactor = 5 / (zoom + 4);
-
+const useModal = (regions: Region[]) => {
   const [modalContent, setModalContent] = useState<Region|null>(null);
   const router = useRouter();
 
@@ -49,6 +45,14 @@ export const Map = ({ regions }: Props) => {
     }
   }, []);
 
+  return { modalContent, setModal };
+};
+
+export const Map = ({ regions }: Props) => {
+  const initialZoom = 1;
+  const [zoom, setZoom] = useState(initialZoom);
+  const dynamicScalingFactor = 5 / (zoom + 4);
+  const { modalContent, setModal } = useModal(regions);
   const viewportWidth = useViewportWidth();
   const isDesktop = viewportWidth > 1000;
 

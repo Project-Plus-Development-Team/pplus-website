@@ -14,6 +14,7 @@
     "bulmaswatch": "^0.8.1",
     "jsonschema": "^1.4.0",
     "lite-youtube-embed": "^0.2.0",
+    "mdast-util-to-string": "^3.1.0",
     "netlify-plugin-cache-nextjs": "^1.6.1",
     "netlify-redirect-parser": "^13.0.5",
     "next": "^12.1.0",

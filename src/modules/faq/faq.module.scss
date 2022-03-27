@@ -1,0 +1,33 @@
+.content {
+  padding: 0.5rem;
+
+  ul * {
+    word-break: break-all;
+  }
+
+  h1: {
+    padding: 0 0.8rem;
+  }
+
+  h4 {
+    --overpadding: 1.5rem;
+
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: calc(var(--overpadding) * -1);
+    margin-right: calc(var(--overpadding) * -1);
+    padding: 0.5rem var(--overpadding);
+    display: flex;
+    align-items: center;
+    background-color: hsl(0, 0%, 15%);
+
+    @media (min-width: 1024px) {
+      --overpadding: 0.7rem;
+      border-radius: 0.2em;
+    }
+
+    &.highlighted {
+      background-color: #0a8354;
+    }
+  }
+}

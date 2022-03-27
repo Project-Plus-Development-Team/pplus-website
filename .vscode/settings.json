@@ -1,16 +1,19 @@
 {
-  "json.schemas": [ // These settings make VSCode use custom schemas for the JSON files in /data/
+  "json.schemas": [
     {
       "fileMatch": [
-        "/data/changes/*.json"
+        "/src/modules/changes/data/*.json"
       ],
-      "url": "./types/changesSchema.json"
+      "url": "./src/modules/changes/changesSchema.json"
     },
     {
       "fileMatch": [
-        "/data/download.json"
+        "/src/modules/download/download.json"
       ],
-      "url": "./types/downloadSchema.json"
+      "url": "./src/modules/download/downloadSchema.json"
     }
-  ]
+  ],
+  "typescript.format.semicolons": "insert",
+  "javascript.format.semicolons": "insert",
+  "typescript.tsserver.experimental.enableProjectDiagnostics": true
 }

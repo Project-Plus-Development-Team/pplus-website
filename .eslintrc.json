@@ -3,5 +3,13 @@
   "env": { "browser": true },
   "rules": {
     "semi": ["error", "always"]
-  }
+  },
+  "overrides": [
+    {
+      "files": "*.tsx",
+      "rules": {
+        "no-undef": ["off"]
+      }
+    }
+  ]
 }

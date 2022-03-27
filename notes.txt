@@ -1,0 +1,6 @@
+useScrollToHook or something in /changes
+      setTimeout(() => {
+        window.scrollTo({
+          top: scrollToRef.current?.offsetTop
+        });
+      }, 300); // hacky :( but will be called 2x and jump back to top otherwise

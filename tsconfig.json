@@ -8,7 +8,7 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
-    "strict": false,
+    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -18,10 +18,10 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./",
+    "baseUrl": "./src",
     "paths": {
-      "~capsules/*": ["./data/generated/capsules/*"],
-      "~generated-images/*": ["./public/images/generated/*"]
+      "~capsules/*": ["./generated/capsules/*"],
+      "~generated-images/*": ["../public/images/generated/*"]
     }
   },
   "include": [

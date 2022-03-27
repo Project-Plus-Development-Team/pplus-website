@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Streamster;
+  src: url(/q9283rw8fg/Streamster.ttf);
+}
+
+body {
+  background-image: url(/images/generated/q9283rw8fg/vaporwave-wallpaper.webp);
+  animation:
+    wiggle-background 60s ease-in-out infinite,
+    zoomle-background 37s ease-in-out infinite;
+  background-attachment: fixed;
+}
+
+.css-main a {
+  background-image: var(--meta);
+  background-size: contain;
+  background-position: center;
+  border: calc(var(--width) * 0.05) solid hsla(200, 100%, 50%, 0.5);
+}
+
+.css-main img {
+  display: none;
+}
+
+@keyframes zoomle-background {
+  0% {
+    background-size: max(150vh, 150vw);
+  }
+  40% {
+    background-size: max(155vh, 155vw);
+  }
+  80% {
+    background-size: max(145vh, 145vw);
+  }
+  100% {
+    background-size: max(150vh, 150vw);
+  }
+}
+
+@keyframes wiggle-background {
+  0% {
+    background-position: calc(50%) calc(50%);
+  }
+  20% {
+    background-position: calc(50% - 10px) calc(50% - 5px);
+  }
+  40% {
+    background-position: calc(50% + 12px) calc(50% + 6px);
+  }
+  60% {
+    background-position: calc(50% - 0px) calc(50% + 15px);
+  }
+  80% {
+    background-position: calc(50% - 12px) calc(50% - 20px);
+  }
+  100% {
+    background-position: calc(50%) calc(50%);
+  }
+}
+
+:root {
+  font-size: 0.9rem;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.title {
+  font-family: Streamster !important;
+  font-style: normal;
+  font-size: 3em;
+  line-height: 1.5em;
+  padding-left: .5em;
+  letter-spacing: .1em;
+  background-image: linear-gradient(rgb(135, 9, 207), #bbb 40%, white 45% , rgb(99, 99, 99) 60%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  filter: drop-shadow(-1px 1px 0 white);
+}
+
+.box {
+  background: transparent;
+  border: 0.3em solid slateblue;
+}
+
+.title::after {
+  content: "リサフランク";
+  color: white;
+  font-style: italic;
+  font-size: 0.5em;
+  margin-left: 2em;
+}
+
+.title::before {
+  top: 25%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  height: 50%;
+  background-color: hsla(200, 100%, 50%, 0.1);
+  mix-blend-mode: screen;
+}
+
+.navbar-item img {
+  background-image: url(/images/generated/q9283rw8fg/project-wave-logo.webp);
+  background-size: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-left: 200px;
+  width: 200px;
+  animation: logo-spin 3s ease-out;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotateX(0turn);
+  }
+  to {
+    transform: rotateX(3turn);
+  }
+}
+
+
+.navbar {
+  background-image:
+    linear-gradient(70deg, #ad66ff, #0099ff , #00b8be, #ff33c2, #ad66ff) !important;
+  animation: rainbow_animation 30s linear infinite !important;
+  --anim-size: 400%;
+  background-size: var(--anim-size) !important;
+}
+
+@keyframes rainbow_animation {
+  0% {
+      background-position: 0 0;
+  }
+
+  100% {
+      background-position: var(--anim-size) 0;
+  }
+}
+
+main * {
+  letter-spacing: .3em;
+  text-transform: lowercase;
+}
+
+.content ul * {
+  letter-spacing: normal;
+}
+
+main.container img {
+  filter: hue-rotate(-0.2turn);
+}
+
+@keyframes hue-rotate {
+  0% {
+    filter: saturate(0.8) hue-rotate(0turn);
+  }
+
+  50% {
+    filter: saturate(0.8) hue-rotate(1turn);
+  }
+}
+
+main {
+  border: .3rem solid rgb(230, 29, 196) !important;
+  animation: shimmer 0.001s ease infinite;
+  backdrop-filter: blur(1px);
+}
+
+@keyframes shimmer {
+  to {
+    background-color: hsla(300, 50%, 5%, 89.5%);
+  }
+}

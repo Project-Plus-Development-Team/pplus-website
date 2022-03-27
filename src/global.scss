@@ -1,0 +1,169 @@
+@import "./custom-bulma.scss";
+
+html {
+  height: 100%;
+  overflow-y: initial;
+  overscroll-behavior: auto contain; // is supposed to fix ugly overscroll white backgrounds, but i don't know browsers where i could see this fixed
+  display: flex;
+  flex-direction: column;
+}
+
+body, .subtitle {
+  color: hsla(0,0%,100%,0.9);
+}
+
+body {
+  flex: 1;
+  background-image: url(../public/images/generated/mosaic-background-pattern.webp);
+}
+
+#__next {
+  > .container:not(header) {
+    background: hsla(0, 0%, 5%, 90%);
+    border-radius: 0.5rem;
+    border: 2px solid hsl(0, 0%, 20%);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    
+    @media screen and (max-width: 1023px) {
+      &:last-child {
+        margin-bottom: 0;
+        border: none;
+      }
+    }
+  }
+}
+
+// make the links a bit lighter to be more easily readable
+// TODO this kind of config should be in a SCSS toolchain with bulma or something
+a, .link {
+  color: #5092fc;
+  
+  &:hover {
+    color: #407cdd;
+  }
+}
+
+code {
+  background: hsl(0,0%,15%);
+  color: hsl(0,0%,90%);
+  border-radius: 0.3rem;
+}
+
+.yt-lite {
+  display: flex;
+  background-size: cover;
+  cursor: pointer;
+
+  &:not(.lyt-activated) {
+    padding-bottom: 56.25%;
+  }
+
+  .lty-playbtn {
+    display: none;
+  }
+
+  iframe {
+    flex: 1;
+    aspect-ratio: 16/9;
+    height: auto;
+  }
+}
+
+.rsm-geography:focus {
+  outline: none;
+}
+
+.card {
+  background-color: hsla(0, 0%, 10%, 50%);
+  border: .4em solid hsl(0, 0%, 10%);
+  box-shadow: 0 .2em .6em black;
+}
+
+.button {
+  transition: background-color .1s ease-in-out;
+
+  &.smashgg { // TODO i should consider using proper toolchaining to make this actual variants or something
+    background-color: #CD323C;
+    
+    &:hover {
+      background-color: #e63b46;
+    }
+  }
+  
+  &.discord {
+    background-color: #7289DA;
+    
+    &:hover {
+      background-color: #455bac;
+    }
+  }
+
+  &.twitch {
+    background-color: #6441a5;
+    
+    &:hover {
+      background-color: #8356d6;
+    }
+  }
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.dropdown.region-filter > .dropdown-trigger > .button {
+  width: 12em;
+}
+
+.message-header a {
+  text-decoration: none !important;
+  
+  &:hover {
+    color: #5092fc !important;
+    text-decoration: underline !important;
+  }
+}
+
+.has-new::before {
+  color: white;
+  content: "New!";
+  position: absolute;
+  right: 1em;
+  top: .5em;
+  user-select: none;
+  font-size: .8em;
+  line-height: .7em;
+  padding: .2em;
+  transform: rotateZ(30deg);
+  border-radius: .5em;
+  background: rgb(0, 114, 190);
+  filter: drop-shadow(0 0 .3em hsla(0, 0%, 0%, 0.2));
+  z-index: 10;
+}
+
+.flex-grow-children > * {
+  flex: 1;
+}
+
+.gap {
+  gap: 0.3em;
+}
+
+h1.is-1 .loader {
+  border-width: 0.1em;
+}
+
+.has-text-dark .loader {
+  border-left-color:hsl(0, 0%, 20%);
+  border-bottom-color:hsl(0, 0%, 20%);
+}
+
+@keyframes flip {
+  from {
+    transform: rotateY(1turn);
+  }
+  to {
+    transform: rotateY(0turn);
+  }
+}

@@ -1,0 +1,185 @@
+[
+  [
+    {
+      "name": "Mario",
+      "img": "silent-protagonist"
+    },
+    {
+      "name": "Luigi",
+      "img": "evil-mario"
+    },
+    {
+      "name": "Peach",
+      "img": "average-vtuber"
+    },
+    {
+      "name": "Wario",
+      "img": "capitalism-man"
+    },
+    {
+      "name": "Yoshi",
+      "img": "tax-fraud-is-still-funny"
+    },
+    {
+      "name": "Bowser",
+      "img": "shee-ya-later"
+    },
+    {
+      "name": "Donkey Kong",
+      "img": "expand"
+    },
+    {
+      "name": "Diddy Kong",
+      "img": "diddy-kong"
+    },
+    {
+      "name": "Captain Falcon",
+      "img": "ike-without-sword"
+    }
+  ],
+  [
+    {
+      "name": "Fox",
+      "img": "watch-terminal-montage-on-youtube"
+    },
+    {
+      "name": "Falco",
+      "img": "bird"
+    },
+    {
+      "name": "Wolf",
+      "img": "helluva-boss"
+    },
+    {
+      "name": "Link",
+      "img": "zelda"
+    },
+    {
+      "name": "Toon",
+      "img": "toon-link"
+    },
+    {
+      "name": "Zelda",
+      "img": "link"
+    },
+    {
+      "name": "Sheik",
+      "img": "i-always-spell-her-shiek"
+    },
+    {
+      "name": "Ganondorf",
+      "img": "villain-nr-47"
+    }
+  ],
+  [
+    {
+      "name": "Pikachu",
+      "img": "rat"
+    },
+    {
+      "name": "Jigglypuff",
+      "img": "destroyer-of-worlds"
+    },
+    {
+      "name": "Mewtwo",
+      "img": "they-did-surgery-on-a-mew"
+    },
+    {
+      "name": "Squirtle",
+      "img": "sonic"
+    },
+    {
+      "name": "Ivysaur",
+      "img": "veggies"
+    },
+    {
+      "name": "Charizard",
+      "img": "banned"
+    },
+    {
+      "name": "Lucario",
+      "img": "uwu"
+    },
+    {
+      "name": "Samus",
+      "img": "metroid"
+    },
+    {
+      "name": "Zero Suit Samus",
+      "img": "the-baby-hunter"
+    }
+  ],
+  [
+    {
+      "name": "Ness",
+      "img": "is-saying-sans-still-funny"
+    },
+    {
+      "name": "Lucas",
+      "img": "maybe-this-one-is-actually-sans"
+    },
+    {
+      "name": "Kirby",
+      "img": "primitive-shape"
+    },
+    {
+      "name": "Metaknight",
+      "img": "sexy-ass-voice"
+    },
+    {
+      "name": "King Dedede",
+      "img": "fat-penguin"
+    },
+    {
+      "name": "Marth",
+      "img": "marth"
+    },
+    {
+      "name": "Roy",
+      "img": "red-marth"
+    },
+    {
+      "name": "Ike",
+      "img": "male-marth"
+    }
+  ],
+  [
+    {
+      "name": "Mr. Game & Watch",
+      "img": "kekw"
+    },
+    {
+      "name": "R.O.B.",
+      "img": "random-omnipotent-being"
+    },
+    {
+      "name": "Ice Climbers",
+      "img": "bring-back-ike-climbers"
+    },
+    {
+      "name": "Pit",
+      "img": "pear"
+    },
+    {
+      "name": "Random",
+      "img": "question-mark",
+      "isRandom": true
+    },
+    {
+      "name": "Olimar",
+      "img": "brolimar"
+    },
+    {
+      "name": "Snake",
+      "img": "black-widow"
+    },
+    {
+      "name": "Sonic",
+      "img": "megaman"
+    },
+    {
+      "name": "Knuckles",
+      "img": "pumpkin-hill"
+    }
+  ]
+]

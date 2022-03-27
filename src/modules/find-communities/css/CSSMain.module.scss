@@ -1,0 +1,73 @@
+.css_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+  overflow-x: hidden;
+  overflow-y: clip;
+
+  --width: min(80px, 5.5vw);
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .css_main {
+    --width: 9vw !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .css_main {
+    --width: min(16vw, 80px);
+  }
+}
+
+.row {
+  display: flex;
+  --gap: calc(var(--width) * 0.5);
+  gap: var(--gap);
+
+  &:not(:first-child) {
+    margin-top: -1.2em;
+  }
+}
+
+.button {
+  width: var(--width) !important;
+  border-radius: .5em;
+  height: var(--width) !important;
+  border: calc(var(--width) * 0.05) solid hsla(210, 90%, 50%, 40%);
+  background-color: hsla(210, 100%, 20%, 40%);
+  transform: rotate(-45deg);
+
+  > img {
+    width: 100%;
+  }
+
+  &:hover {
+    border-radius: 0;
+    z-index: 10;
+
+    animation: flashing-border .7s alternate infinite, scale-up .2s ease-in-out;
+
+    @keyframes flashing-border {
+      0% {
+        border-color: red;
+      }
+      100% {
+        border-color: rgb(228, 129, 129);
+      }
+    }
+
+    @keyframes scale-up {
+      0% {
+        transform: rotate(-45deg) scale(1);
+      }
+      10% {
+        transform: rotate(-45deg) scale(1.2);
+      }
+      100% {
+        transform: rotate(-45deg) scale(1);
+      }
+    }
+  }
+}

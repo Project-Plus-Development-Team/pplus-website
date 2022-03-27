@@ -1,9 +1,36 @@
 [build]
-  command = "npm run build"
-  publish = "out/"
+command = "npm run build"
+publish = "out"
+ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ../../"
 
 [[plugins]]
-package = "netlify-plugin-cache-nextjs"
+  package = "@netlify/plugin-lighthouse"
+
+  [plugins.inputs.thresholds]
+    performance = 0.9
+    accessibility = 0.9
+    best-practices = 0.9
+    seo = 0.9
+
+  # optional, deploy the lighthouse report to a path under your site
+  [plugins.inputs]
+    output_path = "reports/lighthouse.html"
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+
+[build.environment]
+NETLIFY_NEXT_PLUGIN_SKIP = "true"
+
+[build.processing]
+  skip_processing = true
+
+[dev]
+framework = "#custom"
+command = "npm run dev"
+port = 8080
+targetPort = 3000
+autoLaunch = true
 
 [[redirects]]
   from = "/discord"

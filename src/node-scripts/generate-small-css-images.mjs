@@ -13,7 +13,7 @@ await convertImages("css", {
   resize: { width: 80, height: 80 }
 });
 
-await convertImages("q9283rw8fg\\css", {
+await convertImages("q9283rw8fg/css", {
   flop: true,
   quality: 50,
   resize: { width: 80, height: 80 }
@@ -31,6 +31,6 @@ await convertSingleImage("smashgg-favicon.png");
 await convertSingleImage("favicon.png");
 await convertSingleImage("knuckles-woah.png", { resize: { height: 300 }, quality: 50 });
 
-await convertSingleImage("q9283rw8fg\\project-wave-logo.png", { quality: 90 });
-await convertSingleImage("q9283rw8fg\\vaporwave-color-palette.png", { resize: { height: 20 }, quality: 30 });
-await convertSingleImage("q9283rw8fg\\vaporwave-wallpaper.jpg", { resize: { height: 1000 }, quality: 80 });
+await convertSingleImage("q9283rw8fg/project-wave-logo.png", { quality: 90 });
+await convertSingleImage("q9283rw8fg/vaporwave-color-palette.png", { resize: { height: 20 }, quality: 30 });
+await convertSingleImage("q9283rw8fg/vaporwave-wallpaper.jpg", { resize: { height: 1000 }, quality: 80 });

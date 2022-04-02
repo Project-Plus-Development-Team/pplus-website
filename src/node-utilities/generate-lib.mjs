@@ -22,7 +22,7 @@ const root = (...paths) => (
 
 /**
  * Given "foo/bar/baz" will create "foo", "foo/bar" and "foo/bar/baz" if they don't exist
- * @param {tring} dirPath
+ * @param {string} dirPath
  */
 const createDirIfNotExists = async dirPath => {
   const subpaths = dirPath
@@ -35,8 +35,11 @@ const createDirIfNotExists = async dirPath => {
       return prev;
     }, []);
 
+  const isAbsolute = dirPath.startsWith("/");
+  const absolutePrefix = isAbsolute ? "/" : "";
+
   for (const subpath of subpaths) {
-    await createSingleDirIfNotExists(subpath);
+    await createSingleDirIfNotExists(absolutePrefix + subpath);
   }
 };
 

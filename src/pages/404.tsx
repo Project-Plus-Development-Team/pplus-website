@@ -76,6 +76,7 @@ const FourOhFour = () => {
   useEffect(() => {
 
     const dropHandler = (event: DragEvent) => {
+      event.preventDefault();
       const doTheThing = event.dataTransfer?.getData("text/plain") === "knux";
       
       if (!doTheThing) {

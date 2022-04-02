@@ -27,6 +27,7 @@ const root = (...paths) => (
 const createDirIfNotExists = async dirPath => {
   const subpaths = dirPath
     .split(path.sep)
+    .filter(segment => segment !== "")
     .reduce((prev, cur, index) => {
       const prevPath = prev[index - 1];
       const newValue = prevPath === undefined ? cur : path.join(prevPath, cur);

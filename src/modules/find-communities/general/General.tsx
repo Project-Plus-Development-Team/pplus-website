@@ -43,5 +43,6 @@ export const General = () => (
     <Button text="Brawl Modding Discord" url="https://discord.gg/GbxJhbv" logo={images["custom-brawl-modding"]}/>
     <Button text="Brawlback Discord" url="https://discord.gg/dzYRN32k4D" logo={images.brawlback}/>
     <Button text="Cosmetic Standardization Project" url="https://discord.gg/hQnPXfc" logo={images["cosmetic-standardization-project"]}/>
+    <Button text="Tournament Addition" url="https://discord.gg/QgvYWUR2" logo={images["tournament-addition"]}/>
   </div>
 );

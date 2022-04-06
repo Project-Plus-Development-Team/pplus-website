@@ -1,3 +1,7 @@
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.com/invite/vdssRDg"
+
 [build]
 command = "npm run build"
 publish = "out"
@@ -18,11 +22,8 @@ publish = "out"
 [[plugins]]
   package = "netlify-plugin-submit-sitemap"
 
-[build.environment]
-NETLIFY_NEXT_PLUGIN_SKIP = "true"
-
 [build.processing]
-  skip_processing = true
+  skip_processing = true # disables asset optimization which Next.js takes care of
 
 [dev]
 framework = "#custom"
@@ -30,7 +31,3 @@ command = "npm run dev"
 port = 8080
 targetPort = 3000
 autoLaunch = true
-
-[[redirects]]
-  from = "/discord"
-  to = "https://discord.com/invite/vdssRDg"

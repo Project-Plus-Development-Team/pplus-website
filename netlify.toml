@@ -15,8 +15,8 @@ publish = "out"
   [plugins.inputs]
     output_path = "reports/lighthouse.html"
 
-[[plugins]]
-  package = "netlify-plugin-submit-sitemap"
+# [[plugins]] // TODO https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap/issues/26
+#   package = "netlify-plugin-submit-sitemap"
 
 [build.processing]
   skip_processing = true # disables asset optimization which Next.js takes care of

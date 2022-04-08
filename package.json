@@ -36,7 +36,6 @@
     "lite-youtube-embed": "^0.2.0",
     "mdast-util-to-string": "^3.1.0",
     "netlify-cli": "^9.16.4",
-    "netlify-plugin-submit-sitemap": "^0.3.0",
     "netlify-redirect-parser": "^13.0.5",
     "next": "^12.1.4",
     "next-seo": "^5.4.0",

@@ -3,7 +3,11 @@ import { faBook } from "@fortawesome/free-solid-svg-icons";
 import { Heading, Box } from "react-bulma-components";
 import { FAButton } from "shared/components/FAButton";
 
-import styles from "../Home.module.scss";
+// import styles from "../Home.module.scss";
+
+const styles = {
+  links_container: ""
+};
 
 export const Links = () => (
   <Box style={{ gridArea: "links" }}>

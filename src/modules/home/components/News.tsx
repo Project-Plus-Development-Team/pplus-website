@@ -5,7 +5,12 @@ import { Container } from "react-bulma-components";
 import { FAButton } from "shared/components/FAButton";
 import { faDownload, faSearch } from "@fortawesome/free-solid-svg-icons";
 
-import styles from "../Home.module.scss";
+// import styles from "../Home.module.scss";
+
+const styles = {
+  news: "",
+  new_button: ""
+};
 
 export const News = () => {
   const { isMobile } = useViewport();

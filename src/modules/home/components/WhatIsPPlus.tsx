@@ -1,10 +1,6 @@
 import { Content, Heading } from "react-bulma-components";
 
-// import styles from "../Home.module.scss";
-
-const styles = {
-  list: ""
-};
+import styles from "../Home.module.scss";
 
 export const WhatIsPPlus = () => (
   <div style={{gridArea: "text"}}>

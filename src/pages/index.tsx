@@ -7,14 +7,7 @@ import { WhatIsPPlus } from "modules/home/components/WhatIsPPlus";
 import { Links } from "modules/home/components/Links";
 
 import glowyFalco from "~generated-images/falco-glowy.webp";
-
-// import styles from "../Home.module.scss";
-
-const styles = {
-  content: "",
-  falco_wrapper: "",
-  falco: ""
-};
+import styles from "modules/home/Home.module.scss";
 
 const Home = () => (
   <main className={styles.content}>

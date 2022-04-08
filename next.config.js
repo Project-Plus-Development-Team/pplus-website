@@ -1,13 +1,17 @@
-import path from "path";
-import DuplicatePackageCheckerPlugin from "duplicate-package-checker-webpack-plugin";
-import makeBundleAnalyzer from "@next/bundle-analyzer";
+const path = require("path");
+const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
+const BundleAnalyzer = require("@next/bundle-analyzer");
 
-export default phase => {
+// TODO switch to ESM when this is fixed
+// https://github.com/vercel/next.js/issues/33693
+
+module.exports = phase => {
   /**
    * @type {import("next").NextConfig}
    */
   const nextConfig = {
     swcMinify: true,
+    /** @param {import("webpack").Configuration} config */
     webpack: (config, { dev, isServer }) => {
       config.module.rules.push({
         test: /\.md$/,
@@ -15,16 +19,9 @@ export default phase => {
       });
 
       config.module.rules.push({
-        test: /world.*\.json$/,
+        test: /.*topo\.json$/,
         use: path.resolve("src/node-utilities/optimized-topojson-loader.js")
       });
-
-      // import path in ESM (.mjs) currently causes a caching issue
-      // this suppresses the warning until it's fixed in next.js's webpack version
-      // https://github.com/vercel/next.js/issues/33693
-      config.infrastructureLogging = {
-        level: "error"
-      };
 
       if (!dev && !isServer) {
         Object.assign(config.resolve.alias, {
@@ -55,5 +52,9 @@ export default phase => {
     ]);
   }
 
-  return nextConfig;
+  const withBundleAnalyzer = BundleAnalyzer({
+    enabled: false
+  });
+
+  return withBundleAnalyzer(nextConfig);
 };

@@ -1,14 +1,31 @@
 {
-  "extends": ["alloy", "alloy/react", "alloy/typescript"],
+  "extends": [
+    "alloy",
+    "alloy/react",
+    "alloy/typescript",
+    "plugin:@next/next/recommended"
+  ],
   "env": { "browser": true },
   "rules": {
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "@next/next/no-img-element": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   },
   "overrides": [
     {
-      "files": "*.tsx",
+      "files": "*.{ts,tsx}",
       "rules": {
         "no-undef": ["off"]
+      }
+    },
+    {
+      "files": "*.js",
+      "rules": {
+        "@typescript-eslint/no-require-imports": "off"
       }
     }
   ]

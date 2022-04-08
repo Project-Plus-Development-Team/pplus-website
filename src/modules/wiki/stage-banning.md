@@ -1,6 +1,6 @@
 ### How to ban stages in Project+
 
-If you play on a playmatching service like [SmashLadder](https://smashladder.com), it might have it's own interface for banning stages, but Project+ also has a built-in stage banning GUI inherited from Project M.
+If you play on a playmatching service like [SmashLadder](https://www.smashladder.com/), it might have it's own interface for banning stages, but Project+ also has a built-in stage banning GUI inherited from Project M.
 
 #### Handling bans in-game
 

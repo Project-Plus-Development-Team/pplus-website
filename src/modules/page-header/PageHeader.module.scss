@@ -1,13 +1,15 @@
+@import "bulma/sass/utilities/_all.sass";
+
 .navbar {
   * {
     transition: background-color 0.1s ease;
   }
 
   img {
-    max-height: inherit;
+    max-height: inherit !important;
   }
 
-  @media screen and (min-width: 1024px) {
+  @include from ($desktop) {
     border-radius: 0.3rem;
     padding: 0 14px;
     margin: 2rem 0;
@@ -19,18 +21,18 @@
 }
 
 .buttoncontainer {
-  @media screen and (min-width: 500px) { // arbitrary value i chose which looks good, not an actual bulma breakpoint
-    flex-wrap: nowrap;
+  @include from (500px) { // arbitrary value i chose which looks good, not an actual bulma breakpoint
+    flex-wrap: nowrap !important;
   }
   
   // shorten download and discord button so that they don't break out of the page header
-  @media (min-width: 1024px) and (max-width: 1215px) {
+  @media screen and (min-width: $desktop) and (max-width: $fullhd) {
     button, a {
-      > :first-child {
-        margin-right: calc(-0.5em - 1px) !important;
+      > svg {
+        margin-right: 0 !important;
       }
   
-      > :not(:first-child) {
+      > span {
         display: none;
       }
     }
@@ -38,7 +40,7 @@
 }
 
 .expandbutton {
-  @media screen and (max-width: 1023px) {
+  @include touch {
     width: 100%;
   }
 }
@@ -51,7 +53,7 @@
   background-color: hsla(0,0%,0%,0.7) !important;
 }
 
-@media screen and (max-width: 1023px) {
+@include touch {
   .navbar-menu {
     background-color: hsla(0, 0%, 0%, 0.7) !important;
   }

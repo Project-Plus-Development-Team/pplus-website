@@ -19,7 +19,7 @@ export const CSSButton = ({ character, randomHandler }: Props) => {
 
   return (
     <a
-      href={character.isRandom ? "#" : `https://discord.gg/${character.discordInviteId}`}
+      href={character.isRandom ? "#" : `https://discord.com/invite/${character.discordInviteId}`}
       onClick={event => {
         if (character.isRandom) {
           randomHandler(event);

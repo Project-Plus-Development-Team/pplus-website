@@ -1,17 +1,15 @@
-import "../global.scss";
-import "@fortawesome/fontawesome-free/css/all.css";
 import { AppProps } from "next/app";
-import { PageHeader } from "../modules/PageHeader/PageHeader";
-import { Container } from "react-bulma-components";
-import { DefaultSeoPPlus } from "DefaultSeoPPlus";
+import { PageHeader } from "../modules/page-header/PageHeader";
+import { DefaultSeoPPlus } from "configuration/DefaultSeoPPlus";
+
+import "../global.scss";
+import "../configuration/fontawesome";
 
 const App = ({ Component, pageProps }: AppProps) => (
   <>
     <DefaultSeoPPlus/>
     <PageHeader/>
-    <Container renderAs="main">
-      <Component {...pageProps}/>
-    </Container>
+    <Component {...pageProps}/>
   </>
 );
 

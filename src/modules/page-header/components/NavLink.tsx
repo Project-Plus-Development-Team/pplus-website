@@ -1,5 +1,6 @@
 import Link from "next/link";
-import styles from "./PageHeader.module.scss";
+
+import styles from "../PageHeader.module.scss";
 
 interface NavLinkProps {
   text: string,

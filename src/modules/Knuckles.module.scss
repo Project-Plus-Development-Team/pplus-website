@@ -1,0 +1,48 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.floating {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.firstLine, .main {
+  gap: 2rem;
+}
+
+@media (max-width: 960px) {
+  .firstLine {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 650px) {
+  .infoElement {
+    flex-wrap: wrap;
+  }
+
+  .infoElement img {
+    width: 100% !important;
+    // max-width: none !important;
+    // height: 450px;
+  }
+}
+
+.infoElement {
+  display: flex;
+  border-radius: 0.5em;
+  align-items: center;
+  overflow: hidden;
+
+  > div {
+    padding: 1em;
+  }
+
+  > img {
+    object-fit: cover;
+    align-self: stretch;
+  }
+}

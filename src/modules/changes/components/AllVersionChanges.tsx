@@ -59,7 +59,7 @@ export const AllVersionChanges = ({ data }: Props) => {
         >
           {getChangesBlocks(data, categoryName).map(block => (
             <Fragment key={block?.version}>
-              <Heading size={6} className="is-italic">
+              <Heading size={3} className="is-italic">
                 Changes in version v{block?.version}
               </Heading>
               {block.changes.map((change, i) => (

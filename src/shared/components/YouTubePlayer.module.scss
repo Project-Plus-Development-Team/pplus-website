@@ -8,7 +8,7 @@
   transition: opacity .2s ease;
   position: absolute;
   bottom: 15%;
-  font-size: 0.8em;
+  font-size: 0.3em;
 }
 
 .embed_overlay {
@@ -41,6 +41,15 @@
 
 .embed {
   flex: 1;
+  display: flex;
+  background-size: cover;
+  cursor: pointer;
+
+  iframe {
+    flex: 1;
+    aspect-ratio: 16/9;
+    height: auto;
+  }
 }
 
 .iframe {

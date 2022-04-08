@@ -15,7 +15,7 @@ export const Move = ({ data, subpoint }: MoveProps) => {
 
   const title = subpoint ?
     data.title :
-    <Heading subtitle size={5}>{data.title}</Heading>;
+    <Heading subtitle size={2}>{data.title}</Heading>;
 
   return (
     <>

@@ -20,7 +20,7 @@ await convertImages("q9283rw8fg/css", {
 });
 
 await convertImages("icons", { resize: { height: 40 }});
-await convertImages("knuckles", { quality: 100 });
+await convertImages("knuckles", { quality: 100, resize: { width: 300 } });
 
 await convertSingleImage("background.jpeg");
 await convertSingleImage("background-banner.png");

@@ -1,3 +1,4 @@
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { FAButton } from "./FAButton";
 
 interface Props {
@@ -13,10 +14,10 @@ export const DiscordButton = ({
 }: Props) => (
   <FAButton
     renderAs="a"
-    color="link"
-    href={`https://discord.gg/${inviteId}`}
-    className={`discord ${className}`}
-    icon="fab fa-discord"
+    color="discord"
+    href={`https://discord.com/invite/${inviteId}`}
+    className={className}
+    icon={faDiscord}
   >
     {text}
   </FAButton>

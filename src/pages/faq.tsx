@@ -7,11 +7,11 @@ import { getFAQStructuredData } from "modules/faq/get-faq-structured-data";
 import { MarkdownAstRenderer, RenderHook } from "shared/components/MarkdownAstRenderer";
 import { CopyToClipboard } from "shared/components/CopyToClipboard";
 import { FAQPageJsonLd, NextSeo } from "next-seo";
-
-import styles from "../modules/faq/faq.module.scss";
 import { root } from "next-server-utilities/root";
 import { getCurrentUrlWithHash } from "shared/functions/get-current-url-with-hash";
 import { NextSeoQuestion } from "shared/types/structured-data";
+
+import styles from "../modules/faq/faq.module.scss";
 
 interface Props {
   markdownAst: any
@@ -54,7 +54,7 @@ const FAQ = ({ markdownAst, questions }: Props) => {
   }, [hash]);
 
   return (
-    <>
+    <main>
       <NextSeo
         title="Frequently Asked Questions"
         description="Find answers to common questions about installation details, ISOs, mod content and more!"
@@ -77,7 +77,7 @@ const FAQ = ({ markdownAst, questions }: Props) => {
           color: hsl(0, 0%, 80%);
         }
       `}</style>
-    </>
+    </main>
   );
 };
 

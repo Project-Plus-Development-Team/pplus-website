@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
 import { useEffect } from "react";
-import { Heading, Columns } from "react-bulma-components";
+import { Heading } from "react-bulma-components";
 import { GoodImage } from "shared/components/GoodImage";
 
 import woah from "~generated-images/knuckles-woah.webp";
@@ -110,33 +110,34 @@ const FourOhFour = () => {
   }, []);
 
   return (
-    <>
+    <main style={{
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-evenly",
+      flexWrap: "wrap"
+    }}>
       <NextSeo title="404 - Page not found"/>
-      <Columns className="is-vcentered">
-        <Columns.Column className="has-text-centered">
-          <Heading>YIKES!</Heading>
-          <Heading subtitle>This page could not be found.<br/>Imagine the soothing sound of <a href="https://youtu.be/vv_x6I1l1mM">crashing Project M.</a></Heading>
-          <br/>
-          <span>
-            There&apos;s a high chance this page used to exist, but has moved.<br/>
-            A search function to find moved content is in the works, but until then you can<br/>
-            <a href="/discord" target="_blank">ask in our Discord server</a> or <a href="https://twitter.com/functiongermany" target="_blank">tweet at me</a>.
-          </span>
-        </Columns.Column>
-        <Columns.Column className="has-text-centered">
-          <GoodImage
-            img={woah}
-            alt="Knuckles with a surprised 'woah!' expression"
-            lazy
-            onDragStart={e => {
-              const ohno = new Audio("/ohno.webm");
-              ohno.play();
-              e.dataTransfer.setData("text/plain", "knux");
-            }}
-          />
-        </Columns.Column>
-      </Columns>
-    </>
+      <div style={{ maxWidth: 600 }}>
+        <Heading>YIKES!</Heading>
+        <Heading subtitle>This page could not be found.<br/>Imagine the soothing sound of <a href="https://www.youtube.com/watch?v=vv_x6I1l1mM">crashing Project M.</a></Heading>
+        <br/>
+        <span>
+          There&apos;s a high chance this page used to exist, but has moved.<br/>
+          A search function to find moved content is in the works, but until then you can<br/>
+          <a href="/discord" target="_blank">ask in our Discord server</a> or <a href="https://twitter.com/functiongermany" target="_blank">tweet at me</a>.
+        </span>
+      </div>
+      <GoodImage
+        img={woah}
+        alt="Knuckles with a surprised 'woah!' expression"
+        lazy
+        onDragStart={e => {
+          const ohno = new Audio("/ohno.webm");
+          ohno.play();
+          e.dataTransfer.setData("text/plain", "knux");
+        }}
+      />
+    </main>
   );
 };
 

@@ -21,7 +21,7 @@ export const TournamentCard = ({ tournament }: Props) => {
   return (
     <Card className="p-2 mt-3">
       <div className="is-flex">
-        <Heading size={4} className="mb-2 mr-auto">
+        <Heading size={2} className="mb-2 mr-auto">
           <a href={`https://smash.gg/tournament/${tournament.smashggSlug}`}>
             {tournament.name}
           </a>

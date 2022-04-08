@@ -11,7 +11,7 @@ export const reorganizeCSSDataForSmallScreen = (
     const lastRow = prev[prev.length - 1];
 
     const oddRow = prev.length % 2 === 1;
-    if (lastRow.length > (oddRow ? sizeOfOddRows : sizeOfEvenRows)) {
+    if (lastRow.length >= (oddRow ? sizeOfOddRows : sizeOfEvenRows)) {
       prev.push([cur]);
     } else {
       lastRow.push(cur);

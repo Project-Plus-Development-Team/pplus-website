@@ -1,15 +1,18 @@
+import { faDiscord } from "@fortawesome/free-brands-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import { Navbar, Button } from "react-bulma-components";
 import { FAButton } from "shared/components/FAButton";
-import styles from "./PageHeader.module.scss";
+
+import styles from "../PageHeader.module.scss";
 
 const DiscordButton = () => (
   <FAButton
-    color="link"
+    color="discord"
     href="/discord"
     renderAs="a"
-    className={`discord ${styles.expandbutton}`}
-    icon="fab fa-discord"
+    className={styles.expandbutton}
+    icon={faDiscord}
     title="Project+ Discord Server"
   >
     Discord Server
@@ -33,7 +36,7 @@ export const ButtonContainer = ({
               color="link"
               className={`has-text-weight-bold ${styles.expandbutton}`}
               onClick={foldNavbar}
-              icon="fas fa-download"
+              icon={faDownload}
               title="Download the latest version of Project+"
             >
               Download v{latestVersion}

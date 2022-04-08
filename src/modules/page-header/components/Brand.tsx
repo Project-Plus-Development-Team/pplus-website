@@ -2,9 +2,9 @@ import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
 import { Navbar } from "react-bulma-components";
 import { GoodImage } from "shared/components/GoodImage";
+import { useEgg } from "../hooks/use-egg";
 
 import logo from "~generated-images/logo.webp";
-import { useEgg } from "./use-egg";
 
 interface BrandProps {
   isNavbarActive: boolean

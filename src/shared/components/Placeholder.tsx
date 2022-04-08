@@ -1,6 +1,8 @@
+import { faRefresh, faSkullCrossbones } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { ReactElement } from "react";
 import { Heading } from "react-bulma-components";
-import { FAButton } from "shared/components/FAButton";
+import { FAButton } from "./FAButton";
 
 interface Props {
   error?: Error | null
@@ -22,10 +24,10 @@ const LoadingContent = ({ children }: Pick<Props, "children">) => (
 const ErrorContent = ({ retry }: Pick<Props, "retry">) => (
   <>
     <div>
-      <span className="fa-solid fa-skull-crossbones mr-3"/>
+      <FontAwesomeIcon icon={faSkullCrossbones} className="mr-3"/>
       There was an Error while loading this component.
     </div>
-    <FAButton icon="fas fa-refresh" onClick={retry}>Retry</FAButton>
+    <FAButton icon={faRefresh} onClick={retry}>Retry</FAButton>
   </>
 );
 
@@ -34,7 +36,7 @@ export const Placeholder = ({ error, isLoading, retry, height, children }: Props
     className="is-flex is-justify-content-center is-align-items-center has-background-black"
     style={{ height }} // TODO analog to responsive map height
   >
-    <Heading size={1} className="has-text-dark is-flex is-flex-direction-column gap is-align-items-center">
+    <Heading className="has-text-dark is-flex is-flex-direction-column gap is-align-items-center">
       {error && (
         <ErrorContent retry={retry}/>
       )}

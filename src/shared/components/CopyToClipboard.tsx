@@ -1,6 +1,7 @@
-import useClipboard from "react-use-clipboard";
-import { Icon } from "react-bulma-components";
 import { CSSProperties } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck, faLink } from "@fortawesome/free-solid-svg-icons";
+import { useClipboard } from "shared/hooks/use-clipboard";
 
 interface Props {
   link: string
@@ -9,26 +10,27 @@ interface Props {
 }
 
 export const CopyToClipboard = ({ link, className, style }: Props) => {
-  const [hasCopied, setClipboard] = useClipboard(link, {
-    successDuration: 2000
-  });
+  const [hasCopied, setClipboard] = useClipboard(link);
 
   return (
     <a
-      onClick={setClipboard}
+      onClick={event => {
+        event.preventDefault();
+        setClipboard();
+      }}
+      href="#"
       className={`is-flex is-align-items-center copy mx-3 ${className ?? ""}`}
       title="Copy link to clipboard"
       style={style}
     >
-      <Icon>
-        <span className={hasCopied ? "fas fa-check" : "fa fa-link"}/>
-      </Icon>
+      <FontAwesomeIcon icon={hasCopied ? faCheck : faLink}/>
 
       {/* needs to be global in order for it to see .dropdown-toggle */}
       <style jsx global>{`
         .copy {
           color: hsl(0, 0%, 30%);
           font-size: 1.2rem;
+          transition: color 0.08s ease;
         }
 
         .copy-trigger:hover > .copy {

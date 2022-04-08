@@ -1,9 +1,5 @@
 import { DefaultSeo } from "next-seo";
 
-export const defaultKeywords = (
-  "Smash, Project+, Project M, PM, P+, Smash Mod, Brawl Mod, Update, ProjectM, Project M, P+, Project+, Project Plus, Smash Bros Project Plus, Project M Plus, PM, Smash Bros Brawl, Brawl Mods, Smash Bros Brawl Mods, project m, project m 3.6, project melee, project melee plus, project melee plus, project m mod, project m game, project m plus, jank, knuckles"
-);
-
 export const DefaultSeoPPlus = () => (
   <DefaultSeo
     defaultTitle="Project+"
@@ -28,10 +24,6 @@ export const DefaultSeoPPlus = () => (
       {
         name: "theme-color", // theme color for mobile phone tabs
         content: "#34d171"
-      },
-      {
-        name: "keywords",
-        content: defaultKeywords
       },
       {
         name: "author",

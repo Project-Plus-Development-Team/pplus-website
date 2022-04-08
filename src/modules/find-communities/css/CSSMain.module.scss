@@ -1,3 +1,5 @@
+@import "bulma/sass/utilities/_all.sass";
+
 .css_main {
   display: flex;
   flex-direction: column;
@@ -6,19 +8,19 @@
   overflow-x: hidden;
   overflow-y: clip;
 
-  --width: min(80px, 5.5vw);
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .css_main {
-    --width: 9vw !important;
+  @include mobile {
+    --width: min(18vw, 80px);
   }
-}
 
-@media (max-width: 800px) {
-  .css_main {
-    --width: min(16vw, 80px);
+  @include tablet-only {
+    --width: 80px !important;
   }
+
+  @media screen and (min-width: $desktop) and (max-width: $fullhd) {
+    --width: 65px !important;
+  }
+
+  --width: 80px;
 }
 
 .row {

@@ -1,8 +1,8 @@
-import { useEffect, useRef, useState } from "react";
 import { Navbar } from "react-bulma-components";
-import { RenderAsComponent } from "react-bulma-components/src/components";
+import { useDropdownState } from "../hooks/use-dropdown";
 import { NavLink } from "./NavLink";
-import styles from "./PageHeader.module.scss";
+
+import styles from "../PageHeader.module.scss";
 
 interface LinkContainerProps {
   pathname: string
@@ -10,35 +10,14 @@ interface LinkContainerProps {
   foldNavbar: () => void
 }
 
-const useDropdownState = () => {
-  const [changesDropdown, setChangesDropdown] = useState(false);
-  const linkRef = useRef<RenderAsComponent>(null);
-
-  useEffect(() => {
-    const handler: EventListener = event => {
-      if (event.target === linkRef.current) {
-        return;
-      }
-
-      setChangesDropdown(false);
-    };
-
-    window.addEventListener("click", handler);
-
-    return () => {
-      window.removeEventListener("click", handler);
-    };
-  }, []);
-
-  return { changesDropdown, setChangesDropdown, linkRef };
-};
-
 export const LinkContainer = ({
   pathname, versions, foldNavbar
 }: LinkContainerProps) => {
   const isChangesActive = pathname.split("/")[1] === "changes";
   const activeClass = isChangesActive ? styles.navitemactive : "";
-  const { changesDropdown, setChangesDropdown, linkRef } = useDropdownState();
+
+  // TODO https://github.com/couds/react-bulma-components/issues/382
+  const { active, setActive, linkRef } = useDropdownState();
 
   return (
     <Navbar.Container className="has-text-weight-bold">
@@ -46,15 +25,22 @@ export const LinkContainer = ({
       <NavLink className="has-new" onClick={foldNavbar} text="F.A.Q." href="/faq" pathname={pathname}/>
       <Navbar.Item href="#">
         <Navbar.Link
-          className={`${styles.navitem} ${activeClass}`}
-          onClick={() => setChangesDropdown(!changesDropdown)}
+          className={`${styles.navitem} ${activeClass} `}
+          onClick={(event: MouseEvent) => {
+            // prevent the anchor from adding "#" to the browser URL
+            event.preventDefault();
+            setActive(!active);
+          }}
           domRef={linkRef}
+          // TODO https://github.com/couds/react-bulma-components/issues/383
+          renderAs="a" // render as anchor for keyboard navigation / accessibility
+          href="#"
         >
           Changes
         </Navbar.Link>
         <Navbar.Dropdown
           style={{
-            display: changesDropdown ? "block" : "none"
+            display: active ? "block" : "none"
           }}
         >
           <NavLink

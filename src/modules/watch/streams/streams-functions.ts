@@ -1,4 +1,4 @@
-import { streamIsSupportedMod, SupportedMod } from "./supported-mods";
+import { makeComparable, streamIsSupportedMod, SupportedMod } from "./supported-mods";
 
 interface ModAndTitle {
   mod: SupportedMod|null
@@ -16,7 +16,7 @@ export const getModDataFromTitle = (streamTitle: string): ModAndTitle => {
   }
 
   return {
-    mod: result[1] as SupportedMod,
+    mod: makeComparable(result[1]) as SupportedMod,
     title: result[2]
   };
 };

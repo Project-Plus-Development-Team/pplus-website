@@ -12,7 +12,7 @@ const supportedModsObject = {
 export type SupportedMod = keyof typeof supportedModsObject;
 export const supportedMods = Object.keys(supportedModsObject) as SupportedMod[];
 
-const makeComparable = (text: string) => (
+export const makeComparable = (text: string) => (
   text.trim().toLowerCase()
 );
 

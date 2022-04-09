@@ -38,12 +38,15 @@ export const TwitchStream = ({ stream, isDev }: Props) => {
         style={{ minHeight: 30 }}
       >
         <a
-          className={`gap has-text-white ${styles.link}`}
+          className={`gap has-text-white ${styles.heading}`}
           title="Click to watch on Twitch.tv"
           href={`https://twitch.tv/${stream.user_login}`}
         >
           <ModLogo mod={mod}/>
           {title}
+          <span className="ml-1" style={{ fontWeight: "normal" }}>
+            by {stream.user_name}
+          </span>
         </a>
         {play ? (
           <FAButton

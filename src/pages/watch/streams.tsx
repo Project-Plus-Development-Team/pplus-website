@@ -8,6 +8,7 @@ import { Form, Heading } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StreamFilter, streamMatchesFilter, SupportedMod, supportedMods } from "modules/watch/streams/supported-mods";
 import { useStreams } from "modules/watch/streams/use-streams";
+import { NextSeo } from "next-seo";
 
 interface Props {
   isDev: boolean
@@ -28,6 +29,10 @@ const Home = ({ isDev }: Props) => {
 
   return (
     <main>
+      <NextSeo
+        title="Watch Twitch Streams"
+        description="Watch Twitch Streams of Project+, Project M, and more mods!"
+      />
       <Heading size={2} className="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap gap">
         <span>Twitch Streams</span>
         <span style={{ fontSize: "1rem" }} className="is-flex gap">

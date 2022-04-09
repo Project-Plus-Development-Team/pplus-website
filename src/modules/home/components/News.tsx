@@ -27,7 +27,7 @@ export const News = () => {
       <Link href="/find-communities" passHref>
         <FAButton
           color="success"
-          className={`has-text-weight-bold has-new ${styles.new_button}`}
+          className={`has-text-weight-bold ${styles.new_button}`}
           icon={faSearch}
           title="Find communities for your character, region, or other interests"
           size={newsButtonSize}

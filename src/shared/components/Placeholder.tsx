@@ -9,7 +9,7 @@ interface Props {
   isLoading?: boolean
   retry?: () => void
   height: number
-  children: (ReactElement|string)[]
+  children: (ReactElement|string)[] | ReactElement | string
 }
 
 const LoadingContent = ({ children }: Pick<Props, "children">) => (
@@ -33,17 +33,18 @@ const ErrorContent = ({ retry }: Pick<Props, "retry">) => (
 
 export const Placeholder = ({ error, isLoading, retry, height, children }: Props) => (
   <div
-    className="is-flex is-justify-content-center is-align-items-center has-background-black"
+    className="is-flex is-justify-content-center is-align-items-center has-background-black" // TODO has-background-black
     style={{ height }} // TODO analog to responsive map height
   >
     <Heading className="has-text-dark is-flex is-flex-direction-column gap is-align-items-center">
-      {error && (
+      {error ? (
         <ErrorContent retry={retry}/>
-      )}
-      {isLoading && (
-        <LoadingContent>
-          {children}
-        </LoadingContent>
+      ) : (
+        isLoading && (
+          <LoadingContent>
+            {children}
+          </LoadingContent>
+        )
       )}
     </Heading>
   </div>

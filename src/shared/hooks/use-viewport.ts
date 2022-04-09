@@ -25,6 +25,7 @@ export const useViewport = () => {
     isTablet:
       width > bulmaBreakpoints.mobile
       && width <= bulmaBreakpoints.tablet,
-    isDesktop: width > bulmaBreakpoints.tablet
+    isDesktop: width > bulmaBreakpoints.tablet,
+    isWidescreen: width > bulmaBreakpoints.widescreen
   };
 };

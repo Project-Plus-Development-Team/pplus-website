@@ -1,9 +1,10 @@
 import Link from "next/link";
+import { ReactElement } from "react";
 
 import styles from "../PageHeader.module.scss";
 
 interface NavLinkProps {
-  text: string,
+  text: string|ReactElement,
   href: string,
   pathname: string,
   onClick: () => void

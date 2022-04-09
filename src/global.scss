@@ -54,7 +54,7 @@ main {
   color: white;
   content: "New!";
   position: absolute;
-  right: 1em;
+  right: -1em;
   top: .5em;
   user-select: none;
   font-size: .8em;
@@ -65,6 +65,10 @@ main {
   background: rgb(0, 114, 190);
   filter: drop-shadow(0 0 .3em hsla(0, 0%, 0%, 0.2));
   z-index: 10;
+
+  @include touch {
+    right: 1em;
+  }
 }
 
 .flex-grow-children > * {
@@ -90,5 +94,13 @@ h1.is-1 .loader {
   }
   to {
     transform: rotateY(0turn);
+  }
+}
+
+@include touch {
+  .box {
+    margin: -1rem;
+    border-radius: 0;
+    padding: 1rem;
   }
 }

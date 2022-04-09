@@ -1,5 +1,7 @@
 import { Handler } from "@netlify/functions";
 import axios from "axios";
+import { streamIsSupportedMod, supportedMods } from "modules/watch/streams/supported-mods";
+import { TwitchStreamsResponse } from "modules/watch/streams/twitch-api";
 
 const brawlGameId = 18833;
 const url = `https://api.twitch.tv/helix/streams?game_id=${brawlGameId}&first=100`;
@@ -27,19 +29,13 @@ const refreshAccessToken = async () => {
   accessToken = data.access_token;
 };
 
-const supportedMods = [
-  "P+",
-  "PM",
-  "T+"
-];
-
 const getStreams = async (isRetry = false): Promise<string> => {
   if (accessToken === null) {
     await refreshAccessToken();
   }
 
   try {
-    const { data } = await axios(url, {
+    const { data } = await axios.get<TwitchStreamsResponse>(url, {
       headers: {
         "Authorization": "Bearer " + accessToken as string,
         "Client-Id": clientId
@@ -47,16 +43,7 @@ const getStreams = async (isRetry = false): Promise<string> => {
     });
 
     return JSON.stringify(
-      data.data
-        .filter((s: { title: string }) => {
-          for (const mod of supportedMods) {
-            if (s.title.startsWith(`[${mod}]`)) {
-              return true;
-            }
-          }
-
-          return false;
-        })
+      data.data.filter(stream => streamIsSupportedMod(stream.title))
     );
   } catch (error) {
     if (

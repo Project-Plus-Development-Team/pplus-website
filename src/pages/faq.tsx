@@ -30,7 +30,7 @@ const getIdOfNode = (node: ParseableNode) => {
 const FAQ = ({ markdownAst, questions }: Props) => {
   const hash = useHash();
   
-  // TODO instead of this custom stuff i should probably use MDX instead
+  // TODO instead of this custom stuff i should probably use MDX instead. also just SSR the HTML and don't send an AST.
   const Hook: RenderHook = useCallback((node, Render) => {
     if (node.type === "heading" && node.depth === 4) {
       const content = node.children[0].type === "link" ? (

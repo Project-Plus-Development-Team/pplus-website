@@ -92,6 +92,8 @@ $additionalButtonColors: (
   }
 }
 
+$scheme-main: black; // fixes button disabled state
+
 @import "~bulma/sass/elements/button.sass";
 @import "~bulma/sass/base/animations.sass"; // .loader
 @import "~bulma/sass/elements/title.sass";

@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "next dev",
+    "dev": "concurrently \"next dev\" \"netlify functions:serve\"",
     "build": "npm run generate-imgs && next build && next export",
     "postbuild": "next-sitemap --config next-sitemap-config.js",
     "serve": "serve ./out/",
@@ -26,6 +26,7 @@
     "axios": "^0.26.1",
     "bulma": "^0.9.3",
     "bulmaswatch": "^0.8.1",
+    "concurrently": "^7.1.0",
     "duplicate-package-checker-webpack-plugin": "^3.0.0",
     "eslint": "^8.12.0",
     "eslint-config-alloy": "^4.5.1",

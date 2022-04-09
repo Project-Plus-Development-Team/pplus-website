@@ -1,0 +1,8 @@
+.link {
+  display: flex;
+  align-items: center;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}

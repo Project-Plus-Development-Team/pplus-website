@@ -1,6 +1,8 @@
 import { Navbar } from "react-bulma-components";
 import { useDropdownState } from "../hooks/use-dropdown";
 import { NavLink } from "./NavLink";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTwitch } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "../PageHeader.module.scss";
 
@@ -22,7 +24,7 @@ export const LinkContainer = ({
   return (
     <Navbar.Container className="has-text-weight-bold">
       <NavLink onClick={foldNavbar} text="Home" href="/" pathname={pathname}/>
-      <NavLink className="has-new" onClick={foldNavbar} text="F.A.Q." href="/faq" pathname={pathname}/>
+      <NavLink onClick={foldNavbar} text="F.A.Q." href="/faq" pathname={pathname}/>
       <Navbar.Item href="#">
         <Navbar.Link
           className={`${styles.navitem} ${activeClass} `}
@@ -44,7 +46,6 @@ export const LinkContainer = ({
           }}
         >
           <NavLink
-            className="has-new"
             onClick={foldNavbar}
             text="All changes"
             href="/changes/all"
@@ -75,6 +76,18 @@ export const LinkContainer = ({
         onClick={foldNavbar}
         text="Find Communities"
         href="/find-communities"
+        pathname={pathname}
+      />
+      <NavLink
+        onClick={foldNavbar}
+        text={(
+          <FontAwesomeIcon
+            icon={faTwitch}
+            style={{ fontSize: "1.5em" }}
+            title="Watch Twitch streams of P+ and other mods!"
+          />
+        )}
+        href="/watch/streams"
         pathname={pathname}
         className="has-new"
       />

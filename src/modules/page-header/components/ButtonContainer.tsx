@@ -6,19 +6,6 @@ import { FAButton } from "shared/components/FAButton";
 
 import styles from "../PageHeader.module.scss";
 
-const DiscordButton = () => (
-  <FAButton
-    color="discord"
-    href="/discord"
-    renderAs="a"
-    className={styles.expandbutton}
-    icon={faDiscord}
-    title="Project+ Discord Server"
-  >
-    Discord Server
-  </FAButton>
-);
-
 interface ButtonContainerProps {
   latestVersion: string
   foldNavbar: () => void
@@ -29,20 +16,30 @@ export const ButtonContainer = ({
 }: ButtonContainerProps) => {
   return (
     <Navbar.Container align="right">
-      <Navbar.Item renderAs="div"> {/* <a> is default and gets an ugly shadow */}
-       <Button.Group align="center" className={styles.buttoncontainer}>
+      <Navbar.Item>
+       <Button.Group align="center" className={styles.buttonContainer}>
           <Link href="/download" passHref>
             <FAButton
               color="link"
-              className={`has-text-weight-bold ${styles.expandbutton}`}
+              className={`has-text-weight-bold ${styles.expandButton}`}
               onClick={foldNavbar}
               icon={faDownload}
-              title="Download the latest version of Project+"
+              renderAs="a"
+              // TODO accessibility?
             >
               Download v{latestVersion}
             </FAButton>
           </Link>
-          <DiscordButton/>
+          <FAButton
+            color="discord"
+            className={styles.expandButton}
+            href="/discord"
+            icon={faDiscord}
+            renderAs="a"
+            // TODO accessibility?
+          >
+            Discord Server
+          </FAButton>
        </Button.Group>
       </Navbar.Item>
     </Navbar.Container>

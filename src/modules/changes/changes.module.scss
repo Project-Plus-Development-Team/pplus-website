@@ -2,13 +2,4 @@
   transition: transform 0.06s;
   margin-left: 0.3rem;
   margin-right: 0.3rem;
-
-  &.rotate {
-    transform: rotateZ(90deg);
-  }
-}
-
-.dropdown_toggle {
-  user-select: none;
-  line-height: 39px;
 }

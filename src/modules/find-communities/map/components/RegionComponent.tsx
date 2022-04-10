@@ -36,7 +36,6 @@ export const RegionComponent = ({
         style={{
           filter: "drop-shadow(0 .5px .2px black)"
         }}
-        title={`Links to the community of ${fullName}`}
         href="#"
       >
         <circle

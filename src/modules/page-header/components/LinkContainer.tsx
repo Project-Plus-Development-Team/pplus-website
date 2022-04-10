@@ -27,7 +27,7 @@ export const LinkContainer = ({
       <NavLink onClick={foldNavbar} text="F.A.Q." href="/faq" pathname={pathname}/>
       <Navbar.Item href="#">
         <Navbar.Link
-          className={`${styles.navitem} ${activeClass} `}
+          className={`${styles.navitem} ${activeClass}`}
           onClick={(event: MouseEvent) => {
             // prevent the anchor from adding "#" to the browser URL
             event.preventDefault();
@@ -85,6 +85,7 @@ export const LinkContainer = ({
             icon={faTwitch}
             style={{ fontSize: "1.5em" }}
             title="Watch Twitch streams of P+ and other mods!"
+            // TODO accessibility?
           />
         )}
         href="/watch/streams"

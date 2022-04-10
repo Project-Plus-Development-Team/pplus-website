@@ -7,26 +7,26 @@ import { RenderAsComponent } from "react-bulma-components/src/components";
 type ButtonProps = Parameters<typeof Button>["0"]
 
 type Props = ButtonProps & {
-  icon: IconProp | undefined // TODO undefined why..?
+  icon: IconProp
 }
 
 // TODO fix props for typescript
 
-export const FAButton = forwardRef<RenderAsComponent, Props>(({ icon, children: title, ...rest }, ref) => (
+export const FAButton = forwardRef<RenderAsComponent, Props>(({ icon, children, ...rest }, ref) => (
   <Button {...rest} domRef={ref as RefObject<RenderAsComponent>}>
     {icon === undefined ? (
-      title
+      children
     ) : (
       <>
         <FontAwesomeIcon
           icon={icon}
           style={{
-            marginRight: title === undefined ? "" : "0.5em"
+            marginRight: children === undefined ? "" : "0.5em"
           }}
           fixedWidth={true}
         />
-        {title !== undefined && (
-          <span>{title}</span>
+        {children !== undefined && (
+          <span>{children}</span>
         )}
       </>
     )}

@@ -3,12 +3,14 @@ import { ChangeEventHandler, useState } from "react";
 import { TwitchStream } from "modules/watch/streams/TwitchStream";
 import { Placeholder } from "shared/components/Placeholder";
 import { FAButton } from "shared/components/FAButton";
-import { faMagnifyingGlass, faRefresh } from "@fortawesome/free-solid-svg-icons";
-import { Form, Heading } from "react-bulma-components";
+import { faCircleQuestion, faMagnifyingGlass, faRefresh } from "@fortawesome/free-solid-svg-icons";
+import { Form, Heading, Modal } from "react-bulma-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { StreamFilter, streamMatchesFilter, SupportedMod, supportedMods } from "modules/watch/streams/supported-mods";
-import { useStreams } from "modules/watch/streams/use-streams";
+import { StreamFilter, streamMatchesFilter } from "modules/watch/streams/functions/stream-filter";
+import { useStreams } from "modules/watch/streams/hooks/use-streams";
 import { NextSeo } from "next-seo";
+import { ShortModNames, shortModNames } from "modules/watch/streams/mod-data";
+import { HelpModalContent } from "modules/watch/streams/HelpModalContent";
 
 interface Props {
   isDev: boolean
@@ -17,6 +19,7 @@ interface Props {
 const Home = ({ isDev }: Props) => {
   const { streams, error, isLoading, reload, isOnCooldown } = useStreams(isDev);
   const [filter, setFilter] = useState<StreamFilter>(null);
+  const [showModal, setShowModal] = useState(true);
 
   const handleRadio: ChangeEventHandler<HTMLInputElement> = event => {
     if (event.target.value === "all") {
@@ -24,7 +27,7 @@ const Home = ({ isDev }: Props) => {
       return;
     }
 
-    setFilter(event.target.value as SupportedMod);
+    setFilter(event.target.value as ShortModNames);
   };
 
   return (
@@ -33,35 +36,43 @@ const Home = ({ isDev }: Props) => {
         title="Watch Twitch Streams"
         description="Watch Twitch Streams of Project+, Project M, and more mods!"
       />
+
+      <Modal show={showModal} closeOnBlur onClose={() => setShowModal(false)}>
+        <HelpModalContent/>
+      </Modal>
+
       <Heading size={2} className="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap gap">
         <span>Twitch Streams</span>
         <span style={{ fontSize: "1rem" }} className="is-flex gap">
           <Form.Radio value="all" checked={filter === null} onChange={handleRadio}>All</Form.Radio>
-          {supportedMods.map(mod => (
+          {shortModNames.map(mod => (
             <Form.Radio
               key={mod}
               value={mod}
               checked={filter === mod}
               onChange={handleRadio}
             >
-              {mod.toUpperCase()} only
+              {mod} only
             </Form.Radio>
           ))}
         </span>
-        <FAButton
-          icon={faRefresh}
-          onClick={reload}
-          disabled={isOnCooldown}
-          size="small"
-        >
-          Refresh
-        </FAButton>
-      </Heading>
-      <Heading size={3} subtitle className="has-text-info">
-        To show up on this page, stream on twitch.tv with the Super Smash Bros. Brawl category
-        and add one of the supported tags to the start of your stream title.
-        <br/>
-        Currently supported: {supportedMods.map(m => `[${m}]`.toUpperCase()).join(", ")}, more to come.
+        <div className="is-flex gap">
+          <FAButton
+            icon={faCircleQuestion}
+            onClick={() => setShowModal(true)}
+            size="small"
+          >
+            How to appear here
+          </FAButton>
+          <FAButton
+            icon={faRefresh}
+            onClick={reload}
+            disabled={isOnCooldown}
+            size="small"
+          >
+            Refresh
+          </FAButton>
+        </div>
       </Heading>
       {(error !== null || isLoading) ? (
         <Placeholder
@@ -75,13 +86,16 @@ const Home = ({ isDev }: Props) => {
       ) : (
         streams.length === 0 ? (
           <div
-            className="is-flex is-justify-content-center is-align-items-center"
-            style={{ height: 300 }}
+            className="is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-text-centered"
+            style={{ height: 300, padding: "1rem" }}
           >
             <Heading size={2}>
               <FontAwesomeIcon icon={faMagnifyingGlass} className="mr-3"/>
-              There are no currently supported streams online.
+              No livestreams found.
             </Heading>
+            <button className="link-button" onClick={() => setShowModal(true)}>
+              <Heading size={3} subtitle>Click here to find out how to get listed</Heading>
+            </button>
           </div>
         ) : (
           <>

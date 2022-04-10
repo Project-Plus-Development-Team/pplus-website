@@ -13,17 +13,13 @@ export const CopyToClipboard = ({ link, className, style }: Props) => {
   const [hasCopied, setClipboard] = useClipboard(link);
 
   return (
-    <a
-      onClick={event => {
-        event.preventDefault();
-        setClipboard();
-      }}
-      href="#"
-      className={`is-flex is-align-items-center copy mx-3 ${className ?? ""}`}
+    <button
+      onClick={() => setClipboard()}
+      className={`link-button is-flex is-align-items-center copy mx-3 ${className ?? ""}`}
       title="Copy link to clipboard"
       style={style}
     >
-      <FontAwesomeIcon icon={hasCopied ? faCheck : faLink}/>
+      <FontAwesomeIcon fixedWidth icon={hasCopied ? faCheck : faLink}/>
 
       {/* needs to be global in order for it to see .dropdown-toggle */}
       <style jsx global>{`
@@ -33,10 +29,10 @@ export const CopyToClipboard = ({ link, className, style }: Props) => {
           transition: color 0.08s ease;
         }
 
-        .copy-trigger:hover > .copy {
+        .copy-trigger:hover > .copy, .copy:focus {
           color: hsl(0, 0%, 90%);
         }
       `}</style>
-    </a>
+    </button>
   );
 };

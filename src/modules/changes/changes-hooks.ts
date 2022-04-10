@@ -19,7 +19,7 @@ export const useScrollToCategory = (
   shouldBeShown: boolean,
   setShow: Dispatch<boolean>
 ) => {
-  const scrollToRef = useRef<HTMLAnchorElement>(null);
+  const scrollToRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (shouldBeShown) {

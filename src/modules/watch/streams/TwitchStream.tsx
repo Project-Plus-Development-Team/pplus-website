@@ -1,5 +1,4 @@
 import { Box, Heading } from "react-bulma-components";
-import { getModDataFromTitle, getThumbnailUrl } from "./streams-functions";
 import { TwitchStreamI } from "./twitch-api";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserAlt, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -7,6 +6,8 @@ import { ModLogo } from "./ModLogo";
 import { useState } from "react";
 import { FAButton } from "shared/components/FAButton";
 import { useViewport } from "shared/hooks/use-viewport";
+import { getThumbnailUrl } from "./functions/get-thumbnail-url";
+import { useMod } from "./hooks/use-mod";
 
 import styles from "modules/watch/streams/Streams.module.scss";
 
@@ -25,28 +26,36 @@ interface Props {
   isDev: boolean
 }
 
-export const TwitchStream = ({ stream, isDev }: Props) => {  
-  const { mod, title } = getModDataFromTitle(stream.title);
+export const TwitchStream = ({ stream, isDev }: Props) => {
+  const mod = useMod(stream);
   const [play, setPlay] = useState(false);
   const embedWidth = useEmbedWidth();
 
   return (
-    <Box key={stream.id}>
+    <Box
+      key={stream.id}
+      style={{
+        paddingTop: "0.9em",
+        paddingBottom: "0.9em"
+      }}
+    >
       <Heading
         size={3}
-        className="mb-2 is-flex is-justify-content-space-between is-align-items-center gap"
+        className="mb-2 is-flex is-align-items-center gap"
         style={{ minHeight: 30 }}
       >
+        <ModLogo mod={mod}/>
         <a
-          className={`gap has-text-white ${styles.heading}`}
-          title="Click to watch on Twitch.tv"
+          className={`has-text-white is-flex-grow-1 ${styles.heading}`}
+          title="Click to watch on Twitch.tv" // TODO not very accessible, how can i fix this?
+          // https://www.24a11y.com/2017/the-trials-and-tribulations-of-the-title-attribute/
           href={`https://twitch.tv/${stream.user_login}`}
         >
-          <ModLogo mod={mod}/>
-          {title}
-          <span className="ml-1" style={{ fontWeight: "normal" }}>
-            by {stream.user_name}
-          </span>
+          {stream.title}
+          {" "}
+          <em style={{ fontWeight: "normal" }}>
+            streamed by {stream.user_name}
+          </em>
         </a>
         {play ? (
           <FAButton
@@ -72,15 +81,19 @@ export const TwitchStream = ({ stream, isDev }: Props) => {
           scrolling="no"
           width="100%"
           height={embedWidth}
+          title="Embedded Twitch Livestream Player"
         />
       ) : (
-        <a
-          href="#"
+        <button
           onClick={event => {
             event.preventDefault();
             setPlay(true);
           }}
           title="Click to watch in embedded Twitch player"
+          className="link-button"
+          style={{
+            width: "100%",
+          }}
         >
           <img
             src={getThumbnailUrl(stream.thumbnail_url)}
@@ -88,10 +101,9 @@ export const TwitchStream = ({ stream, isDev }: Props) => {
               width: "100%",
               maxHeight: 300,
               objectFit: "cover",
-              display: "block"
             }}
           />
-        </a>
+        </button>
       )}
     </Box>
   );

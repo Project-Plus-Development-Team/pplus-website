@@ -10,6 +10,7 @@ export const Links = () => (
     <Heading subtitle className="mb-3" weight="light" size={2}>Join or follow us!</Heading>
 
     <div className={`flex-grow-children ${styles.links_container}`}>
+      {/* TODO title is not accessible, but what do i do with these then? the icons convey more meaning to sighted users. i don't wanna bury them in text. */}
       <FAButton icon={faDiscord} renderAs="a" href="/discord" title="Project+ Discord Server">Project+</FAButton>
       <FAButton icon={faReddit} renderAs="a" href="https://www.reddit.com/r/ssbpm" title="Project M Subreddit">r/ssbpm</FAButton>
       <FAButton icon={faTwitter} renderAs="a" href="https://twitter.com/ProjectPlusGame" title="Project+ on Twitter">@ProjectPlusGame</FAButton>

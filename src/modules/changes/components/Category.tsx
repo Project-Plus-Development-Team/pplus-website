@@ -28,18 +28,20 @@ export const Category = ({ shouldBeShown, name, children }: Props) => {
         className="is-flex is-align-content-center copy-trigger"
       >
         <CategoryIcon name={name}/>
-        <a
+        <button
           {...onSnappy(() => setShow(!show), true)}
-          className={`${styles.dropdown_toggle} has-text-white`}
+          className="has-text-white link-button"
           ref={scrollToRef}
-          href="#"
         >
           <FontAwesomeIcon
             icon={faAngleRight}
-            className={`${styles.icon} ${show ? styles.rotate : ""}`}
+            className={styles.icon}
+            style={{
+              transform: show ? "rotateZ(90deg)" : ""
+            }}
           />
           {name}
-        </a>
+        </button>
         <CopyToClipboard link={link}/>
       </Heading>
       {show && (

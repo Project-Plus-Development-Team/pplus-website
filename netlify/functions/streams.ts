@@ -1,6 +1,6 @@
 import { Handler } from "@netlify/functions";
 import axios from "axios";
-import { streamIsSupportedMod, supportedMods } from "modules/watch/streams/supported-mods";
+import { getShortModNameOfStream } from "modules/watch/streams/functions/get-mod-of-stream";
 import { TwitchStreamsResponse } from "modules/watch/streams/twitch-api";
 
 const brawlGameId = 18833;
@@ -43,7 +43,8 @@ const getStreams = async (isRetry = false): Promise<string> => {
     });
 
     return JSON.stringify(
-      data.data.filter(stream => streamIsSupportedMod(stream.title))
+      data.data
+        .filter(getShortModNameOfStream)
     );
   } catch (error) {
     if (

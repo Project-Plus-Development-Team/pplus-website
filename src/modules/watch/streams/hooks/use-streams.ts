@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { TwitchStreamI } from "./twitch-api";
+import { TwitchStreamI } from "../twitch-api";
 
 export const useStreams = (isDev: boolean) => {
   const [streams, setStreams] = useState<TwitchStreamI[]|null>(null);

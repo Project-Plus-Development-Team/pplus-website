@@ -20,7 +20,7 @@
   }
 }
 
-.buttoncontainer {
+.buttonContainer {
   @include from (500px) { // arbitrary value i chose which looks good, not an actual bulma breakpoint
     flex-wrap: nowrap !important;
   }
@@ -39,7 +39,7 @@
   }
 }
 
-.expandbutton {
+.expandButton {
   @include touch {
     width: 100%;
   }

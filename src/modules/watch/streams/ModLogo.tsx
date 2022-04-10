@@ -1,8 +1,8 @@
-import { getModDetails } from "./streams-functions";
-import { SupportedMod } from "./supported-mods";
-
 interface Props {
-  mod: SupportedMod|null
+  mod: {
+    longName: string
+    image: string
+  } | null
 }
 
 export const ModLogo = ({ mod }: Props) => {
@@ -11,7 +11,8 @@ export const ModLogo = ({ mod }: Props) => {
       <img
         src="/images/generated/css/question-mark.webp"
         style={{
-          transform: "rotateZ(-45deg)"
+          transform: "rotateZ(-45deg)",
+          verticalAlign: "bottom"
         }}
         alt="Question mark icon"
         title="Unknown mod"
@@ -21,13 +22,14 @@ export const ModLogo = ({ mod }: Props) => {
     );
   }
 
-  const { image, alt } = getModDetails(mod);
-
   return (
     <img
-      src={image}
-      alt={`${alt} Logo`}
-      title={`${alt} Logo`}
+      src={mod.image}
+      style={{
+        verticalAlign: "bottom"
+      }}
+      alt={`${mod.longName} Logo`}
+      title={`${mod.longName} Logo`}
       loading="lazy"
       width={20}
     />

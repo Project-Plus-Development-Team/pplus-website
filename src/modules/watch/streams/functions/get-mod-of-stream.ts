@@ -1,4 +1,4 @@
-import { getModShortNameBySupportedModInStreamTitle, ShortModNames, SupportedModInStreamTitle, supportedMods, supportedModsArray } from "../mod-data";
+import { getModShortNameBySupportedModInStreamTitle, ShortModNames, SupportedModInStreamTitle, supportedModsArray } from "../mod-data";
 import { TwitchStreamI } from "../twitch-api";
 
 /**

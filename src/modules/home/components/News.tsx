@@ -8,7 +8,7 @@ import styles from "../Home.module.scss";
 
 export const News = () => (
   <Container className={styles.news}>
-    <Link href="/download" passHref>
+    <Link href="/watch/streams" passHref>
       <FAButton
         color="twitch"
         className="has-text-weight-bold has-new"

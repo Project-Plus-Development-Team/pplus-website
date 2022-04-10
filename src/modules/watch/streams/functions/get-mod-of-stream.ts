@@ -4,7 +4,7 @@ import { TwitchStreamI } from "../twitch-api";
 /**
  * From https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#escaping
  */
- const escapeForRegex = (text: string) => (
+const escapeForRegex = (text: string) => (
   text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
 );
 

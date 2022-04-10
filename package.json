@@ -41,7 +41,6 @@
     "next": "^12.1.4",
     "next-seo": "^5.4.0",
     "next-sitemap": "^2.5.19",
-    "preact": "^10.7.1",
     "raw-loader": "^4.0.2",
     "react": "^17.0.2",
     "react-bulma-components": "^4.1.0",

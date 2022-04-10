@@ -84,10 +84,9 @@ export const LinkContainer = ({
           <FontAwesomeIcon
             icon={faTwitch}
             style={{ fontSize: "1.5em" }}
-            title="Watch Twitch streams of P+ and other mods!"
-            // TODO accessibility?
           />
         )}
+        title="Watch Twitch streams of P+ and other mods!"
         href="/watch/streams"
         pathname={pathname}
         className="has-new"

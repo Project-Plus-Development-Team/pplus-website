@@ -23,12 +23,7 @@ module.exports = phase => {
         use: path.resolve("src/node-utilities/optimized-topojson-loader.js")
       });
 
-      if (!dev && !isServer) {
-        Object.assign(config.resolve.alias, {
-          react: "preact/compat",
-          "react-dom": "preact/compat"
-        });
-      }
+      // TODO try aliasing preact again, but previously it caused an issue with next/router.push (find-communities use-modal)
   
       if (phase !== "phase-development-server") {    
         config.plugins.push(new DuplicatePackageCheckerPlugin({

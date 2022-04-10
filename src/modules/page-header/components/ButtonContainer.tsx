@@ -16,7 +16,7 @@ export const ButtonContainer = ({
 }: ButtonContainerProps) => {
   return (
     <Navbar.Container align="right">
-      <Navbar.Item>
+      <Navbar.Item renderAs="span"> {/* don't nest <a> */}
        <Button.Group align="center" className={styles.buttonContainer}>
           <Link href="/download" passHref>
             <FAButton

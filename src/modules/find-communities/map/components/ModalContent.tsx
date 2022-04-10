@@ -35,7 +35,7 @@ export const ModalContent = ({ region }: Props) => {
             icon={hasCopied ? faCheck : faLink}
             color="secondary"
             className="mr-4"
-            size="small"ks
+            size="small"
             onClick={setClipboard}
           >
             Copy Link to this

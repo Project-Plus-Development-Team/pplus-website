@@ -19,7 +19,7 @@ interface Props {
 const Home = ({ isDev }: Props) => {
   const { streams, error, isLoading, reload, isOnCooldown } = useStreams(isDev);
   const [filter, setFilter] = useState<StreamFilter>(null);
-  const [showModal, setShowModal] = useState(true);
+  const [showModal, setShowModal] = useState(false);
 
   const handleRadio: ChangeEventHandler<HTMLInputElement> = event => {
     if (event.target.value === "all") {
@@ -41,10 +41,19 @@ const Home = ({ isDev }: Props) => {
         <HelpModalContent/>
       </Modal>
 
-      <Heading size={2} className="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap gap">
+      <Heading
+        size={2}
+        className="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap gap"
+      >
         <span>Twitch Streams</span>
         <span style={{ fontSize: "1rem" }} className="is-flex gap">
-          <Form.Radio value="all" checked={filter === null} onChange={handleRadio}>All</Form.Radio>
+          <Form.Radio
+            value="all"
+            checked={filter === null}
+            onChange={handleRadio}
+          >
+            All
+          </Form.Radio>
           {shortModNames.map(mod => (
             <Form.Radio
               key={mod}

@@ -19,8 +19,6 @@ const supportedModInStreamTitleRegex = new RegExp(
   "i"
 );
 
-console.log(supportedModInStreamTitleRegex);
-
 export const getShortModNameOfStream = (stream: TwitchStreamI|string): ShortModNames|null => {
   const streamTitle = typeof stream === "string" ? stream : stream.title;
   const results = supportedModInStreamTitleRegex.exec(streamTitle);

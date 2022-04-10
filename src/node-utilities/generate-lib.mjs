@@ -8,7 +8,13 @@ const createSingleDirIfNotExists = async dirPath => {
     await fs.access(dirPath);
   } catch (error) {
     if (error.code === "ENOENT") {
-      await fs.mkdir(dirPath);
+      try {
+        await fs.mkdir(dirPath);
+      } catch (mkdirError) {
+        if (!mkdirError.code === "EEXIST") { // hopefully fixes parallel async functions doing the thing
+          throw mkdirError;
+        }
+      }
     } else {
       throw error;
     }

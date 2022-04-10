@@ -3,8 +3,11 @@
   src: url(/q9283rw8fg/Streamster.ttf);
 }
 
-body {
-  background-image: url(/images/generated/q9283rw8fg/vaporwave-wallpaper.webp);
+:root.q9283rw8fg {
+  font-size: 0.9rem;
+}
+
+.q9283rw8fg body {
   animation:
     wiggle-background 60s ease-in-out infinite,
     zoomle-background 37s ease-in-out infinite;
@@ -20,6 +23,36 @@ body {
 
 .css-main img {
   display: none;
+}
+
+img[alt="Knuckles with a glow"],
+img[data-q] {
+  --offset: 300px;
+  width: var(--offset);
+  padding-left: var(--offset);
+  background-size: cover;
+  background-position: center;
+}
+
+img[data-q=overview] {
+  background-image: url(/q9283rw8fg/punch.dd6d7763.png);
+}
+
+img[data-q=glow] {
+  background-image: url(/q9283rw8fg/glowy.69959f3b.png);
+  height: 409px;
+}
+
+img[data-q="rougher than the rest of 'em"] {
+  background-image: url(/q9283rw8fg/upsmash.57b7aac9.png);
+}
+
+img[data-q="drill claw"] {
+  background-image: url(/q9283rw8fg/drill-claw.ac3e1b19.png);
+}
+
+img[data-q="glide"] {
+  background-image: url(/q9283rw8fg/glide.e17a6a6f.png);
 }
 
 @keyframes zoomle-background {
@@ -58,22 +91,19 @@ body {
   }
 }
 
-:root {
-  font-size: 0.9rem;
-}
 
-body,
-button,
-input,
-optgroup,
-select,
-textarea {
+.q9283rw8fg body,
+.q9283rw8fg button,
+.q9283rw8fg input,
+.q9283rw8fg optgroup,
+.q9283rw8fg select,
+.q9283rw8fg textarea {
   font-family: 'Times New Roman', Times, serif;
   font-weight: lighter;
   font-style: italic;
 }
 
-.title {
+.q9283rw8fg .title {
   font-family: Streamster !important;
   font-style: normal;
   font-size: 3em;
@@ -88,12 +118,12 @@ textarea {
   filter: drop-shadow(-1px 1px 0 white);
 }
 
-.box {
+.q9283rw8fg .box {
   background: transparent;
   border: 0.3em solid slateblue;
 }
 
-.title::after {
+.q9283rw8fg .title::after {
   content: "リサフランク";
   color: white;
   font-style: italic;
@@ -101,7 +131,7 @@ textarea {
   margin-left: 2em;
 }
 
-.title::before {
+.q9283rw8fg .title::before {
   top: 25%;
   width: 100%;
   content: "";
@@ -111,7 +141,7 @@ textarea {
   mix-blend-mode: screen;
 }
 
-.navbar-item img {
+.q9283rw8fg .navbar-item img {
   background-image: url(/images/generated/q9283rw8fg/project-wave-logo.webp);
   background-size: 200px;
   background-position: center;
@@ -131,7 +161,7 @@ textarea {
 }
 
 
-.navbar {
+.q9283rw8fg .navbar {
   background-image:
     linear-gradient(70deg, #ad66ff, #0099ff , #00b8be, #ff33c2, #ad66ff) !important;
   animation: rainbow_animation 30s linear infinite !important;
@@ -149,16 +179,22 @@ textarea {
   }
 }
 
-main * {
+.q9283rw8fg main {
+  border: .3rem solid rgb(230, 29, 196) !important;
+  animation: shimmer 0.001s ease infinite;
+  backdrop-filter: blur(1px);
+}
+
+.q9283rw8fg main * {
   letter-spacing: .3em;
   text-transform: lowercase;
 }
 
-.content ul * {
+.q9283rw8fg .content ul * {
   letter-spacing: normal;
 }
 
-main.container img {
+.q9283rw8fg main.container img {
   filter: hue-rotate(-0.2turn);
 }
 
@@ -170,12 +206,6 @@ main.container img {
   50% {
     filter: saturate(0.8) hue-rotate(1turn);
   }
-}
-
-main {
-  border: .3rem solid rgb(230, 29, 196) !important;
-  animation: shimmer 0.001s ease infinite;
-  backdrop-filter: blur(1px);
 }
 
 @keyframes shimmer {

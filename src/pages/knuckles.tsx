@@ -28,6 +28,7 @@ function InfoElement({ title, img, children, reverse, color }: InfoElementProps)
       </div>
       <GoodImage
         img={img}
+        data-q={title}
         alt="Knuckles performing a move or attack"
         lazy
       />
@@ -48,6 +49,7 @@ const Knuckles = () => (
           img={images.glowy}
           alt="Knuckles with a glow"
           className="bind-inner"
+          data-q="glow"
           lazy
           style={{
             minWidth: 200,

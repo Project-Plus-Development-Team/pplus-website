@@ -26,7 +26,7 @@
 }
 
 img[alt="Knuckles with a glow"],
-img[data-q] {
+.q9283rw8fg img[data-q] {
   --offset: 300px;
   width: var(--offset);
   padding-left: var(--offset);
@@ -53,6 +53,12 @@ img[data-q="drill claw"] {
 
 img[data-q="glide"] {
   background-image: url(/q9283rw8fg/glide.e17a6a6f.png);
+}
+
+.q9283rw8fg img[data-q="woah"] {
+  height: 300px;
+  --offset: 469px;
+  background-image: url(/q9283rw8fg/knuckles-woah.d7d56cb6.png);
 }
 
 @keyframes zoomle-background {

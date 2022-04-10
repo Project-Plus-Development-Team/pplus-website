@@ -175,6 +175,7 @@ const FourOhFour = () => {
       <GoodImage
         img={woah}
         alt="Knuckles with a surprised 'woah!' expression"
+        data-q="woah"
         lazy
         onDragStart={e => {
           const ohno = new Audio("/ohno.ogg");

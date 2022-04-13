@@ -15,17 +15,13 @@ export const onSnappy = (handler: (event: UIEvent) => void, preventDefault = fal
     }
   },
   onMouseDown: (event: MouseEvent) => {
-    if (event.button !== 0) { // only left-click or touch
-      return;
+    if (event.button === 0) { // only left-click or touch
+      handler(event);
     }
-
-    handler(event);
   },
   onKeyDown: (event: KeyboardEvent) => {
-    if (event.key !== "Enter") {
-      return;
+    if (["Enter", "Space"].includes(event.code)) {
+      handler(event);
     }
-
-    handler(event);
   }
 });

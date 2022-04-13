@@ -40,10 +40,15 @@ const FAQ = ({ markdownAst, questions }: Props) => {
       );
   
       const id = getIdOfNode(node.children[0]);
-      const highlightedClass = id === hash ? styles.highlighted : "";
+      const isActive = id === hash;
+      const highlightedClass = isActive ? styles.highlighted : "";
 
       return (
-        <h4 id={id} className={`copy-trigger ${highlightedClass}`}>
+        <h4
+          id={id}
+          className={`copy-trigger ${highlightedClass}`}
+          aria-current={isActive ? "true" : undefined}
+        >
           {content}
           {id && (
             <CopyToClipboard link={getCurrentUrlWithHash(id)}/>

@@ -22,10 +22,15 @@ export const NavLink = ({
     <Link href={href} passHref>
       <a
         className={`navbar-item ${styles.navitem} ${activeClass} ${className}`}
+        aria-current={isActive ? "page" : undefined}
         onClick={onClick}
-        title={title} // TODO accessibility?
       >
-        {text}
+        {title ? (
+          <>
+            <span className="is-sr-only">{title}</span>
+            <span aria-hidden>{text}</span>
+          </>
+        ) : text}
       </a>
     </Link>
   );

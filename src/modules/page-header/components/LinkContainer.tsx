@@ -18,7 +18,7 @@ export const LinkContainer = ({
   const isChangesActive = pathname.split("/")[1] === "changes";
   const activeClass = isChangesActive ? styles.navitemactive : "";
 
-  // TODO https://github.com/couds/react-bulma-components/issues/382
+  // [upstream] https://github.com/couds/react-bulma-components/issues/382
   const { active, setActive, linkRef } = useDropdownState();
 
   return (
@@ -34,8 +34,9 @@ export const LinkContainer = ({
             setActive(!active);
           }}
           domRef={linkRef}
-          // TODO https://github.com/couds/react-bulma-components/issues/383
+          // [a11y] https://github.com/couds/react-bulma-components/issues/383
           renderAs="a" // render as anchor for keyboard navigation / accessibility
+          // [a11y] render as button for a11y??
           href="#"
         >
           Changes

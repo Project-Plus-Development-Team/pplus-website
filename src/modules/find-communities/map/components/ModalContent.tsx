@@ -18,6 +18,7 @@ export const ModalContent = ({ region }: Props) => {
   const [hasCopied, setClipboard] = useClipboard(url);
 
   useEffect(() => {
+    // TODO couldn't make this work with react's autoFocus polyfill, so this has to do for now.
     const cardBody = document.querySelector(".modal-card-body");
 
     if (cardBody) {
@@ -98,10 +99,9 @@ export const ModalContent = ({ region }: Props) => {
           {" "}
           Something broken or wrong?
           {" "}
-          <a href="https://twitter.com/functiongermany" target="_blank">
-            Contact me
+          <a href="https://twitter.com/functiongermany">
+            Contact me.
           </a>
-          .
         </Heading>
       </Modal.Card.Footer>
     </Modal.Card>

@@ -25,7 +25,6 @@ export const ButtonContainer = ({
               onClick={foldNavbar}
               icon={faDownload}
               renderAs="a"
-              // TODO accessibility?
             >
               Download v{latestVersion}
             </FAButton>
@@ -36,7 +35,6 @@ export const ButtonContainer = ({
             href="/discord"
             icon={faDiscord}
             renderAs="a"
-            // TODO accessibility?
           >
             Discord Server
           </FAButton>

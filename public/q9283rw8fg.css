@@ -14,7 +14,7 @@
   background-attachment: fixed;
 }
 
-.css-main a {
+.css-main a, .css-main button {
   background-image: var(--meta);
   background-size: contain;
   background-position: center;
@@ -59,6 +59,20 @@ img[data-q="glide"] {
   height: 300px;
   --offset: 469px;
   background-image: url(/q9283rw8fg/knuckles-woah.d7d56cb6.png);
+}
+
+main[data-q=changes] span[data-q] {
+  position: relative;
+}
+
+main[data-q=changes] span[data-q]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #8B8DE6;
+  mix-blend-mode: hue;
 }
 
 @keyframes zoomle-background {
@@ -109,7 +123,7 @@ img[data-q="glide"] {
   font-style: italic;
 }
 
-.q9283rw8fg .title {
+.q9283rw8fg .title:not(.is-flex) {
   font-family: Streamster !important;
   font-style: normal;
   font-size: 3em;
@@ -129,7 +143,7 @@ img[data-q="glide"] {
   border: 0.3em solid slateblue;
 }
 
-.q9283rw8fg .title::after {
+.q9283rw8fg .title:not(.is-flex)::after {
   content: "リサフランク";
   color: white;
   font-style: italic;
@@ -137,7 +151,7 @@ img[data-q="glide"] {
   margin-left: 2em;
 }
 
-.q9283rw8fg .title::before {
+.q9283rw8fg .title:not(.is-flex)::before {
   top: 25%;
   width: 100%;
   content: "";
@@ -148,7 +162,7 @@ img[data-q="glide"] {
 }
 
 .q9283rw8fg .navbar-item img {
-  background-image: url(/images/generated/q9283rw8fg/project-wave-logo.webp);
+  background-image: url(/q9283rw8fg/logo.f6e6af01.png);
   background-size: 200px;
   background-position: center;
   background-repeat: no-repeat;

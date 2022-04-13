@@ -169,7 +169,7 @@ const FourOhFour = () => {
         <span>
           There&apos;s a high chance this page used to exist, but has moved.<br/>
           A search function to find moved content is in the works, but until then you can<br/>
-          <a href="/discord" target="_blank">ask in our Discord server</a> or <a href="https://twitter.com/functiongermany" target="_blank">tweet at me</a>.
+          <a href="/discord">ask in our Discord server</a> or <a href="https://twitter.com/functiongermany">tweet at me</a>. {/* [a11y] */}
         </span>
       </div>
       <GoodImage

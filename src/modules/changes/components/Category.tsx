@@ -29,9 +29,10 @@ export const Category = ({ shouldBeShown, name, children }: Props) => {
       >
         <CategoryIcon name={name}/>
         <button
-          {...onSnappy(() => setShow(!show), true)}
-          className="has-text-white link-button"
+          {...onSnappy(() => setShow(!show))}
+          className="has-text-white link-button has-text-left is-flex is-align-items-center gap"
           ref={scrollToRef}
+          aria-expanded={show}
         >
           <FontAwesomeIcon
             icon={faAngleRight}

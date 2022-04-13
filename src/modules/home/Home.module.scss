@@ -51,6 +51,10 @@
   justify-content: center;
   gap: 1em;
 
+  @include touch {
+    width: 100%;
+  }
+
   > * {
     flex: 1;
   }

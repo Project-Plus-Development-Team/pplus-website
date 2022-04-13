@@ -33,7 +33,7 @@ const ErrorContent = ({ retry }: Pick<Props, "retry">) => (
 
 export const Placeholder = ({ error, isLoading, retry, height, children }: Props) => (
   <div
-    className="is-flex is-justify-content-center is-align-items-center has-background-black" // TODO has-background-black
+    className="is-flex is-justify-content-center is-align-items-center has-background-black" // FIXME has-background-black not working?
     style={{ height }} // TODO analog to responsive map height
   >
     <Heading className="has-text-dark is-flex is-flex-direction-column gap is-align-items-center">

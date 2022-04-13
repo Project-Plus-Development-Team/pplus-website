@@ -4,7 +4,10 @@
  * also for some customization.
  */
 
-// TODO https://github.com/glenn2223/vscode-live-sass-compiler/issues/169
+// up here because of priority so that we don't need !important
+a:not(.navbar-item):not(.navbar-link):not(.button) {
+  text-decoration: revert; // add underline back, a11y
+}
 
 @import "~bulmaswatch/cyborg/variables"; // swatch styles
 @import "~bulma/sass/utilities/_all.sass"; // mandatory
@@ -99,7 +102,7 @@ $scheme-main: black; // fixes button disabled state
 @import "~bulma/sass/elements/title.sass";
 @import "~bulma/sass/elements/container.sass";
 
-// TODO https://github.com/jgthms/bulma/issues/3506
+// [upstream] https://github.com/jgthms/bulma/issues/3506
 
 @import "~bulma/sass/helpers/typography.sass"; // <strong>
 @import "~bulma/sass/helpers/flexbox.sass"; // .is-justify-content...
@@ -116,7 +119,7 @@ $colors: mergeColorMaps(
 $colors: $colorsWithoutDark; // turn back to reduced color set
 
 $spacing-shortcuts: ("margin": "m");
-// $spacing-horizontal: null; // TODO https://github.com/jgthms/bulma/issues/3507
+// $spacing-horizontal: null; // [upstream] https://github.com/jgthms/bulma/issues/3507
 // $spacing-vertical: null;
 $spacing-values: (
   "0": 0,

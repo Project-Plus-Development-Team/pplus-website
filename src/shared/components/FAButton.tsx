@@ -2,15 +2,13 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { forwardRef, RefObject } from "react";
 import { Button } from "react-bulma-components";
-import { RenderAsComponent } from "react-bulma-components/src/components";
+import { BulmaComponent, RenderAsComponent } from "react-bulma-components/src/components";
 
 type ButtonProps = Parameters<typeof Button>["0"]
 
 type Props = ButtonProps & {
   icon: IconProp
 }
-
-// TODO fix props for typescript
 
 export const FAButton = forwardRef<RenderAsComponent, Props>(({ icon, children, ...rest }, ref) => (
   <Button {...rest} domRef={ref as RefObject<RenderAsComponent>}>
@@ -31,4 +29,6 @@ export const FAButton = forwardRef<RenderAsComponent, Props>(({ icon, children, 
       </>
     )}
   </Button>
-));
+)) as BulmaComponent<Props, "button">;
+
+// TODO fix "as"

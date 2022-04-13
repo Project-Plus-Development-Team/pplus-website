@@ -47,8 +47,7 @@ export const TwitchStream = ({ stream, isDev }: Props) => {
         <ModLogo mod={mod}/>
         <a
           className={`has-text-white is-flex-grow-1 ${styles.heading}`}
-          title="Click to watch on Twitch.tv" // TODO not very accessible, how can i fix this?
-          // https://www.24a11y.com/2017/the-trials-and-tribulations-of-the-title-attribute/
+          title="Click to watch on Twitch.tv"
           href={`https://twitch.tv/${stream.user_login}`}
         >
           {stream.title}
@@ -56,6 +55,7 @@ export const TwitchStream = ({ stream, isDev }: Props) => {
           <em style={{ fontWeight: "normal" }}>
             streamed by {stream.user_name}
           </em>
+          <span className="is-sr-only">Click to watch on Twitch.tv</span>
         </a>
         {play ? (
           <FAButton

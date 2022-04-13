@@ -17,27 +17,46 @@ export const CSSButton = ({ character, randomHandler }: Props) => {
 
   const image = images[character.img as keyof typeof images];
 
+  const imageElement = image && (
+    <GoodImage
+      img={image}
+      alt={character.name}
+      aria-hidden
+    />
+  );
+
+  if (character.isRandom) {
+    return (
+      <button
+        onClick={randomHandler}
+        title="Random Discord"
+        className={`${styles.button} link-button`}
+        style={{
+          // @ts-ignore
+          "--meta": `url(/images/generated/q9283rw8fg/css/${character.img}.webp)`
+        }}
+      >
+        {imageElement}
+        <span className="is-sr-only">
+          Random Character Discord
+        </span>
+      </button>
+    );
+  }
+
   return (
     <a
-      href={character.isRandom ? "#" : `https://discord.com/invite/${character.discordInviteId}`}
-      onClick={event => {
-        if (character.isRandom) {
-          randomHandler(event);
-        }
-      }}
-      title={`${character.name} Discord`}
+      href={`https://discord.com/invite/${character.discordInviteId}`}
       className={styles.button}
       style={{
         // @ts-ignore
         "--meta": `url(/images/generated/q9283rw8fg/css/${character.img}.webp)`
       }}
     >
-      {image && (
-        <GoodImage
-          img={image}
-          alt={character.name}
-        />
-      )}
+      {imageElement}
+      <span className="is-sr-only">
+        {character.name} Discord
+      </span>
     </a>
   );
 };

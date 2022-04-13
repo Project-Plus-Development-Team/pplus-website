@@ -3,8 +3,11 @@ import axios from "axios";
 import { getShortModNameOfStream } from "modules/watch/streams/functions/get-mod-of-stream";
 import { TwitchStreamsResponse } from "modules/watch/streams/twitch-api";
 
-const brawlGameId = 18833;
-const url = `https://api.twitch.tv/helix/streams?game_id=${brawlGameId}&first=100`;
+const brawlId = "18833";
+const fakeProjectMId = "914675685";
+const meleeId = "16282";
+const url = `https://api.twitch.tv/helix/streams?game_id=${brawlId}&game_id=${fakeProjectMId}&game_id=${meleeId}&first=100`;
+// const url = `https://api.twitch.tv/helix/streams?first=10`;
 
 const clientSecret = process.env.TWITCH_CLIENT_SECRET;
 const clientId = process.env.TWITCH_CLIENT_ID;
@@ -17,14 +20,17 @@ if (clientId === undefined) {
   throw new Error("Twitch Client Id not available in environment");
 }
 
-let accessToken: string|null = null;
+let accessToken: string | null = null;
 
 const refreshAccessToken = async () => {
-  const { data } = await axios.post("https://id.twitch.tv/oauth2/token", {
-    client_id: clientId,
-    client_secret: clientSecret,
-    grant_type: "client_credentials"
-  });
+  const { data } = await axios.post<{ access_token: string }>(
+    "https://id.twitch.tv/oauth2/token",
+    {
+      client_id: clientId,
+      client_secret: clientSecret,
+      grant_type: "client_credentials",
+    }
+  );
 
   accessToken = data.access_token;
 };
@@ -37,20 +43,17 @@ const getStreams = async (isRetry = false): Promise<string> => {
   try {
     const { data } = await axios.get<TwitchStreamsResponse>(url, {
       headers: {
-        "Authorization": "Bearer " + accessToken as string,
-        "Client-Id": clientId
-      }
+        Authorization: `Bearer ${accessToken as string}`,
+        "Client-Id": clientId,
+      },
     });
 
-    return JSON.stringify(
-      data.data
-        .filter(getShortModNameOfStream)
-    );
+    return JSON.stringify(data.data.filter(getShortModNameOfStream));
   } catch (error) {
     if (
-      axios.isAxiosError(error)
-      && error.response?.data.message === "Invalid OAuth token"
-      && !isRetry
+      axios.isAxiosError(error) &&
+      error.response?.data.message === "Invalid OAuth token" &&
+      !isRetry
     ) {
       await refreshAccessToken();
       return getStreams(true);
@@ -61,13 +64,13 @@ const getStreams = async (isRetry = false): Promise<string> => {
 };
 
 export const handler: Handler = async () => {
-  try {  
+  try {
     return {
       statusCode: 200,
       body: await getStreams(),
       headers: {
-        "Access-Control-Allow-Origin": "*"
-      }
+        "Access-Control-Allow-Origin": "*",
+      },
     };
   } catch (error) {
     if (axios.isAxiosError(error)) {
@@ -81,8 +84,8 @@ export const handler: Handler = async () => {
       statusCode: 500,
       body: JSON.stringify({
         error: "An unknown error occurred",
-        message: `Serialized error: ${JSON.stringify(error)}`
-      })
+        message: `Serialized error: ${JSON.stringify(error)}`,
+      }),
     };
   }
 };

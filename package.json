@@ -3,6 +3,7 @@
     "dev": "concurrently --names \"Next.js,Netlify Functions\" \"next dev\" \"netlify functions:serve\"",
     "build": "npm run generate-imgs && next build && next export",
     "build:fast": "cross-env NEXT_TS_CHECK=off NEXT_ESLINT=off NEXT_DEBUG=on next build && next export",
+    "build:nolint": "cross-env NEXT_ESLINT=off next build && next export",
     "postbuild": "next-sitemap --config next-sitemap-config.js",
     "serve": "serve ./out/",
     "fast-preview": "npm run build:fast && npm run serve",

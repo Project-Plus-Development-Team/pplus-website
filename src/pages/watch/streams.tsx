@@ -24,7 +24,7 @@ const useFilter = () => {
   const router = useRouter();
 
   useEffect(() => {
-    const url = new URL(window.location);
+    const url = new URL(window.location.toString());
 
     const userFilter = url.searchParams.get("mod")
 
@@ -39,7 +39,7 @@ const useFilter = () => {
   }, [])
 
   useEffect(() => {
-    const url = new URL(window.location)
+    const url = new URL(window.location.toString())
 
     if (filter === null) {
       url.searchParams.delete("mod")

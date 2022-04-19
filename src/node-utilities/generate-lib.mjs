@@ -1,53 +1,11 @@
-import fs from "fs/promises";
+import fse from "fs-extra";
 import path from "path";
 import sharp from "sharp";
-
-/** @param {string} dirPath */
-const createSingleDirIfNotExists = async dirPath => {
-  try {
-    await fs.access(dirPath);
-  } catch (error) {
-    if (error.code === "ENOENT") {
-      try {
-        await fs.mkdir(dirPath);
-      } catch (mkdirError) {
-        if (!mkdirError.code === "EEXIST") { // hopefully fixes parallel async functions doing the thing
-          throw mkdirError;
-        }
-      }
-    } else {
-      throw error;
-    }
-  }
-};
 
 /** @param {string[]} paths */
 const root = (...paths) => (
   path.join(process.cwd(), ...paths)
 );
-
-/**
- * Given "foo/bar/baz" will create "foo", "foo/bar" and "foo/bar/baz" if they don't exist
- * @param {string} dirPath
- */
-const createDirIfNotExists = async dirPath => {
-  const subpaths = dirPath
-    .split(path.sep)
-    .filter(segment => segment !== "")
-    .reduce((prev, cur, index) => {
-      const prevPath = prev[index - 1];
-      const newValue = prevPath === undefined ? cur : path.join(prevPath, cur);
-      prev.push(newValue);
-      return prev;
-    }, []);
-
-  const isAbsolute = dirPath.startsWith("/");
-  const absolutePrefix = isAbsolute ? "/" : "";
-
-  for (const subpath of subpaths) {
-    await createSingleDirIfNotExists(absolutePrefix + subpath);
-  }
-};
 
 /**
  * @param {{
@@ -56,9 +14,9 @@ const createDirIfNotExists = async dirPath => {
  *    quality?: number
  * }} options
  * @param {string} sourceFile
- * @param {string} outputFile
+ * @param {string} outputFilePath
  */
-const runConversion = async (options, sourceFile, outputFile) => {
+const runConversion = async (options, sourceFile, outputFilePath) => {
   let conversion = sharp(sourceFile)
     .webp({ quality: options.quality ?? 90 });
 
@@ -70,7 +28,7 @@ const runConversion = async (options, sourceFile, outputFile) => {
     conversion = conversion.resize(options.resize);
   }
 
-  await conversion.toFile(outputFile);
+  await fse.outputFile(outputFilePath, await conversion.toBuffer())
 };
 
 /**
@@ -89,9 +47,8 @@ export const convertSingleImage = async (relativeSource, options = {}) => {
   const withoutExt = path.parse(sourceFile).name;
   const outputSubPath = path.parse(relativeSource).dir;
   const outputDir = root("public/images/generated", outputSubPath);
-  await createDirIfNotExists(outputDir);
-  const outputFile = path.join(outputDir, withoutExt + ".webp");
-  await runConversion(options, sourceFile, outputFile);
+  const outputFilePath = path.join(outputDir, withoutExt + ".webp");
+  await runConversion(options, sourceFile, outputFilePath);
 };
 
 /**
@@ -99,14 +56,14 @@ export const convertSingleImage = async (relativeSource, options = {}) => {
  * @param {string[]} generatedFilesRelative
  */
 const removeWebpFilesWithoutSource = async (outputDir, generatedFilesRelative) => {
-  const containedFiles = await fs.readdir(outputDir);
+  const containedFiles = await fse.readdir(outputDir);
   const deprecatedFiles = containedFiles
     .filter(file => path.parse(file).ext.toLowerCase() === ".webp")
     .filter(file => !generatedFilesRelative.includes(file));
 
   for (const file of deprecatedFiles) {
     const outputFile = path.join(outputDir, file);
-    await fs.unlink(outputFile);
+    await fse.unlink(outputFile);
     console.log("Deleted", outputFile);
   }
 };
@@ -121,8 +78,7 @@ const generateImageReexporter = async (generatedFilesRelative, relativePath) => 
   const reexporterName = segments[segments.length - 1];
 
   const outputDir = root("src/generated/capsules", ...parentDirs);
-  await createDirIfNotExists(outputDir);
-  const outputFile = path.join(outputDir, reexporterName + ".ts");
+  const outputFilePath = path.join(outputDir, reexporterName + ".ts");
 
   const imports = generatedFilesRelative
     .map((filePath, i) => {
@@ -146,7 +102,7 @@ const generateImageReexporter = async (generatedFilesRelative, relativePath) => 
     + "\n"
     + "export default images;";
 
-  await fs.writeFile(outputFile, reexporterContents);
+  await fse.outputFile(outputFilePath, reexporterContents);
 };
 
 /**
@@ -164,8 +120,7 @@ export const convertImages = async (relativeSource, options = {}) => {
   const outputDir = root("public/images/generated", relativeSource);
 
   console.info(`Converting images from "${sourceDir}"`);
-  const sourceFiles = await fs.readdir(sourceDir);
-  await createDirIfNotExists(outputDir);
+  const sourceFiles = await fse.readdir(sourceDir);
 
   for (const sourceFileRelative of sourceFiles) {
     const withoutExt = path.parse(sourceFileRelative).name;

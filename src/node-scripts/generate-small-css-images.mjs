@@ -29,7 +29,7 @@ convertSingleImage("logo.png");
 convertSingleImage("mosaic-background-pattern.jpg", { quality: 100 });
 convertSingleImage("smashgg-favicon.png");
 convertSingleImage("favicon.png");
-convertSingleImage("knuckles-woah.png", { resize: { height: 300 }, quality: 80 });
+convertSingleImage("knuckles-woah.png", { quality: 80 });
 
 convertSingleImage("q9283rw8fg/project-wave-logo.png", { quality: 90 });
 convertSingleImage("q9283rw8fg/vaporwave-color-palette.png", { resize: { height: 20 }, quality: 30 });

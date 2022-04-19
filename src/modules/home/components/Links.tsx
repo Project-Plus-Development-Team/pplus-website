@@ -14,41 +14,41 @@ export const Links = () => (
         icon={faDiscord}
         renderAs="a"
         href="/discord"
+        screenReader="Project+ Discord Server"
       >
-        <span aria-hidden>Project+</span>
-        <span className="is-sr-only">Project+ Discord Server</span>
+        Project+
       </FAButton>
       <FAButton
         icon={faReddit}
         renderAs="a"
         href="https://www.reddit.com/r/ssbpm"
+        screenReader="Project M Subreddit"
       >
-        <span aria-hidden>r/ssbpm</span>
-        <span className="is-sr-only">Project M Subreddit</span>
+        r/ssbpm
       </FAButton>
       <FAButton
         icon={faTwitter}
         renderAs="a"
         href="https://twitter.com/ProjectPlusGame"
+        screenReader="Project+ on Twitter"
       >
-        <span aria-hidden>@ProjectPlusGame</span>
-        <span className="is-sr-only">Project+ on Twitter</span>
+        @ProjectPlusGame
       </FAButton>
       <FAButton
         icon={faBook}
         renderAs="a"
         href="https://www.ssbwiki.com/Project%2B"
+        screenReader="Project+ SmashWiki entry"
       >
-        <span aria-hidden>SmashWiki</span>
-        <span className="is-sr-only">Project+ SmashWiki entry</span>
+        SmashWiki
       </FAButton>
       <FAButton
         icon={faGithub}
         renderAs="a"
         href="https://github.com/FunctionDJ/project-plus-website"
+        screenReader="Website source code on GitHub"
       >
-        <span aria-hidden>Website source</span>
-        <span className="is-sr-only">Website source code on GitHub</span>
+        Website source
       </FAButton>
     </div>
   </Box>

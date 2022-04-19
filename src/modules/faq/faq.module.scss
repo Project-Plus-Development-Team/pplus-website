@@ -26,7 +26,7 @@
       border-radius: 0.2em;
     }
 
-    &.highlighted {
+    &[aria-current="true"] {
       background-color: #0a8354;
     }
   }

@@ -1,7 +1,7 @@
 import { faDiscord, faFacebook, faTwitch, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faCheck, faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
-import { Heading, Modal } from "react-bulma-components";
+import { Button, Heading, Modal } from "react-bulma-components";
 import { PlatformButton } from "shared/components/PlatformButton";
 import { FAButton } from "shared/components/FAButton";
 import { Region } from "../map-types";
@@ -11,9 +11,10 @@ import styles from "./MapModal.module.scss";
 
 interface Props {
   region: Region
+  onClose: () => void
 }
 
-export const ModalContent = ({ region }: Props) => {
+export const ModalContent = ({ region, onClose }: Props) => {
   const url = typeof window === "undefined" ? "" : window.location.href;
   const [hasCopied, setClipboard] = useClipboard(url);
 
@@ -29,9 +30,9 @@ export const ModalContent = ({ region }: Props) => {
 
   return (
     <Modal.Card>
-      <Modal.Card.Header className="is-justify-content-space-between">
+      <Modal.Card.Header className="is-justify-content-space-between" showClose={false}>
         <div className="is-flex-grow-1 is-flex is-flex-wrap-wrap is-justify-content-space-between gap">
-          <Modal.Card.Title style={{ maxWidth: "100%", overflowWrap: "anywhere" }}>{region.name}</Modal.Card.Title>
+          <Modal.Card.Title id="modal-title" style={{ maxWidth: "100%", overflowWrap: "anywhere" }}>Communities in {region.name}</Modal.Card.Title>
           <FAButton
             icon={hasCopied ? faCheck : faLink}
             color="secondary"
@@ -41,9 +42,10 @@ export const ModalContent = ({ region }: Props) => {
           >
             Copy Link to this
           </FAButton>
+          <Button remove onClick={onClose} aria-label="Close this modal"/> {/* [upstream] https://github.com/couds/react-bulma-components/pull/386 */}
         </div>
       </Modal.Card.Header>
-      <Modal.Card.Body className={styles.body}>
+      <Modal.Card.Body className={styles.body} aria-labelledby="modal-title">
         {region.platforms.discordInviteId && (
           <PlatformButton
             text="Discord"

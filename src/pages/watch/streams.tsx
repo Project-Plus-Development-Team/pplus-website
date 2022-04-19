@@ -1,5 +1,5 @@
 import { GetStaticProps } from "next";
-import { ChangeEventHandler, useState } from "react";
+import { ChangeEventHandler, useEffect, useState } from "react";
 import { TwitchStream } from "modules/watch/streams/TwitchStream";
 import { Placeholder } from "shared/components/Placeholder";
 import { FAButton } from "shared/components/FAButton";
@@ -9,16 +9,53 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { StreamFilter, streamMatchesFilter } from "modules/watch/streams/functions/stream-filter";
 import { useStreams } from "modules/watch/streams/hooks/use-streams";
 import { NextSeo } from "next-seo";
-import { ShortModNames, shortModNames } from "modules/watch/streams/mod-data";
+import { getModShortNameBySupportedModInStreamTitle, ShortModNames, shortModNames, supportedModsArray } from "modules/watch/streams/mod-data";
 import { HelpModalContent } from "modules/watch/streams/HelpModalContent";
+import { stringsAreLooselyEquals } from "shared/functions/strings-are-loosely-equals";
+import { useRouter } from "next/router";
 
 interface Props {
   isDev: boolean
 }
 
+const useFilter = () => {
+  const [filter, setFilter] = useState<StreamFilter>(null);
+  
+  const router = useRouter();
+
+  useEffect(() => {
+    const url = new URL(window.location);
+
+    const userFilter = url.searchParams.get("mod")
+
+    if (userFilter === null) {
+      return
+    }
+
+    const foundMod = supportedModsArray.find(m => stringsAreLooselyEquals(m, userFilter))
+    if (foundMod !== undefined) {
+      setFilter(getModShortNameBySupportedModInStreamTitle(foundMod))
+    }
+  }, [])
+
+  useEffect(() => {
+    const url = new URL(window.location)
+
+    if (filter === null) {
+      url.searchParams.delete("mod")
+    } else {
+      url.searchParams.set("mod", filter)
+    }
+
+    router.replace(url, undefined, { scroll: false, shallow: true })
+  }, [filter])
+  
+  return [filter, setFilter] as const
+}
+
 const Home = ({ isDev }: Props) => {
   const { streams, error, isLoading, reload, isOnCooldown } = useStreams(isDev);
-  const [filter, setFilter] = useState<StreamFilter>(null);
+  const [filter, setFilter] = useFilter();
   const [showModal, setShowModal] = useState(false);
 
   const handleRadio: ChangeEventHandler<HTMLInputElement> = event => {

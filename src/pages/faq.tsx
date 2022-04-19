@@ -41,12 +41,11 @@ const FAQ = ({ markdownAst, questions }: Props) => {
   
       const id = getIdOfNode(node.children[0]);
       const isActive = id === hash;
-      const highlightedClass = isActive ? styles.highlighted : "";
 
       return (
         <h4
           id={id}
-          className={`copy-trigger ${highlightedClass}`}
+          className="copy-trigger"
           aria-current={isActive ? "true" : undefined}
         >
           {content}

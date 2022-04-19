@@ -29,7 +29,7 @@ export const Map = ({ regions }: MapProps) => {
         closeOnBlur={true}
       >
         {modalContent !== null && (
-          <ModalContent region={modalContent}/>
+          <ModalContent region={modalContent} onClose={() => setModal(null)}/>
         )}
       </Modal>
       <ComposableMap

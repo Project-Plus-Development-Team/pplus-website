@@ -37,6 +37,7 @@ export const RegionComponent = ({
           filter: "drop-shadow(0 .5px .2px black)"
         }}
         href="#"
+        aria-label={`Click to open the details of the ${name} community`}
       >
         <circle
           r={3 * dynamicScalingFactor}

@@ -9,7 +9,7 @@ import "../configuration/fontawesome";
 
 if (typeof window !== "undefined" && process.env.NODE_ENV !== "production") {
   Promise.all([
-    import("react-dom") as any,
+    import("react-dom"),
     import("@axe-core/react")
   ])
     .then(([ReactDOM, axe]) => {

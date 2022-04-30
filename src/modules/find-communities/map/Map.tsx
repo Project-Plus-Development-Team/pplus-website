@@ -7,6 +7,7 @@ import { RegionComponent } from "./components/RegionComponent";
 import { WorldMap } from "./components/WorldMap";
 import { Region } from "./map-types";
 import { useModal } from "./use-modal";
+import { MapWrapper } from "shared/components/MapWrapper";
 
 import styles from "./Map.module.scss";
 
@@ -22,7 +23,7 @@ export const Map = ({ regions }: MapProps) => {
   const { isDesktop, isTablet } = useViewport();
 
   return (
-    <div className={`${styles.wrapper} ${isDesktop ? "" : ""}`} /* TODO */>
+    <MapWrapper>
       <Modal
         show={modalContent !== null}
         onClose={() => setModal(null)}
@@ -68,11 +69,6 @@ export const Map = ({ regions }: MapProps) => {
           }
         </ZoomableGroup>
       </ComposableMap>
-      <div className={styles.scroll_area}>
-        <span style={{ fontSize: "1.5em" }}>«</span>
-        <span>Scroll here for touch devices</span>
-        <span style={{ fontSize: "1.5em" }}>»</span>
-      </div>
-    </div>
+    </MapWrapper>
   );
 };

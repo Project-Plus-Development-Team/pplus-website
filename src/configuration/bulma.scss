@@ -138,6 +138,10 @@ $spacing-values: (
 @import "~bulma/sass/components/modal.sass"; // /find-communities
 @import "~bulma/sass/elements/box.sass"; // /index
 
+$popover-background-color: #222;
+
+@import "~bulma-popover"; // popovers / tooltips
+
 $colors: ();
 
 @import "~bulmaswatch/cyborg/overrides"; // fixes some swatch styles afterwards (by design)

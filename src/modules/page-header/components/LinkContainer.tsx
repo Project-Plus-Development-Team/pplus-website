@@ -1,10 +1,9 @@
 import { Navbar } from "react-bulma-components";
 import { useDropdownState } from "../hooks/use-dropdown";
 import { NavLink } from "./NavLink";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTwitch } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "../PageHeader.module.scss";
+import { NavDropdown } from "./Dropdown";
 
 interface LinkContainerProps {
   pathname: string;
@@ -80,21 +79,35 @@ export const LinkContainer = ({
         href="/knuckles"
         pathname={pathname}
       />
-      <NavLink
-        onClick={foldNavbar}
-        text="Find Communities"
-        href="/find-communities"
-        pathname={pathname}
-      />
-      <NavLink
-        onClick={foldNavbar}
-        text={<FontAwesomeIcon icon={faTwitch} style={{ fontSize: "1.5em" }} />}
-        title="Watch Twitch streams of P+ and other mods!"
-        href="/watch/streams"
-        pathname={pathname}
-        className="has-new"
-      />
-      {/* <a className={`navbar-item ${styles.navitem}`} href="https://sf.vods.co/projectm">Watch P+</a> */}
+      <NavDropdown highlighted={false} text="Community" className="has-new">
+        <NavLink
+          onClick={foldNavbar}
+          text="Find Communities"
+          href="/find-communities"
+          pathname={pathname}
+        />
+        <NavLink
+          onClick={foldNavbar}
+          className="has-new"
+          text="European Player Map"
+          href="/european-player-map"
+          pathname={pathname}
+        />
+      </NavDropdown>
+      <NavDropdown highlighted={false} text="Watch">
+        <NavLink
+          onClick={foldNavbar}
+          text="Watch Twitch streams of P+ and other mods"
+          href="/watch/streams"
+          pathname={pathname}
+        />
+        <a
+          className={`navbar-item ${styles.navitem}`}
+          href="https://sf.vods.co/projectm"
+        >
+          Watch P+ and PM VODs
+        </a>
+      </NavDropdown>
     </Navbar.Container>
   );
 };

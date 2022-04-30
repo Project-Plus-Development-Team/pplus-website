@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { GetStaticProps } from "next";
+import { NextSeo } from "next-seo";
 import { convertSheetToObjects } from "next-server-utilities/convert-sheet-to-objects";
 import { getSpreadsheet } from "next-server-utilities/get-spreadsheet";
 import { Map, Overlay } from "pigeon-maps";
@@ -64,10 +65,15 @@ const CharacterImage = ({ character }: { character: Player["character"] }) => {
   );
 };
 
+const description =
+  "This map helps players in Europe to connect with each other, find good Netplay connections, and host tournaments.";
+
 const EuropeanPlayerMap = ({ players }: Props) => {
   return (
     <main>
+      <NextSeo title="European Player Map" description={description} />
       <Heading>European Project+ and Project M player map</Heading>
+      <Heading subtitle>{description}</Heading>
       <div className="gap is-flex-wrap-wrap">
         <DiscordButton inviteId="SNRKKYV" text="EU P+ & PM Discord" />
         <div>

@@ -256,7 +256,7 @@ const getCharacterBeta = (userInput: string) => {
     return "mr-game-and-watch";
   }
 
-  return userInput.toLowerCase().replace(" ", "-");
+  return userInput.toLowerCase().replaceAll(" ", "-");
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {

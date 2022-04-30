@@ -9,9 +9,22 @@
   > * {
     flex: 1;
     max-width: 30em;
+    height: inherit;
+    padding-top: 0;
+    padding-bottom: 0;
 
+    
     @include touch {
       max-width: initial;
+    }
+    
+    @include mobile {
+      min-width: 18em;
+
+      > span {
+        white-space: break-spaces;
+      }
+      
     }
   }
 }

@@ -7,13 +7,15 @@ import { faTwitch } from "@fortawesome/free-brands-svg-icons";
 import styles from "../PageHeader.module.scss";
 
 interface LinkContainerProps {
-  pathname: string
-  versions: string[]
-  foldNavbar: () => void
+  pathname: string;
+  versions: string[];
+  foldNavbar: () => void;
 }
 
 export const LinkContainer = ({
-  pathname, versions, foldNavbar
+  pathname,
+  versions,
+  foldNavbar,
 }: LinkContainerProps) => {
   const isChangesActive = pathname.split("/")[1] === "changes";
   const activeClass = isChangesActive ? styles.navitemactive : "";
@@ -23,8 +25,13 @@ export const LinkContainer = ({
 
   return (
     <Navbar.Container className="has-text-weight-bold">
-      <NavLink onClick={foldNavbar} text="Home" href="/" pathname={pathname}/>
-      <NavLink onClick={foldNavbar} text="F.A.Q." href="/faq" pathname={pathname}/>
+      <NavLink onClick={foldNavbar} text="Home" href="/" pathname={pathname} />
+      <NavLink
+        onClick={foldNavbar}
+        text="F.A.Q."
+        href="/faq"
+        pathname={pathname}
+      />
       <Navbar.Item href="#">
         <Navbar.Link
           className={`${styles.navitem} ${activeClass}`}
@@ -43,7 +50,7 @@ export const LinkContainer = ({
         </Navbar.Link>
         <Navbar.Dropdown
           style={{
-            display: active ? "block" : "none"
+            display: active ? "block" : "none",
           }}
         >
           <NavLink
@@ -81,12 +88,7 @@ export const LinkContainer = ({
       />
       <NavLink
         onClick={foldNavbar}
-        text={(
-          <FontAwesomeIcon
-            icon={faTwitch}
-            style={{ fontSize: "1.5em" }}
-          />
-        )}
+        text={<FontAwesomeIcon icon={faTwitch} style={{ fontSize: "1.5em" }} />}
         title="Watch Twitch streams of P+ and other mods!"
         href="/watch/streams"
         pathname={pathname}

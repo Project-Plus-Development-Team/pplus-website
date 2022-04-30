@@ -8,9 +8,9 @@ import images from "~capsules/communities";
 import pplusLogo from "~generated-images/favicon.webp";
 
 interface ButtonProps {
-  logo: StaticImageData
-  text: string
-  url: string
+  logo: StaticImageData;
+  text: string;
+  url: string;
 }
 
 const GeneralCommunityButton = ({ logo, text, url }: ButtonProps) => (
@@ -22,7 +22,7 @@ const GeneralCommunityButton = ({ logo, text, url }: ButtonProps) => (
         height: 34,
         width: 34,
         objectFit: "contain",
-        marginLeft: "1em"
+        marginLeft: "1em",
       }}
       lazy
     />
@@ -31,16 +31,20 @@ const GeneralCommunityButton = ({ logo, text, url }: ButtonProps) => (
 );
 
 interface Props {
-  generalCommunities: GeneralCommunity[]
+  generalCommunities: GeneralCommunity[];
 }
 
 export const General = ({ generalCommunities }: Props) => (
   <div className={styles.general}>
-    {generalCommunities.map(community => (
+    {generalCommunities.map((community) => (
       <GeneralCommunityButton
         key={community.displayName}
         text={community.displayName}
-        logo={community.imageName === "pplusLogo" ? pplusLogo : images[community.imageName]}
+        logo={
+          community.imageName === "pplusLogo"
+            ? pplusLogo
+            : images[community.imageName]
+        }
         url={community.url}
       />
     ))}

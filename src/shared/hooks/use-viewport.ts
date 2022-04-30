@@ -5,7 +5,7 @@ const bulmaBreakpoints = {
   mobile: 768,
   tablet: 1023,
   desktop: 1215,
-  widescreen: 1407
+  widescreen: 1407,
 };
 
 export const useViewport = () => {
@@ -23,9 +23,8 @@ export const useViewport = () => {
     width,
     isMobile: width <= bulmaBreakpoints.mobile,
     isTablet:
-      width > bulmaBreakpoints.mobile
-      && width <= bulmaBreakpoints.tablet,
+      width > bulmaBreakpoints.mobile && width <= bulmaBreakpoints.tablet,
     isDesktop: width > bulmaBreakpoints.tablet,
-    isWidescreen: width > bulmaBreakpoints.widescreen
+    isWidescreen: width > bulmaBreakpoints.widescreen,
   };
 };

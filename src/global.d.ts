@@ -4,8 +4,8 @@ declare module "*.md";
 declare namespace JSX {
   interface IntrinsicElements {
     "lite-youtube": {
-      videoid: string
-      playlabel: string
-    }
+      videoid: string;
+      playlabel: string;
+    };
   }
 }

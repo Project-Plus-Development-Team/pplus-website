@@ -24,6 +24,6 @@ export const useClipboard = (text: string) => {
       } catch {
         alert("Can't copy to clipboard. Your browser might be out of date.");
       }
-    }
+    },
   ] as const;
 };

@@ -140,6 +140,16 @@ const EuropeanPlayerMap = ({ players }: Props) => {
             ))}
         </Map>
       </MapWrapper>
+      <p>
+        Special thanks to Efisio for helping me out with setting up the stock
+        icons for this map.
+      </p>
+      <p>
+        Check out the data source for this map:{" "}
+        <a href="https://docs.google.com/spreadsheets/d/1QGtZNAxhIp5W-XKELKgp4uaScbUcABNbvTOLniUFlkU/edit#gid=1883444078">
+          projectplusgame.com data source on Google Docs
+        </a>
+      </p>
     </main>
   );
 };

@@ -8,7 +8,7 @@ import woah from "~generated-images/knuckles-woah.webp";
 const waveHref = atob("L3E5Mjgzcnc4ZmcuY3Nz");
 
 const enableWave = () => {
-  console.log("enablewave");
+  console.log(atob("VFJLSy03ODdENVotUFNCQw=="))
 
   if (hasWave()) {
     return;
@@ -28,14 +28,11 @@ const enableWave = () => {
   }
 
   wave.addEventListener("load", () => {
-    console.log("load");
-
     document.documentElement.setAttribute("style", "animation: flip 1s ease-out");
     playAudio();
     maybePlayVideo?.();
 
     setTimeout(() => {
-      console.log("enablecss");
       document.documentElement.classList.add("q9283rw8fg");
       document.body.setAttribute(
         "style",

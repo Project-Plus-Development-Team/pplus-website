@@ -95,7 +95,11 @@ const EuropeanPlayerMap = ({ players }: Props) => {
         </div>
       </div>
       <MapWrapper>
-        <Map height={600} defaultCenter={[50, 5]} defaultZoom={4}>
+        <Map
+          height={600}
+          defaultCenter={[50, 5]}
+          defaultZoom={4}
+        >
           {players
             .sort((a, b) => (b.anchor[0] < a.anchor[0] ? -1 : 0)) // render lower overlays later in DOM as a fix for no z-index in SVG (for tooltips)
             .map((p) => (
@@ -224,6 +228,10 @@ const getCharacterBeta = (userInput: string) => {
     return "rob";
   }
 
+  if (userInput.toLowerCase() === "r.o.b") {
+    return "rob";
+  }
+
   if (userInput.toLowerCase() === "mr game & watch") {
     return "mr-game-and-watch";
   }
@@ -273,7 +281,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   );
 
   const players = rawPlayers.map<Player>((p) => {
-    const characterName = getCharacterBeta(p["Your main character"]);
+    const characterName = getCharacterBeta(p["Your main character"].trim());
 
     const character =
       characterName.trim() === ""

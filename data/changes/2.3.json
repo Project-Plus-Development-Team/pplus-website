@@ -1,0 +1,285 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/16W8FypiVtCR9YzoF-UjRbNKWsS1fJvLaexkzzvSeVmI"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1hx9Go3-ltxQjQsf-Lu1Ezc4lwqd3gk1TaDN01tsatX8"
+    }
+  },
+  "changes": [
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Delfino Plaza",
+          "changes": [
+            {
+              "title": "(Z-alt) Shy Guy's Toy Box YS (NEW!)",
+              "changes": [
+                "A 1:1 reskin of Yoshi’s Story inspired by Paper Mario featuring custom assets"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Port Town Aero Dive",
+          "changes": [
+            {
+              "title": "(L-alt) Aeropolis (NEW!)",
+              "changes": [
+                "This stage has a platform that lets you get lots of airtime when you jump!"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sky Sanctuary",
+          "changes": [
+            {
+              "title": "(R-alt) Chaos Angel SS (NEW!)",
+              "changes": [
+                "A brand new, custom-made reskin of Sky Sanctuary based on one of the final areas of Sonic Advance 3!"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Yoshi’s Story",
+          "changes": [
+            {
+              "title": "(Base) Yoshi's Story",
+              "changes": [
+                "Has been redone visually to better represent how it looked in Melee, including the reanimation of Pak. E. Derm",
+				"Pak E. Derm’s movement better represents the traveling direction of his smiling cohort"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Corneria",
+          "changes": [
+            {
+              "title": "(L-alt) Sector Z HD",
+              "changes": [
+                "A heavily revamped version of Sector Z designed to go alongside the previous Planet Zebes and Kongo Jungle remakes"
+              ]
+            },
+            {
+              "title": "(Z-alt) Papetoon (NEW!)",
+              "changes": [
+                "A desert-themed stage inspired by Fox’s home turf, featuring a reflector hazard"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Golden Temple",
+          "changes": [
+            {
+              "title": "(Base) Golden Temple",
+              "changes": [
+                "Materials updated on the base and R-alt versions of this stage, including more metallic visuals for the banana statues"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dream Land",
+          "changes": [
+            {
+              "title": "(Y-alt) Dream Land 64",
+              "changes": [
+                "Updated vertex colors and materials to better represent 64’s aesthetics"
+              ]
+            },
+			{
+              "title": "(R-alt) Dream Land Night",
+              "changes": [
+                "Adjusted lighting"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Cookie Country",
+          "changes": [
+            {
+              "title": "(Base) Cookie Country",
+              "changes": [
+                "Materials heavily revamped on the base and R-alt versions of this stage, better matching the source material"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bell Tower",
+          "changes": [
+            {
+              "title": "(Z-alt) Sprout Tower (NEW!)",
+              "changes": [
+                "A touched up port of the stage showcased in Beyond Melee, featuring platforms that sway alongside the tower’s main beam"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Green Hill Zone",
+          "changes": [
+            {
+              "title": "((Z-alt) Radical Highway (NEW!)",
+              "changes": [
+                "Replaced the GHZ 1:1 with a unique stage with similar proportions"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Minecart Madness (NEW!)",
+          "changes": [
+            {
+              "title": "(Base) Minecart Madness",
+              "changes": [
+                "A new, chaotic traveling stage once intended to be included in Project M, featuring many hazards"
+              ]
+            },
+            {
+              "title": "(Z-alt) Oil Drum Alley",
+              "changes": [
+                "Moved from the base slot to make room for Minecart Madness"
+              ]
+            }
+          ]
+        },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Ported the Custom Physics Engine code out of the sound resource to increase stability",
+            "Modified codes related to sawnd files to either not be in the sound resource or reference the sound resource’s memory offset for stability purposes",
+	        "Modified the My Music codes so that custom menus are compatible with them. Previously, only reskins of the menus that were the same size would work.",
+	        "Adjusted Ivysaur’s third victory animation to not be overlapping with other characters in team battles and adjusted eye animations to no longer be walleyed",
+            "Black Pig Ganon will no longer crash when metal",
+            "Toon Link’s Ezlo hidden costume when metal will no longer give Ezlo two mouths",
+			"Ported the Custom Physics Engine code out of the sound resource to increase stability",
+            "Turbo status no longer has an unintentionally random chance of being removed when hit. This was caused due to a variable conflict not accounting for its presence. Starman-based invulnerability also had a similar but extremely unlikely chance of also triggering this if you bounced off of the stage while in knockback as you grabbed one and this was also fixed.",
+	        "The trophy of Knuckles no longer levitates when viewed in a diorama"
+          ]
+        },
+        {
+          "title": "Stages",
+          "changes": [
+            "Made the Wario Land reskin of Rainbow Cruise match the blast zones of other Wario Land reskins. Due to an oversight, it was previously using PM’s dimensions for this",
+            "Fixed an issue where you could clip through Golden Temple",
+			"Fixed issue with Training Room’s background visuals",
+            "Fixed an issue where the sound effect for being embedded within the snow on White Wafers would not play"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+        {
+          "title": "Costumes",
+          "changes": [
+            "Kirby has a new alternate costume, Cowboy Kirby",
+            "Meta Knight has a new alternate costume, Samurai Meta Knight",
+            "“Morpho” Meta Knight model revamped and recolors adjusted",
+            "Galacta and Dark recolors for Meta Knight adjusted",
+            "Dark Meta Knight’s sword updated to better match source material",
+            "Galacta Knight (R-alt) added",
+            "NES Meta Knight (Z-alt) redone",
+            "Shadow Dragon Marth (R-alt) updated",
+            "Classic Pit revamped with a new model and recolors",
+            "OoT Link, Zelda, Sheik and Ganondorf revamped with new colors",
+            "Zelda and Sheik now have new recolors based on Skyward Sword Zelda and Impa, respectively",
+            "Boxer DK models and recolors redone",
+			"Funky Kong (DK R-alt) updated",
+            "Tycoon Wario has an updated model with new colors",
+            "Commander Lucas has an updated model with new colors",
+            "Knuckles snout color matches Sonic ingame",
+            "PED Suit Samus now has animated Hazard Shield graphics",
+            "Wii Rob now uses blue laser effects",
+            "Ice Climbers’ odd numbered costumes on slots 7 - 19 will have Nana lead",
+            "Lucario has texture formats returned from TE to correct fur alpha. While this is a net increase of around 500 KB per Lucario costume, optimizations elsewhere have made overall build size lower",
+            "Shiny Lucario and Gi Lucario have updated colors",
+            "AltZ Adventure Falco is now updated",
+            "SA1 Sonic (Z-alt) updated",
+            "Black and White Yoshi costumes adjusted",
+			"Black dress Peach costume adjusted",
+            "Green Samus recolor adjusted to compensate for colorblind players",
+            "Pikachu’s Pokemon Trainer and Lets Go costume have a gap fixed on the right eye",
+            "Blue Snake’s costume has hair draw priority that matches costumes on Brawl disc",
+            "Big Boss Snake recolors have fixed transparency on bandana",
+            "Big Boss Snake has hair draw priority that matches default Snake"
+          ]
+        },
+        {
+          "title": "Major Costume optimizations",
+          "changes": [
+            "Costume files for Zelda, Sheik, Bowser, Giga Bowser, and all included default costumes are now compressed thanks to code improvements",
+            "Sonic, Pikachu, and Jigglypuff now load their clear (Spy) files from the Brawl disc and their extra files have been removed from the build",
+            "Holy War Marth has three textures combined into one and facial expression optimization",
+            "Yoshi’s egg shield and egg shield spots are combined into one object",
+            "Mr Game and Watch has all pac objects optimized to remove duplicates",
+            "Sonic semi alts use higher quality textures, overall file size still lower due to object optimizations",
+            "Ice Climbers have optional visibility bones added to the end of their boneset. These bones determine objects visible for the lead climber, and follower. This allows ModelData[0] to be the only model brres used, with ModelData[1] being redirected. Currently only used on costumes 30 - 33, and AltR. Cannot be used on costumes where the hammer shape or color changes. 540 KB saved total."
+          ]
+        },
+      	{
+          "title": "Minor Costume optimization",
+          "changes": [
+            "Applied to Mario, Kirby, Pikachu, Squirtle, Fox, Zelda, Sheik, Toon Link, Marth, Jigglypuff, Wolf, Dedede, Knuckles, Lucario, Diddy Kong, Ganondorf, Falco, Snake, Ivysaur, Ness, Peach, Bowser, Link, Luigi, Mewtwo, Charizard, and Zero Suit Samus"
+          ]
+        },
+		{
+          "title": "Features",
+          "changes": [
+            "Three new item frequency settings have been added to the Item Switch: Very High, Intense and Bomb Rain",
+            "Bomb Rain has been moved away from the Special Modes menu to free up a slot there, but it will remain functional on that menu until the planned Special Mode replacement is completed properly",
+            "The minimum and maximum amounts of food that can be dispensed by a Party Ball have been raised from 5 and 7 to 10 and 13, respectively",
+            "Turbo items are no longer eaten, instead using the equip animation when grabbed. This was a remnant of when it was still the Superspicy Curry",
+            "Turbo items now play a power-up sound effect when grabbed, similar to other status equip items",
+            "Bob-Ombs have been slightly recoded to better represent other games in the series. They now have an equal chance of moving to the left or right when they start, instead of always heading right as in Brawl, and turn at ledges and walls much more quickly"
+          ]
+        },
+		{
+          "title": "Turbo Mode Adjustments",
+          "changes": [
+            "Only Jabs and Dash Attacks can dash cancel",
+            "Down, Up and Forward Smashes can no longer cancel into crouching, jumping or dashing, as these mechanics were allowing them to bypass their cancel limitations and be spammed into themselves",
+            "Rolls and Spot Dodges can be dash cancelled on frames 6-14 to access other movement options",
+            "Grounded attacks can no longer cancel into Shield, but can still cancel into Rolls and Spot Dodges",
+            "Aerial attacks and specials can no longer cancel into Air Dodges",
+			"Landing a hit in the air restores mid-air jumps",
+            "Taunts can be cancelled using any mobility option"
+          ]
+        },
+      	{
+          "title": "Other",
+          "changes": [
+            "A large number of stages have been optimized without visual changes during regular gameplay. Stages originally based on the Skyworld rel have removed unnecessary data. Far offscreen objects and unused textures have also been removed. The stage folder file size decreased over 20 MB",
+            "Particle effects blown by Whispy Woods changed on the Fall and Winter versions of Dream Land to better match their aesthetic themes",
+            "Mewtwo’s effect bank is now ef_mewtwo instead of ef_mizuo",
+            "Added eye animation to Bowser’s grounded Koopa Klaw down throw",
+            "Effects can now have their animations set within a character’s command scripts, allowing for far more optimal space usage",
+            "The crushing mechanic used in Subspace is now utilizable on multiplayer stages. Venus Lighthouse and its reskin, Mercury Lighthouse, will now crush people when they seal shut, complete with an explosive effect! In order to use this effect, you must enable a collision flag on the stage collisions that will crush, otherwise normal behavior will still occur",
+            "Rewrote how the game decompresses costumes so that they can be decompressed in any gameplay mode",
+            "Fixed an issue where final smashes could crash the game in All-Star VS., Training or Classic mode when a new, compressed costume was being loaded in",
+            "Text files to help organize BP’s added to the portrite folder from T+",
+            "Song list updated; see music spreadsheet for tracklist details",
+            "Strap and Results screens updated for version 2.3"
+          ]
+        }
+      ]
+    }
+  ]
+}

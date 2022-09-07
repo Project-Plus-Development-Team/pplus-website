@@ -180,7 +180,6 @@
                                 "Adjusted Ivysaur’s third victory animation to not be overlapping with other characters in team battles and adjusted eye animations to no longer be walleyed",
                                 "Black Pig Ganon will no longer crash when metal",
                                 "Toon Link’s Ezlo hidden costume when metal will no longer give Ezlo two mouths",
-                                "Ported the Custom Physics Engine code out of the sound resource to increase stability",
                                 "Turbo status no longer has an unintentionally random chance of being removed when hit. This was caused due to a variable conflict not accounting for its presence. Starman-based invulnerability also had a similar but extremely unlikely chance of also triggering this if you bounced off of the stage while in knockback as you grabbed one and this was also fixed.",
                                 "The trophy of Knuckles no longer levitates when viewed in a diorama"
                             ]
@@ -276,13 +275,27 @@
                                 "Taunts can be cancelled using any mobility option"
                             ]
                         },
+						{
+                            "title": "Easter Eggs",
+                            "changes": [
+                                "Charizard, Diddy Kong, Mario, Snake, and Sonic have their cut Brawl taunts restored by lightly tapping their respective taunt buttons",                    
+                                "Yoshi's side taunt can now be looped",
+                                "Lucario's Force Palm EX has a new voice line, activated by pressing side taunt during the animation",
+                                "Pit's Brawl voice clip can be triggered on up smash by pressing down taunt",
+                                "Falco's down taunt now has a hitbox on the hand",
+                                "Falco's up taunt can be canceled into Brawl's Reflector by holding up taunt",
+								"Marth can activate Brawl's shield breaker by holding up taunt",
+                                "Toon Link’s drinking taunt now can vary between Milk, Elixir Soup and Red Potions",
+                                "Toon Link's side taunt now has weak hitboxes",
+                                "Wolf's side taunt now has weak hitboxes"
+                            ]
+                        },
                         {
                             "title": "Other",
                             "changes": [
-                                "Easter eggs were added throughout the cast. Try to find them all!",
+                                "Ike can no longer wall jump out of Quick Draw with a jump button",
                                 "Changed one of Diddy Kong’s idle animations to account for Easter egg changes",
                                 "Samus no longer uses boosters during short hops",
-                                "Toon Link’s drinking taunt now can vary between Milk, Elixir Soup and Red Potions",
                                 "Samus’ beam switch taunt no longer noticeably cuts off the glow effect midway",
                                 "Wess Dance is now interruptable and has a more lenient input window",
 								"Metroid Lab blast zones and camera reverted to PM’s stats. Applies to reskins as well",

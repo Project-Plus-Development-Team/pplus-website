@@ -282,9 +282,6 @@
                                 "Yoshi's side taunt can now be looped",
                                 "Lucario's Force Palm EX has a new voice line, activated by pressing side taunt during the animation",
                                 "Pit's Brawl voice clip can be triggered on up smash by pressing down taunt",
-                                "Falco's down taunt now has a hitbox on the hand",
-                                "Falco's up taunt can be canceled into Brawl's Reflector by holding up taunt",
-								"Marth can activate Brawl's shield breaker by holding up taunt",
                                 "Toon Link’s drinking taunt now can vary between Milk, Elixir Soup and Red Potions",
                                 "Toon Link's side taunt now has weak hitboxes",
                                 "Wolf's side taunt now has weak hitboxes"
@@ -293,7 +290,6 @@
                         {
                             "title": "Other",
                             "changes": [
-                                "Ike can no longer wall jump out of Quick Draw with a jump button",
                                 "Changed one of Diddy Kong’s idle animations to account for Easter egg changes",
                                 "Samus no longer uses boosters during short hops",
                                 "Samus’ beam switch taunt no longer noticeably cuts off the glow effect midway",
@@ -309,7 +305,7 @@
                                 "Fixed an issue where final smashes could crash the game in All-Star VS., Training or Classic mode when a new, compressed costume was being loaded in",
                                 "Text files to help organize BP’s added to the portrite folder from T+",
                                 "Song list updated; see music spreadsheet for tracklist details",
-                                "Strap and Results screens updated for version 2.3"
+                                "Strap and Results screens updated for version 2.3.1"
                             ]
                         }
                     ]

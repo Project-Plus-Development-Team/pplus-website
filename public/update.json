@@ -1,6 +1,6 @@
 {
   "hash": "141eb81fd0e5ba161fcdb7b746f41c4bba1a5577",
-  "version": "FPM v2.31 BETA",
+  "version": "FPM v2.3.1 BETA",
   "updater-update": "false",
   "update-page": "https://projectplusgame.com/download/",
   "changelog": "Update to P+ 2.3.1 \nNow using dol files instead of elfs! \nP+ dolphin now has correct aspect ratio for non-widescreen \nDolphin automatically copies the netplay code when hosting \nMinor update from v2.3",

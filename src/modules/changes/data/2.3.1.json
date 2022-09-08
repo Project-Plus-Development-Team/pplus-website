@@ -293,7 +293,6 @@
                                 "Changed one of Diddy Kong’s idle animations to account for Easter egg changes",
                                 "Samus no longer uses boosters during short hops",
                                 "Samus’ beam switch taunt no longer noticeably cuts off the glow effect midway",
-                                "Wess Dance is now interruptable and has a more lenient input window",
 								"Metroid Lab blast zones and camera reverted to PM’s stats. Applies to reskins as well",
 								"A large number of stages have been optimized without visual changes during regular gameplay. Stages originally based on the Skyworld rel have removed unnecessary data. Far offscreen objects and unused textures have also been removed. The stage folder file size decreased over 20 MB",
                                 "Particle effects blown by Whispy Woods changed on the Fall and Winter versions of Dream Land to better match their aesthetic themes",

@@ -67,7 +67,7 @@ const Download = ({ linkGroups, latestVersion }: DownloadProps) => {
     <main>
       <NextSeo
         title={`Download v${latestVersion}`}
-        description={`Download Project+ version ${latestVersion} for Wii and Netplay for Windows, MacOS and Linux. You'll also find the Lite version, Modders Pack, music list, and more!`}
+        description={`Download Project+ version ${latestVersion} for Wii and Netplay for Windows and Linux. You'll also find the Lite version, Modders Pack, music list, and more!`}
       />
       <Heading>Download Project+ v{latestVersion}</Heading>
       <Heading subtitle>Wii Lite only changes music compression to fit on a 2 GB SD card.</Heading>

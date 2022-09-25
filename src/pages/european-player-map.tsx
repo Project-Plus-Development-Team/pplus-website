@@ -95,11 +95,7 @@ const EuropeanPlayerMap = ({ players }: Props) => {
         </div>
       </div>
       <MapWrapper>
-        <Map
-          height={600}
-          defaultCenter={[50, 5]}
-          defaultZoom={4}
-        >
+        <Map height={600} defaultCenter={[50, 5]} defaultZoom={4}>
           {players
             .sort((a, b) => (b.anchor[0] < a.anchor[0] ? -1 : 0)) // render lower overlays later in DOM as a fix for no z-index in SVG (for tooltips)
             .map((p) => (
@@ -187,84 +183,41 @@ const getCharacter = (userInput: string) => {
   }
 };
 
+// TODO change the names of the public/resources/characters folders to not include hyphens
+// because then we can just rip out all hyphens and spaces and dots from the user input for higher chance of matches
+
+const conversionMap = {
+  "zero-suit-samus": ["zss"],
+  "ganondorf": ["ganon"],
+  "meta-knight": ["metaknight", "mk"],
+  "mewtwo": ["m2"],
+  "toon-link": ["toonlink", "tink"],
+  "charizard": ["zard"],
+  "ivysaur": ["ivy"],
+  "rob": ["r.o.b.", "r.o.b"],
+  "mr-game-and-watch": [
+    "mr game & watch",
+    "mr. game & watch",
+    "gnw",
+    "g&w",
+    "gaw",
+  ],
+  "king-dedede": ["dedede", "kingdedede"],
+  "captain-falcon": ["cf", "falcon"],
+};
+
 const getCharacterBeta = (userInput: string) => {
-  if (userInput.toLowerCase() === "zss") {
-    return "zero-suit-samus";
+  const cleaned = userInput.toLowerCase().trim();
+
+  const conversionMatch = Object.entries(conversionMap).find(([, values]) =>
+    values.find((v) => v === cleaned)
+  );
+
+  if (conversionMatch === undefined) {
+    return cleaned.replaceAll(" ", "-");
   }
 
-  if (userInput.toLowerCase() === "ganon") {
-    return "ganondorf";
-  }
-
-  if (userInput.toLowerCase() === "metaknight") {
-    return "meta-knight";
-  }
-
-  if (userInput.toLowerCase() === "mk") {
-    return "meta-knight";
-  }
-
-  if (userInput.toLowerCase() === "m2") {
-    return "mewtwo";
-  }
-
-  if (userInput.toLowerCase() === "toonlink") {
-    return "toon-link";
-  }
-
-  if (userInput.toLowerCase() === "tink") {
-    return "toon-link";
-  }
-
-  if (userInput.toLowerCase() === "zard") {
-    return "charizard";
-  }
-
-  if (userInput.toLowerCase() === "ivy") {
-    return "ivysaur";
-  }
-
-  if (userInput.toLowerCase() === "r.o.b.") {
-    return "rob";
-  }
-
-  if (userInput.toLowerCase() === "r.o.b") {
-    return "rob";
-  }
-
-  if (userInput.toLowerCase() === "mr game & watch") {
-    return "mr-game-and-watch";
-  }
-
-  if (userInput.toLowerCase() === "mr. game & watch") {
-    return "mr-game-and-watch";
-  }
-
-  if (userInput.toLowerCase() === "dedede") {
-    return "king-dedede";
-  }
-
-  if (userInput.toLowerCase() === "cf") {
-    return "captain-falcon";
-  }
-
-  if (userInput.toLowerCase() === "falcon") {
-    return "captain-falcon";
-  }
-
-  if (userInput.toLowerCase() === "gnw") {
-    return "mr-game-and-watch";
-  }
-
-  if (userInput.toLowerCase() === "g&w") {
-    return "mr-game-and-watch";
-  }
-
-  if (userInput.toLowerCase() === "gaw") {
-    return "mr-game-and-watch";
-  }
-
-  return userInput.toLowerCase().replaceAll(" ", "-");
+  return conversionMatch[0];
 };
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
@@ -281,7 +234,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   );
 
   const players = rawPlayers.map<Player>((p) => {
-    const characterName = getCharacterBeta(p["Your main character"].trim());
+    const characterName = getCharacterBeta(p["Your main character"]);
 
     const character =
       characterName.trim() === ""

@@ -8,7 +8,7 @@ export interface VersionChangesSharedProps {
 }
 
 export const VersionChangesShared = ({ data }: VersionChangesSharedProps) => (
-  <>
+  <main data-q="changes">
     {Array.isArray(data) ? (
       <AllVersionChanges data={data}/>
     ) : (
@@ -23,5 +23,5 @@ export const VersionChangesShared = ({ data }: VersionChangesSharedProps) => (
         color: hsl(0, 0%, 80%);
       }
     `}</style>
-  </>
+  </main>
 );

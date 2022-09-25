@@ -1,50 +1,19 @@
-import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
-import {
-  ComposableMap,
-  ZoomableGroup
-} from "react-simple-maps";
+import { useState } from "react";
+import { Modal } from "react-bulma-components";
+import { ComposableMap, ZoomableGroup } from "react-simple-maps";
 import { useViewport } from "shared/hooks/use-viewport";
-import { MapModal } from "./components/MapModal";
+import { ModalContent } from "./components/ModalContent";
 import { RegionComponent } from "./components/RegionComponent";
 import { WorldMap } from "./components/WorldMap";
 import { Region } from "./map-types";
+import { useModal } from "./use-modal";
+import { MapWrapper } from "shared/components/MapWrapper";
 
 import styles from "./Map.module.scss";
 
 export interface MapProps {
   regions: Region[]
 }
-
-const useModal = (regions: Region[]) => {
-  const [modalContent, setModalContent] = useState<Region|null>(null);
-  const router = useRouter();
-
-  const setModal = (region: Region|null) => {
-    setModalContent(region);
-    const hash = region?.name ? `#${region.name}` : "";
-    router.push(router.pathname + hash, undefined, {
-      scroll: false
-    });
-  };
-
-  useEffect(() => {
-    if (router.isReady) {
-      const regionName = router.asPath.match(/#(.*)/);
-
-      if (regionName !== null) {
-        const decoded = decodeURI(regionName[1]);
-        const foundRegion = regions.find(r => r.name === decoded);
-
-        if (foundRegion !== undefined) {
-          setModal(foundRegion);
-        }
-      }
-    }
-  }, []);
-
-  return { modalContent, setModal };
-};
 
 export const Map = ({ regions }: MapProps) => {
   const initialZoom = 1;
@@ -54,11 +23,16 @@ export const Map = ({ regions }: MapProps) => {
   const { isDesktop, isTablet } = useViewport();
 
   return (
-    <div className={`${styles.wrapper} ${isDesktop ? "" : ""}`} /* TODO */>
-      <MapModal
-        region={modalContent}
+    <MapWrapper>
+      <Modal
+        show={modalContent !== null}
         onClose={() => setModal(null)}
-      />
+        closeOnBlur={true}
+      >
+        {modalContent !== null && (
+          <ModalContent region={modalContent} onClose={() => setModal(null)}/>
+        )}
+      </Modal>
       <ComposableMap
         height={isDesktop ? 300 : (isTablet ? 600 : 1000) }
         projection="geoMercator"
@@ -68,7 +42,7 @@ export const Map = ({ regions }: MapProps) => {
         className={styles.map}
       >
         <ZoomableGroup
-          onMove={event => setZoom(event.k)}
+          onMove={event => setZoom(event.zoom)}
           zoom={initialZoom}
           maxZoom={80}
           minZoom={0.8}
@@ -95,11 +69,6 @@ export const Map = ({ regions }: MapProps) => {
           }
         </ZoomableGroup>
       </ComposableMap>
-      <div className={styles.scroll_area}>
-        <span style={{ fontSize: "1.5em" }}>«</span>
-        <span>Scroll here</span>
-        <span style={{ fontSize: "1.5em" }}>»</span>
-      </div>
-    </div>
+    </MapWrapper>
   );
 };

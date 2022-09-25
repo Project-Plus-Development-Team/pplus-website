@@ -1,3 +1,4 @@
+import { faTwitch } from "@fortawesome/free-brands-svg-icons";
 import { FAButton } from "shared/components/FAButton";
 
 interface Props {
@@ -13,10 +14,10 @@ export const TwitchButton = ({
 }: Props) => (
   <FAButton
     renderAs="a"
-    color="link"
+    color="twitch"
     href={`https://twitch.tv/${channelId}`}
-    className={`twitch ${className}`}
-    icon="fab fa-twitch"
+    className={className}
+    icon={faTwitch}
   >
     {text}
   </FAButton>

@@ -1,3 +1,4 @@
+import { MouseEventHandler } from "react";
 import { Marker } from "react-simple-maps";
 import { textToNumber } from "shared/functions/text-to-number";
 import { Region } from "../map-types";
@@ -23,14 +24,20 @@ export const RegionComponent = ({
   const suffix = hasSubtitle ? `, ${region.subtitle}` : "";
   const fullName = region.name + suffix;
 
+  const clickHandler: MouseEventHandler = event => {
+    event.preventDefault(); // don't add "#" to URL from anchor event
+    onClick();
+  };
+
   return (
     <Marker key={name} coordinates={[coordinates!.longitude, coordinates!.latitude]}>
       <a
-        onClick={onClick}
+        onClick={clickHandler}
         style={{
           filter: "drop-shadow(0 .5px .2px black)"
         }}
-        title={`Links to the community of ${fullName}`}
+        href="#"
+        aria-label={`Click to open the details of the ${name} community`}
       >
         <circle
           r={3 * dynamicScalingFactor}

@@ -26,7 +26,7 @@ However, the *hackless method* is only available when you have a NTSC-U console 
 
 #### [What was changed from Project M?](#changes)
 Compared to vanilla 3.6, Project+ fixes bugs found in 3.6, adjusts characters, and is built on the Legacy TE 2.5 build which itself includes many new features and content.\
-For a list of changes, you can find the most recent changelog [here](/changes).
+For a list of changes, you can find a list of the changes across all versions [here](/changes/all).
 
 #### [What characters are in Project+?](#characters)
 Project+ includes the 41 characters of Project M 3.6 with the addition of [Knuckles](/knuckles) as the 42nd character.
@@ -59,10 +59,10 @@ You can legally create a backup of your Brawl disc by running [CleanRip on a Wii
 [Direct IP Hosting Guide](https://www.smashladder.com/guides/view/26jo/direct-ip-hosting)
 
 #### [Can i add new characters to Project+? Does BrawlEx work with Project+?](#adding-characters-brawlex)
-*"P+Ex"* integrates the BrawlEx engine and CSS Expansion addon into Project+ to allow for an expanded roster of custom characters. For more information, check out [this document](https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8).
+*"P+Ex"* integrates the BrawlEx engine and CSS Expansion addon into Project+ to allow for an expanded roster of custom characters. For more information, check out [this document](https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8/edit).
 
 #### [How do I set up my controller?](#setup-controller)
-[Click here for the Controller Guide](https://www.smashladder.com/guides/view/258h/how-to-configuring-a-controller).
+[Click here for the Controller Guide](https://www.smashladder.com/guides/view/26oz/controller-guide-2-0).
 
 #### [How can I set up my Wii U GameCube Controller Adapter on a Mac?](#wii-u-adapter-mac)
 [How to use the Wii U GameCube Controller Adapter on Mac](https://wiki.dolphin-emu.org/index.php?title=How_to_use_the_Official_GameCube_Controller_Adapter_for_Wii_U_in_Dolphin#macOS).

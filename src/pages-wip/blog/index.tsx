@@ -35,14 +35,14 @@ const Blog = ({ blogEntries }: Props) => (
       .sort((a, b) => b.frontmatter.date < a.frontmatter.date ? -1 : 0)
       .map(entry => (
         <Message key={entry.slug}>
-          <Message.Header textSize={4}>
+          <Message.Header textSize={2}>
             <div className="is-flex-grow-1">
               <Link href={`/blog/${entry.slug}`}>
                 <a className="is-block">
                   {entry.frontmatter.title}
                 </a>
               </Link>
-              <Heading subtitle size={6}>
+              <Heading subtitle size={3}>
                 {new Date(entry.frontmatter.date).toLocaleDateString(undefined, { dateStyle: "full" })}
                 {" - "}
                 {entry.frontmatter.author}

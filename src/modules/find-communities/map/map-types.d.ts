@@ -1,6 +1,6 @@
 export type Threshold = "show-always" | "low" | "middle" | "high" | "very-high"
 
-export interface RawRegion {
+export interface SheetRegion {
   name: string
   subtitle: string
   showThreshold: Threshold
@@ -35,4 +35,16 @@ export interface Region {
   showThreshold: number
   coordinates: Coordinates
   platforms: Partial<Platforms>
+}
+
+export interface SheetGeneralCommunity {
+  displayName: string
+  url: string
+  imageName: string
+}
+
+import type images from "~capsules/communities";
+
+export interface GeneralCommunity extends SheetGeneralCommunity {
+  imageName: keyof typeof images | "pplusLogo"
 }

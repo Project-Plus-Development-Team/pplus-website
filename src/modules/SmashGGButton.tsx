@@ -16,8 +16,8 @@ export const SmashGGButton = ({
 }: Props) => (
   <Button
     renderAs="a"
-    color="danger"
-    className={`smashgg ${className}`}
+    color="smashgg"
+    className={className}
     href={`https://smash.gg/tournament/${slug}`}
   >
     <GoodImage

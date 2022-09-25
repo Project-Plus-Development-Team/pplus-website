@@ -1,0 +1,67 @@
+@import "bulma/sass/utilities/_all.sass";
+
+.navbar {
+  * {
+    transition: background-color 0.1s ease;
+  }
+
+  img {
+    max-height: inherit !important;
+  }
+
+  @include from ($desktop) {
+    border-radius: 0.3rem;
+    padding: 0 14px;
+    margin: 2rem 0;
+  }
+
+  > * {
+    margin: 0;
+  }
+}
+
+.buttonContainer {
+  @include from (500px) { // arbitrary value i chose which looks good, not an actual bulma breakpoint
+    flex-wrap: nowrap !important;
+  }
+  
+  // shorten download and discord button so that they don't break out of the page header
+  @media screen and (min-width: $desktop) and (max-width: $fullhd) {
+    button, a {
+      > svg {
+        margin-right: 0 !important;
+      }
+  
+      > span { // from .is-sr-only
+        border: none !important;
+        clip: rect(0, 0, 0, 0) !important;
+        height: 0.01em !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        position: absolute !important;
+        white-space: nowrap !important;
+        width: 0.01em !important;
+      }
+    }
+  }
+}
+
+.expandButton {
+  @include touch {
+    width: 100%;
+  }
+}
+
+.navitem:hover:not(.navitemactive) { // :not() is crucial due to specifity issues with !important
+  background-color: hsla(0,0%,0%,0.4) !important;
+}
+
+.navitemactive {
+  background-color: hsla(0,0%,0%,0.7) !important;
+}
+
+@include touch {
+  .navbar-menu {
+    background-color: hsla(0, 0%, 0%, 0.7) !important;
+  }
+}

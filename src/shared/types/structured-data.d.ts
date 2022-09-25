@@ -4,6 +4,6 @@ export interface NextSeoQuestion {
 }
 
 export interface Answer {
-  "@type": "Answer"
-  text: string
+  "@type": "Answer";
+  "text": string;
 }

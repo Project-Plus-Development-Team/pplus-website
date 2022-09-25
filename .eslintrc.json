@@ -1,14 +1,74 @@
 {
-  "extends": ["alloy", "alloy/react", "alloy/typescript"],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:sonarjs/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/strict",
+    "plugin:prettier/recommended",
+    "plugin:@next/next/recommended"
+  ],
   "env": { "browser": true },
   "rules": {
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "@next/next/no-img-element": "off",
+    "unicorn/no-null": "off",
+    "unicorn/no-array-callback-reference": "off",
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "allowList": {
+          "getStaticProps": true,
+          "Props": true,
+          "src": true
+        },
+        "replacements": {
+          "mod": {
+            "module": false
+          }
+        }
+      }
+    ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   },
   "overrides": [
     {
-      "files": "*.tsx",
+      "files": "*.{ts,tsx}",
       "rules": {
         "no-undef": ["off"]
+      }
+    },
+    {
+      "files": "*.js",
+      "rules": {
+        "@typescript-eslint/no-require-imports": "off",
+        "no-undef": "off",
+        "unicorn/prefer-module": "off"
+      }
+    },
+    {
+      "files": "*.d.ts",
+      "rules": {
+        "no-unused-vars": "off"
+      }
+    },
+    {
+      "files": "*.tsx",
+      "rules": {
+        "unicorn/filename-case": "off"
       }
     }
   ]

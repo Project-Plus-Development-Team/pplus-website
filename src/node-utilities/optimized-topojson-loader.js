@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
 const { feature } = require("topojson-client");
 const { topology } = require("topojson-server");
 

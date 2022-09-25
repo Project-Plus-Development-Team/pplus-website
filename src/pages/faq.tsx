@@ -7,11 +7,11 @@ import { getFAQStructuredData } from "modules/faq/get-faq-structured-data";
 import { MarkdownAstRenderer, RenderHook } from "shared/components/MarkdownAstRenderer";
 import { CopyToClipboard } from "shared/components/CopyToClipboard";
 import { FAQPageJsonLd, NextSeo } from "next-seo";
-
-import styles from "../modules/faq/faq.module.scss";
 import { root } from "next-server-utilities/root";
 import { getCurrentUrlWithHash } from "shared/functions/get-current-url-with-hash";
 import { NextSeoQuestion } from "shared/types/structured-data";
+
+import styles from "../modules/faq/faq.module.scss";
 
 interface Props {
   markdownAst: any
@@ -30,7 +30,7 @@ const getIdOfNode = (node: ParseableNode) => {
 const FAQ = ({ markdownAst, questions }: Props) => {
   const hash = useHash();
   
-  // TODO instead of this custom stuff i should probably use MDX instead
+  // TODO instead of this custom stuff i should probably use MDX instead. also just SSR the HTML and don't send an AST.
   const Hook: RenderHook = useCallback((node, Render) => {
     if (node.type === "heading" && node.depth === 4) {
       const content = node.children[0].type === "link" ? (
@@ -40,10 +40,14 @@ const FAQ = ({ markdownAst, questions }: Props) => {
       );
   
       const id = getIdOfNode(node.children[0]);
-      const highlightedClass = id === hash ? styles.highlighted : "";
+      const isActive = id === hash;
 
       return (
-        <h4 id={id} className={`copy-trigger ${highlightedClass}`}>
+        <h4
+          id={id}
+          className="copy-trigger"
+          aria-current={isActive ? "true" : undefined}
+        >
           {content}
           {id && (
             <CopyToClipboard link={getCurrentUrlWithHash(id)}/>
@@ -54,7 +58,7 @@ const FAQ = ({ markdownAst, questions }: Props) => {
   }, [hash]);
 
   return (
-    <>
+    <main>
       <NextSeo
         title="Frequently Asked Questions"
         description="Find answers to common questions about installation details, ISOs, mod content and more!"
@@ -77,7 +81,7 @@ const FAQ = ({ markdownAst, questions }: Props) => {
           color: hsl(0, 0%, 80%);
         }
       `}</style>
-    </>
+    </main>
   );
 };
 

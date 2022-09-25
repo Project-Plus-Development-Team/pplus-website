@@ -28,7 +28,7 @@ const MarkdownAstNode = ({ node, renderHook }: Props): JSX.Element => {
     case "root": return <>{children}</>;
     case "paragraph": return <p>{children}</p>;
     case "emphasis": return <em>{children}</em>;
-    case "link": return <a title={node.title ?? undefined} href={node.url}>{children}</a>;
+    case "link": return <a href={node.url}>{children}</a>;
     case "heading": {
       const Heading = `h${node.depth}` as const;
       return <Heading>{children}</Heading>;

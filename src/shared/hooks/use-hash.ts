@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
 export const useHash = () => {
-  const [anchor, setAnchor] = useState<string|null>(null);
+  const [anchor, setAnchor] = useState<string | null>(null);
   const router = useRouter();
 
   useEffect(() => {
@@ -11,7 +11,7 @@ export const useHash = () => {
       const target = decodedHash.slice(1).trim();
       setAnchor(target);
     }
-  }, []);
+  }, [router.isReady]);
 
   return anchor;
 };

@@ -1,11 +1,14 @@
 import { GetStaticProps } from "next";
 import { Button, Heading } from "react-bulma-components";
-import importedLinkGroups from "../modules/download/download.json";
-import { getSortedVersions } from "../modules/changes/get-version";
-import { FAButton } from "shared/components/FAButton";
+import { getSortedVersions } from "modules/changes/get-version";
 import { YouTubePlayer } from "shared/components/YouTubePlayer";
 import { NextSeo } from "next-seo";
 import { useEffect } from "react";
+import { FAButton } from "shared/components/FAButton";
+import { faBoxOpen, faSdCard } from "@fortawesome/free-solid-svg-icons";
+import { faApple, faLinux, faWindows } from "@fortawesome/free-brands-svg-icons";
+
+import importedLinkGroups from "modules/download/download.json";
 
 export type LinkGroup = Record<string, { url: string, icon?: string }>;
 
@@ -13,16 +16,25 @@ interface LinkGroupProps {
   data: LinkGroup[]
 }
 
+const iconMap = {
+  "fas fa-sd-card": faSdCard,
+  "fas fa-box-open": faBoxOpen,
+  "fab fa-windows": faWindows,
+  "fab fa-apple": faApple,
+  "fab fa-linux": faLinux
+};
+
 function LinkGroup({ data }: { data: LinkGroupProps }) {
   return (
     <Button.Group>
-      {Object.entries(data).map(([title, { url, icon }], index2) =>
+      {Object.entries(data).map(([title, { url, icon }], index) =>
         <FAButton
           color="link"
-          key={index2}
+          key={index}
           href={url}
           renderAs="a"
-          icon={icon}
+          // @ts-ignore
+          icon={iconMap[icon]} // TODO make this better as well
         >
           {title}
         </FAButton>
@@ -52,10 +64,10 @@ const Download = ({ linkGroups, latestVersion }: DownloadProps) => {
   });
 
   return (
-    <>
+    <main>
       <NextSeo
         title={`Download v${latestVersion}`}
-        description={`Download Project+ version ${latestVersion} for Wii and Netplay for Windows, MacOS and Linux. You'll also find the Lite version, Modders Pack, music list, and more!`}
+        description={`Download Project+ version ${latestVersion} for Wii and Netplay for Windows and Linux. You'll also find the Lite version, Modders Pack, music list, and more!`}
       />
       <Heading>Download Project+ v{latestVersion}</Heading>
       <Heading subtitle>Wii Lite only changes music compression to fit on a 2 GB SD card.</Heading>
@@ -68,7 +80,7 @@ const Download = ({ linkGroups, latestVersion }: DownloadProps) => {
         id="4XynDH-eVDE"
         title="Project+ Install Guide Video YouTube Embed"
       />
-    </>
+    </main>
   );
 };
 

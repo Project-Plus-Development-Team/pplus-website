@@ -30,7 +30,7 @@ export const CSSMain = ({ characterDiscordMap }: CSSMainProps) => {
     event.preventDefault();
     const allDiscordInvites = Object.values(characterDiscordMap);
     const randomIndex = Math.floor(Math.random() * allDiscordInvites.length);
-    const randomDiscord = "https://discord.gg/" + allDiscordInvites[randomIndex];
+    const randomDiscord = "https://discord.com/invite/" + allDiscordInvites[randomIndex];
     window.open(randomDiscord);
   };
 

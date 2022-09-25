@@ -15,7 +15,7 @@ publish = "out"
   [plugins.inputs]
     output_path = "reports/lighthouse.html"
 
-# [[plugins]] // [upstream] https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap/issues/26
+# [[plugins]] // [upstream] (fixed?) https://github.com/cdeleeuwe/netlify-plugin-submit-sitemap/issues/26
 #   package = "netlify-plugin-submit-sitemap"
 
 [build.processing]

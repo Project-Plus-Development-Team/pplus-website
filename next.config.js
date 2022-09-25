@@ -2,7 +2,7 @@ const path = require("path");
 const DuplicatePackageCheckerPlugin = require("duplicate-package-checker-webpack-plugin");
 const BundleAnalyzer = require("@next/bundle-analyzer");
 
-// [upstream] switch to ESM when this is fixed
+// [upstream] (fixed?) switch to ESM when this is fixed
 // https://github.com/vercel/next.js/issues/33693
 
 const isDebug = process.env.NEXT_DEBUG === "on";

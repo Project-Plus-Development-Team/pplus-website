@@ -79,7 +79,7 @@ export const LinkContainer = ({
         href="/knuckles"
         pathname={pathname}
       />
-      <NavDropdown highlighted={false} text="Community" className="has-new">
+      <NavDropdown highlighted={false} text="Community">
         <NavLink
           onClick={foldNavbar}
           text="Find Communities"
@@ -88,7 +88,6 @@ export const LinkContainer = ({
         />
         <NavLink
           onClick={foldNavbar}
-          className="has-new"
           text="European Player Map"
           href="/european-player-map"
           pathname={pathname}

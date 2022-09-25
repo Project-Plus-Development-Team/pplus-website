@@ -11,7 +11,7 @@ export const News = () => (
     <Link href="/watch/streams" passHref>
       <FAButton
         color="twitch"
-        className="has-text-weight-bold has-new"
+        className="has-text-weight-bold"
         icon={faTwitch}
         renderAs="a"
       >

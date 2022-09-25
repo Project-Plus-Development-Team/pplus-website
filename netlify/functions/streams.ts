@@ -52,7 +52,7 @@ const getStreams = async (isRetry = false): Promise<string> => {
   } catch (error) {
     if (
       axios.isAxiosError(error) &&
-      error.response?.data.message === "Invalid OAuth token" &&
+      (error.response?.data as { message: string }).message === "Invalid OAuth token" &&
       !isRetry
     ) {
       await refreshAccessToken();
@@ -76,7 +76,7 @@ export const handler: Handler = async () => {
     if (axios.isAxiosError(error)) {
       return {
         statusCode: 500,
-        body: error.response?.data.message ?? "Unknown request error"
+        body: (error.response?.data as { message: string }).message ?? "Unknown request error"
       };
     }
 

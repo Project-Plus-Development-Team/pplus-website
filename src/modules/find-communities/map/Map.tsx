@@ -42,7 +42,7 @@ export const Map = ({ regions }: MapProps) => {
         className={styles.map}
       >
         <ZoomableGroup
-          onMove={event => setZoom(event.zoom)}
+          onMove={event => setZoom((event as any).zoom)} // [upstream] https://github.com/DefinitelyTyped/DefinitelyTyped/discussions/62407
           zoom={initialZoom}
           maxZoom={80}
           minZoom={0.8}

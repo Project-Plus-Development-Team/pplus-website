@@ -58,12 +58,6 @@ export const LinkContainer = ({
             href="/changes/all"
             pathname={pathname}
           />
-          <NavLink
-            onClick={foldNavbar}
-            text="Knuckles"
-            href="/knuckles"
-            pathname={pathname}
-          />
           {versions.map((version, index) => {
             const isLast = index === versions.length - 1;
 
@@ -79,6 +73,12 @@ export const LinkContainer = ({
           })}
         </Navbar.Dropdown>
       </Navbar.Item>
+	    <NavLink
+            onClick={foldNavbar}
+            text="Knuckles"
+            href="/knuckles"
+            pathname={pathname}
+        />
       <NavDropdown highlighted={false} text="Community">
         <NavLink
           onClick={foldNavbar}
@@ -107,13 +107,6 @@ export const LinkContainer = ({
           Watch P+ and PM VODs
         </a>
       </NavDropdown>
-      <NavLink
-        onClick={foldNavbar}
-        className="has-new"
-        text="Learn"
-        href="/learn"
-        pathname={pathname}
-      />
     </Navbar.Container>
   );
 };

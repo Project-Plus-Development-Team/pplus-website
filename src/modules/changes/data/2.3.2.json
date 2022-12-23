@@ -37,7 +37,8 @@
 								"Stages based on Mushroomy Kingdom spawn items from item blocks correctly again",
 								"Norfair Crateria’s blastzones are now the same as Metroid Lab’s",
 								"Dinosaur Land Z no longer allows wallcling on the right side",
-                                "Distant Caves’ Careening Dirigibug has a fix for the rock it is holding"
+                                "Distant Caves’ Careening Dirigibug has a fix for the rock it is holding",
+								"Fixed Saffron City CS 1:1 not showing shadows on console"
                             ]
                         }
                     ]
@@ -59,7 +60,7 @@
                                 "Fierce Deity Link no longer has a hole in the rear of the armor, hair rigging fixed to move on taunt",
                                 "Updated Morpho Knight shadow model",
                                 "Samurai Meta Knight has updated UVs on gauntlet",
-                                "Sonic Shadow, Tails, and Silver costumes have fixed glove textures",
+                                "Sonic's Shadow, Tails, and Silver costumes have fixed glove textures",
                                 "Fixed shoe texture issues on Sonic’s Shadow costume",
                                 "King Dedede has a new AltZ costume: Kirby 64 Dedede",
                                 "Luigi costume optimizations",

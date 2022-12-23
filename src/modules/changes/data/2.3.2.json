@@ -1,0 +1,88 @@
+{
+    "links": {
+        "Google Doc Version": {
+            "icon": "fas fa-file-alt",
+            "url": "https://docs.google.com/document/d/1-MmUVR4K_Fhtp1_jlsNhc3bY-VNXh4m3VAk6qfV7lNE/edit#"
+        },
+        "Music Lineup": {
+            "icon": "fas fa-music",
+            "url": "https://docs.google.com/spreadsheets/d/1Nj72z6X4VJpnpNWO9_UJR_bU-hH0eag-lrP_77oaNTo"
+        }
+    },
+    "changes": [
+                {
+                    "name": "Bug Fixes",
+                    "element": {},
+                    "moves": [
+                        {
+                            "title": "Characters and Gameplay",
+                            "changes": [
+                                "Fixed some Pit costumes having half of his talking face not always visible",
+                                "Fixed some instances of Sonic’s eyes and mouth disappearing during aerial moves",
+                                "Ike’s face will no longer disappear during certain frames of forward air",
+                                "Fixed issue where Fighter Kirby will t-pose in some 4 player matches",
+                                "Removed optimizations on Ice Climbers related to added visibility bones as they did not work on all game modes",
+                                "Samus hat Kirby now has aerial animations for charging and canceling",
+                                "Hold-to-Pause no longer will pause instantly the first time attempted after the game is started up or at other inconsistent times and now works as was intended",
+                                "AI will not detect collisions that are inactive. This most notably affects how AI decides where to land"
+								
+                            ]
+                        },
+                        {
+                            "title": "Stages",
+                            "changes": [
+                                "Ultra Space platform collisions are now fixed",
+                                "Fountain of Dreams has graphical glitches removed",
+                                "Adjusted the movement of one of the meteors on Meteo to not warp into view",
+								"Stages based on Mushroomy Kingdom spawn items from item blocks correctly again",
+								"Norfair Crateria’s blastzones are now the same as Metroid Lab’s",
+								"Dinosaur Land Z no longer allows wallcling on the right side",
+                                "Distant Caves’ Careening Dirigibug has a fix for the rock it is holding"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Costumes and Content",
+                    "element": {},
+                    "moves": [
+                        {
+                            "title": "Costume Changes and Fixes",
+                            "changes": [
+                                "Boxer DK’s bandages will appear as he acquires damage rather than starting with all of them at 0%. Additional updates to the rig and glove materials also applied. Pink Boxer DK also features updated colors",
+                                "Olimar hat Kirby has antenna lights on all costumes",
+                                "Cowboy Kirby no longer has a gap in their shoes",
+                                "Knuckles has updated fists for cleaner lighting on all costumes",
+                                "Jet Set Knuckles fixed UVs on open mouth expressions",
+                                "OoT Link has gaps fixed on ears, and now has an additional black costume",
+                                "OoT Ganondorf has been updated to fix a texture UV issue behind his ear",
+                                "Fierce Deity Link no longer has a hole in the rear of the armor, hair rigging fixed to move on taunt",
+                                "Updated Morpho Knight shadow model",
+                                "Samurai Meta Knight has updated UVs on gauntlet",
+                                "Sonic Shadow, Tails, and Silver costumes have fixed glove textures",
+                                "Fixed shoe texture issues on Sonic’s Shadow costume",
+                                "King Dedede has a new AltZ costume: Kirby 64 Dedede",
+                                "Luigi costume optimizations",
+                                "Costumes that were previously uncompressed in error are now compressed"
+                            ]
+                        },          
+                        {
+                            "title": "Other",
+                            "changes": [
+                                "Song titles will now display when pausing a match",
+                                "When paused, you can reroll the song playing by holding A and pressing B",
+                                "Fixed debug mode input bug when using the old debug menu on ports 2 - 4",
+								"Replay code updated to fix Ice Climber desync and other potential desyncs",
+								"Dark Pit slow-moving arrow on-hit effect fix",
+                                "Papetoon has its own separate soundtrack",
+                                "Boss Battles and All-Star modes are now unlocked by default",
+                                "Knuckles trophy updated with snout fixes",
+                                "Stageslot IDs.txt updated for 2.3 stage updates",
+                                "Deleted HD textures for removed stages",
+                                "Strap and Results screens updated for version 2.3.2"
+                            ]
+                        }
+                    ]
+                }
+    ]
+}

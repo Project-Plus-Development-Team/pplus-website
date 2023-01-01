@@ -18,7 +18,7 @@
                             "title": "Characters and Gameplay",
                             "changes": [
                                 "Fixed some Pit costumes having half of his talking face not always visible",
-                                "Fixed some instances of Sonic’s eyes and mouth disappearing during aerial moves",
+                                "Fixed an instance of Sonic’s eyes and mouth disappearing during an animation",
                                 "Ike’s face will no longer disappear during certain frames of forward air",
                                 "Fixed issue where Fighter Kirby will t-pose in some 4 player matches",
                                 "Removed optimizations on Ice Climbers related to added visibility bones as they did not work on all game modes",

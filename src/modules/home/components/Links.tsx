@@ -45,7 +45,7 @@ export const Links = () => (
       <FAButton
         icon={faGithub}
         renderAs="a"
-        href="https://github.com/FunctionDJ/project-plus-website"
+        href="https://github.com/Project-Plus-Development-Team/pplus-website"
         screenReader="Website source code on GitHub"
       >
         Website source

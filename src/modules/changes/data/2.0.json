@@ -2873,119 +2873,125 @@
     {
       "name": "Roy",
       "element": {},
-      "moves": [
-        {
-          "title": "Attributes",
-          "changes": [
-            "Wall Jump Horizontal Velocity: 1.3 > 1.0"
-          ]
-        },
-        {
-          "title": "Forward Tilt",
-          "changes": [
-            "Sweet spot damage: 14 > 13 (No KB Comp)",
-            "Sour spot: 60 BKB > 40 BKB, 70 KBG > 80 KBG",
-            "Sweet spot now takes priority over sour spot",
-            "Angling Up/Down now increases/decreases damage by 1%"
-          ]
-        },
-        {
-          "title": "Up Tilt",
-          "changes": [
-            "Active frames increased 8 > 9"
-          ]
-        },
-        {
-          "title": "Down Tilt",
-          "changes": [
-            "Now allows Shield directly out of IASA"
-          ]
-        },
-        {
-          "title": "Forward Smash",
-          "changes": [
-            "Startup 12 > 11",
-            "No longer reverse hits"
-          ]
-        },
-        {
-          "title": "Down Smash",
-          "changes": [
-            "Sweet spot Initial hit KBG: 82 > 85",
-            "Sweet spot lingering hit KBG: 77 > 80",
-            "Sour spot KBG: 100 > 95"
-          ]
-        },
-        {
-          "title": "Back Air",
-          "changes": [
-            "Reverted Sweetspot to v3.5 Angle: 361 > 50"
-          ]
-        },
-        {
-          "title": "Up Air",
-          "changes": [
-            "Sweet spot priority on up air reworked, the inner body hitbox now takes priority over the tip sour spot (tip still has priority over sword/hilt hitboxes)"
-          ]
-        },
-        {
-          "title": "Down Throw",
-          "changes": [
-            "Release point and throw animation adjusted to resemble Melee"
-          ]
-        },
-        {
-          "title": "Side Special (Double Edge Dance)",
-          "changes": [
+        "moves": [
             {
-              "title": "Double Edge Dance colors are now based on the direction used instead of being a set order. Previously, the order was Red, Blue, Green, Red. Now, Up = Blue, Side = Red, Down = Green. ",
-              "changes": [
-                "Hitlag Multiplier: x1 > x0.9"
-              ]
+                "title": "Attributes",
+                "changes": [
+                    "Wall Jump Horizontal Velocity: 1.3 > 1.0"
+                ]
             },
             {
-              "title": "All variations except for xxV and the 4th swings",
-              "changes": [
-                "Hitlag Multiplier: x1 > x0.9"
-              ]
+                "title": "Forward Tilt",
+                "changes": [
+                    "Sweet spot damage: 14 > 13 (No KB Comp)",
+                    "Sour spot: 60 BKB > 40 BKB, 70 KBG > 80 KBG",
+                    "Sweet spot now takes priority over sour spot",
+                    "Angling Up/Down now increases/decreases damage by 1%"
+                ]
+            },
+            {
+                "title": "Up Tilt",
+                "changes": [
+                    "Active frames increased 8 > 9"
+                ]
+            },
+            {
+                "title": "Down Tilt",
+                "changes": [
+                    "Now allows Shield directly out of IASA"
+                ]
+            },
+            {
+                "title": "Forward Smash",
+                "changes": [
+                    "Startup 12 > 11",
+                    "No longer reverse hits"
+                ]
+            },
+            {
+                "title": "Down Smash",
+                "changes": [
+                    "Sweet spot Initial hit KBG: 82 > 85",
+                    "Sweet spot lingering hit KBG: 77 > 80",
+                    "Sour spot KBG: 100 > 95"
+                ]
+            },
+            {
+                "title": "Back Air",
+                "changes": [
+                    "Reverted Sweetspot to v3.5 Angle: 361 > 50"
+                ]
+            },
+            {
+                "title": "Up Air",
+                "changes": [
+                    "Sweet spot priority on up air reworked, the inner body hitbox now takes priority over the tip sour spot (tip still has priority over sword/hilt hitboxes)"
+                ]
+            },
+            {
+                "title": "Down Throw",
+                "changes": [
+                    "Release point and throw animation adjusted to resemble Melee"
+                ]
+            },
+            {
+                "title": "Neutral Special (Flare Blade)",
+                "changes": [
+                    "When nearly fully charged (flashing white), press A to activate a ranged critical strike!"
+                ]
+            },
+            {
+                "title": "Side Special (Double Edge Dance)",
+                "changes": [
+                    {
+                        "title": "Double Edge Dance colors are now based on the direction used instead of being a set order. Previously, the order was Red, Blue, Green, Red. Now, Up = Blue, Side = Red, Down = Green. ",
+                        "changes": [
+                            "Hitlag Multiplier: x1 > x0.9"
+                        ]
+                    },
+                    {
+                        "title": "All variations except for xxV and the 4th swings",
+                        "changes": [
+                            "Hitlag Multiplier: x1 > x0.9"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Up Special (Blazer)",
+                "changes": [
+                    "Ledge grabbox changed to match v3.5",
+                    "Landing Lag 30 > 24",
+                    "Distance 1.1 > 1.14"
+                ]
+            },
+            {
+                "title": "Down Special (Counter)",
+                "changes": [
+                    "Links bombs no longer bounce off of Roy’s counter",
+                    "Intangibility frames on attack increased by 1 to fully cover active hitbox frames",
+                    "“Soko!” added as an option for counter’s voice clips"
+                ]
+            },
+            {
+                "title": "Other",
+                "changes": [
+                    "Fixed a bug with his clank animation that could cause him to die on sloped terrain",
+                    "Fixed out of place hitbox on <100 getup attack",
+                    "Forward getup roll intangibility: 6-20 > 1-20 (Matched to be universal) ",
+                    "Ledge getup roll intangibility: 1-27 > 1-39 (Matched to be universal) "
+                ]
+            },
+            {
+                "title": "Costumes & Aesthetics",
+                "changes": [
+                    "Model has been updated slightly; black and blue costumes have slight color changes",
+                    "Several sword trail and item swing sword trails edited to fix model and interpolation issues",
+                    "Roy moved to his own soundbank, allowing for higher audio quality and more voice clips",
+                    "Given an additional idle animation"
+                ]
             }
-          ]
-        },
-        {
-          "title": "Up Special (Blazer)",
-          "changes": [
-            "Ledge grabbox changed to match v3.5",
-            "Landing Lag 30 > 24",
-            "Distance 1.1 > 1.14"
-          ]
-        },
-        {
-          "title": "Down Special (Counter)",
-          "changes": [
-            "Links bombs no longer bounce off of Roy’s counter",
-            "Intangibility frames on attack increased by 1 to fully cover active hitbox frames",
-            "“Soko!” added as an option for counter’s voice clips"
-          ]
-        },
-        {
-          "title": "Other",
-          "changes": [
-            "Fixed a bug with his clank animation that could cause him to die on sloped terrain",
-            "Fixed out of place hitbox on <100 getup attack",
-            "Forward getup roll intangibility: 6-20 > 1-20 (Matched to be universal) ",
-            "Ledge getup roll intangibility: 1-27 > 1-39 (Matched to be universal) "
-          ]
-        },
-        {
-          "title": "Costumes & Aesthetics",
-          "changes": [
-            "Model has been updated slightly; black and blue costumes have slight color changes",
-            "Several sword trail and item swing sword trails edited to fix model and interpolation issues",
-            "Roy moved to his own soundbank, allowing for higher audio quality and more voice clips",
-            "Given an additional idle animation"
-          ]
-        }
-      ]
+        ]
     },
     {
       "name": "Samus",

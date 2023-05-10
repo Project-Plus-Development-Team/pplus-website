@@ -145,6 +145,12 @@
           "changes": [
             "Ledge roll occupancy matched to cast (40 > 45)"
           ]
+        },
+        {
+          "title": "Bomb (Down Special)",
+          "changes": [
+            "Now activates on shield"
+          ]
         }
       ]
     },

@@ -185,7 +185,19 @@
         {
           "title": "Alternative stage slots are accessible using the Wiimote and Nunchuck",
           "changes": [
-            "Hold B on a Wiimote with a direction to get the GameCube equivalent of an option: B+Left = GC L, B+Up = GC R, B+Right = GC Z, B+Down = GC X, A = GC R, C = GC X, - = GC X, -&+ together = GC Y"
+            {
+              "title": "Hold B on a Wiimote with a direction to get the GameCube equivalent of an option",
+              "changes": [
+                "B+Left = GC L",
+				"B+Up = GC R",
+				"B+Right = GC Z",
+				"B+Down = GC X",
+				"A = GC R",
+				"C = GC X",
+				"- = GC X",
+				"-&+ together = GC Y"
+              ]
+            }
           ]
         },
         {

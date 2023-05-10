@@ -182,9 +182,6 @@
             "Hold B on a Wiimote with a direction to get the GameCube equivalent of an option: B+Left = GC L, B+Up = GC R, B+Right = GC Z, B+Down = GC X, A = GC R, C = GC X, - = GC X, -&+ together = GC Y"
           ]
         },
-          "title": "In Depth Stage Changes:",
-          "changes": []
-        },
         {
           "title": "Castle Siege",
           "changes": [
@@ -208,6 +205,7 @@
             }
           ]
         },
+		{
           "title": "Ceres Space Colony (NEW!)",
           "changes": [
             {

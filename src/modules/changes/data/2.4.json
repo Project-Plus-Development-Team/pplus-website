@@ -23,7 +23,7 @@
 		{
           "title": "Fireball (Neutral Special)",
           "changes": [
-            "Lifespan reduced to properly match GFX (260 > 72)"
+            "GFX looped to match length of hitbox"
           ]
         }
       ]

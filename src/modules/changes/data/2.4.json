@@ -154,18 +154,6 @@
         }
       ]
     },
-    {
-      "name": "Sonic",
-      "element": {},
-      "moves": [
-        {
-          "title": "Spin Dash (Down Special)",
-          "changes": [
-            "Fixed a bug where Sonic's increased fall speed would linger when canceling Down B with certain specials"
-          ]
-        }
-      ]
-    },
 	{
       "name": "Toon Link",
       "element": {},
@@ -196,6 +184,17 @@
 				"C = GC X",
 				"- = GC X",
 				"-&+ together = GC Y"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Battlefield",
+          "changes": [
+            {
+              "title": "(R-alt) Lunar Battlefield",
+              "changes": [
+                "Received a visual update"
               ]
             }
           ]
@@ -606,8 +605,9 @@
             "Changed the Knuckles soundbank from 176.sawnd to 146.sawnd and adjusted Knuckles’ yelling during his Final Smash",
             "Fixed the position of showing 100 KO stars on the character select screen",
             "The audio fade code featured in Project M has been readded; the code was rebuilt to prevent previous issues",
-            "Adjusted volume for Ballad of the Goddess",
+            "Adjusted volume for Ballad of the Goddess, Jungle Bump, and House Special tracks",
             "R-alt costumes are now accessible with a Nunchuck by holding C (Z-alt costumes were already accessible)",
+			"Classic Controller and Nunchuck control options can now access the custom controls menu on the character select screen",
             "Revamped to use Sammi Husky’s new file patch code, vastly improving load times",
             "Adjusted how memory reservation works in the stage param files to better match how Brawl treated stages. This allows the stage Mario Bros. to be placed wherever desired without requiring it to be coded into a specific slot.",
             "It is now possible to customize stages to use two pac files based on param settings, in a similar manner to Castle Siege",

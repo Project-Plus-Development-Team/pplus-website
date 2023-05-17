@@ -544,7 +544,7 @@
           "changes": [
             "Fixed issues with CPU and replays where a player could hold the shoulder button or C-stick during replays to manipulate behavior",
             "Replays will no longer break when they are used with Wiimotes, Nunchucks, or Classic Controllers",
-            "L-Load characters can be accessed again with Wiimotes and Nunchucks using the minus and C buttons, respectively.",
+            "L-Load characters can be accessed again with Wiimotes and Nunchucks using the minus button",
             "Updated FitSonic.pac and FitKnuckles.pac to remove unnecessary common loaded textures which caused crashes and graphical glitches related to any other move that also referenced those smoke textures (this bug has existed for about 9 years)"
           ]
         },

@@ -1,0 +1,625 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1xbIJkhJi7elVQjK4mOOEy0F5bRP1IHvVxMFeXSjWakY/"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1hx9Go3-ltxQjQsf-Lu1Ezc4lwqd3gk1TaDN01tsatX8"
+    }
+  },
+  "changes": [
+    {
+      "name": "Bowser",
+      "element": {},
+      "moves": [
+        {
+          "title": "Grab",
+          "changes": [
+            "Normalized IASA to the rest of the cast (30 > 31)"
+          ]
+        },
+		{
+          "title": "Fireball (Neutral Special)",
+          "changes": [
+            "GFX looped to match length of hitbox"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Captain Falcon",
+      "element": {},
+      "moves": [
+        {
+          "title": "Falcon Dive (Up Special)",
+          "changes": [
+            "Removed Bucket Brake"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Donkey Kong",
+      "element": {},
+      "moves": [
+        {
+          "title": "Grab",
+          "changes": [
+            "Normalized IASA to the rest of the cast (30 > 31)"
+          ]
+        },
+		{
+          "title": "Forward Throw",
+          "changes": [
+            "Fixed bug where Donkey Kong’s cargo grab release applied double momentum"
+          ]
+        },
+		{
+          "title": "Spinning Kong (Up Special)",
+          "changes": [
+            "Removed Bucket Brake"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ice Climbers",
+      "element": {},
+      "moves": [
+        {
+          "title": "Grab",
+          "changes": [
+            "Nana/CPU controlled Ice Climber pair throws without considering human input"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ike",
+      "element": {},
+      "moves": [
+        {
+          "title": "Counter (Down Special)",
+          "changes": [
+            "Now uses intangibility instead of invincibility when activated, matching other counters"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Jigglypuff",
+      "element": {},
+      "moves": [
+        {
+          "title": "General",
+          "changes": [
+            "Fixed a bug where Jigglypuff's hurtbox did not properly update when entering crouch or landing, resulting in her being hit in scenarios when she should not"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mario",
+      "element": {},
+      "moves": [
+        {
+          "title": "Ledge roll",
+          "changes": [
+            "Ledge roll occupancy matched to cast (40 > 45)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Meta Knight",
+      "element": {},
+      "moves": [
+        {
+          "title": "Getup attack (up)",
+          "changes": [
+            "Hitbox size reduced (10 > 5)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mr Game & Watch",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bucket (Down Special)",
+          "changes": [
+            "Can no longer turn around while putting away the bucket"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Samus",
+      "element": {},
+      "moves": [
+        {
+          "title": "Ledge roll",
+          "changes": [
+            "Ledge roll occupancy matched to cast (40 > 45)"
+          ]
+        },
+        {
+          "title": "Bomb (Down Special)",
+          "changes": [
+            "Now activates on shield"
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Toon Link",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Spin Attack)",
+          "changes": [
+            "First active frame changed to properly match previous changelogs (8 > 7)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Alternative stage slots are accessible using the Wiimote and Nunchuck",
+          "changes": [
+            {
+              "title": "Hold B on a Wiimote with a direction to get the GameCube equivalent of an option",
+              "changes": [
+                "B+Left = GC L",
+				"B+Up = GC R",
+				"B+Right = GC Z",
+				"B+Down = GC X",
+				"A = GC R",
+				"C = GC X",
+				"- = GC X",
+				"-&+ together = GC Y"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Battlefield",
+          "changes": [
+            {
+              "title": "(R-alt) Lunar Battlefield",
+              "changes": [
+                "Received a visual update"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Castle Siege",
+          "changes": [
+            {
+              "title": "(Base Slot) Castle Siege PM",
+              "changes": [
+                "Reverted to Project M's Castle Siege, moved from the Z slot"
+              ]
+            },
+            {
+              "title": "(R-alt) Castle Siege of Time",
+              "changes": [
+                "Moved from the default slot due to Temple of Time taking its layout"
+              ]
+            },
+            {
+              "title": "(Z-alt) Castlefield",
+              "changes": [
+                "Moved from the R-alt"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Ceres Space Colony (NEW!)",
+          "changes": [
+            {
+              "title": "(Base Slot) Ceres Space Colony",
+              "changes": [
+                "A new aesthetic for Metroid Lab, this stage takes its slot and position on the SSS"
+              ]
+            },
+            {
+              "title": "(R-alt) Ceres Husk",
+              "changes": [
+                "A new 1:1 of Frigate Husk, with Ceres Space Colony's aesthetic"
+              ]
+            },
+            {
+              "title": "(Z-alt) Ceres X",
+              "changes": [
+                "Takes the visual revamp from the base slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Clock Town",
+          "changes": [
+            {
+              "title": "(L-alt) Majora's Room (NEW!)",
+              "changes": [
+                "A 1:1 of Battlefield"
+              ]
+            },
+            {
+              "title": "(Z-alt) Great Bay",
+              "changes": [
+                "Moved from Hyrule Castle's Z-alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Corneria",
+          "changes": [
+            {
+              "title": "(R-alt) Sauria FoD",
+              "changes": [
+                "Received a visual overhaul"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dead Line",
+          "changes": [
+            {
+              "title": "(Z-alt) Space Colony Ark",
+              "changes": [
+                "Received a new Z alt: Space Colony Ark, a 1:1 of Sky Santuary Zone"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dinosaur Land",
+          "changes": [
+            {
+              "title": "(Z-alt) Cheese Bridge",
+              "changes": [
+                "Received a new Z alt: Cheese Bridge, a unique casual stage with hazards"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Frigate Husk (NEW!)",
+          "changes": [
+            {
+              "title": "(Base) Frigate Husk",
+              "changes": [
+                "A completely new stage, taking the slot of Frigate Orpheon. This is the same stage collision-wise as the custom stage Hyrule Meadows."
+              ]
+            },
+            {
+              "title": "(R-alt) Drowned Frigate",
+              "changes": [
+                "A 1:1 of Frigate Husk"
+              ]
+            },
+            {
+              "title": "(Z-alt) Frigate Orpheon",
+              "changes": [
+                "Moved to the Z-alt from the base slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Green Hill Zone",
+          "changes": [
+            {
+              "title": "(Base) Green Hill Zone",
+              "changes": [
+                "A visual overhaul of the Project M classic, based on its appearance in Sonic Generations."
+              ]
+            },
+            {
+              "title": "(R-alt) Green Hill Zone PM",
+              "changes": [
+                "The previous base stage has been moved to the R-alt"
+              ]
+            },
+            {
+              "title": "(L-alt) Marble Zone",
+              "changes": [
+                "Moved to the L-alt from the R-alt slot"
+              ]
+            },
+            {
+              "title": "(X-alt) Green Hill Zone Brawl (NEW!)",
+              "changes": [
+                "Moved to the X-alt from the L-alt slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Hyrule Castle",
+          "changes": [
+            {
+              "title": "(Z-alt) Kakariko Village",
+              "changes": [
+                "A new alt, which is a 1:1 of Smashville"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Jungle Japes",
+          "changes": [
+            {
+              "title": "(R-alt) Kongo Jungle Land",
+              "changes": [
+                "Received a visual update"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Luigi’s Mansion",
+          "changes": [
+            {
+              "title": "(Base) Luigi's Mansion (Competitive)",
+              "changes": [
+                "A new competitive layout for Luigi's Mansion, with some visual updates from the existing custom stage"
+              ]
+            },
+            {
+              "title": "(R-alt) Deck Dry Bones",
+              "changes": [
+                "A 1:1 of Luigi's Mansion Competitive"
+              ]
+            },
+            {
+              "title": "(Z-alt) Luigi's Mansion",
+              "changes": [
+                "Moved to the Z-alt from the base slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mushroom Kingdom",
+          "changes": [
+            {
+              "title": "(R-alt) Mushroomy Kingdom Cavern",
+              "changes": [
+                "Received a new R-alt, a 1:1 of Metal Cavern"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "PictoChat",
+          "changes": [
+            {
+              "title": "(R-alt) Pictochat of Time",
+              "changes": [
+                "Changed aesthetics to mirror Temple of Time, the stage which now has this layout"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pirate Ship",
+          "changes": [
+            {
+              "title": "General",
+              "changes": [
+                "Moved to an EX slot to allow Temple of Time to be selectable on Random"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Planet Zebes",
+          "changes": [
+            {
+              "title": "(Z-alt) RidleyLand",
+              "changes": [
+                "Moved from Frigate Orpheon’s R-alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sky Sanctuary Zone",
+          "changes": [
+            {
+              "title": "(Base Slot) Sky Sanctuary Zone",
+              "changes": [
+                "Received a complete visual overhaul, based on its appearance in Sonic Generations"
+              ]
+            },
+            {
+              "title": "(Z) Sky Sanctuary Husk (NEW!)",
+              "changes": [
+                "A new 1:1 of Frigate Husk based on the visually revamped Sky Santuary Zone"
+              ]
+            },
+            {
+              "title": "(X-alt) Sky Sanctuary Zone (Original)",
+              "changes": [
+                "Moved from the base slot due to the visual revamp replacing it"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Skyworld",
+          "changes": [
+            {
+              "title": "(Z-alt) Underworld",
+              "changes": [
+                "Received a complete visual overhaul"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Temple",
+          "changes": [
+            {
+              "title": "(R-alt) Hyrule's Courtyard Mansion",
+              "changes": [
+                "Received a new R-alt, a 1:1 of Luigi's Mansion"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Temple of Time (NEW!)",
+          "changes": [
+            {
+              "title": "(Base Slot) Temple of Time",
+              "changes": [
+                "A completely new aesthetic for Castle Siege's collisions! This stage is based on the Twilight Princess iteration of the Temple of Time"
+              ]
+            },
+            {
+              "title": "(R-alt) OoT Temple of Time",
+              "changes": [
+                "A 1:1 of Temple of Time; can you find the secrets that lie within this stage?"
+              ]
+            },
+            {
+              "title": "(L-alt) Bridge of Eldin (Platforms)",
+              "changes": [
+                "A casual stage, which has platforms teleported in frequently!"
+              ]
+            },
+            {
+              "title": "(Z-alt) Bridge of Eldin",
+              "changes": [
+                "Moved from Clock Town's Z-alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Yoshi’s Island Competitive) (NEW!)",
+          "changes": [
+            {
+              "title": "(Base) Yoshi’s Island (Competitive)",
+              "changes": [
+                "A new layout for Yoshi's Island intended for competitive play, with some minor visual improvements from the custom stage it is based on"
+              ]
+            },
+            {
+              "title": "(R-alt) New Yoshi’s Island",
+              "changes": [
+                "A 1:1 of the competitive Yoshi's Island layout"
+              ]
+            },
+            {
+              "title": "(Z-alt) Yoshi’s Island (PM)",
+              "changes": [
+                "Moved from the base slot"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Fixed issues with CPU and replays where a player could hold the shoulder button or C-stick during replays to manipulate behavior",
+            "Replays will no longer break when they are used with Wiimotes, Nunchucks, or Classic Controllers",
+            "L-Load characters can be accessed again with Wiimotes and Nunchucks using the minus and C buttons, respectively.",
+            "Updated FitSonic.pac and FitKnuckles.pac to remove unnecessary common loaded textures which caused crashes and graphical glitches related to any other move that also referenced those smoke textures (this bug has existed for about 9 years)"
+          ]
+        },
+        {
+          "title": "Stages/Music",
+          "changes": [
+            "Jungle Japes has fixes for the Klap Trap’s eyes"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Song titles for songs loaded directly from Brawl pop up correctly during replays",
+            "Fixed an issue where unplugging a controller on the character or stage select screens had a chance of crashing the game"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+        {
+          "title": "Costumes",
+          "changes": [
+            "Bowser’s Z-alt (Dark Bowser) has received a visual revamp",
+			"Wolf02 costume has been updated. Previously, this costume had duplicate face textures to account for transparency issues; these transparency texture issues have now been fixed",
+			"Fixed minor cosmetic issues on OoT Link",
+            "OoT Sheik model and recolors updated for visual clarity",
+            "Updated OoT Ganondorf model and recolors, with a new Melee-inspired recolor",
+			"New Ivysaur Z-alt: Saurceress Ivysaur",
+            "Kirby received two new recolors: Orange Fighter Kirby and Sepia Cowboy Kirby",
+            "Updated Shogun Dedede model to improve performance; Shogun Dedede also has separate minion projectiles for his Side Special",
+			"Improved visuals for the default Waddle Doo design",
+            "New model for Dedede’s mask taunt",
+            "Commander Lucas has a new white recolor",
+            "Revamped Earthbound 64 Lucas alt and recolors added",
+            "Knuckles’ Hydrocity (Cyan) and Sandopolis (Yellow) recolors updated to better match his other ones"
+          ]
+        },
+        {
+          "title": "Character Polish",
+          "changes": [
+            "Peach now has her 5th idle animation as well as grounded throw transition (Aerial Down Special) animations re-added. They were previously removed due to memory restrictions that are no longer applicable",
+			"Peach’s vegetables have been normalized in terms of coloration",
+			"Yoshi eggshell effects now match individual costumes instead of always being blank",
+			"Ganondorf has received a new set of renders",
+            "Kirby has received a new set of renders"
+
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Due to intended improved replay compatibility, one player matches will no longer skip the countdown announcement. This code has been moved to the Extras folder, but it will break replays if included",
+            "Added animated CSS code for modding support; the main CSS background model has also been adjusted to no longer contain the fake slots, allowing for easier background swaps",
+            "Updated custom soundbank code to not crash when two custom soundbanks load at the same time. This fixes an issue where rare freezes would occur in modes such as All-Star Vs. when a character with a custom soundbank appeared while another with a different custom soundbank was playing a sound in-battle",
+            "Changed the Knuckles soundbank from 176.sawnd to 146.sawnd and adjusted Knuckles’ yelling during his Final Smash",
+            "Fixed the position of showing 100 KO stars on the character select screen",
+            "The audio fade code featured in Project M has been readded; the code was rebuilt to prevent previous issues",
+            "Adjusted volume for Ballad of the Goddess, Jungle Bump, and House Special tracks",
+            "R-alt costumes are now accessible with a Nunchuck by holding C (Z-alt costumes were already accessible)",
+			"Classic Controller and Nunchuck control options can now access the custom controls menu on the character select screen",
+            "Revamped to use Sammi Husky’s new file patch code, vastly improving load times",
+            "Adjusted how memory reservation works in the stage param files to better match how Brawl treated stages. This allows the stage Mario Bros. to be placed wherever desired without requiring it to be coded into a specific slot.",
+            "It is now possible to customize stages to use two pac files based on param settings, in a similar manner to Castle Siege",
+            "Dual Pac stages that were based around a single “dummy” pac file as the secondary load no longer require this and work as expected",
+            "Multiple stages have renamed files to help with consistent file structure",
+            "Page 3 of the stage selection screen will now dynamically display either a return to page 1 button or custom stages depending on if there are custom stage builder stages on the SD card. This helps eliminate an issue where builds that chose to not have any would show the incorrect button or require swapping the texture assets around",
+            "Control customization on the CSS has been re-coded, and now plays SFX when doing actions such as opening the menu or pinning a tag",
+            "Added code which allows passive stage props to exist which do not affect players and projectiles (or just projectiles) directly. This feature is currently unused but is provided for custom stage design purposes in the future",
+            "Strap and Results screens updated for version 2.4"
+          ]
+        }
+      ]
+    }
+  ]
+}

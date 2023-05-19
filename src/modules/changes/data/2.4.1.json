@@ -65,18 +65,6 @@
       ]
     },
     {
-      "name": "Ice Climbers",
-      "element": {},
-      "moves": [
-        {
-          "title": "Grab",
-          "changes": [
-            "Nana/CPU controlled Ice Climber pair throws without considering human input"
-          ]
-        }
-      ]
-    },
-    {
       "name": "Ike",
       "element": {},
       "moves": [
@@ -232,7 +220,7 @@
               ]
             },
             {
-              "title": "(R-alt) Ceres Husk",
+              "title": "(R-alt) Ceres Husk (NEW!)",
               "changes": [
                 "A new 1:1 of Frigate Husk, with Ceres Space Colony's aesthetic"
               ]
@@ -277,7 +265,7 @@
           "title": "Dead Line",
           "changes": [
             {
-              "title": "(Z-alt) Space Colony Ark",
+              "title": "(Z-alt) Space Colony Ark (NEW!)",
               "changes": [
                 "Received a new Z alt: Space Colony Ark, a 1:1 of Sky Santuary Zone"
               ]
@@ -288,7 +276,7 @@
           "title": "Dinosaur Land",
           "changes": [
             {
-              "title": "(Z-alt) Cheese Bridge",
+              "title": "(Z-alt) Cheese Bridge (NEW!)",
               "changes": [
                 "Received a new Z alt: Cheese Bridge, a unique casual stage with hazards"
               ]
@@ -305,7 +293,7 @@
               ]
             },
             {
-              "title": "(R-alt) Drowned Frigate",
+              "title": "(R-alt) Drowned Frigate (NEW!)",
               "changes": [
                 "A 1:1 of Frigate Husk"
               ]
@@ -351,7 +339,7 @@
           "title": "Hyrule Castle",
           "changes": [
             {
-              "title": "(Z-alt) Kakariko Village",
+              "title": "(Z-alt) Kakariko Village (NEW!)",
               "changes": [
                 "A new alt, which is a 1:1 of Smashville"
               ]
@@ -370,7 +358,7 @@
           ]
         },
         {
-          "title": "Luigi’s Mansion",
+          "title": "Luigi’s Mansion (Competitive) (NEW!)",
           "changes": [
             {
               "title": "(Base) Luigi's Mansion (Competitive)",
@@ -379,7 +367,7 @@
               ]
             },
             {
-              "title": "(R-alt) Deck Dry Bones",
+              "title": "(R-alt) Deck Dry Bones (NEW!)",
               "changes": [
                 "A 1:1 of Luigi's Mansion Competitive"
               ]
@@ -396,7 +384,7 @@
           "title": "Mushroom Kingdom",
           "changes": [
             {
-              "title": "(R-alt) Mushroomy Kingdom Cavern",
+              "title": "(R-alt) Mushroomy Kingdom Cavern (NEW!)",
               "changes": [
                 "Received a new R-alt, a 1:1 of Metal Cavern"
               ]
@@ -474,7 +462,7 @@
           "title": "Temple",
           "changes": [
             {
-              "title": "(R-alt) Hyrule's Courtyard Mansion",
+              "title": "(R-alt) Hyrule's Courtyard Mansion (NEW!)",
               "changes": [
                 "Received a new R-alt, a 1:1 of Luigi's Mansion"
               ]
@@ -497,7 +485,7 @@
               ]
             },
             {
-              "title": "(L-alt) Bridge of Eldin (Platforms)",
+              "title": "(L-alt) Bridge of Eldin (Platforms) (NEW!)",
               "changes": [
                 "A casual stage, which has platforms teleported in frequently!"
               ]
@@ -511,7 +499,7 @@
           ]
         },
         {
-          "title": "Yoshi’s Island Competitive) (NEW!)",
+          "title": "Yoshi’s Island (Competitive) (NEW!)",
           "changes": [
             {
               "title": "(Base) Yoshi’s Island (Competitive)",
@@ -571,13 +559,14 @@
           "title": "Costumes",
           "changes": [
             "Bowser’s Z-alt (Dark Bowser) has received a visual revamp",
-			"Wolf02 costume has been updated. Previously, this costume had duplicate face textures to account for transparency issues; these transparency texture issues have now been fixed",
+			"Wolf02 costume has been updated. Previously, this costume had duplicate face textures to account for transparency issues; these transparency texture issues have now been fixed. No longer crashes in v2.4.1.",
 			"Fixed minor cosmetic issues on OoT Link",
             "OoT Sheik model and recolors updated for visual clarity",
             "Updated OoT Ganondorf model and recolors, with a new Melee-inspired recolor",
 			"New Ivysaur Z-alt: Saurceress Ivysaur",
             "Kirby received two new recolors: Orange Fighter Kirby and Sepia Cowboy Kirby",
             "Updated Shogun Dedede model to improve performance; Shogun Dedede also has separate minion projectiles for his Side Special",
+			"64 Dedede (Z-alt) also received unique Waddle models in v2.4.1",
 			"Improved visuals for the default Waddle Doo design",
             "New model for Dedede’s mask taunt",
             "Commander Lucas has a new white recolor",
@@ -601,7 +590,7 @@
           "changes": [
             "Due to intended improved replay compatibility, one player matches will no longer skip the countdown announcement. This code has been moved to the Extras folder, but it will break replays if included",
             "Added animated CSS code for modding support; the main CSS background model has also been adjusted to no longer contain the fake slots, allowing for easier background swaps",
-            "Updated custom soundbank code to not crash when two custom soundbanks load at the same time. This fixes an issue where rare freezes would occur in modes such as All-Star Vs. when a character with a custom soundbank appeared while another with a different custom soundbank was playing a sound in-battle",
+            "Updated custom soundbank code to not crash when two custom soundbanks load at the same time. This fixes an issue where rare freezes would occur in modes such as All-Star Vs. when a character with a custom soundbank appeared while another with a different custom soundbank was playing a sound in-battle. This code was adjusted to fix issues with certain characters in v2.4.1.",
             "Changed the Knuckles soundbank from 176.sawnd to 146.sawnd and adjusted Knuckles’ yelling during his Final Smash",
             "Fixed the position of showing 100 KO stars on the character select screen",
             "The audio fade code featured in Project M has been readded; the code was rebuilt to prevent previous issues",
@@ -614,9 +603,9 @@
             "Dual Pac stages that were based around a single “dummy” pac file as the secondary load no longer require this and work as expected",
             "Multiple stages have renamed files to help with consistent file structure",
             "Page 3 of the stage selection screen will now dynamically display either a return to page 1 button or custom stages depending on if there are custom stage builder stages on the SD card. This helps eliminate an issue where builds that chose to not have any would show the incorrect button or require swapping the texture assets around",
-            "Control customization on the CSS has been re-coded, and now plays SFX when doing actions such as opening the menu or pinning a tag",
+            "Control customization on the CSS has been re-coded, and now plays SFX when doing actions such as opening the menu or pinning a tag. Default player tag rumble can be toggled as of v2.4.1",
             "Added code which allows passive stage props to exist which do not affect players and projectiles (or just projectiles) directly. This feature is currently unused but is provided for custom stage design purposes in the future",
-            "Strap and Results screens updated for version 2.4"
+            "Strap and Results screens updated for version 2.4.1"
           ]
         }
       ]

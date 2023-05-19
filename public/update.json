@@ -4,6 +4,6 @@
   "updater-update": "false",
   "update-page": "https://projectplusgame.com/download/",
   "changelog": "Update to Project+ v2.4.1  \nMinor bugfixes from v2.4, which included new costumes, stages, and more!",
-  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/2.4/PPlusv2.4.1Windows.zip",
+  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/2.4.1/PPlusv2.4.1Windows.zip",
   "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/PPlusv2.29Mac.zip"
 }

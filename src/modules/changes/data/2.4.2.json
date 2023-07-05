@@ -1,0 +1,139 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1p4IZKhv5vfw2CMeT1h2JScEocClLmuHjnzr5ePQ3LC8/"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1hx9Go3-ltxQjQsf-Lu1Ezc4lwqd3gk1TaDN01tsatX8"
+    }
+  },
+  "changes": [
+    {
+      "name": "Captain Falcon",
+      "element": {},
+      "moves": [
+        {
+          "title": "Falcon Dive (Up Special)",
+          "changes": [
+            "Reverted bucket brake change, as it caused unintended side effects"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Samus",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bomb (Down Special)",
+          "changes": [
+            "Added additional functionality to Samus’ bombs to work as intended on shield"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Battlefield",
+          "changes": [
+            {
+              "title": "Lunar Battlefield (R-Alt)",
+              "changes": [
+                "Received a visual overhaul"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Green Hill Zone",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Adjusted multiple visual elements of the stage based on player feedback"
+              ]
+            },
+			{
+              "title": "Green Hill Zone Brawl (X-Alt)",
+              "changes": [
+                "Received visual update to match the base stage’s aesthetics"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Temple of Time",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Reduced echo effects based on player feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Yoshi’s Island",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Lowered the model of the top platform to better match the collisions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Fixed the Final Smash eyes on Kirby’s R-alt (Headphone Kirby)",
+            "Fixed an issue where the game would crash when attempting to fight Dark Peach in the Subspace Emissary"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Pressing Z to replace a tag when the tag list is full will now properly replace the tag",
+            "Fixed an issue where attempting to access the Stage Builder would crash the game"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+        {
+          "title": "Costumes",
+          "changes": [
+            "Hooded Diddy Kong received a full revamp"
+          ]
+        },
+        {
+          "title": "Music",
+          "changes": [
+            "Castle Siege (Brawl) now uses the main slot’s tracklist instead of having a separate one",
+			"“Battle! Mewtwo” added to Rocket Hideout (Spear Pillar L-alt)"
+          ]
+        },
+      	{
+          "title": "Other",
+          "changes": [
+            "Updated version number to v2.4.2"
+          ]
+        }
+      ]
+    }
+  ]
+}

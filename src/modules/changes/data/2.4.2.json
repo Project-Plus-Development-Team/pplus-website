@@ -57,12 +57,6 @@
               "changes": [
                 "Adjusted multiple visual elements of the stage based on player feedback"
               ]
-            },
-			{
-              "title": "Green Hill Zone Brawl (X-Alt)",
-              "changes": [
-                "Received visual update to match the base stage’s aesthetics"
-              ]
             }
           ]
         },
@@ -117,13 +111,13 @@
         {
           "title": "Costumes",
           "changes": [
-            "Hooded Diddy Kong received a full revamp"
+            "Hooded Diddy Kong received a full revamp; the hood is now rigged and will move during many animations"
           ]
         },
         {
           "title": "Music",
           "changes": [
-            "Castle Siege (Brawl) now uses the main slot’s tracklist instead of having a separate one",
+            "Castle Siege (PM) now uses the main slot’s tracklist instead of having a separate one",
 			"“Battle! Mewtwo” added to Rocket Hideout (Spear Pillar L-alt)"
           ]
         },

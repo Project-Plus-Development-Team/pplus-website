@@ -1,4 +1,10 @@
-import { faDiscord, faFacebook, faTwitch, faTwitter, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import {
+  faDiscord,
+  faFacebook,
+  faTwitch,
+  faTwitter,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 import { faCheck, faGlobe, faLink } from "@fortawesome/free-solid-svg-icons";
 import { useEffect } from "react";
 import { Button, Heading, Modal } from "react-bulma-components";
@@ -10,8 +16,8 @@ import { useClipboard } from "shared/hooks/use-clipboard";
 import styles from "./MapModal.module.scss";
 
 interface Props {
-  region: Region
-  onClose: () => void
+  region: Region;
+  onClose: () => void;
 }
 
 export const ModalContent = ({ region, onClose }: Props) => {
@@ -30,9 +36,17 @@ export const ModalContent = ({ region, onClose }: Props) => {
 
   return (
     <Modal.Card>
-      <Modal.Card.Header className="is-justify-content-space-between" showClose={false}>
+      <Modal.Card.Header
+        className="is-justify-content-space-between"
+        showClose={false}
+      >
         <div className="is-flex-grow-1 is-flex is-flex-wrap-wrap is-justify-content-space-between gap">
-          <Modal.Card.Title id="modal-title" style={{ maxWidth: "100%", overflowWrap: "anywhere" }}>Communities in {region.name}</Modal.Card.Title>
+          <Modal.Card.Title
+            id="modal-title"
+            style={{ maxWidth: "100%", overflowWrap: "anywhere" }}
+          >
+            Communities in {region.name}
+          </Modal.Card.Title>
           <FAButton
             icon={hasCopied ? faCheck : faLink}
             color="secondary"
@@ -42,7 +56,8 @@ export const ModalContent = ({ region, onClose }: Props) => {
           >
             Copy Link to this
           </FAButton>
-          <Button remove onClick={onClose} aria-label="Close this modal"/> {/* [upstream] https://github.com/couds/react-bulma-components/pull/386 */}
+          <Button remove onClick={onClose} aria-label="Close this modal" />{" "}
+          {/* [upstream] https://github.com/couds/react-bulma-components/pull/386 */}
         </div>
       </Modal.Card.Header>
       <Modal.Card.Body className={styles.body} aria-labelledby="modal-title">
@@ -77,7 +92,7 @@ export const ModalContent = ({ region, onClose }: Props) => {
             icon={faGlobe}
             href={region.platforms.website}
           />
-          )}
+        )}
         {region.platforms.youtubeChannelUrl && (
           <PlatformButton
             text="YouTube"
@@ -85,7 +100,7 @@ export const ModalContent = ({ region, onClose }: Props) => {
             icon={faYoutube}
             href={region.platforms.youtubeChannelUrl}
           />
-          )}
+        )}
         {region.platforms.twitterHandle && (
           <PlatformButton
             text="Twitter"
@@ -96,14 +111,21 @@ export const ModalContent = ({ region, onClose }: Props) => {
         )}
       </Modal.Card.Body>
       <Modal.Card.Footer className={styles.footer}>
-        <Heading subtitle size={3}>
-          <i className="fa-solid fa-link-slash"/>
-          {" "}
-          Something broken or wrong?
-          {" "}
-          <a href="https://twitter.com/functiongermany">
-            Contact me.
+        <Heading subtitle size={3} style={{ textAlign: "center"}}>
+          <i className="fa-solid fa-link-slash" />
+          <span>Something broken or wrong?</span>
+          <br />
+          <a href="https://projectplusgame.com/discord">
+            Join our Discord server
           </a>
+            {" and use the #website channel."}
+          <br />
+          <span>
+            {" or send me an e-mail at "}
+            <a href="mailto:waffeln@mailbox.org">
+               waffeln@mailbox.org
+            </a>
+          </span>
         </Heading>
       </Modal.Card.Footer>
     </Modal.Card>

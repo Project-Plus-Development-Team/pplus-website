@@ -1,0 +1,360 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1dYiTAZiwMaiqHHAfd7ymj78Ypem7p4Xpj6_DgA21uRg/"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1Nj72z6X4VJpnpNWO9_UJR_bU-hH0eag-lrP_77oaNTo/"
+    }
+  },
+  "changes": [
+    {
+      "name": "General",
+      "element": {},
+      "moves": [
+        {
+          "title": "Items",
+          "changes": [
+            "Items not produced directly by character moves have a random chance of being dropped on-hit again"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giga Bowser",
+      "element": {},
+      "moves": [
+        {
+          "title": "Items",
+          "changes": [
+            "Now holds and throws heavy items as if they are normal ones",
+			"Now has a more appropriate item-grabbing range to make it easier to grab items"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Corneria",
+          "changes": [
+            {
+              "title": "Fountain of Sauria (R-Alt)",
+              "changes": [
+                "King RedEye now cameos in the background"
+              ]
+            },
+			{
+              "title": "SNES Corneria (Z-Alt) (NEW!)",
+              "changes": [
+                "A stage with a retro aesthetic. Beware the buildings zooming past!"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fountain of Dreams",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Completely reworked stage visuals with updated textures, models, and effects, including simulated water effects, splashes and falling stars!"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Frigate Husk",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Updated transparency materials to fix display priority issues with certain characters transparencies"
+              ]
+            },
+            {
+              "title": "Drowned Frigate (R-Alt)",
+              "changes": [
+                "Updated transparency materials to fix display priority issues with certain characters transparencies"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Green Hill Zone",
+          "changes": [
+            {
+              "title": "Modern Brawl GHZ revamp (L-alt) (NEW!)",
+              "changes": [
+                "A new overhaul of the Brawl GHZ stage designed to be reminiscent of Sonic Generations, similarly to the base slot"
+              ]
+            },
+			{
+              "title": "Marble Zone GHZ (R-Alt)",
+              "changes": [
+                "Moved back from the L-alt slot"
+              ]
+            },
+			{
+              "title": "PM GHZ (X-Alt)",
+              "changes": [
+                "Moved from the R-alt slot"
+              ]
+            },
+			{
+              "title": "Brawl GHZ (X+L-Alt)",
+              "changes": [
+                "Moved from X-alt slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Temple of Time",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Lighting has been adjusted"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Venom",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Moved from Corneria’s L+R-alt to its own slot"
+              ]
+            },
+			{
+              "title": "Krazoa Palace (L-Alt) (NEW!)",
+              "changes": [
+                "A stage set in the area of the same name from Star Fox Adventures. Pick up the exploding barrels and throw them at your foes!"
+              ]
+            },
+			{
+              "title": "Venom Smashville (R-Alt) (NEW!)",
+              "changes": [
+                "A 1:1 skin of Smashville from T+ featuring unique balloon replacement graphics and sounds"
+              ]
+            },
+			{
+              "title": "Papetoon (Z-Alt)",
+              "changes": [
+                "Moved from Corneria’s Z-alt slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Wario Land",
+          "changes": [
+            {
+              "title": "Waluigi Stadium (Z-Alt)",
+              "changes": [
+                "Revamped visuals for the stage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Wiimotes without peripherals attached can walk, perform tilts and do other basic actions again",
+            "WarioWare’s X-alt (WarioWare with Brawl’s minigame rewards) loads properly again",
+            "C4s no longer suspend themselves in mid-air against Pit and Bowser due to mismatched bone IDs",
+            "Fixed recent issue where reflectors could inconsistently fail",
+			"Giga Bowser can be KO’d properly in Stamina matches",
+			"Giga Bowser throws Cracker Launchers instead of dropping them mid-throw",
+			"Playing through the 'The Ruins' level will no longer force the Wolf battle regardless of route taken"
+          ]
+        },
+        {
+          "title": "Replays",
+          "changes": [
+            "Fixed issue where Wiimotes would not record most inputs",
+			"Players with GameCube controllers can no longer affect the recording of Wiimote users or CPUs when not active in a match",
+			"Auto L-Cancel and Buffer settings are now no longer forgotten to be recorded"
+          ]
+        },
+        {
+          "title": "Costumes",
+          "changes": [
+            "Hoodie Diddy no longer clips during his Entry animation",
+			"Quick Draw Kirby and Shadow Peach render properly when metal",
+			"Fighter Kirby and most Fighter Kirby ability hats optimized to remove unnecessary texture space. This optimization was necessary to prevent Fighter Kirby t-posing when fighting a 4 player match with a specific set of characters."
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Sword trails are not removed on the attacker while in hitlag, matching other Smash Bros. entries other than Brawl",
+            "Trophy Viewer no longer has flipped text on the Gamecube’s Start button (Brawl error)",
+			"Entering the More Rules menu while holding a stick direction no longer makes the menu animations fail to load (Brawl error)",
+			"Motion-Sensor Bombs now last 90s consistently after being set. Previous adjustments made them sometimes still only last 20s",
+			"Custom arrows for Dark Pit and Classic Pit no longer have transparency issues and better match those of the default design",
+			"Infinite Glacier will allow the aerial placement of the bumper item"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+        {
+          "title": "Costumes",
+          "changes": [
+            "New costume: Turbo Charge Donkey Kong! Features an additional 5 recolors",
+			"New costume: Deep Space Olimar! Features an additional 4 recolors",
+			"New costume: Super Falcon! Features an additional 3 recolors and a Blue Falcon semi-alt",
+            "Revamped costume: Treasure Hunter Knuckles becomes a main slot costume with 4 additional recolors",
+            "Revamped costume: Pig Ganon has retouched textures, new earrings and some new colors with blessing of the original model creator",
+			"A purple Boxer Donkey Kong recolor has been added",
+            "3 new recolors were added for Toon Link. Orange Bokoblin Toon Link, Gold Outset, and White Linebeck ",
+            "Pig Ganon has a new recolor, Yuga Ganon and Twilight Princess Ganon has a new gold recolor",
+			"2 new recolors were added for Meta Knight. A Needlous recolor for Morpho Knight and an icy white-themed Samurai Meta Knight",
+			"A new Black Jet Set Knuckles color has been added inspired by Slate",
+            "Blue Jet Set Knuckles has been updated with new fur",
+            "Ocarina of Time Link has his Goron and Zora costume again; his previous red and blue colors may return for future costumes.",
+            "Captain Falcon’s gray costume has been revamped to a black and silver costume, and his yellow costume has been updated to more closely resemble Dr.Stewart",
+            "Wario’s Black Biker costume has been updated to have a more distinct palette",
+			"Olimar’s yellow costume has been updated with warmer skin",
+            "All Olimar costumes now have revamped jetpacks inspired by Hey! Pikmin",
+			"Crystal Shards Dedede (Hidden Z costume) has been further polished",
+            "Saurceress Ivysaur (Hidden Z costume) updated with new cloak effects",
+            "Shadow Dedede (Hidden R costume) has a foot texture fix",
+			"New hidden Z costume: Metal Knuckles (for Knuckles)",
+			"Rose Fusion ZSS is now optimized to the same level as the other Fusion colors",
+            "Nana now leads in all character portraits and battle portraits where she is the player character",
+            "Biker Wario and Tycoon Wario renders updated to fix visual errors",
+            "Donkey Kong default renders updated to fix hand issues",
+            "Ganondorf renders for all costumes were updated to correct some minor unintended visual effects and errors",
+			"Olimar render crops and Meta Knight HD CSP render crops updated so sizing is consistent with the rest of the CSProject system"
+          ]
+        },
+        {
+          "title": "Characters",
+          "changes": [
+            "Charizard produces an ember when performing his lounging victory pose again",
+			"Giga Bowser has new item holding animations as they originally had none",
+			"Lucario’s aura visuals no longer render in front of all stage objects",
+			"Adjusted sound quality on Luigi’s Thunder voice clip to be more consistent with the others",
+			"Diddy Kong’s Peanut Popgun no longer visibly explodes when canceling the move",
+			"Outset Toon Link’s wooden shield now makes wooden thunks instead of metallic clanks when hit by a projectile",
+			"Samus’ Final Smash arm cannon animations now trigger",
+			"Samus now makes rolling sound effects while crawling",
+			"Twilight Princess Link produces the bombs from Twilight Princess like in Brawl",
+			"Twilight Princess Link uses the Gale Boomerang like in Brawl, however the Fairy of Winds went on break, so it does not have any wind effects",
+			"Ocarina of Time Link and the hidden Link costumes all use an updated PM Boomerang based on the Ocarina of Time design. The boomerang shape is now more faithful to the source material",
+			"Virtual Boy R.O.B. now fires a red and black laser",
+            "Ganondorf has facial expressions when using sword and punch taunt attacks"
+
+          ]
+        },
+		{
+          "title": "Music",
+          "changes": [
+            "You can now select a song option within a stage’s tracklist from the stage select screen by pressing Start or a controller equivalent. Press start on the desired song to automatically start the match with it. Works with alternate stage slots, too!",
+			"Village of the Blue Maiden now plays on Kakariko Village",
+			"Airship Theme plays on Bowser’s Castle (reduced rate)",
+			"The Legend of Zelda Main Theme and Title Theme play on Temple of Time (reduced rate)",
+			"The Brawl Green Hill Zone layout tracklist now has the Generations version of Green Hill Zone"
+          ]
+        },
+		{
+          "title": "Stages",
+          "changes": [
+            "Optimized Sky Sanctuary and the base slot for Green Hill Zone to reduce file size",
+			"Hyrule Courtyard's Mansion: Fixed Young Zelda having incorrect material settings for her eyes",
+			"Dream Land wind screen shake made more subtle",
+			"All Stages have updated files to account for Item Ex updates; a script is also provided for those to update stages not in P+ to new Item Ex data"
+          ]
+        },
+		{
+          "title": "Modes",
+          "changes": [
+            "Added a new Score-to-Win option to the CSS. The time setting is currently moved to the second page as a result.",
+			"Added War mode to the Special Brawl menu. KO players to steal their stocks!",
+			"Added Big Head and Random Angle modes to the Code Menu",
+			"Stamina and Zero-to-Death mode now support Boss tags. In Stamina, the players without boss tags will have percentage gauges while the Boss tag players will have HP and only one stock!",
+          ]
+        },
+		{
+          "title": "ItemEx",
+          "changes": [
+            "An item cloning engine has been integrated, allowing new items that can spawn in or be generated by characters, stages or other items! Examples have been configured into the game, though character items implemented currently are purely aesthetic.",
+			"Press Start on Assist Trophies to toggle which Assist Trophies are active in a gameplay session",
+			"Press Start on Containers to toggle different properties for them",
+			"Press Start on Pokémon to toggle the appearances of Pokemon other than Mew, Celebi and Jirachi (these Pokemon are excluded as they are tied towards rewards and achievements)",
+			"Added the option to make certain items spontaneously activate for maximum chaos",
+			"Added the option to make it so that items are the only way to damage opponents, similar to the Pokémon Battle event match in Melee",
+			"Added the option to toggle on new ItemEx clones"
+          ]
+        },
+		{
+          "title": "Item Behavior",
+          "changes": [
+            "Mr. Saturn turns faster at ledges and walls and approaches them more closely",
+			"Motion-Sensor Bombs now have glowing effects when set and last longer if unset than before",
+			"Motion-Sensor Bombs no longer produce a puff of smoke and sound effect upon exploding as if they timed out and disappeared, instead now producing visual sparks",
+			"The Team Healer can now revive fallen allies in Stamina",
+			"Party Balls, Bunny Hoods and explosives are more likely to appear",
+			"New Item: Flipper! The Flipper from Balloon Fight has returned. Toggle on Bumpers to randomly have a chance of a Flipper spawning if Ex items are also enabled",
+			"New Item Variant: Melee Screw Attack! The Melee version of the Screw Attack has returned, being able to be thrown. Toggle on Screw Attacks to randomly have a chance of its Melee variant spawning if Ex items are also enabled. Currently it does not send opponents into freefall.",
+			"Snorlax now visually appears in front of the stage while falling like in the first Super Smash Bros. game",
+			"Zapdos and Articuno have been added, behaving like in Melee. Toggle on Moltres if Ex items are also enabled to summon them from a Pokéball",
+			"Tingle can make players trip again",
+			"The Nintendog’s render priority has been tweaked to compensate for Snorlax’s render priority changes",
+			"The Hammer Bros. can now be struck by attacks and picked up.",
+			"The Goomba Assist Trophy has been added. Toggle on Hammer Bros. while EX items are also enabled to summon them.",
+			"Containers can randomly explode again if enabled in a toggle",
+			"Crates, Rolling Crates and Barrels can spawn enemies if enabled. Currently they can spawn Goombas and Hammer Bros."
+          ]
+        },
+		{
+          "title": "Subspace",
+          "changes": [
+            "Roy, Mewtwo & Knuckles are unlocked post-Tabuu clear (note: does not save on autosave, so unlock message will appear on the auto save file upon entering post-Tabuu clear)",
+			"Hold L when selecting a level to override character selection and have all characters selectable",
+			"Hold R during character selection to randomize cursor",
+			"Hold Y during character selection to be able to select the same character twice",
+			"Hold X while selecting a fully cleared level to start Time Attack mode, beat the level as fast as you can while defeating enemies to earn the highest score",
+			"Hold Y while selecting a level to toggle displaying timer",
+			"Giga Bowser can now access doors"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Replay viewing is now only sped up by A on a GC controller rather than multiple buttons",
+            "Audio fade no longer ignores pressing A on My Music",
+            "Files load significantly faster in general and are less prone to crashing",
+            "Angle 362 has been coded in from Melee. Only the Flipper uses this angle",
+            "All GHZ 1:1’s now use a custom rel that was built for Modern Brawl GHZ. No impact on gameplay, but will load slightly faster",
+            "Some unused/unnecessary rel files have been deleted",
+            "Yoshi’s Island param file updated to remove SFX that were previously disabled by a custom module",
+            "Tribal Knuckles and Knuckles Chaotix semi alt costumes given new costume numbers to provide easier customization",
+			"The Code Menu has been rewritten to eliminate rampant static memory access, allowing for more dynamic memory changes in the future",
+            "When bringing up the rules submenu, the option arrows will not briefly flash purple",
+            "The sc_selcharacter file has updated MiscData[110] in order to work with ItemEX. Builds with custom character select screens will need to update this section to work without crashing",
+            "Strap and Results screens updated for version 2.5"
+          ]
+        }
+      ]
+    }
+  ]
+}

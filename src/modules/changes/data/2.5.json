@@ -296,7 +296,8 @@
 		{
           "title": "Item Behavior",
           "changes": [
-            "Mr. Saturn turns faster at ledges and walls and approaches them more closely",
+            "Items not produced directly by character moves have a random chance of being dropped on-hit again",
+			"Mr. Saturn turns faster at ledges and walls and approaches them more closely",
 			"Motion-Sensor Bombs now have glowing effects when set and last longer if unset than before",
 			"Motion-Sensor Bombs no longer produce a puff of smoke and sound effect upon exploding as if they timed out and disappeared, instead now producing visual sparks",
 			"The Team Healer can now revive fallen allies in Stamina",

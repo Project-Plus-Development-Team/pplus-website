@@ -1,9 +1,9 @@
 {
-  "hash": "73c9b7c6f5bccc2ed5b55c1b7291edc11d3b58aa",
-  "version": "FPM v2.4.2 BETA",
+  "hash": "75a214de8f2620680be0df4868457121419aa613",
+  "version": "FPM v2.5 BETA",
   "updater-update": "false",
   "update-page": "https://projectplusgame.com/download/",
-  "changelog": "Update to Project+ v2.4.2  \nMinor bugfix and content update",
-  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/2.4.2/PPlusv2.4.2Windows.zip",
+  "changelog": "Update to Project+ v2.5  \nNew features, costumes, stages, and more!",
+  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/2.5/PPlusv2.5Windows.zip",
   "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/PPlusv2.29Mac.zip"
 }

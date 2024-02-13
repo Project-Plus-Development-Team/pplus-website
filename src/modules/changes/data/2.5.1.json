@@ -196,6 +196,22 @@
 			"Custom arrows for Dark Pit and Classic Pit no longer have transparency issues and better match those of the default design",
 			"Infinite Glacier will allow the aerial placement of the bumper item"
           ]
+        },
+		{
+          "title": "v2.5.1 Bug Fixes",
+          "changes": [
+            "Matches with only one player will now be set to infinite time regardless of setting",
+			"Match time will no longer increment by one when exiting Random Stage Select",
+			"Fixed Input Buffer setting not functioning",
+			"Character items will no longer forcibly unload when playing the same character between ports",
+			"Hammer Bros will load if containers have the enemy toggle on while Assist Trophies are off",
+			"Toon Link's bomb now matches previous versions",
+			"ROB's Gyro will no longer disappear after touching a shield",
+			"Fixed small VFX conflict with Samus' PED suit",
+			"Jet Set smoke will no longer appear on Cowboy Knuckles costumes",
+			"Magnifying glass now appears in Training Mode again",
+			"Fixed an issue where Subspace could hang after character selection"
+          ]
         }
       ]
     },

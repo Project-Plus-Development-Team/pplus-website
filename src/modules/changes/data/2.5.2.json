@@ -212,6 +212,28 @@
 			"Magnifying glass now appears in Training Mode again",
 			"Fixed an issue where Subspace could hang after character selection"
           ]
+        },
+		{
+          "title": "v2.5.2 Changes",
+          "changes": [
+            "Added SDXC card support for console users",
+			"Holding Start on the results screen will now clear everyone after 1 second",
+			"Manual music selection (by pressing Start on a stage) now works for Training and Special Versus modes",
+			"Replays now support sharing stocks",
+			"Replays now support cinematic freezes (such as the Dragoon)",
+			"R-alts for Venus Lighthouse and Pirate Ship converted to Yoshi's Island '23 1:1s",
+			"Visual effects will now appear when hitting items (Brawl oversight)",
+			"ItemEX config updated to allow for item physics data, as well as some failsafe additions",
+			"Gave 3.5MB worth of extra memory to the results screen",
+			"Fixed replays not functioning properly on ports 3 and 4",
+			"Peach turnips will now bounce off shield as was the case previously; all character item data re-imported from v2.4.2 to ensure accuracy",
+			"Fixed issue where Blast Boxes could be still attacked after blowing up, despite being invisible",
+			"Adjusted Motion-Sensor Bomb rendering to be consistent with other translucent items",
+			"Fixed issue where Event Match #1 no longer included Dedede",
+			"Fixed two events to properly load Pirate Ship when its slot was moved previously",
+			"ROB lasers will no longer oddly bounce off of opponents; this was a side effect of the 'Sword trails visible during hitlag' code",
+			"Reduced huge texture size on Kirby's Mewtwo hat"
+          ]
         }
       ]
     },
@@ -356,7 +378,7 @@
 			"The Code Menu has been rewritten to eliminate rampant static memory access, allowing for more dynamic memory changes in the future",
             "When bringing up the rules submenu, the option arrows will not briefly flash purple",
             "The sc_selcharacter file has updated MiscData[110] in order to work with ItemEX. Builds with custom character select screens will need to update this section to work without crashing",
-            "Strap and Results screens updated for version 2.5"
+            "Strap and Results screens updated for version 2.5.2"
           ]
         }
       ]

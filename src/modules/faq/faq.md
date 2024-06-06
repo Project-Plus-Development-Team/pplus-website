@@ -9,13 +9,13 @@ Some regions play primarily the latest version of Project+, while others play th
 Communities typically use the same Discord server for both games, so you're welcome to use our [community map](/find-communities) to get started.
 
 #### [Will there be future versions of Project+?](#future-versions)
-Any future release will mostly feature improved aesthetics and bug fixes.
+Yes! Project+ is still in active development.
 
 #### [Is there a Netplay / Hackless / Homebrew / USB Loading release?](#releases)
 Yes, you can download them [here](/download).
 
 #### [What do I need to play Project+?](#requirements)
-It depends on the method you will be using. For the hackless method ([NTSC-U](#ntsc-pal)), you will need a Wii, an SD card that has a capacity of 2GB or less and a Super Smash Bros. Brawl disc. For Dolphin/Netplay, you will need a computer and a NTSC-U Brawl ISO.
+It depends on the method you will be using. For the hackless method ([NTSC-U](#ntsc-pal)), you will need a Wii, an SD card that has a capacity of 2GB or less and a Brawl disc. For Dolphin/Netplay, you will need a computer and a NTSC-U Brawl ISO.
 
 #### [What do NTSC-U and PAL mean?](#ntsc-pal)
 NTSC-U/J, PAL and SECAM refer to technical details on how TV systems worked that were relevant back when the Wii was a current-gen console. Game publishers may have to engineer their games differently based on the video system in a given region. They might use different patches that make games incompatible with consoles from other regions.\
@@ -39,15 +39,15 @@ No new characters are planned to appear outside of Knuckles.
 Unfortunately, Project+ currently does not have rollback. There's a project that's trying to implement rollback for Brawl called Brawlback. You can find their Discord here: [Find Communities](/find-communities).
 
 #### [Are there any new stages, costumes, or music?](#new-content)
-Project+ includes 17 new stages, multiple new costumes, and a plethora of new music, on top of the many additions to Project M from the Legacy TE team.
+Project+ includes many new stages, costumes, and music, with more on the way!
 
 #### [Is tilt stick (attack on C-stick) fixed in Project+?](#tilt-stick)
-Tilt stick when you assign the C-stick to "Attack" in the custom controls. In Project M, this setting didn't behave as expected and only worked properly for unangled F-tilt. Tilt stick is fixed in Project+ and works as expected (similar to Smash Ultimate) which affects gameplay balance because certain manuveurs are only possible with tilt stick, which buffs some characters.
+Tilt stick when you assign the C-stick to "Attack" in the custom controls. In Project M, this setting didn't behave as expected and only worked properly for unangled F-tilt. Tilt stick is fixed in Project+ and works as expected (similar to Ultimate) which affects gameplay balance because certain manuveurs are only possible with tilt stick, which buffs some characters.
 
 #### [Does Project+ have L-Cancelling?](#l-cancelling)
-Yes. L-Cancelling is a technique from earlier Smash games and Project M where pressing a shield input before landing during an aerial attack reduces the landing lag. In Project+ you can L-Cancel within 7 frames of landing to reduce the landing lag by half.\
+Yes. L-Cancelling is a technique from earlier games in the series and Project M where pressing a shield input before landing during an aerial attack reduces the landing lag. In Project+ you can L-Cancel within 7 frames of landing to reduce the landing lag by half.\
 However, "Auto L-Cancel" can be toggled on from the match settings to automatically reduce the landing lag of aerials without the need to perform an L-Cancel. In tournaments it's up to tournament organizers to determine if their tournament will run with "Auto L-Cancel" toggled on or off.\
-Auto L-Cancel is great for new or casual players or when you want a consistently fast gameplay experience. It also makes the game a bit less stressful on the hands which can be an accessibility factor.
+Auto L-Cancel is great for new or casual players or when you want a consistently fast gameplay experience. It also makes the game a bit less stressful on the hands, which can be an accessibility factor.
 
 #### [Can I build an ISO with Project+? Can I use BrawlBuilder with Project+?](#build-iso)
 It's not currently possible to use BrawlBuilder or a similar tool to build a Project+ ISO. Certain codes that Project+ uses are not compatible with ISO building.
@@ -68,10 +68,10 @@ You can legally create a backup of your Brawl disc by running [CleanRip on a Wii
 [How to use the Wii U GameCube Controller Adapter on Mac](https://wiki.dolphin-emu.org/index.php?title=How_to_use_the_Official_GameCube_Controller_Adapter_for_Wii_U_in_Dolphin#macOS).
 
 #### [How can I set up Project+ on Linux?](#linux)
-To install Project+ on Linux, install [the appimage from here](https://github.com/jlambert360/FPM-AppImage/releases).
+To install Project+ on Linux, install [the AppImage from here](https://github.com/jlambert360/FPM-AppImage/releases).
 
 #### [Can I play Project+ on an M1 Mac (ARM)?](#m1-mac)
-Currently, there are no plans to support Project+ on ARM-based Mac devices.
+We are planning to swap the base of our Dolphin build sometime in the future to restore Mac compatibility. M1 and beyond Macs will not be supported until this change occurs.
 
 #### [How do I know my Brawl ISO is compatible?](#iso-compatible)
 Check MD5's by right-clicking on Brawl, select `Properties` navigate to the `Info` tab, and click on the `Compute` button located to the right of `MD5 Checksum`. ([Screenshot](https://i.imgur.com/xzye9my.png))\

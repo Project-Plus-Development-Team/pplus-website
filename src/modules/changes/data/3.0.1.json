@@ -572,8 +572,7 @@
                 {
                     "title": "Down Special (Spin Dash)",
                     "changes": [
-                        "Only usable once per airtime",
-                        "Aerial version given a charging hitbox, matching Sonic’s"
+                        "Only usable once per airtime"
                     ]
                 },
                 {

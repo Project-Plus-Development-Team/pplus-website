@@ -2,51 +2,43 @@
   {
     "Offline / Wii": {
       "icon": "fas fa-sd-card",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.5.2/Project+.v2.5.2.Wii.zip"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.0/Project+.v3.0.Wii.zip"
     },
     "Wii Lite (For 2 GB Cards)": {
       "icon": "fas fa-sd-card",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.5.2/Project+.v2.5.2.Wii.Lite.zip"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.0/Project+.v3.0.Wii.Lite.zip"
     },
     "Modder's Pack": {
         "icon": "fas fa-box-open",
-        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.5.2/Project+.v2.5.2.Modders.Pack.zip"
+        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.0/Project+.v3.0.Modders.Pack.zip"
     },
-    "2.4.2 > 2.5.2 Changed Files": {
+	"2.5.2 > 3.0 Changed Files": {
         "icon": "fas fa-box-open",
-        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.5.2/Project+.v2.4.2.to.v2.5.2.zip"
-    },
-	"2.5 > 2.5.2 Changed Files": {
-        "icon": "fas fa-box-open",
-        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.5.2/Project+.v2.5.to.v2.5.2.zip"
-	},
-	"2.5.1 > 2.5.2 Changed Files": {
-        "icon": "fas fa-box-open",
-        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.5.2/Project+.v2.5.1.to.v2.5.2.zip"
+        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.0/Project+.v2.5.2.to.v3.0.zip"
     }
   },
   {
     "Dolphin (Windows)": {
       "icon": "fab fa-windows",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/2.5.2/Project+.v2.5.2.Netplay.Windows.zip"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.0/Project+.v3.0.Netplay.Windows.zip"
     },
     "Dolphin (Linux AppImage)": {
       "icon": "fab fa-linux",
-      "url": "https://github.com/jlambert360/FPM-AppImage/releases/tag/v2.5.2"
+      "url": "https://github.com/jlambert360/FPM-AppImage/releases/tag/v3.0"
     }
   },
   {
     "Wii Mirror": {
         "icon": "fas fa-sd-card",
-        "url": "https://mega.nz/file/acNwzbQA#Gof9UhIT1_UrbNJMtc1vpxJXIr2jUpmmD1BuSe4w7T8"
+        "url": "https://mega.nz/file/yE9lgJya#FfZVF_IqNnW9AUseBqtQY9T_u4Z1OLGxXQN-eY6c404"
     },
     "Wii Lite Mirror": {
         "icon": "fas fa-sd-card",
-        "url": "https://mega.nz/file/vAchDAYS#ObRiidm3h7czicF6PuH3UWC6Yv6rgLRAAzTUPROoYfo"
+        "url": "https://mega.nz/file/aIsS2JCB#KwAG2ldDTrf7jEaWSIUwofM1iZDXvrOCasuC4E7qpXc"
     },
     "Dolphin (Windows) Mirror": {
         "icon": "fab fa-windows",
-        "url": "https://mega.nz/file/fdlEFC7I#3vIb-qMEVeWF6iKT4BOl-daOE_MyKoPgbCQbG3NSPw4"
+        "url": "https://mega.nz/file/GJlDBLhC#3v0P3IMwMwlYkYBZ2cmUmQY8ydFWuqJsXbS7S1WvJ80"
     }
   }
 ]

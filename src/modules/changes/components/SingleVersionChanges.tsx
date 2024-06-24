@@ -23,10 +23,6 @@ export const SingleVersionChanges = ({
         description={`View everything that's been changed in Project+ v${version}`}
       />
       <Heading>Changes in Project+ v{version}</Heading>
-      <p className="has-text-weight-bold">
-        This information was automatically parsed from the Google Document, errors still possible.
-      </p>
-      <br/>
       {links !== undefined && (
         <ChangesLinks links={links}/>
       )}

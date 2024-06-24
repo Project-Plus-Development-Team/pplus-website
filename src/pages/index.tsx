@@ -47,10 +47,10 @@ const Home = () => (
     <Links/>
 
     <div style={{gridArea: "youtube"}}>
-      <Heading size={2}>Watch the Project+ Trailer</Heading>
+      <Heading size={2}>Watch the Project+ v3.0 Trailer</Heading>
       <YouTubePlayer
         title="Project+ Trailer Video YouTube Embed"
-        id="z_Hm9FBMz1M"
+        id="zhJrTM7r1tE"
       />
     </div>
   </main>

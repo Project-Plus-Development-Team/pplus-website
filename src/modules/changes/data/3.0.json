@@ -1,0 +1,1643 @@
+{
+    "links": {
+        "Google Doc Version": {
+            "icon": "fas fa-file-alt",
+            "url": "https://docs.google.com/document/d/1oDmjgkXJebT0-R-x6DmcAkZZhaJPRgFqiGNkhgO8sNw"
+        },
+        "Music Lineup": {
+            "icon": "fas fa-music",
+            "url": "https://docs.google.com/spreadsheets/d/1Nj72z6X4VJpnpNWO9_UJR_bU-hH0eag-lrP_77oaNTo/"
+        }
+    },
+    "changes": [
+        {
+            "name": "Bug Fixes",
+            "element": {},
+            "moves": [
+                {
+                    "title": "General",
+                    "changes": [
+                        "Fixed bug where the C-Stick could input forward smash backwards when not intending to",
+						"Fixed issue where analog inputs were being sent to the wrong slot if heart swapped by Manaphy",
+						"Fixed issue where trying to access a model bone that does not exist would cause significant frame drops on console; this in particular affected the SSE Dark Link fight.",
+						"Fixed issue where Capsules would occasionally not spawn items",
+						"Party Balls no longer can rise after exploding",
+						"Fixed issue where Wiimote+Nunchuck could not access hidden character alt costumes",
+						"Matched new Green Hill Zone’s collisions fully to the previous version, which caused minor issues with some character tech previously",
+						"Space Colony Ark SSZ 1:1 now has the correct spawn points",
+						"Bomb Rain and Sudden Death will now spawn Bob-Ombs when the item is turned off in the Item Switch again",
+						"CPUs will no longer airdodge offstage as much"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Misc",
+            "element": {},
+            "moves": [
+                {
+                    "title": "General Changes",
+                    "changes": [
+                        {
+                            "title": "Random stage select has received a massive overhaul!",
+                            "changes": [
+								"All stages are now able to be toggled on or off individually",
+                                "Hazards are now toggle-able for select stages, which will swap things such as animations, collisions, and hazards when toggled between",
+                                "Currently supported stages are Smashville, Yoshi’s Island, Green Hill Zone, Fountain of Dreams, Dream Land, and Dead Line",
+                                "More variants and supported stages will be added in future updates"
+                            ]
+                        },
+                        {
+                            "title": "Presets can now be swapped between by pressing L or R on the random stage selection screen",
+                            "changes": [
+                                "Included presets are as follows: Legal stages (default), PMBR, 2023 Proposed, 2024 Proposed, Australia, Japan, and All stages"
+                            ]
+                        },
+                        {
+                            "title": "Controls and features on the stage selection screen have been adjusted",
+                            "changes": [
+                                "X remains striking, though striking all stages not on random is now performed by pressing X while hovering over the random button",
+                                "Y now enters the music selection menu",
+                                "Z will toggle hazards temporarily for the selected stage; this can also be done while hovered over the random button to only random to hazard on/off variants of stages",
+                                "Holding a shoulder button and pressing Start over a stage will now enter a new alternate stage selection menu, allowing for more 1:1 alts and secret stages. Pressing only Start on a stage will once again select the default stage. R+Start is exclusively used for 1:1 stages, while L+Start’s menu contains different layouts and for-fun stages"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Gameplay Changes",
+                    "changes": [
+                        "Ledge occupancy of ledge rolls under 100% increased from 45 > 48 frames",
+						"Footstool frame data normalized throughout the cast, which affects the following characters: Dedede, Diddy Kong, Link, Mewtwo, Ness, Pit, ROB, Snake, and Toon Link",
+                        "Characters will lose all ledge intangibility frames when performing an aerial or special out of a ledge jump",
+                        "Behavior when becoming grounded during non-tumble hitstun matched to Melee; this means characters will no longer experience full hitstun when grounded after knockback stacking",
+                        "Characters cannot be “rehit” if they are hit during intangibility frames and transition to vulnerable frames during hitlag",
+                        "Sleep effect attacks will no longer pierce character armor in the air",
+                        {
+                            "title": "Physics delays have been fixed!",
+                            "changes": [
+                                "Wavedashes no longer require one frame of being airborne",
+								"Characters can now enter fastfall immediately once their descent starts",
+                                "Characters will no longer experience an extra frame of landing lag when they would go into fall the frame they would land",
+								"Fixes for more situations are being tested and will be implemented in future updates"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Bowser",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Other",
+                    "changes": [
+                        "Limb hurtboxes are now intangible when inside his shell"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Captain Falcon",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Side Special (Raptor Boost)",
+                    "changes": [
+                        "Ledge grab box height reduced"
+                    ]
+                },
+                {
+                    "title": "Down Special (Falcon Kick)",
+                    "changes": [
+                        "Landing hit damage 10 > 4, Active frames 1 > 2"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "Backwards double jump’s animation will no longer push Falcon too far away from walls for him to walljump"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Charizard",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Down Air",
+                    "changes": [
+                        "Damage 15 > 16, knockback compensated"
+                    ]
+                },
+                {
+                    "title": "Forward Throw",
+                    "changes": [
+                        "Angle 48 > 51"
+                    ]
+                },
+                {
+                    "title": "Up Special (Fire Spin)",
+                    "changes": [
+                        "Grounded initial hit can no longer clank"
+                    ]
+                },
+                {
+                    "title": "Down Special (Glide)",
+                    "changes": [
+                        "Glide consumption frame 1 > 6",
+                        "Ledge grab box reduced"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dedede",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Up Tilt",
+                    "changes": [
+                        "Intangibility given to left arm during active frames"
+                    ]
+                },
+                {
+                    "title": "Forward Air",
+                    "changes": [
+                        "Landing lag 32/16 L-canceled > 28/14 L-canceled"
+                    ]
+                },
+                {
+                    "title": "Back Air",
+                    "changes": [
+                        "Landing lag 22/11 L-canceled > 20/10 L-canceled"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Inhale)",
+                    "changes": [
+                        "Frames before automatic spit 200 > 120",
+                        "Characters can no longer mash out of the star when spit out"
+                    ]
+                },
+                {
+                    "title": "Up Special (Dedede Jump)",
+                    "changes": [
+                        "Landing hitbox startup 3 > 1 to match all other landing hitboxes"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Diddy Kong",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Up Smash",
+                    "changes": [
+                        "Final hit BKB 25 > 30, KBG 117 > 108"
+                    ]
+                },
+                {
+                    "title": "Forward Air",
+                    "changes": [
+                        "Strong hit BKB 10 > 15"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Donkey Kong",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Jab",
+                    "changes": [
+                        "Jab 1 startup 3 > 4"
+                    ]
+                },
+                {
+                    "title": "Forward Air",
+                    "changes": [
+                        "Late hit angle 290 > 280 (spike > meteor)"
+                    ]
+                },
+                {
+                    "title": "Forward Throw (Cargo)",
+                    "changes": [
+                        "Cargo Forward Throw angle 65 > 55",
+                        "Cargo Back Throw angle 65 > 55"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Giant Punch)",
+                    "changes": [
+                        "Animation modified to start slightly less far behind him",
+                        "Shoulder hitbox added; has highest priority and 55 angle",
+                        {
+                            "title": "Shoulder and arm damage reduced (fist hit remains unchanged)",
+                            "changes": [
+                                "Uncharged Ground/Air 10/10 -> 8/8",
+                                "Charged Ground/Air 26/25 -> 24/23"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Up Special (Spinning Kong)",
+                    "changes": [
+                        "Startup frames 2 > 3",
+                        "Knee hitbox removed",
+                        "Arms no longer intangible after startup frames"
+                    ]
+                },
+                {
+                    "title": "Down Special (Hand Slap)",
+                    "changes": [
+                        {
+                            "title": "Grounded outer hitboxes",
+                            "changes": [
+                                "Hitboxes moved in by 1 unit",
+                                "Damage 12 > 10",
+                                "KBG 45 > 25",
+                                "Angle 265 > 85"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Falco",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Up Special (Fire Bird)",
+                    "changes": [
+                        "Hitbox Y offset 7.5 > 8.2",
+                        "Flame hitbox knockback now matches Fox’s"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fox",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Down Air",
+                    "changes": [
+                        "Damage 2/2 > 3/2",
+                        "Hitbox size 5.156/5.99 -> 4.156/4.99"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ganondorf",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Dash Attack",
+                    "changes": [
+                        "Initial hitbox X-offset 7 > 4"
+                    ]
+                },
+                {
+                    "title": "Up Tilt",
+                    "changes": [
+                        "First hit removed"
+                    ]
+                },
+                {
+                    "title": "Standing Grab",
+                    "changes": [
+                        "Animation slightly modified to better match grabbox"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Dead Man’s Drift)",
+                    "changes": [
+                        "Float IASA 4 > 5 to prevent accidental B-reverses when inputting back air"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ice Climbers",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Forward Air",
+                    "changes": [
+                        {
+                            "title": "Downwards hitbox angle 285 > 280 (spike > meteor)",
+                            "changes": [
+                                "Popo meteor BKB 50 > 40, KBG 70 > 90",
+                                "Nana meteor BKB 40 > 39, KBG 82 > 106"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Down Throw",
+                    "changes": [
+                        "KBG 40 > 50"
+                    ]
+                },
+                {
+                    "title": "Side Special (Squall Hammer)",
+                    "changes": [
+                        "Aerial solo initial vertical velocity .85 > .67",
+                        "Grounded landing lag is now forced after the final hitbox terminates"
+                    ]
+                },
+                {
+                    "title": "Up Special (Belay)",
+                    "changes": [
+                        "If ledge is grabbed after Nana starts seeking it during Up B, she will now do a small, non-actionable jump above ledge"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "Nana AI chooses forward throw 15 units away from ledge instead of 30",
+                        "PNT C-stick and buffered methods removed"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ike",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Down Air",
+                    "changes": [
+                        "Spike hitbox removed; former spike hitbox now matches other sweetspot hitboxes"
+                    ]
+                },
+                {
+                    "title": "Up Air",
+                    "changes": [
+                        "Sweetspot damage 17 > 16"
+                    ]
+                },
+                {
+                    "title": "Down Throw",
+                    "changes": [
+                        "Angle 60 > 55"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Eruption)",
+                    "changes": [
+                        "Now gains armor every 30 frames of charging; 0 > 20 > 40 > 80 > 120 > Super",
+                        "Also applies to aerial version"
+                    ]
+                },
+                {
+                    "title": "Side Special (Quick Draw)",
+                    "changes": [
+                        "Landing lag after helpless 15 > 20",
+                        "Quickdraw attack IASA 35 > 38"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Ivysaur",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Shield size increased from 7.15 > 8",
+                        "Powershield size 6.175 > 6.5"
+                    ]
+                },
+                {
+                    "title": "Up Smash",
+                    "changes": [
+                        "Sweetspot BKB 80 > 70"
+                    ]
+                },
+                {
+                    "title": "Dash Grab",
+                    "changes": [
+                        "IASA 33 > 37"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Solar Beam)",
+                    "changes": [
+                        "Charge requirement 22% > 26%"
+                    ]
+                },
+                {
+                    "title": "Up Special (Vine Whip)",
+                    "changes": [
+                        "Can no longer edge cancel endlag of tether landing"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Jigglypuff",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Weight 62 > 64"
+                    ]
+                },
+                {
+                    "title": "Back Throw",
+                    "changes": [
+                        "KBG 25 > 30"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Knuckles",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Gravity 0.14 > 0.13",
+                        "Jumps modified to retain original height"
+                    ]
+                },
+                {
+                    "title": "Jab 1",
+                    "changes": [
+                        "All hitboxes moved 1 unit inwards",
+                        "Startup frames 2 > 3",
+                        "Active frames 4 > 3"
+                    ]
+                },
+                {
+                    "title": "Up Tilt",
+                    "changes": [
+                        "Animation modified to not lean back as much in the initial frames"
+                    ]
+                },
+                {
+                    "title": "Down Tilt",
+                    "changes": [
+                        "BKB 60 > 40",
+                        "KBG 60 > 90"
+                    ]
+                },
+                {
+                    "title": "Up Smash",
+                    "changes": [
+                        "Active frames 10 > 9"
+                    ]
+                },
+                {
+                    "title": "Down Smash",
+                    "changes": [
+                        "Charging hitbox angle on aerial opponents 365 > 90"
+                    ]
+                },
+                {
+                    "title": "Neutral Air",
+                    "changes": [
+                        "BKB 20 > 15"
+                    ]
+                },
+                {
+                    "title": "Down Air",
+                    "changes": [
+                        "Damage 11 > 12",
+                        "BKB 71 > 40",
+                        "KBG 59 > 95"
+                    ]
+                },
+                {
+                    "title": "Forward Air",
+                    "changes": [
+                        "Animation modified to start further in front of Knuckles",
+                        "Active frames 5 > 4"
+                    ]
+                },
+                {
+                    "title": "Grab",
+                    "changes": [
+                        "Z-offset 10.62 > 9.62",
+                        "Animation adjusted to match"
+                    ]
+                },
+                {
+                    "title": "Down Throw",
+                    "changes": [
+                        "Angle 66 > 40",
+                        "KBG 32 > 27",
+                        "IASA after throw 10 > 19",
+                        "Frames before opponent is thrown 62 > 51"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Drill Claw)",
+                    "changes": [
+                        "Attack animation revamped",
+                        "First active frame 7 > 8, starts higher than previously",
+                        "Uppercut BKB 80 > 60"
+                    ]
+                },
+                {
+                    "title": "Side Special (Glide/Dive Punch/Wall Climb)",
+                    "changes": [
+                        "Glide frames 80 > 50",
+                        "Glide turnaround no longer decreases glide frames",
+                        "Aerial momentum after canceling glide reduced",
+                        "Glide now grabs ledge",
+                        "Wall Climb will now grab ledge while in range if traveling upwards or not moving"
+                    ]
+                },
+                {
+                    "title": "Up Special (Spring Jump)",
+                    "changes": [
+                        "Only the first Up Special used per airtime can be acted out of",
+                        "Fixed bug where only using aerials would provide intended drift",
+                        "Up B height slightly lowered to account for gravity change (0.94 -> 0.90), remains higher than previous Up B"
+                    ]
+                },
+                {
+                    "title": "Down Special (Spin Dash)",
+                    "changes": [
+                        "Only usable once per airtime",
+                        "Aerial version given a charging hitbox, matching Sonic’s"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        ">100% ledge getup attack invincibility normalized to match the cast"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Kirby",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Back Air",
+                    "changes": [
+                        "Foot intangibility now ends directly after hitboxes terminate"
+                    ]
+                },
+                {
+                    "title": "Grab",
+                    "changes": [
+                        "Hitbox offset 11 > 10.2"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Inhale)",
+                    "changes": [
+                        "Frames before automatic spit infinite > 120",
+                        "Characters can no longer mash out of the star when spit out"
+                    ]
+                },
+                {
+                    "title": "Up Special (Final Cutter)",
+                    "changes": [
+                        "Kirby will no longer lose all of his jumps during Up B startup and then regain one if performing Cutter Dash. Instead, he will consume all but one jump at Up B startup and lose the final jump if inputting Final Cutter",
+                        {
+                            "title": "Cutter Dash",
+                            "changes": [
+                                "Landing lag 4 > 8"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        {
+                            "title": "Numerous hat changes have been implemented to make Kirby’s hats behave more like the character he copies",
+                            "changes": [
+                                "Wario - hold time reflects new Wario changes",
+                                "Ike - armor matches new Ike changes",
+                                "Mr. Game and Watch - Can now only throw one bacon per B-press, matching Mr. Game and Watch"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Link",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Weight 104 > 99"
+                    ]
+                },
+                {
+                    "title": "Down Air",
+                    "changes": [
+                        "Early hit damage 22/20/20 > 21/19/19",
+                        "Late hit damage 19 > 18"
+                    ]
+                },
+                {
+                    "title": "Side Special (Boomerang)",
+                    "changes": [
+                        "Catch animation IASA frame 6 > 1"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lucario",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Down Air",
+                    "changes": [
+                        "First hit damage 8 > 4"
+                    ]
+                },
+                {
+                    "title": "Pivot Grab",
+                    "changes": [
+                        "IASA 30 > 37"
+                    ]
+                },
+                {
+                    "title": "Side Special (Force Palm)",
+                    "changes": [
+                        "Startup 12 > 13",
+                        "Aerial Side B throw will now force tumble",
+                        {
+                            "title": "Charged",
+                            "changes": [
+                                "BKB 65 > 80",
+                                "KBG 290 > 190"
+                            ]
+                        },
+                        {
+                            "title": "Whiff hit",
+                            "changes": [
+                                "ID 0: 10%/40 BKB/100 KBG > 5%/20 BKB/85 KBG",
+                                "ID 1: 8%/25 BKB/100 KBG > 4%/15 BKB/95 KBG",
+                                "ID 2: 6%/10 BKB/100 KBG > 3%/10 BKB/110 KBG"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Up Special (Extreme Speed)",
+                    "changes": [
+                        "Landing lag when ending on ground 24 > 30",
+                        "Fixed a bug where Lucario could not sweet spot the ledge while traveling downward unless also holding down"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "No longer starts matches with an aura charge",
+                        "Aura charge required per level 65 > 60"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Lucas",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Powershield size 5.7 > 6.4"
+                    ]
+                },
+                {
+                    "title": "Back Air",
+                    "changes": [
+                        "Spike active frames 4 > 3, Non-spike active frames 1 > 2"
+                    ]
+                },
+                {
+                    "title": "Up Smash",
+                    "changes": [
+                        {
+                            "title": "Strong hit",
+                            "changes": [
+                                "BKB 50 > 35",
+                                "KBG 84 > 90"
+                            ]
+                        },
+                        {
+                            "title": "Weak hit",
+                            "changes": [
+                                "BKB 48 > 33",
+                                "KBG 80 > 85"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Grab",
+                    "changes": [
+                        "All grab Y-offsets increased by 0.25 to allow Lucas to grab taller characters while standing"
+                    ]
+                },
+                {
+                    "title": "Side Special (PK Freeze)",
+                    "changes": [
+                        "SDI multiplier 0.5x > 1.0x"
+                    ]
+                },
+                {
+                    "title": "Down Special (PSI Magnet)",
+                    "changes": [
+                        "Now stalls vertical momentum after repeated aerial uses"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "GFX added to knockdown getup attacks to accurately reflect hitbox size"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Luigi",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Down Tilt",
+                    "changes": [
+                        "Air-only hitboxes added to match Melee",
+                        "9%/10 BKB/80 KBG/angle 80",
+                        "Ground-only hitboxes unchanged",
+                        "Late Hit size 4.3 > 3.1"
+                    ]
+                },
+                {
+                    "title": "Up Smash",
+                    "changes": [
+                        "Head Intangibility increased 9-11 > 9-13"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mario",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Weight 100 > 95",
+                        "Run speed 1.5 > 1.55"
+                    ]
+                },
+                {
+                    "title": "Down Throw",
+                    "changes": [
+                        "BKB 75 > 82",
+                        "KBG 50 > 41"
+                    ]
+                },
+                {
+                    "title": "Up Special (Super Jump Punch)",
+                    "changes": [
+                        "Landing lag 20 > 25",
+                        "Ledge grab box height reduced"
+                    ]
+                },
+                {
+                    "title": "Down Special (Mario Tornado)",
+                    "changes": [
+                        "Considered used on frame 9",
+                        "Maximum horizontal distance reduced by -0.3",
+                        "Animation adjusted to better match 64 and Melee"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Marth",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Down Air",
+                    "changes": [
+                        "Landing lag 24/12 L-canceled > 28/14 L-canceled"
+                    ]
+                },
+                {
+                    "title": "Back Throw",
+                    "changes": [
+                        "IASA 40 > 42"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Meta Knight",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Dash Attack",
+                    "changes": [
+                        "No longer clanks with aerials"
+                    ]
+                },
+                {
+                    "title": "Down Tilt",
+                    "changes": [
+                        "Animation modified to not wiggle as much"
+                    ]
+                },
+                {
+                    "title": "Up Smash",
+                    "changes": [
+                        "DACUS horizontal speed multiplier 3.0 > 2.6, normalized between both frames"
+                    ]
+                },
+                {
+                    "title": "Neutral Air",
+                    "changes": [
+                        "Startup frames 3 > 4",
+                        "Last active frame 29 > 26"
+                    ]
+                },
+                {
+                    "title": "Up Air",
+                    "changes": [
+                        "Inner hitboxes Y-offset 17 > 15.75, GFX adjusted to match",
+                        "Front hitboxes angles 78/60 > 73/55"
+                    ]
+                },
+                {
+                    "title": "Side Special (Drill Rush)",
+                    "changes": [
+                        "Aerial Side B reverse ledge grab adjusted, preventing Meta Knight from warping to ledge while on stage in many scenarios. Note that this can still happen, but should be far less frequent."
+                    ]
+                },
+                {
+                    "title": "Up Special (Shuttle Loop)",
+                    "changes": [
+                        "Loop no longer causes Meta Knight to self destruct off the side blastzone",
+                        "Self destructs can still happen if startup occurs while already in the blastzone",
+                        "Glide landing lag 24 > 30"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "Can now fast fall out of double jump with diagonally downwards angles (matches the rest of the cast)"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Mewtwo",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Weight: 90 > 93"
+                    ]
+                },
+                {
+                    "title": " Pivot Grab",
+                    "changes": [
+                        "IASA 30 > 37"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "Electric effect added to trip attack"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Olimar",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Up B (Ionium Jet)",
+                    "changes": [
+                        "Reverse ledge grab box now terminates after 20 frames"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "Pikmin are now always intangible on frame 1 of aerial attacks",
+                        ">100% ledge jump no longer gets caught and canceled on some stages"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Peach",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Forward Throw",
+                    "changes": [
+                        "KBG 160 > 170"
+                    ]
+                },
+                {
+                    "title": "Down Special (Turnip Pull/Pluck)",
+                    "changes": [
+                        "Aerial hitgrab BKB 80 > 106"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Pikachu",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Back Air",
+                    "changes": [
+                        "BKB 25 > 30"
+                    ]
+                },
+                {
+                    "title": "Down Special (Thunder)",
+                    "changes": [
+                        "Fixed rare air-to-ground interaction that prevented hitboxes from appearing"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Pit",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Neutral Special (Palutena's Arrow)",
+                    "changes": [
+                        "Initial hitbox active frames 10 > 7"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "R.O.B.",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Jab",
+                    "changes": [
+                        "Jab 1 outer hitbox angle 100 > 90"
+                    ]
+                },
+                {
+                    "title": "Forward Air",
+                    "changes": [
+                        "Last active frame 19 > 17"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Samus",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Fire Down Tilt",
+                    "changes": [
+                        "IASA 40 > 37"
+                    ]
+                },
+                {
+                    "title": "Ice Forward Smash",
+                    "changes": [
+                        "KBG 85 > 95"
+                    ]
+                },
+                {
+                    "title": "Ice Up Smash",
+                    "changes": [
+                        "Hitboxes/animation no longer goes into the Z axis"
+                    ]
+                },
+                {
+                    "title": "Fire Forward Air",
+                    "changes": [
+                        "Hits 1-4 WDSK 20 > 0",
+                        "BKB 0 > 20",
+                        "Changes made to match Melee forward air"
+                    ]
+                },
+                {
+                    "title": "Side Special (Missile)",
+                    "changes": [
+                        "Shooting a missile resets fall speed, which allows for SHFF missiles",
+                        "Can now be input out of crawl exit"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "<100% ledge attack active frames 3 > 5",
+                        "Hurtboxes now consistent between morph ball animations"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sheik",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Up Smash",
+                    "changes": [
+                        "Can now double hit again",
+                        "Maximum damage lowered; 16/13 > 14/11"
+                    ]
+                },
+                {
+                    "title": "Forward Smash",
+                    "changes": [
+                        "First hit SDI modifiers 0.4/0.42 > 1.0/1.0"
+                    ]
+                },
+                {
+                    "title": "Dash Grab",
+                    "changes": [
+                        "Innermost grabbox size 3.13 > 2.63"
+                    ]
+                },
+                {
+                    "title": "Back Throw",
+                    "changes": [
+                        "KBG 75 > 80"
+                    ]
+                },
+                {
+                    "title": "Down Throw",
+                    "changes": [
+                        "KBG 65 > 70"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Snake",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Forward Smash",
+                    "changes": [
+                        "First hit KBG 55 > 48",
+                        "Third hit KGB 110 > 115",
+                        "Frames between first and second hits 8 > 7"
+                    ]
+                },
+                {
+                    "title": "Down Smash",
+                    "changes": [
+                        "Mine model visibility changes: Y-offset -1.5 > -1.25, glow effect added to the flashing beacon"
+                    ]
+                },
+                {
+                    "title": "Grab",
+                    "changes": [
+                        "Y-offset 8.77 > 8"
+                    ]
+                },
+                {
+                    "title": "Down Special (C4)",
+                    "changes": [
+                        "Delayed stick removed; will now search for only 3 frames before successful or failed stick"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Sonic",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Dash Attack",
+                    "changes": [
+                        {
+                            "title": "Initial hit",
+                            "changes": [
+                                "BKB 70 > 40",
+                                "KBG 56 > 88"
+                            ]
+                        },
+                        {
+                            "title": "Weak hit",
+                            "changes": [
+                                "BKB 55 > 45",
+                                "KBG 48 > 60"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Up Throw",
+                    "changes": [
+                        "Angle 76 > 73",
+                        "KBG 60 > 65"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Homing Attack)",
+                    "changes": [
+                        "Will no longer go into special fall landing during trick animations"
+                    ]
+                },
+                {
+                    "title": "Side Special (Somersault)",
+                    "changes": [
+                        "No longer refreshes on ledge grab",
+                        "Ledge grab box lowered and shrunk"
+                    ]
+                },
+                {
+                    "title": "Down Special (Spin Dash)",
+                    "changes": [
+                        "Only usable once per airtime",
+                        "Fixed a bug where additional terminal velocity remained applied when interrupting with another special move"
+                    ]
+                },
+                {
+                    "title": "Up Special (Spring Jump)",
+                    "changes": [
+                        "Only the first Up Special used per airtime can be acted out of",
+                        "Fixed bug where only using aerials would provide intended drift"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+                        "GFX adjusted and improved across Sonic’s moves for better visual clarity"
+                    ]
+                },
+                {
+                    "title": "Costumes & Aesthetics",
+                    "changes": [
+                        "GFX adjusted and improved across Sonic’s moves for better visual clarity"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Squirtle",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Neutral Special (Water Gun)",
+                    "changes": [
+                        "Startup 19 >24",
+                        "Frames between shots uncharged 8 > 4",
+                        "Full charge has less spread between each projectile",
+                        "Upper angle range reduced 75 > 45"
+                    ]
+                },
+                {
+                    "title": "Up Special (Waterfall)",
+                    "changes": [
+                        "Horizontal drift multiplier 0.6x > 0.8x"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Toon Link",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Side Special (Boomerang)",
+                    "changes": [
+                        "Catch animation IASA frame 6 > 1"
+                    ]
+                },
+				{
+                    "title": "Down Special (Bomb)",
+                    "changes": [
+                        "Bomb Multi Hit count increased from 3 to 4, total damage 9% > 12%"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wario",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Up Throw",
+                    "changes": [
+                        "BKB 60 > 70",
+                        "KBG 72 > 82",
+                        "Release point adjusted"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Chomp)",
+                    "changes": [
+                        "Minimum required hold animation time Min 5/Max 61 -> 12/30",
+                        "Throw KBG 30 > 40"
+                    ]
+                },
+                {
+                    "title": "Down Special (Waft)",
+                    "changes": [
+                        "Upward body hitbox damage 18 > 16"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Wolf",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Weight 85 > 80"
+                    ]
+                },
+                {
+                    "title": "Back Throw",
+                    "changes": [
+                        "Animation revamped",
+                        "Angle 60 > 55",
+                        "BKB 70 > 80"
+                    ]
+                },
+                {
+                    "title": "Neutral Special (Blaster)",
+                    "changes": [
+                        "Laser lifespan 45 > 33"
+                    ]
+                },
+                {
+                    "title": "Side Special (Wolf Flash)",
+                    "changes": [
+                        {
+                            "title": "Sweetspot",
+                            "changes": [
+                                "Damage 16 > 15",
+                                "KBG 105 > 102"
+                            ]
+                        },
+                        {
+                            "title": "Sourspot",
+                            "changes": [
+                                "BKB 68 > 40",
+                                "KBG 60 > 100"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Yoshi",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Grab",
+                    "changes": [
+                        "IASA 63 > 58"
+                    ]
+                },
+                {
+                    "title": "Side Special (Egg Roll)",
+                    "changes": [
+                        "Wall bounce behavior normalized; will always give height on first bounce per airtime"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Zelda",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Side Special (Din's Fire)",
+                    "changes": [
+                        "Vertical Acceleration: 0.06554 -> 0.08",
+                        "Max Vertical Speed 1.309 -> 1.369"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Zero Suit Samus",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Attributes",
+                    "changes": [
+                        "Body Hurtbox Radius 1.7x -> 1.9x",
+                        "Leg Hurtbox Radius 1.1x/1.0x -> 1.3x/1.2x",
+                        "Weight 85 > 79"
+                    ]
+                },
+                {
+                    "title": "Up Tilt",
+                    "changes": [
+                        "Animation modified to start less far outwards, active frames and startup unchanged"
+                    ]
+                },
+                {
+                    "title": "Down Smash",
+                    "changes": [
+                        "Hitbox sizes 5.35 > 5",
+                        "Damage 12 > 6"
+                    ]
+                },
+                {
+                    "title": "Back Air",
+                    "changes": [
+                        "Active frames 7-11 > 7-10",
+						{
+                            "title": "Inside leg hitbox",
+                            "changes": [
+                                "Damage 13 > 11",
+                                "KBG 110 > 118"
+                            ]
+                        },
+                        {
+                            "title": "Sweetspot",
+                            "changes": [
+                                "KBG 110 > 100",
+                                "Hitbox size 4 > 3"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Forward Air",
+                    "changes": [
+                        "First hit reverted to PM v3.6 behavior"
+                    ]
+                },
+                {
+                    "title": "Up Air",
+                    "changes": [
+                        "Modified to contort less on startup"
+                    ]
+                },
+                {
+                    "title": "Dash Grab",
+                    "changes": [
+                        "IASA 37 > 41"
+                    ]
+                },
+                {
+                    "title": "Up Special (Plasma Wire)",
+                    "changes": [
+                        "Can no longer edge cancel endlag of tether landing"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stages",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Bowser’s Castle",
+                    "changes": [
+                        {
+                            "title": "(Base) Bowser’s Castle",
+                            "changes": [
+                                "Stage size and blastzones are now smaller",
+                                "Visuals redone",
+								"Lava adjusted to not oversaturate cathode-ray tube televisions",
+								"Heavily optimized to run consistently at a full frame rate",
+                                "Platform layout changed to an inverted tri-plat layout",
+                                "Main stage collisions flattened",
+                                "All Bowser Castle 1:1s have been updated to the new layout"
+                            ]
+                        },
+						{
+                            "title": "(L-alt) Bowser’s Castle (Thwomp version)",
+                            "changes": [
+                                "Some visuals redone",
+								"Lava adjusted to not oversaturate cathode-ray tube televisions"
+                            ]
+                        },
+						{
+                            "title": "(R-alt) Classic Bowser’s Castle",
+                            "changes": [
+                                "Some visuals redone",
+								"Matched to default's changes"
+                            ]
+                        },
+						{
+                            "title": "(Z-alt) World Bowser BC",
+                            "changes": [
+								"Lava adjusted to not oversaturate cathode-ray tube televisions",
+								"Heavily optimized",
+								"Matched to default's changes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Castle Siege",
+                    "changes": [
+                        {
+                            "title": "(R+Start) Daytime Siege (NEW!)",
+                            "changes": [
+                                "Daytime Siege has been added to the R+Start list. This is a static version of the Brawl Castle Siege matching PM’s behavior"
+                            ]
+                        },
+                        {
+                            "title": "(L+Start) Frozen Underground (NEW!)",
+                            "changes": [
+                                "The underground phase of Castle Siege has been added to the L+Start list"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Fountain of Dreams",
+                    "changes": [
+                        {
+                            "title": "(Base) Fountain of Dreams",
+                            "changes": [
+                                "Water SFX/GFX toned down based on player feedback"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Pokémon Stadium 2",
+                    "changes": [
+                        {
+                            "title": "(Base) Pokémon Stadium 2",
+                            "changes": [
+                                "Adjusted lighting to be less blown out"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Poké Floats",
+                    "changes": [
+                        {
+                            "title": "(L-alt) Pokémon Stadium 1",
+                            "changes": [
+                                "Moved to L alt from Z"
+                            ]
+                        },
+                        {
+                            "title": "(Z-alt) Treasure Town (NEW!)",
+                            "changes": [
+                                "A Metal Cavern reskin based on Treasure Town has been added!"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Sky Sanctuary Zone",
+                    "changes": [
+                        {
+                            "title": "(Base) Sky Sanctuary Zone",
+                            "changes": [
+                                "Visual improvements implemented"
+                            ]
+                        },
+                        {
+                            "title": "(Z-alt) Frigate Sanctuary Zone",
+                            "changes": [
+                                "Visual improvements implemented"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Smashville",
+                    "changes": [
+                        "Visual improvements implemented",
+						"Side blastzones normalized; now set to 150.35 units away from each ledge",
+                        "Collisions normalized between the left and right ledges",
+                        "Updated for all 1:1 variants build-wide"
+                    ]
+                },
+                {
+                    "title": "Temple of Time",
+                    "changes": [
+                        {
+                            "title": "(L+Start) The Throne Room (NEW!)",
+                            "changes": [
+                                "The Throne Room has been added to the L+Start list for Temple of Time. A wider layout variant of the base stage"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Training Room",
+                    "changes": [
+                        {
+                            "title": "(R+Start) Dark and Config Menu Training Rooms (NEW!)",
+                            "changes": [
+                                "Have been added as R+Start alts for Training Room"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Wario Land",
+                    "changes": [
+                        "Stage centered between side blastzones",
+                        "Updated for all 1:1 variants build-wide"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Costumes and Content",
+            "element": {},
+            "moves": [
+                {
+                    "title": "Costumes",
+                    "changes": [
+                        "Zero Suit Samus received a complete model revamp, featuring a texture rework, new hair, and overall model improvements",
+                        "New costume: Sega Kid Sonic! The long-awaited concept art is now a reality with 4 extra recolors",
+                        "Revamped costume: Racing Suit Sonic gears up to battle! Additional recolors are available to add in the Modder’s Pack",
+                        "Sonic and Knuckles now have spinball visual effects that match their costumes; a few costumes were optimized to allow for the extra space. Both Sonic and Knuckles now have smaller costume size limits due to this",
+                        "Sonic renders retouched to look more accurate to in-game colors",
+                        "Default Jet Set Sonic has the same fur effects as default Sonic",
+                        "Jet Set Brown and Black Knuckles: Improved sphere colors",
+                        "Pikachu has received a model revamp with additional fur details",
+                        "New costume: Team Rocket Pikachu prepares for trouble! You can make it double with five additional recolors.",
+                        "Pikachu’s hidden costumes swapped to Detective Hat Pikachu and Jukebox Pikachu. Stay tuned for future updates!",
+                        "Some of Pikachu’s default costumes have a heart tail. However, by pressing left or right on the D-Pad while loading a stage, your Pikachu will switch which tail shape it has. Play with whatever costume and tail combination you want!",
+                        "New costume: Hex Maniac Ivysaur wants to battle! Comes with four magical recolors and feature additional ghostly effects",
+                        "Ivysaur’s base recolors have all been remade to a higher and more consistent quality.",
+                        "New hidden Ivysaur costume: Clone Ivysaur",
+                        "New costume: The Great Gonzales costume for Yoshi enters the ring! Four additional recolors have been included in the build, and the Modder’s Pack contains two additional colors. Each costume has a unique hair style.",
+                        "All Yoshi costumes have new higher quality eyes and optimizations to lower file size",
+                        "Dorrie Yoshi revamped with new crests, spots, scarf, and some absolutely dripping footwear. Also comes with a new purple color.",
+						"Wii ROB has been revamped with a glossy new body, and four additional recolors",
+						"Captain Falcon’s vanilla black skin restored; the black and blue palette is planned to return for a future costume",
+						"Unintentional change on default Holy War Marth’s texture has been reverted; all costumes in this set had their renders updated as well",
+                        "Minor optimizations for the following costumes: Griel Ike, PAL Bowser, all Lucario costumes, Gold Morpho Knight, Green Squirtle, PED Samus",
+						"Pig Ganon now properly glows purple when using certain attacks",
+						"Link’s Ocarina model was optimized, and has a higher quality texture",
+						"Animations for Link’s Ocarina taunt have been redone"
+                    ]
+                },
+				{
+                    "title": "Event Match",
+                    "changes": [
+                        "Event Match mode has been updated with new UI, along with revamped events.",
+                        "All preview images have also been updated",
+						"Some tracklists have been updated to accommodate Event Match only tracks. Songs are included in the tracklist, but won’t play in normal matches. These tracklists are: Fountain of Dreams, Mario Circuit, P+ Stadium, Skyworld, Smashville",
+						"Zero Suit Samus no longer needs to hold neutral special during her Final Smash to clear Event Match 16"
+                    ]
+                },
+				{
+                    "title": "Items",
+                    "changes": [
+                        "New EX item: the Double Cherry! Those Ice Climbers won’t be the only ones to pair up now. Can be manually turned on or off by pressing START on the EX Item choice in Item Switch"
+                    ]
+                },
+				{
+                    "title": "Character Selection Screen",
+                    "changes": [
+						"Enhanced with additional glow effects, redone models, and improvements to name entry",
+                        "You can now swap your port’s color on the character select screen by pressing L or R while hovering over your port. Choose between twelve different options!",
+                        "Sheik’s CSP render has been adjusted to prevent a small amount of pixels from appearing in the bottom-left of her portrait"
+                    ]
+                },
+                {
+                    "title": "Other",
+                    "changes": [
+						"The ingame HUD has received a makeover; this also scales battle portraits properly for the first time, as they had been scaled too wide since vanilla Brawl!",
+                        "Subspace EX improvements and bug fixes",
+						"“Winner” text on the results screen updated to match P+ palette",
+						"Sound effects have been added to the Code Menu",
+                        "The title screen and strap screen have received visual overhauls",
+                        "Version number updated to v3.0 build-wide"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,9 +1,9 @@
 {
-  "hash": "0b24cbb682417e614546e06073533fac9f64fb3e",
-  "version": "FPM v3.0 BETA",
+  "hash": "9a42f894307ba9a122bdee23cb4a90ac90f04f60",
+  "version": "FPM v3.0.1 BETA",
   "updater-update": "false",
   "update-page": "https://projectplusgame.com/download/",
-  "changelog": "Update to Project+ v3.0  \nThe balance patch! Also includes many new features and bugfixes.",
-  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.0/PPlusv3.0Windows.zip",
+  "changelog": "Update to Project+ v3.0.1  \nThe balance patch! Also includes many new features and bugfixes. v3.0.1 fixes some physics oddities.",
+  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.0.1/PPlusv3.0.1Windows.zip",
   "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/PPlusv2.29Mac.zip"
 }

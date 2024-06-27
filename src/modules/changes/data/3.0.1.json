@@ -59,7 +59,7 @@
                                 "X remains striking, though striking all stages not on random is now performed by pressing X while hovering over the random button",
                                 "Y now enters the music selection menu",
                                 "Z will toggle hazards temporarily for the selected stage; this can also be done while hovered over the random button to only random to hazard on/off variants of stages",
-                                "Holding a shoulder button and pressing Start over a stage will now enter a new alternate stage selection menu, allowing for more 1:1 alts and secret stages. Pressing only Start on a stage will once again select the default stage. R+Start is exclusively used for 1:1 stages, while L+Start’s menu contains different layouts and for-fun stages"
+                                "Holding a shoulder button and pressing Start over a stage will now enter a new alternate stage selection menu, allowing for more 1:1 alts and secret stages. Pressing only Start on a stage will once again select the default stage. R+Start is exclusively used for 1:1 stages, while L+Start’s menu contains different layouts and for-fun stages. Only Temple of Time (L), Castle Siege (Both), and Training Room (R) currently have stages in place"
                             ]
                         }
                     ]
@@ -77,7 +77,7 @@
                             "title": "Physics delays have been fixed!",
                             "changes": [
                                 "Wavedashes no longer require one frame of being airborne",
-								"Characters can now enter fastfall immediately once their descent starts",
+								"Characters now experience fastfall physics on frame 1 instead of frame 2",
                                 "Characters will no longer experience an extra frame of landing lag when they would go into fall the frame they would land",
 								"Fixes for more situations are being tested and will be implemented in future updates"
                             ]
@@ -961,7 +961,13 @@
                 {
                     "title": "Down Special (Turnip Pull/Pluck)",
                     "changes": [
-                        "Aerial hitgrab BKB 80 > 106"
+                        {
+                            "title": "Aerial hitgrab:",
+                            "changes": [
+                                "BKB 106 > 80",
+                                "KBG 0 > 100"
+                            ]
+                        }
                     ]
                 }
             ]
@@ -1598,6 +1604,7 @@
 						"Unintentional change on default Holy War Marth’s texture has been reverted; all costumes in this set had their renders updated as well",
                         "Minor optimizations for the following costumes: Griel Ike, PAL Bowser, all Lucario costumes, Gold Morpho Knight, Green Squirtle, PED Samus",
 						"Pig Ganon now properly glows purple when using certain attacks",
+						"Link’s entry animation received further cleanup",
 						"Link’s Ocarina model was optimized, and has a higher quality texture",
 						"Animations for Link’s Ocarina taunt have been redone"
                     ]
@@ -1630,6 +1637,8 @@
                     "changes": [
 						"The ingame HUD has received a makeover; this also scales battle portraits properly for the first time, as they had been scaled too wide since vanilla Brawl!",
                         "Subspace EX improvements and bug fixes",
+						"Stamina mode warping now affects items and coins",
+						"Stamina mode: Ganondorf Side B warping now needs to be continued by pressing B 6 frames or before the warp; if they do not, or the opponent presses B closer to the warp, the grab will break",
 						"“Winner” text on the results screen updated to match P+ palette",
 						"Sound effects have been added to the Code Menu",
                         "The title screen and strap screen have received visual overhauls",

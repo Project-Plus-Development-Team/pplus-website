@@ -1,0 +1,150 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1jEoVFtGLUhYDaQBr5FTsYOVUmnzmK83UanHtwBQfYl4/edit?usp=sharing"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1Nj72z6X4VJpnpNWO9_UJR_bU-hH0eag-lrP_77oaNTo/"
+    }
+  },
+  "changes": [
+    {
+      "name": "Knuckles",
+      "element": {},
+      "moves": [
+        {
+          "title": "Down Special (Spin Dash)",
+          "changes": [
+            "Resource refreshes fixed on all ledge options"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lucas",
+      "element": {},
+      "moves": [
+        {
+          "title": "Down Special (PSI Magnet)",
+          "changes": [
+            "Canceling into magnet on the first frame of jump will now ground you much faster than later frames, similar to space animal shines"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ness",
+      "element": {},
+      "moves": [
+        {
+          "title": "Neutral Special (PK Flash)",
+          "changes": [
+            "PK Flash hitbox now correctly appears the first frame after B is released instead of frame 15"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Samus",
+      "element": {},
+      "moves": [
+        {
+          "title": "Down Special (Bomb)",
+          "changes": [
+            "Bomb jump leniency matched to previous builds, as hurtbox fixes affected its behavior"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonic",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Spin Maneuvers)",
+          "changes": [
+            "Side B resource refreshes fixed on some ledge options"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yoshi",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Egg Roll)",
+          "changes": [
+            "Stall during aerial Egg Roll’s exit animation restored"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bowser’s Castle",
+          "changes": [
+            {
+              "title": "(R-alt) Bowser’s Castle Classic",
+              "changes": [
+                "Correct version of the stage added to the build"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Meteor canceling now functions properly again",
+            "Some throws which could previously be affected by holding down can no longer be",
+            "Freeze and other miscellaneous knockback effects now work as intended"
+          ]
+        },
+        {
+          "title": "Costumes",
+          "changes": [
+            "Wizard Ivy's shadow model adjusted to match vanilla costume",
+            "Peach's Fire/Dark up tilt graphics now work properly on Fountain of Dreams"
+          ]
+        },
+		{
+          "title": "Other",
+          "changes": [
+            "Proper SFX restored on Snake’s Win3 animation",
+            "Visibility of some models on Snake up tilt cleaned up",
+			"Ike, Mr. Game & Watch, and Knuckles target tests now load properly",
+            "Obtaining a Smash Ball while also having Double Cherry active will no longer crash the game",
+            "You can no longer back out of the Random Stage Selection screen with no stages enabled",
+			"Double Cherry is now disabled in events to prevent instability"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+      	{
+          "title": "Other",
+          "changes": [
+            "Port colors now only reset when pressing Z or when a controller is unplugged/disconnected",
+            "An additional Pokemon type is now allowed to spawn on Pokemon Stadium 2",
+            "Fox GuardOff animation behavior matched to the cast",
+			"Updated version number to v3.0.2 build-wide"
+          ]
+        }
+      ]
+    }
+  ]
+}

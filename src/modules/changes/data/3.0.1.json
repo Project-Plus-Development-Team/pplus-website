@@ -71,7 +71,7 @@
 						"Footstool frame data normalized throughout the cast, which affects the following characters: Dedede, Diddy Kong, Link, Mewtwo, Ness, Pit, ROB, Snake, and Toon Link",
                         "Characters will lose all ledge intangibility frames when performing an aerial or special out of a ledge jump",
                         "Behavior when becoming grounded during non-tumble hitstun matched to Melee; this means characters will no longer experience full hitstun when grounded after knockback stacking",
-                        "Characters cannot be “rehit” if they are hit during intangibility frames and transition to vulnerable frames during hitlag",
+                        "Characters cannot be “rehit” if they are hit during invulnerability frames and transition to vulnerable frames during hitlag",
                         "Sleep effect attacks will no longer pierce character armor in the air",
                         {
                             "title": "Physics delays have been fixed!",

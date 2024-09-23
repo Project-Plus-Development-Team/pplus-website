@@ -1,0 +1,625 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1ZlU8P_qqcXmZ-blbPjzxG79chPKJW4v0rasWfieD4AQ/edit"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1Nj72z6X4VJpnpNWO9_UJR_bU-hH0eag-lrP_77oaNTo/"
+    }
+  },
+  "changes": [
+    {
+      "name": "Dedede",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Waddle/Gordo Toss)",
+          "changes": [
+            "A Gordo dropped while being interrupted from Side Special will now do the normal 18% rather than 25%"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ice Climbers",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Fixed issue where Nana could receive analog inputs (shields, air dodges, etc) outside of her normal control range"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ike",
+      "element": {},
+      "moves": [
+        {
+          "title": "Neutral Special (Eruption)",
+          "changes": [
+            "Both aerial and grounded versions now gain armor every 30 frames of charging; 0 > 20 > 40 > 80 > 120 > Super; this change was intended for 3.0, but missed in the game files"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ivysaur",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Smash",
+          "changes": [
+            "Strong upsmash BKB 80 > 70; this change was intended for 3.0, but missed in the game files"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knuckles",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Spring)",
+          "changes": [
+            "Black special fall flash now occurs when Up Special is no longer actionable",
+			"Up Special now uses its own ledge grab box that was previously unused; this new LGB is higher by 0.5 units"
+          ]
+        },
+		{
+		  "title": "Down Special (Spin Dash)",
+          "changes": [
+            "Now has hitboxes during the charge animation (identical to Sonic); this change was intended for 3.0, but missed in the game files",
+			"Down Special resource now refreshes out of all grounded ledge actions tech animation slideoffs"
+          ]
+		}
+      ]
+    },
+    {
+      "name": "Luigi",
+      "element": {},
+      "moves": [
+        {
+          "title": "Down Special (Luigi Tornado)",
+          "changes": [
+            "Re-added the foot hitbox of aerial version, as it was accidently deleted from PM 3.02 > 3.5"
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Olimar",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Pikmin are now always intangible on frame 1 of aerial attacks; this change was intended for 3.0, but missed in the game files",
+			"Fixed Pikmin in aerial attacks losing intangibility if moved too far from the starting position when the attack started",
+			"Olimar will no longer try to use “busy” Pikmin when attacking, which caused his animation to play with no hitbox present"
+          ]
+        }
+      ]
+    },
+	{
+      "name": "R.O.B.",
+      "element": {},
+      "moves": [
+        {
+          "title": "Other",
+          "changes": [
+            "Upwards facing missed tech get up attack invincibility corrected to match active frames"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonic",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Spring)",
+          "changes": [
+            "Black special fall flash now occurs when Up Special is no longer actionable",
+			"Up Special now uses its own ledge grab box that was previously unused; this new LGB is higher by 0.5 units",
+			"Fixed bug where only using aerials would provide intended drift during Up Special; this change was intended for 3.0, but missed in the game files"
+          ]
+        },
+		{
+		  "title": "Side Special (Spin Manuevers)",
+          "changes": [
+			"Side Special resource now refreshes out of all grounded ledge actions tech animation slideoffs"
+          ]
+		},
+		{
+		  "title": "Down Special (Spin Dash)",
+          "changes": [
+            "Down Special resource will now be restored out of the grounded charge cancel animation",
+			"Down Special resource now refreshes out of all grounded ledge actions tech animation slideoffs"
+          ]
+		}
+      ]
+    },
+    {
+      "name": "Yoshi",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Egg Roll)",
+          "changes": [
+            "Fixed issue where Yoshi could warp to the ledge during the endlag of Side Special",
+			"Aerial Side Special resource will no longer be considered consumed if Yoshi is hit out of Side Special on the ground"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Every hidden stage alt has now been moved to be an L+Start or R+Start stage with the exception of Smashville’s concert stages to allow for visual confirmation before selecting a stage. Additionally helps to confirm 1:1 stages that were previously only hidden alts. File sizes of moved or updated stages may be lower due to small stage optimizations recently discovered",
+          "changes": []
+        },
+		{
+          "title": "Battlefield",
+          "changes": [
+            {
+              "title": "(L+Start alt) Duel Zone",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bowser’s Castle",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Side platforms moved down by one unit",
+				"Middle platform lowered by two units",
+				"All platform models Y scale reduced (1 > 0.7)",
+				"All platform model X size reduced (30 > 28.5)",
+				"Changes ported to all BC 1:1s",
+				"Fixed eye glow on the fountainhead"
+              ]
+            },
+			{
+			  "title": "(R+Start alt) Dry Bowser’s Castle (NEW!)",
+              "changes": [
+                "New alternate stage featuring blue lava and Dry Bowser decorations"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Castle Siege",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl Castle Siege",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Clock Town",
+          "changes": [
+            {
+              "title": "(L+Start alt) Great Bay - No Swimming",
+              "changes": [
+                "Moved from hidden Z+Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Corneria",
+          "changes": [
+            {
+              "title": "(L+Start alt) Sector Z",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Dream Land",
+          "changes": [
+            {
+              "title": "(R+Start alt) Dream Land 64",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Final Destination",
+          "changes": [
+            {
+              "title": "(L+Start alt) Final Destination 64",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            },
+			{
+              "title": "(L+Start alt) Brawl Final Destination",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            },
+            {
+              "title": "(R+Start alt) Rainbow Destination",
+              "changes": [
+                "Moved from hidden L+R alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fourside",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl New Pork City",
+              "changes": [
+                "Moved from Hidden L+X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Frigate Husk",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl Frigate Orpheon",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Green Hill Zone",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl Green Hill Zone",
+              "changes": [
+                "Moved from hidden L+X alt"
+              ]
+            },
+            {
+              "title": "(R+Start alt) PM Green Hill Zone",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Halberd",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl Halberd",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Hyrule Castle",
+          "changes": [
+            {
+              "title": "(L+Start alt) Hyrule Castle 64",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Kongo Jungle",
+          "changes": [
+            {
+              "title": "(L-alt) Sunset Shores",
+              "changes": [
+                "Adjusted how the black overlay works so that items and articles can also be affected"
+              ]
+            },
+            {
+              "title": "(R+Start alt) Kongo Jungle 64",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lylat Cruise",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl Lylat Cruise",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Metal Cavern",
+          "changes": [
+            {
+              "title": "(L+Start alt) N64 Metal Cavern",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            },
+            {
+              "title": "(R+Start alt) N64 Metal Cavern Symmetrical",
+              "changes": [
+                "Moved from hidden Y+Z alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mushroom Kingdom",
+          "changes": [
+            {
+              "title": "(L+Start alt) Mushroomy Kingdom 1-2",
+              "changes": [
+                "Moved from hidden L+R alt"
+              ]
+            },
+			{
+              "title": "(L+Start alt) Mushroom Kingdom Melee",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Peach’s Castle",
+          "changes": [
+            {
+              "title": "(L+Start alt) Peach’s Castle 64",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Planet Zebes",
+          "changes": [
+            {
+              "title": "(L+Start alt) Planet Zebes 64",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            },
+			{
+              "title": "((L+Start alt) Brinstar",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Pokemon Stadium 2",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl Pokemon Stadium",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Port Town Aero Dive",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl Port Town Aero Dive",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Rainbow Cruise",
+          "changes": [
+            {
+              "title": "(L+Start alt) Doctor Mario",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Rumble Falls",
+          "changes": [
+            {
+              "title": "(L+Start alt) 75m",
+              "changes": [
+                "Moved from hidden L+X alt"
+              ]
+            },
+            {
+              "title": "(L+Start alt) Brawl Rumble Falls",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            },
+			{
+              "title": "(R-alt) Rumble Castle (NEW!)",
+              "changes": [
+                "Converted from a Wario Land 1:1 to a Bowser’s Castle 1:1"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Saffron City",
+          "changes": [
+            {
+              "title": "(R+Start alt) Saffron City 64",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sky Sanctuary",
+          "changes": [
+            {
+              "title": "(R+Start alt) Original Sky Sanctuary Zone",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Temple of Time",
+          "changes": [
+            {
+              "title": "(L+Start alt) Throne Room",
+              "changes": [
+                "Fixed visual bug where background would flicker in slowdown, shadow texture also changed"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Training Room",
+          "changes": [
+            {
+              "title": "(L+Start alt) Green Screen",
+              "changes": [
+                "Moved from hidden L+R alt"
+              ]
+            },
+            {
+              "title": "(L+Start alt) Brawl Training Room",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "WarioWare",
+          "changes": [
+            {
+              "title": "(L+Start alt) WarioWare Brawl",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            },
+			{
+              "title": "(L+Start alt) Wild WarioWare",
+              "changes": [
+                "Moved from hidden Y alt"
+              ]
+            },
+			{
+              "title": "(L+Start alt) Wild GBA WarioWare",
+              "changes": [
+                "Moved from hidden Z+Y alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Yoshi’s Island",
+          "changes": [
+            {
+              "title": "(L+Start alt) Brawl Yoshi’s Island",
+              "changes": [
+                "Moved from hidden X alt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "All Delfino’s Secret alts adjusted slightly to prevent clipping through the stage when the center platform is lowered",
+            "Fixed the right ledge on Bell Tower not being grabbable in certain circumstances",
+            "The camera will no longer focus on KO’d bodies temporarily after they are defeated",
+			"Player tags will remain onscreen when a Double Cherry clone player dies but the primary character remains alive"
+          ]
+        },
+        {
+          "title": "Costumes",
+          "changes": [
+            "Fixed eye animation and blinking issues on Turbo Charged Donkey Kong",
+            "Fixed color tint on Sega Kid Sonic’s eyelids, default costume has a texture fix for the back of his shoe",
+			"Racing Suit Sonic final smash eyes fixed",
+			"Super ZSS now has correct eye textures",
+			"Justin Bailey console eyes are green as originally intended",
+			"Kirby’s hidden R costume DK hat now fixed"
+          ]
+        },
+		{
+          "title": "Other",
+          "changes": [
+            "Fixed an oversight where War Mode when combined with Super Sudden Death or Wild Mode would cause lag at match start",
+            "Items will no longer spawn on match start for Very High and Intense item selection",
+			"When selecting music on a hidden stage alt, the selection will no longer be wiped out",
+            "Fixed win quote not playing for when Sonic wins a match vs. Knuckles",
+            "Fixed Dragoon always spawning when items set to low",
+			"ItemEX fixes relating to Subspace and Enemy Items, and overriding Subspace sound banks",
+			"Fixed issue where CPU opponents couldn’t hit each other during title screen demos",
+			"Fixed a niche issue with Wii Remotes crashing on the netplay build; this issue was previously patched on console builds shortly after 3.0.2’s release"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+      	{
+          "title": "Costumes",
+          "changes": [
+            "All Roy costumes have further face optimizations, default Roy’s inner cape textures no longer have reduced texture size, cape colors are unchanged ",
+            "Doctor Mario’s pills now use color animations to randomize pill variants",
+            "Vacation Mario has improved rigging",
+			"Team Rocket Pikachu default tails match renders",
+			"Mario and ZSS clear models updated and optimized",
+			"Snake’s hidden costume have had their facial optimizations ported from the default costumes",
+			"Kirby’s animation when using Ganon’s copy ability no longer bends his foot"
+          ]
+        },
+		{
+          "title": "Other",
+          "changes": [
+            "Small update to strap screen models and title screen animation",
+			"Updated version number to v3.0.5 build-wide"
+          ]
+        }
+      ]
+    }
+  ]
+}

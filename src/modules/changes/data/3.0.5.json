@@ -29,7 +29,7 @@
         {
           "title": "Other",
           "changes": [
-            "Fixed issue where Nana could receive analog inputs (shields, air dodges, etc) outside of her normal control range"
+            "Fixed issue where Nana could receive analog inputs (shields, L-cancels, etc) outside of her normal control range"
           ]
         }
       ]
@@ -566,7 +566,7 @@
           "changes": [
             "All Delfino’s Secret alts adjusted slightly to prevent clipping through the stage when the center platform is lowered",
             "Fixed the right ledge on Bell Tower not being grabbable in certain circumstances",
-            "The camera will no longer focus on KO’d bodies temporarily after they are defeated",
+            "The camera in Stamina mode will no longer focus on KO’d bodies temporarily after they are defeated",
 			"Player tags will remain onscreen when a Double Cherry clone player dies but the primary character remains alive"
           ]
         },
@@ -615,7 +615,8 @@
 		{
           "title": "Other",
           "changes": [
-            "Small update to strap screen models and title screen animation",
+            "Double Cherry clones will now remain alive during star/screen KOs (a-la Nana)",
+			"Small update to strap screen models and title screen animation",
 			"Updated version number to v3.0.5 build-wide"
           ]
         }

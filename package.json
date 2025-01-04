@@ -28,7 +28,6 @@
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@netlify/functions": "^1.2.0",
-    "@netlify/plugin-lighthouse": "^3.4.1",
     "@next/bundle-analyzer": "^12.3.1",
     "@next/eslint-plugin-next": "^12.3.1",
     "@types/axios": "^0.14.0",

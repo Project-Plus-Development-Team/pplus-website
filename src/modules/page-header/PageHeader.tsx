@@ -5,29 +5,25 @@ import { Brand } from "./components/Brand";
 import { ButtonContainer } from "./components/ButtonContainer";
 import { LinkContainer } from "./components/LinkContainer";
 
-import styles from "./PageHeader.module.scss";
-
-// Links for the different changes pages. Last entry is used by the download button label.
-// Due to limitations of Next.js i can't pull this data dynamically, but i'm looking into it.
-// This only affects the PageHeader, nothing else.
-export const sortedVersions = [ "2.0", "2.11", "2.15", "2.2", "2.26", "2.28", "2.29", "2.3.1", "2.3.2", "2.4.1", "2.4.2", "2.5.2", "3.0.1", "3.0.2", "3.0.5" ];
-
 import backgroundBanner from "~generated-images/background-banner.webp";
+import styles from "./PageHeader.module.scss";
 
 export const PageHeader = () => {
   const { pathname } = useRouter();
-  const latestVersion = sortedVersions[sortedVersions.length - 1];
   const [isActive, setActive] = useState(false);
 
-  const backgroundGradient = "repeating-linear-gradient(to bottom, #3e9e91, #2f825e 56px)";
+  const backgroundGradient =
+    "repeating-linear-gradient(to bottom, #3e9e91, #2f825e 56px)";
 
   const isHome = pathname === "/";
 
   return (
-    <Navbar className={styles.navbar} active={isActive}
+    <Navbar
+      className={styles.navbar}
+      active={isActive}
       style={{
         background: `${backgroundGradient}, url(${backgroundBanner.src})`,
-        backgroundBlendMode: "color"
+        backgroundBlendMode: "color",
       }}
     >
       <Brand
@@ -38,13 +34,9 @@ export const PageHeader = () => {
       <Navbar.Menu>
         <LinkContainer
           pathname={pathname}
-          versions={sortedVersions}
           foldNavbar={() => setActive(false)}
         />
-        <ButtonContainer
-          latestVersion={latestVersion}
-          foldNavbar={() => setActive(false)}
-        />
+        <ButtonContainer foldNavbar={() => setActive(false)} />
       </Navbar.Menu>
     </Navbar>
   );

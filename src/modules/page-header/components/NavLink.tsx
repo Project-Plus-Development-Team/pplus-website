@@ -8,7 +8,7 @@ interface NavLinkProps {
   text: string | ReactElement;
   href: string;
   pathname: string;
-  onClick: () => void;
+  onClick?: () => void;
   className?: string;
   title?: string;
 }

@@ -1,0 +1,39 @@
+/* see ./variables.scss! same applies to this file! */
+
+@use "./node_modules/bulma/sass/utilities/initial-variables" as init;
+@use "./node_modules/bulma/sass/utilities/mixins";
+@use "./node_modules/bulma/sass/components/navbar";
+@use "sass:color";
+@use "./variables.scss" as cyborg;
+
+// Overrides
+
+.delete {
+	background-color: rgba(255, 255, 255, 0.2);
+
+	&:hover {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+}
+
+.modal-card-body {
+	background-color: init.$black-ter;
+}
+
+.modal-card-foot,
+.modal-card-head {
+	border-color: init.$black-ter;
+}
+
+.navbar {
+	border: 1px solid cyborg.$grey-darker;
+	.navbar-dropdown {
+		border: 1px solid cyborg.$grey-darker;
+	}
+
+	@include mixins.until(navbar.$navbar-breakpoint) {
+		.navbar-menu {
+			background-color: cyborg.$navbar-background-color;
+		}
+	}
+}

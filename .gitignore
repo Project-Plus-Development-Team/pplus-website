@@ -1,23 +1,12 @@
-## Function says: This file makes Git ignore stuff we don't want/need in the repository, like build files
-
-# dependencies
 /node_modules
-
-# next.js
 /.next/
 /out/
-
-# production
-/build
-
-# env files
 /.env.local
-
-# ignore generated files
-generated/
-
-# Local Netlify folder
+/image-generator/generated-image-indexes
+/public/images/generated
 .netlify
+bun.lockb
+.vscode
 
 # documents / notes folder
 /documents/

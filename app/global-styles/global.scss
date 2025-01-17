@@ -1,0 +1,141 @@
+@use "sass:color";
+@use "sass:map";
+@use "./node_modules/bulma/sass/base/minireset.scss"; // fixes default styles
+@use "./node_modules/bulma/sass/utilities/mixins.scss";
+@use "./node_modules/bulma/sass/utilities/functions";
+@use "./node_modules/bulma/sass/base/animations.scss"; // .loader
+@use "./node_modules/bulma/sass/layout/container.scss";
+@use "./node_modules/bulma/sass/helpers/flexbox.scss"; // .is-justify-content...
+@use "./node_modules/bulma/sass/helpers/visibility.scss"; // .is-flex
+@use "./node_modules/bulma/sass/utilities/initial-variables";
+
+@use "./node_modules/bulma/sass/utilities/derived-variables" as derived with (
+	$colors: (),
+	$sizes: (
+		initial-variables.$size-3,
+		initial-variables.$size-4,
+		initial-variables.$size-6,
+	)
+);
+
+@use "./node_modules/bulma/sass/components/modal.scss"; // /find-communities
+
+@use "./node_modules/bulma/sass/elements/content.scss" with (
+	$content-heading-weight: initial-variables.$weight-medium
+); // /faq
+
+@use "./node_modules/bulma/sass/elements/button.scss";
+@use "./node_modules/bulma/sass/elements/title.scss";
+@use "./node_modules/bulma/sass/elements/delete.scss";
+// [upstream] https://github.com/jgthms/bulma/issues/3506
+@use "./node_modules/bulma/sass/helpers/typography.scss"; // <strong>
+@use "./node_modules/bulma/sass/helpers/other.scss"; // modal .delete button to close
+
+@use "./node_modules/bulma/sass/helpers/spacing.scss" with (
+	// [upstream] https://github.com/jgthms/bulma/issues/3507
+	$spacing-shortcuts: ("margin": "m"),
+	$spacing-values: ("1": 0.25rem, "2": 0.5rem, "3": 0.75rem, "4": 1rem)
+); // .mt-5 etc.
+
+@use "./node_modules/bulma/sass/elements/box.scss" with (
+	$box-background-color: hsl(0, 0%, 14%),
+	$box-shadow: none
+); // /index
+
+@use "./node_modules/bulma/sass/components/navbar.scss" with (
+	$navbar-item-color: white
+);
+
+@use "./node_modules/bulma/sass/base/generic.scss" with (
+	$body-color: white
+); // font and other stuff
+
+@use "./node_modules/bulma/sass/themes";
+@use "./overrides.scss";
+
+.delete {
+	--bulma-delete-color: white;
+}
+
+.button {
+	min-height: 2.5em;
+}
+
+a:not(.navbar-item):not(.navbar-link):not(.button) {
+	text-decoration: revert; // add underline back to links
+}
+
+$additionalButtonColors: (
+	"discord": #2520b4,
+	"success": initial-variables.$green,
+	"link": initial-variables.$blue,
+);
+
+// this needs less generated CSS than expanding $button-colors
+.button {
+	@each $name, $color in $additionalButtonColors {
+		&.is-#{$name} {
+			color: white;
+			border: none;
+			background-color: $color;
+
+			&:hover {
+				background-color: functions.bulmaDarken($color, 2.5%);
+			}
+		}
+	}
+}
+
+a {
+	color: #5092fc;
+	&:hover {
+		color: #407cdd;
+	}
+}
+
+html {
+	overscroll-behavior: auto contain; // is supposed to fix ugly overscroll white backgrounds, but i don't know browsers where i could see this fixed
+	background-image: url(../../public/images/generated/mosaic-background-pattern.webp);
+	background-color: hsl(0, 0%, 20%);
+}
+
+main {
+	padding: 1rem;
+	background: hsla(0, 0%, 5%, 90%);
+
+	@include mixins.desktop {
+		margin-bottom: 1rem;
+		border: 2px solid hsl(0, 0%, 20%);
+		border-radius: 0.5rem;
+	}
+}
+
+.button:focus-visible,
+a:focus-visible {
+	// accessibility / keyboard navigation
+	outline: 0.2em solid currentColor;
+	outline-offset: 0.3em;
+}
+
+.gap {
+	display: flex;
+	gap: 0.3em;
+}
+
+@keyframes flip {
+	from {
+		transform: rotateY(1turn);
+	}
+	to {
+		transform: rotateY(0turn);
+	}
+}
+
+// [upstream] https://github.com/jgthms/bulma/issues/3961
+// dirty fix to make nav work between 1023-1025px viewport width
+// looks kind of broken in that range but better than being unusable (invisible).
+@include mixins.until(1025px) {
+	.navbar-menu.is-active {
+		display: block;
+	}
+}

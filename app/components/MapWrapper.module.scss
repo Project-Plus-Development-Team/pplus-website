@@ -1,0 +1,28 @@
+@use "./node_modules/bulma/sass/utilities/initial-variables.scss" as iv;
+@use "./node_modules/bulma/sass/utilities/mixins.scss";
+
+.wrapper {
+  position: relative;
+  background-color: hsl(0, 0%, 2%);
+  margin: 1rem -1rem;
+  border: 0.3em solid #29717c;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  display: flex;
+}
+
+.scroll_area {
+  writing-mode: vertical-rl;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 0.2em;
+  font-size: x-large;
+  color: hsl(0, 0%, 40%);
+  background-color: hsl(0, 0%, 7%);
+
+  @include mixins.from(iv.$desktop) {
+    display: none;
+  }
+}

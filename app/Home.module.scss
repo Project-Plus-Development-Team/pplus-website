@@ -1,0 +1,30 @@
+@use "./node_modules/bulma/sass/utilities/mixins.scss";
+
+.main {
+	display: grid;
+	grid-template-columns: 1fr max-content;
+	grid-template-rows: min-content 1fr;
+	gap: 2em 2em;
+	grid-template-areas: "text picture" "links links" "youtube youtube";
+	align-items: center;
+
+	@include mixins.mobile {
+		grid-template-columns: 1fr !important;
+		grid-template-areas: "text" "youtube" "links" "picture" !important;
+	}
+}
+
+.falco_wrapper {
+	display: flex;
+	justify-content: center;
+	grid-area: picture;
+
+	> * {
+		opacity: 0.7;
+		transition: opacity 0.3s ease;
+
+		&:hover {
+			opacity: 1;
+		}
+	}
+}

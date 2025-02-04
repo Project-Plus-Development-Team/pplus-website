@@ -1,6 +1,6 @@
 import { faGlobe, faMap, faUserAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { CSSMain } from "app/find-communities/css/CSSMain";
+import { CharacterSelectionScreen } from "app/find-communities/css/CharacterSelectionScreen";
 import { General } from "app/find-communities/general/General";
 import { getRegions } from "app/find-communities/get-regions";
 import { LazyMap } from "app/find-communities/map/LazyMap";
@@ -17,12 +17,11 @@ export const metadata: Metadata = {
 };
 
 export default async function FindCommunities() {
-	const [characterDiscordMap, regions, generalCommunities] =
-		await Promise.all([
-			getCharacterDiscordMap(),
-			getRegions(),
-			getGeneralCommunities(),
-		]);
+	const [characterDiscordMap, regions, generalCommunities] = await Promise.all([
+		getCharacterDiscordMap(),
+		getRegions(),
+		getGeneralCommunities(),
+	]);
 
 	const topoJsonString = await fs.readFile(
 		"./app/find-communities/map/world-110m.topo.json",
@@ -32,7 +31,8 @@ export default async function FindCommunities() {
 	const optimizedTopoJson = optimizeTopoJson(topoJsonString);
 
 	return (
-		<main>
+		// hidden prevents "responsive design by [...]" background corners from going over main border-radius
+		<main style={{ overflow: "hidden" }}>
 			<h1 className="title is-2">
 				<FontAwesomeIcon icon={faGlobe} className="mr-3" />
 				General communities
@@ -47,7 +47,7 @@ export default async function FindCommunities() {
 				<FontAwesomeIcon icon={faUserAlt} className="mr-3" />
 				Character communities (Discord)
 			</h1>
-			<CSSMain characterDiscordMap={characterDiscordMap} />
+			<CharacterSelectionScreen characterDiscordMap={characterDiscordMap} />
 		</main>
 	);
 }

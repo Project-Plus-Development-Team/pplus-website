@@ -10,6 +10,12 @@ import styles from "./PageHeader.module.scss";
 import { Brand } from "./components/Brand";
 import { NavLink } from "./components/NavLink";
 
+// https://github.com/vercel/next.js/discussions/36622#discussioncomment-2710539
+if (typeof document !== "undefined") {
+	// required for not-found.tsx easter egg, see https://stackoverflow.com/a/61821783/9948553
+	document.addEventListener("dragover", (event) => event.preventDefault());
+}
+
 export const PageHeader = () => {
 	const [isActive, setActive] = useState(false);
 
@@ -28,16 +34,8 @@ export const PageHeader = () => {
 			<Brand isNavbarActive={isActive} setNavbarActive={setActive} />
 			<div className={`navbar-menu ${isActive ? "is-active" : ""}`}>
 				<div className="navbar-start has-text-weight-bold">
-					<NavLink
-						onClick={() => setActive(false)}
-						text="Home"
-						href="/"
-					/>
-					<NavLink
-						onClick={() => setActive(false)}
-						text="FAQ"
-						href="/faq"
-					/>
+					<NavLink onClick={() => setActive(false)} text="Home" href="/" />
+					<NavLink onClick={() => setActive(false)} text="FAQ" href="/faq" />
 					<NavLink
 						onClick={() => setActive(false)}
 						text="Changes"
@@ -61,9 +59,7 @@ export const PageHeader = () => {
 				</div>
 				<div className="navbar-end">
 					<span className="navbar-item">
-						<div
-							className={`buttons is-centered ${styles.buttonContainer}`}
-						>
+						<div className={`buttons is-centered ${styles.buttonContainer}`}>
 							<Link
 								href="/download"
 								className={`button is-link has-text-weight-bold ${styles.expandButton}`}
@@ -78,14 +74,9 @@ export const PageHeader = () => {
 							</Link>
 							<a
 								href="/discord"
-								rel="noopener noreferrer"
 								className={`button is-discord ${styles.expandButton}`}
 							>
-								<FontAwesomeIcon
-									icon={faDiscord}
-									className="mr-2"
-									fixedWidth
-								/>
+								<FontAwesomeIcon icon={faDiscord} className="mr-2" fixedWidth />
 								<span>Discord Server</span>
 							</a>
 						</div>

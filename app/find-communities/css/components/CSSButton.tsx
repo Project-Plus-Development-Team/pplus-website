@@ -1,9 +1,8 @@
-import type { MouseEventHandler } from "react";
 import { GoodImage } from "app/components/GoodImage";
+import type { MouseEventHandler } from "react";
 import type { CSSCharacter } from "../css-types";
 
 import images from "~image-indexes/css";
-import styles from "../CSSMain.module.scss";
 
 interface Props {
 	character: CSSCharacter;
@@ -12,9 +11,7 @@ interface Props {
 
 export const CSSButton = ({ character, randomHandler }: Props) => {
 	if (!(character.img in images)) {
-		throw new Error(
-			`Couldn't find ${character.name} in generated CSS images`
-		);
+		throw new Error(`Couldn't find ${character.name} in generated CSS images`);
 	}
 
 	const image = images[character.img as keyof typeof images];
@@ -28,10 +25,9 @@ export const CSSButton = ({ character, randomHandler }: Props) => {
 			<button
 				onClick={randomHandler}
 				title="Random Discord"
-				className={styles.button}
 				style={{
 					// @ts-ignore
-					"--meta": `url(/images/generated/q9283rw8fg/css/${character.img}.webp)`,
+					"--meta": `url(/images/generated/project-wave/css/${character.img}.webp)`,
 				}}
 			>
 				{imageElement}
@@ -43,10 +39,9 @@ export const CSSButton = ({ character, randomHandler }: Props) => {
 	return (
 		<a
 			href={`https://discord.com/invite/${character.discordInviteId}`}
-			className={styles.button}
 			style={{
 				// @ts-ignore
-				"--meta": `url(/images/generated/q9283rw8fg/css/${character.img}.webp)`,
+				"--meta": `url(/images/generated/project-wave/css/${character.img}.webp)`,
 			}}
 		>
 			{imageElement}

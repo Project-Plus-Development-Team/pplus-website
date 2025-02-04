@@ -1,4 +1,19 @@
-## waffeln's destroy-all-code update version (2025-01-17):
+## 2025-02-04 easter egg and responsive character selection screen
+
+- refactor project-wave easter egg
+    - this easter egg used to use tricks like `<link>` insertion and obfuscated strings to be hard to spot when checking website source code
+    - these measures made the code more complicated than it needed to be and also went against common react and next.js practices
+    - these measures only had an effect during the time the easter egg was published but the public repository was not updated yet
+    - this update undoes most of those measures, reducing complexity, embracing standards and common practices (with next.js/react), and needs fewer lines of code
+    - the easter egg also got changed a little bit (don't check the commit details / diff if you want to find it yourself)
+- replace the current "Character communities" (CSS) responsive design with [banchouboo's](https://banchouboo.neocities.org/) implementation (thanks a lot!)
+    - first implementation by me used client-side JS to query the viewport and change the layout (very bad, fixed in previous update)
+    - second implementation by me used three react components which would get `display: visible` through media queries (better, but still needs 3x the HTML when exported)
+    - third implementation by banchouboo uses CSS grid with `grid-template-columns`, `grid-column` and `transform: translateX(...)` and i'm still about 80% sure that CSS grid is some dark magic f*ckery that i'll never understand but i'm happy that it works 🙌
+    - this new implementation doesn't need any "duplicate" HTML like before but needs a bit more CSS / SCSS which i was able to compensate by removing other CSS that had no or little impact, so bottom line the current implementation needs less code and is more lightweight
+- minor improvements like showing good error messages when env vars are missing
+
+## 2025-01-17 waffeln's destroy-all-code update version
 
 this updated is almost a full rewrite aside from the content itself.
 it's lots of housekeeping, paying off tech-debt, and making the project a lot simpler.

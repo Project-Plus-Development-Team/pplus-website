@@ -1,0 +1,102 @@
+@use "./node_modules/bulma/sass/utilities/initial-variables.scss" as iv;
+@use "./node_modules/bulma/sass/utilities/mixins.scss";
+
+@keyframes flashing-border {
+	0% {
+		border-color: red;
+	}
+	100% {
+		border-color: rgb(228, 129, 129);
+	}
+}
+
+@keyframes scale-up {
+	0% {
+		transform: scale(1);
+	}
+	10% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.container {
+	padding: 2em 0;
+	display: grid;
+	justify-self: center;
+
+	> * {
+		margin: -0.5rem 1rem;
+		transform: rotate(-45deg);
+
+		> * {
+			display: block;
+			--width: min(18vw, 80px);
+			width: var(--width) !important;
+			border-radius: 0.5em;
+			height: var(--width) !important;
+			border: calc(var(--width) * 0.05) solid hsla(210, 90%, 50%, 40%);
+			background-color: hsla(210, 100%, 20%, 40%);
+
+			&:hover {
+				border-radius: 0;
+				z-index: 10;
+
+				animation: flashing-border 0.7s alternate infinite,
+					scale-up 0.2s ease-in-out;
+			}
+		}
+	}
+
+	// responsive design solution was developed by https://banchouboo.neocities.org/ (and adapted by waffeln)
+
+	@include mixins.mobile {
+		grid-template-columns: repeat(3, 1fr);
+
+		> *:nth-child(5n - 1) {
+			grid-column: 2;
+		}
+
+		> *:nth-child(5n - 1),
+		> *:nth-child(5n) {
+			transform: translateX(calc(-50% - 1rem)) rotate(-45deg);
+		}
+	}
+
+	@include mixins.between(iv.$tablet, iv.$widescreen) {
+		grid-template-columns: repeat(6, 1fr);
+
+		> *:nth-child(11n - 4) {
+			grid-column: 2;
+		}
+
+		> *:nth-child(11n - 4),
+		> *:nth-child(11n - 3),
+		> *:nth-child(11n - 2),
+		> *:nth-child(11n - 1),
+		> *:nth-child(11n) {
+			transform: translateX(calc(-50% - 1rem)) rotate(-45deg);
+		}
+	}
+
+	@include mixins.widescreen {
+		grid-template-columns: repeat(9, 1fr);
+
+		> *:nth-child(17n - 7) {
+			grid-column: 2;
+		}
+
+		> *:nth-child(17n - 7),
+		> *:nth-child(17n - 6),
+		> *:nth-child(17n - 5),
+		> *:nth-child(17n - 4),
+		> *:nth-child(17n - 3),
+		> *:nth-child(17n - 2),
+		> *:nth-child(17n - 1),
+		> *:nth-child(17n) {
+			transform: translateX(calc(-50% - 1rem)) rotate(-45deg);
+		}
+	}
+}

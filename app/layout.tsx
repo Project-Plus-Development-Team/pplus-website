@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./fontawesome";
 import "./global-styles/global.scss";
 import { PageHeader } from "app/page-header/PageHeader";
-// import "../../public/q9283rw8fg.css";
+import "./project-wave-easter-egg.scss";
 
 export const metadata: Metadata = {
 	title: "Project+",

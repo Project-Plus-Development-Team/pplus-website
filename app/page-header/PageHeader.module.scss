@@ -69,3 +69,13 @@
 		background-color: hsla(0, 0%, 0%, 0.7) !important;
 	}
 }
+
+.spin1 {
+	transition: transform 3s ease-out;
+	transform: rotateZ(6turn);
+}
+
+.spin2 {
+	transition: transform 3s ease-out;
+	transform: rotateZ(12turn);
+}

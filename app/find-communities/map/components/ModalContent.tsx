@@ -26,7 +26,7 @@ export const PlatformButton = ({
 	href,
 	title,
 }: PlatformButtonProps) => (
-	<a className="button is-link" href={href} rel="noopener noreferrer">
+	<a className="button is-link" href={href} rel="noreferrer nofollow">
 		<FontAwesomeIcon icon={icon} fixedWidth className="mr-2" />
 		<span>
 			{title ? <A11tySwitch visible={text} screenReader={title} /> : text}
@@ -133,9 +133,7 @@ export const ModalContent = ({ region, onClose }: Props) => {
 					<br />
 					<span>
 						{" or send me an e-mail at "}
-						<a href="mailto:waffeln@mailbox.org">
-							waffeln@mailbox.org
-						</a>
+						<a href="mailto:waffeln@mailbox.org">waffeln@mailbox.org</a>
 					</span>
 				</h1>
 			</footer>

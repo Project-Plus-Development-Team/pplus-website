@@ -6,6 +6,11 @@ import { usePathname } from "next/navigation";
 import type { Dispatch, SetStateAction } from "react";
 import logo from "~generated-images/logo.webp";
 import { useEgg } from "../use-egg";
+import styles from "../PageHeader.module.scss";
+import { getMusicTrack, getVideo } from "./project-wave-utils";
+
+let music: HTMLAudioElement | null = null;
+let video: HTMLVideoElement | null;
 
 interface BrandProps {
 	isNavbarActive: boolean;
@@ -16,26 +21,68 @@ export const Brand = ({ isNavbarActive, setNavbarActive }: BrandProps) => {
 	const { egg, spin, useAltSpin } = useEgg();
 	const isHome = usePathname() === "/";
 
-	// TODO cleanup the following code maybe?
+	const toggleWave = () => {
+		if (document.documentElement.classList.contains("project-wave")) {
+			// toggling project-wave "off" might not work properly in dev due to HMR
+			video?.remove();
+			music?.pause();
+			document.documentElement.classList.remove("project-wave");
+			document.documentElement.setAttribute("style", "");
+			document.body.setAttribute("style", "");
+			return;
+		}
+
+		music = new Audio(getMusicTrack());
+		music.volume = 0.5;
+		music.play();
+
+		if (Math.random() > 0.5) {
+			video = getVideo();
+			document.body.appendChild(video);
+		} else {
+			video = null;
+		}
+
+		document.documentElement.setAttribute(
+			"style",
+			"animation: flip 1s ease-out"
+		);
+
+		setTimeout(() => {
+			document.documentElement.classList.add("project-wave");
+		}, 500);
+
+		document.documentElement.addEventListener(
+			"animationend",
+			() => {
+				if (video === null) {
+					document.body.setAttribute("style", "");
+					document.documentElement.setAttribute(
+						"style",
+						"background-image: url(/images/generated/project-wave/vaporwave-wallpaper.webp)"
+					);
+				} else {
+					document.documentElement.setAttribute("style", "");
+					document.body.setAttribute(
+						"style",
+						"background: transparent !important"
+					);
+					video.style.display = "initial";
+				}
+			},
+			{ once: true }
+		);
+	};
 
 	return (
 		<div className="navbar-brand is-marginless">
-			<div
-				className="navbar-item"
-				style={{ paddingTop: 0, paddingBottom: 0 }}
-			>
+			<div className="navbar-item" style={{ paddingTop: 0, paddingBottom: 0 }}>
 				<Link
 					href="/"
 					style={{ lineHeight: 1 }}
-					title={isHome ? "You're already on the home page" : ""}
-					onClick={() => {
-						if (isHome) {
-							egg();
-						}
-					}}
-					className={
-						"logo " + (spin ? `spin${useAltSpin ? 2 : 1}` : "")
-					}
+					title={isHome ? "You're already on the home page" : undefined}
+					onClick={isHome ? egg : undefined}
+					className={spin ? (useAltSpin ? styles.spin2 : styles.spin1) : ""}
 				>
 					<GoodImage
 						img={logo}
@@ -44,18 +91,17 @@ export const Brand = ({ isNavbarActive, setNavbarActive }: BrandProps) => {
 							width: 178,
 							height: 40,
 						}}
-					/>
-					<style jsx global>{`
-						.logo.spin1 {
-							transition: transform 3s ease-out;
-							transform: rotateZ(6turn);
-						}
+						onDrop={(event) => {
+							event.preventDefault();
 
-						.logo.spin2 {
-							transition: transform 3s ease-out;
-							transform: rotateZ(12turn);
-						}
-					`}</style>
+							if (
+								event.dataTransfer?.getData("text/plain") === "knux" &&
+								window.confirm("Toggle Project Wave?")
+							) {
+								toggleWave();
+							}
+						}}
+					/>
 				</Link>
 			</div>
 			<div

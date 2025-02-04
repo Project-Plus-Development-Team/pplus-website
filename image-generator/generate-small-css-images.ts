@@ -13,7 +13,7 @@ convertImages("css", {
 	resize: { width: 80, height: 80 },
 });
 
-convertImages("q9283rw8fg/css", {
+convertImages("project-wave/css", {
 	flop: true,
 	quality: 50,
 	resize: { width: 80, height: 80 },
@@ -31,12 +31,12 @@ convertSingleImage("smashgg-favicon.png");
 convertSingleImage("favicon.png");
 convertSingleImage("knuckles-woah.png", { quality: 80 });
 
-convertSingleImage("q9283rw8fg/project-wave-logo.png", { quality: 90 });
-convertSingleImage("q9283rw8fg/vaporwave-color-palette.png", {
+convertSingleImage("project-wave/project-wave-logo.png", { quality: 90 });
+convertSingleImage("project-wave/vaporwave-color-palette.png", {
 	resize: { height: 20 },
 	quality: 30,
 });
-convertSingleImage("q9283rw8fg/vaporwave-wallpaper.jpg", {
+convertSingleImage("project-wave/vaporwave-wallpaper.jpg", {
 	resize: { height: 1000 },
 	quality: 80,
 });

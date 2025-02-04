@@ -27,47 +27,32 @@ export default function Home() {
 				<div className="content">
 					<ul>
 						<li>
-							is a community driven patch for Project M, a game
-							modification for Brawl
+							is a community driven patch for Project M, a game modification for
+							Brawl
 						</li>
 						<li>strives to invigorate the Project M experience</li>
 						<li>further balances the roster</li>
 						<li>fixes lingering Project M 3.6 bugs</li>
 						<li>gives the entire UI a fresh coat of paint</li>
-						<li>
-							adjusts movesets to be more fun to play with and
-							against
-						</li>
+						<li>adjusts movesets to be more fun to play with and against</li>
 						<li>introduces new gameplay mechanics to Project M</li>
 						<li>
-							includes new features created by the Brawl modding
-							community
+							includes new features created by the Brawl modding community
 						</li>
 					</ul>
 				</div>
 			</div>
 
 			<div className={styles.falco_wrapper}>
-				<GoodImage
-					img={glowyFalco}
-					alt="Glowing silhuette of Falco Lombardi"
-				/>
+				<GoodImage img={glowyFalco} alt="Glowing silhuette of Falco Lombardi" />
 			</div>
 
 			<div className="box" style={{ gridArea: "links" }}>
 				<h3 className="subtitle is-2 ">Join or follow us!</h3>
 
 				<div className="is-flex is-flex-wrap-wrap gap">
-					<a
-						href="/discord"
-						className="button is-flex-grow-1"
-						rel="noopener noreferrer"
-					>
-						<FontAwesomeIcon
-							icon={faDiscord}
-							fixedWidth
-							className="mr-2"
-						/>
+					<a href="/discord" className="button is-flex-grow-1">
+						<FontAwesomeIcon icon={faDiscord} fixedWidth className="mr-2" />
 						<A11tySwitch
 							visible="Project+"
 							screenReader="Project+ Discord Server"
@@ -76,28 +61,15 @@ export default function Home() {
 					<a
 						href="https://www.reddit.com/r/ssbpm"
 						className="button is-flex-grow-1"
-						rel="noopener noreferrer"
 					>
-						<FontAwesomeIcon
-							icon={faReddit}
-							fixedWidth
-							className="mr-2"
-						/>
-						<A11tySwitch
-							visible="r/ssbpm"
-							screenReader="Project M Subreddit"
-						/>
+						<FontAwesomeIcon icon={faReddit} fixedWidth className="mr-2" />
+						<A11tySwitch visible="r/ssbpm" screenReader="Project M Subreddit" />
 					</a>
 					<a
 						href="https://twitter.com/ProjectPlusGame"
 						className="button is-flex-grow-1"
-						rel="noopener noreferrer"
 					>
-						<FontAwesomeIcon
-							icon={faTwitter}
-							fixedWidth
-							className="mr-2"
-						/>
+						<FontAwesomeIcon icon={faTwitter} fixedWidth className="mr-2" />
 						<A11tySwitch
 							visible="@ProjectPlusGame"
 							screenReader="Project+ on Twitter"
@@ -106,13 +78,8 @@ export default function Home() {
 					<a
 						href="https://www.ssbwiki.com/Project%2B"
 						className="button is-flex-grow-1"
-						rel="noopener noreferrer"
 					>
-						<FontAwesomeIcon
-							icon={faBook}
-							fixedWidth
-							className="mr-2"
-						/>
+						<FontAwesomeIcon icon={faBook} fixedWidth className="mr-2" />
 						<A11tySwitch
 							visible="SmashWiki"
 							screenReader="Project+ SmashWiki entry"
@@ -121,13 +88,8 @@ export default function Home() {
 					<a
 						href="https://github.com/Project-Plus-Development-Team/pplus-website"
 						className="button is-flex-grow-1"
-						rel="noopener noreferrer"
 					>
-						<FontAwesomeIcon
-							icon={faGithub}
-							fixedWidth
-							className="mr-2"
-						/>
+						<FontAwesomeIcon icon={faGithub} fixedWidth className="mr-2" />
 						<A11tySwitch
 							visible="Website source"
 							screenReader="Website source code on GitHub"

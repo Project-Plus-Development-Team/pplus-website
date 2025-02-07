@@ -32,10 +32,9 @@ const getYouTubeChannelUrl = (channelId: string, urlIsSlug: boolean) => {
 
 export const getRegions = async (): Promise<Region[]> => {
 	const [headerRow, ...rows] = await getSpreadsheet("region-markers");
-	const rawObjects = convertSheetToObjects<SheetRegion>(
-		headerRow,
-		rows
-	).filter((t) => t.name.trim() !== "");
+	const rawObjects = convertSheetToObjects<SheetRegion>(headerRow, rows).filter(
+		(t) => t.name.trim() !== ""
+	);
 
 	return rawObjects.map<Region>((raw) => {
 		const region: Region = {
@@ -50,6 +49,7 @@ export const getRegions = async (): Promise<Region[]> => {
 				facebookGroupId: raw.facebookGroupId,
 				twitchName: raw.twitchName,
 				twitterHandle: raw.twitterHandle,
+				website: raw.website,
 			},
 			showThreshold: mapShowThreshold(raw.showThreshold),
 		};

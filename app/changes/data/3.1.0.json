@@ -272,7 +272,7 @@
           "title": "Down Special (Dimensional Cape)",
           "changes": [
             "Now has three different knockback levels instead of two",
-			"Frames 6-18 (instant cape): 14%/20 BKB/109 KBG",
+			"Frames 6-18 (instant cape): 14%/18 BKB/109 KBG",
 			"Frames 19-32 (Mid Cape): 14%/20 BKB/114 KBG (same as previous instant cape)",
 			"Frames 33+ (Full Cape): 16%/50 BKB/100 KBG (unchanged)",
 			"Comment: This change is meant to nerf the power of instant cape, which is an extremely versatile and accessible finisher, recovery tool, and out of shield option, while rewarding the skill expression of landing mid capes." 

@@ -1,0 +1,997 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1ZlU8P_qqcXmZ-blbPjzxG79chPKJW4v0rasWfieD4AQ/edit"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1Nj72z6X4VJpnpNWO9_UJR_bU-hH0eag-lrP_77oaNTo/"
+    }
+  },
+  "changes": [
+    {
+      "name": "Captain Falcon",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Weight 104 > 99",
+			"Comment: This is to weaken Falcon’s survivability a bit, as well as make him slightly easier to combo."
+			]
+        }
+      ]
+    },
+    {
+      "name": "Charizard",
+      "element": {},
+      "moves": [
+        {
+          "title": "Down Special (Glide)",
+          "changes": [
+            {
+              "title": "Ledge grab box",
+              "changes": [
+                "Width: 10.2 > 11",
+				"Height: 9.6 > 12",
+				"Comment: The change to this grabbox hurt the muscle memory for a few techniques, so we’ve restored most of its previous size"
+                ]
+			}
+		  ]
+        }
+      ]
+    },
+    {
+      "name": "Fox",
+      "element": {},
+      "moves": [
+        {
+          "title": "Jab 1",
+          "changes": [
+            "Adjusted animation and hitboxes to closer match Melee",
+			"Comment: Jab’s hitbox was previously negatively disjointed, but now matches Melee’s version of the hitbox as closely as possible."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ganondorf",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed issue where Flame Choke could land inappropriately when making contact with a stage while sliding off"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giga Bowser",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Restored item mechanics introduced in a previous patch"
+          ]
+		}
+      ]
+    },
+    {
+      "name": "Ice Climbers",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Nana fthrow range reverted to v2.X (15 > 30)",
+			"Comment: This nerf was a lot on top of the other nerfs from v3.0, so we’re reverting it. We’ll be keeping an eye on the Ice Climbers to make sure they are still strong, but not overcentralizing."
+          ]
+        },
+		{
+          "title": "Up Special (Belay)",
+          "changes": [
+            "Popo can now interrupt Nana’s solo up special with his own to do a synced up special",
+			"Comment: Previously, Nana could mess up recoveries by Up B-ing on her own right before the player did theirs."
+          ]
+        },
+		{
+          "title": "Other",
+          "changes": [
+            "Z-sync frame window 1 > 3",
+			"Comment: This change was originally implemented in P+ 2.0, but did not work properly."
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Ivysaur",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Vine Whip)",
+          "changes": [
+            "Will now keep her jump after using Up Special",
+			"Comment: The tether changes in v3.0 hit Ivysaur’s recovery quite hard, so we’re normalizing the ability to keep her jump after a tether attempt between her and Zero Suit Samus."
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Jigglypuff",
+      "element": {},
+      "moves": [
+        {
+          "title": "Neutral Special (Rollout)",
+          "changes": [
+            "Can now drift out of the recoil animation after connecting with rollout (landing animation is not edge-cancellable)"
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Kirby",
+      "element": {},
+      "moves": [
+        {
+          "title": "Grab",
+          "changes": [
+            {
+              "title": "Outer hitbox",
+              "changes": [
+                "Z-offset 10.2 > 9.8",
+				"Size 3.91 > 3.6",
+				"Comment: With how powerful Kirby’s confirms off grab are, matching his grabbox closer to the animation balances his grab game out a bit more."
+                ]
+			}
+		  ]
+        }
+      ]
+    },
+	{
+      "name": "Knuckles",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed bug where Knuckles could wall jump out of his inactionable special fall animation after up special"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lucario",
+      "element": {},
+      "moves": [
+        {
+          "title": "Forward Air (outer hitbox)",
+          "changes": [
+            {
+              "title": "Frames 4-9",
+              "changes": [
+                "Size 3.75 > 3.25",
+				"Y-offset -2.5 > -2.0"
+                ]
+			},
+			{
+              "title": "Frames 10-12",
+              "changes": [
+                "Size 3.25 > 3.0",
+				"Y-offset -2.5 > -2.0",
+				"Comment: This move was very disjointed previously, so its hitbox has been shrunk and moved in slightly to decrease its range."
+                ]
+			}
+		  ]
+		},
+		{
+		  "title": "Down Air",
+          "changes": [
+			"Modified to grant less vertical stall after first use per airtime",
+			"Comment: This brings the move in line with other aerial stalls such as Ivysaur down air."
+          ]
+		},
+		{
+		  "title": "Side Special (Force Palm)",
+          "changes": [
+            "Aerial variant KBG 183 > 160",
+			"Comment: This move could directly kill at very low percents previously, so we’ve lowered its growth to make true kills happen later."
+          ]
+		},
+		{
+		  "title": "Up Special (Extreme Speed)",
+          "changes": [
+            "Repeating hitboxes WDSK/KBG 16/100 > 116/28",
+			"Comment: If you fell out of the multihits of this move, you’d previously be flung under the stage. These value adjustments should prevent that from happening while still allowing Lucario to carry his opponents with it for further combos out of a cancel."
+          ]
+		},
+		{
+		  "title": "Bug Fixes",
+          "changes": [
+            "Fixed bug that made Lucario inappropriately get tilts from a C-Stick input",
+			"Fixed bug where Lucario did not regain the ability to use Down Special after being hit with certain command grabs"
+          ]
+		}
+      ]
+    },
+	{
+      "name": "Lucas",
+      "element": {},
+      "moves": [
+        {
+          "title": "Grab (body hitbox)",
+          "changes": [
+            "Size 3.449 > 4.67",
+			"Y-offset 5.25 > 5.75",
+			"Z-offset 7.41 > 4.75",
+			"Comment: These adjustments should make the inner hits of Lucas’ grab royzone less, since his animation has him lean quite far forwards."
+		  ]
+		},
+		{
+		  "title": "Up Special (PK Thunder)",
+          "changes": [
+			"Linking hits WDSK 50/KBG 130 > WDSK 134/KBG 60",
+			"Comment: Same rationale as Lucario Up Special multihit change."
+          ]
+		},
+		{
+		  "title": "Side Special (PK Freeze)",
+          "changes": [
+            "Damage 5 > 7",
+			"Hitlag multiplier 1.75 > 1.5 to compensate",
+			"Knockback compensated 45 BKB/29 KBG > 46 BKB/22 KBG",
+			"SDI multiplier 1.0 > 0.8",
+			"Comment: This change slightly reduces the efficacy of SDI for escaping combos while retaining the defender's ability to ASDI down on PK Freeze at all game-relevant percents."
+          ]
+		},
+		{
+		  "title": "Down Special (PSI Magnet)",
+          "changes": [
+            "GFX shrunk to better match hitbox",
+			"Some GFX elements removed to promote visual clarity",
+			"Initial hit outer hitbox angle 80 > 512 (autolink inwards)",
+			"Comment: This will pull opponents in on-hit instead of pushing them away, preventing scenarios where hitting the initial hit of magnet would put the opponent out of range of the release hit."
+          ]
+		},
+		{
+		  "title": "Bug Fixes",
+          "changes": [
+            "Fixed interpolation error when transitioning from outer hit to spike on back air hitboxes",
+			"Comment: This issue was due to his hitboxes swapping priority when the spike portion begins."
+          ]
+		}
+      ]
+    },
+	{
+      "name": "Meta Knight",
+      "element": {},
+      "moves": [
+        {
+          "title": "Down Special (Dimensional Cape)",
+          "changes": [
+            "Now has three different knockback levels instead of two",
+			"Frames 6-18 (instant cape): 14%/20 BKB/109 KBG",
+			"Frames 19-32 (Mid Cape): 14%/20 BKB/114 KBG (same as previous instant cape)",
+			"Frames 33+ (Full Cape): 16%/50 BKB/100 KBG (unchanged)",
+			"Comment: This change is meant to nerf the power of instant cape, which is an extremely versatile and accessible finisher, recovery tool, and out of shield option, while rewarding the skill expression of landing mid capes." 
+          ]
+        },
+		{
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed issue where the center sword hit of Meta Knight up smash would not hit aerial opponents"
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Mewtwo",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Updated Mewtwo hurtbox shapes on torso, head and tail to better represent the character and for consistency with the rest of the cast"
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Olimar",
+      "element": {},
+      "moves": [
+        {
+          "title": "Forward Air",
+          "changes": [
+            {
+              "title": "Yellow",
+              "changes": [
+                "Leaf KBG 125 > 115",
+				"Bud KBG  116 > 108",
+				"Flower KBG 108 > 102",
+				"Comment: Knockback growth has been decreased on this move to prevent it from killing as early, incentivizing use of other Pikmin types." 
+                ]
+			}
+		  ]
+        },
+		{
+          "title": "Back Air",
+          "changes": [
+            {
+              "title": "Yellow",
+              "changes": [
+                "Leaf KBG 115 > 110",
+				"Bud KBG  108 > 105",
+				"Flower KBG 101 > 99",
+				"Comment: Knockback growth has been decreased on this move to prevent it from killing as early, incentivizing use of other Pikmin types." 
+                ]
+			},
+			{
+              "title": "Blue",
+              "changes": [
+                "Leaf KBG 108 > 101",
+				"Bud KBG  95 > 98",
+				"Flower KBG 90 > 96",
+				"Comment: This move had inverse knockback scaling from leaf to flower (leaf was stronger), so KBG has been adjusted to have them grow correctly." 
+                ]
+			},
+			{
+              "title": "Red",
+              "changes": [
+                "Leaf KBG 102 > 101",
+				"Flower KBG 82 > 83",
+				"Comment: This move had inverse knockback scaling from leaf to flower (leaf was stronger), so KBG has been adjusted to have them grow correctly." 
+                ]
+			}
+		  ]
+        },
+		{
+          "title": "Down Smash",
+          "changes": [
+            {
+              "title": "Red",
+              "changes": [
+                "Red Leaf: KBG 87 > 92",
+				"Red Bud: KBG 77 > 84",
+				"Red Flower: KBG 69 > 77"
+                ]
+			},
+			{
+              "title": "Blue",
+              "changes": [
+                "Blue Bud: KBG 87 > 88",
+				"Blue Flower: KBG 82 > 84"
+                ]
+			},
+			{
+              "title": "Yellow/White",
+              "changes": [
+				"Yellow/White Leaf: KBG 113 > 90",
+				"Yellow/White Bud: KBG 106 > 85",
+				"Yellow/White Flower: KBG 100 > 80",
+				"Comment: Down Smash’s stats had the Pikmin’s knockback ordered Purple > Yellow/White > Red > Blue, when all other moves use Purple > Red > Blue > Yellow/White. These changes match down smash to all other moves."
+                ]
+			},
+			{
+              "title": "Purple",
+              "changes": [
+                "Active frames matched to all other Pikmin (6 > 9)",
+				"Comment: This appeared to be an unintentional oversight for purple Pikmin, as they’d lose their hitbox while still moving, so they have been matched to the other Pikmin."
+                ]
+			}
+		  ]
+        }
+      ]
+    },
+	{
+      "name": "Samus",
+      "element": {},
+      "moves": [
+        {
+          "title": "Knockdown Getup Attack",
+          "changes": [
+            "Adjusted second hit knockback stats to match every other getup attack in the game"
+		  ]
+		},
+		{
+		  "title": "Standing Grab",
+          "changes": [
+			"Range increased; animation modified to match",
+			"Last active frame 31 > 33",
+			"Comment: Samus previously had one of the longest grab startups alongside an underwhelming range. We’ve buffed the range slightly to make grab a more useful tool in neutral."
+          ]
+		},
+		{
+		  "title": "Pivot Grab",
+          "changes": [
+			"Range increased; animation modified to match",
+			"Comment: Samus previously had one of the longest grab startups alongside an underwhelming range. We’ve buffed the range slightly to make grab a more useful tool in neutral."
+          ]
+		},
+		{
+		  "title": "Z-Tether",
+          "changes": [
+            "Vertical ledge grab box increased 50 > 55",
+			"Horizontal ledge grab box increased 50 > 55",
+			"Comment: This is to prevent scenarios where the tether hitbox would hit opponents on ledge, but not reach the ledge itself to grab it.",
+			"Tether ledgehop on edgehog forced horizontal momentum 0.45 > 0"
+          ]
+		}
+      ]
+    },
+	{
+      "name": "Sheik",
+      "element": {},
+      "moves": [
+        {
+          "title": "Rapid Jab",
+          "changes": [
+            "All SDI multipliers 0.7 > 1",
+			"IASA 10 > 13",
+			"Comment: This change is intended to slightly nerf Sheik’s close-quarters game, as the combination of rapid jab’s SDI multipliers and low IASA made it an extremely effective get-out-of-jail-free card against otherwise dangerous ASDI-down counterplay."
+          ]
+        },
+		{
+          "title": "Attributes",
+          "changes": [
+            "Sheik’s hip hurtbox restored to Brawl’s proportions instead of being left sticking out the side of the character",
+			"Comment: Like Olimar and ROB before her, an old version of BrawlBox misrepresented her vanilla hurtbox, prompting the original change."
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Snake",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Smash",
+          "changes": [
+            "Startup hitboxes no longer connect against aerial opponents",
+			"Comment: This reverts the move’s behavior to Brawl/PM 3.6, as making it hit aerial opponents proved to be an oppressive neutral opener and combo tool for Snake."
+          ]
+        },
+		{
+          "title": "Forward Tilt (first hit)",
+          "changes": [
+            "WDSK 25 > 30, BKB 50 > 55",
+			"IASA 27 > 31",
+			"Comment: This change is experimental and intended to give opponents a little more time to react to being hit by ftilt1, making it less likely to guarantee a missed tech -> jab reset -> tranq combo."
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Squirtle",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Restored IASA on RunBrake that was accidentally removed in a very early P+ version"
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Wolf",
+      "element": {},
+      "moves": [
+        {
+          "title": "Back Throw",
+          "changes": [
+            "Damage 8 > 6",
+			"IASA 61 > 49",
+			"BKB 80 > 65",
+			"Animation length and timings adjusted",
+			"Comment: This should make back throw more usable as a tech chase tool (and combo tool on bad DI), while not being as centralizing as 2.X back throw."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yoshi",
+      "element": {},
+      "moves": [
+        {
+          "title": "Dash Grab",
+          "changes": [
+            "IASA 42 > 50",
+			"Comment: Dash grab became a very strong option in neutral, with notable rewards out of it with both up throw and down throw, so the IASA has been adjusted to a middle ground of its previous iteration and 3.6’s 63."
+          ]
+        },
+		{
+          "title": "Pivot Grab",
+          "changes": [
+            "IASA 41 > 46",
+			"Active frames 10-20 > 10-18 (frames 10-11 remain identical)",
+			"Comment: Nerfing dash grab alone could well result in more reliance on pivot grab, which is equally strong but more defensively-oriented. This change should balance out the impact on the two grabs."
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Zero Suit Samus",
+      "element": {},
+      "moves": [
+        {
+          "title": "Back Air",
+          "changes": [
+            "Outer hitbox size 3 > 3.25",
+			"Comment: The size nerf to this hitbox made it much more difficult to land, as well as not extend past the model of her foot, so its size has been increased slightly."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+		{
+          "title": "Battlefield",
+          "changes": [
+            {
+              "title": "Default and all reskins",
+              "changes": [
+                "P3 and P4 spawn points moved to be neutral spawn positions in doubles"
+              ]
+            },
+			{
+              "title": "(R+Start alt) Duel Zone",
+              "changes": [
+                "Appearance updated with coloring inspired by the N64 stage"
+              ]
+            }
+          ]
+        },
+		{
+		  "title": "Big Blue",
+          "changes": [
+			{
+              "title": "(L-alt) Mute City",
+              "changes": [
+                "Vehicle damage now matches Melee (changed 20% > 10%)",
+				"Fixed character shadows not being visible"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bowser’s Castle",
+          "changes": [
+            {
+              "title": "Default, L-alt, and R+Start alt",
+              "changes": [
+                "Now feature ambient sound effects, and splash sfx for the background Podoboo"
+              ]
+            },
+			{
+			  "title": "(L-alt) Thwomp Bowser’s Castle",
+              "changes": [
+                "Updated appearance of Thwomps and side bricks",
+				"Thwomps now activate by character proximity and have new visual effects and audio"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dead Line",
+          "changes": [
+            {
+              "title": "Default and R-alt",
+              "changes": [
+                "Updated stage textures and character lighting",
+				"Fixed flickering on background pillars"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Distant Planet",
+          "changes": [
+            {
+              "title": "(R-alt) Valley of Repose (NEW!)",
+              "changes": [
+                "The starting area of Pikmin 2 has been added as a new 1:1 reskin"
+              ]
+            },
+			 {
+              "title": "(Z-alt) Distant Cave Secret",
+              "changes": [
+                "Moved from R-alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dream Land",
+          "changes": [
+            {
+              "title": "Default and all reskins",
+              "changes": [
+                "P3 and P4 spawn points moved to be neutral spawn positions in doubles"
+              ]
+            },
+			{
+              "title": "(Z-alt) Autumn Dream Land",
+              "changes": [
+                "Appearance updated"
+              ]
+            },
+			{
+              "title": "(R+Start alt) N64 Dream Land",
+              "changes": [
+                "File size optimized"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Fountain of Dreams",
+          "changes": [
+            {
+              "title": "Default (Hazards on)",
+              "changes": [
+                "Revamped mechanical and aesthetic properties of the stage",
+				"Movement of platforms is now randomized, inspired by their patterns in Melee. They are also less prone to reaching as low as in previous versions of the stage",
+				"Platforms will not rise out of the water if a player is in close proximity",
+				"Platforms use rippling visual effects when rising out of the water",
+				"Ambient sound effects added",
+				"Background star animations updated",
+				"When items are enabled, they may spawn from a falling star",
+				"Hazards off variant unchanged",
+				"Hazard toggle compatibility added to all reskins"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Final Destination",
+          "changes": [
+            {
+              "title": "Default and R+Start alt (Rainbow FD)",
+              "changes": [
+                "Both stages are now loaded from a single stage file. This merge loads the stage color from a substage parameter, allowing for further customization."
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Frigate Husk",
+          "changes": [
+            {
+              "title": "Default and all reskins",
+              "changes": [
+                "Adjusted camera horizontal limits to match that of other stages"
+              ]
+            },
+			{
+              "title": "(R-alt) Phendrana Husk (NEW!)",
+              "changes": [
+                "The iconic frozen region of Phendrana from Metroid Prime appears as a Frigate Husk 1:1 reskin with custom audio and visual effects"
+              ]
+            },
+			{
+              "title": "(Z-alt) Drowned Frigate",
+              "changes": [
+                "Moved from R-alt"
+              ]
+            },
+			{
+              "title": "(L-alt) PM Frigate Orpheon",
+              "changes": [
+                "Moved from Z-alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Golden Temple",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Fixed grass surface having higher character traction than other surfaces"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Hanenbow",
+          "changes": [
+            {
+              "title": "(R-alt) Hanenbow Yoshi’s Island 1:1 (NEW!)",
+              "changes": [
+                "Added as a replacement for the Fountain of Dreams reskin, which was incompatible with new stage functionality"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Metal Cavern",
+          "changes": [
+            {
+              "title": "Default and Z-alt",
+              "changes": [
+                "Using new substage parameters, both the pressed and unpressed Metal Cap Switch forms are both loaded from a single stage file"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "PictoChat",
+          "changes": [
+            {
+              "title": "(Z-alt) PictoChat Medley (NEW!)",
+              "changes": [
+                "Cycles between 6 platform layouts inspired by competitive stages"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Poke Floats",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Removed duplicate models"
+              ]
+            },
+			{
+              "title": "(L+Start alt) Frozen Pokemon Stadium 1 (NEW!)",
+              "changes": [
+                "Added as new hidden alt"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Smashville",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Projectiles now pierce the balloon instead of being terminated by it; also applies to all 1:1s"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Sky Sanctuary Zone",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Updated appearance of the red teleport orb to be visible on all sides"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Spear Pillar",
+          "changes": [
+            {
+              "title": "(L-alt) Rocket Hideout",
+              "changes": [
+                "Mewtwo’s discarded armor will once again have a chance to appear, using a substage parameter"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Temple of Time",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Main stage model made more round"
+              ]
+            },
+            {
+              "title": "(R-alt) OoT Temple of Time",
+              "changes": [
+                "Adjusted behavior of special background animations",
+				"Fixed gaps on stage carpet"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Yoshi’s Story",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Added visual-only Propeller Shy Guys to the background"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Fixed minor knockback stacking code reversion (mostly relevant in doubles matches)",
+            "Fixed issue where some C-Stick angles could occasionally produce tilt inputs when using Smash stick",
+            "Characters can now crawl away from edges without instantly falling off",
+			"Link and Toon Link arrows now experience hitlag",
+			"Toon Link’s boomerang no longer sometimes decides to leave in the direction thrown",
+			"Fixed bug where Ivysaur and Zero Suit Samus could corrupt their positional data when attempting to tether to ledge (commonly seen as characters hanging above the ledge momentarily)",
+			"Addressed issue where moves that were configured to clank but not rebound still rebounded anyway, as this was an error in Brawl. It now matches how Melee and more recent Super Smash Bros. games function.",
+			"Fixed bug where moves involving tethers shrunk permanently in a match after reeling in at the ledge with a tether recovery",
+			"Corrected collision and blast zone data for numerous stage reskins",
+			"Updated item generation data in stages that were previously missing it (Bowser’s Castle R-alt, Temple of Time L+Start alt)",
+			"Bowser’s Castle collisions modified for wrapping blast zone behavior in Stamina matches",
+			"Double Cherry clones will now have the same traction as their originals",
+			"Double Cherry no longer makes the base character cloned stop blinking when the clone disappears",
+			"Projectiles and items are no longer affected by the flag that disallows players from clinging to certain walls",
+			"Custom reflectors, as well as powershielding, will now work properly when playing Subspace",
+			"Addressed issue where Multi-Man Brawl was unbeatable and would softlock that was introduced with Double Cherry mechanics in a prior patch",
+			"Code menu character swapping will now function properly in Subspace",
+			"Wild Mode and other speed modifiers now affect water, wind, conveyor belts, and other unorthodox motion animations"
+			]
+        },
+        {
+          "title": "Costumes",
+          "changes": [
+            "Fixed bug where the mouth on Captain Falcon’s gold recolor was white",
+            "Fixed a seam on the headband of Fighter Kirby",
+			"Fixed a seam on the render of Blue Sega Kid Sonic",
+			"Compressed some costumes files that were previously not compressed in error",
+			"Fixed broken metal materials on certain costumes that had them improperly configured",
+			"Blue Yoshi given updated Final Smash eyes",
+			"Cyan Knuckles model updated to match his other costumes",
+			"Red Roy cape texture is no longer reduced in size",
+			"Standardized Roy’s shadow materials",
+			"All clear mode models optimized with lower file sizes",
+			"Players using the Wii Remote + Nunchuck can now access hidden costumes with R and C"
+          ]
+        },
+		{
+          "title": "Aesthetics",
+          "changes": [
+            "Knuckles’ forward smash no longer produces splash effects on the fist when standing in shallow water",
+			"Fixed a Brawl issue where Kirby would not move his eyes for the rest of the match if he copied Falco, Donkey Kong, Olimar, Snake, or Jigglypuff, and then lost the copy ability",
+			"Eggs produced by Kirby with a Yoshi copy ability no longer have issues with eggshell particle effects",
+			"Fox’s win animations will now show his scouter, and won’t have it disappear mid animation (this is a Brawl animation bug)",
+			"Cleaned up Wolf's dash and run animations so his head and arms don't warp from one distinct pose to another out of dash",
+			"Fixed issue where Knuckles’ gloves did not attach to his arms during forward air",
+			"Sega Kid Sonic’s grey costume given correct f-smash effect trail color",
+			"Fixed issue where character effects would not properly render when being star KO'd or screen KO'd on flat stages",
+			"Fixed the main menu background being frozen after playing in Special Versus",
+			"Empty player port user interfaces now disappear when a character is swapped outside of All-Star Vs. by the Code Menu, All-Star or Training instead of being stuck visible"
+          ]
+        },
+		{
+          "title": "Other",
+          "changes": [
+            "Custom sound IDs no longer crash the game if the soundbank is not present",
+            "Peach’s final smash audio fanfare now sounds like it did in Brawl instead of being messed up due to an error",
+			"Fixed issue where, after shielding, a torso hurtbox would no longer reflect projectiles if done while holding a Franklin Badge",
+            "Fixed bug where party-themed crates would rarely cause the game to crash",
+            "Fox has the correct credits song play in All-Star mode",
+			"Addressed a crash related to file-loading misinterpreting file size"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+      	{
+          "title": "Gameplay Mechanics",
+          "changes": [
+            "New Team Battle option added: Random Teams! New team pairs will be shuffled at random after every game",
+            "Players on the same team now spawn on the same side of the stage",
+			"CPUs can now be set to level 0, “Ally”. Having an Ally as a teammate will allow players to control their own character and the CPU character simultaneously.",
+            "A new mode has been added to Random Angle in the Code Menu: Static Random Angle! This will randomize angles for moves, then keep them that way for the entire match to allow for strategized setups.",
+			"Aura and blue fire now thaw frozen opponents",
+			"Characters are less prone to falling off the stage when being pushed while disengaging shield",
+			"Characters entering the teetering state will be prioritized over those already teetering, as in Melee, rather than being pushed away from entering it",
+			"Gulpin and boss characters now restore a jump when grabbing someone from mid-air like other command grabs do",
+			"Terrains with low levels of friction (i.e. ice) make characters appear to have less grip when they walk and run, similar to how they are affected in Melee.",
+			"Similar to other command grabs, Mewtwo’s Confusion now hits Subspace enemies and targets",
+			"Mewtwo’s Disable has been re-coded to be a proper article; functionality on-hit unaffected",
+			"Mewtwo, Roy & Knuckles now appear in the Character Roll Call shooting minigame at the end of Classic and All-Star",
+			"Made minor adjustments to Event Mode"
+          ]
+        },
+		{
+          "title": "Costumes",
+          "changes": [
+            "Retro Captain Falcon’s revamp races in! The redesign has proportions closer to the default Captain Falcon, along with a design more faithful to the original artwork",
+            "Pikachu Libre has returned to the revamped model as a hidden costume. Now features modelled mask, and reflective suit materials",
+            "Olimar has updated hidden costumes for Louie and the President",
+			"Snake optimizations from a previous patch ported to his hidden costumes",
+			"Materials adjusted on Jet Set Sonic to improve spinball texture seams",
+			"All standard Pikachu costumes have transparent fur effects adjusted to be consistent between all costumes",
+			"Fire Peach effects toned down to be closer in size to default effects",
+			"All Peach costumes have updated metal materials",
+			"All Kirby copy abilities now have shadows. Previously, clone engine characters lacked them for their hats.",
+			"All Kirby hat abilities are now compressed, resulting in a massive file size decrease",
+			"Some costumes have been updated to allow them to be compressed further"
+          ]
+        },
+		{
+          "title": "Music",
+          "changes": [
+            "Replaced Float Islands track with City Trial cover by TheNobleDemon",
+			"Vampire Killer has been updated with a new remix by niwana"
+          ]
+        },
+		{
+          "title": "User Interface",
+          "changes": [
+            {
+              "title": "Random stage select’s implementation has been updated!",
+              "changes": [
+                "Presets will now adjust the stage select screen to match the given preset, allowing for easier stage selection for tournament rulesets",
+				"It is now possible to lower the amount of stages visible on a page below 10",
+				"Alternate stage select screen layouts are now stored directly in the .rss preset files, now editable with BrawlInstaller!"
+              ]
+            },
+			{
+            
+              "title": "Stock icons are now sourced from a single location",
+              "changes": [
+                "This allows for easier customization as well as their utilization in Classic and Event Matches.",
+				"Using a texture animation to setup icons is no longer necessary"
+				]
+            },
+            "Updated in-battle player cursor to be more situationally dynamic during 1v1s and FFAs",
+			"Updated main menu to avoid flickering of some icons",
+			"Zelda, Metroid, and Gyromite HD series icons adjusted to match their SD counterparts",
+			{
+            
+              "title": "When starting up the game. Hold the following buttons on a GameCube or Wii controller during the boot up screen to change where the game launches to in that session:",
+              "changes": [
+                "Hold L/R (GC/CC) or R/B (Wii)  to go to Training Mode",
+				"Hold Start (GC) or + (Wii) to go to the Title Screen",
+				"Hold Z (GC), ZL/ZR (CC) or C/- (Wii) to go to the Replay Menu"
+				]
+            }
+          ]
+        },
+		{
+          "title": "Other",
+          "changes": [
+            {
+            
+              "title": "Camera speed has been adjusted to shift and zoom in a less erratic manner",
+              "changes": [
+                "A common complaint about the camera in Project M is that it is very twitchy. This is because it is Brawl’s camera moving at twice the normal calculation rate for all camera behavior operations besides screenshake. Zoom-in, zoom-out and refocus behaviors have been adjusted to counteract this speed change in order to provide a smoother experience that doesn’t feel like it is constantly warping about between different zoom levels."
+				]
+            },
+            {
+            
+              "title": "Co-Op All-Star, Home Run Contest, Boss Battles and Multi-Man now make the co-op team record show the default costume instead of the costume cleared with",
+              "changes": [
+                "This is to prevent an issue where added costume slots were not comprehended by records within Brawl. While the softlock could be reversed by deleting only the 1-P records, it was seen as for the best if any records applied to the save file did not cause issues within the base game. If a custom save file is possible in the future, this will be looked into for reversing back to the previous behavior within Brawl."
+				]
+            },
+			"Bowser’s walk and crawl will shake the screen less than previously",
+			"Slightly reduced intensity of overlay on Dedede’s grounded up special startup and dash attack to be more consistent with that of armored attacks on Squirtle and Bowser",
+			"Rev-up noise added to the beginning of ROB’s final smash",
+			"Slightly modified Knuckles neutral special visual effects",
+			"Appearance of the Knuckles trophy adjusted to be more accurate to his in-game appearance",
+			"Normalized Wario-Man costume IDs for easier build customization",
+			"The boot.elf file for hackless loading is now located in the “apps/projplus/” folder instead of the root directory",
+			"Removed duplicate textures from some stages",
+			"All stage files use an optimized shadow texture for lower file size. Files that are otherwise unchanged are not included in the changed files folder, as this only affects file compression",
+			"Increased stability in multiple codes",
+			"Updated version number to v3.1.0 build-wide"
+          ]
+        }
+      ]
+    }
+  ]
+}

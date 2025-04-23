@@ -101,7 +101,7 @@
           "title": "Other",
           "changes": [
             "Z-sync frame window 1 > 3",
-			"Comment: This change was originally implemented in P+ 2.0, but did not work properly."
+			"Comment: This change was originally implemented in P+ 2.0, but did not work fully after further P+ updates."
           ]
         }
       ]

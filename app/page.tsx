@@ -2,7 +2,7 @@ import {
 	faDiscord,
 	faGithub,
 	faReddit,
-	faTwitter,
+	faBluesky,
 } from "@fortawesome/free-brands-svg-icons";
 import { faBook, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -66,13 +66,13 @@ export default function Home() {
 						<A11tySwitch visible="r/ssbpm" screenReader="Project M Subreddit" />
 					</a>
 					<a
-						href="https://twitter.com/ProjectPlusGame"
+						href="https://bsky.app/profile/projectplusgame.com"
 						className="button is-flex-grow-1"
 					>
-						<FontAwesomeIcon icon={faTwitter} fixedWidth className="mr-2" />
+						<FontAwesomeIcon icon={faBluesky} fixedWidth className="mr-2" />
 						<A11tySwitch
-							visible="@ProjectPlusGame"
-							screenReader="Project+ on Twitter"
+							visible="@ProjectPlusGame.com"
+							screenReader="Project+ on Bluesky"
 						/>
 					</a>
 					<a

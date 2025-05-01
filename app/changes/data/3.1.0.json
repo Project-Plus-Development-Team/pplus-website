@@ -290,7 +290,13 @@
       "name": "Mewtwo",
       "element": {},
       "moves": [
-        {
+         {
+          "title": "Down Special (Disable)",
+          "changes": [
+            "Disable has been re-coded to be a proper article; can now be powershielded and reflected like other projectiles can"
+          ]
+        },
+		{
           "title": "Attributes",
           "changes": [
             "Updated Mewtwo hurtbox shapes on torso, head and tail to better represent the character and for consistency with the rest of the cast"
@@ -390,6 +396,12 @@
       "element": {},
       "moves": [
         {
+          "title": "Down Special (Bomb)",
+          "changes": [
+            "Implemented Melee mechanic where Down Special comes out faster while in true crouch and while in grounded ball form"
+		  ]
+		},
+		{
           "title": "Knockdown Getup Attack",
           "changes": [
             "Adjusted second hit knockback stats to match every other getup attack in the game"
@@ -900,7 +912,6 @@
 			"Gulpin and boss characters now restore a jump when grabbing someone from mid-air like other command grabs do",
 			"Terrains with low levels of friction (i.e. ice) make characters appear to have less grip when they walk and run, similar to how they are affected in Melee.",
 			"Similar to other command grabs, Mewtwo’s Confusion now hits Subspace enemies and targets",
-			"Mewtwo’s Disable has been re-coded to be a proper article; functionality on-hit unaffected",
 			"Mewtwo, Roy & Knuckles now appear in the Character Roll Call shooting minigame at the end of Classic and All-Star",
 			"Made minor adjustments to Event Mode"
           ]

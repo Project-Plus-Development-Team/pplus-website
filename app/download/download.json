@@ -2,43 +2,47 @@
   {
     "Offline / Wii": {
       "icon": "fas fa-sd-card",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.0/Project+.v3.1.0.Wii.zip"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.1/Project+.v3.1.1.Wii.zip"
     },
     "Wii Lite (For 2 GB Cards)": {
       "icon": "fas fa-sd-card",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.0/Project+.v3.1.0.Wii.Lite.zip"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.1/Project+.v3.1.1.Wii.Lite.zip"
     },
     "Modder's Pack": {
         "icon": "fas fa-box-open",
-        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.0/Project+.v3.1.0.Modders.Pack.zip"
+        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.1/Project+.v3.1.1.Modders.Pack.zip"
 	},
-	"3.0.5 > 3.1.0 Changed Files": {
+	"3.0.5 > 3.1.1 Changed Files": {
         "icon": "fas fa-box-open",
-        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.0/Project+.v3.0.5.to.v3.1.0.zip"
+        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.1/Project+.v3.0.5.to.v3.1.1.zip"
+    },
+	"3.1.0 > 3.1.1 Changed Files": {
+        "icon": "fas fa-box-open",
+        "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.1/Project+.v3.1.0.to.v3.1.1.zip"
     }
   },
   {
     "Dolphin (Windows)": {
       "icon": "fab fa-windows",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.0/Project+.v3.1.0.Netplay.Windows.zip"
+      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.1/Project+.v3.1.1.Netplay.Windows.zip"
     },
     "Dolphin (Linux AppImage)": {
       "icon": "fab fa-linux",
-      "url": "https://github.com/jlambert360/FPM-AppImage/releases/tag/v3.1.0"
+      "url": "https://github.com/jlambert360/FPM-AppImage/releases/tag/v3.1.1"
     }
   },
   {
     "Wii Mirror": {
         "icon": "fas fa-sd-card",
-        "url": "https://mega.nz/file/HBVlDb7a#nDiiD-WctpdP6gYFQz2S3oF2Sv9GYCNrDcYm1LZli-Q"
+        "url": "https://mega.nz/file/eNNmlZiZ#9oLsXa6-ghfzA18ArwP-zOim4uUfRJKjlqAVnYOeOX4"
     },
     "Wii Lite Mirror": {
         "icon": "fas fa-sd-card",
-        "url": "https://mega.nz/file/Scd1nYKa#sZ3QHuwnv808laiD-2qncAgoEDy8b-XLq-6XQ5fHZVo"
+        "url": "https://mega.nz/file/HJN3UIAB#LAybwgtS6qDY1Jhg1QaDglx4ra1JY9xkuY990pfFLZo"
     },
     "Dolphin (Windows) Mirror": {
         "icon": "fab fa-windows",
-        "url": "https://mega.nz/file/OYMQhJwR#akQMolp5c8dnHUJtNVADgRJSPoDsjJXRJmRzayJ9CCI"
+        "url": "https://mega.nz/file/yEtU3ZaD#4-Jp5XMmeMeF8q23-ZDinRQCogN9m4f4GRwT_hdY8sw"
     }
   }
 ]

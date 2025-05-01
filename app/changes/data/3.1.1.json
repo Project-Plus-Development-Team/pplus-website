@@ -1,0 +1,295 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/15rg8PQXwGQS3C-vMWTaMBx9gxWaeeyolwCebjwFe344/edit"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1Nj72z6X4VJpnpNWO9_UJR_bU-hH0eag-lrP_77oaNTo/"
+    }
+  },
+  "changes": [
+    {
+      "name": "Charizard",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Hurtbox updated to better match model"
+		  ]
+        }
+      ]
+    },
+    {
+      "name": "Diddy Kong",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Hurtbox updated to better match model"
+			]
+        }
+      ]
+    },
+    {
+      "name": "Donkey Kong",
+      "element": {},
+      "moves": [
+        {
+          "title": "Neutral Special (Giant Punch)",
+          "changes": [
+            "Fixed fist hitbox not increasing in strength after charges",
+			"Comment: While full punch had the proper power, the flag that increased the fist hitbox’s power with each wind was accidentally removed in v3.0’s development, and has now been restored."
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Lucas",
+      "element": {},
+      "moves": [
+		{
+		  "title": "Back Air",
+          "changes": [
+			"Initial autocancel window 9 > 3",
+			"Comment: This change was unintentional, and has been mostly reverted; however, an extra frame has been added compared to previously, as its previous 2 frame window was below the average for back airs."
+          ]
+		},
+		{
+		  "title": "Down Special (PSI Magnet)",
+          "changes": [
+			"Initial hit outer hitbox angle 80 > 512 added to aerial version as well",
+			"Comment: Originally, this was kept the same as previously to preserve the feel of mag spike, but we have added the new angle to it after feedback from players."
+          ]
+		}
+      ]
+    },
+	{
+      "name": "Mewtwo",
+      "element": {},
+      "moves": [
+         {
+          "title": "Down Special (Disable)",
+          "changes": [
+            "Reverse hit frames 3 > 1",
+			"Comment: As articles work differently with reverse hits than normal hitboxes do, an exact match to Disable’s previous reverse hit window is difficult to achieve. Lowering its ability to reverse hit to only the first frame should match its previous behavior much more closely."
+          ]
+        },
+		{
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed issue where Confusion’s reflector hitbox was a smaller size than intended"
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Samus",
+      "element": {},
+      "moves": [
+		{
+		  "title": "Bug Fixes",
+          "changes": [
+            "Fixed animation on Samus uthrow",
+			"Fixed Samus’ model scale being larger than intended",
+			"Comment: This change was tested and reverted in development for 3.1, but accidentally snuck into a release build."
+          ]
+		}
+      ]
+    },
+	{
+      "name": "Sheik",
+      "element": {},
+      "moves": [
+		{
+          "title": "Attributes",
+          "changes": [
+            "Hurtbox updated to better match model"          
+		  ]
+        }
+      ]
+    },
+	{
+      "name": "Snake",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Hurtbox updated to better match model"          
+		  ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bowser’s Castle",
+          "changes": [
+            {
+              "title": "Default, L-alt, and R+Start alt",
+              "changes": [
+                "Volume of ambient sound effects lowered based on player feedback"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Delfino’s Secret",
+          "changes": [
+            {
+              "title": "(R+Start alt) World 2-3 (NEW!)",
+              "changes": [
+                "The desert world of Super Mario Bros 3 has been added as an additional 1:1 stage"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Fountain of Dreams",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+				"Volume of ambient sound effects lowered based on player feedback"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Frigate Husk",
+          "changes": [
+			{
+              "title": "(R-alt) Phendrana Husk",
+              "changes": [
+                "Adjusted particle generation on character movement",
+				"Corrected the fog index on the background door models"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Kongo Jungle",
+          "changes": [
+            {
+              "title": "(R-alt) Hornet Hole GHZ",
+              "changes": [
+                "Fixed collision not being attached to the platform mode"
+              ]
+            }
+          ]
+        },
+		{
+          "title": "Luigi’s Mansion",
+          "changes": [
+            {
+              "title": "(R-alt) Dry Bones LM",
+              "changes": [
+                "Fixed platforms not fully matching the height of the base stage’s"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Lylat Cruise",
+          "changes": [
+            {
+              "title": "Default and Z-alt",
+              "changes": [
+                "Collisions updated"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pokemon Stadium 2",
+          "changes": [
+            {
+              "title": "(R-alt) Radiant Stadium PS2",
+              "changes": [
+                "Ported stage to a Final Destination module and removed transformation data for lower filesize"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Venom",
+          "changes": [
+            {
+              "title": "(L-alt) Krazoa Palace",
+              "changes": [
+                "Adjusted collisions"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Yoshi’s Story",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Fly Guys maintain background fog effects"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Fixed issue where down tilts could not slide off ledges"
+			]
+        },
+        {
+          "title": "Costumes",
+          "changes": [
+            "Pikachu Libre spandex effects now work properly on console"
+          ]
+        },
+		{
+          "title": "Aesthetics",
+          "changes": [
+            "Sonic’s Down Air will no longer break team glow’s GFX"
+          ]
+        },
+		{
+          "title": "Other",
+          "changes": [
+            "Fixed name of the Pitfall in item switch"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+		{
+          "title": "Costumes",
+          "changes": [
+            "Peach Dress Luigi has reduced filesize, and updated metal materials"
+          ]
+        },
+		{
+          "title": "Other",
+          "changes": [
+			"Additional stage filesize reductions and 1:1 fixes included",
+			"Updated organizational files for mod support",
+			"Updated version number to v3.1.1 build-wide"
+          ]
+        }
+      ]
+    }
+  ]
+}

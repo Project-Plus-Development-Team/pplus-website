@@ -91,6 +91,12 @@
       "element": {},
       "moves": [
 		{
+          "title": "Down Special (Bomb)",
+          "changes": [
+            "Implemented Melee mechanic where Down Special comes out faster while in true crouch and while in grounded ball form"
+		  ]
+		},
+		{
 		  "title": "Bug Fixes",
           "changes": [
             "Fixed animation on Samus uthrow",
@@ -114,6 +120,18 @@
     },
 	{
       "name": "Snake",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Hurtbox updated to better match model"          
+		  ]
+        }
+      ]
+    },
+	{
+      "name": "Squirtle",
       "element": {},
       "moves": [
         {

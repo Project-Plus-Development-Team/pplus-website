@@ -1,9 +1,9 @@
 {
-  "hash": "1f52a0e0175ede9734e9ca0de07ead30436e1806",
-  "version": "FPM v3.1.1 BETA",
+  "hash": "5a745d41b9c8a2051ebe47e61247b4a4726c1573",
+  "version": "FPM v3.1.2 BETA",
   "updater-update": "false",
   "update-page": "https://projectplusgame.com/download/",
-  "changelog": "Update to Project+ v3.1.1  \nFixes and addtions to v3.1.0",
-  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.1/PPlusv3.1.1Windows.zip",
+  "changelog": "Update to Project+ v3.1.2  \nFixes and addtions to v3.1.0, plus Charizard ECB fix",
+  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Netplay.Windows.zip",
   "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/PPlusv2.29Mac.zip"
 }

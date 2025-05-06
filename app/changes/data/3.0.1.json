@@ -776,8 +776,7 @@
                     "changes": [
                         "Air-only hitboxes added to match Melee",
                         "9%/10 BKB/80 KBG/angle 80",
-                        "Ground-only hitboxes unchanged",
-                        "Late Hit size 4.3 > 3.1"
+                        "Ground-only hitboxes unchanged"
                     ]
                 },
                 {

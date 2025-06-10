@@ -5,10 +5,13 @@ interface MoveProps {
 	subpoint?: boolean;
 }
 
-export const Move = ({ data, subpoint }: MoveProps) => {
+const MoveContent = ({ data }: { data: ChangeObjectType }) => {
+	if (data.changes === undefined) {
+		return null
+	}
+
 	const content = data.changes.map((change, index) => {
-		const isString = typeof change === "string";
-		const inner = isString ? (
+		const inner = typeof change === "string" ? (
 			change
 		) : (
 			<Move subpoint data={change as ChangeObjectType} />
@@ -16,6 +19,10 @@ export const Move = ({ data, subpoint }: MoveProps) => {
 		return <li key={index}>{inner}</li>;
 	});
 
+	return <ul>{content}</ul>
+}
+
+export const Move = ({ data, subpoint }: MoveProps) => {
 	const title = subpoint ? (
 		data.title
 	) : (
@@ -25,7 +32,11 @@ export const Move = ({ data, subpoint }: MoveProps) => {
 	return (
 		<>
 			{title}
-			<ul>{content}</ul>
+			<MoveContent data={data} />
+			{data.comment && <ul><li>
+				<em>{data.comment}</em>
+			</li>
+			</ul>}
 		</>
 	);
 };

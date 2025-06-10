@@ -41,14 +41,19 @@
                   "type": "array",
                   "items": {
                     "type": ["object", "string"],
-                    "required": [ "title", "changes" ],
+                    "required": [ "title" ],
                     "properties": {
-                      "title": { "type": "string" },
+                      "title": {
+                        "type": "string"
+                      },
                       "changes": {
                         "type": "array",
                         "items": {
                           "type": "string"
                         }
+                      },
+                      "comment": {
+                        "type": "string"
                       }
                     }
                   }

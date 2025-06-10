@@ -1,6 +1,7 @@
 export interface ChangeObjectType {
   title: string
-  changes: (string|ChangeObjectType)[]
+  changes?: (string | ChangeObjectType)[]
+  comment?: string
 }
 
 export interface CategoryType {

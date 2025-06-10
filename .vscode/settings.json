@@ -1,14 +1,16 @@
 {
 	"json.schemas": [
 		{
-			"fileMatch": ["/src/modules/changes/data/*.json"],
-			"url": "./src/modules/changes/changesSchema.json"
+			"fileMatch": [
+				"/app/changes/data/*.json"
+			],
+			"url": "/app/changes/changesSchema.json"
 		},
 		{
-			"fileMatch": ["/src/app/download/download.json"],
-			"url": "./src/app/download/downloadSchema.json"
+			"fileMatch": [
+				"/app/download/download.json"
+			],
+			"url": "/app/download/downloadSchema.json"
 		}
 	],
-	"todo-tree.general.tags": ["HACK", "FIXME", "TODO", "[a11y]", "[upstream]"],
-	"todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)"
 }

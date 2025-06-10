@@ -6,7 +6,6 @@
 /public/images/generated
 .netlify
 bun.lockb
-.vscode
 
 # documents / notes folder
 /documents/

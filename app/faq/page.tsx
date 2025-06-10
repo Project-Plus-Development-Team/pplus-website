@@ -243,18 +243,7 @@ export default async function () {
 					<li>1c4d6175e3cbb2614bd805d32aea7311</li>
 				</ul>
 				<h4>Can I play Project+ on Android or iOS?</h4>
-				<p>
-					Short answer: Currently no. We don't know for sure if
-					Project+ can be set up on iOS, but we think it's very
-					unlikely. Regarding Android, there have been reports that
-					current versions of Project+ work. Here's{" "}
-					<a href="https://www.reddit.com/r/EmulationOnAndroid/comments/g39utj/how_to_run_project_and_other_brawl_mods_on/">
-						a guide for <strong>old</strong> versions
-					</a>{" "}
-					that might not work with newer versions. If you've figured
-					out up-to-date instructions or have written a guide, go
-					ahead and <a href="/discord">let us know on our Discord</a>.
-				</p>
+				<p>The Project+ development team doesn't support Android or iOS.</p>
 			</div>
 		</main>
 	);

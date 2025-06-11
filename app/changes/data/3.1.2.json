@@ -41,10 +41,12 @@
         {
           "title": "Neutral Special (Giant Punch)",
           "changes": [
-            "Fixed fist hitbox not increasing in strength after charges",
-			"Comment: While full punch had the proper power, the flag that increased the fist hitbox’s power with each wind was accidentally removed in v3.0’s development, and has now been restored."
-          ]
-        }
+		  {
+			"title": "Fixed fist hitbox not increasing in strength after charges",
+			"comment": "While full punch had the proper power, the flag that increased the fist hitbox’s power with each wind was accidentally removed in v3.0’s development, and has now been restored."
+		  }
+		 ]
+		}
       ]
     },
 	{
@@ -54,15 +56,19 @@
 		{
 		  "title": "Back Air",
           "changes": [
-			"Initial autocancel window 9 > 3",
-			"Comment: This change was unintentional, and has been mostly reverted; however, an extra frame has been added compared to previously, as its previous 2 frame window was below the average for back airs."
-          ]
+			{
+			"title": "Initial autocancel window 9 > 3",
+			"comment": "This change was unintentional, and has been mostly reverted; however, an extra frame has been added compared to previously, as its previous 2 frame window was below the average for back airs."
+			}
+		  ]
 		},
 		{
 		  "title": "Down Special (PSI Magnet)",
           "changes": [
-			"Initial hit outer hitbox angle 80 > 512 added to aerial version as well",
-			"Comment: Originally, this was kept the same as previously to preserve the feel of mag spike, but we have added the new angle to it after feedback from players."
+			{
+			"title": "Initial hit outer hitbox angle 80 > 512 added to aerial version as well",
+			"comment": "Originally, this was kept the same as previously to preserve the feel of mag spike, but we have added the new angle to it after feedback from players."
+			}
           ]
 		}
       ]
@@ -74,9 +80,11 @@
          {
           "title": "Down Special (Disable)",
           "changes": [
-            "Reverse hit frames 3 > 1",
-			"Comment: As articles work differently with reverse hits than normal hitboxes do, an exact match to Disable’s previous reverse hit window is difficult to achieve. Lowering its ability to reverse hit to only the first frame should match its previous behavior much more closely."
-          ]
+		  {
+			"title": "Reverse hit frames 3 > 1",
+			"comment": "As articles work differently with reverse hits than normal hitboxes do, an exact match to Disable’s previous reverse hit window is difficult to achieve. Lowering its ability to reverse hit to only the first frame should match its previous behavior much more closely."
+          }
+		  ]
         },
 		{
           "title": "Bug Fixes",
@@ -100,8 +108,10 @@
 		  "title": "Bug Fixes",
           "changes": [
             "Fixed animation on Samus uthrow",
-			"Fixed Samus’ model scale being larger than intended",
-			"Comment: This change was tested and reverted in development for 3.1, but accidentally snuck into a release build."
+			{
+			"title": "Fixed Samus’ model scale being larger than intended",
+			"comment": "This change was tested and reverted in development for 3.1, but accidentally snuck into a release build."
+			}
           ]
 		}
       ]

@@ -17,9 +17,11 @@
         {
           "title": "Attributes",
           "changes": [
-            "Weight 104 > 99",
-			"Comment: This is to weaken Falcon’s survivability a bit, as well as make him slightly easier to combo."
-			]
+			{
+			"title": "Weight 104 > 99",
+			"comment": "This is to weaken Falcon’s survivability a bit, as well as make him slightly easier to combo."
+			}
+		  ]
         }
       ]
     },
@@ -34,8 +36,10 @@
               "title": "Ledge grab box",
               "changes": [
                 "Width: 10.2 > 11",
-				"Height: 9.6 > 12",
-				"Comment: The change to this grabbox hurt the muscle memory for a few techniques, so we’ve restored most of its previous size"
+				{
+				"title": "Height: 9.6 > 12",
+				"comment": "The change to this grabbox hurt the muscle memory for a few techniques, so we’ve restored most of its previous size"
+				}
                 ]
 			}
 		  ]
@@ -49,8 +53,10 @@
         {
           "title": "Jab 1",
           "changes": [
-            "Adjusted animation and hitboxes to closer match Melee",
-			"Comment: Jab’s hitbox was previously negatively disjointed, but now matches Melee’s version of the hitbox as closely as possible."
+		  {
+			"title": "Adjusted animation and hitboxes to closer match Melee",
+			"comment": "Jab’s hitbox was previously negatively disjointed, but now matches Melee’s version of the hitbox as closely as possible."
+		  }
           ]
         }
       ]
@@ -86,23 +92,29 @@
         {
           "title": "Attributes",
           "changes": [
-            "Nana fthrow range reverted to v2.X (15 > 30)",
-			"Comment: This nerf was a lot on top of the other nerfs from v3.0, so we’re reverting it. We’ll be keeping an eye on the Ice Climbers to make sure they are still strong, but not overcentralizing."
-          ]
+		  {
+			"title":"Nana fthrow range reverted to v2.X (15 > 30)",
+			"comment": "This nerf was a lot on top of the other nerfs from v3.0, so we’re reverting it. We’ll be keeping an eye on the Ice Climbers to make sure they are still strong, but not overcentralizing."
+          }
+		  ]
         },
 		{
           "title": "Up Special (Belay)",
           "changes": [
-            "Popo can now interrupt Nana’s solo up special with his own to do a synced up special",
-			"Comment: Previously, Nana could mess up recoveries by Up B-ing on her own right before the player did theirs."
-          ]
+		  {
+            "title": "Popo can now interrupt Nana’s solo up special with his own to do a synced up special",
+			"comment": "Previously, Nana could mess up recoveries by Up B-ing on her own right before the player did theirs."
+          }
+		  ]
         },
 		{
           "title": "Other",
           "changes": [
-            "Z-sync frame window 1 > 3",
-			"Comment: This change was originally implemented in P+ 2.0, but did not work fully after further P+ updates."
-          ]
+		  {
+            "title": "Z-sync frame window 1 > 3",
+			"comment": "This change was originally implemented in P+ 2.0, but did not work fully after further P+ updates."
+          }
+		  ]
         }
       ]
     },
@@ -113,9 +125,11 @@
         {
           "title": "Up Special (Vine Whip)",
           "changes": [
-            "Will now keep her jump after using Up Special",
-			"Comment: The tether changes in v3.0 hit Ivysaur’s recovery quite hard, so we’re normalizing the ability to keep her jump after a tether attempt between her and Zero Suit Samus."
-          ]
+		  {
+			"title": "Will now keep her jump after using Up Special",
+			"comment": "The tether changes in v3.0 hit Ivysaur’s recovery quite hard, so we’re normalizing the ability to keep her jump after a tether attempt between her and Zero Suit Samus."
+          }
+		  ]
         }
       ]
     },
@@ -142,9 +156,11 @@
               "title": "Outer hitbox",
               "changes": [
                 "Z-offset 10.2 > 9.8",
-				"Size 3.91 > 3.6",
-				"Comment: With how powerful Kirby’s confirms off grab are, matching his grabbox closer to the animation balances his grab game out a bit more."
-                ]
+				{
+				"title": "Size 3.91 > 3.6",
+				"comment": "With how powerful Kirby’s confirms off grab are, matching his grabbox closer to the animation balances his grab game out a bit more."
+                }
+			  ]
 			}
 		  ]
         }
@@ -180,32 +196,40 @@
               "title": "Frames 10-12",
               "changes": [
                 "Size 3.25 > 3.0",
-				"Y-offset -2.5 > -2.0",
-				"Comment: This move was very disjointed previously, so its hitbox has been shrunk and moved in slightly to decrease its range."
-                ]
+				{
+				"title": "Y-offset -2.5 > -2.0",
+				"comment": "This move was very disjointed previously, so its hitbox has been shrunk and moved in slightly to decrease its range."
+				}
+			  ]
 			}
 		  ]
 		},
 		{
 		  "title": "Down Air",
           "changes": [
-			"Modified to grant less vertical stall after first use per airtime",
-			"Comment: This brings the move in line with other aerial stalls such as Ivysaur down air."
-          ]
+			{
+			"title": "Modified to grant less vertical stall after first use per airtime",
+			"comment": "This brings the move in line with other aerial stalls such as Ivysaur down air."
+			}
+		  ]
 		},
 		{
 		  "title": "Side Special (Force Palm)",
           "changes": [
-            "Aerial variant KBG 183 > 160",
-			"Comment: This move could directly kill at very low percents previously, so we’ve lowered its growth to make true kills happen later."
-          ]
+			{
+			"title": "Aerial variant KBG 183 > 160",
+			"comment": "This move could directly kill at very low percents previously, so we’ve lowered its growth to make true kills happen later."
+			}
+		  ]
 		},
 		{
 		  "title": "Up Special (Extreme Speed)",
           "changes": [
-            "Repeating hitboxes WDSK/KBG 16/100 > 116/28",
-			"Comment: If you fell out of the multihits of this move, you’d previously be flung under the stage. These value adjustments should prevent that from happening while still allowing Lucario to carry his opponents with it for further combos out of a cancel."
-          ]
+			{
+			"title": "Repeating hitboxes WDSK/KBG 16/100 > 116/28",
+			"comment": "If you fell out of the multihits of this move, you’d previously be flung under the stage. These value adjustments should prevent that from happening while still allowing Lucario to carry his opponents with it for further combos out of a cancel."
+			}
+		  ]
 		},
 		{
 		  "title": "Bug Fixes",
@@ -225,16 +249,20 @@
           "changes": [
             "Size 3.449 > 4.67",
 			"Y-offset 5.25 > 5.75",
-			"Z-offset 7.41 > 4.75",
-			"Comment: These adjustments should make the inner hits of Lucas’ grab royzone less, since his animation has him lean quite far forwards."
+			{
+			"title": "Z-offset 7.41 > 4.75",
+			"comment": "These adjustments should make the inner hits of Lucas’ grab royzone less, since his animation has him lean quite far forwards."
+			}
 		  ]
 		},
 		{
 		  "title": "Up Special (PK Thunder)",
           "changes": [
-			"Linking hits WDSK 50/KBG 130 > WDSK 134/KBG 60",
-			"Comment: Same rationale as Lucario Up Special multihit change."
-          ]
+			{
+			"title": "Linking hits WDSK 50/KBG 130 > WDSK 134/KBG 60",
+			"comment": "Same rationale as Lucario Up Special multihit change."
+			}
+		  ]
 		},
 		{
 		  "title": "Side Special (PK Freeze)",
@@ -242,25 +270,31 @@
             "Damage 5 > 7",
 			"Hitlag multiplier 1.75 > 1.5 to compensate",
 			"Knockback compensated 45 BKB/29 KBG > 46 BKB/22 KBG",
-			"SDI multiplier 1.0 > 0.8",
-			"Comment: This change slightly reduces the efficacy of SDI for escaping combos while retaining the defender's ability to ASDI down on PK Freeze at all game-relevant percents."
-          ]
+			{
+			"title": "SDI multiplier 1.0 > 0.8",
+			"comment": "This change slightly reduces the efficacy of SDI for escaping combos while retaining the defender's ability to ASDI down on PK Freeze at all game-relevant percents."
+			}
+		  ]
 		},
 		{
 		  "title": "Down Special (PSI Magnet)",
           "changes": [
             "GFX shrunk to better match hitbox",
 			"Some GFX elements removed to promote visual clarity",
-			"Initial hit outer hitbox angle 80 > 512 (autolink inwards)",
-			"Comment: This will pull opponents in on-hit instead of pushing them away, preventing scenarios where hitting the initial hit of magnet would put the opponent out of range of the release hit."
-          ]
+			{
+			"title": "Initial hit outer hitbox angle 80 > 512 (autolink inwards)",
+			"comment": "This will pull opponents in on-hit instead of pushing them away, preventing scenarios where hitting the initial hit of magnet would put the opponent out of range of the release hit."
+			}
+		  ]
 		},
 		{
 		  "title": "Bug Fixes",
           "changes": [
-            "Fixed interpolation error when transitioning from outer hit to spike on back air hitboxes",
-			"Comment: This issue was due to his hitboxes swapping priority when the spike portion begins."
-          ]
+			{
+			"title": "Fixed interpolation error when transitioning from outer hit to spike on back air hitboxes",
+			"comment": "This issue was due to his hitboxes swapping priority when the spike portion begins."
+			}
+		  ]
 		}
       ]
     },
@@ -274,9 +308,11 @@
             "Now has three different knockback levels instead of two",
 			"Frames 6-18 (instant cape): 14%/18 BKB/109 KBG",
 			"Frames 19-32 (Mid Cape): 14%/20 BKB/114 KBG (same as previous instant cape)",
-			"Frames 33+ (Full Cape): 16%/50 BKB/100 KBG (unchanged)",
-			"Comment: This change is meant to nerf the power of instant cape, which is an extremely versatile and accessible finisher, recovery tool, and out of shield option, while rewarding the skill expression of landing mid capes." 
-          ]
+			{
+			"title": "Frames 33+ (Full Cape): 16%/50 BKB/100 KBG (unchanged)",
+			"comment": "This change is meant to nerf the power of instant cape, which is an extremely versatile and accessible finisher, recovery tool, and out of shield option, while rewarding the skill expression of landing mid capes." 
+			}
+		  ]
         },
 		{
           "title": "Bug Fixes",
@@ -316,9 +352,11 @@
               "changes": [
                 "Leaf KBG 125 > 115",
 				"Bud KBG  116 > 108",
-				"Flower KBG 108 > 102",
-				"Comment: Knockback growth has been decreased on this move to prevent it from killing as early, incentivizing use of other Pikmin types." 
-                ]
+				{
+				"title": "Flower KBG 108 > 102",
+				"comment": "Knockback growth has been decreased on this move to prevent it from killing as early, incentivizing use of other Pikmin types." 
+				}
+              ]
 			}
 		  ]
         },
@@ -330,26 +368,32 @@
               "changes": [
                 "Leaf KBG 115 > 110",
 				"Bud KBG  108 > 105",
-				"Flower KBG 101 > 99",
-				"Comment: Knockback growth has been decreased on this move to prevent it from killing as early, incentivizing use of other Pikmin types." 
-                ]
+				{
+				"title": "Flower KBG 101 > 99",
+				"comment": "Knockback growth has been decreased on this move to prevent it from killing as early, incentivizing use of other Pikmin types." 
+				}
+			  ]
 			},
 			{
               "title": "Blue",
               "changes": [
                 "Leaf KBG 108 > 101",
 				"Bud KBG  95 > 98",
-				"Flower KBG 90 > 96",
-				"Comment: This move had inverse knockback scaling from leaf to flower (leaf was stronger), so KBG has been adjusted to have them grow correctly." 
-                ]
+				{
+				"title": "Flower KBG 90 > 96",
+				"comment": "This move had inverse knockback scaling from leaf to flower (leaf was stronger), so KBG has been adjusted to have them grow correctly." 
+				}
+			  ]
 			},
 			{
               "title": "Red",
               "changes": [
                 "Leaf KBG 102 > 101",
-				"Flower KBG 82 > 83",
-				"Comment: This move had inverse knockback scaling from leaf to flower (leaf was stronger), so KBG has been adjusted to have them grow correctly." 
-                ]
+				{
+				"title": "Flower KBG 82 > 83",
+				"comment": "This move had inverse knockback scaling from leaf to flower (leaf was stronger), so KBG has been adjusted to have them grow correctly." 
+				}
+			  ]
 			}
 		  ]
         },
@@ -376,16 +420,20 @@
               "changes": [
 				"Yellow/White Leaf: KBG 113 > 90",
 				"Yellow/White Bud: KBG 106 > 85",
-				"Yellow/White Flower: KBG 100 > 80",
-				"Comment: Down Smash’s stats had the Pikmin’s knockback ordered Purple > Yellow/White > Red > Blue, when all other moves use Purple > Red > Blue > Yellow/White. These changes match down smash to all other moves."
-                ]
+				{
+				"title": "Yellow/White Flower: KBG 100 > 80",
+				"comment": "Down Smash’s stats had the Pikmin’s knockback ordered Purple > Yellow/White > Red > Blue, when all other moves use Purple > Red > Blue > Yellow/White. These changes match down smash to all other moves."
+				}
+			  ]
 			},
 			{
               "title": "Purple",
               "changes": [
-                "Active frames matched to all other Pikmin (6 > 9)",
-				"Comment: This appeared to be an unintentional oversight for purple Pikmin, as they’d lose their hitbox while still moving, so they have been matched to the other Pikmin."
-                ]
+				{
+				"title": "Active frames matched to all other Pikmin (6 > 9)",
+				"comment": "This appeared to be an unintentional oversight for purple Pikmin, as they’d lose their hitbox while still moving, so they have been matched to the other Pikmin."
+				}
+			  ]
 			}
 		  ]
         }
@@ -405,23 +453,29 @@
 		  "title": "Standing Grab",
           "changes": [
 			"Range increased; animation modified to match",
-			"Last active frame 31 > 33",
-			"Comment: Samus previously had one of the longest grab startups alongside an underwhelming range. We’ve buffed the range slightly to make grab a more useful tool in neutral."
-          ]
+			{
+			"title": "Last active frame 31 > 33",
+			"comment": "Samus previously had one of the longest grab startups alongside an underwhelming range. We’ve buffed the range slightly to make grab a more useful tool in neutral."
+			}
+		  ]
 		},
 		{
 		  "title": "Pivot Grab",
           "changes": [
-			"Range increased; animation modified to match",
-			"Comment: Samus previously had one of the longest grab startups alongside an underwhelming range. We’ve buffed the range slightly to make grab a more useful tool in neutral."
-          ]
+			{
+			"title": "Range increased; animation modified to match",
+			"comment": "Samus previously had one of the longest grab startups alongside an underwhelming range. We’ve buffed the range slightly to make grab a more useful tool in neutral."
+			}
+		  ]
 		},
 		{
 		  "title": "Z-Tether",
           "changes": [
             "Vertical ledge grab box increased 50 > 55",
-			"Horizontal ledge grab box increased 50 > 55",
-			"Comment: This is to prevent scenarios where the tether hitbox would hit opponents on ledge, but not reach the ledge itself to grab it.",
+			{
+			"title": "Horizontal ledge grab box increased 50 > 55",
+			"comment": "This is to prevent scenarios where the tether hitbox would hit opponents on ledge, but not reach the ledge itself to grab it."
+			},
 			"Tether ledgehop on edgehog forced horizontal momentum 0.45 > 0"
           ]
 		}
@@ -435,16 +489,20 @@
           "title": "Rapid Jab",
           "changes": [
             "All SDI multipliers 0.7 > 1",
-			"IASA 10 > 13",
-			"Comment: This change is intended to slightly nerf Sheik’s close-quarters game, as the combination of rapid jab’s SDI multipliers and low IASA made it an extremely effective get-out-of-jail-free card against otherwise dangerous ASDI-down counterplay."
-          ]
+			{
+			"title": "IASA 10 > 13",
+			"comment": "This change is intended to slightly nerf Sheik’s close-quarters game, as the combination of rapid jab’s SDI multipliers and low IASA made it an extremely effective get-out-of-jail-free card against otherwise dangerous ASDI-down counterplay."
+			}
+		  ]
         },
 		{
           "title": "Attributes",
           "changes": [
-            "Sheik’s hip hurtbox restored to Brawl’s proportions instead of being left sticking out the side of the character",
-			"Comment: Like Olimar and ROB before her, an old version of BrawlBox misrepresented her vanilla hurtbox, prompting the original change."
-          ]
+			{
+			"title": "Sheik’s hip hurtbox restored to Brawl’s proportions instead of being left sticking out the side of the character",
+			"comment": "Like Olimar and ROB before her, an old version of BrawlBox misrepresented her vanilla hurtbox, prompting the original change."
+			}
+		  ]
         }
       ]
     },
@@ -455,17 +513,21 @@
         {
           "title": "Up Smash",
           "changes": [
-            "Startup hitboxes no longer connect against aerial opponents",
-			"Comment: This reverts the move’s behavior to Brawl/PM 3.6, as making it hit aerial opponents proved to be an oppressive neutral opener and combo tool for Snake."
-          ]
+		  {
+			"title": "Startup hitboxes no longer connect against aerial opponents",
+			"comment": "This reverts the move’s behavior to Brawl/PM 3.6, as making it hit aerial opponents proved to be an oppressive neutral opener and combo tool for Snake."
+		  }
+		  ]
         },
 		{
           "title": "Forward Tilt (first hit)",
           "changes": [
             "WDSK 25 > 30, BKB 50 > 55",
-			"IASA 27 > 31",
-			"Comment: This change is experimental and intended to give opponents a little more time to react to being hit by ftilt1, making it less likely to guarantee a missed tech -> jab reset -> tranq combo."
-          ]
+			{
+			"title": "IASA 27 > 31",
+			"comment": "This change is experimental and intended to give opponents a little more time to react to being hit by ftilt1, making it less likely to guarantee a missed tech -> jab reset -> tranq combo."
+			}
+		  ]
         }
       ]
     },
@@ -491,9 +553,11 @@
             "Damage 8 > 6",
 			"IASA 61 > 49",
 			"BKB 80 > 65",
-			"Animation length and timings adjusted",
-			"Comment: This should make back throw more usable as a tech chase tool (and combo tool on bad DI), while not being as centralizing as 2.X back throw."
-          ]
+			{
+			"title": "Animation length and timings adjusted",
+			"comment": "This should make back throw more usable as a tech chase tool (and combo tool on bad DI), while not being as centralizing as 2.X back throw."
+			}
+		  ]
         }
       ]
     },
@@ -504,17 +568,21 @@
         {
           "title": "Dash Grab",
           "changes": [
-            "IASA 42 > 50",
-			"Comment: Dash grab became a very strong option in neutral, with notable rewards out of it with both up throw and down throw, so the IASA has been adjusted to a middle ground of its previous iteration and 3.6’s 63."
-          ]
+			{
+			"title": "IASA 42 > 50",
+			"comment": "Dash grab became a very strong option in neutral, with notable rewards out of it with both up throw and down throw, so the IASA has been adjusted to a middle ground of its previous iteration and 3.6’s 63."
+			}
+		  ]
         },
 		{
           "title": "Pivot Grab",
           "changes": [
             "IASA 41 > 46",
-			"Active frames 10-20 > 10-18 (frames 10-11 remain identical)",
-			"Comment: Nerfing dash grab alone could well result in more reliance on pivot grab, which is equally strong but more defensively-oriented. This change should balance out the impact on the two grabs."
-          ]
+			{
+			"title": "Active frames 10-20 > 10-18 (frames 10-11 remain identical)",
+			"comment": "Nerfing dash grab alone could well result in more reliance on pivot grab, which is equally strong but more defensively-oriented. This change should balance out the impact on the two grabs."
+			}
+		  ]
         }
       ]
     },
@@ -525,9 +593,11 @@
         {
           "title": "Back Air",
           "changes": [
-            "Outer hitbox size 3 > 3.25",
-			"Comment: The size nerf to this hitbox made it much more difficult to land, as well as not extend past the model of her foot, so its size has been increased slightly."
-          ]
+			{
+			"title": "Outer hitbox size 3 > 3.25",
+			"comment": "The size nerf to this hitbox made it much more difficult to land, as well as not extend past the model of her foot, so its size has been increased slightly."
+			}
+		  ]
         }
       ]
     },

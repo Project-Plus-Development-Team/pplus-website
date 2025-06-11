@@ -1,10 +1,8 @@
 # Project+ Website
 
-### Also check out the Project+ assets (logos, animations): https://github.com/FunctionDJ/project-plus-assets
-
 ### Getting started with development
 
--   Download Node.js
+-   [Install Node.js](https://nodejs.org/)
 -   Clone this repository
 -   Run `npm install` in a terminal inside the folder of the repository
 -   Copy `.env.example` to `.env.local` and fill it

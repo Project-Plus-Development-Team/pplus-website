@@ -242,8 +242,6 @@ export default async function () {
 					<li>9f677c78eacb7e9b8617ab358082be32</li>
 					<li>1c4d6175e3cbb2614bd805d32aea7311</li>
 				</ul>
-				<h4>Can I play Project+ on Android or iOS?</h4>
-				<p>The Project+ development team doesn't support Android or iOS.</p>
 			</div>
 		</main>
 	);

@@ -36,6 +36,4 @@
 
 -   @types/...: i don't think the remaining ones can easily be removed. next.js wants to type-check when exporting and also VSCode will try to check typescript code, so it will probably be more painful to remove these than it's worth.
 
--   pigeon-maps: easy google-maps-style map component for the EU player map. shows city names and all when zoomed in and doesn't need any loading or other prep work from us like react-simple-maps so it's very easy and nice to use for when city names are desired.
-
--   react-simple-maps: map component with more control unlike pigeon-maps. allows to load highly optimized geojson (P+ website gets this from a TopoJSON file which gets optimized and converted to geojson) which allows for a very distraction free map that only has the country/continent borders for general orientation and all the interactive custom items go on top. one could definitely make the argument to replace this library with pigeon-maps. feel free to try it out and compare the results.
+-   react-simple-maps: map component. allows to load highly optimized geojson (P+ website gets this from a TopoJSON file which gets optimized and converted to geojson) which allows for a very distraction free map that only has the country/continent borders for general orientation and all the interactive custom items go on top.

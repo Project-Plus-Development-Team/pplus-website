@@ -1,6 +1,5 @@
 "use client";
 
-import { MapWrapper } from "app/components/MapWrapper";
 import { useEffect, useState } from "react";
 import { ComposableMap, ZoomableGroup } from "react-simple-maps";
 import { ModalContent } from "./components/ModalContent";
@@ -32,7 +31,7 @@ export const Map = ({ regions, worldMapData }: PPlusMapProps) => {
 	}, []);
 
 	return (
-		<MapWrapper>
+		<div className={styles.wrapper}>
 			<MapModal show={region !== null} onClose={() => setRegion(null)}>
 				{region !== null && (
 					<ModalContent
@@ -46,8 +45,8 @@ export const Map = ({ regions, worldMapData }: PPlusMapProps) => {
 					windowWidth > 1023
 						? 300
 						: windowWidth > 768 && windowWidth <= 1023
-						? 600
-						: 1000
+							? 600
+							: 1000
 				}
 				projection="geoMercator"
 				projectionConfig={{
@@ -83,6 +82,11 @@ export const Map = ({ regions, worldMapData }: PPlusMapProps) => {
 						))}
 				</ZoomableGroup>
 			</ComposableMap>
-		</MapWrapper>
+			<div className={styles.scroll_area}>
+				<span style={{ fontSize: "1.5em" }}>«</span>
+				<span>Scroll here for touch devices</span>
+				<span style={{ fontSize: "1.5em" }}>»</span>
+			</div>
+		</div>
 	);
 };

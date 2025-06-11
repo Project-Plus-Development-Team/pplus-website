@@ -51,11 +51,6 @@ export const PageHeader = () => {
 						text="Find Communities"
 						href="/find-communities"
 					/>
-					<NavLink
-						onClick={() => setActive(false)}
-						text="EU Player Map"
-						href="/european-player-map"
-					/>
 				</div>
 				<div className="navbar-end">
 					<span className="navbar-item">

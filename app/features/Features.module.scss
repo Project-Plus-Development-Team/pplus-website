@@ -3,3 +3,18 @@
     vertical-align: middle !important;
   }
 }
+
+.headlineBannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  background-blend-mode: darken;
+  background-position: center;
+  background-size: cover;
+
+  * {
+    text-shadow: 0 3px 5px black;
+  }
+}

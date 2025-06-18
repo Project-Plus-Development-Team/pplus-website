@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import styles from "./Features.module.scss";
 import { createElement, ReactNode } from "react";
+import images from "~image-indexes/features";
 
 export const metadata: Metadata = {
   title: "Features in Project+",
@@ -35,39 +36,50 @@ const TOCEntry = (props: { tocKey: TOCKey; children?: ReactNode }) => (
 );
 
 /** dynamically creates h1, h2 etc based on prop */
-const Headline = ({ tocKey, h }: { tocKey: TOCKey; h: number }) =>
-  createElement("h" + h, { id: tocKey }, toc[tocKey]);
+const Headline = ({
+  tocKey,
+  h,
+  noMargin = false,
+}: {
+  tocKey: TOCKey;
+  h: number;
+  noMargin?: boolean;
+}) =>
+  createElement(
+    "h" + h,
+    { id: tocKey, style: { margin: noMargin ? 0 : undefined } },
+    toc[tocKey]
+  );
 
 export default function Features() {
   return (
-    <main className="content">
-      <h1>Features</h1>
-      <nav>
-        <ol>
-          <TOCEntry tocKey="shortcuts">
-            <TOCEntry tocKey="shortcuts-gameplay" />
-            <TOCEntry tocKey="shortcuts-code-menu" />
-            <TOCEntry tocKey="shortcuts-debug-mode" />
-            <TOCEntry tocKey="shortcuts-css" />
-            <TOCEntry tocKey="shortcuts-tag-list" />
-            <TOCEntry tocKey="shortcuts-sss" />
-            <TOCEntry tocKey="shortcuts-replays" />
-            <TOCEntry tocKey="shortcuts-misc" />
-          </TOCEntry>
-          <TOCEntry tocKey="game-modes" />
-          <TOCEntry tocKey="training-practise-controls" />
-          <TOCEntry tocKey="subspace-emissary" />
-          <TOCEntry tocKey="items" />
-          <TOCEntry tocKey="more-features" />
-        </ol>
-      </nav>
+    <main
+      className="content"
+      style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+    >
       <section>
-        <em>
-          TODO / idea: add top/bottom cropped screenshots if a section applies
-          to a specific menu like CSS, SSS, so that it's visually more apparent
-          and accessible to PM/P+ novices. maybe like a banner behind the
-          "header" for that section.
-        </em>
+        <h1>Features</h1>
+        <nav>
+          <ol>
+            <TOCEntry tocKey="shortcuts">
+              <TOCEntry tocKey="shortcuts-gameplay" />
+              <TOCEntry tocKey="shortcuts-code-menu" />
+              <TOCEntry tocKey="shortcuts-debug-mode" />
+              <TOCEntry tocKey="shortcuts-css" />
+              <TOCEntry tocKey="shortcuts-tag-list" />
+              <TOCEntry tocKey="shortcuts-sss" />
+              <TOCEntry tocKey="shortcuts-replays" />
+              <TOCEntry tocKey="shortcuts-misc" />
+            </TOCEntry>
+            <TOCEntry tocKey="game-modes" />
+            <TOCEntry tocKey="training-practise-controls" />
+            <TOCEntry tocKey="subspace-emissary" />
+            <TOCEntry tocKey="items" />
+            <TOCEntry tocKey="more-features" />
+          </ol>
+        </nav>
+      </section>
+      <section>
         <Headline h={2} tocKey="shortcuts" />
         <table className={"table " + styles.verticallyCenterCells}>
           <tbody>
@@ -99,7 +111,14 @@ export default function Features() {
             </tr>
             <tr>
               <td colSpan={2}>
-                <Headline h={3} tocKey="shortcuts-code-menu" />
+                <div
+                  className={styles.headlineBannerContainer}
+                  style={{
+                    backgroundImage: `url(${images["code-menu"].src})`,
+                  }}
+                >
+                  <Headline h={3} tocKey="shortcuts-code-menu" noMargin />
+                </div>
               </td>
             </tr>
             <tr>
@@ -128,7 +147,14 @@ export default function Features() {
             </tr>
             <tr>
               <td colSpan={2}>
-                <Headline h={3} tocKey="shortcuts-debug-mode" />
+                <div
+                  className={styles.headlineBannerContainer}
+                  style={{
+                    backgroundImage: `url(${images["debug-mode"].src})`,
+                  }}
+                >
+                  <Headline h={3} tocKey="shortcuts-debug-mode" noMargin />
+                </div>
               </td>
             </tr>
             <tr>
@@ -151,7 +177,14 @@ export default function Features() {
             </tr>
             <tr>
               <td colSpan={2}>
-                <Headline h={3} tocKey="shortcuts-css" />
+                <div
+                  className={styles.headlineBannerContainer}
+                  style={{
+                    backgroundImage: `url(${images["character-selection-screen"].src})`,
+                  }}
+                >
+                  <Headline h={3} tocKey="shortcuts-css" noMargin />
+                </div>
               </td>
             </tr>
             <tr>
@@ -184,12 +217,18 @@ export default function Features() {
               <td>
                 Press <code>L</code> or <code>R</code> while hovering over your
                 tag (e.g. "PLAYER1") or pencil icon
-                <em>TODO: add a cropped screenshot for more accessibility</em>
               </td>
             </tr>
             <tr>
               <td colSpan={2}>
-                <Headline h={3} tocKey="shortcuts-tag-list" />
+                <div
+                  className={styles.headlineBannerContainer}
+                  style={{
+                    backgroundImage: `url(${images["tag-list"].src})`,
+                  }}
+                >
+                  <Headline h={3} tocKey="shortcuts-tag-list" noMargin />
+                </div>
               </td>
             </tr>
             <tr>
@@ -233,7 +272,14 @@ export default function Features() {
             </tr>
             <tr>
               <td colSpan={2}>
-                <Headline h={3} tocKey="shortcuts-sss" />
+                <div
+                  className={styles.headlineBannerContainer}
+                  style={{
+                    backgroundImage: `url(${images["stage-selection-screen"].src})`,
+                  }}
+                >
+                  <Headline h={3} tocKey="shortcuts-sss" noMargin />
+                </div>
               </td>
             </tr>
             <tr>
@@ -327,9 +373,25 @@ export default function Features() {
             <tr>
               <td colSpan={2}>
                 <em>
-                  👆 Notes: Can also be done while hovered over random button to
-                  only random to hazard on/off variants of stages [TODO: i don't
-                  fully understand this yet]
+                  👆 Notes: The frame of stage icon indicates the hazard mode.
+                  <br />
+                  Green: Hazards as set via Random stage selection menu. Orange:
+                  Hazards ON. Blue: Hazards OFF.
+                </em>
+              </td>
+            </tr>
+            <tr>
+              <td>Toggle hazards temporarily for all stages</td>
+              <td>
+                <code>Z</code> while hovering over Random button
+              </td>
+            </tr>
+            <tr>
+              <td colSpan={2}>
+                <em>
+                  👆 Notes: The color of the random button and of the stage icon
+                  frames get updated according to the above mentioned colors for
+                  individual stages.
                 </em>
               </td>
             </tr>
@@ -424,7 +486,15 @@ export default function Features() {
             </tr>
             <tr>
               <td colSpan={2}>
-                <Headline h={3} tocKey="shortcuts-replays" />
+                {" "}
+                <div
+                  className={styles.headlineBannerContainer}
+                  style={{
+                    backgroundImage: `url(${images["replays"].src})`,
+                  }}
+                >
+                  <Headline h={3} tocKey="shortcuts-replays" noMargin />
+                </div>
               </td>
             </tr>
             <tr>
@@ -448,7 +518,14 @@ export default function Features() {
             </tr>
             <tr>
               <td colSpan={2}>
-                <Headline h={3} tocKey="shortcuts-misc" />
+                <div
+                  className={styles.headlineBannerContainer}
+                  style={{
+                    backgroundImage: `url(${images["misc"].src})`,
+                  }}
+                >
+                  <Headline h={3} tocKey="shortcuts-misc" noMargin />
+                </div>
               </td>
             </tr>
             <tr>
@@ -508,13 +585,16 @@ export default function Features() {
             </tr>
           </tbody>
         </table>
-        <sub>
-          <em>
-            Credit to mawwwk for collecting the shortcuts on which this shortcut
-            list is largely based on
-          </em>
-        </sub>
-        <Headline h={2} tocKey="game-modes" />
+      </section>
+      <section>
+        <div
+          className={styles.headlineBannerContainer}
+          style={{
+            backgroundImage: `url(${images["game-modes"].src})`,
+          }}
+        >
+          <Headline h={2} tocKey="game-modes" noMargin />
+        </div>
         <ul>
           <li>
             New Special Brawl mode: War mode - KO players to steal their stocks!
@@ -551,19 +631,49 @@ export default function Features() {
             </ul>
           </li>
         </ul>
-        <Headline h={2} tocKey="training-practise-controls" />
+      </section>
+      <section>
+        <div
+          className={styles.headlineBannerContainer}
+          style={{
+            backgroundImage: `url(${images["training-practise-controls"].src})`,
+          }}
+        >
+          <Headline h={2} tocKey="training-practise-controls" noMargin />
+        </div>
         <ul>
           <li>UCF-style shield dropping</li>
           <li>
-            New option for C-stick control: Tilt stick!{" "}
-            <em>
-              Can only be assigned through editing in tag list with{" "}
-              <code>Y</code>, not in the Options {"->"} Controls menu
-            </em>
-          </li>
-          <li>
-            New option for C-stick control: "Charge" lets you charge smash
-            attacks like in newer Smash Bros. games
+            New C-stick control options!
+            <ul>
+              <li>
+                Tilt C-stick{" "}
+                <em>
+                  - In Options {"->"} Controls menu displayed as "Down Taunt /
+                  Footstool"
+                </em>
+              </li>
+              <li>
+                Charge C-stick{" "}
+                <em>
+                  - In Options {"->"} Controls menu displayed as "Side Taunt /
+                  Footstool"
+                </em>
+              </li>
+              <li>
+                Taunt C-stick{" "}
+                <em>
+                  - In Options {"->"} Controls menu displayed as "Up Taunt /
+                  Footstool"
+                </em>
+              </li>
+              <li>
+                Attack C-stick{" "}
+                <em>
+                  - not new but changed to support Neutral Air using diagonals
+                </em>
+              </li>
+            </ul>
           </li>
           <li>
             "Shield" option in Training Mode no longer gives infinite shield
@@ -585,12 +695,24 @@ export default function Features() {
             picks between middle 3 options)
           </li>
         </ul>
-        <Headline h={2} tocKey="subspace-emissary" />
+      </section>
+      <section>
+        <div
+          className={styles.headlineBannerContainer}
+          style={{
+            backgroundImage: `url(${images["subspace-emissary"].src})`,
+          }}
+        >
+          <Headline h={2} tocKey="subspace-emissary" noMargin />
+        </div>
         <ul>
           <li>
-            Roy, Mewtwo & Knuckles are unlocked post-Tabuu clear (note: does not
-            save on autosave, so unlock message will appear on the auto save
-            file upon entering post-Tabuu clear)
+            Roy, Mewtwo & Knuckles are unlocked post-Tabuu clear
+            <br />
+            <em>
+              👆 Note: does not save on autosave, so unlock message will appear
+              on the auto save file upon entering post-Tabuu clear)
+            </em>
           </li>
           <li>
             Hold L when selecting a level to override character selection and
@@ -608,7 +730,16 @@ export default function Features() {
           </li>
           <li>Hold Y while selecting a level to toggle displaying timer</li>
         </ul>
-        <Headline h={2} tocKey="items" />
+      </section>
+      <section>
+        <div
+          className={styles.headlineBannerContainer}
+          style={{
+            backgroundImage: `url(${images["items"].src})`,
+          }}
+        >
+          <Headline h={2} tocKey="items" noMargin />
+        </div>
         <ul>
           <li>
             Three new item frequency settings have been added to the Item
@@ -627,9 +758,8 @@ export default function Features() {
             tied towards rewards and achievements)
           </li>
           <li>
-            [TODO: Is this for modding only or how does this work?] Items: Added
-            the option to make certain items spontaneously activate for maximum
-            chaos
+            New Item Mode: Mayhem! Certain items spontaneously activate for
+            maximum chaos!
           </li>
           <li>
             New Item: Flipper! The Flipper from Balloon Fight has returned.
@@ -661,8 +791,13 @@ export default function Features() {
             ones to pair up now. Can be manually turned on or off by pressing
             START on the EX Item choice in Item Switch
           </li>
-          <li>Containers can randomly explode if enabled in a toggle</li>
+          <li>
+            Containers can randomly explode if enabled in a toggle{" "}
+            <em>[TODO: which toggle lol]</em>
+          </li>
         </ul>
+      </section>
+      <section>
         <Headline h={2} tocKey="more-features" />
         <ul>
           <li>
@@ -687,6 +822,12 @@ export default function Features() {
             </ul>
           </li>
         </ul>
+        <sub>
+          <em>
+            Thank you to the community members of the P+ Discord server that
+            helped with the contents of this page.
+          </em>
+        </sub>
       </section>
     </main>
   );

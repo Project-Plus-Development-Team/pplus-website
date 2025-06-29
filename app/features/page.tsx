@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import styles from "./Features.module.scss";
-import { createElement, ReactNode } from "react";
+import { createElement, PropsWithChildren, ReactNode } from "react";
 import images from "~image-indexes/features";
+import styles from "./Features.module.scss";
 
 export const metadata: Metadata = {
   title: "Features in Project+",
@@ -24,6 +24,7 @@ const toc = {
   "subspace-emissary": "Subspace emissary (campaign)",
   items: "Items",
   "more-features": "More features",
+  "other-explanations": "Other explanations",
 };
 
 type TOCKey = keyof typeof toc;
@@ -51,6 +52,45 @@ const Headline = ({
     toc[tocKey]
   );
 
+interface BannerProps {
+  tocKey: TOCKey;
+  img: keyof typeof images;
+}
+
+const Banner = ({ tocKey, img }: BannerProps) => (
+  <div
+    className={styles.bannerContainer}
+    style={{
+      backgroundImage: `url(${images[img].src})`,
+    }}
+  >
+    <Headline h={3} tocKey={tocKey} noMargin />
+  </div>
+);
+
+const BannerRow = (props: BannerProps) => (
+  <tr>
+    <td colSpan={2} className={styles.bannerCell}>
+      <Banner {...props} />
+    </td>
+  </tr>
+);
+
+const NoteRow = ({
+  children,
+  standalone = false,
+}: PropsWithChildren<{ standalone?: boolean }>) => (
+  <tr
+    className={`${styles.noteRow} ${
+      standalone ? styles.standalone : styles.attached
+    }`}
+  >
+    <td colSpan={2}>
+      <p>{children}</p>
+    </td>
+  </tr>
+);
+
 export default function Features() {
   return (
     <main
@@ -76,6 +116,7 @@ export default function Features() {
             <TOCEntry tocKey="subspace-emissary" />
             <TOCEntry tocKey="items" />
             <TOCEntry tocKey="more-features" />
+            <TOCEntry tocKey="other-explanations" />
           </ol>
         </nav>
       </section>
@@ -109,32 +150,26 @@ export default function Features() {
                 Hold <code>Start</code> on results screen
               </td>
             </tr>
+            <BannerRow tocKey="shortcuts-code-menu" img="code-menu" />
             <tr>
-              <td colSpan={2}>
-                <div
-                  className={styles.headlineBannerContainer}
-                  style={{
-                    backgroundImage: `url(${images["code-menu"].src})`,
-                  }}
-                >
-                  <Headline h={3} tocKey="shortcuts-code-menu" noMargin />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Open code menu</td>
+              <td>Open Code menu</td>
               <td>
                 <code>L + R + D-Pad Down</code>
               </td>
             </tr>
+            <NoteRow>
+              This shortcut can be disabled from Code menu itself (
+              <i>Code menu Activation</i>). To enable it again, enter the Code
+              menu through the menu <i>Versus</i> → <i>Codes</i>.
+            </NoteRow>
             <tr>
-              <td>Reset code menu page</td>
+              <td>Reset Code menu page</td>
               <td>
                 <code>Y</code>
               </td>
             </tr>
             <tr>
-              <td>Reset single code menu line</td>
+              <td>Reset single Code menu line</td>
               <td>
                 <code>X</code>
               </td>
@@ -145,16 +180,18 @@ export default function Features() {
                 Hold <code>Z</code>
               </td>
             </tr>
+            <NoteRow standalone>
+              The Code menu has <strong>many</strong> features, like enabling
+              the <a href="#shortcuts-debug-mode">Debug mode</a>, displaying
+              hitboxes, hitstun, body collision state, ledge grab boxes,
+              collision points, locking the camera and so much more! It's
+              definitely worth exploring.
+            </NoteRow>
+            <BannerRow tocKey="shortcuts-debug-mode" img="debug-mode" />
             <tr>
-              <td colSpan={2}>
-                <div
-                  className={styles.headlineBannerContainer}
-                  style={{
-                    backgroundImage: `url(${images["debug-mode"].src})`,
-                  }}
-                >
-                  <Headline h={3} tocKey="shortcuts-debug-mode" noMargin />
-                </div>
+              <td>Enable Debug mode</td>
+              <td>
+                See <a href="#shortcuts-code-menu">Code menu</a>
               </td>
             </tr>
             <tr>
@@ -170,23 +207,33 @@ export default function Features() {
               </td>
             </tr>
             <tr>
-              <td>Normal pause </td>
+              <td>Normal pause</td>
               <td>
                 <code>X + D-Pad Up</code>
               </td>
             </tr>
             <tr>
-              <td colSpan={2}>
-                <div
-                  className={styles.headlineBannerContainer}
-                  style={{
-                    backgroundImage: `url(${images["character-selection-screen"].src})`,
-                  }}
-                >
-                  <Headline h={3} tocKey="shortcuts-css" noMargin />
-                </div>
+              <td>Switch characters - 1x step</td>
+              <td>
+                <code>B + D-Pad Left</code> / <code>B + D-Pad Right</code>
               </td>
             </tr>
+            <tr>
+              <td>Switch characters - 10x steps</td>
+              <td>
+                <code>B + A + D-Pad Left</code> /{" "}
+                <code>B + A + D-Pad Right</code>
+              </td>
+            </tr>
+            <NoteRow standalone>
+              Looking for Hitbox, Hitstun, Body Collision state, Camera Lock,
+              Ledge Grab Box Display, Collision Points (SCD) etc.? Click here:{" "}
+              <a href="#shortcuts-code-menu">Code menu</a>
+            </NoteRow>
+            <BannerRow
+              tocKey="shortcuts-css"
+              img="character-selection-screen"
+            />
             <tr>
               <td>Scroll through multiple (3x) costumes at once</td>
               <td>
@@ -213,22 +260,22 @@ export default function Features() {
               <td>Drop the character token on the side / empty space</td>
             </tr>
             <tr>
-              <td>Swap your port's color between 12 choices</td>
+              <td>Swap a port's color between 12 choices</td>
               <td>
-                Press <code>L</code> or <code>R</code> while hovering over your
-                tag (e.g. "PLAYER1") or pencil icon
+                Press <code>L</code> or <code>R</code> while hovering over a tag
+                (e.g. "PLAYER1") or pencil icon
               </td>
             </tr>
+            <NoteRow>
+              Can also be changed in the{" "}
+              <a href="#shortcuts-code-menu">Code menu</a> under{" "}
+              <i>HUD Colors</i>.
+            </NoteRow>
+            <BannerRow tocKey="shortcuts-tag-list" img="tag-list" />
             <tr>
-              <td colSpan={2}>
-                <div
-                  className={styles.headlineBannerContainer}
-                  style={{
-                    backgroundImage: `url(${images["tag-list"].src})`,
-                  }}
-                >
-                  <Headline h={3} tocKey="shortcuts-tag-list" noMargin />
-                </div>
+              <td>Open tag list</td>
+              <td>
+                Press <code>A</code> on the pencil icon near your character
               </td>
             </tr>
             <tr>
@@ -249,15 +296,11 @@ export default function Features() {
                 Press <code>Z</code> on existing tag
               </td>
             </tr>
-            <tr>
-              <td colSpan={2}>
-                <em>
-                  👆 Notes: Useful when tag list is full. If the new tag name
-                  exists, it will switch to the existing tag instead of
-                  overwriting because tags must be unique.
-                </em>
-              </td>
-            </tr>
+            <NoteRow>
+              Useful when tag list is full. If the new tag name exists, it will
+              switch to the existing tag instead of overwriting because tags
+              must be unique.
+            </NoteRow>
             <tr>
               <td>Move a tag to the top</td>
               <td>
@@ -270,18 +313,18 @@ export default function Features() {
                 Hold <code>L</code> or <code>R</code>
               </td>
             </tr>
+            <BannerRow tocKey="shortcuts-sss" img="stage-selection-screen" />
             <tr>
-              <td colSpan={2}>
-                <div
-                  className={styles.headlineBannerContainer}
-                  style={{
-                    backgroundImage: `url(${images["stage-selection-screen"].src})`,
-                  }}
-                >
-                  <Headline h={3} tocKey="shortcuts-sss" noMargin />
-                </div>
+              <td>Swap stage selection screen layouts / presets</td>
+              <td>
+                <code>L</code> / <code>R</code> in the random stage selection
+                menu
               </td>
             </tr>
+            <NoteRow>
+              Included presets are as follows: Legal stages (default), PMBR,
+              2023 Proposed, 2024 Proposed, Australia, Japan, and All stages
+            </NoteRow>
             <tr>
               <td>Ban a stage</td>
               <td>
@@ -314,25 +357,11 @@ export default function Features() {
                 <code>Start</code> over a stage
               </td>
             </tr>
-            <tr>
-              <td colSpan={2}>
-                <em>
-                  👆 Notes: <code>R + Start</code> is exclusively for 1:1 stages
-                  while <code>L + Start</code> is for different layouts and
-                  for-fun stages.
-                </em>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Play secret / easter-egg alt stage versions (e.g. "Survival
-                Fever" WarioWare, N64 alts)
-              </td>
-              <td>
-                Hold <code>X</code>, <code>L + R</code> or <code>L + Y</code>{" "}
-                while selecting a stage (only available for some stages)
-              </td>
-            </tr>
+            <NoteRow>
+              <code>R + Start</code> is exclusively for 1:1 stages while{" "}
+              <code>L + Start</code> is for different layouts and for-fun
+              stages.
+            </NoteRow>
             <tr>
               <td>Enter music selection screen</td>
               <td>
@@ -340,61 +369,49 @@ export default function Features() {
               </td>
             </tr>
             <tr>
-              <td>Start a stage with a specific song</td>
+              <td>Start a stage with a specific music track</td>
               <td>
-                Press <code>Start</code> on the song in the stage's tracklist
-                from the music selection screen
+                Press <code>Start</code> on the music track in the stage's
+                tracklist from the music selection screen
               </td>
             </tr>
             <tr>
-              <td>Play both on an alt stage and with a specific song</td>
+              <td>Play both on an alt stage and with a specific music track</td>
               <td>
-                Hold the button for the alt you want (like <code>L</code>),
-                press <code>Y</code> to open the music selection menu (can
-                release alt button) and then pick your song and press{" "}
-                <code>Start</code> to start the alt with that song
+                Hold the button for the desired alt (like <code>L</code>), press{" "}
+                <code>Y</code> to open the music selection menu (can release alt
+                button) and then pick the desired music track and press{" "}
+                <code>Start</code> to start the alt with that music track
               </td>
             </tr>
-            <tr>
-              <td colSpan={2}>
-                <em>
-                  👆 Notes: You might need to hold the alt button for like a
-                  second even if the music menu is already open, otherwise the
-                  game might go to the default stage instead of the alt
-                </em>
-              </td>
-            </tr>
+            <NoteRow>
+              The alt button might need to be held for like a second even if the
+              music menu is already open, otherwise the game might go to the
+              default stage instead of the alt
+            </NoteRow>
             <tr>
               <td>Toggle hazards temporarily for selected stage</td>
               <td>
                 <code>Z</code> while hovering over a stage
               </td>
             </tr>
-            <tr>
-              <td colSpan={2}>
-                <em>
-                  👆 Notes: The frame of stage icon indicates the hazard mode.
-                  <br />
-                  Green: Hazards as set via Random stage selection menu. Orange:
-                  Hazards ON. Blue: Hazards OFF.
-                </em>
-              </td>
-            </tr>
+            <NoteRow>
+              The frame of stage icon indicates the hazard mode.
+              <br />
+              Orange: Hazards ON, Blue: Hazards OFF.
+            </NoteRow>
             <tr>
               <td>Toggle hazards temporarily for all stages</td>
               <td>
                 <code>Z</code> while hovering over Random button
               </td>
             </tr>
-            <tr>
-              <td colSpan={2}>
-                <em>
-                  👆 Notes: The color of the random button and of the stage icon
-                  frames get updated according to the above mentioned colors for
-                  individual stages.
-                </em>
-              </td>
-            </tr>
+            <NoteRow>
+              The color of the random button and of the stage icon frames get
+              updated according to the above mentioned colors for individual
+              stages with green (default) meaning hazards according to random
+              stage selection menu.
+            </NoteRow>
             <tr>
               <td>
                 Loading alts etc. with a Wiimote (might be bugged sometimes)
@@ -484,19 +501,7 @@ export default function Features() {
                 Hold <code>L + R + A</code> after picking a stge
               </td>
             </tr>
-            <tr>
-              <td colSpan={2}>
-                {" "}
-                <div
-                  className={styles.headlineBannerContainer}
-                  style={{
-                    backgroundImage: `url(${images["replays"].src})`,
-                  }}
-                >
-                  <Headline h={3} tocKey="shortcuts-replays" noMargin />
-                </div>
-              </td>
-            </tr>
+            <BannerRow tocKey="shortcuts-replays" img="replays" />
             <tr>
               <td>Speed up playback</td>
               <td>
@@ -509,33 +514,20 @@ export default function Features() {
                 Hold <code>B</code>
               </td>
             </tr>
+            <NoteRow standalone>
+              Using Debug mode/frame advance, drawing DI can be enabled, pausing
+              on any frame, and checking any possible DI trajectories during
+              replay playback (e.g. find the best survival DI for any move)
+            </NoteRow>
+            <BannerRow tocKey="shortcuts-misc" img="misc" />
             <tr>
-              <td colSpan={2}>
-                Using debug mode/frame advance, you can enable DI draw, pause on
-                any frame, and check any possible DI trajectories during replay
-                playback (e.g. find the best survival DI for any move)
-              </td>
-            </tr>
-            <tr>
-              <td colSpan={2}>
-                <div
-                  className={styles.headlineBannerContainer}
-                  style={{
-                    backgroundImage: `url(${images["misc"].src})`,
-                  }}
-                >
-                  <Headline h={3} tocKey="shortcuts-misc" noMargin />
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Set a song in My Music to minimum frequency</td>
+              <td>Set a music track in My Music to minimum frequency</td>
               <td>
                 <code>L</code>
               </td>
             </tr>
             <tr>
-              <td>Set a song in My Music to maximum frequency</td>
+              <td>Set a music track in My Music to maximum frequency</td>
               <td>
                 <code>R</code>
               </td>
@@ -555,13 +547,19 @@ export default function Features() {
               </td>
             </tr>
             <tr>
-              <td>Reroll the playing song</td>
+              <td>Reroll the playing music track</td>
               <td>
                 Hold <code>A</code> and press <code>B</code> when paused
               </td>
             </tr>
             <tr>
-              <td>Boot to Training Mode</td>
+              <td>Show currently playing music track</td>
+              <td>
+                <code>Start</code> (Pause)
+              </td>
+            </tr>
+            <tr>
+              <td>Boot to Training mode</td>
               <td>
                 Hold <code>L</code> or <code>R</code> (GameCube, Classic
                 Controller) or <code>R</code> or <code>B</code> (Wiimote) during
@@ -576,7 +574,7 @@ export default function Features() {
               </td>
             </tr>
             <tr>
-              <td>Boot to Replay Menu</td>
+              <td>Boot to Replay menu</td>
               <td>
                 Hold <code>Z</code> (GameCube), <code>ZL</code> or{" "}
                 <code>ZR</code> (Classic Controller) or <code>C/-</code>{" "}
@@ -587,19 +585,17 @@ export default function Features() {
         </table>
       </section>
       <section>
-        <div
-          className={styles.headlineBannerContainer}
-          style={{
-            backgroundImage: `url(${images["game-modes"].src})`,
-          }}
-        >
-          <Headline h={2} tocKey="game-modes" noMargin />
-        </div>
+        <Banner tocKey="game-modes" img="game-modes" />
         <ul>
           <li>
             New Special Brawl mode: War mode - KO players to steal their stocks!
           </li>
-          <li>Big Head and Random Angle modes in Code Menu</li>
+          <li>Big Head and Random Angle modes in Code menu</li>
+          <li>
+            A new mode has been added to Random Angle in the Code menu: Static
+            Random Angle! This will randomize angles for moves, then keep them
+            that way for the entire match to allow for strategized setups.
+          </li>
           <li>
             New Team Battle option added: Random Teams! New team pairs will be
             shuffled at random after every game
@@ -622,67 +618,49 @@ export default function Features() {
                 When used with “CPU Characters Can Use Tags”, assign the tag
                 first, then switch the character to be a CPU!
               </li>
+              <li>Also works in Zero-To-Death mode</li>
               <li>
-                <em>
-                  [TODO, also add notes on how boss mode affects stamina and
-                  zero-to-death modes]
-                </em>
+                Also works in Stamina mode: the players without boss tags will
+                have percentage gauges while the Boss tag players will have HP
+                and only one stock! Also applies to other settings of the mode
+                like blast line wrap-around.
               </li>
             </ul>
           </li>
         </ul>
       </section>
       <section>
-        <div
-          className={styles.headlineBannerContainer}
-          style={{
-            backgroundImage: `url(${images["training-practise-controls"].src})`,
-          }}
-        >
-          <Headline h={2} tocKey="training-practise-controls" noMargin />
-        </div>
+        <Banner
+          tocKey="training-practise-controls"
+          img="training-practise-controls"
+        />
         <ul>
           <li>UCF-style shield dropping</li>
           <li>
             New C-stick control options!
-            <ul>
+            <ul style={{ marginBottom: "0.5em" }}>
+              <li>Tilt C-stick</li>
               <li>
-                Tilt C-stick{" "}
-                <em>
-                  - In Options {"->"} Controls menu displayed as "Down Taunt /
-                  Footstool"
-                </em>
+                Charge C-stick - <em>like in other platform fighters</em>
               </li>
+              <li>Taunt C-stick</li>
               <li>
-                Charge C-stick{" "}
+                Attack C-stick -{" "}
                 <em>
-                  - In Options {"->"} Controls menu displayed as "Side Taunt /
-                  Footstool"
-                </em>
-              </li>
-              <li>
-                Taunt C-stick{" "}
-                <em>
-                  - In Options {"->"} Controls menu displayed as "Up Taunt /
-                  Footstool"
-                </em>
-              </li>
-              <li>
-                Attack C-stick{" "}
-                <em>
-                  - not new but changed to support Neutral Air using diagonals
+                  not new but changed to support Neutral Air using diagonals
                 </em>
               </li>
             </ul>
+            <p className={styles.note}>
+              These are correctly named in the tag list controls editor, but in
+              the Options → Controls menu, they have different names. Tilt:
+              "Down Taunt / Footstool", Charge: "Side Taunt / Footstool", Taunt:
+              "Up Taunt / Footstool".
+            </p>
           </li>
           <li>
-            "Shield" option in Training Mode no longer gives infinite shield
-            (activate in Code Menu instead)
-          </li>
-          <li>
-            A new mode has been added to Random Angle in the Code Menu: Static
-            Random Angle! This will randomize angles for moves, then keep them
-            that way for the entire match to allow for strategized setups.
+            "Shield" option in Training mode no longer gives infinite shield
+            (activate in Code menu instead)
           </li>
           <li>
             CPUs will now select between one of the 5 options of DI, instead of
@@ -694,80 +672,80 @@ export default function Features() {
             Slight DI In, No DI, Slight DI Out, DI Out, and Slight DI (which
             picks between middle 3 options)
           </li>
+          <li>
+            Solo in Versus mode: When the game settings are changed from
+            "stocks" to "time" and the time set to infinite, a match can be
+            started without a second player or CPU. This can be useful in
+            combination with the Camera Lock feature of the Code menu for e.g.
+            movement practise.
+          </li>
         </ul>
       </section>
       <section>
-        <div
-          className={styles.headlineBannerContainer}
-          style={{
-            backgroundImage: `url(${images["subspace-emissary"].src})`,
-          }}
-        >
-          <Headline h={2} tocKey="subspace-emissary" noMargin />
-        </div>
+        <Banner tocKey="subspace-emissary" img="subspace-emissary" />
         <ul>
           <li>
             Roy, Mewtwo & Knuckles are unlocked post-Tabuu clear
-            <br />
-            <em>
-              👆 Note: does not save on autosave, so unlock message will appear
-              on the auto save file upon entering post-Tabuu clear)
-            </em>
+            <p className={styles.note}>
+              Does not save on autosave, so unlock message will appear on the
+              auto save file upon entering post-Tabuu clear)
+            </p>
           </li>
           <li>
-            Hold L when selecting a level to override character selection and
-            have all characters selectable
-          </li>
-          <li>Hold R during character selection to randomize cursor</li>
-          <li>
-            Hold Y during character selection to be able to select the same
-            character twice
+            Hold <code>L</code> when selecting a level to override character
+            selection and have all characters selectable
           </li>
           <li>
-            Hold X while selecting a fully cleared level to start Time Attack
-            mode, beat the level as fast as you can while defeating enemies to
-            earn the highest score
+            Hold <code>R</code> during character selection to randomize cursor
           </li>
-          <li>Hold Y while selecting a level to toggle displaying timer</li>
+          <li>
+            Hold <code>Y</code> during character selection to be able to select
+            the same character twice
+          </li>
+          <li>
+            Hold <code>X</code> while selecting a fully cleared level to start
+            Time Attack mode, beat the level as fast as possible while defeating
+            enemies to earn the highest score
+          </li>
+          <li>
+            Hold <code>Y</code> while selecting a level to toggle displaying
+            timer
+          </li>
         </ul>
       </section>
       <section>
-        <div
-          className={styles.headlineBannerContainer}
-          style={{
-            backgroundImage: `url(${images["items"].src})`,
-          }}
-        >
-          <Headline h={2} tocKey="items" noMargin />
-        </div>
+        <Banner tocKey="items" img="items" />
         <ul>
           <li>
             Three new item frequency settings have been added to the Item
             Switch: Very High, Intense and Bomb Rain
           </li>
           <li>
-            Press Start on Assist Trophies to toggle which Assist Trophies are
-            active in a gameplay session
+            Press <code>Start</code> on Assist Trophies in the item switch menu
+            to toggle which Assist Trophies are active in a gameplay session
           </li>
           <li>
-            Press Start on Containers to toggle different properties for them
+            Press <code>Start</code> on Containers in the item switch menu to
+            toggle different properties for them, for example explosions!
           </li>
           <li>
-            Press Start on Pokémon to toggle the appearances of Pokemon other
-            than Mew, Celebi and Jirachi (these Pokemon are excluded as they are
-            tied towards rewards and achievements)
+            Press <code>Start</code> on Pokémon in the item switch menu to
+            toggle the appearances of Pokemon other than Mew, Celebi and Jirachi
+            (these Pokemon are excluded as they are tied towards rewards and
+            achievements)
           </li>
           <li>
-            New Item Mode: Mayhem! Certain items spontaneously activate for
-            maximum chaos!
+            New item mode: Mayhem! Certain items spontaneously activate for
+            maximum chaos!{" "}
+            <i>Is enabled like an item in the item switch menu.</i>
           </li>
           <li>
-            New Item: Flipper! The Flipper from Balloon Fight has returned.
+            New item: Flipper! The Flipper from Balloon Fight has returned.
             Toggle on Bumpers to randomly have a chance of a Flipper spawning if
             Ex items are also enabled
           </li>
           <li>
-            New Item Variant: Melee Screw Attack! The Melee version of the Screw
+            New item variant: Melee Screw Attack! The Melee version of the Screw
             Attack has returned, being able to be thrown. Toggle on Screw
             Attacks to randomly have a chance of its Melee variant spawning if
             Ex items are also enabled. Currently it does not send opponents into
@@ -791,10 +769,6 @@ export default function Features() {
             ones to pair up now. Can be manually turned on or off by pressing
             START on the EX Item choice in Item Switch
           </li>
-          <li>
-            Containers can randomly explode if enabled in a toggle{" "}
-            <em>[TODO: which toggle lol]</em>
-          </li>
         </ul>
       </section>
       <section>
@@ -804,31 +778,51 @@ export default function Features() {
             Dolphin auto-saves replays from a netplay session. Use the Replay
             Manager executable to manage them.
           </li>
-          <li>Song titles are displayed when pausing a match</li>
           <li>
             Hazards are now toggle-able for select stages, which will swap
             things such as animations, collisions, and hazards when toggled
             between (Currently supported stages are Smashville, Yoshi’s Island,
             Green Hill Zone, Fountain of Dreams, Dream Land, and Dead Line)
           </li>
-          <li>
-            Presets can now be swapped between by pressing L or R on the random
-            stage selection screen
-            <ul>
-              <li>
-                Included presets are as follows: Legal stages (default), PMBR,
-                2023 Proposed, 2024 Proposed, Australia, Japan, and All stages
-              </li>
-            </ul>
-          </li>
         </ul>
-        <sub>
-          <em>
-            Thank you to the community members of the P+ Discord server that
-            helped with the contents of this page.
-          </em>
-        </sub>
       </section>
+      <section>
+        <Headline h={2} tocKey="other-explanations" />
+        <h3 style={{ fontSize: "1em" }}>
+          How does the <code>TOGGLE PAGE</code> button in the random stage
+          selection menu work?
+        </h3>
+        <p>
+          This button currently works the same as in vanilla Brawl and it's
+          appearance can be confusing. The label of the button, e.g.{" "}
+          <code>TURN PAGE ON</code> is supposed to be read as an <em>action</em>{" "}
+          instead of the current <em>state</em>. Like it's text label, it's
+          appearance shows the state that the page will be turned to when
+          pressed, not the current state. As soon as all stages on the page are
+          set to ON, the action and therefore the text label and appearance of
+          the button change to OFF, and vice versa. This is different from a
+          "select all" feature tha's common in user interface design.
+        </p>
+        <p>
+          The button doesn't have any effect on the random stage selection other
+          than toggling the whole page.
+        </p>
+        <h3 style={{ fontSize: "1em" }}>
+          How does <code>Press DPad to select percent</code> in the Code menu
+          work?
+        </h3>
+        <p>
+          Pressing any <code>DPad</code> direction will reset the percent to the
+          value of <code>Select percent</code>.
+        </p>
+      </section>
+      <hr />
+      <sub>
+        <em>
+          Thank you to the community members of the P+ Discord server that
+          helped with the contents of this page.
+        </em>
+      </sub>
     </main>
   );
 }

@@ -29,9 +29,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	}
 
 	return {
-		title: `Changes in v${version}`, // TODO
-		description:
-			"View everything that's been changed in Project+ v${version}",
+    title: `Changes in v${version}`,
+    description: `View everything that's been changed in Project+ v${version}`,
 	};
 }
 

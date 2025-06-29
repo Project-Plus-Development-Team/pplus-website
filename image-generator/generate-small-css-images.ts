@@ -21,7 +21,7 @@ convertImages("project-wave/css", {
 
 convertImages("icons", { resize: { height: 80 } });
 convertImages("knuckles", { quality: 100, resize: { width: 300 } });
-convertImages("features", { quality: 50, resize: { width: 300 } });
+convertImages("features", { quality: 70, resize: { width: 600 } });
 
 convertSingleImage("background.jpeg");
 convertSingleImage("background-banner.png");

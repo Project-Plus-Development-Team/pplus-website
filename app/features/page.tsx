@@ -25,6 +25,7 @@ const toc = {
   items: "Items",
   "more-features": "More features",
   "other-explanations": "Other explanations",
+  comparisons: "Comparisons with Melee and Brawl",
 };
 
 type TOCKey = keyof typeof toc;
@@ -117,6 +118,7 @@ export default function Features() {
             <TOCEntry tocKey="items" />
             <TOCEntry tocKey="more-features" />
             <TOCEntry tocKey="other-explanations" />
+            <TOCEntry tocKey="comparisons" />
           </ol>
         </nav>
       </section>
@@ -213,13 +215,13 @@ export default function Features() {
               </td>
             </tr>
             <tr>
-              <td>Switch characters - 1x step</td>
+              <td>Switch characters — 1x step</td>
               <td>
                 <code>B + D-Pad Left</code> / <code>B + D-Pad Right</code>
               </td>
             </tr>
             <tr>
-              <td>Switch characters - 10x steps</td>
+              <td>Switch characters — 10x steps</td>
               <td>
                 <code>B + A + D-Pad Left</code> /{" "}
                 <code>B + A + D-Pad Right</code>
@@ -588,7 +590,7 @@ export default function Features() {
         <Banner tocKey="game-modes" img="game-modes" />
         <ul>
           <li>
-            New Special Brawl mode: War mode - KO players to steal their stocks!
+            New Special Brawl mode: War mode — KO players to steal their stocks!
           </li>
           <li>Big Head and Random Angle modes in Code menu</li>
           <li>
@@ -641,11 +643,11 @@ export default function Features() {
             <ul style={{ marginBottom: "0.5em" }}>
               <li>Tilt C-stick</li>
               <li>
-                Charge C-stick - <em>like in other platform fighters</em>
+                Charge C-stick — <em>like in other platform fighters</em>
               </li>
               <li>Taunt C-stick</li>
               <li>
-                Attack C-stick -{" "}
+                Attack C-stick —{" "}
                 <em>
                   not new but changed to support Neutral Air using diagonals
                 </em>
@@ -815,6 +817,210 @@ export default function Features() {
           Pressing any <code>DPad</code> direction will reset the percent to the
           value of <code>Select percent</code>.
         </p>
+      </section>
+
+      <section>
+        <Headline h={2} tocKey="comparisons" />
+        <table className={"table " + styles.verticallyCenterCells}>
+          <tbody>
+            <tr>
+              <td colSpan={2}>
+                <h4>Properties from Melee</h4>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Wavedash">Wavedashing</a>
+              </td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>L-canceling</td>
+              <td>✅</td>
+            </tr>
+            <NoteRow>
+              Automatic L-canceling can be enabled in the versus settings but is
+              not allowed in most tournaments.
+            </NoteRow>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Crouch_cancel">
+                  Crouch canceling
+                </a>
+              </td>
+              <td>✅</td>
+            </tr>
+            <NoteRow>TODO add details</NoteRow>
+            <tr>
+              <td>Light shield</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>L-cancel without tech</td>
+              <td>
+                ✅ — <code>Z</code> like in Melee
+              </td>
+            </tr>
+            <tr>
+              <td>Jump-cancel grab</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Boost grab</td>
+              <td>TODO probably?</td>
+            </tr>
+            <tr>
+              <td>Shield dropping</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Short_hop_fast_fall_L-cancel">
+                  SHFFL
+                </a>{" "}
+                — Short hop fast fall L-cancel
+              </td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Moonwalk">Moonwalk</a>
+              </td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Dashdance">
+                  (Instant) Dash dancing
+                </a>
+              </td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Ice Climbers: Wobbling</td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>Spacies: Wave-shining</td>
+              <td>✅ — also available to Wolf</td>
+            </tr>
+            <tr>
+              <td>
+                Luigi:{" "}
+                <a href="https://www.ssbwiki.com/Green_Missile">Misfire</a>
+              </td>
+              <td>✅</td>
+            </tr>
+            <NoteRow>
+              TODO: add details on how storing misfire works in PM/P+
+            </NoteRow>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Double_jump_cancel">
+                  Double jump cancel
+                </a>
+              </td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td colSpan={2}>
+                <h4>Properties from Brawl</h4>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Tripping">Tripping</a>
+              </td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>Reverse aerial rush</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>B-reversing</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Wavebounce</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>Grab ledge from behind after Up-B apex</td>
+              <td>❌ — like Melee</td>
+            </tr>
+            <tr>
+              <td>Pivot grab</td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Autolanding">Autolanding</a>
+              </td>
+              <td>TODO (i think yes but unsure)</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/DACUS">DACUS</a> — Dash attack
+                canceled up smash
+              </td>
+              <td>✅</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Hitstun_canceling">
+                  Hitstun canceling
+                </a>
+              </td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Momentum_canceling">
+                  Momentum canceling
+                </a>
+              </td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>3-frame input buffer</td>
+              <td>❌ — like Melee</td>
+            </tr>
+            <NoteRow>
+              A 3-frame buffer can be enabled in the versus settings (like
+              Brawl) but is not allowed in most tournaments.
+            </NoteRow>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Footstool_Jump">
+                  Footstool Jump
+                </a>
+              </td>
+              <td>✅</td>
+            </tr>
+            <NoteRow standalone>
+              TODO more to check:
+              <br />
+              <a href="https://www.ssbwiki.com/Hilldash">Hilldash</a>
+              <br />
+              <a href="https://www.ssbwiki.com/Platform_cancel">
+                Platform cancel
+              </a>
+              <br />
+              <a href="https://www.ssbwiki.com/Shield_break_combo">
+                Shield break combo
+              </a>
+              <br />
+              <a href="https://www.ssbwiki.com/V-cancelling">V-cancelling</a>
+              <br />
+              <a href="https://www.ssbwiki.com/Autolanding">Autolanding</a>
+              <br />
+              <a href="https://www.ssbwiki.com/Dash_pivot_cancel">
+                Dash pivot cancel
+              </a>
+            </NoteRow>
+          </tbody>
+        </table>
       </section>
       <hr />
       <sub>

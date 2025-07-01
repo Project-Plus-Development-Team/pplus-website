@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 const toc = {
   shortcuts: "Button shortcuts",
   "shortcuts-gameplay": "Gameplay",
-  "shortcuts-code-menu": "Code menu",
-  "shortcuts-debug-mode": "Debug mode",
+  "shortcuts-code-menu": "Code Menu",
+  "shortcuts-debug-mode": "Debug Mode",
   "shortcuts-css": "Character selection screen",
   "shortcuts-tag-list": "CSS name entry / tag list",
   "shortcuts-sss": "Stage selection screen",
   "shortcuts-replays": "Replays",
   "shortcuts-misc": "Misc",
   "game-modes": "Game modes",
-  "training-practise-controls": "Training, practise and controls",
+  "training-practice-controls": "Training, practice and controls",
   "subspace-emissary": "Subspace emissary (campaign)",
   items: "Items",
   "more-features": "More features",
@@ -114,7 +114,7 @@ export default function Features() {
               <TOCEntry tocKey="shortcuts-misc" />
             </TOCEntry>
             <TOCEntry tocKey="game-modes" />
-            <TOCEntry tocKey="training-practise-controls" />
+            <TOCEntry tocKey="training-practice-controls" />
             <TOCEntry tocKey="subspace-emissary" />
             <TOCEntry tocKey="items" />
             <TOCEntry tocKey="more-features" />
@@ -124,6 +124,7 @@ export default function Features() {
           </ol>
         </nav>
       </section>
+      <hr />
       <section>
         <Headline h={2} tocKey="shortcuts" />
         <table className={"table " + styles.verticallyCenterCells}>
@@ -154,26 +155,35 @@ export default function Features() {
                 Hold <code>Start</code> on results screen
               </td>
             </tr>
+            <tr>
+              <td>Reset GameCube controller</td>
+              <td>
+                <code>X</code> + <code>Y</code> + <code>Start</code>
+              </td>
+            </tr>
+            <NoteRow>
+              Only useful on console. Generally not needed on Dolphin.
+            </NoteRow>
             <BannerRow tocKey="shortcuts-code-menu" img="code-menu" />
             <tr>
-              <td>Open Code menu</td>
+              <td>Open Code Menu</td>
               <td>
                 <code>L + R + D-Pad Down</code>
               </td>
             </tr>
             <NoteRow>
-              This shortcut can be disabled from Code menu itself (
-              <i>Code menu Activation</i>). To enable it again, enter the Code
-              menu through the menu <i>Versus</i> → <i>Codes</i>.
+              This shortcut can be disabled from Code Menu itself (
+              <i>Code Menu Activation</i>). To enable it again, enter the Code
+              Menu through the menu <i>Versus</i> → <i>Codes</i>.
             </NoteRow>
             <tr>
-              <td>Reset Code menu page</td>
+              <td>Reset Code Menu page</td>
               <td>
                 <code>Y</code>
               </td>
             </tr>
             <tr>
-              <td>Reset single Code menu line</td>
+              <td>Reset single Code Menu line</td>
               <td>
                 <code>X</code>
               </td>
@@ -185,17 +195,17 @@ export default function Features() {
               </td>
             </tr>
             <NoteRow standalone>
-              The Code menu has <strong>many</strong> features, like enabling
-              the <a href="#shortcuts-debug-mode">Debug mode</a>, displaying
+              The Code Menu has <strong>many</strong> features, like enabling
+              the <a href="#shortcuts-debug-mode">Debug Mode</a>, displaying
               hitboxes, hitstun, body collision state, ledge grab boxes,
               collision points, locking the camera and so much more! It's
               definitely worth exploring.
             </NoteRow>
             <BannerRow tocKey="shortcuts-debug-mode" img="debug-mode" />
             <tr>
-              <td>Enable Debug mode</td>
+              <td>Enable Debug Mode</td>
               <td>
-                See <a href="#shortcuts-code-menu">Code menu</a>
+                See <a href="#shortcuts-code-menu">Code Menu</a>
               </td>
             </tr>
             <tr>
@@ -232,7 +242,7 @@ export default function Features() {
             <NoteRow standalone>
               Looking for Hitbox, Hitstun, Body Collision state, Camera Lock,
               Ledge Grab Box Display, Collision Points (SCD) etc.? Click here:{" "}
-              <a href="#shortcuts-code-menu">Code menu</a>
+              <a href="#shortcuts-code-menu">Code Menu</a>
             </NoteRow>
             <BannerRow
               tocKey="shortcuts-css"
@@ -272,7 +282,7 @@ export default function Features() {
             </tr>
             <NoteRow>
               Can also be changed in the{" "}
-              <a href="#shortcuts-code-menu">Code menu</a> under{" "}
+              <a href="#shortcuts-code-menu">Code Menu</a> under{" "}
               <i>HUD Colors</i>.
             </NoteRow>
             <BannerRow tocKey="shortcuts-tag-list" img="tag-list" />
@@ -317,6 +327,11 @@ export default function Features() {
                 Hold <code>L</code> or <code>R</code>
               </td>
             </tr>
+            <NoteRow>
+              Works in any scrollable list on the CSS, like the tag list,
+              controls list when pressing <code>Y</code> in the tag list, or HP
+              list in stamina mode.
+            </NoteRow>
             <BannerRow tocKey="shortcuts-sss" img="stage-selection-screen" />
             <tr>
               <td>Swap stage selection screen layouts / presets</td>
@@ -389,8 +404,8 @@ export default function Features() {
               </td>
             </tr>
             <NoteRow>
-              The alt button might need to be held for like a second even if the
-              music menu is already open, otherwise the game might go to the
+              The alt button might need to be held for about a second even if
+              the music menu is already open, otherwise the game might go to the
               default stage instead of the alt
             </NoteRow>
             <tr>
@@ -519,7 +534,7 @@ export default function Features() {
               </td>
             </tr>
             <NoteRow standalone>
-              Using Debug mode/frame advance, drawing DI can be enabled, pausing
+              Using Debug Mode/frame advance, drawing DI can be enabled, pausing
               on any frame, and checking any possible DI trajectories during
               replay playback (e.g. find the best survival DI for any move)
             </NoteRow>
@@ -563,7 +578,7 @@ export default function Features() {
               </td>
             </tr>
             <tr>
-              <td>Boot to Training mode</td>
+              <td>Boot to training mode</td>
               <td>
                 Hold <code>L</code> or <code>R</code> (GameCube, Classic
                 Controller) or <code>R</code> or <code>B</code> (Wiimote) during
@@ -578,7 +593,7 @@ export default function Features() {
               </td>
             </tr>
             <tr>
-              <td>Boot to Replay menu</td>
+              <td>Boot to Replay Menu</td>
               <td>
                 Hold <code>Z</code> (GameCube), <code>ZL</code> or{" "}
                 <code>ZR</code> (Classic Controller) or <code>C/-</code>{" "}
@@ -588,15 +603,16 @@ export default function Features() {
           </tbody>
         </table>
       </section>
+      <hr />
       <section>
         <Banner tocKey="game-modes" img="game-modes" />
         <ul>
           <li>
             New Special Brawl mode: War mode — KO players to steal their stocks!
           </li>
-          <li>Big Head and Random Angle modes in Code menu</li>
+          <li>Big Head and Random Angle modes in Code Menu</li>
           <li>
-            A new mode has been added to Random Angle in the Code menu: Static
+            A new mode has been added to Random Angle in the Code Menu: Static
             Random Angle! This will randomize angles for moves, then keep them
             that way for the entire match to allow for strategized setups.
           </li>
@@ -633,10 +649,11 @@ export default function Features() {
           </li>
         </ul>
       </section>
+      <hr />
       <section>
         <Banner
-          tocKey="training-practise-controls"
-          img="training-practise-controls"
+          tocKey="training-practice-controls"
+          img="training-practice-controls"
         />
         <ul>
           <li>UCF-style shield dropping</li>
@@ -664,7 +681,7 @@ export default function Features() {
           </li>
           <li>
             "Shield" option in Training mode no longer gives infinite shield
-            (activate in Code menu instead)
+            (activate in Code Menu instead)
           </li>
           <li>
             CPUs will now select between one of the 5 options of DI, instead of
@@ -680,11 +697,12 @@ export default function Features() {
             Solo in Versus mode: When the game settings are changed from
             "stocks" to "time" and the time set to infinite, a match can be
             started without a second player or CPU. This can be useful in
-            combination with the Camera Lock feature of the Code menu for e.g.
-            movement practise.
+            combination with the Camera Lock feature of the Code Menu for e.g.
+            movement practice.
           </li>
         </ul>
       </section>
+      <hr />
       <section>
         <Banner tocKey="subspace-emissary" img="subspace-emissary" />
         <ul>
@@ -717,6 +735,7 @@ export default function Features() {
           </li>
         </ul>
       </section>
+      <hr />
       <section>
         <Banner tocKey="items" img="items" />
         <ul>
@@ -725,15 +744,15 @@ export default function Features() {
             Switch: Very High, Intense and Bomb Rain
           </li>
           <li>
-            Press <code>Start</code> on Assist Trophies in the item switch menu
+            Press <code>Start</code> on Assist Trophies in the Item Switch menu
             to toggle which Assist Trophies are active in a gameplay session
           </li>
           <li>
-            Press <code>Start</code> on Containers in the item switch menu to
+            Press <code>Start</code> on Containers in the Item Switch menu to
             toggle different properties for them, for example explosions!
           </li>
           <li>
-            Press <code>Start</code> on Pokémon in the item switch menu to
+            Press <code>Start</code> on Pokémon in the Item Switch menu to
             toggle the appearances of Pokemon other than Mew, Celebi and Jirachi
             (these Pokemon are excluded as they are tied towards rewards and
             achievements)
@@ -741,7 +760,7 @@ export default function Features() {
           <li>
             New item mode: Mayhem! Certain items spontaneously activate for
             maximum chaos!{" "}
-            <i>Is enabled like an item in the item switch menu.</i>
+            <i>Is enabled like an item in the Item Switch menu.</i>
           </li>
           <li>
             New item: Flipper! The Flipper from Balloon Fight has returned.
@@ -775,6 +794,7 @@ export default function Features() {
           </li>
         </ul>
       </section>
+      <hr />
       <section>
         <Headline h={2} tocKey="more-features" />
         <ul>
@@ -787,9 +807,16 @@ export default function Features() {
             things such as animations, collisions, and hazards when toggled
             between (Currently supported stages are Smashville, Yoshi’s Island,
             Green Hill Zone, Fountain of Dreams, Dream Land, and Dead Line)
+            <p className={styles.note}>
+              TODO this info alone doesn't explain how it's used - that
+              explanation is e.g. in the SSS section. maybe move this there? but
+              then what about the hazard toggles in the random stage selection
+              menu?
+            </p>
           </li>
         </ul>
       </section>
+      <hr />
       <section>
         <Headline h={2} tocKey="other-explanations" />
         <h3 style={{ fontSize: "1em" }}>
@@ -797,10 +824,10 @@ export default function Features() {
           selection menu work?
         </h3>
         <p>
-          This button currently works the same as in vanilla Brawl and it's
+          This button currently works the same as in vanilla Brawl and its
           appearance can be confusing. The label of the button, e.g.{" "}
           <code>TURN PAGE ON</code> is supposed to be read as an <em>action</em>{" "}
-          instead of the current <em>state</em>. Like it's text label, it's
+          instead of the current <em>state</em>. Like its text label, its
           appearance shows the state that the page will be turned to when
           pressed, not the current state. As soon as all stages on the page are
           set to ON, the action and therefore the text label and appearance of
@@ -812,7 +839,7 @@ export default function Features() {
           than toggling the whole page.
         </p>
         <h3 style={{ fontSize: "1em" }}>
-          How does <code>Press DPad to select percent</code> in the Code menu
+          How does <code>Press DPad to select percent</code> in the Code Menu
           work?
         </h3>
         <p>
@@ -820,12 +847,12 @@ export default function Features() {
           value of <code>Select percent</code>.
         </p>
       </section>
-
+      <hr />
       <section>
         <Headline h={2} tocKey="comparisons" />
         <table
-className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
->
+          className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
+        >
           <tbody>
             <tr>
               <td colSpan={2}>
@@ -839,7 +866,9 @@ className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
               <td>✅</td>
             </tr>
             <tr>
-              <td>L-canceling</td>
+              <td>
+                <a href="https://www.ssbwiki.com/L-canceling">L-canceling</a>
+              </td>
               <td>✅</td>
             </tr>
             <NoteRow>
@@ -856,33 +885,49 @@ className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
             </tr>
             <NoteRow>TODO add details</NoteRow>
             <tr>
-              <td>Light shield</td>
+              <td>
+                <a href="https://www.ssbwiki.com/Shield">Light shield</a>
+              </td>
               <td>❌</td>
             </tr>
             <tr>
-              <td>L-cancel without tech</td>
               <td>
-                ✅ — <code>Z</code> like in Melee
+                <a href="https://www.ssbwiki.com/L-canceling">L-cancel</a>{" "}
+                without tech
+              </td>
+              <td>
+                ✅ — Light press <code>L</code> / <code>R</code> like in Melee
               </td>
             </tr>
             <tr>
-              <td>Jump-cancel grab</td>
+              <td>
+                <a href="https://www.ssbwiki.com/Jump-canceled_grab">
+                  Jump-canceled grab
+                </a>{" "}
+                (JC Grab)
+              </td>
               <td>✅</td>
             </tr>
             <tr>
-              <td>Boost grab</td>
-              <td>TODO probably?</td>
+              <td>
+                <a href="https://www.ssbwiki.com/Boost_grab">Boost grab</a>
+              </td>
+              <td>✅</td>
             </tr>
             <tr>
-              <td>Shield dropping</td>
+              <td>
+                <a href="https://www.ssbwiki.com/Shield_drop">
+                  Shield dropping
+                </a>
+              </td>
               <td>✅</td>
             </tr>
             <tr>
               <td>
                 <a href="https://www.ssbwiki.com/Short_hop_fast_fall_L-cancel">
-                  SHFFL
+                  Short hop fast fall L-cancel
                 </a>{" "}
-                — Short hop fast fall L-cancel
+                (SHFFL)
               </td>
               <td>✅</td>
             </tr>
@@ -894,19 +939,39 @@ className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
             </tr>
             <tr>
               <td>
-                <a href="https://www.ssbwiki.com/Dashdance">
-                  (Instant) Dash dancing
-                </a>
+                <a href="https://www.ssbwiki.com/Dashdance">Dash dancing</a>
               </td>
-              <td>✅</td>
+              <td>✅ — instant</td>
             </tr>
             <tr>
-              <td>Ice Climbers: Wobbling</td>
+              <td>
+                Ice Climbers:{" "}
+                <a href="https://www.ssbwiki.com/Wobbling">Wobbling</a>
+              </td>
               <td>❌</td>
             </tr>
             <tr>
-              <td>Spacies: Wave-shining</td>
+              <td>
+                Spacies:{" "}
+                <a href="https://www.ssbwiki.com/Waveshine">Waveshining</a>
+              </td>
               <td>✅ — also available to Wolf</td>
+            </tr>
+            <tr>
+              <td>
+                Peach: <a href="https://www.ssbwiki.com/Vegetable">Vegetable</a>{" "}
+                (Down Special)
+              </td>
+              <td>Can't pull Bob-ombs or Swords</td>
+            </tr>
+            <tr>
+              <td>
+                Samus:{" "}
+                <a href="https://www.ssbwiki.com/Super_wavedash">
+                  Super wavedash
+                </a>
+              </td>
+              <td>✅ — 2 frame window instead of 1 frame</td>
             </tr>
             <tr>
               <td>
@@ -938,35 +1003,49 @@ className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
               <td>❌</td>
             </tr>
             <tr>
-              <td>Reverse aerial rush</td>
+              <td>
+                <a href="https://www.ssbwiki.com/Reverse_aerial_rush">
+                  Reverse aerial rush
+                </a>
+              </td>
               <td>✅</td>
             </tr>
             <tr>
-              <td>B-reversing</td>
+              <td>
+                <a href="https://www.ssbwiki.com/B-reversing">B-reversing</a>
+              </td>
               <td>✅</td>
             </tr>
             <tr>
-              <td>Wavebounce</td>
+              <td>
+                <a href="https://www.ssbwiki.com/B-reversing#Wavebounce">
+                  Wavebounce
+                </a>
+              </td>
               <td>✅</td>
             </tr>
             <tr>
-              <td>Grab ledge from behind after Up-B apex</td>
-              <td>❌ — like Melee</td>
+              <td>Reverse ledge grab</td>
+              <td>❌ — only at apex of Up-B, like Melee</td>
             </tr>
             <tr>
-              <td>Pivot grab</td>
+              <td>
+                <a href="https://www.ssbwiki.com/Pivot_grab">Pivot grab</a>
+              </td>
               <td>✅</td>
             </tr>
             <tr>
               <td>
                 <a href="https://www.ssbwiki.com/Autolanding">Autolanding</a>
               </td>
-              <td>TODO (i think yes but unsure)</td>
+              <td>❌</td>
             </tr>
             <tr>
               <td>
-                <a href="https://www.ssbwiki.com/DACUS">DACUS</a> — Dash attack
-                canceled up smash
+                <a href="https://www.ssbwiki.com/DACUS">
+                  Dash attack canceled up smash
+                </a>{" "}
+                (DACUS)
               </td>
               <td>✅</td>
             </tr>
@@ -987,7 +1066,9 @@ className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
               <td>❌</td>
             </tr>
             <tr>
-              <td>3-frame input buffer</td>
+              <td>
+                <a href="https://www.ssbwiki.com/Buffer">Buffering</a>
+              </td>
               <td>❌ — like Melee</td>
             </tr>
             <NoteRow>
@@ -1002,31 +1083,37 @@ className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
               </td>
               <td>✅</td>
             </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Dash_pivot_cancel">
+                  Dash pivot cancel
+                </a>
+              </td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/V-cancelling">V-canceling</a>
+              </td>
+              <td>❌</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Platform_cancel">
+                  Platform cancel
+                </a>
+              </td>
+              <td>❌</td>
+            </tr>
             <NoteRow standalone>
               TODO more to check:
               <br />
               <a href="https://www.ssbwiki.com/Hilldash">Hilldash</a>
-              <br />
-              <a href="https://www.ssbwiki.com/Platform_cancel">
-                Platform cancel
-              </a>
-              <br />
-              <a href="https://www.ssbwiki.com/Shield_break_combo">
-                Shield break combo
-              </a>
-              <br />
-              <a href="https://www.ssbwiki.com/V-cancelling">V-cancelling</a>
-              <br />
-              <a href="https://www.ssbwiki.com/Autolanding">Autolanding</a>
-              <br />
-              <a href="https://www.ssbwiki.com/Dash_pivot_cancel">
-                Dash pivot cancel
-              </a>
             </NoteRow>
           </tbody>
         </table>
       </section>
-<hr />
+      <hr />
       <section>
         <Headline h={2} tocKey="other-resources" />
         <p>

@@ -821,7 +821,9 @@ export default function Features() {
 
       <section>
         <Headline h={2} tocKey="comparisons" />
-        <table className={"table " + styles.verticallyCenterCells}>
+        <table
+className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
+>
           <tbody>
             <tr>
               <td colSpan={2}>

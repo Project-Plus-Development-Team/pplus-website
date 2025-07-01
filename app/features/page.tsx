@@ -26,6 +26,7 @@ const toc = {
   "more-features": "More features",
   "other-explanations": "Other explanations",
   comparisons: "Comparisons with Melee and Brawl",
+  "other-resources": "Other resources",
 };
 
 type TOCKey = keyof typeof toc;
@@ -119,6 +120,7 @@ export default function Features() {
             <TOCEntry tocKey="more-features" />
             <TOCEntry tocKey="other-explanations" />
             <TOCEntry tocKey="comparisons" />
+            <TOCEntry tocKey="other-resources" />
           </ol>
         </nav>
       </section>
@@ -1023,6 +1025,34 @@ className={`table ${styles.verticallyCenterCells} ${styles.alternativeLinks}`}
             </NoteRow>
           </tbody>
         </table>
+      </section>
+<hr />
+      <section>
+        <Headline h={2} tocKey="other-resources" />
+        <p>
+          Melee & P+ gameplay differences —{" "}
+          <a href="https://docs.google.com/document/d/1iOZ19U4mSRbspd4fx2HmMWAfax5C2Do6Z1M8KrjJz3E">
+            Google Docs
+          </a>
+        </p>
+        <p>
+          Attributes (Frame data, weights, knockback values, ranges etc.) —{" "}
+          <a href="https://docs.google.com/spreadsheets/d/1cp8_dGoGHP5SqbFjqqdygDX2QMW8lNNDeYRbSiLG4xE">
+            Google Docs
+          </a>
+        </p>
+        <p>
+          Stage stats —{" "}
+          <a href="https://docs.google.com/spreadsheets/d/1XVq9SqC3Qv20h4zdbcaSTlC5CBX0cGNDDQCOPQ9CRYA">
+            Google Docs
+          </a>
+        </p>
+        <p>
+          All Stages —{" "}
+          <a href="https://docs.google.com/document/d/1dIFPIiFPBFrXXMoOgX12CSo6qXPTfjX9KTuTEpx8Qeg">
+            Google Docs
+          </a>
+        </p>
       </section>
       <hr />
       <sub>

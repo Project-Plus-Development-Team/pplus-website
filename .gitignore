@@ -4,8 +4,4 @@
 /.env.local
 /image-generator/generated-image-indexes
 /public/images/generated
-.netlify
-bun.lockb
-
-# documents / notes folder
-/documents/
+/package-lock.json

@@ -1,4 +1,4 @@
-import { convertImages, convertSingleImage } from "./generate-lib.ts";
+import { folder, single } from "./generate-lib.ts";
 
 /**
  * pplus-website doesn't use next-image-export-optimizer
@@ -6,44 +6,44 @@ import { convertImages, convertSingleImage } from "./generate-lib.ts";
  * https://github.com/Niels-IO/next-image-export-optimizer/issues/224
  */
 
-convertImages("characters", { resize: { height: 80 } });
+folder("characters", { resize: { height: 80 } });
 
-convertImages("communities", {
+folder("communities", {
   quality: 50,
   resize: { height: 48 },
 });
 
-convertImages("css", {
+folder("css", {
   flop: true,
   quality: 50,
   resize: { width: 80, height: 80 },
 });
 
-convertImages("project-wave/css", {
+folder("project-wave/css", {
   flop: true,
   quality: 50,
   resize: { width: 80, height: 80 },
 });
 
-convertImages("icons", { resize: { height: 80 } });
-convertImages("knuckles", { quality: 100, resize: { width: 300 } });
-convertImages("features", { quality: 70, resize: { width: 600 } });
+folder("icons", { resize: { height: 80 } });
+folder("knuckles", { quality: 100, resize: { width: 300 } });
+folder("features", { quality: 70, resize: { width: 600 } });
 
-convertSingleImage("background.jpeg");
-convertSingleImage("background-banner.png");
-convertSingleImage("falco-glowy.png", { resize: { height: 366 } });
-convertSingleImage("logo.png");
-convertSingleImage("mosaic-background-pattern.jpg", { quality: 100 });
-convertSingleImage("smashgg-favicon.png");
-convertSingleImage("favicon.png");
-convertSingleImage("knuckles-woah.png", { quality: 80 });
+single("background.jpeg");
+single("background-banner.png");
+single("falco-glowy.png", { resize: { height: 366 } });
+single("logo.png");
+single("mosaic-background-pattern.jpg", { quality: 100 });
+single("smashgg-favicon.png");
+single("favicon.png");
+single("knuckles-woah.png", { quality: 80 });
 
-convertSingleImage("project-wave/project-wave-logo.png", { quality: 90 });
-convertSingleImage("project-wave/vaporwave-color-palette.png", {
+single("project-wave/project-wave-logo.png", { quality: 90 });
+single("project-wave/vaporwave-color-palette.png", {
   resize: { height: 20 },
   quality: 30,
 });
-convertSingleImage("project-wave/vaporwave-wallpaper.jpg", {
+single("project-wave/vaporwave-wallpaper.jpg", {
   resize: { height: 1000 },
   quality: 80,
 });

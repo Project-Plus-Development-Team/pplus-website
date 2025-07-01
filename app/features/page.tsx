@@ -992,6 +992,12 @@ export default function Features() {
               <td>✅</td>
             </tr>
             <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/V-cancelling">V-canceling</a>
+              </td>
+              <td>❌</td>
+            </tr>
+            <tr>
               <td colSpan={2}>
                 <h4>Properties from Brawl</h4>
               </td>
@@ -1088,12 +1094,6 @@ export default function Features() {
                 <a href="https://www.ssbwiki.com/Dash_pivot_cancel">
                   Dash pivot cancel
                 </a>
-              </td>
-              <td>❌</td>
-            </tr>
-            <tr>
-              <td>
-                <a href="https://www.ssbwiki.com/V-cancelling">V-canceling</a>
               </td>
               <td>❌</td>
             </tr>

@@ -3,7 +3,7 @@
   "scripts": {
     "dev": "npm run generate-imgs && next dev",
     "build": "npm run generate-imgs && next build",
-    "generate-imgs": "node --experimental-strip-types image-generator/generate-small-css-images.ts"
+    "generate-imgs": "node --experimental-strip-types image-generator/generate-optimized-images.ts"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

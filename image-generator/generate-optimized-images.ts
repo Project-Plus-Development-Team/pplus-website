@@ -1,5 +1,11 @@
 import { convertImages, convertSingleImage } from "./generate-lib.ts";
 
+/**
+ * pplus-website doesn't use next-image-export-optimizer
+ * because it doesn't support CSS / background-image optimisation at the time of writing.
+ * https://github.com/Niels-IO/next-image-export-optimizer/issues/224
+ */
+
 convertImages("characters", { resize: { height: 80 } });
 
 convertImages("communities", {

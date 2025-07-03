@@ -812,13 +812,16 @@ export default function Features() {
             Hazards are now toggle-able for select stages, which will swap
             things such as animations, collisions, and hazards when toggled
             between (Currently supported stages are Smashville, Yoshi’s Island,
-            Green Hill Zone, Fountain of Dreams, Dream Land, and Dead Line)
-            <p className={styles.note}>
-              TODO this info alone doesn't explain how it's used - that
-              explanation is e.g. in the SSS section. maybe move this there? but
-              then what about the hazard toggles in the random stage selection
-              menu?
-            </p>
+            Green Hill Zone, Fountain of Dreams, Dream Land, and Dead Line).
+            Hazards can be toggled in two menus:
+            <ul>
+              <li>permanently in the random stage selection menu</li>
+              <li>
+                temporarily on the stage selection screen using <code>Z</code>{" "}
+                (see the <a href="#shortcuts-sss">SSS shortcuts section</a> for
+                details)
+              </li>
+            </ul>
           </li>
         </ul>
       </section>
@@ -889,7 +892,9 @@ export default function Features() {
               </td>
               <td>✅</td>
             </tr>
-            <NoteRow>TODO add details</NoteRow>
+            <NoteRow>
+              Crouch canceling reduces knockback to 0.67x like in Melee.
+            </NoteRow>
             <tr>
               <td>
                 <a href="https://www.ssbwiki.com/Shield">Light shield</a>
@@ -994,7 +999,16 @@ export default function Features() {
               <td>✅</td>
             </tr>
             <NoteRow>
-              TODO: add details on how storing misfire works in PM/P+
+              A Misfire can be <strong>stored</strong> using <code>L</code> /{" "}
+              <code>R</code> during the move's startup. The next Side-B will be
+              a <strong>guaranteed Misfire</strong> with -3% damage. This can be
+              repeated.
+              <br />
+              Misfire also has a 1/6 (16%) chance compared to Melee's 1/8 and
+              the chance for Misfire increases on every consecutive regular
+              Green Missile. This means that at the start of a match or after a
+              Misfire the chance is 1/6, then 1/5 etc. until the seventh Green
+              Missile is a <strong>100% guaranteed Misfire</strong>.
             </NoteRow>
             <tr>
               <td>
@@ -1035,7 +1049,7 @@ export default function Features() {
                 <a href="https://www.ssbwiki.com/Reverse_aerial_rush">
                   Reverse aerial rush
                 </a>{" "}
-                - (RAR)
+                (RAR)
               </td>
               <td>✅</td>
             </tr>
@@ -1134,8 +1148,7 @@ export default function Features() {
               <td>❌</td>
             </tr>
             <NoteRow standalone>
-              TODO more to check:
-              <br />
+              TODO more to check:{" "}
               <a href="https://www.ssbwiki.com/Hilldash">Hilldash</a>
             </NoteRow>
           </tbody>

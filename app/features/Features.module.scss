@@ -46,25 +46,24 @@
   padding: 0.3em 0.6em;
   border-radius: 0.7em;
   border: 1px solid #222222;
-
-  &::before {
-    content: "🛈 ";
-    color: rgb(72, 85, 201);
-  }
 }
 
 tr:has(+ .noteRow.attached) > td {
   border: none !important;
 }
 
+.note,
+.noteRow > td > * {
+  &::before {
+    content: "ⓘ ";
+    font-weight: bold;
+    color: rgb(72, 85, 201);
+  }
+}
+
 .noteRow {
   > td > * {
     color: #bbb;
-
-    &::before {
-      content: "🛈 ";
-      color: rgb(72, 85, 201);
-    }
   }
 
   &.standalone > td,

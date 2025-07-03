@@ -1,23 +1,56 @@
 {
-  "title": "Links to be displayed on the downloads page",
-  "type": "array",
-  "items": {
-    "title": "A group of buttons to be generated. Keys are titles, values are objects with url and optionally icon",
-    "type": "object",
-    "additionalProperties": {
-      "title": "Key is title, value is object with url and optionally with icon",
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "$defs": {
+    "download-thingy": {
       "type": "object",
-      "required": [ "url" ],
       "properties": {
-        "icon": {
-          "type": "string"
+        "url": { "type": "string" },
+        "mirror": { "type": "string" }
+      },
+      "required": ["url"]
+    }
+  },
+  "title": "Links to be displayed on the downloads page",
+  "type": "object",
+  "properties": {
+    "editions": {
+      "type": "object",
+      "properties": {
+        "wii": {
+          "type": "object",
+          "$ref": "#/$defs/download-thingy"
         },
-        "url": {
-          "type": "string",
-          "format": "uri",
-          "pattern": "^https?://"
+        "wii-lite": {
+          "type": "object",
+          "$ref": "#/$defs/download-thingy"
+        },
+        "windows": {
+          "type": "object",
+          "$ref": "#/$defs/download-thingy"
+        },
+        "linux": {
+          "type": "object",
+          "$ref": "#/$defs/download-thingy"
+        },
+        "mac-os": {
+          "type": "object",
+          "$ref": "#/$defs/download-thingy"
         }
+      },
+      "required": ["wii", "wii-lite", "windows", "linux"],
+      "additionalProperties": false
+    },
+    "modding-resources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "allOf": [{ "$ref": "#/$defs/download-thingy" }],
+        "properties": {
+          "title": { "type": "string" }
+        },
+        "required": ["title"]
       }
     }
-  }
+  },
+  "additionalProperties": false
 }

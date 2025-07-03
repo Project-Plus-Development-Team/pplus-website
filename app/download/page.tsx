@@ -9,45 +9,46 @@ import {
   type IconDefinition,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import type { Metadata } from "next";
-import { YouTubePlayer } from "app/components/YouTubePlayer";
-import importedLinkGroups from "./download.json";
 import { getSortedVersions } from "app/changes/get-version";
+import { YouTubePlayer } from "app/components/YouTubePlayer";
+import type { Metadata } from "next";
+import { PropsWithChildren } from "react";
+import downloadJson from "./download.json";
 
-export type LinkGroup = Record<string, { url: string; icon?: string }>;
-
-interface LinkGroupProps {
-  data: LinkGroup[];
-}
-
-const iconMap: Record<string, IconDefinition> = {
-  "fas fa-sd-card": faSdCard,
-  "fas fa-box-open": faBoxOpen,
-  "fab fa-windows": faWindows,
-  "fab fa-apple": faApple,
-  "fab fa-linux": faLinux,
-};
-
-function LinkGroup({ data }: { data: LinkGroupProps }) {
-  return (
-    <div className="buttons">
-      {Object.entries(data).map(
-        ([title, { url, icon }]: [string, LinkGroup[string]], index) => (
-          <a href={url} className="button is-link" key={index}>
-            {icon !== undefined && (
-              <FontAwesomeIcon
-                icon={iconMap[icon]}
-                fixedWidth
-                className="mr-2"
-              />
-            )}
-            <span>{title}</span>
-          </a>
-        )
+const DownloadThing = ({
+  text,
+  url,
+  iconLabel,
+  mirrorUrl,
+  icon,
+}: {
+  text: string;
+  url: string;
+  icon: IconDefinition;
+  iconLabel?: string;
+  mirrorUrl?: string;
+}) => (
+  <div className="tw:flex tw:flex-col tw:gap-1 tw:items-center">
+    <h3>{text}</h3>
+    <a
+      href={url}
+      className="button is-link tw:aspect-square tw:relative tw:p-2"
+    >
+      <FontAwesomeIcon icon={icon} fixedWidth fontSize="4em" />
+      {iconLabel && (
+        <div className="tw:absolute tw:text-black">{iconLabel}</div>
       )}
-    </div>
-  );
-}
+    </a>
+    {mirrorUrl && (
+      <a
+        href={mirrorUrl}
+        className="tw:not-hover:text-neutral-400 tw:not-hover:no-underline"
+      >
+        Mirror
+      </a>
+    )}
+  </div>
+);
 
 export async function generateMetadata(): Promise<Metadata> {
   const sortedVersions = await getSortedVersions();
@@ -59,47 +60,113 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
+const Note = ({ children }: PropsWithChildren) => (
+  <p className="tw:my-3 tw:p-1 tw:text-center tw:bg-neutral-900 tw:rounded tw:border-neutral-700 tw:border tw:text-neutral-200">
+    {children}
+  </p>
+);
+
 export default async function Download() {
   const sortedVersions = await getSortedVersions();
   const latestVersion = sortedVersions[sortedVersions.length - 1];
-  const linkGroups = importedLinkGroups as unknown as LinkGroupProps[];
 
   return (
     <main>
-      <h1 className="title">
-        Download Project+ v{latestVersion}{" "}
-        <a href="/feed.xml" rel="noreferrer" target="_blank">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="18"
-            width="18"
-            viewBox="0 0 448 512"
-          >
-            <path
-              fill="#ee802f"
-              d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+      <h1 className="title is-1 tw:text-center">Downloads</h1>
+      <hr />
+      <section>
+        <h2 className="title is-2 tw:flex tw:justify-center tw:items-center tw:gap-3">
+          Download Project+ v{latestVersion}{" "}
+          <a href="/feed.xml" rel="noreferrer" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="28"
+              width="28"
+              viewBox="0 0 448 512"
+            >
+              <path
+                fill="#ee802f"
+                d="M0 64C0 46.3 14.3 32 32 32c229.8 0 416 186.2 416 416c0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96C14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0A64 64 0 1 1 0 416zM32 160c159.1 0 288 128.9 288 288c0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224c-17.7 0-32-14.3-32-32s14.3-32 32-32z"
+              />
+            </svg>
+          </a>
+        </h2>
+        <div className="tw:flex tw:gap-2 tw:flex-wrap tw:*:grow">
+          <div>
+            <h3 className="title is-3 tw:text-center">Console</h3>
+            <div className="tw:flex tw:gap-4 tw:justify-evenly">
+              <DownloadThing
+                icon={faSdCard}
+                text="Wii"
+                url={downloadJson.editions.wii.url}
+                mirrorUrl={downloadJson.editions.wii.mirror}
+              />
+              <DownloadThing
+                icon={faSdCard}
+                text="Wii Lite"
+                iconLabel="2GB"
+                url={downloadJson.editions["wii-lite"].url}
+                mirrorUrl={downloadJson.editions["wii-lite"].mirror}
+              />
+            </div>
+          </div>
+          <div>
+            <h3 className="title is-3 tw:text-center">Dolphin</h3>
+            <div className="tw:flex tw:gap-4 tw:justify-evenly">
+              <DownloadThing
+                icon={faWindows}
+                text="Windows"
+                url={downloadJson.editions.windows.url}
+                mirrorUrl={downloadJson.editions.windows.mirror}
+              />
+              <DownloadThing
+                icon={faLinux}
+                text="Linux"
+                url={downloadJson.editions.linux.url}
+                mirrorUrl={
+                  "mirror" in downloadJson.editions.linux &&
+                  typeof downloadJson.editions.linux.mirror === "string"
+                    ? downloadJson.editions.linux.mirror
+                    : undefined
+                }
+              />
+            </div>
+          </div>
+        </div>
+        <Note>
+          Wii Lite only changes music compression to fit on a 2 GB SD card.
+        </Note>
+      </section>
+      <hr />
+      <section>
+        <h2 className="title is-2 tw:text-center">Modding Resources</h2>
+        <div className="tw:flex tw:gap-6 tw:justify-evenly tw:flex-wrap">
+          {downloadJson["modding-resources"].map((resource, i) => (
+            <DownloadThing
+              key={i}
+              icon={faBoxOpen}
+              url={resource.url}
+              text={resource.title}
             />
-          </svg>
-        </a>
-      </h1>
-      <h1 className="subtitle">
-        Wii Lite only changes music compression to fit on a 2 GB SD card.
-      </h1>
-      <h1 className="subtitle">
-        The Modders Pack includes files for custom build creation, such as stage
-        imagery templates and full resolution HD textures.
-      </h1>
-      {linkGroups.map((group, index) => (
-        <LinkGroup key={index} data={group} />
-      ))}
-      <h1 className="subtitle">
-        Need help installing Project+? Project M Nexus&apos;s in-depth guide has
-        got you covered!
-      </h1>
-      <YouTubePlayer
-        id="4XynDH-eVDE"
-        title="Project+ Install Guide Video YouTube Embed"
-      />
+          ))}
+        </div>
+        <Note>
+          The Modders Pack includes files for custom build creation, such as
+          stage imagery templates and full resolution HD textures.
+        </Note>
+      </section>
+      <hr />
+      <section>
+        <h2 className="title is-2 tw:text-center">How to install</h2>
+        <p className="mb-2">
+          Need help installing Project+? Project M Nexus&apos;s in-depth guide
+          has got you covered!
+        </p>
+        <YouTubePlayer
+          id="4XynDH-eVDE"
+          title="Project+ Install Guide Video YouTube Embed"
+        />
+      </section>
     </main>
   );
 }

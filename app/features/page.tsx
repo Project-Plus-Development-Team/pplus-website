@@ -523,7 +523,7 @@ export default function Features() {
             <tr>
               <td>Interrupt stage loading and return to character selection</td>
               <td>
-                Hold <code>L + R + A</code> after picking a stge
+                Hold <code>L + R + A</code> after picking a stage
               </td>
             </tr>
             <BannerRow tocKey="shortcuts-replays" img="replays" />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./fontawesome";
 import "./global-styles/global.scss";
+import "./global-styles/tailwind.css";
 import { PageHeader } from "app/page-header/PageHeader";
 import "./project-wave-easter-egg.scss";
 

@@ -164,6 +164,12 @@ export default function Features() {
             <NoteRow>
               Only useful on console. Generally not needed on Dolphin.
             </NoteRow>
+            <tr>
+              <td>Share stocks in team battles</td>
+              <td>
+                <code>A</code> + <code>B</code>
+              </td>
+            </tr>
             <BannerRow tocKey="shortcuts-code-menu" img="code-menu" />
             <tr>
               <td>Open Code Menu</td>
@@ -209,7 +215,7 @@ export default function Features() {
               </td>
             </tr>
             <tr>
-              <td>Pause</td>
+              <td>Pause (Freeze)</td>
               <td>
                 <code>Start</code>
               </td>
@@ -937,6 +943,13 @@ export default function Features() {
               </td>
               <td>✅</td>
             </tr>
+            <NoteRow>
+              Moonwalking can also be performed with{" "}
+              <a href="https://www.youtube.com/watch?v=NW-5FjyrnAo">
+                C-Stick Moonwalking
+              </a>
+              .
+            </NoteRow>
             <tr>
               <td>
                 <a href="https://www.ssbwiki.com/Dashdance">Dash dancing</a>
@@ -998,6 +1011,15 @@ export default function Features() {
               <td>❌</td>
             </tr>
             <tr>
+              <td>
+                <a href="https://www.ssbwiki.com/Glancing_blow">
+                  Glancing blow
+                </a>{" "}
+                (Phantom hits)
+              </td>
+              <td>❌</td>
+            </tr>
+            <tr>
               <td colSpan={2}>
                 <h4>Properties from Brawl</h4>
               </td>
@@ -1012,7 +1034,8 @@ export default function Features() {
               <td>
                 <a href="https://www.ssbwiki.com/Reverse_aerial_rush">
                   Reverse aerial rush
-                </a>
+                </a>{" "}
+                - (RAR)
               </td>
               <td>✅</td>
             </tr>
@@ -1030,6 +1053,11 @@ export default function Features() {
               </td>
               <td>✅</td>
             </tr>
+            <NoteRow>
+              <a href="https://www.youtube.com/watch?v=RysjvswF7AQ">
+                Wavebounce Video Tutorial
+              </a>
+            </NoteRow>
             <tr>
               <td>Reverse ledge grab</td>
               <td>❌ — only at apex of Up-B, like Melee</td>

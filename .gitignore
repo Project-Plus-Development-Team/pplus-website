@@ -4,4 +4,5 @@
 /.env.local
 /image-generator/generated-image-indexes
 /public/images/generated
+/public/feed.xml
 /package-lock.json

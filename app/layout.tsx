@@ -44,6 +44,11 @@ export const metadata: Metadata = {
   ],
   manifest: "/site.webmanifest?v2=dLXjO2Kp56",
   metadataBase: new URL("https://projectplusgame.com"),
+  alternates: {
+    types: {
+      "application/rss+xml": "https://projectplusgame.com/feed.xml",
+    },
+  },
 };
 
 export default function RootLayout({

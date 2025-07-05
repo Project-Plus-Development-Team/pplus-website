@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import styles from "./faq.module.scss";
+import Link from "next/link";
+import { HA1, HA2 } from "app/components/HA";
+import { QuestionMark } from "../components/QuestionMark";
+import { Note } from "app/components/Note";
 
 export const metadata: Metadata = {
   title: "Frequently Asked Questions",
@@ -7,215 +10,381 @@ export const metadata: Metadata = {
     "Find answers to common questions about installation details, ISOs, mod content and more!",
 };
 
-export default async function () {
-  return (
-    <main>
-      <div className={`content ${styles.content}`}>
-        <h1>Frequently Asked Questions</h1>
-        <h4>
-          Why is the name &quot;Project+&quot; and not &quot;Project M
-          4.0&quot;?
-        </h4>
-        <p>
-          Project+ is not an official continuation of Project M. Project M is
-          the work of the PMDT which disbanded in 2015. Project+ does not
-          attempt to produce suggested plans for Project M 4.0 and does not use
-          any unreleased assets unless given permission by the original
-          creators.
-        </p>
-        <h4>Is Project+ or Project M played at my local tournaments?</h4>
-        <p>
-          It's up to tournament organizers to decide which version to play and
-          which rules they use (e.g. Auto L-Canceling). Some regions play
-          primarily the latest version of Project+, while others play the latest
-          official version of Project M (3.6). Communities typically use the
-          same Discord server for both games, so you're welcome to use our{" "}
-          <a href="/find-communities">community map</a> to get started.
-        </p>
-        <h4>Will there be future versions of Project+?</h4>
-        <p>Yes! Project+ is still in active development.</p>
-        <h4>Is there a Netplay / Hackless / Homebrew / USB Loading release?</h4>
-        <p>
-          Yes, you can download them <a href="/download">here</a>.
-        </p>
-        <h4>What do I need to play Project+?</h4>
-        <p>
-          It depends on the method you will be using. For the hackless method (
-          <a href="#ntsc-pal">NTSC-U</a>), you will need a Wii, an SD card that
-          has a capacity of 2GB or less and a Brawl disc. For Dolphin/Netplay,
-          you will need a computer and a NTSC-U Brawl ISO.
-        </p>
-        <h4>What do NTSC-U and PAL mean?</h4>
-        <p>
-          NTSC-U/J, PAL and SECAM refer to technical details on how TV systems
-          worked that were relevant back when the Wii was a current-gen console.
-          Game publishers may have to engineer their games differently based on
-          the video system in a given region. They might use different patches
-          that make games incompatible with consoles from other regions.
-          <br />
-          In the context of Wii games, this means the region where you bought
-          your console and game (Brawl).
-          <br />
-          You can easily find out which kind of Wii or game disc you have by
-          looking at{" "}
-          <a href="https://upload.wikimedia.org/wikipedia/commons/0/0d/PAL-NTSC-SECAM.svg">
-            this map on Wikipedia
-          </a>
-          .<br />
-          &quot;SECAM&quot; is the same as PAL for Wii games. &quot;NTSC-U&quot;
-          basically means &quot;NTSC USA&quot;, so North America and some parts
-          of South America. We specify this because regions countries like Japan
-          also have &quot;NTSC&quot;, but there are technical differences with
-          both consoles and games. Therefore we call these systems
-          &quot;NTSC-J&quot;. NTSC-J Brawl discs or ISO files are not compatible
-          with Project+ or recent Project M versions.{" "}
-          <strong>
-            You can still play Project M and Project+ and all other Brawl mods
-            on any system using <strong>USB-Loading</strong>.
-          </strong>
-          <br />
-          However, the <em>hackless method</em> is only available when you have
-          a NTSC-U console and disc.
-        </p>
-        <h4>What was changed from Project M?</h4>
-        <p>
-          Compared to vanilla 3.6, Project+ fixes bugs found in 3.6, adjusts
-          characters, and is built on the Legacy TE 2.5 build which itself
-          includes many new features and content.
-          <br />
-          For a list of changes, you can find a list of the changes across all
-          versions <a href="/changes/all">here</a>.
-        </p>
-        <h4>What characters are in Project+?</h4>
-        <p>
-          Project+ includes the 41 characters of Project M 3.6 with the addition
-          of <a href="/knuckles">Knuckles</a> as the 42nd character. There are
-          no plans for additional characters.
-        </p>
-        <h4>Does Project+ have new characters in addition to Knuckles?</h4>
-        <p>No new characters are planned to appear outside of Knuckles.</p>
-        <h4>Does Project+ have rollback?</h4>
-        <p>
-          Unfortunately, Project+ currently does not have rollback. There's a
-          project that's trying to implement rollback for Brawl called
-          Brawlback. You can find their Discord here:{" "}
-          <a href="/find-communities">Find Communities</a>.
-        </p>
-        <h4>Are there any new stages, costumes, or music?</h4>
-        <p>
-          Project+ includes many new stages, costumes, and music, with more on
-          the way!
-        </p>
-        <h4>Is tilt stick (attack on C-stick) fixed in Project+?</h4>
-        <p>
-          Tilt stick when you assign the C-stick to &quot;Attack&quot; in the
-          custom controls. In Project M, this setting didn't behave as expected
-          and only worked properly for unangled F-tilt. Tilt stick is fixed in
-          Project+ and works as expected (similar to Ultimate) which affects
-          gameplay balance because certain manuveurs are only possible with tilt
-          stick, which buffs some characters.
-        </p>
-        <h4>Does Project+ have L-Canceling?</h4>
-        <p>
-          Yes. L-Canceling is a technique from earlier games in the series and
-          Project M where pressing a shield input before landing during an
-          aerial attack reduces the landing lag. In Project+ you can L-Cancel
-          within 7 frames of landing to reduce the landing lag by half.
-          <br />
-          However, &quot;Auto L-Cancel&quot; can be toggled on from the match
-          settings to automatically reduce the landing lag of aerials without
-          the need to perform an L-Cancel. In tournaments it's up to tournament
-          organizers to determine if their tournament will run with &quot;Auto
-          L-Cancel&quot; toggled on or off.
-          <br />
-          Auto L-Cancel is great for new or casual players or when you want a
-          consistently fast gameplay experience. It also makes the game a bit
-          less stressful on the hands, which can be an accessibility factor.
-        </p>
-        <h4>
-          Can I build an ISO with Project+? Can I use BrawlBuilder with
-          Project+?
-        </h4>
-        <p>
-          It's not currently possible to use BrawlBuilder or a similar tool to
-          build a Project+ ISO. Certain codes that Project+ uses are not
-          compatible with ISO building.
-        </p>
-        <h4>How do I obtain a Brawl ISO file?</h4>
-        <p>
-          You can legally create a backup of your Brawl disc by running{" "}
-          <a href="https://wiibrew.org/wiki/CleanRip">CleanRip on a Wii</a>.
-        </p>
-        <h4>
-          How can I play Netplay when the traversal servers are down? How can i
-          play using direct IPs?
-        </h4>
-        <p>
-          <a href="https://www.smashladder.com/guides/view/26jo/direct-ip-hosting">
-            Direct IP Hosting Guide
-          </a>
-        </p>
-        <h4>
-          Can i add new characters to Project+? Does BrawlEx work with Project+?
-        </h4>
-        <p>
-          <em>&quot;P+Ex&quot;</em> integrates the BrawlEx engine and CSS
-          Expansion addon into Project+ to allow for an expanded roster of
-          custom characters. For more information, check out{" "}
-          <a href="https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8/edit">
-            this document
-          </a>
-          .
-        </p>
-        <h4>How do I set up my controller?</h4>
-        <p>
-          <a href="https://www.smashladder.com/guides/view/26oz/controller-guide-2-0">
-            Click here for the Controller Guide
-          </a>
-          .
-        </p>
-        <h4>How can I set up my Wii U GameCube Controller Adapter on a Mac?</h4>
-        <p>
-          <a href="https://wiki.dolphin-emu.org/index.php?title=How_to_use_the_Official_GameCube_Controller_Adapter_for_Wii_U_in_Dolphin#macOS">
-            How to use the Wii U GameCube Controller Adapter on Mac
-          </a>
-          .
-        </p>
-        <h4>How can I set up Project+ on Linux?</h4>
-        <p>
-          To install Project+ on Linux, install{" "}
-          <a href="https://github.com/jlambert360/FPM-AppImage/releases">
-            the AppImage from here
-          </a>
-          .
-        </p>
-        <h4>Can I play Project+ on an M1 Mac (ARM)?</h4>
-        <p>
-          We are planning to swap the base of our Dolphin build sometime in the
-          future to restore Mac compatibility. M1 and beyond Macs will not be
-          supported until this change occurs.
-        </p>
-        <h4>How do I know my Brawl ISO is compatible?</h4>
-        <p>
-          Check MD5's by right-clicking on Brawl, select <code>Properties</code>{" "}
-          navigate to the <code>Info</code> tab, and click on the{" "}
-          <code>Compute</code> button located to the right of{" "}
-          <code>MD5 Checksum</code>. (
-          <a href="https://i.imgur.com/xzye9my.png">Screenshot</a>)
-          <br />
-          If your game is not working, and the hash isn't listed here, it is
-          probable that your ISO needs to be replaced. Compatible ISOs may
-          include:
-        </p>
-        <ul>
-          <li>d18726e6dfdc8bdbdad540b561051087</li>
-          <li>d8560b021835c9234c28be7ff9bcaaeb</li>
-          <li>5052e2e15f22772ab6ce4fd078221e96</li>
-          <li>52ce7160ced2505ad5e397477d0ea4fe</li>
-          <li>9f677c78eacb7e9b8617ab358082be32</li>
-          <li>1c4d6175e3cbb2614bd805d32aea7311</li>
-        </ul>
+const FAQ = () => (
+  <main className="content">
+    <HA1 id="frequently-asked-questions">Frequently Asked Questions</HA1>
+    <hr />
+    <section>
+      <HA2 id="rollback">Does Project+ have Rollback?</HA2>
+      <p>
+        Unfortunately, Project+ does not have rollback netcode. While it has
+        been heavily anticipated since the release of Slippi for Melee, Project+
+        faces significant barriers to the development of rollback netcode with
+        its size, complexity, and the lack of available manpower. The ongoing
+        Brawlback project seeks to implement rollback netcode and matchmaking
+        into Super Smash Bros. Brawl and its mods such as Project+. There is
+        currently no timetable for its completion and release.
+      </p>
+      <p>
+        Brawlback and its development are not associated with the Project+
+        development team or this website. If you would like to learn more about
+        Brawlback or support its development, you can join the Brawlback Discord
+        community on the <Link href="/find-communities">Find Communities</Link>{" "}
+        page.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="matchmaking">Does Project+ have matchmaking like Slippi?</HA2>
+      <p>
+        Unfortunately, Project+ does not have matchmaking like Slippi. Most
+        matchmaking happens through Discord. See{" "}
+        <a href="#rollback">Rollback</a> for more information and{" "}
+        <Link href="/find-communities">Find Communities</Link> to find
+        communities for matchmaking.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="tier-list">Does Project+ have a tier list?</HA2>
+      <p>
+        Yes, you can find the current Project+ community tier list here:{" "}
+        <a href="https://smashboards.com/threads/new-community-project-v3-0-5-tier-list-released.524140/">
+          Community Project+ v3.0.5 Tier List
+        </a>
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="project-m">Is Project+ the continuation of Project M?</HA2>
+      <p>
+        Project+ is not an official continuation of Project M. Project M is the
+        work of the PMDT which disbanded in 2015. Project+ doesn't use
+        unreleased PMDT assets unless given permission by the original creators.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="tournaments">
+        Is Project+ or Project M played at my local tournaments?
+      </HA2>
+      <p>
+        Tournament organizers decide which game, version, and rules their
+        tournament will be using. Some regions primarily play the latest version
+        of Project+ while some play the final official version of Project M. You
+        can use the community map to find links to socials for your local
+        community to help you get started and find tournaments near you.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="updates">Will there be future updates to Project+?</HA2>
+      <p>Yes! Project+ is still in active development.</p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="netplay-hackless-homebrew-usb-loading">
+        Does Project+ have a Netplay / Hackless / Homebrew / USB Loader release?
+      </HA2>
+      <p>
+        Yes, you can download them from the{" "}
+        <Link href="/download">Download</Link> page.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="requirements">What do I need to play Project+?</HA2>
+      <Note>
+        TODO: Maybe just remove this and link to the{" "}
+        <Link href="/install">Install</Link> page?
+      </Note>
+      <div className="table-container">
+        <table className="table is-narrow is-bordered tw:w-full tw:**:align-middle">
+          <thead>
+            <tr>
+              <th className="tw:min-w-30">Platform</th>
+              <th className="tw:min-w-30">
+                Region <QuestionMark href="#ntsc-pal" />
+              </th>
+              <th className="tw:min-w-40">Method</th>
+              <th className="tw:min-w-50">Requirements</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowSpan={6}>Wii</td>
+              <td rowSpan={3}>NTSC-U</td>
+              <td>Hackless</td>
+              <td>
+                <ul>
+                  <li>NTSC-U SSBB Disc</li>
+                  <li>{"<"} 2GB SD Card</li>
+                  <li>Wiimote to launch</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Homebrew (Disc)</td>
+              <td>
+                <ul>
+                  <li>NTSC-U SSBB Disc</li>
+                  <li>{"<"} 128GB SD Card</li>
+                  <li>Homebrew channel</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td rowSpan={4} className="tw:h-40">
+                USB Loading
+              </td>
+              <td rowSpan={4}>
+                <ul>
+                  <li>NTSC-U SSBB ISO</li>
+                  <li>8GB+ USB Drive</li>
+                  <li>{"<"} 128GB SD Card</li>
+                  <li>Homebrew channel</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>PAL</td>
+            </tr>
+            <tr>
+              <td>NTSC-J</td>
+            </tr>
+            <tr>
+              <td>NTSC-K</td>
+            </tr>
+            <tr>
+              <td>Windows</td>
+              <td rowSpan={3}>n/a</td>
+              <td rowSpan={3}>Dolphin</td>
+              <td rowSpan={3}>
+                <ul>
+                  <li>NTSC-U SSBB ISO</li>
+                </ul>
+              </td>
+            </tr>
+            <tr>
+              <td>Linux</td>
+            </tr>
+            <tr>
+              <td>Mac OS</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </main>
-  );
-}
+    </section>
+    <hr />
+    <section>
+      <HA2 id="ntsc-pal">What do NTSC and PAL mean?</HA2>
+      <Note>
+        TODO: Consolidate this entry into the{" "}
+        <Link href="/ntsc-pal">NTSC / PAL</Link> page.
+      </Note>
+      <p>
+        NTSC is one of several audio and visual standards for TV systems and
+        NTSC-U refers specifically to the United States variant. Game developers
+        engineered specific versions of games and systems to match the video
+        systems of specific regions, so there are differences that make a
+        mismatch of regional games and consoles incompatible. Project M and
+        Project+ are designed for the NTSC-U versions of the Wii and Super Smash
+        Bros. Brawl, so they are incompatible with versions from other regions
+        (such as the PAL version that is prominent in Europe).
+      </p>
+      <p>
+        <strong>
+          You can play Project M and Project+ as well as any other Brawl mod on
+          any system using the{" "}
+          <Link href="/install/usb-loader">USB Loader method</Link>.
+        </strong>
+      </p>
+      <p>
+        To play Project+ on Dolphin/Netplay, see the{" "}
+        <Link href="/install/dolphin">Dolphin Guide</Link>.
+      </p>
+      <p>
+        How do I set up Project+ on Linux? To install Project+ on Linux, install
+        the AppImage from here:
+        <a href="https://github.com/jlambert360/FPM-AppImage/releases">
+          https://github.com/jlambert360/FPM-AppImage/releases
+        </a>
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="iso">
+        How do I obtain a <em>Brawl</em> ISO?
+      </HA2>
+      <p>
+        You can legally create a backup of your Brawl disc by running{" "}
+        <a href="https://wiibrew.org/wiki/CleanRip">CleanRip</a> on a Wii.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="iso-compatible">How do I know my Brawl ISO is compatible?</HA2>
+      <p>
+        To check the compatibility of your Brawl ISO, you need to check its MD5
+        in Dolphin. From the Dolphin window, right click on Brawl and select{" "}
+        <code>Properties</code>, navigate to the <code>Info</code> tab, and then
+        click the <code>Compute</code> button located to the right of{" "}
+        <code>MD5 Checksum</code> as seen in this{" "}
+        <a href="https://imgur.com/xzye9my">screenshot</a>.
+      </p>
+      <p>Compatible ISOs may include:</p>
+      <ul>
+        <li>d18726e6dfdc8bdbdad540b561051087</li>
+        <li>d8560b021835c9234c28be7ff9bcaaeb</li>
+        <li>5052e2e15f22772ab6ce4fd078221e96</li>
+        <li>52ce7160ced2505ad5e397477d0ea4fe</li>
+        <li>9f677c78eacb7e9b8617ab358082be32</li>
+        <li>1c4d6175e3cbb2614bd805d32aea7311</li>
+      </ul>
+      <p>
+        If your game is not working, and the hash isn't listed here, it is
+        probable that your ISO needs to be replaced.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="build-iso">
+        Can I build an ISO with Project+? Can I use BrawlBuilder with Project+?
+      </HA2>
+      <p>
+        It's not currently possible to use BrawlBuilder or a similar tool to
+        build a Project+ ISO. Certain codes that Project+ uses are not
+        compatible with ISO building.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="controller">How do I setup my controller?</HA2>
+      <a href="https://www.smashladder.com/guides/view/26oz/controller-guide-2-0">
+        Click here for Smashladder's Controller Guide.
+      </a>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="gamecube-mac">
+        How do I set up my Wii U GameCube adapter on a Mac?
+      </HA2>
+      <p>
+        Click here for the guide to use the Wii U GameCube Controller Adapter on
+        Mac.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="changes">
+        What are the changes and additions compared to Project M?
+      </HA2>
+      <p>
+        Compared to vanilla Project M 3.6, Project+ fixes bugs found in 3.6,
+        adjusts characters, adds new costumes, stages, and music, and is built
+        on the Legacy TE 2.5 build which itself includes many new features and
+        content. You can find a list of the changes across all versions on the{" "}
+        <Link href="/changes/all">All Changes</Link> page.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="characters">Will Project+ have new characters?</HA2>
+      <p>
+        Project+ v2.0 added <Link href="/knuckles">Knuckles</Link> as the 42nd
+        character to the 41 characters featured in Project M 3.6; however, there
+        are no plans to add any additional characters.
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="brawlex">
+        Can I add new characters to Project+? Does BrawlEX work with Project+?
+      </HA2>
+      <p>
+        "P+Ex" integrates the BrawlEx engine and CSS Expansion add-on into
+        Project+ to allow for an expanded roster of custom characters. For more
+        information, check out{" "}
+        <a href="https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8">
+          this Google Docs document
+        </a>
+        .
+      </p>
+    </section>
+    <hr />
+    <section>
+      <HA2 id="tilt-stick">Is Tilt Stick fixed in Project+?</HA2>
+      <p>
+        Yes, Project+ has working Tilt Stick.
+        <br />
+        See the{" "}
+        <Link href="/features#training-practice-controls">
+          Features page
+        </Link>{" "}
+        for details.
+      </p>
+    </section>
+    <hr />
+    {/*<h4>Are there any new stages, costumes, or music?</h4>
+      <p>
+        Project+ includes many new stages, costumes, and music, with more on the
+        way!
+      </p> */}
+    <section>
+      <HA2 id="l-canceling">Does Project+ have L-Canceling?</HA2>
+      <p>
+        Yes. L-Cancelling is a technique from earlier games in the series and
+        Project M where pressing a shield input before landing during an aerial
+        attack reduces the landing lag. In Project+ you can L-Cancel within 7
+        frames of landing to reduce the landing lag by half.
+      </p>
+      <p>
+        However, "Auto L-Cancel" can be toggled on from the match settings to
+        automatically reduce the landing lag of aerials without the need to
+        perform an L-Cancel. Auto L-Cancel is great for new or casual players or
+        when you want a consistently fast gameplay experience. It also makes the
+        game a bit less stressful on the hands, which can be an accessibility
+        factor.
+      </p>
+      <p>
+        In tournaments, it is up to tournament organizers to determine if their
+        tournament will run with "Auto L-Cancel" toggled on or off.
+      </p>
+      <Note>
+        TODO: Just link to <Link href="/features">Features page</Link>?
+      </Note>
+    </section>
+    <h4>
+      How can I play Netplay when the traversal servers are down? How can i play
+      using direct IPs?
+    </h4>
+    <p>
+      <a href="https://www.smashladder.com/guides/view/26jo/direct-ip-hosting">
+        Direct IP Hosting Guide
+      </a>
+    </p>
+    <hr />
+    <section>
+      <HA2 id="linux">How can I set up Project+ on Linux?</HA2>
+      <p>
+        To install Project+ on Linux, install{" "}
+        <a href="https://github.com/jlambert360/FPM-AppImage/releases">
+          the AppImage from here
+        </a>
+        .
+      </p>
+      <Note>
+        TODO put this in <Link href="/install">Install</Link> instead.
+      </Note>
+    </section>
+    <hr />
+    <h4>Can I play Project+ on an M1 Mac (ARM)?</h4>
+    <p>
+      We are planning to swap the base of our Dolphin build sometime in the
+      future to restore Mac compatibility. M1 and beyond Macs will not be
+      supported until this change occurs.
+    </p>
+  </main>
+);
+
+export default FAQ;

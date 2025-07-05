@@ -56,6 +56,11 @@ export const PageHeader = () => {
             text="Features (new!)"
             href="/features"
           />
+          <NavLink
+            onClick={() => setActive(false)}
+            text="Install (new!)"
+            href="/install"
+          />
         </div>
         <div className="navbar-end">
           <span className="navbar-item">

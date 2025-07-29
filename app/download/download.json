@@ -1,15 +1,15 @@
 {
   "editions": {
     "wii": {
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Wii.zip",
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Wii.zip",
       "mirror": "https://mega.nz/file/Sdc0gRKR#yJJ0CIkfeFbQtN9d_TK6FJcRHMiez-JWDVP5aAAG6xA"
     },
     "wii-lite": {
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Wii.Lite.zip",
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Wii.Lite.zip",
       "mirror": "https://mega.nz/file/XN0TCIzB#-yblQ42_rc2-ViXzFcdWuMlrOrSB298FbSZudG4CTB8"
     },
     "windows": {
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Netplay.Windows.zip",
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Netplay.Windows.zip",
       "mirror": "https://mega.nz/file/udVXGATA#wK5Nqfd7gRISZeyDmnB4JlyPOFyuAcLbIC3fClq2Pj8"
     },
     "linux": {
@@ -19,15 +19,15 @@
   "modding-resources": [
     {
       "title": "Modder's Pack",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Modders.Pack.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Modders.Pack.zip"
     },
     {
       "title": "3.0.5 > 3.1.2 Changed Files",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.2/Project+.v3.0.5.to.v3.1.2.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.0.5.to.v3.1.2.zip"
     },
     {
       "title": "3.1.0 > 3.1.2 Changed Files",
-      "url": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.0.to.v3.1.2.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.0.to.v3.1.2.zip"
     }
   ]
 }

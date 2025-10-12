@@ -1,33 +1,39 @@
 {
   "editions": {
     "wii": {
-      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Wii.zip",
-      "mirror": "https://mega.nz/file/Sdc0gRKR#yJJ0CIkfeFbQtN9d_TK6FJcRHMiez-JWDVP5aAAG6xA"
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.5/Project+.v3.1.5.Wii.zip",
+      "mirror": "https://mega.nz/file/7UlhAYqY#F0eVSE0VfgrSGxfiwkabs6DJ826oB3pon36NnbCXnpI"
     },
     "wii-lite": {
-      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Wii.Lite.zip",
-      "mirror": "https://mega.nz/file/XN0TCIzB#-yblQ42_rc2-ViXzFcdWuMlrOrSB298FbSZudG4CTB8"
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.5/Project+.v3.1.5.Wii.Lite.zip",
+      "mirror": "https://mega.nz/file/6FVQxTJA#lY8IhGyFQIsz7csNW4kiSjAGOeX4iJtgpxDGXzXxOYc"
     },
     "windows": {
-      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Netplay.Windows.zip",
-      "mirror": "https://mega.nz/file/udVXGATA#wK5Nqfd7gRISZeyDmnB4JlyPOFyuAcLbIC3fClq2Pj8"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.1.5/Project+.v3.1.5.Netplay.Windows.zip",
+      "mirror": "https://mega.nz/file/PQlHxSqS#bNGTwRu4yZPXYEOJAI9K9_0_EQKgm5qfCq2eT7klvz4"
     },
-    "linux": {
-      "url": "https://github.com/jlambert360/FPM-AppImage/releases/tag/v3.1.2"
+    "mac-os": {
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.1.5/Project+.v3.1.5.Netplay.macOS.zip"
+    },
+    "linux-appimage": {
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.1.5/Project+.v3.1.5.Netplay.Linux.AppImage.zip"
+    },
+    "linux-flatpak": {
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.1.5/Project+.v3.1.5.Netplay.Linux.Flatpak.zip"
     }
   },
   "modding-resources": [
     {
+      "title": "Dolphin HD Textures",
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.1.5/Project+.v3.1.5.HD.Textures.zip"
+    },
+    {
       "title": "Modder's Pack",
-      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Modders.Pack.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.5/Project+.v3.1.5.Modders.Pack.zip"
     },
     {
-      "title": "3.0.5 > 3.1.2 Changed Files",
-      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.0.5.to.v3.1.2.zip"
-    },
-    {
-      "title": "3.1.0 > 3.1.2 Changed Files",
-      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.0.to.v3.1.2.zip"
+      "title": "3.1.2 > 3.1.5 Changed Files",
+      "url": "https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/download/v3.1.5/Project+.v3.1.2.to.v3.1.5.zip"
     }
   ]
 }

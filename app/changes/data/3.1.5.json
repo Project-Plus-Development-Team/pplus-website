@@ -1,0 +1,430 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1T6AjNN68YfDv2KYNufUXOh8Jy-vnKVcC3AW8EZ7Hcrw/"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1Nj72z6X4VJpnpNWO9_UJR_bU-hH0eag-lrP_77oaNTo/"
+    }
+  },
+  "changes": [
+    {
+      "name": "Dolphin",
+      "element": {},
+      "moves": [
+        {
+          "title": "Dolphin build updated to a mainline-based build",
+          "changes": [
+            {
+              "title": "After using our current build of Dolphin (Ishiiruka, aka Faster PM) for a majority of Project+’s development, we have finally moved over to a mainline-based Dolphin! Along with retaining all of FPM’s unique features such as the client-side music toggle and autosaving replays, we gain the following improvements from the 7+ years of mainline Dolphin updates:",
+              "changes": [
+                "Restoration of macOS builds, as well as a Flatpak option for Linux users",
+                "The Netplay Session Browser, allowing for players to host and connect to lobbies made in our build",
+                "Improved shader generation with Ubershaders",
+                "Highly improved frame pacing for smoother gameplay, notably on high refresh rate monitors",
+                "Dark mode on all platforms",
+                "Better controller support on all platforms",
+                "A rewritten updater that’s prettier, works better, and will no longer be flagged as malware on Windows!",
+                "Increased stability on all platforms, especially non-Windows ones",
+                "Much higher potential for further upstream changes to be merged into our build"
+              ]
+            },
+            {
+            	"title": "The biggest thing to note for players is that the buffer system works differently than in Faster PM. The default buffer (2) is equivalent to the previously default 4 buffer, and increasing it by one in this build is equivalent to increasing it by 2 in FPM (so 3 = FPM's 6, 4 = FPM's 8, etc). For scenes or communities interested in making custom netplay builds, please see our guide on creating a fork: https://docs.google.com/document/d/1iro16ALVgVbci32KAPEnj6W010KscU3eULqqXUkjfaE/edit?usp=sharing",
+              "changes": []
+             }
+      	]
+	    }
+     ]
+    },
+    {
+      "name": "Wii Launcher",
+      "element": {},
+      "moves": [
+        {
+          "title": "Wii Launcher Changes",
+          "changes": [
+            {
+              "title": "Now based on the latest USB Loader GX Enhanced v4.0-r1283",
+              "changes": [
+                "Pre-configured to support loading NTSC on other region formats (PAL users no longer have to change settings for the game to load).",
+                "Codeset path now easily configurable in meta.xml",
+                "Settings file generated on load in Project+/launcher/settings.cfg",
+                {
+                  "title": "Further customize the deflicker filter:",
+                  "changes": [
+                      "deflicker = 0 - DEFAULT",
+                      "deflicker = 1 - OFF",
+                      "deflicker = 2 - OFF EXTENDED",
+                      "deflicker = 3 - LOW",
+                      "deflicker = 4 - MEDIUM",
+                      "deflicker = 5 - HIGH"
+                      ]
+                }
+              ]
+            },
+            {
+            	"title": "Alternative USB Loader included for if the main launcher doesn't work, based on the latest CFG USB Loader MOD 70r78.13. Please report any loading issues in the Project+ Discord.",
+              "changes": [
+                "Settings for Alt USB stored in meta.xml"
+              ]
+            },
+            {
+            	"title": "Hackless path is now based on the smashstack exploit name. st_project+.bin loads apps/project+/boot.dol",
+              "changes": []
+            }
+      	]
+	    }
+     ]
+    },
+    {
+      "name": "Donkey Kong",
+      "element": {},
+      "moves": [
+        {
+          "title": "Neutral Special (Giant Punch)",
+          "changes": [
+		          {
+			        "title": "Aerial Donkey Punch fist hitbox power scaling fixed",
+			        "comment": "This is the same fix that the grounded version received last patch."
+		          }
+		        ]
+		    }
+      ]
+    },
+    {
+      "name": "Lucario",
+      "element": {},
+      "moves": [
+	      {
+          "title": "Bug Fixes",
+          "changes": [
+            		{
+			        "title": "Fixed Lucario being able to refresh Double Team and Extremespeed after footstooling an opponent"
+			          }
+            ]
+        }
+      ]
+    },
+    {
+      "name": "Lucas",
+      "element": {},
+      "moves": [
+	     {
+          "title": "Up Throw",
+          "changes": [
+            		{
+			          "title": "Release point has been centered"
+			          }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mewtwo",
+      "element": {},
+      "moves": [
+	    {
+          "title": "Bug Fixes",
+          "changes": [
+            		{
+			          "title": "Ledge roll occupancy normalized to the rest of the cast (40f > 48f)",
+			          "comment": "The timer within Mewtwo’s file was previously set to 40, preventing him from occupying ledge as much as the rest of the cast."
+			          }
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Peach",
+      "element": {},
+      "moves": [
+	    {
+          "title": "Bug Fixes",
+          "changes": [
+            		{
+			          "title": "Facing down getup attack hit 2 damage normalized (8 > 6)",
+			          "comment": "Every other character’s getup attack does 6% on both hits, so this brings her in line with the cast as intended."
+			          }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pit",
+      "element": {},
+      "moves": [
+          {
+            "title": "Glide Attack",
+            "comment": "These changes adjust glide attack from an underwhelming hit to a strong horizontal combo finisher out of glide.",
+            "changes": [
+            {
+              "title": "Inner Hit (ID0)",
+              "changes": [
+                "Damage: 12 -> 14",
+                "BKB: 55 -> 45",
+                "KBG: 70 -> 85"
+              ]
+            },
+            {
+              "title": "Outer Hit (ID2)",
+              "changes": [
+                "Angle: 50 -> 30",
+                "Hitlag Multiplier: 1.0x -> 0.8x"
+              ]
+            },
+            {
+              "title": "Body Hitbox (ID3)",
+              "changes": [
+                "Damage: 12 -> 14",
+                "BKB: 55 -> 45",
+                "KBG: 70 -> 85"
+              ]
+            }
+         ]
+        }
+      ]
+    },
+    {
+      "name": "Toon Link",
+      "element": {},
+      "moves": [
+	    {
+          "title": "Forward Air",
+          "changes": [
+            		{
+			          "title": "Sourspot hitboxes adjusted to match sweetspot",
+			          "comment": "While the sourspot could be used in niche situations, it mostly inhibited combo finishers for Toon Link, so the entirety of the move has been converted to its sweetspot stats."
+			          }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zero Suit Samus",
+      "element": {},
+      "moves": [
+	    {
+          "title": "Down Smash",
+          "changes": [
+            		{
+			          "title": "BKB 75 > 76",
+			          "comment": "This small change fixes a bug introduced in v3.0, where opponents would not enter the stun animation after being hit by a down smash while knocked down at low percent."
+			          }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Battlefield",
+          "changes": [
+            {
+              "title": "Default and multiple 1:1s",
+              "changes": [
+                "Adjusted platform models to match collisions"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bell Tower",
+          "changes": [
+            {
+              "title": "Default and (R+Start alt) Bell Tower PS2",
+              "changes": [
+                "Stage will no longer glitch if edited with modern modding tools, courtesy of MarioFan63"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Castle Siege",
+          "changes": [
+            {
+              "title": "(Z-alt) Castlefield",
+              "changes": [
+                "Fixed spawn positions to match Battlefield"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Corneria",
+          "changes": [
+            {
+              "title": "(Z-alt) Star Fox (SNES)",
+              "changes": [
+                "Improved camera and item spawn locations"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dead Line",
+          "changes": [
+            {
+              "title": "(L-Alt) Chemical Plant",
+              "changes": [
+                "Updated to latest version (1.2)"
+              ]
+            },
+            {
+              "title": "(R-alt) Chemical Plant Dead Line (NEW!)",
+              "changes": [
+                "A 1:1 of the Dead Line stage layout from Chemical Plant’s 1.2 version now occupies the R-alt slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dinosaur Land",
+          "changes": [
+            {
+              "title": "Default",
+              "changes": [
+                "Walljumps enabled in the middle gap to encourage camping :^)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dracula’s Castle",
+          "changes": [
+            {
+              "title": "(L-Alt) Clock Tower and (R-Alt) Abbey Ruins",
+              "changes": [
+                "Updated stage shadow textures for lower file size"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Green Hill Zone",
+          "changes": [
+            {
+              "title": "Default and multiple 1:1s",
+              "changes": [
+                "Adjust platform model to match collision"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Smashville",
+          "changes": [
+            {
+              "title": "(R+Start) Alts",
+              "changes": [
+                "All time of day options are available as (R+Start) alts",
+                "All concert options have been moved from Y alts to (R+Start) alts, K.K. Slider appears correctly"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Training Room",
+          "changes": [
+            {
+              "title": "Default and (R+Start) Alts",
+              "changes": [
+                "Fixed collision issues that occurred on this stage"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters and Gameplay",
+          "changes": [
+            "Fixed an issue which would sometimes cause sticker effects to be applied to character IDs higher than Sonic",
+            "Fixed a crash caused by characters landing on a platform while in hitlag",
+            "Characters no longer shake inappropriately when stunned while missing a tech (such as if hit by a ZSS blaster shot while in knockdown)",
+            "Various stages have Final Smash camera fixes for Lucario and Olimar",
+            "Characters who could eat items will no longer have infinite Screw Attack jumps when eating the Melee Screw Attack"
+		]
+        },
+        {
+          "title": "Costumes",
+          "changes": [
+            "Fixed some Pikachu costumes having the wrong shadow model"
+          ]
+        },
+	{
+          "title": "Aesthetics",
+          "changes": [
+            "Knuckles particle effects restored on certain costumes",
+            "Mewtwo’s Shadow Ball visibility settings adjusted to match Melee’s timing",
+            "Wolf texture optimizations adjusted to preserve original appearance",
+            "Bowser Castle stages have reduced flickering effect at a distance",
+            "Latios and Latias no longer have glitched visibility issues",
+            "Oceanville’s image on the stage selection screen matches the lighting option used for this stage"
+          ]
+        },
+	{
+          "title": "Other",
+          "changes": [
+            "Screenshots during Subspace Emissary will function again after memory changes done in v3.1.0",
+            "CPU Samus AI adjusted to use better recovery habits",
+            "Bonsly’s name has correct upper case format in the items screen"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes and Content",
+      "element": {},
+      "moves": [
+	      {
+          "title": "Gameplay",
+          "changes": [
+            "Updated slippery terrain properties based on player feedback",
+            "Melee Screw Attack now functions more accurately",
+			"Wario’s crouch entry animation redone",
+            "Sonic’s dash attack animation has been updated to provide a cleaner transition as he exits his ball form"
+          ]
+        },
+	      {
+          "title": "Costumes",
+          "changes": [
+            "Game & Watch receives his first alternate costume with Judge Game & Watch! Judge your opponents with three new color options on this skin. Changes to the Game & Watch animation files were also made to accommodate this new costume.",
+            "Wii ROB’s SD card cover will open when damaged",
+            "Team Rocket Pikachu has been further optimized and fixed a small texture issue",
+            "Pikachu Libre has higher quality textures, and a small model hole fixed",
+            "Link’s default costume colors in the build have been optimized to reduce file size",
+            "Ness and Lucas costumes in the build have a massive file size optimization"
+          ]
+        },
+        {
+          "title": "Music",
+          "changes": [
+            "The PM Launcher music is now included in the Training Room tracklist"
+          ]
+        },
+		    {
+          "title": "Other",
+          "changes": [
+            "Disable Screen-KO functions when using random teams",
+            "Game & Watch’s entry file is no longer loaded, as the background elements for his entry animation have been ported to his fighter file",
+            "Title screen received visual improvements and file size optimizations",
+            "Gray Fox and Lyn’s Assist Trophy files removed from SD card, as edits to their files are no longer required. This also restores their sword trail effects.",
+            "Melee Mushroom Kingdom uses NES sound effects instead of Mushroomy Kingdom sound effects",
+            "Replay icons updated for Planet Zebes, Peach’s Castle, and Kongo Jungle",
+            "Many fighter file injection codes moved to their own codeset files to free up code space in RSBE01 and BOOST - use the included compile_codeset.bat file to easily compile all codesets in the build!",
+            "Updated version number to v3.1.5 build-wide"
+          ]
+        }
+      ]
+    }
+  ]
+}

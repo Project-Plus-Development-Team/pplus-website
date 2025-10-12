@@ -3,7 +3,9 @@ export const iconMap = {
   "Misc": "smash-shaded",
   "Stages": "stages",
   "Bug Fixes": "bug-fixes",
-  "Costumes and Content": "costumes-and-content"
+  "Costumes and Content": "costumes-and-content",
+  "Dolphin": "dolphin",
+  "Wii Launcher": "wii-launcher"
 };
 
 export const whitespacesToHyphens = (input: string) => input.replace(/\s/gi, "-");

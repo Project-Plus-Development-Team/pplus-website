@@ -419,6 +419,7 @@
             "Title screen received visual improvements and file size optimizations",
             "Gray Fox and Lyn’s Assist Trophy files removed from SD card, as edits to their files are no longer required. This also restores their sword trail effects.",
             "Melee Mushroom Kingdom uses NES sound effects instead of Mushroomy Kingdom sound effects",
+			"Dry Bowsers Castle now has a Dry Bones instead of a normal Koopa Troopa",
             "Replay icons updated for Planet Zebes, Peach’s Castle, and Kongo Jungle",
             "Many fighter file injection codes moved to their own codeset files to free up code space in RSBE01 and BOOST - use the included compile_codeset.bat file to easily compile all codesets in the build!",
             "Updated version number to v3.1.5 build-wide"

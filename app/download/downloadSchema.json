@@ -28,16 +28,20 @@
           "type": "object",
           "$ref": "#/$defs/download-thingy"
         },
-        "linux": {
+        "mac-os": {
           "type": "object",
           "$ref": "#/$defs/download-thingy"
         },
-        "mac-os": {
+        "linux-appimage": {
+          "type": "object",
+          "$ref": "#/$defs/download-thingy"
+        },
+        "linux-flatpak": {
           "type": "object",
           "$ref": "#/$defs/download-thingy"
         }
       },
-      "required": ["wii", "wii-lite", "windows", "linux"],
+      "required": ["wii", "wii-lite", "windows", "mac-os", "linux-appimage", "linux-flatpak"],
       "additionalProperties": false
     },
     "modding-resources": {

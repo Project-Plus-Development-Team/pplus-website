@@ -1,9 +1,9 @@
 {
-  "hash": "5a745d41b9c8a2051ebe47e61247b4a4726c1573",
-  "version": "FPM v3.1.2 BETA",
+  "hash": "new",
+  "version": "Mainline",
   "updater-update": "false",
   "update-page": "https://projectplusgame.com/download/",
-  "changelog": "Update to Project+ v3.1.2  \nFixes and addtions to v3.1.0, plus Charizard ECB fix",
-  "download-page-windows": "https://github.com/jlambert360/PPlusReleases/releases/download/v3.1.2/Project+.v3.1.2.Netplay.Windows.zip",
-  "download-page-mac": "https://github.com/jlambert360/PPlusReleases/releases/download/2.29/PPlusv2.29Mac.zip"
+  "changelog": "Updated build to Project+ v3.1.5 \nThis updates the Dolphin build to mainline Dolphin, implementing 7+ years worth of upgrades! \nA fresh install is highly recommended instead of updating through this, but can be done. \nPlease take note of your settings if you decide to update directly! \n\nWARNING: Your aspect ratio setting will be changed to the wrong setting after the update; go to Graphics > General and set it to P+ widescreen to fix it. ",
+  "download-page-windows": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.1.5/Project+.v3.1.5.Netplay.Windows.zip",
+  "download-page-mac": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.1.5/Project+.v3.1.5.Netplay.macOS.zip"
 }

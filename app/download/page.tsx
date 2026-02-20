@@ -56,7 +56,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     title: `Download v${latestVersion}`,
-    description: `Download Project+ version ${latestVersion} for Wii and Netplay for Windows and Linux. You'll also find the Lite version, Modders Pack, music list, and more!`,
+    description: `Download Project+ version ${latestVersion} for Wii and Netplay for Windows, macOS, and Linux. You'll also find the Lite version, Modders Pack, music list, and more!`,
   };
 }
 
@@ -99,14 +99,12 @@ export default async function Download() {
                 icon={faSdCard}
                 text="Wii"
                 url={downloadJson.editions.wii.url}
-                mirrorUrl={downloadJson.editions.wii.mirror}
               />
               <DownloadThing
                 icon={faSdCard}
                 text="Wii Lite"
                 iconLabel="2GB"
                 url={downloadJson.editions["wii-lite"].url}
-                mirrorUrl={downloadJson.editions["wii-lite"].mirror}
               />
             </div>
           </div>
@@ -117,24 +115,52 @@ export default async function Download() {
                 icon={faWindows}
                 text="Windows"
                 url={downloadJson.editions.windows.url}
-                mirrorUrl={downloadJson.editions.windows.mirror}
+              />
+              <DownloadThing
+                icon={faApple}
+                text="macOS"
+                url={downloadJson.editions["mac-os"].url}
               />
               <DownloadThing
                 icon={faLinux}
-                text="Linux"
-                url={downloadJson.editions.linux.url}
-                mirrorUrl={
-                  "mirror" in downloadJson.editions.linux &&
-                  typeof downloadJson.editions.linux.mirror === "string"
-                    ? downloadJson.editions.linux.mirror
-                    : undefined
-                }
+                text="Linux AppImage"
+                url={downloadJson.editions["linux-appimage"].url}
+              />
+              <DownloadThing
+                icon={faLinux}
+                text="Linux Flatpak"
+                url={downloadJson.editions["linux-flatpak"].url}
               />
             </div>
           </div>
         </div>
         <Note>
           Wii Lite only changes music compression to fit on a 2 GB SD card.
+        </Note>
+      </section>
+      <hr />
+       <section>
+        <h2 className="title is-2 tw:text-center">Mirrors</h2>
+        <div className="tw:flex tw:gap-6 tw:justify-evenly tw:flex-wrap">
+            <DownloadThing
+                icon={faSdCard}
+                text="Wii"
+                url={downloadJson.editions.wii.mirror}
+              />
+              <DownloadThing
+                icon={faSdCard}
+                text="Wii Lite"
+                iconLabel="2GB"
+                url={downloadJson.editions["wii-lite"].mirror}
+              />
+              <DownloadThing
+                icon={faWindows}
+                text="Windows"
+                url={downloadJson.editions.windows.mirror}
+              />
+        </div>
+        <Note>
+          These are alternative download links for if the main download links fail.
         </Note>
       </section>
       <hr />
@@ -157,7 +183,7 @@ export default async function Download() {
       </section>
       <hr />
       <section>
-        <h2 className="title is-2 tw:text-center">How to install</h2>
+        <h2 className="title is-2 tw:text-center">How to Install</h2>
         <p className="mb-2">
           Need help installing Project+? Project M Nexus&apos;s in-depth guide
           has got you covered!

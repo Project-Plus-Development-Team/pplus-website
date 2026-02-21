@@ -24,11 +24,7 @@ export const ChangesLinks = ({ links }: Props) => (
 		{Object.entries(links!).map(([title, { url, icon }], index) => (
 			<a key={index} className="button is-link" href={url}>
 				{icon !== undefined && (
-					<FontAwesomeIcon
-						fixedWidth
-						className="mr-2"
-						icon={getIconDefition(icon)}
-					/>
+					<FontAwesomeIcon className="mr-2" icon={getIconDefition(icon)} />
 				)}
 				<span>{title}</span>
 			</a>

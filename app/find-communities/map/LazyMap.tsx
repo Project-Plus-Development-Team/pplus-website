@@ -38,7 +38,7 @@ export const Error = ({
 			There was an Error while loading this component.
 		</div>
 		<button onClick={retry} className="button">
-			<FontAwesomeIcon icon={faRefresh} fixedWidth className="mr-2" />
+			<FontAwesomeIcon icon={faRefresh} className="mr-2" />
 			<span>Retry</span>
 		</button>
 		<p>Stringified error: {JSON.stringify(error)}</p>
@@ -63,5 +63,5 @@ export const LazyMap = dynamic<PPlusMapProps>(
 			</div>
 		),
 		ssr: false,
-	}
+	},
 );

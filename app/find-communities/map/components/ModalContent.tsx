@@ -27,7 +27,7 @@ export const PlatformButton = ({
 	title,
 }: PlatformButtonProps) => (
 	<a className="button is-link" href={href} rel="noreferrer nofollow">
-		<FontAwesomeIcon icon={icon} fixedWidth className="mr-2" />
+		<FontAwesomeIcon icon={icon} className="mr-2" />
 		<span>
 			{title ? <A11tySwitch visible={text} screenReader={title} /> : text}
 		</span>

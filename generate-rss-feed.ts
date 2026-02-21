@@ -4,15 +4,15 @@ import { getSortedVersions } from "./app/changes/get-version.ts";
 const sortedVersions = await getSortedVersions();
 
 fs.writeFileSync(
-  "./public/feed.xml",
-  `<?xml version="1.0" encoding="UTF-8" ?>
+	"./public/feed.xml",
+	`<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Project+ releases</title>
     <description>A feed of versions of Project+ including download links.</description>
     <ttl>720</ttl>
     <image>
-      <url>https://projectplusgame.com/favicon-16x16.png</url>
+      <url>https://projectplusgame.com/favicon.ico</url>
       <title>Project+ releases</title>
       <link>https://projectplusgame.com</link>
       <width>16</width>
@@ -23,9 +23,9 @@ fs.writeFileSync(
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <language>en</language>
     ${sortedVersions
-      .toReversed()
-      .map(
-        (version) => `
+			.toReversed()
+			.map(
+				(version) => `
           <item>
             <title>Project+ Download ${version}</title>
             <guid isPermaLink="false">${version}</guid>
@@ -33,11 +33,11 @@ fs.writeFileSync(
             <!-- <pubDate></pubDate> -->
             <category>Release</category>
           </item>
-    `
-      )
-      .join("")}
+    `,
+			)
+			.join("")}
   </channel>
 </rss> 
 
-`
+`,
 );

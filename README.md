@@ -2,24 +2,17 @@
 
 ### Getting started with development
 
-- [Install Node.js](https://nodejs.org/)
-- Clone this repository
-- Run `npm install` in a terminal inside the folder of the repository
-- Copy `.env.example` to `.env.local` and fill it
-- Run `npm run dev` for a development runtime with hot reloading or `npm run build` to build a static version of the site in the `./out/` subfolder
-- **before you start committing stuff, run `git config --local include.path ../.gitconfig`** (for details, read the `.gitconfig` file)
+- `npm install`
+- `cp .env.example .env.local` and fill it
+- `npm run dev`
 
 ### Used technology
 
-- React (JavaScript UI library)
-- TypeScript (JavaScript with more features like data types)
-- Next.js (meta-framework for React)
-- Bulma (CSS component library)
-- Netlify (static website host)
+- Next.js
+- Bulma & Tailwind for styling (yes, both because the P+ website was originally just Bulma)
+- Netlify as the web host
 
-**Next.js is basically our "backend". It manages the logical (not visual) structure of the site, where which files go, how pages link to each other fluently and it also turns our site into static HTML, CSS and JavaScript that we can host with Netlify.**
-
-#### Misc dependency notes
+### Misc dependency notes
 
 - sass: hard dependency to customize bulma properly and to not have bloated CSS
 
@@ -35,8 +28,9 @@
 - @types/...: i don't think the remaining ones can easily be removed. next.js wants to type-check when exporting and also VSCode will try to check typescript code, so it will probably be more painful to remove these than it's worth.
 
 - react-simple-maps: map component. allows to load highly optimized geojson (P+ website gets this from a TopoJSON file which gets optimized and converted to geojson) which allows for a very distraction free map that only has the country/continent borders for general orientation and all the interactive custom items go on top.
+  - feb 2026: react-simple-maps hasn't been updated in a while and is blocking updating to react v19 :(
 
-#### To-Do
+### To-Do
 
 - link to plusside event calendar
 - "edit this page" floating button that links to source file on github

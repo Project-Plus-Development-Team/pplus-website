@@ -52,7 +52,7 @@ export default function Home() {
 
 				<div className="is-flex is-flex-wrap-wrap gap">
 					<a href="/discord" className="button is-flex-grow-1">
-						<FontAwesomeIcon icon={faDiscord} fixedWidth className="mr-2" />
+						<FontAwesomeIcon icon={faDiscord} className="mr-2" />
 						<A11tySwitch
 							visible="Project+"
 							screenReader="Project+ Discord Server"
@@ -62,14 +62,14 @@ export default function Home() {
 						href="https://www.reddit.com/r/ssbpm"
 						className="button is-flex-grow-1"
 					>
-						<FontAwesomeIcon icon={faReddit} fixedWidth className="mr-2" />
+						<FontAwesomeIcon icon={faReddit} className="mr-2" />
 						<A11tySwitch visible="r/ssbpm" screenReader="Project M Subreddit" />
 					</a>
 					<a
 						href="https://bsky.app/profile/projectplusgame.com"
 						className="button is-flex-grow-1"
 					>
-						<FontAwesomeIcon icon={faBluesky} fixedWidth className="mr-2" />
+						<FontAwesomeIcon icon={faBluesky} className="mr-2" />
 						<A11tySwitch
 							visible="@ProjectPlusGame.com"
 							screenReader="Project+ on Bluesky"
@@ -79,7 +79,7 @@ export default function Home() {
 						href="https://www.ssbwiki.com/Project%2B"
 						className="button is-flex-grow-1"
 					>
-						<FontAwesomeIcon icon={faBook} fixedWidth className="mr-2" />
+						<FontAwesomeIcon icon={faBook} className="mr-2" />
 						<A11tySwitch
 							visible="SmashWiki"
 							screenReader="Project+ SmashWiki entry"
@@ -89,7 +89,7 @@ export default function Home() {
 						href="https://github.com/Project-Plus-Development-Team/pplus-website"
 						className="button is-flex-grow-1"
 					>
-						<FontAwesomeIcon icon={faGithub} fixedWidth className="mr-2" />
+						<FontAwesomeIcon icon={faGithub} className="mr-2" />
 						<A11tySwitch
 							visible="Website source"
 							screenReader="Website source code on GitHub"

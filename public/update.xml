@@ -1,0 +1,19 @@
+<root>
+	<game>
+		<update updateVersion="" length="" md5="">
+			<baseVersionsSupported>
+				<baseVersion>*</baseVersion>
+			</baseVersionsSupported>
+			<url>https://projectplusgame.com/public/launcher/</url>
+		</update>
+	</game>
+	<launcher>
+		<update updateVersion="" length="" md5="">
+		<baseVersionsSupported>
+			<baseVersion>*</baseVersion>
+		</baseVersionsSupported>
+		<url></url>
+		</update>
+	</launcher>
+	<news>Check out the new launcher! Includes working updates, addons, and settings! Read the full 3.2 changelog on the website.</news>
+</root>

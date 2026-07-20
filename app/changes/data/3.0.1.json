@@ -191,24 +191,6 @@
             ]
         },
         {
-            "name": "Diddy Kong",
-            "element": {},
-            "moves": [
-                {
-                    "title": "Up Smash",
-                    "changes": [
-                        "Final hit BKB 25 > 30, KBG 117 > 108"
-                    ]
-                },
-                {
-                    "title": "Forward Air",
-                    "changes": [
-                        "Strong hit BKB 10 > 15"
-                    ]
-                }
-            ]
-        },
-        {
             "name": "Donkey Kong",
             "element": {},
             "moves": [

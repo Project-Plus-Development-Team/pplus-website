@@ -178,7 +178,7 @@ export default async function Download() {
 					))}
 				</div>
 				<Note>
-					The Modders Pack includes files for custom build creation, such as
+					The Modder's Pack includes files for custom build creation, such as
 					stage imagery templates and full resolution HD textures.
 				</Note>
 			</section>

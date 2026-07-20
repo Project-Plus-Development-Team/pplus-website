@@ -1,10 +1,14 @@
 export const iconMap = {
-  "Costumes & Aesthetics": "stickers",
-  "Misc": "smash-shaded",
-  "Stages": "stages",
   "Bug Fixes": "bug-fixes",
+  "Aesthetic and Feature Changes": "costumes-and-content",
   "Costumes and Content": "costumes-and-content",
   "Dolphin": "dolphin",
+  "Modding Changes": "modding",
+  "Gameplay": "smash-shaded",
+  "Misc": "smash-shaded",
+  "Costumes & Aesthetics": "stickers",
+  "Costumes & Visuals": "stickers",
+  "Stages": "stages",
   "Wii Launcher": "wii-launcher"
 };
 

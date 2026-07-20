@@ -1,0 +1,709 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1yaE1Y6eWeCDxZ7V_waZgmwOu9taepbLsHwpmzjPwIaw"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1EoKA_JGdxGRjixwO4OzIv3vGX592dVKVVX04-vnlOdM"
+    }
+  },
+  "changes": [
+    {
+      "name": "Gameplay",
+      "element": {},
+      "moves": [
+        {
+          "title": "Engine Changes",
+          "changes": [
+            {
+              "title": "The 1-frame physics delay on jumping, double-jump cancelling, and air dodging has finally been fixed!",
+              "changes": [
+                "These actions now give momentum instantly, making movement feel significantly more responsive",
+                "As a result of these fixes, jumping from the ground now lasts 1 less frame of total air time",
+                "Even though jumps apply momentum frame 1, they retain the exact same maximum jump height.",
+                "Furthermore, this may have a noticeable effect on characters’ actionability out of short hop aerials, and will impact areas like auto-cancel timing windows for the time being."
+              ]
+            },
+            {
+              "title": "Wall-bouncing during knockback from a meteor no longer stops a character from meteor canceling"
+            },
+            {
+              "title": "Windboxes no longer completely override existing knockback"
+            },
+            {
+              "title": "Characters now enter teeter when reaching a ledge after a wavedash or special landing, matching Melee behavior. Hold forward on the control stick to override this and slide off instead."
+            }
+
+          ]
+        },
+        {
+          "title": "Final Smash Meter",
+          "changes": [
+            {
+              "title": "Special Versus option added: Final Smash meter!",
+              "changes": [
+                "Charge up a Final Smash while dealing damage, filling a meter indicated by a new graphic above each character's stock icons.",
+                "Only one character can have a Final Smash at a time, and the meter clears upon being KO'd, so use it before it's gone!",
+                "This replaces War mode as a Special Versus option."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Hazard Toggle",
+          "changes": [
+            {
+              "title": "All reskins of Smashville and Green Hill Zone now support hazard toggle functionality",
+              "changes": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Diddy Kong",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Can now SDI when hit by an attack during Up Special"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ivysaur",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed bulb attacks incorrectly missing against opponents' feet hitboxes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knuckles",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed cases where recovery resources wouldn't properly refresh during certain grounded actions",
+            "Can no longer footstool opponents or throw items after entering special fall from Up Special"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lucario",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Up Special can now leave the ground when started at a non-vertical angle",
+            "Now properly gains aura when an attack trades with an opponent's attack"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lucas",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Now retains Offense Up charge when a OU Smash attack trades with an opponent's attack"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Roy",
+      "element": {},
+      "moves": [
+        {
+          "title": "Neutral Air",
+          "changes": [
+            "Second hit active frames 13-25 > 13-26"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonic",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed cases where recovery resources wouldn't properly refresh during certain grounded actions",
+            "Can no longer footstool opponents or throw items after entering special fall from Up Special"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toon Link",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Boomerang)",
+          "changes": [
+            "Strong hit damage 14 > 16"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wolf",
+      "element": {},
+      "moves": [
+        {
+          "title": "Back Throw",
+          "changes": [
+            "Attack properties and animation reverted to P+ 2.5.2"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Yoshi",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Egg Roll)",
+          "changes": [
+            "Recovery resources now properly refresh when hit while exiting the move on the ground, or when sliding off the ground while canceling"
+          ]
+        },
+        {
+          "title": "Up Special (Egg Throw)",
+          "changes": [
+            "Now properly clanks when hit"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zelda",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Din's Fire)",
+          "changes": [
+            "Fireball no longer affects camera zoom or placement"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bell Tower",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Cleaned up faulty collisions which caused an invisible ledge to appear in the center of the stage",
+                "Fixed a background visual error"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bowser's Castle",
+          "changes": [
+            {
+              "title": "Base stage & L-alt (Thwomps)",
+              "changes": [
+                "Adjusted character lighting"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Clock Town",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Bottom blastzone raised by 38 units",
+                "Camera FOV modified to appear less zoomed-in"
+              ]
+            },
+            {
+              "title": "(L-alt) Majora's Battlefield",
+              "changes": [
+                "Platform visuals updated to match Battlefield"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Corneria",
+          "changes": [
+            {
+              "title": "N64 Sector Z (L+Start)",
+              "changes": [
+                "Uses N64 sound effects for Arwings and laser, courtesy of Purpa"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Distant Planet",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Side blastzones are now 145 units from each ledge, rather than being asymmetric by 3 units"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Dream Land",
+          "changes": [
+            {
+              "title": "(R+Start alt) N64 Dream Land",
+              "changes": [
+                "Uses N64 sound effects for Whispy, courtesy of Purpa"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Fountain of Dreams",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Adjusted stage lighting",
+                "Lowered volume of character footsteps on water terrain"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Green Hill Zone",
+          "changes": [
+            {
+              "title": "(L+Start alt) Original Brawl Green Hill Zone",
+              "changes": [
+                "Now loads from disc, similarly to other replaced Brawl stages"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Hyrule Temple",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Given new stage name to distinguish from the various Temple discoveries over the years"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Jungle Japes",
+          "changes": [
+            {
+              "title": "(L+Start alt) Swimless Jungle Japes (NEW!)",
+              "changes": [
+                "The water here functions similarly to the original Melee stage. You won't be saved by swimming anymore!"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Luigi's Mansion",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Adjusted spawn points. P1 & P2 now spawn on side platforms",
+                "Adjusted wall collisions to be completely flat",
+                "Updated stage appearance"
+              ]
+            },
+            {
+              "title": "(R-alt) Deck Dry Bones",
+              "changes": [
+                "Classic King Boo added to the background. Platform Boos have also been added"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Mushroom Kingdom",
+          "changes": [
+            {
+              "title": "(L-alt) Mushroom Kingdom III (NEW!)",
+              "changes": [
+                "A vibrant stage with moving platforms, inspired by the world of Super Mario Bros. 3! Courtesy of PurlSaturn"
+              ]
+            },
+            {
+              "title": "(L+Start alt) Mushroomy Kingdom 1-1",
+              "changes": [
+                "Stage moved from the L-alt slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Peach's Castle",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Updated collision types to reflect the original stage",
+                "Added mipmaps to reduce flickering artifacts on console",
+                "HD textures added to Dolphin build"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Planet Zebes",
+          "changes": [
+            {
+              "title": "(L+Start alt) Planet Zebes 64",
+              "changes": [
+                "Removed Melee Brinstar elements from the background. Appearance now better resembles the N64 stage"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Pokémon Stadium 2",
+          "changes": [
+            {
+              "title": "(R-alt) Gateway Colosseum (NEW!)",
+              "changes": [
+                "This iconic colosseum from Pokémon Battle Revolution joins Project+!",
+				"Matches played here will feature announcer commentary throughout the match, as well as when specific events occur during battle"
+              ]
+            },
+            {
+              "title": "(L-alt) Transforming PS2 (NEW!)",
+              "changes": [
+                "The original Poké Ball logo and green-colored arena of Brawl Pokémon Stadium 2 returns as the L-alt stage!",
+				"Uses stage proportions identical to the base stage, plus four classic transformations to shake up the match"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Rumble Falls",
+          "changes": [
+            {
+              "title": "Base & R-alt (Bowser's Castle 1:1)",
+              "changes": [
+                "Background clouds now move across the sky"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Saffron City",
+          "changes": [
+            {
+              "title": "(Z-alt) Radiant Stadium",
+              "changes": [
+                "Stage slot moved, replacing Poké Amie Stadium"
+              ]
+            },
+            {
+              "title": "(L-alt) Magnet Train",
+              "changes": [
+                "Stage moved from the Z-alt slot"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Sky Sanctuary Zone",
+          "changes": [
+            {
+              "title": "(R+Start alt) 2015 Sky Sanctuary Zone",
+              "changes": [
+                "Removed due to the base stage becoming standard"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Training Room",
+          "changes": [
+            {
+              "title": "(R-alt) Trainingfield",
+              "changes": [
+                "Adjusted stage lighting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+	{
+      "name": "Costumes & Aesthetics",
+      "element": {},
+    "moves": [
+      {
+        "title": "Ice Climbers",
+        "changes": [
+          "Revamped blue & white standard recolors to be more visually distinct",
+          "A new standard purple color has been added, along with the orange color from Melee!",
+          "Bear Climbers have a revamped blue color, and a new panda color",
+          "Optimized Bear Climbers textures",
+          "All Ice Climbers portraits updated with sharper eye colors"
+        ]
+      },
+      {
+        "title": "Lucario",
+        "changes": [
+          "Blackbelt Lucario steps into the ring as Lucario's second costume set! Now wearing appropriately sized pants and a complete new set of gear",
+          "Aura Guardian Lucario steals his master's duds, and debuts as Lucario's third costume set. Comes with four new recolors",
+          "Emerald Lucario is now the standard green team costume, with revamped fur color for better contrast",
+          "Orange Lucario has received color edits to its fur and spikes",
+          "Ruins-Style Lucario steps forth as Lucario's new hidden R-alt costume"
+        ]
+      },
+      {
+        "title": "Mario",
+        "changes": [
+          "Vacation Mario has been promoted to a main slot costume! His shirt has also been updated with brighter colors and textures on the inside",
+          "Yellow Doctor Mario is ready for your check-up as the seventh Dr. Mario color",
+          "Straight from the wrecking crew, Brown Builder Mario appears as the new fourth Builder Mario color",
+          "Bee Mario buzzes in as Mario's new hidden R-alt costume",
+          "Cape uses a new picnic print for Sunshine Mario, and a blueprint design for Builder Mario",
+          "All costumes now use a higher-quality cape texture"
+        ]
+      },
+      {
+        "title": "Samus",
+        "changes": [
+          "Added a new standard gold color and new silver Retro Suit color",
+          "All Retro Suit Samus portraits have been updated with improved lighting"
+        ]
+      },
+      {
+        "title": "Snake",
+        "changes": [
+          "Snake receives two \"old\" colors! The old Brawl Blue splitter camo has been restored as a distinct black color. Old Snake has also been added, taking inspiration from MGS4",
+          "MGS1 Snake has remade team colors, and a new Snow camo color",
+          "Updated Snake's grenade label to show a correct timer of 1.5 seconds, to prevent future accidents"
+        ]
+      },
+      {
+        "title": "Wolf",
+        "changes": [
+          "Zero Wolf zeroes in on the competition as Wolf's new third costume set! The set comes with six new colors in total",
+          "Pirate Wolf has received a new black color"
+        ]
+      },
+      {
+        "title": "Zero Suit Samus",
+        "changes": [
+          "Added a new standard gold color and new silver Justin Bailey color",
+          "All Justin Bailey costume portraits updated to better match in-game appearance"
+        ]
+      },
+      {
+        "title": "Other characters",
+        "changes": [
+          "Kirby's Pikachu hat updated with reduced texture seams",
+          "Commander Lucas' face model now matches the default costume",
+          "Removed Sonic's Jet Set smoke effect while riding the Dragoon, which erroneously appeared on all costumes",
+          "Pit's R-alt costume, Three Sacred Treasures Pit, now includes arrow rings when charging an arrow",
+          "Character shadow appearance updated for numerous alternate costumes"
+        ]
+      },
+      {
+        "title": "Music",
+        "changes": [
+          "\"Gateway Colosseum\" and \"Neon Colosseum\" added as new tracks for the new Gateway Colosseum tracklist",
+          "Radiant Stadium has been given its own tracklist",
+          "Lunar Battlefield has been given its own tracklist",
+          "\"Vs. Tabuu\" added to Final Destination tracklist"
+        ]
+      },
+      {
+        "title": "Other changes",
+        "changes": [
+          "Updated all stage name visuals on Stage Select with a more consistent appearance",
+          "\"Midwest\" stagelist preset added, with hazards-on Fountain of Dreams enabled",
+          "Updated My Music cursor appearance to match that of Stage Select",
+          "Upon exiting the CSS rules menu, announcer SFX will only play if the game mode has changed (e.g. from Stock to Time)",
+          "Audience SFX no longer plays when starting a replay",
+          "Flipper item modified to better match Melee's knockback properties",
+          "In netplay sessions, prize unlock messages will no longer appear (e.g. unlocking more rules after several matches)",
+          "Optimizations made to Dedede, Pit, and Snake costume & animation files"
+        ]
+      }
+    ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Gameplay",
+          "changes": [
+			"Standardized frame data of tripped get-up attacks across the cast",
+			"Fixed some characters' rolls not covering the full distance when rolling toward a ledge",
+			"Fixed a ledgegrab issue where some characters would incorrectly snap to ledge in cases involving negligibly small downwards velocity",
+			"Fixed an issue where characters grabbing a ledge could be simultaneously turned around by moves such as Mario's cape, causing them to teleport to the middle of the stage",
+			"Upon despawning, the CPU Ice Climber now properly removes any attached objects, such as Snake's C4",
+			"Barrel launches now refresh Up Special availability for Sonic, Knuckles, and Snake",
+			"Fixed certain cases of self-destructs in Stamina mode failing to subtract a stock",
+			"Fixed an issue where stage hurtboxes, such as those on Green Greens and Training Room, would fail to apply attacker hitstun when hit under certain conditions"
+          ]
+        },
+        {
+          "title": "Characters",
+          "changes": [
+			"Corrected Ganondorf's squat sound effects for non-standard costumes. Different squat sounds now apply from OoT Ganondorf costume IDs and up",
+			"Link no longer incorrectly plays sword-spinning sfx while raising his sword in one of his win animations",
+			"Purple Pikmin properly appear as ghosts again after being defeated, allowing them to finally rest in peace",
+			"Fixed texture glitches on Ness' Z-alt costume",
+			"Fixed a visual error with Commander Lucas' sword lightning effects in Metal mode",
+			"Fixed some of Lucario's standard costumes not properly glowing while charging Aura Sphere",
+			"Fixed Pit's Neutral Special not playing a startup animation while charging an arrow (also applies to Kirby's copy ability)",
+			"Fixed Hex Maniac Ivysaur flash effects on pummel to match her other dark effects",
+			"Fixed an animation error where characters angling a shield forward could oddly flicker for a frame",
+			"Fixed minor visual issues in Mario stock icons and portraits"
+          ]
+        },
+        {
+          "title": "Stages",
+          "changes": [
+			"Concert variants for Beachville and Oceanville now correctly load when chosen from the R+Start stage list",
+			"Removed UFO sfx on Smashville R-alt stage (Beachville) and Z-alt stage (Oceanville), as no UFO sightings have been documented there",
+			"Holding a d-pad input on stage select can no longer incorrectly choose an alternate stage from the L+Start or R+Start stage lists",
+			"Fixed Sky Sanctuary Zone L-alt stage (Chemical Plant) failing to load on console",
+			"Fixed error with stage materials on the Shadow Moses Island Z-alt stage (Shadow Moses Colony)",
+			"Fixed Hyrule Temple R-alt stage (Luigi’s Mansion reskin) lighting appearing overly bright",
+			"Fixed a common crash on Hyrule Temple Z-alt stage (Skyloftville) caused by faulty UFO data",
+			"Adjusted item spawn points on Training Room stages"
+          ]
+        },
+        {
+          "title": "Other bug fixes",
+          "changes": [
+			"Event Match 9 no longer crashes after transitioning to the second phase of Castle Siege",
+			"Consecutive Wiimote d-pad inputs are now read more consistently",
+			"Fixed a crash caused by the Melee Screw Attack item overwriting data used by pre-rendered videos",
+			"Fixed an issue where two soundbanks loading from the SD card on the same frame could cause garbled sound effects",
+			"Fox's credits theme now plays the correct track (again)",
+			"Removed a code related to duplicate texture checks, which was found to negatively affect console performance"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wii Launcher",
+      "element": {},
+      "moves": [
+        {
+          "title": "New: Brawl Mod Launcher",
+          "changes": [
+            "The classic launcher menu from Project M makes a return with a new Project+-inspired look and new features!",
+			"Settings are externally stored for the codeset path, background texture, colors, and other areas of customizability, making them easily modifiable for custom builds.",
+			"Includes add-on support! Make your own addons to easily swap around files with a press of a button",
+			"Update Project+ from the Wii console via the internet",
+			"Supports NTSC Brawl on PAL Wii consoles out of the box",
+			"Includes patch for experimental Wiimmfi support",
+			{
+              "title": "Change various settings via the launcher menu, including:",
+			  "changes": [
+				"Autoboot",
+				"Load Method",
+				"Deflicker Filter",
+				"Aspect Ratio",
+				"Game Language",
+				"Loader IOS",
+				"USB Port",
+				"...and more!"
+			  ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Modding Changes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Systems",
+          "changes": [
+		  {
+			"title": "P+ now supports asynchronous result screen portrait loading on the Character Select Screen!",
+			"changes": [
+				"Years in the making, this long-awaited modding advancement removes the need for compressed character portraits to be stored in the CSS menu, allowing for greater freedom when adding character costumes.",
+				"Thanks to ARSP, about 3 MB of duplicate image data has been removed!",
+				"As various filesize restrictions no longer apply, many portraits no longer need color-smashing compression, allowing for higher-quality images on console."
+			]
+		  },
+		  {
+			"title": "Some necessary file & memory accommodations have been made for ARSP",
+			"changes": [
+				"Character .pac files now load during Stage Select instead of when chosen on Character Select",
+				"Reduced maximum memory allocation of the results screen via Results.param"
+			]
+		  },
+            "Event Match .param files that read from L+Start or R+Start stage files instead use dedicated Event_xx.param files to avoid being accidentally overwritten by custom edits.",
+            "Dolphin launchers now attempt to locate a .gct codeset file in every sub-folder on the SD root (except apps and private), removing the need to set a build path specifically for it",
+            "Hackless .bin now uses a build path set by a corresponding text file in the private/wii/app/RSBE folder"
+          ]
+        },
+        {
+          "title": "Characters & Stages",
+          "changes": [
+		  {
+			  "title": "Lucario's motion file has many additional bone animations for his added costume sets",
+			  "changes": [
+				"Consequently, this reduces Lucario's costume file size limit.",
+				"An optimized Dark Lucario costume file for Subspace Emissary has been added"
+			  ]
+		  },
+            "Green Screen stage (Training Room L+Start) background color can now be controlled more easily by external programs such as Dolphin Memory Engine",
+            "Removed outdated code for Ness' PK Fire which tracked the projectile's active status in a way that broke compatibility with new codes",
+            "Ice Climbers' odd-numbered costume slots between 7 - 19 use Nana as a lead, including in the newly added Melee orange costume"
+          ]
+        },
+        {
+          "title": "Codes",
+          "changes": [
+            "GCTRealMate updated to v0.2.6, with a Linux executable added",
+            "Autosave_ON.cmnu file included inside pf/menu3, which can be used to enable Autosave Replays by default",
+            "TagsControls code layout modified for more user-friendly editing",
+            "Added code for items and character articles (such as projectiles) to access creator character data. While currently not utilized, this allows for new types of costume-specific edits in the future",
+			{
+				"title": "Added optional codes to the Extras folder. These can be enabled for custom builds inside More.asm:",
+				"changes": [
+					"AnimationBlend, an experimental edit for smoother transitions between character animations in certain cases (affects gameplay)",
+					"AerialForbiddenSDI, an experimental edit which prevents aerial characters from reaching the ground via SDI, similar to Melee (affects gameplay)",
+					"UncapDamageRatio, which lets Damage Ratio be set anywhere from 0.1 to 9.9",
+					"AutosaveWiiLight, which lights up the Wii disc slot during a match if Autosave Replays is enabled in the code menu"
+				]
+			}
+          ]
+        }
+      ]
+    }
+  ]
+}

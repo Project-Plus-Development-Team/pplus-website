@@ -5,6 +5,7 @@ import { NavLink } from "../page-header/components/NavLink";
 
 // This only affects /changes/ (index), nothing else.
 const sortedVersions = [
+	"3.2",
 	"3.1.5",
 	"3.1.2",
 	"3.1.0",

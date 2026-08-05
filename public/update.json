@@ -4,6 +4,6 @@
   "updater-update": "false",
   "update-page": "https://projectplusgame.com/download/",
   "changelog": "Updated build to Project+ v3.2.",
-  "download-page-windows": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2/Project+.v3.2.Netplay.Windows.zip",
-  "download-page-mac": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2/Project+.v3.2.Netplay.macOS.zip"
+  "download-page-windows": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.0/Project+.v3.2.Netplay.Windows.zip",
+  "download-page-mac": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.0/Project+.v3.2.Netplay.macOS.zip"
 }

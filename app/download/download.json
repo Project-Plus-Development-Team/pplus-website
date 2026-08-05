@@ -13,13 +13,13 @@
       "mirror": "https://mega.nz/file/8eZUHRJD#nNzwTpoA1nU_sxCjqTms-h4e-kJkHeZEXE4uYjN6joM"
     },
     "mac-os": {
-      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2/Project+.v3.2.Netplay.macOS.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.0/Project+.v3.2.Netplay.macOS.zip"
     },
     "linux-appimage": {
-      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2/Project+.v3.2.Netplay.Linux.AppImage.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.0/Project+.v3.2.Netplay.Linux.AppImage.zip"
     },
     "linux-flatpak": {
-      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2/Project+.v3.2.Netplay.Linux.Flatpak.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.0/Project+.v3.2.Netplay.Linux.Flatpak.zip"
     }
   },
   "modding-resources": [

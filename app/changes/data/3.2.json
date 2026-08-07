@@ -593,7 +593,7 @@
 			"Concert variants for Beachville and Oceanville now correctly load when chosen from the R+Start stage list",
 			"Removed UFO sfx on Smashville R-alt stage (Beachville) and Z-alt stage (Oceanville), as no UFO sightings have been documented there",
 			"Holding a d-pad input on stage select can no longer incorrectly choose an alternate stage from the L+Start or R+Start stage lists",
-			"Fixed Sky Sanctuary Zone L-alt stage (Chemical Plant) failing to load on console",
+			"Fixed Dead Line L-alt stage (Chemical Plant) failing to load on console",
 			"Fixed error with stage materials on the Shadow Moses Island Z-alt stage (Shadow Moses Colony)",
 			"Fixed Hyrule Temple R-alt stage (Luigi’s Mansion reskin) lighting appearing overly bright",
 			"Fixed a common crash on Hyrule Temple Z-alt stage (Skyloftville) caused by faulty UFO data",

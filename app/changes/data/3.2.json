@@ -44,7 +44,7 @@
             {
               "title": "Special Versus option added: Final Smash meter!",
               "changes": [
-                "Charge up a Final Smash while dealing damage, filling a meter indicated by a new graphic above each character's stock icons.",
+                "Charge up a Final Smash while dealing damage, filling a meter indicated by a new graphic beneath each character's stock icons.",
                 "Only one character can have a Final Smash at a time, and the meter clears upon being KO'd, so use it before it's gone!",
                 "This replaces War mode as a Special Versus option."
               ]

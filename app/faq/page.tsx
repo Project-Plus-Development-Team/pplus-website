@@ -13,6 +13,50 @@ const FAQ = () => (
 		<HA1 id="frequently-asked-questions">Frequently Asked Questions</HA1>
 		<hr />
 		<section>
+			<HA2 id="instructions">
+				Where are the install instructions?
+			</HA2>
+			<p>
+				Here is a <a href="https://docs.google.com/document/d/1ciEilZUnErUFPJCs0bxIM40Impu4VrIlBohxeD3dSqE/edit?tab=t.0">Google Docs install guide</a> and a <a href="https://youtu.be/4XynDH-eVDE">video tutorial</a> for all versions.
+			</p>
+		</section>
+		<hr />
+		<section>
+			<HA2 id="netplay-hackless-homebrew-usb-loading">
+				Can I run Project+ on a real Wii or Wii U?
+			</HA2>
+			<p>
+				Yes, Project+ supports booting on a real console (modded or unmodded) via Hackless, Homebrew, and USB Loader methods.
+
+				You can download console-compatible builds from the{" "}
+				<Link href="/download">Download</Link> page.
+			</p>
+		</section>
+		<hr />
+		<section>
+			<HA2 id="os-support">
+				Can I run Project+ on Windows/Mac/Linux/Steam Deck?
+			</HA2>
+			<p>
+				Yes, you can download PC-compatible builds from the{" "}
+				<Link href="/download">Download</Link> page.
+			</p>
+		</section>
+		<hr />
+		<section>
+			<HA2 id="matchmaking">Does Project+ have matchmaking like Slippi?</HA2>
+			<p>
+				Unfortunately, Project+ does not have matchmaking like Slippi. Most
+				matchmaking happens through <a href="https://discord.gg/vdssRDg">Discord.</a>
+			</p>
+			<p>
+				See{" "}
+				<Link href="/find-communities">Find Communities</Link> to find
+				communities for matchmaking.
+			</p>
+		</section>
+		<hr />
+		<section>
 			<HA2 id="rollback">Does Project+ have Rollback?</HA2>
 			<p>
 				Unfortunately, Project+ does not have rollback netcode. While it has
@@ -29,17 +73,6 @@ const FAQ = () => (
 				Brawlback or support its development, you can join the Brawlback Discord
 				community on the <Link href="/find-communities">Find Communities</Link>{" "}
 				page.
-			</p>
-		</section>
-		<hr />
-		<section>
-			<HA2 id="matchmaking">Does Project+ have matchmaking like Slippi?</HA2>
-			<p>
-				Unfortunately, Project+ does not have matchmaking like Slippi. Most
-				matchmaking happens through Discord. See{" "}
-				<a href="#rollback">Rollback</a> for more information and{" "}
-				<Link href="/find-communities">Find Communities</Link> to find
-				communities for matchmaking.
 			</p>
 		</section>
 		<hr />
@@ -78,16 +111,6 @@ const FAQ = () => (
 		<section>
 			<HA2 id="updates">Will there be future updates to Project+?</HA2>
 			<p>Yes! Project+ is still in active development.</p>
-		</section>
-		<hr />
-		<section>
-			<HA2 id="netplay-hackless-homebrew-usb-loading">
-				Does Project+ have a Netplay / Hackless / Homebrew / USB Loader release?
-			</HA2>
-			<p>
-				Yes, you can download them from the{" "}
-				<Link href="/download">Download</Link> page.
-			</p>
 		</section>
 		<hr />
 		<section>
@@ -180,23 +203,19 @@ const FAQ = () => (
 				Bros. Brawl, so they are incompatible with versions from other regions
 				(such as the PAL version that is prominent in Europe).
 			</p>
+		</section>
+		<hr />
+		<section>
+			<HA2 id="not-ntsc">How do I play on a system that isn't NTSC-U?</HA2>
 			<p>
-				<strong>
-					You can play Project M and Project+ as well as any other Brawl mod on
-					any system using the{" "}
-					<Link href="/install/usb-loader">USB Loader method</Link>.
-				</strong>
+				You can play Project M and Project+, as well as any other Brawl mod, on
+				ANY region system using the{" "}
+				<a href="https://docs.google.com/document/d/1ciEilZUnErUFPJCs0bxIM40Impu4VrIlBohxeD3dSqE/edit?tab=t.0">ISO / USB Loader</a> section
+				of this guide.
 			</p>
 			<p>
-				To play Project+ on Dolphin/Netplay, see the{" "}
-				<Link href="/install/dolphin">Dolphin Guide</Link>.
-			</p>
-			<p>
-				How do I set up Project+ on Linux? To install Project+ on Linux, install
-				the AppImage from here:
-				<a href="https://github.com/jlambert360/FPM-AppImage/releases">
-					https://github.com/jlambert360/FPM-AppImage/releases
-				</a>
+				To play Project+ on PC with Dolphin (Netplay supported), see the{" "}
+				<a href="https://www.smashladder.com/guides/view/27jj/project-m/project-v2-netplay-guide">Dolphin Netplay Guide</a>.
 			</p>
 		</section>
 		<hr />
@@ -212,25 +231,28 @@ const FAQ = () => (
 		<hr />
 		<section>
 			<HA2 id="iso-compatible">How do I know my Brawl ISO is compatible?</HA2>
+			<img src="https://i.imgur.com/qNOMtx0.png"></img>
 			<p>
-				To check the compatibility of your Brawl ISO, you need to check its MD5
-				in Dolphin. From the Dolphin window, right click on Brawl and select{" "}
-				<code>Properties</code>, navigate to the <code>Info</code> tab, and then
-				click the <code>Compute</code> button located to the right of{" "}
-				<code>MD5 Checksum</code> as seen in this{" "}
-				<a href="https://imgur.com/xzye9my">screenshot</a>.
+				To check the compatibility of your Brawl ISO, first ensure that it is an NTSC-U region
+				disc. Then, you may check its integrity in Dolphin. From the Dolphin window:
 			</p>
-			<p>Compatible ISOs may include:</p>
+			<ul>
+				<li>Right-click on Brawl and select <code>Properties</code></li>
+				<li>Click <code>Verify</code> located in the sidebar</li>
+				<li>Check <code>Calculate</code> near the MD5 box at the bottom</li>
+				<li>Click the <code>Verify Integrity</code> button and wait for analysis to complete.</li>
+			</ul>
+			<p>Compatible <code>MD5</code> hashes may include:</p>
 			<ul>
 				<li>d18726e6dfdc8bdbdad540b561051087</li>
+				<li>52ce7160ced2505ad5e397477d0ea4fe</li>
 				<li>d8560b021835c9234c28be7ff9bcaaeb</li>
 				<li>5052e2e15f22772ab6ce4fd078221e96</li>
-				<li>52ce7160ced2505ad5e397477d0ea4fe</li>
 				<li>9f677c78eacb7e9b8617ab358082be32</li>
 				<li>1c4d6175e3cbb2614bd805d32aea7311</li>
 			</ul>
 			<p>
-				If your game is not working, and the hash isn't listed here, it is
+				If you have a bad dump or a mismatched MD5 hash, it is
 				probable that your ISO needs to be replaced.
 			</p>
 		</section>
@@ -249,8 +271,8 @@ const FAQ = () => (
 		<section>
 			<HA2 id="controller">How do I setup my controller?</HA2>
 			<a href="https://www.smashladder.com/guides/view/26oz/controller-guide-2-0">
-				Click here for Smashladder's Controller Guide.
-			</a>
+				Click here
+			</a>  for Smashladder's Controller Guide.
 		</section>
 		<hr />
 		<section>
@@ -258,7 +280,7 @@ const FAQ = () => (
 				How do I set up my Wii U GameCube adapter on a Mac?
 			</HA2>
 			<p>
-				Click here for the guide to use the Wii U GameCube Controller Adapter on
+				<a href="https://wiki.dolphin-emu.org/index.php?title=How_to_use_the_Official_GameCube_Controller_Adapter_for_Wii_U_in_Dolphin#GCAdapterDriver">Click here</a> for the guide to use the Wii U GameCube Controller Adapter on
 				Mac.
 			</p>
 		</section>
@@ -290,9 +312,12 @@ const FAQ = () => (
 				Can I add new characters to Project+? Does BrawlEX work with Project+?
 			</HA2>
 			<p>
-				"P+Ex" integrates the BrawlEx engine and CSS Expansion add-on into
-				Project+ to allow for an expanded roster of custom characters. For more
-				information, check out{" "}
+				"<a href="https://kingjigglypuff.github.io/">Project+Ex</a>" (or P+Ex)
+				integrates the BrawlEx engine and CSS Expansion add-on into Project+ to
+				allow for an expanded roster of custom characters.
+			</p>
+			<p>
+				For more information, check out{" "}
 				<a href="https://docs.google.com/document/d/1mAoVGymOkL3FwiMxfEt1V24qxnAWiO8I66G3zlU0ij8">
 					this Google Docs document
 				</a>
@@ -303,9 +328,7 @@ const FAQ = () => (
 		<section>
 			<HA2 id="tilt-stick">Is Tilt Stick fixed in Project+?</HA2>
 			<p>
-				Yes, Project+ has working Tilt Stick.
-				<br />
-				See the{" "}
+				Yes, Project+ has working Tilt Stick. See the{" "}
 				<Link href="/features#training-practice-controls">
 					Features page
 				</Link>{" "}
@@ -340,28 +363,19 @@ const FAQ = () => (
 				tournament will run with "Auto L-Cancel" toggled on or off.
 			</p>
 		</section>
-		<h4>
-			How can I play Netplay when the traversal servers are down? How can i play
-			using direct IPs?
-		</h4>
-		<p>
-			<a href="https://www.smashladder.com/guides/view/26jo/direct-ip-hosting">
-				Direct IP Hosting Guide
-			</a>
-		</p>
 		<hr />
 		<section>
-			<HA2 id="linux">How can I set up Project+ on Linux?</HA2>
+			<HA2 id="traversal-down">
+				How can I play Netplay when the traversal servers are down?
+			</HA2>
 			<p>
-				To install Project+ on Linux, install{" "}
-				<a href="https://github.com/jlambert360/FPM-AppImage/releases">
-					the AppImage from here
-				</a>
-				.
+				You can connect directly by following the <a href="https://www.smashladder.com/guides/view/26jo/direct-ip-hosting">
+					Direct IP Hosting Guide
+				</a>.
 			</p>
 		</section>
 		<hr />
-		<h4>Can I play Project+ on an M1 Mac (ARM)?</h4>
+		<HA2 id="m1-mac">Can I play Project+ on an M1 Mac (ARM)?</HA2>
 		<p>
 			We are planning to swap the base of our Dolphin build sometime in the
 			future to restore Mac compatibility. M1 and beyond Macs will not be

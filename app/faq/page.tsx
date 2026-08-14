@@ -20,7 +20,7 @@ const FAQ = () => (
 				faces significant barriers to the development of rollback netcode with
 				its size, complexity, and the lack of available manpower. The ongoing
 				Brawlback project seeks to implement rollback netcode and matchmaking
-				into Super Smash Bros. Brawl and its mods such as Project+. There is
+				into Brawl and its mods such as Project+. There is
 				currently no timetable for its completion and release.
 			</p>
 			<p>
@@ -176,8 +176,8 @@ const FAQ = () => (
 				engineered specific versions of games and systems to match the video
 				systems of specific regions, so there are differences that make a
 				mismatch of regional games and consoles incompatible. Project M and
-				Project+ are designed for the NTSC-U versions of the Wii and Super Smash
-				Bros. Brawl, so they are incompatible with versions from other regions
+				Project+ are designed for the NTSC-U versions of the Wii and Brawl,
+				so they are incompatible with versions from other regions
 				(such as the PAL version that is prominent in Europe).
 			</p>
 			<p>

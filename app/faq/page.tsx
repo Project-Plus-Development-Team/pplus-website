@@ -340,28 +340,29 @@ const FAQ = () => (
 				tournament will run with "Auto L-Cancel" toggled on or off.
 			</p>
 		</section>
-		<h4>
+		<hr />
+		<HA2 id="direct-connect">
 			How can I play Netplay when the traversal servers are down? How can i play
 			using direct IPs?
-		</h4>
+		</HA2>
 		<p>
-			<a href="https://www.smashladder.com/guides/view/26jo/direct-ip-hosting">
+			See the <a href="https://www.smashladder.com/guides/view/26jo/direct-ip-hosting">
 				Direct IP Hosting Guide
-			</a>
+			</a>.
 		</p>
 		<hr />
 		<section>
 			<HA2 id="linux">How can I set up Project+ on Linux?</HA2>
 			<p>
 				To install Project+ on Linux, install{" "}
-				<a href="https://github.com/jlambert360/FPM-AppImage/releases">
+				<a href="https://github.com/Project-Plus-Development-Team/PPlusReleases/releases/latest">
 					the AppImage from here
 				</a>
 				.
 			</p>
 		</section>
 		<hr />
-		<h4>Can I play Project+ on an M1 Mac (ARM)?</h4>
+		<HA2 id="mac-arm">Can I play Project+ on an M1 Mac (ARM)?</HA2>
 		<p>
 			We are planning to swap the base of our Dolphin build sometime in the
 			future to restore Mac compatibility. M1 and beyond Macs will not be

@@ -1,0 +1,352 @@
+{
+  "links": {
+    "Google Doc Version": {
+      "icon": "fas fa-file-alt",
+      "url": "https://docs.google.com/document/d/1CR-dqOztwnhO440KduC6-O4LgeXt6pc5GB4pDvUW-xU"
+    },
+    "Music Lineup": {
+      "icon": "fas fa-music",
+      "url": "https://docs.google.com/spreadsheets/d/1EoKA_JGdxGRjixwO4OzIv3vGX592dVKVVX04-vnlOdM"
+    }
+  },
+  "changes": [
+    {
+      "name": "Gameplay",
+      "element": {},
+      "moves": [
+        {
+          "title": "Engine Changes",
+          "changes": [
+            {
+              "title": "Footstool jump heights now match behavior from before v3.2"
+            },
+            {
+              "title": "Adjusted airdodge behavior so waveland distances closely match their distances from before v3.2"
+            },
+            {
+              "title": "Ledge releases now apply gravity starting on frame 1, matching Melee behavior"
+            },
+            {
+              "title": "Empty landing animations can now enter teeter, matching Melee behavior"
+            },
+            {
+              "title": "Windboxes ignore knockback stacking once again"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Falco",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Fire Bird)",
+          "changes": [
+            "Vertical momentum reset frame 2 > 1, matching Melee behavior"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Fox",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Fire Fox)",
+          "changes": [
+            "Vertical momentum reset frame 2 > 1, matching Melee behavior"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ganondorf",
+      "element": {},
+      "moves": [
+        {
+          "title": "Side Special (Flame Choke)",
+          "changes": [
+            "Fixed an issue from v3.2 where characters grabbed could occasionally execute a grounded tech earlier than intended"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ice Climbers",
+      "element": {},
+      "moves": [
+        {
+          "title": "Neutral Special (Ice Shot)",
+          "changes": [
+            "Can no longer be teeter-canceled"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ivysaur",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Vine Whip)",
+          "changes": [
+            "Landing lag after a forced reel-in jump can once again be edge-canceled",
+            "This was an indirect change from v3.2 physics changes, but wasn’t included in the last changelog"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kirby",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Sonic’s copy ability (Homing Attack) can now turn around on-hit",
+            "Falco’s copy ability (Blaster) projectiles now use electric hit effect"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Knuckles",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Jump initial Y-velocity 2.95 > 3.05, removing obstructively common no-impact landings on specific stages"
+          ]
+        },
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed additional cases where special move resources failed to refresh properly during certain grounded actions"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lucas",
+      "element": {},
+      "moves": [
+        {
+          "title": "Down Special (PSI Magnet)",
+          "changes": [
+            "Vertical momentum now resets on frame 1 to compensate for v3.2 physics changes"
+          ]
+        },
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed an issue from v3.2 where Z-Air was unaffected by double-jump canceling"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ness",
+      "element": {},
+      "moves": [
+        {
+          "title": "Attributes",
+          "changes": [
+            "Adjusted horizontal momentum during double-jump canceled aerials, to compensate for v3.2 physics changes"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pit",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Shield Bash)",
+          "changes": [
+            "Fixed an issue from v3.2 where Pit could land earlier than intended after reaching the peak height"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sonic",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            "Fixed additional cases where special move resources failed to refresh properly during certain grounded actions"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toon Link",
+      "element": {},
+      "moves": [
+        {
+          "title": "Turnaround Grab",
+          "changes": [
+            "Active frames adjusted from 11-13, 16-17 > 11-17"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Wolf",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Fire Wolf)",
+          "changes": [
+            "Vertical momentum reset frame 2 > 1, matching changes given to Fox & Falco"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zelda",
+      "element": {},
+      "moves": [
+        {
+          "title": "Bug Fixes",
+          "changes": [
+            {
+              "title": "Fixed a set of issues from v3.2 regarding Din’s Fire incorrectly accessing repurposed data, thus fixing various bugs including:",
+              "changes": [
+                "Dormant hitbox data (dating back to Project M) being able to re-activate under certain conditions",
+                "The fireball projectile incorrectly rebounding to Zelda even after she took damage",
+                "Visual effects on Zelda’s hand vanishing prematurely while the fireball was still homing toward her",
+                "Edge-canceling Din’s Fire causing Zelda to enter an uninterruptible hairflip animation mid-air"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Zero Suit Samus",
+      "element": {},
+      "moves": [
+        {
+          "title": "Up Special (Plasma Wire) / Side Special (Plasma Whip)",
+          "changes": [
+            "Landing lag after a forced reel-in jump can once again be edge-canceled",
+            "This was an indirect change from v3.2 physics changes, but wasn’t included in the last changelog"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Stages",
+      "element": {},
+      "moves": [
+        {
+          "title": "Dream Land",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Normalized camera limits",
+                "The upper camera limit is now set to 60 units from the blastzone, matching PM 3.6",
+                "Aligned left and right camera limits (previously differed by 5 units)"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Luigi's Mansion",
+          "changes": [
+            {
+              "title": "Base stage",
+              "changes": [
+                "Fixed corrupted floor collisions that affected Mewtwo horizontal teleport behavior",
+                "Corrected platform sizes and heights to be totally symmetric where they were previously misaligned by 0.0001 units"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Costumes & Aesthetics",
+      "element": {},
+      "moves": [
+        {
+          "title": "Characters",
+          "changes": [
+            "Adjusted dust visual effects on Captain Falcon’s skid animation",
+            "Updated Waddles & Gordo visuals for Dedede’s Z-alt hidden costume (Crystal Shards Dedede)",
+            "Updated character shadows for Tuxedo Snake and Yoshi’s Z-alt hidden costume (Boshi)"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bug Fixes",
+      "element": {},
+      "moves": [
+        {
+          "title": "Gameplay",
+          "changes": [
+            {
+              "title": "Fixed various issues related to v3.2 physics behavior changes",
+              "changes": [
+                "Wavedashing off the exact edge of a platform no longer results in an airdodge",
+                "Wavedashing straight down while in teeter no longer leads to an instant landing",
+                "Fixed an error related to airtime calculations for character collisions (ECBs), notably affecting multi-shine timings",
+                "Pressing C-stick down at the ledge with certain control schemes no longer unintentionally causes a fastfall"
+              ]
+            },
+            "Fixed an issue where only the first pummel of a match correctly allowed characters to mash out as intended",
+            "Fixed a rare issue where upon grabbing the ledge with certain moves, characters could briefly appear in the center of the stage",
+            "Fixed an issue in Stamina mode where characters grabbed across a stage boundary would rapidly lose HP",
+            {
+              "title": "Adjusted Wii Remote control handling, allowing for smoother movement and full run speeds",
+              "changes": [
+                "Longstanding problems regarding interactions with Subspace Emissary doors have also been fixed"
+              ]
+            },
+            "Fixed a Brawl issue where shrinking effects (e.g. Poison Mushroom in Mini Special Versus) would not stack correctly",
+            "Characters can no longer enter the teeter state while holding an Assist Trophy"
+          ]
+        },
+        {
+          "title": "Characters",
+          "changes": [
+            "Fixed an issue from v3.2 where Link’s double-jump sound effect was muted",
+            "Corrected metal mode appearance for the Ice Climbers’ bear costumes and Jigglypuff's green picnicker hat costume",
+            "Fixed Zelda’s standard costumes failing to display proper glow effects during certain moves",
+            "Fixed some cases where tether reel-in animations could briefly appear misaligned with the ledge",
+            "Fixed minor visual errors on Zelda’s Z-alt hidden costume (Young Zelda)"
+          ]
+        },
+        {
+          "title": "Wii Launcher",
+          "changes": [
+            "Enhanced USB detection for auto loading",
+            "Improved settings for when PAL video modes are forced",
+            "Fixed auto-booting from Priiloader",
+            "Added error message for missing arguments"
+          ]
+        },
+        {
+          "title": "Other",
+          "changes": [
+            "Fixed a crash from v3.2 caused by pressing the Home button on a Wii remote",
+            "Fixed a crash from v3.2 caused by Alloy behavior in Multi-Man Smash",
+            "Fixed a crash from v3.2 caused by a background animation on the Fourside R-alt stage",
+            "Fixed an issue from v3.2 where enabling Team Battle after a match could set characters to non-team costumes",
+            "Fixed an issue from v3.2 where the 1/2x speed setting in Training Mode incorrectly set the game speed to 2x",
+            "Fixed a file loading issue when installed from MacOS",
+            "Fixed SDXC card support",
+            "Added experimental SDUC card support",
+            "Other file optimizations made, totaling over 500 KB in file size reductions"
+          ]
+        }
+      ]
+    }
+  ]
+}

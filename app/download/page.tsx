@@ -137,6 +137,12 @@ export default async function Download() {
 				<Note>
 					Wii Lite only changes music compression to fit on a 2 GB SD card.
 				</Note>
+				<Note>
+					Looking for past releases/versions?{" "}
+					<a href="https://github.com/Project-Plus-Development-Team/PPlusReleases/releases">
+						Browse all Project+ releases on GitHub
+					</a>
+				</Note>
 			</section>
 			<hr />
 			<section>

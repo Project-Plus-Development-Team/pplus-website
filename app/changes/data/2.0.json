@@ -3295,7 +3295,6 @@
             "All hitbox sizes greater than size 5 reduced to 5",
             "Gravity increased during use",
             "Charge Hitbox angle 365 > 90",
-            "Charge Hitbox SDI Multiplier x1.5 > x1.25",
             "Sonic is locked out of using aerial footstool for 30 frames after using aerial down special"
           ]
         },

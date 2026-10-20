@@ -340,7 +340,7 @@
             "Fixed a crash from v3.2 caused by a background animation on the Fourside R-alt stage",
             "Fixed an issue from v3.2 where enabling Team Battle after a match could set characters to non-team costumes",
             "Fixed an issue from v3.2 where the 1/2x speed setting in Training Mode incorrectly set the game speed to 2x",
-            "Fixed a file loading issue when installed from MacOS",
+            "Fixed a file loading issue when installed from macOS",
             "Fixed SDXC card support",
             "Added experimental SDUC card support",
             "Other file optimizations made, totaling over 500 KB in file size reductions"

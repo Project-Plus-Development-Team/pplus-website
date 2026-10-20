@@ -300,7 +300,7 @@
                 "Pressing C-stick down at the ledge with certain control schemes no longer unintentionally causes a fastfall"
               ]
             },
-            "Fixed an issue where only the first pummel of a match correctly allowed characters to mash out as intended",
+            "Fixed grab pummels improperly allowing characters to break out of grabs after the first pummel of a match, due to the pummel animation not locking out as intended",
             "Fixed a rare issue where upon grabbing the ledge with certain moves, characters could briefly appear in the center of the stage",
             "Fixed an issue in Stamina mode where characters grabbed across a stage boundary would rapidly lose HP",
             {

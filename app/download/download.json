@@ -9,23 +9,23 @@
       "mirror": "https://mega.nz/file/sCpGQQAI#WK6G7677Q5tdCu_ci2JSOKtnLkHex3rmPDt0RWWnd6c"
     },
     "windows": {
-      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1/Project+.v3.2.1.Netplay.Windows.zip",
-      "mirror": "https://mega.nz/file/Ee4zmL6B#wK9lKVa6F6JzqdXyEVcDJMmk4yB6VrwlXEASVH8x4aE"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1b/Project+.v3.2.1b.Netplay.Windows.zip",
+      "mirror": "https://mega.nz/file/sC5VRIbQ#PPTUcfo7OTn7cHmGjjGgiZHoWwVABED9eSvunIapFlU"
     },
     "mac-os": {
-      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1/Project+.v3.2.1.Netplay.macOS.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1b/Project+.v3.2.1b.Netplay.macOS.zip"
     },
     "linux-appimage": {
-      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1/Project+.v3.2.1.Netplay.Linux.AppImage.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1b/Project+.v3.2.1b.Netplay.Linux.AppImage.zip"
     },
     "linux-flatpak": {
-      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1/Project+.v3.2.1.Netplay.Linux.Flatpak.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1b/Project+.v3.2.1b.Netplay.Linux.Flatpak.zip"
     }
   },
   "modding-resources": [
     {
       "title": "Dolphin HD Textures",
-      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1/Project+.v3.2.1.HD.Textures.zip"
+      "url": "https://github.com/Project-Plus-Development-Team/Project-Plus-Dolphin/releases/download/v3.2.1b/Project+.v3.2.1b.HD.Textures.zip"
     },
     {
       "title": "Modder's Pack",

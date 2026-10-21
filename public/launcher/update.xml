@@ -1,10 +1,10 @@
 <root>
 	<game>
-		<update updateVersion="" length="" md5="">
+		<update updateVersion="3.2.1" length="16922967" md5="7c7ba45ad2a2d81dc211667902938810">
 			<baseVersionsSupported>
-				<baseVersion>*</baseVersion>
+				<baseVersion>3.2</baseVersion>
 			</baseVersionsSupported>
-			<url>https://projectplusgame.com/public/launcher/</url>
+			<url>https://projectplusgame.com/launcher/p+update-3.2-3.2.1.7z</url>
 		</update>
 	</game>
 	<launcher>
@@ -15,5 +15,5 @@
 		<url></url>
 		</update>
 	</launcher>
-	<news>Check out the new launcher! Includes working updates, addons, and settings! Read the full 3.2 changelog on the website.</news>
+	<news>Project+ 3.2.1 has been released! Update today!</news>
 </root>
